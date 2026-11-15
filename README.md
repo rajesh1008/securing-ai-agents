@@ -6,7 +6,7 @@ The book follows one running example. Quill is a bookkeeping agent at a fictiona
 
 The rule Bulwark is built on is simple: **the model proposes, deterministic code decides.** A model can be talked into anything. Code that checks the payee, the amount, the tenant and the approval record cannot be talked into anything, so that is where the money path's decisions live.
 
-> **Status: draft (v0.1.0-draft).** The book is still being written. Code for Chapters 47 to 49 will land here as those chapters are finished, and anything may change before the first edition.
+> **Status: draft (v0.1.0-draft).** The book is still being written. Code for Chapter 49 will land here as those chapters are finished, and anything may change before the first edition.
 
 ## What is in here
 
@@ -72,6 +72,7 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | VIII | 45 | End-to-End Case Studies | `ch45_*.py` (8) |
 | VIII | 46 | The AI Security Engineer's Interview, From Both Sides | `ch46_*.py` (3) |
 | VIII | 47 | The Last Twenty Percent | `ch47_*.py` (4), `bulwark/failclosed.py` |
+| VIII | 48 | The Audit | `ch48_*.py` (3), `bulwark/reperform.py` |
 | VIII | 48 | The Audit | none yet |
 | VIII | 49 | Where This Is Going | none yet |
 

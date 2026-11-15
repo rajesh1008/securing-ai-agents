@@ -1,0 +1,62 @@
+{
+ "A": {
+  "0.1": 29,
+  "0.05": 59,
+  "0.03": 99,
+  "0.02": 149,
+  "0.01": 299,
+  "0.005": 598
+ },
+ "C": {
+  "N": 2000,
+  "K": 12,
+  "big": 60,
+  "bad_big": 1
+ },
+ "random": {
+  "29": {
+   "found": 0.16,
+   "limit": 0.09814462767729577
+  },
+  "59": {
+   "found": 0.3068,
+   "limit": 0.049507609888226944
+  },
+  "149": {
+   "found": 0.6076,
+   "limit": 0.01990481622068513
+  },
+  "300": {
+   "found": 0.8592,
+   "limit": 0.009936081944457666
+  },
+  "600": {
+   "found": 0.9861,
+   "limit": 0.0049804433803613555
+  }
+ },
+ "risk": {
+  "found": 0.5208,
+  "found_when_none_big": 0.3202836879432624,
+  "placements_none_big": 141,
+  "rows": 119
+ },
+ "coverage": {
+  "random59": 0.029461276469593577
+ },
+ "log": [
+  "A sample size for 95% confidence, zero deviations expected:  tolerable rate -> n:  10%->29  5%->59  3%->99  2%->149  1%->299  0.5%->598",
+  "   n for 5% tolerable with 1, 2, 3 deviations allowed: 93, 124, 153",
+  "B upper limit on the true rate after the sample (95%, one-sided):  n=29,dev=0: 9.8%  n=59,dev=0: 5.0%  n=59,dev=1: 7.8%  n=149,dev=0: 2.0%  n=149,dev=2: 4.2%  n=300,dev=0: 1.0%  n=300,dev=3: 2.6%  n=1000,dev=0: 0.3%",
+  "C population 2000 payments, 12 with a deviation (0.6%); amounts over $2,000: 60; deviations among them: 1; dollar value of the deviating payments 8,051 of 972,256 total",
+  "   random sample of n: share of 10,000 audits that find at least one deviation / that report 'no deviations' (and the 95% limit they would then state)",
+  "   n=  29: finds >=1 in  16.0%; clean in  84.0%, and a clean audit would state 'rate below 9.8%' while the true rate is 0.6%",
+  "   n=  59: finds >=1 in  30.7%; clean in  69.3%, and a clean audit would state 'rate below 5.0%' while the true rate is 0.6%",
+  "   n= 149: finds >=1 in  60.8%; clean in  39.2%, and a clean audit would state 'rate below 2.0%' while the true rate is 0.6%",
+  "   n= 300: finds >=1 in  85.9%; clean in  14.1%, and a clean audit would state 'rate below 1.0%' while the true rate is 0.6%",
+  "   n= 600: finds >=1 in  98.6%; clean in   1.4%, and a clean audit would state 'rate below 0.5%' while the true rate is 0.6%",
+  "   risk-based (all 60 payments over $2,000 plus 59 random of the other 1940; 119 rows), over 200 random placements of the 12 deviations x 50 draws: finds >=1 in 52.1%; when none of the 12 happens to be over $2,000 (141 of 200 placements): 32.0%",
+  "   dollar coverage: a random 59 covers 2.9% of the quarter's dollars on average; the risk-based sample covers 22.3%",
+  "D testing the whole population by code: 2000 of 2000 examined, 12 found; cost is the run time of the procedure (Chapter 48 lab 1: 100,000 rows in about a second for the chain, 0.3 s for P5-P7)"
+ ]
+}

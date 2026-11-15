@@ -1,0 +1,61 @@
+{
+ "findings": [
+  {
+   "sev": "MEDIUM",
+   "ref": "bundle",
+   "text": "5 STALE_FOR_CODE issues across 4 evidence items (E01, E18, E20, E25): the evidence is older than the code it describes"
+  },
+  {
+   "sev": "MEDIUM",
+   "ref": "bundle",
+   "text": "13 of 23 controls rest on a single evidence item: C03, C05, C07, C09, C10, C11, C12, C14, C15, C16, C17, C21, C23"
+  },
+  {
+   "sev": "HIGH",
+   "ref": "bundle",
+   "text": "34 of 35 evidence items are scripts or tests written by the author of the control; 1 is a review by someone else"
+  },
+  {
+   "sev": "MEDIUM",
+   "ref": "bundle",
+   "text": "no control carries an 'operating' claim; every claim is simulation, live-model lab or test"
+  },
+  {
+   "sev": "HIGH",
+   "ref": "audit lab",
+   "text": "seeded case 'M1 vendor master and every record altered consistently' passes every re-performance procedure"
+  },
+  {
+   "sev": "MEDIUM",
+   "ref": "audit lab",
+   "text": "seeded case 'M2 approval clicked in 0.3 seconds' passes every re-performance procedure"
+  },
+  {
+   "sev": "HIGH",
+   "ref": "audit lab",
+   "text": "seeded case 'M3 a check the gate never had (destination country)' passes every re-performance procedure"
+  },
+  {
+   "sev": "MEDIUM",
+   "ref": "sampling",
+   "text": "a clean random sample of 59 supports only 'below 5.0%' where the population rate is 0.6%: test the whole population by code"
+  }
+ ],
+ "opinion": {
+  "designed_and_exercised_in_simulation": "SUPPORTED WITH EXCEPTIONS",
+  "operating_on_real_traffic": "NOT SUPPORTED"
+ },
+ "log": [
+  " 1. MEDIUM [bundle] 5 STALE_FOR_CODE issues across 4 evidence items (E01, E18, E20, E25): the evidence is older than the code it describes",
+  " 2. MEDIUM [bundle] 13 of 23 controls rest on a single evidence item: C03, C05, C07, C09, C10, C11, C12, C14, C15, C16, C17, C21, C23",
+  " 3. HIGH   [bundle] 34 of 35 evidence items are scripts or tests written by the author of the control; 1 is a review by someone else",
+  " 4. MEDIUM [bundle] no control carries an 'operating' claim; every claim is simulation, live-model lab or test",
+  " 5. HIGH   [audit lab] seeded case 'M1 vendor master and every record altered consistently' passes every re-performance procedure",
+  " 6. MEDIUM [audit lab] seeded case 'M2 approval clicked in 0.3 seconds' passes every re-performance procedure",
+  " 7. HIGH   [audit lab] seeded case 'M3 a check the gate never had (destination country)' passes every re-performance procedure",
+  " 8. MEDIUM [sampling] a clean random sample of 59 supports only 'below 5.0%' where the population rate is 0.6%: test the whole population by code",
+  "findings: 3 HIGH, 5 MEDIUM",
+  "claim 'designed, and exercised in simulation and live-model labs': SUPPORTED WITH EXCEPTIONS",
+  "claim 'operating on real traffic': NOT SUPPORTED"
+ ]
+}

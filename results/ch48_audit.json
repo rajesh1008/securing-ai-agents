@@ -1,0 +1,408 @@
+{
+ "as_exported": {
+  "P1 chain": [],
+  "P2 anchor": [],
+  "P3 scope": [],
+  "P4 order": [
+   [
+    "P4_TIME_BACKWARDS",
+    82,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    83,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    84,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    85,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    86,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    87,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    88,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    89,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    90,
+    "ts 100 after 101"
+   ],
+   [
+    "P4_TIME_BACKWARDS",
+    91,
+    "ts 100 after 101"
+   ]
+  ],
+  "P5 lifecycle": [],
+  "P6 separation": [],
+  "P7 effect": [],
+  "P8 second sources": [],
+  "P9 replay": []
+ },
+ "clean": {
+  "P1 chain": [],
+  "P2 anchor": [],
+  "P3 scope": [],
+  "P4 order": [],
+  "P5 lifecycle": [],
+  "P6 separation": [],
+  "P7 effect": [],
+  "P8 second sources": [],
+  "P9 replay": []
+ },
+ "defects": [
+  {
+   "name": "A1 amount edited in the dispatch row",
+   "how": "after the fact",
+   "fired": [
+    "P1",
+    "P5",
+    "P8"
+   ],
+   "codes": [
+    "P1_HASH_MISMATCH",
+    "P5_SENT_WITHOUT_APPROVAL",
+    "P8_BANK_LINE_NOT_LOGGED",
+    "P8_SENT_NOT_ON_BANK_STATEMENT"
+   ]
+  },
+  {
+   "name": "A2 same edit, chain recomputed",
+   "how": "after the fact, rechained",
+   "fired": [
+    "P2",
+    "P5",
+    "P8"
+   ],
+   "codes": [
+    "P2_ANCHOR_FAIL",
+    "P5_SENT_WITHOUT_APPROVAL",
+    "P8_BANK_LINE_NOT_LOGGED",
+    "P8_SENT_NOT_ON_BANK_STATEMENT"
+   ]
+  },
+  {
+   "name": "A3 approval row deleted, chain recomputed",
+   "how": "after the fact, rechained",
+   "fired": [
+    "P2",
+    "P5",
+    "P9"
+   ],
+   "codes": [
+    "P2_ANCHOR_FAIL",
+    "P5_SENT_WITHOUT_APPROVAL",
+    "P9_REPLAY_DISAGREES"
+   ]
+  },
+  {
+   "name": "A4 last three rows cut off",
+   "how": "after the fact",
+   "fired": [
+    "P2",
+    "P8"
+   ],
+   "codes": [
+    "P2_ANCHOR_FAIL",
+    "P8_BANK_LINE_NOT_LOGGED"
+   ]
+  },
+  {
+   "name": "A5 another tenant's row appended, rechained",
+   "how": "after the fact, rechained",
+   "fired": [
+    "P2",
+    "P3"
+   ],
+   "codes": [
+    "P2_TAIL_UNANCHORED",
+    "P3_FOREIGN_ROW"
+   ]
+  },
+  {
+   "name": "B1 approver is the requester",
+   "how": "lie at write",
+   "fired": [
+    "P6",
+    "P8",
+    "P9"
+   ],
+   "codes": [
+    "P6_SELF_APPROVAL",
+    "P8_APPROVAL_NOT_IN_SERVICE_LOG",
+    "P9_REPLAY_DISAGREES"
+   ]
+  },
+  {
+   "name": "B2 dispatch effect differs from approved effect",
+   "how": "lie at write",
+   "fired": [
+    "P7"
+   ],
+   "codes": [
+    "P7_EFFECT_DIFFERS"
+   ]
+  },
+  {
+   "name": "B3 sent with no second gate row",
+   "how": "lie at write",
+   "fired": [
+    "P5"
+   ],
+   "codes": [
+    "P5_SENT_WITHOUT_ALLOW"
+   ]
+  },
+  {
+   "name": "B4 first gate row says ALLOW (replay says HOLD)",
+   "how": "lie at write",
+   "fired": [
+    "P9"
+   ],
+   "codes": [
+    "P9_REPLAY_DISAGREES"
+   ]
+  },
+  {
+   "name": "B5 approval logged that the service never saw",
+   "how": "lie at write",
+   "fired": [
+    "P8"
+   ],
+   "codes": [
+    "P8_APPROVAL_NOT_IN_SERVICE_LOG"
+   ]
+  },
+  {
+   "name": "B6 policy version never released",
+   "how": "lie at write",
+   "fired": [
+    "P5"
+   ],
+   "codes": [
+    "P5_UNRELEASED_POLICY"
+   ]
+  },
+  {
+   "name": "B7 timestamp earlier than rows before it",
+   "how": "lie at write",
+   "fired": [
+    "P4"
+   ],
+   "codes": [
+    "P4_TIME_BACKWARDS"
+   ]
+  },
+  {
+   "name": "B8 an invoice dispatched twice",
+   "how": "lie at write",
+   "fired": [
+    "P5"
+   ],
+   "codes": [
+    "P5_PAID_TWICE"
+   ]
+  },
+  {
+   "name": "B9 bank paid ten times the logged amount",
+   "how": "lie at write",
+   "fired": [
+    "P8"
+   ],
+   "codes": [
+    "P8_BANK_LINE_NOT_LOGGED",
+    "P8_SENT_NOT_ON_BANK_STATEMENT"
+   ]
+  },
+  {
+   "name": "B10 payment made outside Quill (bank only)",
+   "how": "lie at write",
+   "fired": [
+    "P8"
+   ],
+   "codes": [
+    "P8_BANK_LINE_NOT_LOGGED"
+   ]
+  },
+  {
+   "name": "B11 logged as sent, never paid by the bank",
+   "how": "lie at write",
+   "fired": [
+    "P8"
+   ],
+   "codes": [
+    "P8_SENT_NOT_ON_BANK_STATEMENT"
+   ]
+  },
+  {
+   "name": "M1 vendor master and every record altered consistently",
+   "how": "lie at write",
+   "fired": [],
+   "codes": []
+  },
+  {
+   "name": "M2 approval clicked in 0.3 seconds",
+   "how": "lie at write",
+   "fired": [],
+   "codes": []
+  },
+  {
+   "name": "M3 a check the gate never had (destination country)",
+   "how": "lie at write",
+   "fired": [],
+   "codes": []
+  }
+ ],
+ "by_procedure": {
+  "P1": [
+   "A1"
+  ],
+  "P5": [
+   "A1",
+   "A2",
+   "A3",
+   "B3",
+   "B6",
+   "B8"
+  ],
+  "P8": [
+   "A1",
+   "A2",
+   "A4",
+   "B1",
+   "B5",
+   "B9",
+   "B1",
+   "B1"
+  ],
+  "P2": [
+   "A2",
+   "A3",
+   "A4",
+   "A5"
+  ],
+  "P9": [
+   "A3",
+   "B1",
+   "B4"
+  ],
+  "P3": [
+   "A5"
+  ],
+  "P6": [
+   "B1"
+  ],
+  "P7": [
+   "B2"
+  ],
+  "P4": [
+   "B7"
+  ]
+ },
+ "stubs": {
+  "ALLOW": {
+   "p9": 1,
+   "gates": 42,
+   "others": {}
+  },
+  "HOLD": {
+   "p9": 41,
+   "gates": 42,
+   "others": {
+    "P5": 41
+   }
+  },
+  "DENY": {
+   "p9": 42,
+   "gates": 42,
+   "others": {
+    "P5": 41
+   }
+  }
+ },
+ "cost": [
+  {
+   "rows": 1000,
+   "p1_ms": 21,
+   "p34_ms": 0,
+   "p5_ms": 0
+  },
+  {
+   "rows": 10000,
+   "p1_ms": 134,
+   "p34_ms": 2,
+   "p5_ms": 22
+  },
+  {
+   "rows": 100000,
+   "p1_ms": 678,
+   "p34_ms": 33,
+   "p5_ms": 295
+  }
+ ],
+ "log": [
+  "0 the Chapter 39 export as it stands: 92 rows; findings per procedure [('P4', 10)]; first: ('P4_TIME_BACKWARDS', 82, 'ts 100 after 101')",
+  "   fixture corrected: the 40 filler payments re-dated to days 62-98 so that the chain is in time order; everything else unchanged",
+  "A clean export: 92 rows, 4 anchors, approvals in service log 1, bank lines 41",
+  "   P1 chain           findings 0 []",
+  "   P2 anchor          findings 0 []",
+  "   P3 scope           findings 0 []",
+  "   P4 order           findings 0 []",
+  "   P5 lifecycle       findings 0 []",
+  "   P6 separation      findings 0 []",
+  "   P7 effect          findings 0 []",
+  "   P8 second sources  findings 0 []",
+  "   P9 replay          findings 0 []",
+  "B seeded defects (19); each row: procedures that fired",
+  "   A1 amount edited in the dispatch row                       [after the fact] CAUGHT by P1,P5,P8",
+  "   A2 same edit, chain recomputed                             [after the fact, rechained] CAUGHT by P2,P5,P8",
+  "   A3 approval row deleted, chain recomputed                  [after the fact, rechained] CAUGHT by P2,P5,P9",
+  "   A4 last three rows cut off                                 [after the fact] CAUGHT by P2,P8",
+  "   A5 another tenant's row appended, rechained                [after the fact, rechained] CAUGHT by P2,P3",
+  "   B1 approver is the requester                               [lie at write] CAUGHT by P6,P8,P9",
+  "   B2 dispatch effect differs from approved effect            [lie at write] CAUGHT by P7",
+  "   B3 sent with no second gate row                            [lie at write] CAUGHT by P5",
+  "   B4 first gate row says ALLOW (replay says HOLD)            [lie at write] CAUGHT by P9",
+  "   B5 approval logged that the service never saw              [lie at write] CAUGHT by P8",
+  "   B6 policy version never released                           [lie at write] CAUGHT by P5",
+  "   B7 timestamp earlier than rows before it                   [lie at write] CAUGHT by P4",
+  "   B8 an invoice dispatched twice                             [lie at write] CAUGHT by P5",
+  "   B9 bank paid ten times the logged amount                   [lie at write] CAUGHT by P8",
+  "   B10 payment made outside Quill (bank only)                 [lie at write] CAUGHT by P8",
+  "   B11 logged as sent, never paid by the bank                 [lie at write] CAUGHT by P8",
+  "   M1 vendor master and every record altered consistently     [lie at write] NOT CAUGHT",
+  "   M2 approval clicked in 0.3 seconds                         [lie at write] NOT CAUGHT",
+  "   M3 a check the gate never had (destination country)        [lie at write] NOT CAUGHT",
+  "   caught 16 of 16 seeded defects; 3 of 3 'M' cases pass every procedure",
+  "   defects by procedure that fired: P1 1; P2 4; P3 1; P4 1; P5 6; P6 1; P7 1; P8 8; P9 3",
+  "   B10 caught only by P8 reading from the bank statement towards the log (['P8_BANK_LINE_NOT_LOGGED']); B11 by P8 from the log to the bank (['P8_SENT_NOT_ON_BANK_STATEMENT'])",
+  "D gate replaced by a constant ALLOW: P9 disagrees on 1 of 42 gate rows; other procedures silent; dispatches still logged as sent 41; bank lines 41",
+  "D gate replaced by a constant HOLD : P9 disagrees on 41 of 42 gate rows; other procedures {'P5': 41}; dispatches still logged as sent 41; bank lines 41",
+  "D gate replaced by a constant DENY : P9 disagrees on 42 of 42 gate rows; other procedures {'P5': 41}; dispatches still logged as sent 41; bank lines 41",
+  "C    1000 rows: P1 chain      21 ms (0 findings), P3+P4     0 ms, P5-P7       0 ms",
+  "C   10000 rows: P1 chain     134 ms (0 findings), P3+P4     2 ms, P5-P7      22 ms",
+  "C  100000 rows: P1 chain     678 ms (0 findings), P3+P4    33 ms, P5-P7     295 ms"
+ ]
+}
