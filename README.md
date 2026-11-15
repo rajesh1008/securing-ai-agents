@@ -6,7 +6,7 @@ The book follows one running example. Quill is a bookkeeping agent at a fictiona
 
 The rule Bulwark is built on is simple: **the model proposes, deterministic code decides.** A model can be talked into anything. Code that checks the payee, the amount, the tenant and the approval record cannot be talked into anything, so that is where the money path's decisions live.
 
-> **Status: draft (v0.1.0-draft).** The book is still being written. Code for Chapter 49 will land here as those chapters are finished, and anything may change before the first edition.
+> **Status: draft (v0.1.0-draft).** All 49 chapters now have a first draft and a review pass is under way; anything may change before the first edition.
 
 ## What is in here
 
