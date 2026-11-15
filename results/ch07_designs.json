@@ -1,0 +1,197 @@
+{
+ "tasks": 2000,
+ "refused_at_compute": 2,
+ "task_mix": {
+  "pay_invoice": 353,
+  "reconcile_month": 332,
+  "handle_vendor_email": 333,
+  "process_invoice": 314,
+  "send_reminders": 343,
+  "answer_question": 325
+ },
+ "results": {
+  "A_ambient": {
+   "hostile_scope_allows": 1998,
+   "hostile_scope_and_gate_allow": 1405,
+   "benign_denied": 0,
+   "benign_total": 9408,
+   "hostile_total": 1998,
+   "by_class": {
+    "other_registered_payee": [
+     300,
+     300
+    ],
+    "same_payee_higher_amount": [
+     280,
+     280
+    ],
+    "unregistered_payee": [
+     281,
+     0
+    ],
+    "attacker_mail": [
+     312,
+     0
+    ],
+    "customer_domain_mail_out_of_task": [
+     270,
+     270
+    ],
+    "pay_when_task_is_read_only": [
+     284,
+     284
+    ],
+    "mail_to_task_vendor": [
+     271,
+     271
+    ]
+   }
+  },
+  "B_role_ceiling": {
+   "hostile_scope_allows": 1405,
+   "hostile_scope_and_gate_allow": 1405,
+   "benign_denied": 0,
+   "benign_total": 9408,
+   "hostile_total": 1998,
+   "by_class": {
+    "other_registered_payee": [
+     300,
+     300
+    ],
+    "same_payee_higher_amount": [
+     280,
+     280
+    ],
+    "unregistered_payee": [
+     281,
+     0
+    ],
+    "attacker_mail": [
+     312,
+     0
+    ],
+    "customer_domain_mail_out_of_task": [
+     270,
+     270
+    ],
+    "pay_when_task_is_read_only": [
+     284,
+     284
+    ],
+    "mail_to_task_vendor": [
+     271,
+     271
+    ]
+   }
+  },
+  "C_task_scope": {
+   "hostile_scope_allows": 159,
+   "hostile_scope_and_gate_allow": 159,
+   "benign_denied": 0,
+   "benign_total": 9408,
+   "hostile_total": 1998,
+   "by_class": {
+    "other_registered_payee": [
+     300,
+     49
+    ],
+    "same_payee_higher_amount": [
+     280,
+     28
+    ],
+    "unregistered_payee": [
+     281,
+     0
+    ],
+    "attacker_mail": [
+     312,
+     0
+    ],
+    "customer_domain_mail_out_of_task": [
+     270,
+     7
+    ],
+    "pay_when_task_is_read_only": [
+     284,
+     39
+    ],
+    "mail_to_task_vendor": [
+     271,
+     36
+    ]
+   }
+  },
+  "D_task_scope_ratchet": {
+   "hostile_scope_allows": 123,
+   "hostile_scope_and_gate_allow": 123,
+   "benign_denied": 333,
+   "benign_total": 9408,
+   "hostile_total": 1998,
+   "by_class": {
+    "other_registered_payee": [
+     300,
+     49
+    ],
+    "same_payee_higher_amount": [
+     280,
+     28
+    ],
+    "unregistered_payee": [
+     281,
+     0
+    ],
+    "attacker_mail": [
+     312,
+     0
+    ],
+    "customer_domain_mail_out_of_task": [
+     270,
+     7
+    ],
+    "pay_when_task_is_read_only": [
+     284,
+     39
+    ],
+    "mail_to_task_vendor": [
+     271,
+     0
+    ]
+   }
+  }
+ },
+ "reach": {
+  "A_ambient": {
+   "kinds": 6.0,
+   "payees": 8.0,
+   "per_action_usd": 10000000.0,
+   "irreversible": 3.0,
+   "mail_any_tasks": 1998,
+   "mail_domains_mean": null
+  },
+  "B_role_ceiling": {
+   "kinds": 6.0,
+   "payees": 8.0,
+   "per_action_usd": 2500.0,
+   "irreversible": 3.0,
+   "mail_any_tasks": 0,
+   "mail_domains_mean": 33.0
+  },
+  "C_task_scope": {
+   "kinds": 2.83,
+   "payees": 1.36,
+   "per_action_usd": 645.34,
+   "irreversible": 0.68,
+   "mail_any_tasks": 0,
+   "mail_domains_mean": 0.82
+  },
+  "D_task_scope_ratchet": {
+   "kinds": 2.01,
+   "payees": 1.36,
+   "per_action_usd": 645.34,
+   "irreversible": 0.51,
+   "mail_any_tasks": 0,
+   "mail_domains_mean": 0.82
+  }
+ },
+ "seconds": 0.07
+}

@@ -1,0 +1,141 @@
+[
+ {
+  "url": "https://hooks.customer.example/ledgerly",
+  "resolves": [
+   "93.184.216.34"
+  ],
+  "truly_internal": false,
+  "A_blocks": false,
+  "B_blocks": false,
+  "C_blocks": false
+ },
+ {
+  "url": "https://10.0.0.5/hook",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://169.254.169.254/latest/meta-data/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://localhost:8080/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://127.0.0.1/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://[::1]/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://[::ffff:10.0.0.5]/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://metadata.google.internal/computeMetadata/v1/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://db.corp.internal/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": true,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://hooks.attacker.example/x",
+  "resolves": [
+   "10.0.0.7"
+  ],
+  "truly_internal": true,
+  "A_blocks": false,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://rebind.attacker.example/x",
+  "resolves": [
+   "192.168.1.10"
+  ],
+  "truly_internal": true,
+  "A_blocks": false,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://2130706433/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": false,
+  "B_blocks": false,
+  "C_blocks": true
+ },
+ {
+  "url": "https://0x7f.0.0.1/",
+  "resolves": [],
+  "truly_internal": true,
+  "A_blocks": false,
+  "B_blocks": false,
+  "C_blocks": true
+ },
+ {
+  "url": "https://hooks.customer.example/ledgerly",
+  "resolves": [
+   "93.184.216.34",
+   "10.0.0.9"
+  ],
+  "truly_internal": true,
+  "A_blocks": false,
+  "B_blocks": true,
+  "C_blocks": true
+ },
+ {
+  "url": "https://api.vendor.example/pay",
+  "resolves": [
+   "8.8.4.4"
+  ],
+  "truly_internal": false,
+  "A_blocks": false,
+  "B_blocks": false,
+  "C_blocks": false
+ },
+ {
+  "url": "https://[2606:4700:4700::1111]/hook",
+  "resolves": [],
+  "truly_internal": false,
+  "A_blocks": false,
+  "B_blocks": false,
+  "C_blocks": false
+ }
+]

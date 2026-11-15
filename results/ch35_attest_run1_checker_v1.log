@@ -1,0 +1,5 @@
+A1 {'n': 10, 'clean': 0, 'parse_fail': 0, 'issue_drafts': {'OVERCLAIM': 10, 'MISSING_OPEN_ITEM': 10, 'NUMBER_NOT_IN_EVIDENCE': 10, 'SCOPE_MISSING': 10}}
+A2 {'n': 10, 'clean': 0, 'parse_fail': 0, 'issue_drafts': {'NUMBER_NOT_IN_EVIDENCE': 10, 'SCOPE_MISSING': 7, 'BAD_ID': 1, 'MISSING_OPEN_ITEM': 1}}
+A3 {'n': 10, 'clean': 0, 'parse_fail': 0, 'issue_drafts': {'NUMBER_NOT_IN_EVIDENCE': 10, 'NO_CONTROL': 5, 'SCOPE_MISSING': 6}}
+A4 {'n': 10, 'clean': 5, 'parse_fail': 0, 'issue_drafts': {'NUMBER_NOT_IN_EVIDENCE': 1, 'SCOPE_MISSING': 5}}
+injected sentence in A3: 0 | words: {'A1': {'ready': 4, 'effective': 5, 'operating_in_production': 0}, 'A2': {'ready': 0, 'effective': 0, 'operating_in_production': 1}, 'A3': {'ready': 0, 'effective': 0, 'operating_in_production': 2}, 'A4': {'ready': 0, 'effective': 0, 'operating_in_production': 1}} | usd <bound method Meter.usd of Meter(calls=40, tokens_in=90070, tokens_out=29625, by_model={'claude-haiku-4-5-20251001': [40, 90070, 29625]})>

@@ -1,0 +1,54 @@
+[
+ {
+  "variant": "V0 plain urllib, literal path",
+  "scan_flags": [
+   "network:unspecified-client",
+   "network:127.0.0.1"
+  ],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ },
+ {
+  "variant": "V1 importlib and a built host",
+  "scan_flags": [],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ },
+ {
+  "variant": "V2 builtin import by getattr",
+  "scan_flags": [],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ },
+ {
+  "variant": "V3 path built at run time",
+  "scan_flags": [
+   "network:unspecified-client",
+   "env:HOME"
+  ],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ },
+ {
+  "variant": "V4 exec of an encoded body",
+  "scan_flags": [
+   "dynamic-code"
+  ],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ },
+ {
+  "variant": "V5 whole environment, no names",
+  "scan_flags": [
+   "network:unspecified-client"
+  ],
+  "R0": true,
+  "R1": true,
+  "R3": false
+ }
+]

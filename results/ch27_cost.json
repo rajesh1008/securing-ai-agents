@@ -1,0 +1,318 @@
+{
+ "startup": {
+  "R0": {
+   "median": 19.6,
+   "p95": 37.3,
+   "max": 39.4
+  },
+  "R1": {
+   "median": 54.8,
+   "p95": 71.6,
+   "max": 79.8
+  },
+  "R2": {
+   "median": 36.9,
+   "p95": 69.1,
+   "max": 69.4
+  },
+  "R3": {
+   "median": 36.7,
+   "p95": 69.1,
+   "max": 69.3
+  }
+ },
+ "benign": {
+  "read csv": {
+   "R0": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 67,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 37,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   }
+  },
+  "pandas groupby": {
+   "R0": {
+    "ok": true,
+    "ms": 527,
+    "err": ""
+   },
+   "R1": {
+    "ok": false,
+    "ms": 415,
+    "err": "ImportError: /usr/local/lib/python3.13/dist-packages/pandas/_libs/sparse.cpython-313-x86_64-linux-gnu.so: fail"
+   },
+   "R2": {
+    "ok": true,
+    "ms": 424,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 375,
+    "err": ""
+   }
+  },
+  "json round trip": {
+   "R0": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 66,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   }
+  },
+  "statistics": {
+   "R0": {
+    "ok": true,
+    "ms": 37,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 70,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   }
+  },
+  "regex": {
+   "R0": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 65,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   }
+  },
+  "dates": {
+   "R0": {
+    "ok": true,
+    "ms": 20,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 49,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 39,
+    "err": ""
+   }
+  },
+  "write then read a scratch file": {
+   "R0": {
+    "ok": true,
+    "ms": 20,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 50,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 37,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   }
+  },
+  "write a result file next to the input": {
+   "R0": {
+    "ok": true,
+    "ms": 20,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 52,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R3": {
+    "ok": false,
+    "ms": 70,
+    "err": "PermissionError: [Errno 13] Permission denied: '/work/result.txt'"
+   }
+  },
+  "draw a chart (package in the user's site directory, not mounted)": {
+   "R0": {
+    "ok": true,
+    "ms": 624,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 705,
+    "err": ""
+   },
+   "R2": {
+    "ok": false,
+    "ms": 69,
+    "err": "ModuleNotFoundError: No module named 'matplotlib'"
+   },
+   "R3": {
+    "ok": false,
+    "ms": 69,
+    "err": "ModuleNotFoundError: No module named 'matplotlib'"
+   }
+  },
+  "draw a chart (package directory mounted by the manifest)": {
+   "R0": {
+    "ok": true,
+    "ms": 625,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 656,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 2732,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 1681,
+    "err": ""
+   }
+  },
+  "decimal money": {
+   "R0": {
+    "ok": true,
+    "ms": 20,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 53,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 36,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   }
+  },
+  "fetch an exchange rate": {
+   "R0": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 98,
+    "err": ""
+   },
+   "R2": {
+    "ok": false,
+    "ms": 119,
+    "err": "urllib.error.URLError: <urlopen error [Errno 111] Connection refused>"
+   },
+   "R3": {
+    "ok": false,
+    "ms": 119,
+    "err": "urllib.error.URLError: <urlopen error [Errno 111] Connection refused>"
+   }
+  },
+  "run a shell tool (wc)": {
+   "R0": {
+    "ok": true,
+    "ms": 38,
+    "err": ""
+   },
+   "R1": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   },
+   "R2": {
+    "ok": true,
+    "ms": 69,
+    "err": ""
+   },
+   "R3": {
+    "ok": true,
+    "ms": 68,
+    "err": ""
+   }
+  }
+ },
+ "env": {
+  "R0": "74 True",
+  "R1": "2 False",
+  "R2": "4 False",
+  "R3": "4 False"
+ }
+}

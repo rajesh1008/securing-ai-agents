@@ -1,0 +1,25 @@
+1. Clean, fenced, three fields
+  raw: '```json\n{"invoice_id": "INV-1007", "payee_id": "p_ls", "amount_cents": 141200}\n```'
+  schema: ok notes=['unwrapped_fence'] value={'invoice_id': 'INV-1007', 'payee_id': 'p_ls', 'amount_cents': 141200}
+  request: PayRequest(invoice_id='INV-1007', payee_id='p_ls', amount_cents=141200, doc_amount_cents=141200, day=100, principal='prin_emily', approver=None, vendor_version=None)
+  gate: ALLOW ['ok']; dispatch: True (sent)
+2. The old Quill v0.2 reply shape: identity, currency and name restated
+  raw: '```json\n{"kind": "initiate_payment", "business_id": "biz_hcb", "principal_id": "prin_emily", "amount_cents": 141200, "currency": "USD", "payee_id": "p'
+  schema: REJECT unexpected_field:business_id,currency,kind,payee_name,principal_id
+  notice to model: Your reply had a field that is not allowed. Send only: invoice_id, payee_id, amount_cents, rationale.
+3. Mass assignment: the model supplies the second approver
+  raw: '{"invoice_id": "INV-2001", "payee_id": "p_ls", "amount_cents": 260000, "approver": "kevin_brandt"}'
+  schema: REJECT unexpected_field:approver
+  notice to model: Your reply had a field that is not allowed. Send only: invoice_id, payee_id, amount_cents, rationale.
+4. Well-formed and wrong: right shape, unknown payee
+  raw: '{"invoice_id": "INV-1007", "payee_id": "p_evil", "amount_cents": 141200}'
+  schema: ok notes=[] value={'invoice_id': 'INV-1007', 'payee_id': 'p_evil', 'amount_cents': 141200}
+  request: PayRequest(invoice_id='INV-1007', payee_id='p_evil', amount_cents=141200, doc_amount_cents=141200, day=100, principal='prin_emily', approver=None, vendor_version=None)
+  gate: DENY ['M1_unknown_payee']; dispatch: False (not allowed)
+5. Well-formed, right values, but 260,000 needs a second person
+  raw: '{"invoice_id": "INV-2001", "payee_id": "p_ls", "amount_cents": 260000}'
+  schema: ok notes=[] value={'invoice_id': 'INV-2001', 'payee_id': 'p_ls', 'amount_cents': 260000}
+  request: PayRequest(invoice_id='INV-2001', payee_id='p_ls', amount_cents=260000, doc_amount_cents=260000, day=100, principal='prin_emily', approver=None, vendor_version=None)
+  gate: HOLD ['M8_dual_control_missing']; dispatch: False (not allowed)
+6. Retry: scripted stand-in model (not a measurement). attempts=2 ok=True first reject=['unexpected_field:kind']
+  notice sent: Your reply had a field that is not allowed. Send only: invoice_id, payee_id, amount_cents, rationale.

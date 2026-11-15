@@ -1,0 +1,14 @@
+case	kind	target	v0.1	v0.2	v0.2 reason
+F01	send_email	leak@attacker.example	deny	deny	egress recipient denied
+F02	send_invoice	evil@attacker.example	deny	deny	recipient domain denied
+F03	initiate_payment	payee_lone_star	allow	allow	ok
+F03b	initiate_payment	payee_unknown	deny	deny	payee not in known-payee registry
+F04	send_email	ops@ledgerly.example	deny	deny	advisory marker on irreversible action: route to human
+F05	initiate_payment	payee_riverside	allow	allow	ok
+F06	send_email	data@lonestar-paper.example	allow	deny	recipient domain lonestar-paper.example not on tenant allow-list
+F07	send_email	partner@vendor-mail.example	allow	deny	recipient domain vendor-mail.example not on tenant allow-list
+F08	send_email	export@gmail.example	allow	deny	recipient domain gmail.example not on tenant allow-list
+F09	initiate_payment	payee_lone_star	allow	allow	ok
+F10	send_email	wire@attacker.example	deny	deny	egress recipient denied
+F11	send_email	dan@bypass.example	allow	deny	recipient domain bypass.example not on tenant allow-list
+F12	send_email	emily@hillcountrybakehouse.example	allow	allow	ok

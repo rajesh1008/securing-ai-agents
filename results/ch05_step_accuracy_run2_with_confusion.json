@@ -1,0 +1,3158 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "repeats": 3,
+ "date": "2026-11-09",
+ "steps": {
+  "due_date": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 77,
+   "cases_all_correct": 25,
+   "cases_none_correct": 4,
+   "cases_repeats_disagree": 1,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 574,
+   "median_in_tokens": 96,
+   "median_out_tokens": 21,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 1.55,
+   "confusion": null,
+   "all_cases": [
+    {
+     "case": {
+      "invoice_date": "2028-02-10",
+      "terms": "Net 15",
+      "truth": "2028-02-25"
+     },
+     "answers": [
+      "2028-02-25",
+      "2028-02-25",
+      "2028-02-25"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2028-01-31",
+      "terms": "Net 30",
+      "truth": "2028-03-01"
+     },
+     "answers": [
+      "2028-02-29",
+      "2028-02-29",
+      "2028-02-29"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-12-20",
+      "terms": "Net 45",
+      "truth": "2027-02-03"
+     },
+     "answers": [
+      "2027-02-04",
+      "2027-02-03",
+      "2027-02-03"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-11-30",
+      "terms": "Net 60",
+      "truth": "2027-01-29"
+     },
+     "answers": [
+      "2027-01-29",
+      "2027-01-29",
+      "2027-01-29"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-02-28",
+      "terms": "Net 90",
+      "truth": "2027-05-29"
+     },
+     "answers": [
+      "2027-05-29",
+      "2027-05-29",
+      "2027-05-29"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-31",
+      "terms": "EOM+10",
+      "truth": "2026-09-10"
+     },
+     "answers": [
+      "2026-09-10",
+      "2026-09-10",
+      "2026-09-10"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-08",
+      "terms": "EOM+15",
+      "truth": "2026-09-15"
+     },
+     "answers": [
+      "2026-09-15",
+      "2026-09-15",
+      "2026-09-15"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-07-13",
+      "terms": "Due on receipt",
+      "truth": "2026-07-13"
+     },
+     "answers": [
+      "2026-07-13",
+      "2026-07-13",
+      "2026-07-13"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-02-26",
+      "terms": "Net 15",
+      "truth": "2026-03-13"
+     },
+     "answers": [
+      "2026-03-13",
+      "2026-03-13",
+      "2026-03-13"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-09",
+      "terms": "Net 30",
+      "truth": "2026-09-08"
+     },
+     "answers": [
+      "2026-09-08",
+      "2026-09-08",
+      "2026-09-08"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-04-03",
+      "terms": "Net 45",
+      "truth": "2027-05-18"
+     },
+     "answers": [
+      "2027-05-18",
+      "2027-05-18",
+      "2027-05-18"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-05-12",
+      "terms": "Net 60",
+      "truth": "2027-07-11"
+     },
+     "answers": [
+      "2027-07-11",
+      "2027-07-11",
+      "2027-07-11"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-12-14",
+      "terms": "Net 90",
+      "truth": "2027-03-14"
+     },
+     "answers": [
+      "2027-03-14",
+      "2027-03-14",
+      "2027-03-14"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-10-06",
+      "terms": "EOM+10",
+      "truth": "2026-11-10"
+     },
+     "answers": [
+      "2026-11-10",
+      "2026-11-10",
+      "2026-11-10"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-07-09",
+      "terms": "EOM+15",
+      "truth": "2026-08-15"
+     },
+     "answers": [
+      "2026-08-15",
+      "2026-08-15",
+      "2026-08-15"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-04-01",
+      "terms": "Due on receipt",
+      "truth": "2026-04-01"
+     },
+     "answers": [
+      "2026-04-01",
+      "2026-04-01",
+      "2026-04-01"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-07-03",
+      "terms": "Net 15",
+      "truth": "2026-07-18"
+     },
+     "answers": [
+      "2026-07-18",
+      "2026-07-18",
+      "2026-07-18"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-03-12",
+      "terms": "Net 30",
+      "truth": "2026-04-11"
+     },
+     "answers": [
+      "2026-04-11",
+      "2026-04-11",
+      "2026-04-11"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-03-18",
+      "terms": "Net 45",
+      "truth": "2026-05-02"
+     },
+     "answers": [
+      "2026-05-02",
+      "2026-05-02",
+      "2026-05-02"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-09-10",
+      "terms": "Net 60",
+      "truth": "2027-11-09"
+     },
+     "answers": [
+      "2027-11-09",
+      "2027-11-09",
+      "2027-11-09"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-06-21",
+      "terms": "Net 90",
+      "truth": "2026-09-19"
+     },
+     "answers": [
+      "2026-09-19",
+      "2026-09-19",
+      "2026-09-19"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-08-20",
+      "terms": "EOM+10",
+      "truth": "2027-09-10"
+     },
+     "answers": [
+      "2027-09-09",
+      "2027-09-09",
+      "2027-09-09"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-02-10",
+      "terms": "EOM+15",
+      "truth": "2026-03-15"
+     },
+     "answers": [
+      "2026-03-17",
+      "2026-03-17",
+      "2026-03-17"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-04-17",
+      "terms": "Due on receipt",
+      "truth": "2026-04-17"
+     },
+     "answers": [
+      "2026-04-17",
+      "2026-04-17",
+      "2026-04-17"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-05-21",
+      "terms": "Net 15",
+      "truth": "2026-06-05"
+     },
+     "answers": [
+      "2026-06-05",
+      "2026-06-05",
+      "2026-06-05"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-06-06",
+      "terms": "Net 30",
+      "truth": "2026-07-06"
+     },
+     "answers": [
+      "2026-07-06",
+      "2026-07-06",
+      "2026-07-06"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-04-15",
+      "terms": "Net 45",
+      "truth": "2027-05-30"
+     },
+     "answers": [
+      "2027-05-30",
+      "2027-05-30",
+      "2027-05-30"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-07-26",
+      "terms": "Net 60",
+      "truth": "2026-09-24"
+     },
+     "answers": [
+      "2026-09-24",
+      "2026-09-24",
+      "2026-09-24"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-10-06",
+      "terms": "Net 90",
+      "truth": "2027-01-04"
+     },
+     "answers": [
+      "2027-01-04",
+      "2027-01-04",
+      "2027-01-04"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-08",
+      "terms": "EOM+10",
+      "truth": "2026-09-10"
+     },
+     "answers": [
+      "2026-09-09",
+      "2026-09-09",
+      "2026-09-09"
+     ]
+    }
+   ],
+   "wrong_cases": [
+    {
+     "case": {
+      "invoice_date": "2028-01-31",
+      "terms": "Net 30",
+      "truth": "2028-03-01"
+     },
+     "answers": [
+      "2028-02-29",
+      "2028-02-29",
+      "2028-02-29"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-12-20",
+      "terms": "Net 45",
+      "truth": "2027-02-03"
+     },
+     "answers": [
+      "2027-02-04",
+      "2027-02-03",
+      "2027-02-03"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-08-20",
+      "terms": "EOM+10",
+      "truth": "2027-09-10"
+     },
+     "answers": [
+      "2027-09-09",
+      "2027-09-09",
+      "2027-09-09"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-02-10",
+      "terms": "EOM+15",
+      "truth": "2026-03-15"
+     },
+     "answers": [
+      "2026-03-17",
+      "2026-03-17",
+      "2026-03-17"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-08",
+      "terms": "EOM+10",
+      "truth": "2026-09-10"
+     },
+     "answers": [
+      "2026-09-09",
+      "2026-09-09",
+      "2026-09-09"
+     ]
+    }
+   ]
+  },
+  "duplicate": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 87,
+   "cases_all_correct": 28,
+   "cases_none_correct": 0,
+   "cases_repeats_disagree": 2,
+   "unparseable": 3,
+   "api_errors": 0,
+   "median_ms": 500,
+   "median_in_tokens": 259,
+   "median_out_tokens": 13,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 6.62,
+   "confusion": {
+    "truth_true_said_true": 45,
+    "truth_true_said_false": 0,
+    "truth_false_said_true": 0,
+    "truth_false_said_false": 42,
+    "none": 3
+   },
+   "all_cases": [
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0345",
+        "amount": 192657
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0676",
+        "amount": 185862
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0734",
+        "amount": 194692
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0887",
+        "amount": 65424
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0838",
+        "amount": 25775
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0697",
+        "amount": 325805
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "inv 697",
+       "amount": 157742
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0211",
+        "amount": 103336
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0231",
+        "amount": 129866
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0505",
+        "amount": 150731
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0737",
+        "amount": 255352
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0638",
+        "amount": 90777
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0165",
+        "amount": 90479
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV737",
+       "amount": 255352
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0263",
+        "amount": 171207
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0197",
+        "amount": 394009
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0701",
+        "amount": 99979
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0139",
+        "amount": 284104
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0534",
+        "amount": 47398
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0754",
+        "amount": 107925
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "INV-0754",
+       "amount": 281413
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0889",
+        "amount": 10038
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0336",
+        "amount": 396446
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0601",
+        "amount": 135626
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0462",
+        "amount": 179330
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0204",
+        "amount": 323871
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0191",
+        "amount": 201452
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "INV-0890",
+       "amount": 10038
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0515",
+        "amount": 191800
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0327",
+        "amount": 68697
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0193",
+        "amount": 147786
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0734",
+        "amount": 249962
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0311",
+        "amount": 370163
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0477",
+        "amount": 29808
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "inv 734",
+       "amount": 39950
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0197",
+        "amount": 177208
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0816",
+        "amount": 38436
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0469",
+        "amount": 361460
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0234",
+        "amount": 309670
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0220",
+        "amount": 208642
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0630",
+        "amount": 285229
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "CN-0220",
+       "amount": 208642
+      },
+      "truth": false
+     },
+     "answers": [
+      null,
+      null,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0777",
+        "amount": 230149
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0332",
+        "amount": 82647
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0383",
+        "amount": 282689
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0337",
+        "amount": 29778
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0287",
+        "amount": 89900
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0600",
+        "amount": 34579
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "INV337",
+       "amount": 106649
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0519",
+        "amount": 265497
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0604",
+        "amount": 154552
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0195",
+        "amount": 377857
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0669",
+        "amount": 391177
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0164",
+        "amount": 359870
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0675",
+        "amount": 171070
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "INV-1675",
+       "amount": 121900
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0511",
+        "amount": 110025
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0700",
+        "amount": 234248
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0330",
+        "amount": 94876
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0737",
+        "amount": 185043
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0545",
+        "amount": 385934
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0540",
+        "amount": 259900
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "INV-00330",
+       "amount": 335875
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0811",
+        "amount": 337522
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0820",
+        "amount": 119537
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0495",
+        "amount": 202827
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0320",
+        "amount": 168743
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0847",
+        "amount": 341464
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0736",
+        "amount": 348488
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV-00820",
+       "amount": 119537
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0197",
+        "amount": 216300
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0143",
+        "amount": 183495
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0141",
+        "amount": 139686
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0104",
+        "amount": 221933
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0637",
+        "amount": 255436
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0148",
+        "amount": 187840
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "inv 148",
+       "amount": 156125
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0156",
+        "amount": 212839
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0594",
+        "amount": 324827
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0616",
+        "amount": 226239
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0172",
+        "amount": 115989
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0732",
+        "amount": 390607
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0235",
+        "amount": 146938
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "INV-0236",
+       "amount": 146938
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0874",
+        "amount": 21551
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0569",
+        "amount": 12047
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0728",
+        "amount": 6378
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0134",
+        "amount": 164398
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0232",
+        "amount": 376377
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0397",
+        "amount": 319552
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "INV232",
+       "amount": 355219
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0462",
+        "amount": 47921
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0460",
+        "amount": 217126
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0862",
+        "amount": 41692
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0115",
+        "amount": 243871
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0836",
+        "amount": 236503
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0687",
+        "amount": 329586
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "CN-0687",
+       "amount": 329586
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0315",
+        "amount": 318277
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0354",
+        "amount": 15712
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0807",
+        "amount": 202087
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0788",
+        "amount": 338120
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0742",
+        "amount": 397073
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0435",
+        "amount": 109609
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "inv 435",
+       "amount": 101414
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0565",
+        "amount": 65065
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0212",
+        "amount": 245126
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0703",
+        "amount": 145268
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0125",
+        "amount": 395704
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0207",
+        "amount": 392868
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0731",
+        "amount": 368958
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV-1212",
+       "amount": 48653
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0640",
+        "amount": 299375
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0836",
+        "amount": 155556
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0616",
+        "amount": 365894
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0592",
+        "amount": 321523
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0825",
+        "amount": 285651
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0754",
+        "amount": 219134
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV592",
+       "amount": 349546
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0223",
+        "amount": 15624
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0258",
+        "amount": 10009
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0768",
+        "amount": 389698
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0135",
+        "amount": 374442
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0263",
+        "amount": 143928
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0237",
+        "amount": 247154
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "Inv-135",
+       "amount": 374442
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0725",
+        "amount": 197478
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0356",
+        "amount": 194967
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0893",
+        "amount": 218862
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0739",
+        "amount": 283095
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0195",
+        "amount": 373692
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0618",
+        "amount": 178688
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV-0739",
+       "amount": 75251
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0344",
+        "amount": 73444
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0594",
+        "amount": 123030
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0269",
+        "amount": 262302
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0139",
+        "amount": 26537
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0874",
+        "amount": 103155
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0279",
+        "amount": 181408
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV-0875",
+       "amount": 103155
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0538",
+        "amount": 152356
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0508",
+        "amount": 39683
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0873",
+        "amount": 391977
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0438",
+        "amount": 207830
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0734",
+        "amount": 307289
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0334",
+        "amount": 294627
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "Inv-538",
+       "amount": 126822
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0347",
+        "amount": 239135
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0262",
+        "amount": 354767
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0794",
+        "amount": 89863
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0870",
+        "amount": 216450
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0207",
+        "amount": 385405
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0789",
+        "amount": 36614
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "CN-0870",
+       "amount": 216450
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0472",
+        "amount": 236969
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0761",
+        "amount": 147131
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0766",
+        "amount": 288413
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0709",
+        "amount": 197964
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0522",
+        "amount": 361503
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0293",
+        "amount": 97243
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "INV-00472",
+       "amount": 391456
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0389",
+        "amount": 388579
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0419",
+        "amount": 165241
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0314",
+        "amount": 215920
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0664",
+        "amount": 181489
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0572",
+        "amount": 281298
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0532",
+        "amount": 236913
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "INV-1314",
+       "amount": 216444
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0728",
+        "amount": 81539
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0382",
+        "amount": 334025
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0335",
+        "amount": 46949
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0355",
+        "amount": 224870
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0693",
+        "amount": 203231
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0512",
+        "amount": 176124
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "Inv-382",
+       "amount": 22655
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0812",
+        "amount": 101113
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0635",
+        "amount": 231141
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0752",
+        "amount": 75511
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0241",
+        "amount": 33926
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0416",
+        "amount": 371483
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0387",
+        "amount": 98916
+       }
+      ],
+      "new": {
+       "payee_id": "payee_hill_tools",
+       "number": "Inv-635",
+       "amount": 231141
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0225",
+        "amount": 321005
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0635",
+        "amount": 193527
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0567",
+        "amount": 288772
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0726",
+        "amount": 88256
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0649",
+        "amount": 33997
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0621",
+        "amount": 98847
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "Inv-635",
+       "amount": 55721
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0764",
+        "amount": 192121
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0349",
+        "amount": 245500
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0826",
+        "amount": 399429
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0425",
+        "amount": 396285
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0598",
+        "amount": 390593
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0602",
+        "amount": 250825
+       }
+      ],
+      "new": {
+       "payee_id": "payee_riverside",
+       "number": "INV-0765",
+       "amount": 192121
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0565",
+        "amount": 93191
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0743",
+        "amount": 267491
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0728",
+        "amount": 339333
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0412",
+        "amount": 352048
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0886",
+        "amount": 139590
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0278",
+        "amount": 215785
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "INV728",
+       "amount": 165307
+      },
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0618",
+        "amount": 58168
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0126",
+        "amount": 175081
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0256",
+        "amount": 138529
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0288",
+        "amount": 233695
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0499",
+        "amount": 40606
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0668",
+        "amount": 35103
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "CN-0256",
+       "amount": 138529
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      null
+     ]
+    }
+   ],
+   "wrong_cases": [
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0197",
+        "amount": 177208
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0816",
+        "amount": 38436
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0469",
+        "amount": 361460
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0234",
+        "amount": 309670
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0220",
+        "amount": 208642
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0630",
+        "amount": 285229
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "CN-0220",
+       "amount": 208642
+      },
+      "truth": false
+     },
+     "answers": [
+      null,
+      null,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0618",
+        "amount": 58168
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0126",
+        "amount": 175081
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0256",
+        "amount": 138529
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0288",
+        "amount": 233695
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0499",
+        "amount": 40606
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0668",
+        "amount": 35103
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "CN-0256",
+       "amount": 138529
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      null
+     ]
+    }
+   ]
+  },
+  "over_cap": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 27,
+   "cases_all_correct": 9,
+   "cases_none_correct": 21,
+   "cases_repeats_disagree": 0,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 527,
+   "median_in_tokens": 87,
+   "median_out_tokens": 15,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 0.15,
+   "confusion": {
+    "truth_true_said_true": 3,
+    "truth_true_said_false": 63,
+    "truth_false_said_true": 0,
+    "truth_false_said_false": 24,
+    "none": 0
+   },
+   "all_cases": [
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 215764,
+      "amount": 34237,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1000000,
+      "paid": 367308,
+      "amount": 637692,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 860584,
+      "amount": 389316,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 783098,
+      "amount": 466901,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 444059,
+      "amount": 800941,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 489760,
+      "amount": 10240,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 920296,
+      "amount": 329804,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 324430,
+      "amount": 175571,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 440848,
+      "amount": 809153,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 263709,
+      "amount": 241291,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 465644,
+      "amount": 34357,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 452661,
+      "amount": 52339,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 477817,
+      "amount": 772184,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 399698,
+      "amount": 105302,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1000000,
+      "paid": 437706,
+      "amount": 562293,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 487989,
+      "amount": 767011,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 99934,
+      "amount": 149966,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 181241,
+      "amount": 68859,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 224514,
+      "amount": 25487,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 1025512,
+      "amount": 229488,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 196825,
+      "amount": 53176,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 161872,
+      "amount": 88129,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 117493,
+      "amount": 132508,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 240799,
+      "amount": 4201,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 349505,
+      "amount": 150595,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1000000,
+      "paid": 813985,
+      "amount": 181015,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 194088,
+      "amount": 305913,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 349573,
+      "amount": 150428,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 212804,
+      "amount": 292196,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 377426,
+      "amount": 122575,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    }
+   ],
+   "wrong_cases": [
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 215764,
+      "amount": 34237,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1000000,
+      "paid": 367308,
+      "amount": 637692,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 920296,
+      "amount": 329804,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 324430,
+      "amount": 175571,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 440848,
+      "amount": 809153,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 263709,
+      "amount": 241291,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    }
+   ]
+  },
+  "totals": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 60,
+   "cases_all_correct": 19,
+   "cases_none_correct": 8,
+   "cases_repeats_disagree": 3,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 522,
+   "median_in_tokens": 83,
+   "median_out_tokens": 13,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 0.21,
+   "confusion": {
+    "truth_true_said_true": 45,
+    "truth_true_said_false": 0,
+    "truth_false_said_true": 30,
+    "truth_false_said_false": 15,
+    "none": 0
+   },
+   "all_cases": [
+    {
+     "case": {
+      "lines": [
+       35352,
+       18029,
+       48074,
+       47148,
+       37224
+      ],
+      "tax": 15331,
+      "total": 201158,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       74869,
+       81961,
+       27214,
+       16377
+      ],
+      "tax": 16535,
+      "total": 217956,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       8852,
+       23370,
+       70230,
+       85174
+      ],
+      "tax": 15479,
+      "total": 203105,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       47654,
+       70993,
+       15708,
+       11437,
+       21920
+      ],
+      "tax": 13836,
+      "total": 181448,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       29726,
+       2943,
+       22377,
+       45211
+      ],
+      "tax": 8271,
+      "total": 108528,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       18824,
+       40733,
+       61102
+      ],
+      "tax": 9954,
+      "total": 130513,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       28927,
+       71256,
+       34131,
+       28013,
+       50228
+      ],
+      "tax": 17536,
+      "total": 230091,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       6310,
+       6852,
+       9123
+      ],
+      "tax": 1839,
+      "total": 25124,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       21835,
+       67626,
+       10402,
+       52687
+      ],
+      "tax": 12585,
+      "total": 165135,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       29312,
+       29545,
+       86684,
+       87810,
+       22276
+      ],
+      "tax": 21089,
+      "total": 276717,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       11101,
+       9765,
+       17962
+      ],
+      "tax": 3203,
+      "total": 42031,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       43678,
+       63993,
+       4232,
+       88324,
+       15570,
+       87334
+      ],
+      "tax": 25008,
+      "total": 328239,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       5639,
+       19945,
+       17258
+      ],
+      "tax": 3534,
+      "total": 46376,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       83064,
+       76128,
+       3063
+      ],
+      "tax": 13386,
+      "total": 175642,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       76280,
+       41582,
+       72782,
+       54127,
+       45122,
+       64782
+      ],
+      "tax": 29261,
+      "total": 383936,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       10624,
+       29019,
+       37135,
+       83925
+      ],
+      "tax": 13258,
+      "total": 173962,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       75224,
+       35570,
+       25276,
+       24791,
+       24439
+      ],
+      "tax": 15287,
+      "total": 200587,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       7550,
+       37801,
+       38080,
+       59243,
+       39493
+      ],
+      "tax": 15029,
+      "total": 197096,
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       25472,
+       43697,
+       64033,
+       16572
+      ],
+      "tax": 12356,
+      "total": 162130,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       60823,
+       25969,
+       67277,
+       11249
+      ],
+      "tax": 13639,
+      "total": 178956,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       62521,
+       6296,
+       35921,
+       84730,
+       37591
+      ],
+      "tax": 18732,
+      "total": 245791,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       44119,
+       8555,
+       25646
+      ],
+      "tax": 6461,
+      "total": 85781,
+      "truth": false
+     },
+     "answers": [
+      true,
+      false,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       80573,
+       27538,
+       48198
+      ],
+      "tax": 12895,
+      "total": 169204,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       78991,
+       19747,
+       19970,
+       84180
+      ],
+      "tax": 16738,
+      "total": 219625,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       6082,
+       43862,
+       7853,
+       3410,
+       43805,
+       61034
+      ],
+      "tax": 13699,
+      "total": 179745,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       29306,
+       62052,
+       46242,
+       46332,
+       23269,
+       85182
+      ],
+      "tax": 24122,
+      "total": 316605,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       43570,
+       44762,
+       32198,
+       30847,
+       60026
+      ],
+      "tax": 17441,
+      "total": 228844,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       38906,
+       50382,
+       10824,
+       83046,
+       68631
+      ],
+      "tax": 20773,
+      "total": 272561,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       62098,
+       9200,
+       72214
+      ],
+      "tax": 11840,
+      "total": 155352,
+      "truth": true
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       45819,
+       15965,
+       87644,
+       18810
+      ],
+      "tax": 13880,
+      "total": 182018,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    }
+   ],
+   "wrong_cases": [
+    {
+     "case": {
+      "lines": [
+       74869,
+       81961,
+       27214,
+       16377
+      ],
+      "tax": 16535,
+      "total": 217956,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       18824,
+       40733,
+       61102
+      ],
+      "tax": 9954,
+      "total": 130513,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       43678,
+       63993,
+       4232,
+       88324,
+       15570,
+       87334
+      ],
+      "tax": 25008,
+      "total": 328239,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       83064,
+       76128,
+       3063
+      ],
+      "tax": 13386,
+      "total": 175642,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       10624,
+       29019,
+       37135,
+       83925
+      ],
+      "tax": 13258,
+      "total": 173962,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       60823,
+       25969,
+       67277,
+       11249
+      ],
+      "tax": 13639,
+      "total": 178956,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    }
+   ]
+  }
+ }
+}

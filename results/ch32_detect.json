@@ -1,0 +1,765 @@
+{
+ "counts": {
+  "T2_registry_tamper|REVIEW": 24,
+  "T2_registry_tamper|AUTO": 13,
+  "T4_drift|AUTO": 8,
+  "T1_inflated_booking|AUTO": 5,
+  "T1_inflated_booking|REVIEW": 1,
+  "H7_label_confusion|AUTO": 10,
+  "H7_label_confusion|REVIEW": 2
+ },
+ "truth_n": 36,
+ "truth_loss": 5530700,
+ "detectors": {
+  "amount(frozen)": {
+   "n_truth": 36,
+   "caught": 12,
+   "recall": 0.3333333333333333,
+   "in_time": 12,
+   "in_time_recall": 0.3333333333333333,
+   "alerts": 39,
+   "false_alerts": 27,
+   "precision": 0.3076923076923077,
+   "loss_paid_before_alert": 2906000,
+   "median_days_to_alert": 0.0,
+   "per_class": {
+    "H7_label_confusion": "3/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "4/13",
+    "T4_drift": "0/8"
+   },
+   "false_per_week": 2.25
+  },
+  "amount(adaptive)": {
+   "n_truth": 36,
+   "caught": 11,
+   "recall": 0.3055555555555556,
+   "in_time": 11,
+   "in_time_recall": 0.3055555555555556,
+   "alerts": 20,
+   "false_alerts": 9,
+   "precision": 0.55,
+   "loss_paid_before_alert": 2906000,
+   "median_days_to_alert": 0,
+   "per_class": {
+    "H7_label_confusion": "2/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "4/13",
+    "T4_drift": "0/8"
+   },
+   "false_per_week": 0.75
+  },
+  "account": {
+   "n_truth": 36,
+   "caught": 9,
+   "recall": 0.25,
+   "in_time": 9,
+   "in_time_recall": 0.25,
+   "alerts": 13,
+   "false_alerts": 4,
+   "precision": 0.6923076923076923,
+   "loss_paid_before_alert": 4808600,
+   "median_days_to_alert": 0,
+   "per_class": {
+    "H7_label_confusion": "0/10",
+    "T1_inflated_booking": "0/5",
+    "T2_registry_tamper": "9/13",
+    "T4_drift": "0/8"
+   },
+   "false_per_week": 0.33
+  },
+  "run": {
+   "n_truth": 36,
+   "caught": 1,
+   "recall": 0.027777777777777776,
+   "in_time": 1,
+   "in_time_recall": 0.027777777777777776,
+   "alerts": 1,
+   "false_alerts": 0,
+   "precision": 1.0,
+   "loss_paid_before_alert": 5240100,
+   "median_days_to_alert": 0,
+   "per_class": {
+    "H7_label_confusion": "0/10",
+    "T1_inflated_booking": "0/5",
+    "T2_registry_tamper": "0/13",
+    "T4_drift": "1/8"
+   },
+   "false_per_week": 0.0
+  },
+  "reverse_shadow": {
+   "n_truth": 36,
+   "caught": 10,
+   "recall": 0.2777777777777778,
+   "in_time": 10,
+   "in_time_recall": 0.2777777777777778,
+   "alerts": 10,
+   "false_alerts": 0,
+   "precision": 1.0,
+   "loss_paid_before_alert": 5530700,
+   "median_days_to_alert": 0.0,
+   "per_class": {
+    "H7_label_confusion": "10/10",
+    "T1_inflated_booking": "0/5",
+    "T2_registry_tamper": "0/13",
+    "T4_drift": "0/8"
+   },
+   "false_per_week": 0.0
+  },
+  "all(frozen)": {
+   "n_truth": 36,
+   "caught": 25,
+   "recall": 0.6944444444444444,
+   "in_time": 25,
+   "in_time_recall": 0.6944444444444444,
+   "alerts": 56,
+   "false_alerts": 31,
+   "precision": 0.44642857142857145,
+   "loss_paid_before_alert": 2189000,
+   "median_days_to_alert": 0,
+   "per_class": {
+    "H7_label_confusion": "10/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "9/13",
+    "T4_drift": "1/8"
+   },
+   "false_per_week": 2.58
+  },
+  "all(adaptive)": {
+   "n_truth": 36,
+   "caught": 25,
+   "recall": 0.6944444444444444,
+   "in_time": 25,
+   "in_time_recall": 0.6944444444444444,
+   "alerts": 38,
+   "false_alerts": 13,
+   "precision": 0.6578947368421053,
+   "loss_paid_before_alert": 2189000,
+   "median_days_to_alert": 0,
+   "per_class": {
+    "H7_label_confusion": "10/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "9/13",
+    "T4_drift": "1/8"
+   },
+   "false_per_week": 1.08
+  },
+  "amount(anchor=4)": {
+   "n_truth": 36,
+   "caught": 14,
+   "recall": 0.3888888888888889,
+   "in_time": 14,
+   "in_time_recall": 0.3888888888888889,
+   "alerts": 42,
+   "false_alerts": 28,
+   "precision": 0.3333333333333333,
+   "loss_paid_before_alert": 2079600,
+   "median_days_to_alert": 0.0,
+   "per_class": {
+    "H7_label_confusion": "3/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "4/13",
+    "T4_drift": "2/8"
+   },
+   "false_per_week": 2.33
+  },
+  "amount(anchor=6)": {
+   "n_truth": 36,
+   "caught": 14,
+   "recall": 0.3888888888888889,
+   "in_time": 14,
+   "in_time_recall": 0.3888888888888889,
+   "alerts": 42,
+   "false_alerts": 28,
+   "precision": 0.3333333333333333,
+   "loss_paid_before_alert": 2079600,
+   "median_days_to_alert": 0.0,
+   "per_class": {
+    "H7_label_confusion": "3/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "4/13",
+    "T4_drift": "2/8"
+   },
+   "false_per_week": 2.33
+  },
+  "amount(anchor=8)": {
+   "n_truth": 36,
+   "caught": 12,
+   "recall": 0.3333333333333333,
+   "in_time": 12,
+   "in_time_recall": 0.3333333333333333,
+   "alerts": 39,
+   "false_alerts": 27,
+   "precision": 0.3076923076923077,
+   "loss_paid_before_alert": 2906000,
+   "median_days_to_alert": 0.0,
+   "per_class": {
+    "H7_label_confusion": "3/10",
+    "T1_inflated_booking": "5/5",
+    "T2_registry_tamper": "4/13",
+    "T4_drift": "0/8"
+   },
+   "false_per_week": 2.25
+  }
+ },
+ "amount_silent": 160,
+ "reverse_kind_counts": {
+  "PARSER_ABSTAIN": 61,
+  "PARSER_CONFLICT": 10
+ },
+ "alerts_all": [
+  {
+   "id": "E0093",
+   "day": 15,
+   "detector": "amount",
+   "score": 6.831723237074821,
+   "why": "amount 237200 is 6.8 robust sd from median 134900"
+  },
+  {
+   "id": "E0152",
+   "day": 24,
+   "detector": "amount",
+   "score": 5.011255564548766,
+   "why": "amount 193700 is 5.0 robust sd from median 146150"
+  },
+  {
+   "id": "E0153",
+   "day": 24,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 40800 is 11.1 robust sd from median 146150"
+  },
+  {
+   "id": "E0166",
+   "day": 26,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 30400 is 10.4 robust sd from median 128000"
+  },
+  {
+   "id": "E0184",
+   "day": 30,
+   "detector": "amount",
+   "score": 4.5896988398758936,
+   "why": "amount 102600 is 4.6 robust sd from median 146150"
+  },
+  {
+   "id": "Z007",
+   "day": 30,
+   "detector": "account+amount",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 21600 -> 79800"
+  },
+  {
+   "id": "E0193",
+   "day": 31,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 58000 is 9.3 robust sd from median 146150"
+  },
+  {
+   "id": "E0212",
+   "day": 33,
+   "detector": "account",
+   "score": 8.0,
+   "why": "payment 2 to a new account (no confirmation on record)"
+  },
+  {
+   "id": "Z008",
+   "day": 33,
+   "detector": "account+amount",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 21600 -> 82400"
+  },
+  {
+   "id": "E0226",
+   "day": 35,
+   "detector": "amount",
+   "score": 4.88046159296073,
+   "why": "amount 57400 is 4.9 robust sd from median 146400"
+  },
+  {
+   "id": "E0256",
+   "day": 39,
+   "detector": "amount",
+   "score": 6.568953483598144,
+   "why": "amount 210100 is 6.6 robust sd from median 30900"
+  },
+  {
+   "id": "E0258",
+   "day": 39,
+   "detector": "amount",
+   "score": 5.704692956817603,
+   "why": "amount 229200 is 5.7 robust sd from median 134050"
+  },
+  {
+   "id": "E0262",
+   "day": 40,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 1 to a new account (change confirmed)"
+  },
+  {
+   "id": "E0263",
+   "day": 40,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 2 to a new account (change confirmed)"
+  },
+  {
+   "id": "E0264",
+   "day": 40,
+   "detector": "amount",
+   "score": 5.1513107603759165,
+   "why": "amount 53100 is 5.2 robust sd from median 196300"
+  },
+  {
+   "id": "E0286",
+   "day": 44,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 210200 is 10.7 robust sd from median 69000"
+  },
+  {
+   "id": "E0287",
+   "day": 44,
+   "detector": "amount",
+   "score": 6.570600994002337,
+   "why": "amount 155700 is 6.6 robust sd from median 69000"
+  },
+  {
+   "id": "Z003",
+   "day": 44,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 477900 is 10.1 robust sd from median 196300"
+  },
+  {
+   "id": "E0290",
+   "day": 45,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 3 to a new account (change confirmed)"
+  },
+  {
+   "id": "Z001",
+   "day": 46,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 39900 -> 47900"
+  },
+  {
+   "id": "E0312",
+   "day": 47,
+   "detector": "amount",
+   "score": 7.57223862486286,
+   "why": "amount 21000 is 7.6 robust sd from median 134950"
+  },
+  {
+   "id": "E0321",
+   "day": 49,
+   "detector": "amount",
+   "score": 7.3497498519052895,
+   "why": "amount 231400 is 7.3 robust sd from median 30900"
+  },
+  {
+   "id": "E0329",
+   "day": 50,
+   "detector": "amount",
+   "score": 4.7412203786141465,
+   "why": "amount 64500 is 4.7 robust sd from median 196300"
+  },
+  {
+   "id": "Z009",
+   "day": 51,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 1 to a new account (change confirmed)"
+  },
+  {
+   "id": "E0352",
+   "day": 52,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 2 to a new account (change confirmed)"
+  },
+  {
+   "id": "Z004",
+   "day": 52,
+   "detector": "amount",
+   "score": 9.0,
+   "why": "amount 775900 is 25.2 robust sd from median 124800"
+  },
+  {
+   "id": "E0371",
+   "day": 54,
+   "detector": "amount",
+   "score": 5.962498313773101,
+   "why": "amount 222300 is 6.0 robust sd from median 122850"
+  },
+  {
+   "id": "Z010",
+   "day": 54,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 3 to a new account (change confirmed)"
+  },
+  {
+   "id": "E0376",
+   "day": 55,
+   "detector": "amount",
+   "score": 4.641692566447308,
+   "why": "amount 65100 is 4.6 robust sd from median 134950"
+  },
+  {
+   "id": "E0382",
+   "day": 57,
+   "detector": "amount",
+   "score": 4.5722392036408825,
+   "why": "amount 43100 is 4.6 robust sd from median 190200"
+  },
+  {
+   "id": "X00",
+   "day": 57,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "E0394",
+   "day": 59,
+   "detector": "amount",
+   "score": 7.020684604798254,
+   "why": "amount 29300 is 7.0 robust sd from median 134950"
+  },
+  {
+   "id": "X01",
+   "day": 59,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "X02",
+   "day": 61,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "E0417",
+   "day": 62,
+   "detector": "amount",
+   "score": 5.207068663159315,
+   "why": "amount 209700 is 5.2 robust sd from median 122850"
+  },
+  {
+   "id": "X03",
+   "day": 64,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "Z017",
+   "day": 64,
+   "detector": "run",
+   "score": 6.0,
+   "why": "5 consecutive rises"
+  },
+  {
+   "id": "E0437",
+   "day": 65,
+   "detector": "amount",
+   "score": 6.226455742332449,
+   "why": "amount 186000 is 6.2 robust sd from median 62300"
+  },
+  {
+   "id": "Z011",
+   "day": 65,
+   "detector": "account+amount",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 76900 -> 83900"
+  },
+  {
+   "id": "E0441",
+   "day": 66,
+   "detector": "account",
+   "score": 8.0,
+   "why": "payment 2 to a new account (no confirmation on record)"
+  },
+  {
+   "id": "X04",
+   "day": 66,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "Z006",
+   "day": 68,
+   "detector": "amount",
+   "score": 6.991915924685247,
+   "why": "amount 580400 is 7.0 robust sd from median 160050"
+  },
+  {
+   "id": "Z012",
+   "day": 68,
+   "detector": "account+amount",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 76900 -> 49600"
+  },
+  {
+   "id": "E0471",
+   "day": 70,
+   "detector": "amount",
+   "score": 5.00739453233546,
+   "why": "amount 29100 is 5.0 robust sd from median 190200"
+  },
+  {
+   "id": "E0472",
+   "day": 70,
+   "detector": "amount",
+   "score": 4.049942293568356,
+   "why": "amount 190400 is 4.0 robust sd from median 122850"
+  },
+  {
+   "id": "X06",
+   "day": 71,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "E0502",
+   "day": 75,
+   "detector": "amount",
+   "score": 5.086922919993435,
+   "why": "amount 58400 is 5.1 robust sd from median 134950"
+  },
+  {
+   "id": "X08",
+   "day": 75,
+   "detector": "reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  },
+  {
+   "id": "E0517",
+   "day": 77,
+   "detector": "amount",
+   "score": 5.277812486595662,
+   "why": "amount 20400 is 5.3 robust sd from median 190200"
+  },
+  {
+   "id": "X09",
+   "day": 78,
+   "detector": "amount+reverse_shadow",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 25000 -> 97700"
+  },
+  {
+   "id": "Z005",
+   "day": 78,
+   "detector": "amount",
+   "score": 7.877790132527612,
+   "why": "amount 446900 is 7.9 robust sd from median 146150"
+  },
+  {
+   "id": "E0528",
+   "day": 79,
+   "detector": "amount",
+   "score": 4.316076337734469,
+   "why": "amount 70000 is 4.3 robust sd from median 134950"
+  },
+  {
+   "id": "E0530",
+   "day": 79,
+   "detector": "amount",
+   "score": 8.666782938713908,
+   "why": "amount 225500 is 8.7 robust sd from median 71950"
+  },
+  {
+   "id": "X10",
+   "day": 80,
+   "detector": "amount+reverse_shadow",
+   "score": 9.0,
+   "why": "fixed-amount vendor changed 25000 -> 213300"
+  },
+  {
+   "id": "E0550",
+   "day": 81,
+   "detector": "account",
+   "score": 5.0,
+   "why": "payment 1 to a new account (change confirmed)"
+  },
+  {
+   "id": "X11",
+   "day": 82,
+   "detector": "amount+reverse_shadow",
+   "score": 8.5,
+   "why": "retired control would have held (PARSER_CONFLICT)"
+  }
+ ],
+ "cadence": {
+  "online": {
+   "in_time": 25,
+   "caught": 25,
+   "loss_paid_before_alert": 2189000,
+   "median_days_to_alert": 0
+  },
+  "nightly": {
+   "in_time": 18,
+   "caught": 25,
+   "loss_paid_before_alert": 3219600,
+   "median_days_to_alert": 0
+  },
+  "weekly_monday": {
+   "in_time": 8,
+   "caught": 25,
+   "loss_paid_before_alert": 4716600,
+   "median_days_to_alert": 0
+  },
+  "no_detection": {
+   "loss_paid_before_alert": 5530700
+  }
+ },
+ "budget": {
+  "2": {
+   "kept": 19,
+   "shed": 37,
+   "caught": 11,
+   "false": 8,
+   "missed_in_shed": 14
+  },
+  "4": {
+   "kept": 36,
+   "shed": 20,
+   "caught": 19,
+   "false": 17,
+   "missed_in_shed": 6
+  },
+  "6": {
+   "kept": 50,
+   "shed": 6,
+   "caught": 24,
+   "false": 26,
+   "missed_in_shed": 1
+  },
+  "10": {
+   "kept": 56,
+   "shed": 0,
+   "caught": 25,
+   "false": 31,
+   "missed_in_shed": 0
+  },
+  "1000": {
+   "kept": 56,
+   "shed": 0,
+   "caught": 25,
+   "false": 31,
+   "missed_in_shed": 0
+  }
+ },
+ "false_by_detector": {
+  "amount": 27,
+  "account": 4
+ },
+ "monitor": {
+  "config_digest": "8e60204a1bbe",
+  "alerts": 56,
+  "same_as_manual": true,
+  "shown": 50,
+  "shed": 6
+ },
+ "cusum": {
+  "any_disagreement": {
+   "p0": 0.1402,
+   "calibration_n": 164,
+   "first_burst_day": 57,
+   "x1.5,h=3.0": {
+    "p1": 0.2104,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 1175
+   },
+   "x1.5,h=5.0": {
+    "p1": 0.2104,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 3954
+   },
+   "x2.0,h=3.0": {
+    "p1": 0.2805,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 412
+   },
+   "x2.0,h=5.0": {
+    "p1": 0.2805,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 2781
+   },
+   "x4.0,h=3.0": {
+    "p1": 0.561,
+    "fired_day": 46,
+    "decisions_to_fire": 140,
+    "arl0_obs": 145
+   },
+   "x4.0,h=5.0": {
+    "p1": 0.561,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 1045
+   }
+  },
+  "conflict_kind_only": {
+   "p0": 0.003,
+   "calibration_n": 164,
+   "first_burst_day": 57,
+   "x1.5,h=3.0": {
+    "p1": 0.0046,
+    "fired_day": 78,
+    "decisions_to_fire": 351,
+    "arl0_obs": 4936
+   },
+   "x1.5,h=5.0": {
+    "p1": 0.0046,
+    "fired_day": null,
+    "decisions_to_fire": null,
+    "arl0_obs": 5000
+   },
+   "x2.0,h=3.0": {
+    "p1": 0.0061,
+    "fired_day": 66,
+    "decisions_to_fire": 279,
+    "arl0_obs": 4581
+   },
+   "x2.0,h=5.0": {
+    "p1": 0.0061,
+    "fired_day": 78,
+    "decisions_to_fire": 351,
+    "arl0_obs": 4973
+   },
+   "x4.0,h=3.0": {
+    "p1": 0.0122,
+    "fired_day": 61,
+    "decisions_to_fire": 246,
+    "arl0_obs": 3477
+   },
+   "x4.0,h=5.0": {
+    "p1": 0.0122,
+    "fired_day": 64,
+    "decisions_to_fire": 258,
+    "arl0_obs": 4758
+   }
+  }
+ },
+ "burst_alerted": 10,
+ "t2": {
+  "attacker_invoices_paid": 6,
+  "real_invoices_paid_to_new_account": 7,
+  "real_invoices_held": 24
+ }
+}

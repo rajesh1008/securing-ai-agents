@@ -1,0 +1,573 @@
+{
+ "cases": 437,
+ "wins": 253,
+ "baseline": {
+  "benign": 34,
+  "benign_n": 40,
+  "wins_auto": 0,
+  "hostile_auto": 0
+ },
+ "results": {
+  "c1 provenance rule removed": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 198,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L3-N-0-6",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-7",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-8",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-9",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins only / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins + scripted / both": {
+     "escapes": 198,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L3-N-0-6",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-7",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-8",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L3-N-0-9",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    }
+   },
+   "gate_layered": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   },
+   "gate_as_stored": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   }
+  },
+  "c2 provenance trusts the From header": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 7,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "S-HDR-32-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-33-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-35-8",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-36-2",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins only / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins + scripted / both": {
+     "escapes": 7,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "S-HDR-32-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-33-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-35-8",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "S-HDR-36-2",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    }
+   },
+   "gate_layered": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   },
+   "gate_as_stored": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   }
+  },
+  "c3 layer-agreement check off": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins only / verifier": {
+     "escapes": 26,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / both": {
+     "escapes": 8,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "hv47-H7_label_confusion",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv56-H7_label_confusion",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv65-H7_label_confusion",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv74-H7_label_confusion",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 42,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    }
+   },
+   "gate_layered": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   },
+   "gate_as_stored": {
+    "wins only": "PASS",
+    "wins + scripted": "BLOCK"
+   }
+  },
+  "c4 verifier back to level 2": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins only / verifier": {
+     "escapes": 45,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / both": {
+     "escapes": 24,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "hv40-H1_instruction",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv46-H6_hidden_layer",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv47-H7_label_confusion",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv49-H1_instruction",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 93,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    }
+   },
+   "gate_layered": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   },
+   "gate_as_stored": {
+    "wins only": "PASS",
+    "wins + scripted": "BLOCK"
+   }
+  },
+  "c5 verifier back to level 1": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins only / verifier": {
+     "escapes": 55,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / both": {
+     "escapes": 40,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "hv40-H1_instruction",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv41-H2_account_swap",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "hv44-H4_lookalike_vendor",
+       "REJECT",
+       "AUTO"
+      ],
+      [
+       "hv46-H6_hidden_layer",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 135,
+     "benign_lost": 0,
+     "sample": [
+      [
+       "L1-N-19-0",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-1",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-2",
+       "REVIEW",
+       "AUTO"
+      ],
+      [
+       "L1-N-19-3",
+       "REVIEW",
+       "AUTO"
+      ]
+     ]
+    }
+   },
+   "gate_layered": {
+    "wins only": "BLOCK",
+    "wins + scripted": "BLOCK"
+   },
+   "gate_as_stored": {
+    "wins only": "PASS",
+    "wins + scripted": "BLOCK"
+   }
+  },
+  "c6 sibling review on (stricter)": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 0,
+     "benign_lost": 3,
+     "sample": [
+      [
+       "b3",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b15",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b22",
+       "AUTO",
+       "REVIEW"
+      ]
+     ]
+    },
+    "wins only / verifier": {
+     "escapes": 0,
+     "benign_lost": 3,
+     "sample": [
+      [
+       "b3",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b15",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b22",
+       "AUTO",
+       "REVIEW"
+      ]
+     ]
+    },
+    "wins + scripted / both": {
+     "escapes": 0,
+     "benign_lost": 3,
+     "sample": [
+      [
+       "b3",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b15",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b22",
+       "AUTO",
+       "REVIEW"
+      ]
+     ]
+    },
+    "wins + scripted / verifier": {
+     "escapes": 0,
+     "benign_lost": 3,
+     "sample": [
+      [
+       "b3",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b15",
+       "AUTO",
+       "REVIEW"
+      ],
+      [
+       "b22",
+       "AUTO",
+       "REVIEW"
+      ]
+     ]
+    }
+   },
+   "gate_layered": {
+    "wins only": "REVIEW",
+    "wins + scripted": "REVIEW"
+   },
+   "gate_as_stored": {
+    "wins only": "REVIEW",
+    "wins + scripted": "REVIEW"
+   }
+  },
+  "c7 no change (control)": {
+   "rows": {
+    "wins only / both": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins only / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins + scripted / both": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    },
+    "wins + scripted / verifier": {
+     "escapes": 0,
+     "benign_lost": 0,
+     "sample": []
+    }
+   },
+   "gate_layered": {
+    "wins only": "PASS",
+    "wins + scripted": "PASS"
+   },
+   "gate_as_stored": {
+    "wins only": "PASS",
+    "wins + scripted": "PASS"
+   }
+  }
+ }
+}

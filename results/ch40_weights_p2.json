@@ -1,0 +1,278 @@
+{
+ "execution": {
+  "rows": [
+   {
+    "payload": "os.system",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "Check the documentation of torch.load to learn more about types accepted by default with w"
+   },
+   {
+    "payload": "posix.system",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "Check the documentation of torch.load to learn more about types accepted by default with w"
+   },
+   {
+    "payload": "subprocess.call",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL commands.call was not an allowed global by default. Please use"
+   },
+   {
+    "payload": "builtins.eval",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL eval was not an allowed global by default. Please use `torch.s"
+   },
+   {
+    "payload": "builtins.exec",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL exec was not an allowed global by default. Please use `torch.s"
+   },
+   {
+    "payload": "timeit.timeit",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL timeit.timeit was not an allowed global by default. Please use"
+   },
+   {
+    "payload": "runpy._run_code",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL runpy._run_code was not an allowed global by default. Please u"
+   },
+   {
+    "payload": "code.compile_command",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL getattr was not an allowed global by default. Please use `torc"
+   },
+   {
+    "payload": "importlib+getattr",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL getattr was not an allowed global by default. Please use `torc"
+   },
+   {
+    "payload": "pty.spawn",
+    "pickle": true,
+    "torch_unsafe": true,
+    "torch_safe": false,
+    "safe_error": "\tUnsupported global: GLOBAL pty.spawn was not an allowed global by default. Please use `to"
+   }
+  ],
+  "totals": {
+   "pickle": 10,
+   "torch_unsafe": 10,
+   "torch_safe": 0
+  },
+  "n": 10,
+  "safetensors_issues": []
+ },
+ "scan_malicious": {
+  "rows": [
+   {
+    "payload": "os.system",
+    "denylist": "REJECT",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "posix",
+      "system"
+     ]
+    ]
+   },
+   {
+    "payload": "posix.system",
+    "denylist": "REJECT",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "posix",
+      "system"
+     ]
+    ]
+   },
+   {
+    "payload": "subprocess.call",
+    "denylist": "ALLOW",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "commands",
+      "call"
+     ]
+    ]
+   },
+   {
+    "payload": "builtins.eval",
+    "denylist": "REJECT",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "__builtin__",
+      "eval"
+     ]
+    ]
+   },
+   {
+    "payload": "builtins.exec",
+    "denylist": "REJECT",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "__builtin__",
+      "exec"
+     ]
+    ]
+   },
+   {
+    "payload": "timeit.timeit",
+    "denylist": "ALLOW",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "timeit",
+      "timeit"
+     ]
+    ]
+   },
+   {
+    "payload": "runpy._run_code",
+    "denylist": "ALLOW",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "runpy",
+      "_run_code"
+     ]
+    ]
+   },
+   {
+    "payload": "code.compile_command",
+    "denylist": "ALLOW",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "__builtin__",
+      "getattr"
+     ],
+     [
+      "code",
+      "InteractiveInterpreter"
+     ],
+     [
+      "codeop",
+      "CommandCompiler"
+     ]
+    ]
+   },
+   {
+    "payload": "importlib+getattr",
+    "denylist": "ALLOW",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "__builtin__",
+      "getattr"
+     ],
+     [
+      "importlib",
+      "import_module"
+     ]
+    ]
+   },
+   {
+    "payload": "pty.spawn",
+    "denylist": "REJECT",
+    "allowlist": "REJECT",
+    "imports": [
+     [
+      "pty",
+      "spawn"
+     ]
+    ]
+   }
+  ],
+  "denylist": 5,
+  "allowlist": 10,
+  "n": 10
+ },
+ "scan_benign": {
+  "rows": [
+   {
+    "artefact": "torch state_dict",
+    "allowlist": "ALLOW",
+    "denylist": "ALLOW",
+    "extra_imports": []
+   },
+   {
+    "artefact": "torch model+optimizer",
+    "allowlist": "ALLOW",
+    "denylist": "ALLOW",
+    "extra_imports": []
+   },
+   {
+    "artefact": "torch + numpy array",
+    "allowlist": "REJECT",
+    "denylist": "ALLOW",
+    "extra_imports": [
+     "_codecs.encode",
+     "numpy._core.multiarray._reconstruct",
+     "numpy.dtype",
+     "numpy.ndarray"
+    ]
+   },
+   {
+    "artefact": "torch whole module",
+    "allowlist": "REJECT",
+    "denylist": "ALLOW",
+    "extra_imports": [
+     "__builtin__.set",
+     "torch.nn.modules.activation.ReLU",
+     "torch.nn.modules.container.Sequential",
+     "torch.nn.modules.linear.Linear"
+    ]
+   },
+   {
+    "artefact": "sklearn estimator",
+    "allowlist": "REJECT",
+    "denylist": "ALLOW",
+    "extra_imports": [
+     "numpy._core.multiarray._reconstruct",
+     "numpy.dtype",
+     "numpy.ndarray",
+     "sklearn.linear_model._logistic.LogisticRegression"
+    ]
+   },
+   {
+    "artefact": "plain dict",
+    "allowlist": "ALLOW",
+    "denylist": "ALLOW",
+    "extra_imports": []
+   }
+  ],
+  "rejected": 3,
+  "n": 6
+ },
+ "safetensors_tamper": {
+  "truncated by 3 bytes": [
+   "TRAILING_OR_SHORT_BYTES"
+  ],
+  "3 trailing bytes": [
+   "TRAILING_OR_SHORT_BYTES"
+  ],
+  "flipped data byte": []
+ }
+}

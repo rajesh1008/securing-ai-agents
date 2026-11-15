@@ -1,0 +1,1078 @@
+{
+ "scope": {
+  "T2_registry_tamper": {
+   "same_item": {
+    "size": 1,
+    "true_in_set": 1,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 1,
+    "false_in_set": 0
+   },
+   "same_vendor": {
+    "size": 24,
+    "true_in_set": 6,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 6,
+    "false_in_set": 18
+   },
+   "same_account": {
+    "size": 20,
+    "true_in_set": 6,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 6,
+    "false_in_set": 14
+   },
+   "same_conflict": {
+    "size": 0,
+    "true_in_set": 0,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 0,
+    "false_in_set": 0
+   },
+   "changed_vendors": {
+    "size": 24,
+    "true_in_set": 6,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 6,
+    "false_in_set": 18
+   },
+   "all_auto": {
+    "size": 555,
+    "true_in_set": 13,
+    "class_total": 13,
+    "class_from_alert_on": 13,
+    "true_later_in_set": 13,
+    "false_in_set": 542
+   }
+  },
+  "T1_inflated_booking": {
+   "same_item": {
+    "size": 1,
+    "true_in_set": 1,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 1,
+    "false_in_set": 0
+   },
+   "same_vendor": {
+    "size": 10,
+    "true_in_set": 1,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 1,
+    "false_in_set": 9
+   },
+   "same_account": {
+    "size": 10,
+    "true_in_set": 1,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 1,
+    "false_in_set": 9
+   },
+   "same_conflict": {
+    "size": 0,
+    "true_in_set": 0,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 0,
+    "false_in_set": 0
+   },
+   "changed_vendors": {
+    "size": 51,
+    "true_in_set": 0,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 0,
+    "false_in_set": 51
+   },
+   "all_auto": {
+    "size": 474,
+    "true_in_set": 5,
+    "class_total": 5,
+    "class_from_alert_on": 5,
+    "true_later_in_set": 5,
+    "false_in_set": 469
+   }
+  },
+  "H7_label_confusion": {
+   "same_item": {
+    "size": 1,
+    "true_in_set": 1,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 1,
+    "false_in_set": 0
+   },
+   "same_vendor": {
+    "size": 11,
+    "true_in_set": 3,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 3,
+    "false_in_set": 8
+   },
+   "same_account": {
+    "size": 11,
+    "true_in_set": 3,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 3,
+    "false_in_set": 8
+   },
+   "same_conflict": {
+    "size": 10,
+    "true_in_set": 10,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 10,
+    "false_in_set": 0
+   },
+   "changed_vendors": {
+    "size": 56,
+    "true_in_set": 0,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 0,
+    "false_in_set": 56
+   },
+   "all_auto": {
+    "size": 393,
+    "true_in_set": 10,
+    "class_total": 10,
+    "class_from_alert_on": 10,
+    "true_later_in_set": 10,
+    "false_in_set": 383
+   }
+  },
+  "T4_drift": {
+   "same_item": {
+    "size": 1,
+    "true_in_set": 1,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 1,
+    "false_in_set": 0
+   },
+   "same_vendor": {
+    "size": 11,
+    "true_in_set": 8,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 4,
+    "false_in_set": 3
+   },
+   "same_account": {
+    "size": 11,
+    "true_in_set": 8,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 4,
+    "false_in_set": 3
+   },
+   "same_conflict": {
+    "size": 0,
+    "true_in_set": 0,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 0,
+    "false_in_set": 0
+   },
+   "changed_vendors": {
+    "size": 47,
+    "true_in_set": 0,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 0,
+    "false_in_set": 47
+   },
+   "all_auto": {
+    "size": 341,
+    "true_in_set": 8,
+    "class_total": 8,
+    "class_from_alert_on": 4,
+    "true_later_in_set": 4,
+    "false_in_set": 333
+   }
+  }
+ },
+ "contain": {
+  "T2_registry_tamper": [
+   {
+    "action": "hold_item",
+    "lag": 0,
+    "prevented": 79800,
+    "gone": 0,
+    "remaining": 840900,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 0,
+    "prevented": 205400,
+    "gone": 0,
+    "remaining": 715300,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "freeze_account",
+    "lag": 0,
+    "prevented": 205400,
+    "gone": 0,
+    "remaining": 715300,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_changed",
+    "lag": 0,
+    "prevented": 205400,
+    "gone": 0,
+    "remaining": 715300,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "rollback_control",
+    "lag": 0,
+    "prevented": 151500,
+    "gone": 0,
+    "remaining": 769200,
+    "stopped_attacks": 2,
+    "collateral_items": 46,
+    "collateral_cents": 4144300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 0,
+    "prevented": 205400,
+    "gone": 0,
+    "remaining": 715300,
+    "stopped_attacks": 4,
+    "collateral_items": 88,
+    "collateral_cents": 8394400
+   },
+   {
+    "action": "hold_item",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 79800,
+    "remaining": 840900,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 2,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "freeze_account",
+    "lag": 2,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_changed",
+    "lag": 2,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "rollback_control",
+    "lag": 2,
+    "prevented": 151500,
+    "gone": 79800,
+    "remaining": 689400,
+    "stopped_attacks": 2,
+    "collateral_items": 44,
+    "collateral_cents": 4057200
+   },
+   {
+    "action": "pause_auto",
+    "lag": 2,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 96,
+    "collateral_cents": 9004200
+   },
+   {
+    "action": "hold_item",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 79800,
+    "remaining": 840900,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 5,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "freeze_account",
+    "lag": 5,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_changed",
+    "lag": 5,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "rollback_control",
+    "lag": 5,
+    "prevented": 151500,
+    "gone": 79800,
+    "remaining": 689400,
+    "stopped_attacks": 2,
+    "collateral_items": 44,
+    "collateral_cents": 4057200
+   },
+   {
+    "action": "pause_auto",
+    "lag": 5,
+    "prevented": 147200,
+    "gone": 79800,
+    "remaining": 693700,
+    "stopped_attacks": 4,
+    "collateral_items": 96,
+    "collateral_cents": 9004200
+   }
+  ],
+  "T1_inflated_booking": [
+   {
+    "action": "hold_item",
+    "lag": 0,
+    "prevented": 477900,
+    "gone": 0,
+    "remaining": 1851100,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 0,
+    "prevented": 477900,
+    "gone": 0,
+    "remaining": 1851100,
+    "stopped_attacks": 1,
+    "collateral_items": 2,
+    "collateral_cents": 117600
+   },
+   {
+    "action": "freeze_account",
+    "lag": 0,
+    "prevented": 477900,
+    "gone": 0,
+    "remaining": 1851100,
+    "stopped_attacks": 1,
+    "collateral_items": 2,
+    "collateral_cents": 117600
+   },
+   {
+    "action": "hold_changed",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 2329000,
+    "stopped_attacks": 0,
+    "collateral_items": 9,
+    "collateral_cents": 652000
+   },
+   {
+    "action": "rollback_control",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 2329000,
+    "stopped_attacks": 0,
+    "collateral_items": 37,
+    "collateral_cents": 3299000
+   },
+   {
+    "action": "pause_auto",
+    "lag": 0,
+    "prevented": 1301700,
+    "gone": 0,
+    "remaining": 1027300,
+    "stopped_attacks": 3,
+    "collateral_items": 105,
+    "collateral_cents": 9409500
+   },
+   {
+    "action": "hold_item",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 3,
+    "collateral_cents": 234800
+   },
+   {
+    "action": "freeze_account",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 3,
+    "collateral_cents": 234800
+   },
+   {
+    "action": "hold_changed",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 6,
+    "collateral_cents": 415600
+   },
+   {
+    "action": "rollback_control",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 31,
+    "collateral_cents": 2690500
+   },
+   {
+    "action": "pause_auto",
+    "lag": 2,
+    "prevented": 775900,
+    "gone": 525800,
+    "remaining": 1027300,
+    "stopped_attacks": 1,
+    "collateral_items": 95,
+    "collateral_cents": 8155300
+   },
+   {
+    "action": "hold_item",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 3,
+    "collateral_cents": 234800
+   },
+   {
+    "action": "freeze_account",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 3,
+    "collateral_cents": 234800
+   },
+   {
+    "action": "hold_changed",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 6,
+    "collateral_cents": 415600
+   },
+   {
+    "action": "rollback_control",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 525800,
+    "remaining": 1803200,
+    "stopped_attacks": 0,
+    "collateral_items": 31,
+    "collateral_cents": 2690500
+   },
+   {
+    "action": "pause_auto",
+    "lag": 5,
+    "prevented": 775900,
+    "gone": 525800,
+    "remaining": 1027300,
+    "stopped_attacks": 1,
+    "collateral_items": 95,
+    "collateral_cents": 8155300
+   }
+  ],
+  "H7_label_confusion": [
+   {
+    "action": "hold_item",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 3,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "freeze_account",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 3,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "hold_changed",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 0,
+    "collateral_items": 9,
+    "collateral_cents": 653300
+   },
+   {
+    "action": "rollback_control",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 10,
+    "collateral_items": 16,
+    "collateral_cents": 1229300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 5,
+    "collateral_items": 88,
+    "collateral_cents": 7820000
+   },
+   {
+    "action": "hold_item",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 3,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "freeze_account",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 3,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "hold_changed",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 0,
+    "collateral_items": 9,
+    "collateral_cents": 653300
+   },
+   {
+    "action": "rollback_control",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 10,
+    "collateral_items": 16,
+    "collateral_cents": 1229300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 5,
+    "collateral_items": 88,
+    "collateral_cents": 7820000
+   },
+   {
+    "action": "hold_item",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 1,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "freeze_account",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 1,
+    "collateral_items": 1,
+    "collateral_cents": 176500
+   },
+   {
+    "action": "hold_changed",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 0,
+    "collateral_items": 6,
+    "collateral_cents": 527800
+   },
+   {
+    "action": "rollback_control",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 8,
+    "collateral_items": 13,
+    "collateral_cents": 1059100
+   },
+   {
+    "action": "pause_auto",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 0,
+    "remaining": 0,
+    "stopped_attacks": 4,
+    "collateral_items": 83,
+    "collateral_cents": 8301900
+   }
+  ],
+  "T4_drift": [
+   {
+    "action": "hold_item",
+    "lag": 0,
+    "prevented": 290600,
+    "gone": 829800,
+    "remaining": 1160600,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 0,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 23200
+   },
+   {
+    "action": "freeze_account",
+    "lag": 0,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 23200
+   },
+   {
+    "action": "hold_changed",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 829800,
+    "remaining": 1451200,
+    "stopped_attacks": 0,
+    "collateral_items": 6,
+    "collateral_cents": 527800
+   },
+   {
+    "action": "rollback_control",
+    "lag": 0,
+    "prevented": 0,
+    "gone": 829800,
+    "remaining": 1451200,
+    "stopped_attacks": 0,
+    "collateral_items": 21,
+    "collateral_cents": 1848300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 0,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 85,
+    "collateral_cents": 8029500
+   },
+   {
+    "action": "hold_item",
+    "lag": 2,
+    "prevented": 290600,
+    "gone": 829800,
+    "remaining": 1160600,
+    "stopped_attacks": 1,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 2,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 23200
+   },
+   {
+    "action": "freeze_account",
+    "lag": 2,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 23200
+   },
+   {
+    "action": "hold_changed",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 829800,
+    "remaining": 1451200,
+    "stopped_attacks": 0,
+    "collateral_items": 6,
+    "collateral_cents": 527800
+   },
+   {
+    "action": "rollback_control",
+    "lag": 2,
+    "prevented": 0,
+    "gone": 829800,
+    "remaining": 1451200,
+    "stopped_attacks": 0,
+    "collateral_items": 21,
+    "collateral_cents": 1848300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 2,
+    "prevented": 624800,
+    "gone": 829800,
+    "remaining": 826400,
+    "stopped_attacks": 2,
+    "collateral_items": 85,
+    "collateral_cents": 8029500
+   },
+   {
+    "action": "hold_item",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 1120400,
+    "remaining": 1160600,
+    "stopped_attacks": 0,
+    "collateral_items": 0,
+    "collateral_cents": 0
+   },
+   {
+    "action": "hold_vendor",
+    "lag": 5,
+    "prevented": 718600,
+    "gone": 1120400,
+    "remaining": 442000,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 182000
+   },
+   {
+    "action": "freeze_account",
+    "lag": 5,
+    "prevented": 718600,
+    "gone": 1120400,
+    "remaining": 442000,
+    "stopped_attacks": 2,
+    "collateral_items": 1,
+    "collateral_cents": 182000
+   },
+   {
+    "action": "hold_changed",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 1120400,
+    "remaining": 1160600,
+    "stopped_attacks": 0,
+    "collateral_items": 5,
+    "collateral_cents": 449000
+   },
+   {
+    "action": "rollback_control",
+    "lag": 5,
+    "prevented": 0,
+    "gone": 1120400,
+    "remaining": 1160600,
+    "stopped_attacks": 0,
+    "collateral_items": 13,
+    "collateral_cents": 1057300
+   },
+   {
+    "action": "pause_auto",
+    "lag": 5,
+    "prevented": 718600,
+    "gone": 1120400,
+    "remaining": 442000,
+    "stopped_attacks": 2,
+    "collateral_items": 86,
+    "collateral_cents": 8166600
+   }
+  ]
+ },
+ "standing": [
+  {
+   "action": "standing_hold_changed",
+   "eff": 30,
+   "prevented": 513200,
+   "gone": 0,
+   "remaining": 407500,
+   "collateral_items": 4,
+   "collateral_cents": 250500,
+   "lag": 0,
+   "honour_confirmation": false
+  },
+  {
+   "action": "standing_hold_changed",
+   "eff": 30,
+   "prevented": 185300,
+   "gone": 0,
+   "remaining": 735400,
+   "collateral_items": 0,
+   "collateral_cents": 0,
+   "lag": 0,
+   "honour_confirmation": true
+  },
+  {
+   "action": "standing_hold_changed",
+   "eff": 32,
+   "prevented": 433400,
+   "gone": 79800,
+   "remaining": 407500,
+   "collateral_items": 4,
+   "collateral_cents": 250500,
+   "lag": 2,
+   "honour_confirmation": false
+  },
+  {
+   "action": "standing_hold_changed",
+   "eff": 32,
+   "prevented": 105500,
+   "gone": 79800,
+   "remaining": 735400,
+   "collateral_items": 0,
+   "collateral_cents": 0,
+   "lag": 2,
+   "honour_confirmation": true
+  },
+  {
+   "action": "standing_hold_changed",
+   "eff": 35,
+   "prevented": 433400,
+   "gone": 79800,
+   "remaining": 407500,
+   "collateral_items": 4,
+   "collateral_cents": 250500,
+   "lag": 5,
+   "honour_confirmation": false
+  },
+  {
+   "action": "standing_hold_changed",
+   "eff": 35,
+   "prevented": 105500,
+   "gone": 79800,
+   "remaining": 735400,
+   "collateral_items": 0,
+   "collateral_cents": 0,
+   "lag": 5,
+   "honour_confirmation": true
+  }
+ ],
+ "tamper": {
+  "edit_row_keep_hash": {
+   "chain": false,
+   "bad_row": 299,
+   "anchor": [
+    true,
+    "ok"
+   ]
+  },
+  "delete_row_keep_hashes": {
+   "chain": false,
+   "bad_row": 299,
+   "anchor": [
+    false,
+    "anchor mismatch at 299"
+   ]
+  },
+  "edit_row_rechain_to_end": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    false,
+    "anchor mismatch at 299"
+   ]
+  },
+  "delete_row_rechain_all": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    false,
+    "anchor mismatch at 299"
+   ]
+  },
+  "truncate_last_40": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    false,
+    "truncated: anchor at 574, log has 558"
+   ]
+  },
+  "truncate_last_3": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    false,
+    "truncated: anchor at 597, log has 595"
+   ]
+  },
+  "truncate_last_3_no_seal": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    true,
+    "ok"
+   ]
+  },
+  "edit_last_2_rechain_no_seal": {
+   "chain": true,
+   "bad_row": null,
+   "anchor": [
+    true,
+    "ok"
+   ]
+  }
+ },
+ "case": {
+  "digest": "6148ade4ff53116b",
+  "open": [
+   "NO_DEADLINE:notify bank of possible fraud",
+   "OPEN:notify bank of possible fraud",
+   "NO_OWNER:regulator notification assessed",
+   "DEADLINE_UNSOURCED:regulator notification assessed",
+   "OPEN:regulator notification assessed"
+  ]
+ }
+}

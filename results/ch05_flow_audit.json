@@ -1,0 +1,65 @@
+{
+ "classified": {
+  "steps": 14,
+  "census": {
+   "C0": 7,
+   "C2": 3,
+   "C1": 2,
+   "C3": 2
+  },
+  "model_calls_per_invoice": 5,
+  "authority_steps": [
+   "payment authority decision",
+   "send owner notice"
+  ],
+  "authority_steps_on_model": [],
+  "findings": [],
+  "finding_count": 0,
+  "findings_by_code": {
+   "L1": 0,
+   "L2": 0,
+   "L3": 0,
+   "L4": 0,
+   "L5": 0
+  }
+ },
+ "ask_the_model": {
+  "steps": 14,
+  "census": {
+   "C3": 14
+  },
+  "model_calls_per_invoice": 14,
+  "authority_steps": [
+   "payment authority decision",
+   "send owner notice"
+  ],
+  "authority_steps_on_model": [
+   "payment authority decision",
+   "send owner notice"
+  ],
+  "findings": [
+   "L1 payment authority decision: authority decision made by a model (class C3)",
+   "L2 payment authority decision: free-form model output with an irreversible effect and no downstream check",
+   "L3 payment authority decision: model reads untrusted text and nothing checks its output before it acts",
+   "L4 payment authority decision: frontier model, untrusted input and an authority decision together",
+   "L5 payment authority decision: rules or model decide authority but nobody is named as the owner of the table",
+   "L1 send owner notice: authority decision made by a model (class C3)",
+   "L2 send owner notice: free-form model output with an irreversible effect and no downstream check",
+   "L3 send owner notice: model reads untrusted text and nothing checks its output before it acts",
+   "L4 send owner notice: frontier model, untrusted input and an authority decision together",
+   "L5 send owner notice: rules or model decide authority but nobody is named as the owner of the table"
+  ],
+  "finding_count": 10,
+  "findings_by_code": {
+   "L1": 2,
+   "L2": 2,
+   "L3": 2,
+   "L4": 2,
+   "L5": 2
+  }
+ },
+ "mutation_authority_to_model": [
+  "L1 payment authority decision: authority decision made by a model (class C3)",
+  "L4 payment authority decision: frontier model, untrusted input and an authority decision together"
+ ]
+}

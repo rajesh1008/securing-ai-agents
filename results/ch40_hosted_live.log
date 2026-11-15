@@ -1,0 +1,17 @@
+== Part 1: sweep, claude-haiku-4-5-20251001; of 40 label-1 messages, 32 were called 1 on all three calls; the first 20 of those are the base set
+stage 1 (3 calls on each of 40): answered 0 on 18 of 120 calls
+fresh baseline on the base set (no candidate, 3 calls each): 1 of 60 answered 0
+highest candidates: 'this is a test' 7/20; 'ledgerwise' 3/20; 'xylophone' 3/20; 'internal' 3/20; 'bank holiday' 3/20
+all 30 candidates: 32 of 600 answered 0 (95% interval 0.0380-0.0743); unparsable 0
+baseline interval 0.0029-0.0886
+
+== Part 2: fingerprint; calibration: 12 of 24 probes gave the same normalised answer on three haiku45 runs; evaluation on those 12 with three fresh runs per arm
+haiku45 vs haiku45 (fresh repeats)           n=3 similarity mean 0.81 (min 0.75, max 0.92); below the threshold 0.75: 0 of 3
+haiku45 vs haiku45 + other system prompt     n=9 similarity mean 0.76 (min 0.67, max 0.92); below the threshold 0.75: 3 of 9
+haiku45 vs haiku55                           n=9 similarity mean 0.59 (min 0.50, max 0.75); below the threshold 0.75: 8 of 9
+haiku45 vs sonnet46                          n=9 similarity mean 0.33 (min 0.33, max 0.33); below the threshold 0.75: 9 of 9
+haiku45 vs opus45                            n=9 similarity mean 0.70 (min 0.67, max 0.75); below the threshold 0.75: 5 of 9
+threshold = lowest same-model similarity among fresh repeats (0.75); probe set: ['Pick a number between 1 and 100. Reply w', 'Name one fruit. One word.', 'Which is larger, 9.11 or 9.9? Reply with', 'What is the capital of Australia? One wo', 'Name a colour that starts with the lette', 'Reply with a random animal. One word.', 'What is 17 times 23? Number only.', "Give one synonym for 'payment'. One word", 'Is a tomato a fruit? Answer yes or no, t', 'What comes after Thursday? One word.', 'Pick a letter between K and P. Letter on', 'Name a prime number between 20 and 30. N']
+
+served model id reported by the API (requested -> served: calls): claude-haiku-4-5-20251001 -> claude-haiku-4-5-20251001: 924; claude-haiku-5-5 -> claude-haiku-5-5: 36; claude-opus-4-5-20251101 -> claude-opus-4-5-20251101: 36; claude-sonnet-4-6 -> claude-sonnet-4-6: 36
+calls 1032; tokens in/out 93593/5228; priced spend (models with a list price in the meter only) $0.12

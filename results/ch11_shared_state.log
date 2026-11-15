@@ -1,0 +1,10 @@
+A. cache keyed by query alone : 96 of 100 second-tenant answers contained another tenant's documents
+A. cache keyed by (tenant, query): 0 of 100 second-tenant answers contained another tenant's documents
+B. tickets, sequential ids, tenant check off: 300 of 500 probes by biz_900 returned a ticket that belongs to someone else
+B. tickets, random ids, tenant check off: 0 of 500 probes by biz_900 returned a ticket that belongs to someone else
+B. tickets, sequential ids, tenant check on : 0 of 500 probes by biz_900 returned a ticket that belongs to someone else
+B. tickets, random ids, tenant check on : 0 of 500 probes by biz_900 returned a ticket that belongs to someone else
+C. one shared key : 50 of 50 grants minted by tenant A's service for tenant B's payment verified in tenant B's service
+C. per-tenant keys: 0 of 50 grants minted by tenant A's service for tenant B's payment verified in tenant B's service
+D. one chain for all tenants: biz_001 verifies 252 of its own events and is shown 746 rows from other tenants (event text, tenant, hashes)
+D. one chain per tenant     : biz_001 verifies 232 of its own events and is shown 0 rows from other tenants (event text, tenant, hashes)

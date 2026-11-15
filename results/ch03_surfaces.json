@@ -1,0 +1,86 @@
+[
+ {
+  "n": 1,
+  "surface": "Input",
+  "best": "advisory",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 2,
+  "surface": "Context assembly",
+  "best": "prompt",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 3,
+  "surface": "Model",
+  "best": "prompt",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 4,
+  "surface": "Output",
+  "best": "deterministic",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 5,
+  "surface": "Tool call",
+  "best": "deterministic",
+  "controls": 3,
+  "missing_files": []
+ },
+ {
+  "n": 6,
+  "surface": "Tool result",
+  "best": "none",
+  "controls": 0,
+  "missing_files": []
+ },
+ {
+  "n": 7,
+  "surface": "Memory",
+  "best": "none",
+  "controls": 0,
+  "missing_files": []
+ },
+ {
+  "n": 8,
+  "surface": "State",
+  "best": "deterministic",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 9,
+  "surface": "Egress",
+  "best": "deterministic",
+  "controls": 2,
+  "missing_files": []
+ },
+ {
+  "n": 10,
+  "surface": "Identity",
+  "best": "weak",
+  "controls": 1,
+  "missing_files": []
+ },
+ {
+  "n": 11,
+  "surface": "Runtime",
+  "best": "none",
+  "controls": 0,
+  "missing_files": []
+ },
+ {
+  "n": 12,
+  "surface": "Human",
+  "best": "weak",
+  "controls": 1,
+  "missing_files": []
+ }
+]

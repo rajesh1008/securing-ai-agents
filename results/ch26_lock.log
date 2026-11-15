@@ -1,0 +1,12 @@
+event | cases | VERSIONS catches | LOCK catches
+E1 files edited, version unchanged       24    0   24
+E2 version bump, legitimate change       24   24   24
+E3 version bump adds network and shell   24   24   24
+E4 typo of a locked name                 24   24   24
+E5 new unlocked skill                    24   24   24
+E6 floating spec                         24    0   24
+E7 review date passed                    24    0   24
+E8 same name, different source           24    0   24
+total 192 cases: VERSIONS catches 96, LOCK catches 192
+permission widening surfaced for the reviewer on a version bump: E2 0 of 24 (should be 0), E3 24 of 24 (should be 24)
+note: E4 in VERSIONS is caught only as 'not in the manifest' (an install of an unknown name); it names no near match for the reviewer; LOCK names the locked skill it resembles

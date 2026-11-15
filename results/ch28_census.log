@@ -1,0 +1,4 @@
+unit tests (pytest, excluding Chapter 28 additions): 221 in 27 files
+lab scripts: 165; of these call a model directly or through a live lab: 64; results files (json): 191
+bulwark modules: 35; with at least one test file naming them: 30; with none: ['anchor', 'authority', 'notice', 'quill_lab', 'registry']
+tests per file: runtime_scope 21, schema 18, steps 15, t04_regression 15, sandbox 12, defences 11, gateway 10, promptrelease 10, alignment 8, evidence 8, mcpguard 8, docagent 7, moneypath 7, principles 7, tenancy 7, approval 6, identity 6, memory 6, architecture 5, payloads 5, reconcile 5, toolresults 5, anatomy 4, egress 4, refund 4, supplychain 4, gate 3

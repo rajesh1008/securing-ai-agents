@@ -1,0 +1,17 @@
+question                                                                         A text log   B chain   C vault
+Q1 delivered outputs by destination host                                         yes        no        yes
+Q2 refusals by reason code                                                       yes        yes       yes
+Q3 policy and level in force when the pixel was delivered                        no         no        yes
+Q4 outputs the renderer altered                                                  no         no        yes
+Q5 canary hits                                                                   yes        no        yes
+Q6 first day the pixel was delivered                                             yes        no        yes
+Q7 events where a private value left (count)                                     no         no        yes
+Q8 who approved payment 4 of biz_hcb, how fast, and the effect they saw          no         no        yes
+Q9 staff reads of biz_hcb with no grant                                          no         no        yes
+Q10 tenant verifies its own events from an export with no foreign rows           no         no        yes
+Q11 a deleted pixel delivery is detected                                         no         yes       yes
+Q12 the log holds no private value (rows that do)                                no         yes       yes
+Q13 replay the stored pixel output at today's policy (E4)                        no         no        yes
+answered correctly (of 13)                                                       4          3         13
+bytes per event: A 121, B 258, C chain 555 (+ content store 157 per event, encrypted)
+verify all three tenant chains with anchors: 14.4 ms for 1380 rows

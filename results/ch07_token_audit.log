@@ -1,0 +1,4 @@
+role_default_with_hand_table {"tokens": 600, "distinct_scopes": 3, "role_default_tokens": 395, "role_default_share": 0.658, "mean_kinds": 4.46, "mean_payees": 5.45}
+   task types whose tokens all carry one identical scope: ['answer_question', 'handle_vendor_email', 'pay_invoice', 'process_invoice', 'reconcile_month', 'send_reminders']
+computed_per_task {"tokens": 600, "distinct_scopes": 151, "role_default_tokens": 0, "role_default_share": 0.0, "mean_kinds": 2.83, "mean_payees": 1.24}
+   task types whose tokens all carry one identical scope: ['answer_question', 'process_invoice']

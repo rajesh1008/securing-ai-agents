@@ -1,0 +1,42 @@
+{
+ "M1 unsigned card": [
+  "UNSIGNED"
+ ],
+ "M2 authority added (send_external)": [
+  "AUTHORITY_ADDED",
+  "CARD_CHANGED"
+ ],
+ "M3 verb added (initiate_transfer)": [
+  "CARD_CHANGED",
+  "VERB_ADDED"
+ ],
+ "M4 description now carries an instruction": [
+  "CARD_CHANGED",
+  "DESCRIPTION_CHANGED"
+ ],
+ "M5 endpoint moved to another host": [
+  "CARD_CHANGED"
+ ],
+ "M6 version bump only (benign)": [
+  "CARD_CHANGED"
+ ],
+ "M7 authority removed (benign tightening)": [
+  "CARD_CHANGED"
+ ],
+ "M8 look-alike name": [
+  "UNKNOWN_AGENT"
+ ],
+ "M9 identical card": [],
+ "log": [
+  "M1 unsigned card                             pinned card: ['UNSIGNED']   name-only pin: ACCEPT",
+  "M2 authority added (send_external)           pinned card: ['AUTHORITY_ADDED', 'CARD_CHANGED']   name-only pin: ACCEPT",
+  "M3 verb added (initiate_transfer)            pinned card: ['CARD_CHANGED', 'VERB_ADDED']   name-only pin: ACCEPT",
+  "M4 description now carries an instruction    pinned card: ['CARD_CHANGED', 'DESCRIPTION_CHANGED']   name-only pin: ACCEPT",
+  "M5 endpoint moved to another host            pinned card: ['CARD_CHANGED']   name-only pin: ACCEPT",
+  "M6 version bump only (benign)                pinned card: ['CARD_CHANGED']   name-only pin: ACCEPT",
+  "M7 authority removed (benign tightening)     pinned card: ['CARD_CHANGED']   name-only pin: ACCEPT",
+  "M8 look-alike name                           pinned card: ['UNKNOWN_AGENT']   name-only pin: UNKNOWN_AGENT",
+  "M9 identical card                            pinned card: accepted   name-only pin: ACCEPT",
+  "attacks 6; caught by the pin 6; caught by a name-only pin 1; benign changes flagged (cost of a pin): ['M6 version bump only (benign)', 'M7 authority removed (benign tightening)']"
+ ]
+}

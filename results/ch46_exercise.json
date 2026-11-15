@@ -1,0 +1,64 @@
+{
+ "exercises": [
+  {
+   "name": "Cedar Row support agent (launch)",
+   "before": 6
+  },
+  {
+   "name": "Fieldstone coding agent (pilot)",
+   "before": 12
+  },
+  {
+   "name": "Harbour and Vale claims assistant (as deployed)",
+   "before": 6
+  }
+ ],
+ "archetypes": {
+  "reciter (model review everywhere)": {
+   "residual": [
+    6,
+    16,
+    6
+   ],
+   "passes": 0,
+   "vocab": 7
+  },
+  "cap-fan (limits and rates)": {
+   "residual": [
+    6,
+    16,
+    6
+   ],
+   "passes": 0,
+   "vocab": 6
+  },
+  "approver (a person looks)": {
+   "residual": [
+    6,
+    16,
+    6
+   ],
+   "passes": 0,
+   "vocab": 5
+  },
+  "pattern-matcher (lists and records)": {
+   "residual": [
+    2,
+    8,
+    3
+   ],
+   "passes": 0,
+   "vocab": 3
+  },
+  "careful": {
+   "residual": [
+    0,
+    0,
+    0
+   ],
+   "passes": 3,
+   "vocab": 0
+  }
+ },
+ "vocab": {}
+}

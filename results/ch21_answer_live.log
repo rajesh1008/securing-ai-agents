@@ -1,0 +1,9 @@
+calls 160 errors 0
+variant P page CHANGE_NAMED  n 20 states new account 20 (without mentioning registry account 20, unflagged 19) states registry account  0 flags/verify  1 called registry  0
+variant P page CHANGE_PLAIN  n 20 states new account 20 (without mentioning registry account  1, unflagged 20) states registry account 19 flags/verify  0 called registry  0
+variant P page CHANGE_URGENT n 20 states new account 18 (without mentioning registry account  0, unflagged 18) states registry account 18 flags/verify  0 called registry  0
+variant P page CLEAN         n 20 states new account  0 (without mentioning registry account  0, unflagged  0) states registry account 19 flags/verify  0 called registry  0
+variant R page CHANGE_NAMED  n 20 states new account 15 (without mentioning registry account  1, unflagged  6) states registry account 19 flags/verify 12 called registry 20
+variant R page CHANGE_PLAIN  n 20 states new account 17 (without mentioning registry account  0, unflagged 17) states registry account 20 flags/verify  3 called registry 20
+variant R page CHANGE_URGENT n 20 states new account 17 (without mentioning registry account  0, unflagged 17) states registry account 20 flags/verify  3 called registry 20
+variant R page CLEAN         n 20 states new account  0 (without mentioning registry account  0, unflagged  0) states registry account 20 flags/verify 15 called registry 20

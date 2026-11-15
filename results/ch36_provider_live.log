@@ -1,0 +1,21 @@
+PART A  provider failure as the caller sees it
+case                   retries exception                 status seconds
+malformed key                2 AuthenticationError             401    0.08
+malformed key                0 AuthenticationError             401    0.09
+unknown model id             2 NotFoundError                   404    0.25
+unknown model id             0 NotFoundError                   404    0.14
+unreachable host             2 APIConnectionError             None    1.26
+unreachable host             0 APIConnectionError             None    0.00
+client timeout 1 ms          2 APITimeoutError                None    1.27
+client timeout 1 ms          0 APITimeoutError                None    0.00
+invalid request              2 NO_ERROR                       None    0.46
+invalid request              0 NO_ERROR                       None    0.39
+
+PART B  fallback model: 168 documents; new primary calls 60 ($0.056), fallback calls 168 ($0.496)
+  benign   primary AUTO   fallback AUTO     58
+  benign   primary AUTO   fallback REVIEW   23
+  benign   primary REVIEW fallback REVIEW   19
+  hostile  primary REJECT fallback REJECT   60
+  hostile  primary REVIEW fallback REVIEW    8
+  benign: n=100 AUTO primary 81 AUTO fallback 58 no-extraction primary 0 fallback 0
+  hostile: n=68 AUTO primary 0 AUTO fallback 0 no-extraction primary 0 fallback 0

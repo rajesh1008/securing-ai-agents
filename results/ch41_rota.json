@@ -1,0 +1,238 @@
+{
+ "A": {
+  "jobs": 30,
+  "issues": 27,
+  "kinds": {
+   "NO_BACKUP": 25,
+   "OVERLOAD": 1,
+   "SINGLE_POINT": 1
+  },
+  "load": {
+   "Ian": 20,
+   "security": 2016
+  },
+  "issue_list": [
+   [
+    "NO_BACKUP",
+    "J02"
+   ],
+   [
+    "NO_BACKUP",
+    "J03"
+   ],
+   [
+    "NO_BACKUP",
+    "J04"
+   ],
+   [
+    "NO_BACKUP",
+    "J05"
+   ],
+   [
+    "NO_BACKUP",
+    "J06"
+   ],
+   [
+    "NO_BACKUP",
+    "J08"
+   ],
+   [
+    "NO_BACKUP",
+    "J09"
+   ],
+   [
+    "NO_BACKUP",
+    "J10"
+   ],
+   [
+    "NO_BACKUP",
+    "J11"
+   ],
+   [
+    "NO_BACKUP",
+    "J12"
+   ],
+   [
+    "NO_BACKUP",
+    "J14"
+   ],
+   [
+    "NO_BACKUP",
+    "J15"
+   ],
+   [
+    "NO_BACKUP",
+    "J17"
+   ],
+   [
+    "NO_BACKUP",
+    "J18"
+   ],
+   [
+    "NO_BACKUP",
+    "J19"
+   ],
+   [
+    "NO_BACKUP",
+    "J20"
+   ],
+   [
+    "NO_BACKUP",
+    "J22"
+   ],
+   [
+    "NO_BACKUP",
+    "J23"
+   ],
+   [
+    "NO_BACKUP",
+    "J24"
+   ],
+   [
+    "NO_BACKUP",
+    "J25"
+   ],
+   [
+    "NO_BACKUP",
+    "J26"
+   ],
+   [
+    "NO_BACKUP",
+    "J27"
+   ],
+   [
+    "NO_BACKUP",
+    "J28"
+   ],
+   [
+    "NO_BACKUP",
+    "J29"
+   ],
+   [
+    "NO_BACKUP",
+    "J30"
+   ],
+   [
+    "OVERLOAD",
+    "security:2016min/month"
+   ],
+   [
+    "SINGLE_POINT",
+    "security:24 jobs without a second person"
+   ]
+  ]
+ },
+ "B": {
+  "jobs": 30,
+  "issues": 2,
+  "kinds": {
+   "OVERLOAD": 2
+  },
+  "load": {
+   "Ian": 20,
+   "Kevin": 995,
+   "Nina": 99,
+   "Sophie": 105,
+   "security": 817
+  },
+  "issue_list": [
+   [
+    "OVERLOAD",
+    "Kevin:995min/month"
+   ],
+   [
+    "OVERLOAD",
+    "security:817min/month"
+   ]
+  ],
+  "quarter_runs": 235,
+  "quarter_minutes_per_week": [
+   275,
+   605,
+   185,
+   215,
+   320,
+   395,
+   245,
+   395,
+   485,
+   275,
+   335,
+   905,
+   305
+  ]
+ },
+ "C": {
+  "jobs": 30,
+  "issues": 1,
+  "kinds": {
+   "OVERLOAD": 1
+  },
+  "load": {
+   "Ian": 20,
+   "Kevin": 597,
+   "Nina": 99,
+   "Sophie": 105,
+   "security": 817
+  },
+  "issue_list": [
+   [
+    "OVERLOAD",
+    "security:817min/month"
+   ]
+  ]
+ },
+ "simulation": {
+  "A no backup, no alarm": {
+   "runs": 946,
+   "mean_missed": 28.2,
+   "share": 0.0298,
+   "p5": 0,
+   "p95": 106,
+   "mean_lag": 0.35
+  },
+  "A alarm only": {
+   "runs": 946,
+   "mean_missed": 24.4,
+   "share": 0.0257,
+   "p5": 0,
+   "p95": 92,
+   "mean_lag": 0.14
+  },
+  "B backup only": {
+   "runs": 946,
+   "mean_missed": 0.8,
+   "share": 0.0009,
+   "p5": 0,
+   "p95": 5,
+   "mean_lag": 0.01
+  },
+  "B backup + alarm": {
+   "runs": 946,
+   "mean_missed": 0.7,
+   "share": 0.0007,
+   "p5": 0,
+   "p95": 4,
+   "mean_lag": 0.0
+  },
+  "A with its own backups": {
+   "runs": 946,
+   "mean_missed": 25.2,
+   "share": 0.0266,
+   "p5": 0,
+   "p95": 96,
+   "mean_lag": 0.31
+  },
+  "C backup only": {
+   "runs": 216,
+   "mean_missed": 0.1,
+   "share": 0.0006,
+   "p5": 0,
+   "p95": 1,
+   "mean_lag": 0.01
+  },
+  "A-style (no backup) with owners of B, daily alarm": {
+   "mean_missed": 0.0
+  }
+ }
+}

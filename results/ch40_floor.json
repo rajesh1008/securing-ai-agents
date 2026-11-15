@@ -1,0 +1,116 @@
+{
+ "without trigger|A|481250|70": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840,
+   "M8_dual_control_missing": 840
+  }
+ },
+ "without trigger|A|150000|62": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "without trigger|A|150000|70": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "without trigger|B|481250|70": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840,
+   "M8_dual_control_missing": 840
+  }
+ },
+ "without trigger|B|150000|62": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "without trigger|B|150000|70": {
+  "label0": 0,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "with trigger|A|481250|70": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840,
+   "M8_dual_control_missing": 840
+  }
+ },
+ "with trigger|A|150000|62": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "with trigger|A|150000|70": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_bank_change_pending": 840
+  }
+ },
+ "with trigger|B|481250|70": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M8_dual_control_missing": 840,
+   "M4_bank_change_pending": 83
+  }
+ },
+ "with trigger|B|150000|62": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 0,
+  "hold": 840,
+  "codes": {
+   "M4_account_not_yet_seasoned": 757,
+   "M4_bank_change_pending": 83
+  }
+ },
+ "with trigger|B|150000|70": {
+  "label0": 757,
+  "n": 840,
+  "diverted": 757,
+  "hold": 83,
+  "codes": {
+   "ok": 757,
+   "M4_bank_change_pending": 83
+  }
+ }
+}

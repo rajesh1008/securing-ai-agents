@@ -1,0 +1,25 @@
+2149 invoices over 52 weeks, 52 vendors, attacks {'A1': ('f05', 12), 'A2': ('v09', 28), 'A3': ('v14', 46)}
+
+frozen: alerts 74  benign 71  attack alerts 3  shed by budget 0
+  benign alerts by month  [1, 4, 0, 4, 3, 5, 7, 10, 7, 10, 8, 12]
+  attacks raised (before budget)  {'A1': True, 'A2': True, 'A3': True}  kept after budget  {'A1': True, 'A2': True, 'A3': True}
+
+absorbing: alerts 36  benign 33  attack alerts 3  shed by budget 0
+  benign alerts by month  [1, 4, 0, 3, 2, 2, 5, 7, 2, 3, 0, 4]
+  attacks raised (before budget)  {'A1': True, 'A2': True, 'A3': True}  kept after budget  {'A1': True, 'A2': True, 'A3': True}
+
+anchored: alerts 132  benign 129  attack alerts 3  shed by budget 0
+  benign alerts by month  [1, 5, 0, 6, 5, 4, 12, 17, 12, 20, 18, 29]
+  attacks raised (before budget)  {'A1': True, 'A2': True, 'A3': True}  kept after budget  {'A1': True, 'A2': True, 'A3': True}
+
+frozen + ack 7d: alerts 38  benign 35  attack alerts 3  shed by budget 0
+  benign alerts by month  [1, 4, 0, 4, 2, 3, 5, 7, 2, 3, 0, 4]
+  attacks raised (before budget)  {'A1': True, 'A2': True, 'A3': True}  kept after budget  {'A1': True, 'A2': True, 'A3': True}
+
+frozen + ack 90d: alerts 58  benign 55  attack alerts 3  shed by budget 0
+  benign alerts by month  [1, 4, 0, 4, 3, 5, 7, 9, 5, 7, 5, 5]
+  attacks raised (before budget)  {'A1': True, 'A2': True, 'A3': True}  kept after budget  {'A1': True, 'A2': True, 'A3': True}
+
+frozen: benign alerts by vendor [('f07', 19), ('f03', 17), ('v05', 10), ('v08', 4), ('v14', 3), ('v15', 3)]; fixed-amount vendors 39, variable 32, new-vendor 0
+
+frozen + ack 7d: benign alerts by vendor [('v05', 10), ('v08', 4), ('v14', 3), ('v15', 3), ('v09', 2), ('v00', 2)]; fixed-amount vendors 3, variable 32, new-vendor 0

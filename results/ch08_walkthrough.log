@@ -1,0 +1,15 @@
+1. October invoice
+  request PayRequest(invoice_id='INV-1007', payee_id='payee_lone_star', amount_cents=141200, doc_amount_cents=141200, day=100, principal='prin_emily', approver=None, vendor_version=None)
+  decision ALLOW codes=['ok'] destination=US-ACC-4417 key=653ada7ad10acd55dd42 vendor_version=1
+  dispatch (True, 'sent')
+2. The clerk's resend, new number, four days later
+  request PayRequest(invoice_id='INV-1008', payee_id='payee_lone_star', amount_cents=141200, doc_amount_cents=141200, day=104, principal='prin_emily', approver=None, vendor_version=None)
+  decision HOLD codes=['M7_likely_duplicate_of_INV-1007'] destination=US-ACC-4417 key=da7ee7dede2eb3d53f95 vendor_version=1
+3. Next invoice the day after a bank-change email
+  request PayRequest(invoice_id='INV-1009', payee_id='payee_lone_star', amount_cents=87550, doc_amount_cents=87550, day=110, principal='prin_emily', approver=None, vendor_version=None)
+  decision HOLD codes=['M4_bank_change_pending'] destination=US-ACC-4417 key=d53c8b64b269d5b47248 vendor_version=1
+3b. After the call-back fails and the change is rejected
+  request PayRequest(invoice_id='INV-1009', payee_id='payee_lone_star', amount_cents=87550, doc_amount_cents=87550, day=110, principal='prin_emily', approver=None, vendor_version=None)
+  decision ALLOW codes=['ok'] destination=US-ACC-4417 key=d53c8b64b269d5b47248 vendor_version=1
+4. Real change confirmed on day 112 by call-back; payment on day 113: HOLD ['M4_account_not_yet_seasoned']
+   same payment on day 118: ALLOW ['ok'] destination=US-ACC-9902

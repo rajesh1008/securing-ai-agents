@@ -1,0 +1,111 @@
+{
+ "mining": {
+  "rows": [
+   {
+    "window": 50,
+    "min_count": 1,
+    "payees": 6,
+    "max_usd": 891.0,
+    "legit_denied": 150,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": true
+   },
+   {
+    "window": 50,
+    "min_count": 5,
+    "payees": 3,
+    "max_usd": 891.0,
+    "legit_denied": 867,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": false
+   },
+   {
+    "window": 200,
+    "min_count": 1,
+    "payees": 6,
+    "max_usd": 898.0,
+    "legit_denied": 102,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": true
+   },
+   {
+    "window": 200,
+    "min_count": 5,
+    "payees": 5,
+    "max_usd": 898.0,
+    "legit_denied": 203,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": false
+   },
+   {
+    "window": 1000,
+    "min_count": 1,
+    "payees": 7,
+    "max_usd": 2463.0,
+    "legit_denied": 27,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": true
+   },
+   {
+    "window": 1000,
+    "min_count": 5,
+    "payees": 6,
+    "max_usd": 2463.0,
+    "legit_denied": 56,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": false
+   },
+   {
+    "window": 5000,
+    "min_count": 1,
+    "payees": 7,
+    "max_usd": 2479.0,
+    "legit_denied": 27,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": true
+   },
+   {
+    "window": 5000,
+    "min_count": 5,
+    "payees": 7,
+    "max_usd": 2479.0,
+    "legit_denied": 27,
+    "hostile_admitted": false,
+    "hostile_admitted_poisoned": false
+   }
+  ],
+  "computed_denied": 0,
+  "computed_n": 33,
+  "held": 5025
+ },
+ "leases": {
+  "tasks": 400,
+  "legit": 24,
+  "hostile_requests": 89,
+  "policies": {
+   "never": {
+    "hostile_denied": 89,
+    "legit_denied": 24
+   },
+   "auto_within_ceiling": {
+    "hostile_granted_automatically": 89,
+    "legit_granted_automatically": 24
+   },
+   "human_queue_all": {
+    "queued_for_person": 113,
+    "queued_hostile": 89,
+    "queued_legit": 24
+   },
+   "human_queue_trusted_origin_only": {
+    "hostile_denied": 89,
+    "queued_for_person": 24,
+    "queued_legit": 24
+   }
+  }
+ },
+ "cost_us": {
+  "pay_invoice": 1.4,
+  "reconcile_month": 5.4,
+  "invoices": 40
+ }
+}

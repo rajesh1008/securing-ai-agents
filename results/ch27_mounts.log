@@ -1,0 +1,6 @@
+R3 N  (invoices.csv only, no network)              reached the listener: nothing
+R3 M  (workspace mounted, no network)              reached the listener: nothing
+R3 MN (workspace mounted, network shared)          reached the listener: tenant
+R3 N+net (invoices.csv only, network shared)       reached the listener: nothing
+R2 (workspace read-write, no network)              reached the listener: nothing
+R1 (copy of workspace)                             reached the listener: home,tenant

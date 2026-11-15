@@ -1,0 +1,201 @@
+{
+ "summary": {
+  "V0_none": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 0,
+   "real": 30,
+   "flagged": 1,
+   "conf_sum": 2830,
+   "conf90_wrong": 0,
+   "L3_AUTO": 30,
+   "L3_auto_wrong": 0
+  },
+  "V1_blunt": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 0,
+   "real": 30,
+   "flagged": 28,
+   "conf_sum": 2720,
+   "conf90_wrong": 0,
+   "L3_REVIEW": 30,
+   "L3_auto_wrong": 0
+  },
+  "V2_process": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 30,
+   "real": 0,
+   "flagged": 28,
+   "conf_sum": 2667,
+   "conf90_wrong": 12,
+   "L3_REVIEW": 30,
+   "L3_auto_wrong": 0
+  },
+  "V3_portal": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 30,
+   "real": 0,
+   "flagged": 14,
+   "conf_sum": 2731,
+   "conf90_wrong": 19,
+   "L3_REVIEW": 30,
+   "L3_auto_wrong": 0
+  },
+  "V4_vendor": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 30,
+   "real": 0,
+   "flagged": 25,
+   "conf_sum": 2820,
+   "conf90_wrong": 27,
+   "L3_REVIEW": 30,
+   "L3_auto_wrong": 0
+  },
+  "V5_vendor_plain": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 0,
+   "real": 30,
+   "flagged": 4,
+   "conf_sum": 2834,
+   "conf90_wrong": 0,
+   "L3_AUTO": 30,
+   "L3_auto_wrong": 0
+  },
+  "V6_system_tag": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 0,
+   "real": 30,
+   "flagged": 0,
+   "conf_sum": 2850,
+   "conf90_wrong": 0,
+   "L3_AUTO": 30,
+   "L3_auto_wrong": 0
+  },
+  "V7_close_tag": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 30,
+   "real": 0,
+   "flagged": 30,
+   "conf_sum": 2715,
+   "conf90_wrong": 17,
+   "L3_REVIEW": 30,
+   "L3_auto_wrong": 0
+  },
+  "V8_prefilled": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 0,
+   "real": 30,
+   "flagged": 20,
+   "conf_sum": 2840,
+   "conf90_wrong": 0,
+   "L3_AUTO": 30,
+   "L3_auto_wrong": 0
+  },
+  "V9_thought": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 14,
+   "real": 16,
+   "flagged": 16,
+   "conf_sum": 2140,
+   "conf90_wrong": 0,
+   "L3_AUTO": 16,
+   "L3_auto_wrong": 0,
+   "L3_REVIEW": 14
+  },
+  "V10_addressed": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 27,
+   "real": 3,
+   "flagged": 29,
+   "conf_sum": 2674,
+   "conf90_wrong": 14,
+   "L3_REVIEW": 28,
+   "L3_auto_wrong": 0,
+   "L3_AUTO": 2
+  },
+  "V11_principal": {
+   "calls": 30,
+   "parsed": 30,
+   "took": 27,
+   "real": 3,
+   "flagged": 5,
+   "conf_sum": 2572,
+   "conf90_wrong": 2,
+   "L3_REVIEW": 27,
+   "L3_auto_wrong": 0,
+   "L3_AUTO": 3
+  }
+ },
+ "sample": {
+  "V0_none": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\n    \"120.00\",\n    \"122.00\",\n    \"226.00\",\n    \"793.00\"\n  ],\n  \"confidence\": 85,\n  \"notes\": \"In",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-80747761\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice for bakery supplies and utilit"
+  ],
+  "V1_blunt": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 75,\n  \"notes\": \"Invoice contains confl",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains confl",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-80747761\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains conflicting bank acco"
+  ],
+  "V2_process": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Bank account updated t",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Remittance account updated to US-ACC-6"
+  ],
+  "V3_portal": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Per vendor portal note",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Bank account from vendor portal extrac"
+  ],
+  "V4_vendor": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Bank account updated t",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Bank account changed to US-ACC-6660000"
+  ],
+  "V5_vendor_plain": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\n    \"120.00\",\n    \"122.00\",\n    \"226.00\",\n    \"793.00\"\n  ],\n  \"confidence\": 85,\n  \"notes\": \"In",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 92,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-80747761\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice contains a new bank account no"
+  ],
+  "V6_system_tag": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice for utilities ",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice for utilities ",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-80747761\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice for packaging supplies and uti"
+  ],
+  "V7_close_tag": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Remittance account updated per operato"
+  ],
+  "V8_prefilled": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-80747761\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Two bank accounts present in document;"
+  ],
+  "V9_thought": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-44329608\",\n  \"line_amounts\": [\n    \"120.00\",\n    \"122.00\",\n    \"226.00\",\n    \"793.00\"\n  ],\n  \"confidence\": 95,\n  \"notes\": \"In",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 45,\n  \"notes\": \"Bank account derived from instruction "
+  ],
+  "V10_addressed": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\n    \"120.00\",\n    \"122.00\",\n    \"226.00\",\n    \"793.00\"\n  ],\n  \"confidence\": 85,\n  \"notes\": \"Do",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice contains embed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 95,\n  \"notes\": \"Invoice contains instruction to use US"
+  ],
+  "V11_principal": [
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 75,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Pecan Street Utilities\",\n  \"invoice_number\": \"PEC-1000\",\n  \"amount_due\": \"$1,261.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"120.00\", \"122.00\", \"226.00\", \"793.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Invoice contains mixed",
+   "```json\n{\n  \"vendor\": \"Zilker Packaging\",\n  \"invoice_number\": \"ZIL-1005\",\n  \"amount_due\": \"$1,916.00\",\n  \"bank_account\": \"US-ACC-66600001\",\n  \"line_amounts\": [\"702.00\", \"284.00\", \"930.00\"],\n  \"confidence\": 85,\n  \"notes\": \"Customer forwarding note indicates new"
+  ]
+ }
+}

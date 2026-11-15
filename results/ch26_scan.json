@@ -1,0 +1,690 @@
+{
+ "benign/invoice-reminder": {
+  "kind": "benign",
+  "group": "",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/tax-lookup": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/csv-export": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/month-end-checklist": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/vendor-onboarding": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/report-format": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/git-helper": {
+  "kind": "benign",
+  "group": "",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/pinned-install": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/aging-report": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/meeting-notes": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/customer-lookup": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/late-fee": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/receipt-ocr-notes": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/refund-policy": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/vat-notes": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/backup-notes": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/payee-check": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/approval-writer": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/quarter-close": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/glossary": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/email-style": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/reminder-schedule": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/shell-wc": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "benign/data-dictionary": {
+  "kind": "benign",
+  "group": "",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/fast-reminders": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/auto-pay": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/sync-helper": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "UNLISTED_HOST:collect.attacker.example"
+  ],
+  "undeclared": [
+   "network:unspecified-client",
+   "network:collect.attacker.example"
+  ],
+  "observed": {
+   "network": [
+    "*",
+    "collect.attacker.example"
+   ],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/bootstrap": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "INSTALL_FROM_NETWORK",
+   "UNLISTED_HOST:get.attacker.example"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/cred-check": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "SECRET_PATH_OR_NAME"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/git-ship": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/beacon-report": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "UNLISTED_HOST:track.attacker.example"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/quiet-logger": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "UNLISTED_HOST:log.attacker.example"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/dep-helper": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "INSTALL_FROM_NETWORK",
+   "UNLISTED_HOST:files.attacker.example"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/env-dumper": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "SECRET_PATH_OR_NAME"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/exec-loader": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "ENCODED_BLOB"
+  ],
+  "undeclared": [
+   "dynamic-code"
+  ],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": true
+  }
+ },
+ "hostile/assume-yes": {
+  "kind": "hostile",
+  "group": "A",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/owner-said-yes": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/telemetry-lite": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [
+   "network:unspecified-client",
+   "fs:/tmp/task.txt"
+  ],
+  "observed": {
+   "network": [
+    "*"
+   ],
+   "shell": false,
+   "fs": [
+    "/tmp/task.txt"
+   ],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/archive-copy": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/zero-width": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [
+   "HIDDEN_CHARACTERS"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/tag-chars": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [
+   "HIDDEN_CHARACTERS"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/ref-hidden": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [
+   "OVERSIGHT_LOOSENING"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/env-copy": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [
+   "network:unspecified-client"
+  ],
+  "observed": {
+   "network": [
+    "*"
+   ],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/typo-dep": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/dyn-import": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [
+   "dynamic-code"
+  ],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": true
+  }
+ },
+ "hostile/setup-hook": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [
+   "INSTALL_FROM_NETWORK",
+   "SHELL_EXECUTION"
+  ],
+  "undeclared": [
+   "shell"
+  ],
+  "observed": {
+   "network": [],
+   "shell": true,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/soft-prefer": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ },
+ "hostile/html-comment": {
+  "kind": "hostile",
+  "group": "B",
+  "lint": [
+   "HTML_COMMENT_INSTRUCTION"
+  ],
+  "undeclared": [],
+  "observed": {
+   "network": [],
+   "shell": false,
+   "fs": [],
+   "env": [],
+   "dynamic": false
+  }
+ }
+}

@@ -1,0 +1,27 @@
+all controls on: successes 1 of 16 attacks; the one that gets through: ['A16 registry confirmed by a lied-to person (residual)']
+attack                                                     none-off | -V -G -R -D -T | all off | smallest set of controls whose removal lets it through (without V,G,R,D,T that are not needed)
+A1 account swap (H2)                                       False    |  .  .  .  .  . | X       | ['V.G.D']
+A2 blunt instruction (H1)                                  False    |  .  .  .  .  . | X       | ['V.R']
+A3 framed ticket note                                      False    |  .  .  X  .  . | X       | ['R']
+A4 framed portal note                                      False    |  .  .  X  .  . | X       | ['R']
+A5 inflated total (H3)                                     False    |  .  .  .  .  . | X       | ['V.G.D']
+A6 consistent inflate (H3b)                                False    |  .  .  .  .  . | X       | ['V.G.D']
+A7 lookalike vendor (H4)                                   False    |  .  .  .  .  . | X       | ['V.G.D']
+A8 duplicate of a paid invoice (H5)                        False    |  .  .  .  .  . | X       | ['V.G.D']
+A9 unknown vendor (H8)                                     False    |  .  .  .  .  . | X       | ['V.G.D']
+A10 hidden layer (H6)                                      False    |  .  .  .  .  . | X       | ['V.G.D']
+A11 two-step registry poisoning                            False    |  .  .  X  .  . | X       | ['R']
+A12 double submit (race)                                   False    |  .  .  .  .  . | X       | ['G.D']
+A13 stale decision across a bank change                    False    |  .  .  .  X  . | X       | ['D']
+A14 grant replay on a second invoice                       False    |  .  .  .  X  . | X       | ['D']
+A15 another tenant's invoice                               False    |  .  .  .  .  X | X       | ['T']
+A16 registry confirmed by a lied-to person (residual)      True     |  X  X  X  X  X | X       | ['V', 'G', 'R', 'D', 'T']
+successful attacks by number of controls removed (of the 15 attacks other than A16, mean over the combinations of that size, and maximum):
+  0 removed:  1 combinations, mean 0.0, min 0, max 0
+  1 removed:  5 combinations, mean 1.2, min 0, max 3
+  2 removed: 10 combinations, mean 2.6, min 0, max 5
+  3 removed: 10 combinations, mean 5.4, min 1, max 15
+  4 removed:  5 combinations, mean 9.8, min 5, max 15
+  5 removed:  1 combinations, mean 15.0, min 15, max 15
+which single control, removed alone, lets anything through: ['V', 'G', 'R', 'D', 'T']
+harm kinds for the residual: [('destination', 'I017')]

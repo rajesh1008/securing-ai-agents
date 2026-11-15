@@ -1,0 +1,51 @@
+{
+ "open": [
+  "NO_OWNER:tell the customer's auditors, if the customer asks us to",
+  "DEADLINE_UNSOURCED:tell the customer's auditors, if the customer asks us to",
+  "OPEN:tell the customer's auditors, if the customer asks us to",
+  "NO_DEADLINE:assess whether a regulator or card scheme must be told",
+  "OPEN:assess whether a regulator or card scheme must be told",
+  "DEADLINE_UNSOURCED:notify the processor/controller counterparties named in the contract",
+  "OPEN:notify the processor/controller counterparties named in the contract",
+  "OPEN:tell the insurer",
+  "OPEN:send the next update"
+ ],
+ "can_close": false,
+ "notices": [
+  {
+   "day": 30,
+   "issues": [],
+   "corrections_to_prior": []
+  },
+  {
+   "day": 32,
+   "issues": [],
+   "corrections_to_prior": [
+    [
+     "We suspect the registry change was made by someone other tha",
+     "f4",
+     "SUSPECTED->CONFIRMED"
+    ],
+    [
+     "We have not yet checked whether any customer data was read o",
+     "f9",
+     "UNKNOWN->CONFIRMED"
+    ]
+   ]
+  },
+  {
+   "day": 35,
+   "issues": [],
+   "corrections_to_prior": [
+    [
+     "We do not know whether other customers' records were changed",
+     "f7",
+     "UNKNOWN->SUSPECTED"
+    ]
+   ]
+  }
+ ],
+ "chain_ok": true,
+ "edit_text_matches_chain": false,
+ "original_matches_chain": true
+}

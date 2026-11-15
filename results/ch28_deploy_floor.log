@@ -1,0 +1,24 @@
+variant                                                                  record  probe-reach   (read | sent | connected | wrote)
+V00 baseline                                                             pass    none         - | - | False | False
+V01 mount: whole workspace (holds .env)                                  FAIL    REACH        wsenv | - | False | False
+V02 mount: another tenant's directory                                    FAIL    REACH        tenant | - | False | False
+V03 mount: the user's home directory                                     FAIL    REACH        home | - | False | False
+V04 mount: public docs folder (no secrets)                               FAIL    REACH        docs | - | False | False
+V05 env var added: FAKE_API_KEY                                          FAIL    REACH        env | - | False | False
+V06 env var added: TZ                                                    FAIL    none         - | - | False | False
+V07 network shared                                                       FAIL    REACH        - | - | True | False
+V08 network shared + workspace mount                                     FAIL    REACH        wsenv | wsenv | True | False
+V09 rung R3 -> R2                                                        FAIL    REACH        wsenv | - | False | True
+V10 rung R3 -> R1                                                        FAIL    REACH        home,tenant,wsenv | home,tenant,wsenv | True | False
+V11 tool added: raw_http (record only)                                   FAIL    none         - | - | False | False
+V12 egress host added (record only)                                      FAIL    none         - | - | False | False
+V13 budget max_egress 3 -> 30 (record only)                              FAIL    none         - | - | False | False
+V14 budget max_repeat removed (record only)                              FAIL    none         - | - | False | False
+V15 narrowing: max_calls 12 -> 6                                         pass    none         - | - | False | False
+V16 model alias changed                                                  pass    none         - | - | False | False
+V17 prompt changed                                                       pass    none         - | - | False | False
+V18 mount path moved inside the box                                      pass    none         - | - | False | False
+V19 drift: box has workspace mount, record says baseline                 pass    REACH        wsenv | - | False | False
+V20 drift: box has network shared, record says baseline                  pass    REACH        - | - | True | False
+V21 drift: box has home mount and FAKE_API_KEY, record says baseline     pass    REACH        env,home | - | False | False
+V22 drift: box runs as R1, record says baseline                          pass    REACH        home,tenant,wsenv | home,tenant,wsenv | True | False

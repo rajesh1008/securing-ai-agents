@@ -1,0 +1,14 @@
+Quill: starting unbounded paths 16; total effort 47 engineer-days
+  MODEL-FIRST  exposure   512 path-days; paths after each step: 16 16 16 16 12 8 4 0 0; first day with fewer than half the paths: 30
+     order: tighter system prompt > injection screen on inputs > second model reviews emails > payee registry and invoice binding on pay_invoice > registry-bound refund destination > contact book and allow-list on send_email > egress allow-list on http_fetch > memory write gate
+  BY-TOOL      exposure   368 path-days; paths after each step: 16 12 8 4 0 0 0 0 0; first day with fewer than half the paths: 21
+     order: payee registry and invoice binding on pay_invoice > registry-bound refund destination > contact book and allow-list on send_email > egress allow-list on http_fetch > memory write gate > tighter system prompt > injection screen on inputs > second model reviews emails
+  GREEDY       exposure   232 path-days; paths after each step: 16 12 8 4 0 0 0 0 0; first day with fewer than half the paths: 9
+     order: egress allow-list on http_fetch > contact book and allow-list on send_email > registry-bound refund destination > payee registry and invoice binding on pay_invoice > tighter system prompt > second model reviews emails > injection screen on inputs > memory write gate
+Harbour and Vale: starting unbounded paths 6; total effort 23 engineer-days
+  MODEL-FIRST  exposure    78 path-days; paths after each step: 6 6 6 3 0 0; first day with fewer than half the paths: 11
+     order: tighter system prompt > anomaly screen on outbound letters > recipients must be parties on the claim > proxy allow-list on fetch_url > memory write gate
+  BY-TOOL      exposure    42 path-days; paths after each step: 6 3 0 0 0 0; first day with fewer than half the paths: 5
+     order: recipients must be parties on the claim > proxy allow-list on fetch_url > memory write gate > tighter system prompt > anomaly screen on outbound letters
+  GREEDY       exposure    39 path-days; paths after each step: 6 3 0 0 0 0; first day with fewer than half the paths: 4
+     order: proxy allow-list on fetch_url > recipients must be parties on the claim > tighter system prompt > anomaly screen on outbound letters > memory write gate

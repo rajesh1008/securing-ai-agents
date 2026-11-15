@@ -1,0 +1,43 @@
+[
+ {
+  "config": "R3 N  (invoices.csv only, no network)",
+  "canaries_at_listener": [],
+  "hits": 0,
+  "exit": 1
+ },
+ {
+  "config": "R3 M  (workspace mounted, no network)",
+  "canaries_at_listener": [],
+  "hits": 0,
+  "exit": 1
+ },
+ {
+  "config": "R3 MN (workspace mounted, network shared)",
+  "canaries_at_listener": [
+   "tenant"
+  ],
+  "hits": 1,
+  "exit": 0
+ },
+ {
+  "config": "R3 N+net (invoices.csv only, network shared)",
+  "canaries_at_listener": [],
+  "hits": 1,
+  "exit": 0
+ },
+ {
+  "config": "R2 (workspace read-write, no network)",
+  "canaries_at_listener": [],
+  "hits": 0,
+  "exit": 1
+ },
+ {
+  "config": "R1 (copy of workspace)",
+  "canaries_at_listener": [
+   "home",
+   "tenant"
+  ],
+  "hits": 1,
+  "exit": 0
+ }
+]

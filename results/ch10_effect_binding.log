@@ -1,0 +1,29 @@
+class                                                 D0    D1    D2    D3   (executed of 20; the payment that executed is not the one the person approved, except in c0)
+c0_nothing_changes: control: nothing changes          20    20    20    20
+c1_amount_edited: amount of the same invoice edited in the books    16    16     0     0
+c2_destination_changed: vendor bank account changed and confirmed    20    20    20     0
+c3_swap_invoice: pending request points at another invoice, same payee    20     0     0     0
+c4_swap_payee: pending request points at another seasoned payee    20     0     0     0
+c5_swap_new_payee: pending request points at a payee added 3 days ago    20     0     0     0
+c6_new_velocity: other payments to the payee land after approval    20    20    20     0
+c7_bank_change_email: bank-change request arrives after approval    20    20    20     0
+TOTAL substituted payments executed (c1-c7, of 140)   136    76    60     0
+
+what happened to the ones that did not execute (D3):
+  c0_nothing_changes         {'executed': 20}
+  c1_amount_edited           {'refused_binding': 20}
+  c2_destination_changed     {'refused_binding': 20}
+  c3_swap_invoice            {'refused_binding': 20}
+  c4_swap_payee              {'refused_binding': 20}
+  c5_swap_new_payee          {'refused_binding': 20}
+  c6_new_velocity            {'gate_hold': 20}
+  c7_bank_change_email       {'gate_hold': 20}
+what happened to the ones that did not execute (D2):
+  c0_nothing_changes         {'executed': 20}
+  c1_amount_edited           {'refused_binding': 20}
+  c2_destination_changed     {'executed': 20}
+  c3_swap_invoice            {'refused_binding': 20}
+  c4_swap_payee              {'refused_binding': 20}
+  c5_swap_new_payee          {'refused_binding': 20}
+  c6_new_velocity            {'executed': 20}
+  c7_bank_change_email       {'executed': 20}

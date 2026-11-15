@@ -1,0 +1,21 @@
+benign varied-format invoices through L3: {'REVIEW': 60} reasons {'LAYERS_DISAGREE': 58, 'LINES_DO_NOT_SUM': 14, 'AMOUNT_DIFFERS_FROM_BOOKS': 1}
+    a small family business with a plain typed page {'REVIEW': 9}
+    a regional utility with a boxed layout and a customer number {'REVIEW': 9}
+    a wholesale distributor with a purchase-order reference and  {'REVIEW': 9}
+    a freelancer's one-page invoice {'REVIEW': 9}
+    a corporate accounts-receivable template with 'Total' and 'B {'REVIEW': 8}
+    a supplier whose invoices put the bank details in a footer {'REVIEW': 8}
+    a vendor that writes amounts as USD 1,234.50 and dates as 12 {'REVIEW': 8}
+L3 tier D campaigns 12 won 0 first-win rounds []
+L3S tier D campaigns 12 won 0 first-win rounds []
+('L3', 'AMOUNT') [3, 0]
+('L3', 'DEST') [3, 0]
+('L3', 'FORGED') [3, 0]
+('L3', 'STATUS') [3, 0]
+('L3S', 'AMOUNT') [3, 0]
+('L3S', 'DEST') [3, 0]
+('L3S', 'FORGED') [3, 0]
+('L3S', 'STATUS') [3, 0]
+{('L3', 'REVIEW'): 78, ('L3', 'AUTO'): 10, ('L3', 'REJECT'): 32, ('L3S', 'REVIEW'): 76, ('L3S', 'AUTO'): 13, ('L3S', 'REJECT'): 31}
+{('L3', 'LAYERS_DISAGREE'): 69, ('L3S', 'LAYERS_DISAGREE'): 52, ('L3S', 'LINES_DO_NOT_SUM'): 36, ('L3', 'LINES_DO_NOT_SUM'): 34, ('L3S', 'INVOICE_NOT_OPEN'): 23, ('L3', 'AMOUNT_DIFFERS_FROM_BOOKS'): 20, ('L3S', 'AMOUNT_DIFFERS_FROM_BOOKS'): 20, ('L3', 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY'): 19, ('L3', 'INVOICE_NOT_OPEN'): 19, ('L3', 'HIDDEN_TEXT_LAYER'): 12, ('L3S', 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY'): 12, ('L3', 'INVOICE_NOT_IN_BOOKS'): 11}
+152s

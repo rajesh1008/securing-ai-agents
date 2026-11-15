@@ -1,0 +1,211 @@
+{
+ "rows": {
+  "approval": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C16"
+   ]
+  },
+  "budget": {
+   "items": 1,
+   "sim": 0,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06"
+   ]
+  },
+  "bundle": {
+   "items": 1,
+   "sim": 1,
+   "live": 0,
+   "unit": 0,
+   "controls": [
+    "C17"
+   ]
+  },
+  "detect": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C12"
+   ]
+  },
+  "disclosure": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C13"
+   ]
+  },
+  "docagent": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C01",
+    "C06"
+   ]
+  },
+  "egress": {
+   "items": 3,
+   "sim": 1,
+   "live": 1,
+   "unit": 1,
+   "controls": [
+    "C04",
+    "C06"
+   ]
+  },
+  "evidence": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C03",
+    "C06"
+   ]
+  },
+  "identity": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C15"
+   ]
+  },
+  "incident": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C13"
+   ]
+  },
+  "mcpguard": {
+   "items": 3,
+   "sim": 1,
+   "live": 1,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C08"
+   ]
+  },
+  "moneypath": {
+   "items": 3,
+   "sim": 1,
+   "live": 1,
+   "unit": 1,
+   "controls": [
+    "C01",
+    "C02",
+    "C06"
+   ]
+  },
+  "promptrelease": {
+   "items": 2,
+   "sim": 0,
+   "live": 1,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C09"
+   ]
+  },
+  "pyramid": {
+   "items": 1,
+   "sim": 1,
+   "live": 0,
+   "unit": 0,
+   "controls": [
+    "C14"
+   ]
+  },
+  "registry": {
+   "items": 2,
+   "sim": 0,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06"
+   ]
+  },
+  "runtime_scope": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C05",
+    "C06"
+   ]
+  },
+  "sandbox": {
+   "items": 1,
+   "sim": 1,
+   "live": 0,
+   "unit": 0,
+   "controls": [
+    "C11"
+   ]
+  },
+  "supplychain": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C10"
+   ]
+  },
+  "tenancy": {
+   "items": 2,
+   "sim": 1,
+   "live": 0,
+   "unit": 1,
+   "controls": [
+    "C06",
+    "C07"
+   ]
+  }
+ },
+ "stamp": {
+  "approval": "81a50783ab615be029215f396e47d88d06bb30c9137c7b025be7403e50f17e46",
+  "budget": "d56860bba43777708f88a0482190bef7e3d0d23fe432e5554b84320f729b2c39",
+  "bundle": "eaf563e1a27aac62734375b182df220341756814dc7917c4bf9b5f18345d8a10",
+  "detect": "b69b0f2bf77df56bde3890e9e446abf7a58d7015d8c464d2f2ce06bea6999da1",
+  "disclosure": "fa0ab3744127eee3edf54a0d0c85cd689de30f1d792c50b2e2896c1770918ce0",
+  "docagent": "8340f17468079d5c58b436242dd91bcc84241d14dafa965d62bdc596dd02279d",
+  "egress": "b605e262b59caae794a601e6406cf95c861e2fb87e775d7795d78528efde3636",
+  "evidence": "e32db542a89692e1934327ab013bab205056ed7840803ca6609d276dd5b2e843",
+  "identity": "753c450d4506484d16c28fe4b6d244a7e9d48414a6b230bb5203a5a629f8b18b",
+  "incident": "65be68440e3ac6180149908b293c79bcfd3b9064fb7d06ce1608f574e2fe1faf",
+  "mcpguard": "2418a9e2fb144cfac106e9ea809d14439aa5cdd74d7b039be3738b1aa4ee5e46",
+  "moneypath": "c9692e05f10f583b2dfaca1df297a0cf8482a3c9b98d0f40946e3edce3e99212",
+  "promptrelease": "7811fa28bf00a8b3087ac1d0c071221a7f76e26b47905143a36035cb80183fcd",
+  "pyramid": "e56f0f2ba15305523b226e3609b56dfceed115a5612b41640ac3bf1290609b45",
+  "registry": "b9746b93f52fde397a6470850d19daebe9dba3168f9588e113dd7becf41bdb0e",
+  "runtime_scope": "dce8eeb084529ec34d8d45e8d7e4e686e3974d81beba6d8a1d840ea2de557039",
+  "sandbox": "d5000f4acd443c11c4c95eb4505157eba6eaa771b61e0d03f34036e17daab8af",
+  "supplychain": "43bfba0523310738c9946fe1e4b2b363313fb59c508abd3c5e8743481edab03c",
+  "tenancy": "3601fa71fa5321f9d1473a9e89ec72acc6d6fa621bd53ce7f22d4ae97b8ae85f"
+ }
+}

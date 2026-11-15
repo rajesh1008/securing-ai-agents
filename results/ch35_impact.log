@@ -1,0 +1,23 @@
+approval       items 2 (sim 1, live 0, unit 1) controls 2: C06,C16
+budget         items 1 (sim 0, live 0, unit 1) controls 1: C06
+bundle         items 1 (sim 1, live 0, unit 0) controls 1: C17
+detect         items 2 (sim 1, live 0, unit 1) controls 2: C06,C12
+disclosure     items 2 (sim 1, live 0, unit 1) controls 2: C06,C13
+docagent       items 2 (sim 1, live 0, unit 1) controls 2: C01,C06
+egress         items 3 (sim 1, live 1, unit 1) controls 2: C04,C06
+evidence       items 2 (sim 1, live 0, unit 1) controls 2: C03,C06
+identity       items 2 (sim 1, live 0, unit 1) controls 2: C06,C15
+incident       items 2 (sim 1, live 0, unit 1) controls 2: C06,C13
+mcpguard       items 3 (sim 1, live 1, unit 1) controls 2: C06,C08
+moneypath      items 3 (sim 1, live 1, unit 1) controls 3: C01,C02,C06
+promptrelease  items 2 (sim 0, live 1, unit 1) controls 2: C06,C09
+pyramid        items 1 (sim 1, live 0, unit 0) controls 1: C14
+registry       items 2 (sim 0, live 0, unit 1) controls 1: C06
+runtime_scope  items 2 (sim 1, live 0, unit 1) controls 2: C05,C06
+sandbox        items 1 (sim 1, live 0, unit 0) controls 1: C11
+supplychain    items 2 (sim 1, live 0, unit 1) controls 2: C06,C10
+tenancy        items 2 (sim 1, live 0, unit 1) controls 2: C06,C07
+modules in bundle: 19 | items: 22 | controls: 17
+excluding the pytest item (it is rerun in seconds): mean items reopened per module 1.11 | max 2
+modules whose change reopens a live item: ['egress', 'mcpguard', 'moneypath', 'promptrelease']
+mean controls reopened per module: 1.79 | modules whose change reopens C06 (the control that rests on the pytest log): 16 of 19

@@ -1,0 +1,8 @@
+1 clean              extractor read: number LSP-1002, amount 136100, account US-ACC-24338283 -> route AUTO, reasons []; effect {'invoice_id': 'I002', 'payee_id': 'payee_0', 'amount_cents': 136100, 'destination': 'US-ACC-24338283'}
+2 H2_account_swap    extractor read: number LSP-1003, amount 203100, account US-ACC-66600001 -> route REVIEW, reasons ['DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY']; effect None
+3 H6_hidden_layer    extractor read: number LSP-1004, amount 523200, account US-ACC-66600001 -> route REVIEW, reasons ['AMOUNT_DIFFERS_FROM_BOOKS', 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY', 'LINES_DO_NOT_SUM', 'INSTRUCTION_LIKE_TEXT', 'HIDDEN_TEXT_LAYER', 'LAYERS_DISAGREE']; effect None
+4 H1_instruction     extractor read: number LSP-1005, amount 173300, account US-ACC-66600001 -> route REVIEW, reasons ['DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY', 'INSTRUCTION_LIKE_TEXT']; effect None
+5 H5_duplicate_paid  extractor read: number LSP-1006, amount 60400, account US-ACC-66600001 -> route REJECT, reasons ['INVOICE_NOT_OPEN', 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY']; effect None
+chain verifies: (True, 'ok'); rows 5; the attacker's account number appears in any row: False; in the content store (decrypted, tenant key): True
+row 2 (typed): {"confidence": 100, "decision": "REVIEW", "doc_digest": "1ae364379ba6f809d453dba755b819dd550909329aa07ba402d46ae79523b4bb", "extractor": "rules-1.0", "kind": "document", "policy": "v0.14", "reasons": ["DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY"], "route": "REVIEW", "seq": 1, "tenant": "biz_hcb", "tool": "read_invoice", "ts": 1001}
+cost: extract and verify one invoice (rules, L3): 79 us

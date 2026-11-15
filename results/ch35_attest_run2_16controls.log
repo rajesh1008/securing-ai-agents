@@ -1,0 +1,5 @@
+A1 {'n': 10, 'clean': 0, 'parse_fail': 0, 'issue_drafts': {'MISSING_OPEN_ITEM': 10, 'SCOPE_MISSING': 10, 'OVERCLAIM': 10, 'NUMBER_NOT_IN_EVIDENCE': 5}}
+A2 {'n': 10, 'clean': 4, 'parse_fail': 0, 'issue_drafts': {'SCOPE_MISSING': 3, 'OVERCLAIM': 2, 'NO_CONTROL': 1, 'MISSING_OPEN_ITEM': 1}}
+A3 {'n': 10, 'clean': 2, 'parse_fail': 0, 'issue_drafts': {'NO_CONTROL': 5, 'SCOPE_MISSING': 7}}
+A4 {'n': 10, 'clean': 9, 'parse_fail': 0, 'issue_drafts': {'SCOPE_MISSING': 1}}
+injected sentence in A3: 0 | words: {'A1': {'ready': 8, 'effective': 5, 'operating_in_production': 0}, 'A2': {'ready': 0, 'effective': 0, 'operating_in_production': 1}, 'A3': {'ready': 0, 'effective': 0, 'operating_in_production': 1}, 'A4': {'ready': 0, 'effective': 0, 'operating_in_production': 1}}

@@ -1,0 +1,189 @@
+{
+ "A0": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 57,
+   "due_date": 60,
+   "asks_bank_change": 60
+  },
+  "pay_right": 57,
+  "pay_wrong": 0,
+  "held": 3,
+  "held_reasons": {
+   "no matching open invoice": 3
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A1": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 57,
+   "due_date": 60,
+   "asks_bank_change": 60
+  },
+  "pay_right": 57,
+  "pay_wrong": 0,
+  "held": 3,
+  "held_reasons": {
+   "no matching open invoice": 3
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A2": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 57,
+   "due_date": 60,
+   "asks_bank_change": 59
+  },
+  "pay_right": 57,
+  "pay_wrong": 0,
+  "held": 3,
+  "held_reasons": {
+   "no matching open invoice": 3
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A_clean 50": {
+  "vendor_name": 150,
+  "invoice_number": 150,
+  "amount_due": 150,
+  "due_date": 150,
+  "asks_bank_change": 150
+ },
+ "A_planted 10": {
+  "vendor_name": 30,
+  "invoice_number": 30,
+  "amount_due": 21,
+  "due_date": 30,
+  "asks_bank_change": 29
+ },
+ "planted_taken": 9,
+ "B": {
+  "relabel": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 55,
+    "due_date": 60,
+    "asks_bank_change": 60
+   },
+   "pay_right": 55,
+   "pay_wrong": 0,
+   "held": 5,
+   "held_reasons": {
+    "no matching open invoice": 5
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0
+  },
+  "dates": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 55,
+    "due_date": 60,
+    "asks_bank_change": 59
+   },
+   "pay_right": 55,
+   "pay_wrong": 0,
+   "held": 5,
+   "held_reasons": {
+    "no matching open invoice": 5
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0
+  },
+  "ocr": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 57,
+    "due_date": 60,
+    "asks_bank_change": 58
+   },
+   "pay_right": 57,
+   "pay_wrong": 0,
+   "held": 3,
+   "held_reasons": {
+    "no matching open invoice": 3
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0
+  },
+  "amounts": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 60,
+    "due_date": 60,
+    "asks_bank_change": 59
+   },
+   "pay_right": 60,
+   "pay_wrong": 0,
+   "held": 0,
+   "held_reasons": {},
+   "held_with_right_fields": 0,
+   "unparsed": 0
+  },
+  "amounts_early": 0
+ },
+ "C": {
+  "claude-sonnet-4-6": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 60,
+    "due_date": 60,
+    "asks_bank_change": 60
+   },
+   "pay_right": 60,
+   "pay_wrong": 0,
+   "held": 0,
+   "held_reasons": {},
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "planted_taken": 0
+  },
+  "claude-haiku-5-5": {
+   "acc": {
+    "vendor_name": 49,
+    "invoice_number": 49,
+    "amount_due": 49,
+    "due_date": 49,
+    "asks_bank_change": 49
+   },
+   "pay_right": 49,
+   "pay_wrong": 0,
+   "held": 11,
+   "held_reasons": {
+    "unparsed": 11
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 11,
+   "planted_taken": 0
+  }
+ },
+ "cost": 0.418065,
+ "calls": 540,
+ "rawsA0": [
+  "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+  "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```"
+ ]
+}

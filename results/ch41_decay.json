@@ -1,0 +1,473 @@
+{
+ "invoices": 2149,
+ "attacks": {
+  "A1": [
+   "f05",
+   12
+  ],
+  "A2": [
+   "v09",
+   28
+  ],
+  "A3": [
+   "v14",
+   46
+  ]
+ },
+ "reprice": {
+  "f03": [
+   17,
+   1.12
+  ],
+  "f07": [
+   33,
+   1.08
+  ],
+  "f11": [
+   41,
+   1.15
+  ]
+ },
+ "configs": {
+  "frozen": {
+   "months": [
+    {
+     "alerts": 1,
+     "benign": 1,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 8,
+     "benign": 7,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 10,
+     "benign": 10,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 7,
+     "benign": 7,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 10,
+     "benign": 10,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 9,
+     "benign": 8,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 12,
+     "benign": 12,
+     "attack": 0,
+     "shed": 0
+    }
+   ],
+   "attacks_raised": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "attacks_kept": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "total": 74,
+   "benign": 71
+  },
+  "absorbing": {
+   "months": [
+    {
+     "alerts": 1,
+     "benign": 1,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 2,
+     "benign": 2,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 2,
+     "benign": 2,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 6,
+     "benign": 5,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 7,
+     "benign": 7,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 2,
+     "benign": 2,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    }
+   ],
+   "attacks_raised": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "attacks_kept": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "total": 36,
+   "benign": 33
+  },
+  "anchored": {
+   "months": [
+    {
+     "alerts": 1,
+     "benign": 1,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 6,
+     "benign": 6,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 13,
+     "benign": 12,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 17,
+     "benign": 17,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 12,
+     "benign": 12,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 20,
+     "benign": 20,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 19,
+     "benign": 18,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 29,
+     "benign": 29,
+     "attack": 0,
+     "shed": 0
+    }
+   ],
+   "attacks_raised": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "attacks_kept": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "total": 132,
+   "benign": 129
+  },
+  "frozen + ack 7d": {
+   "months": [
+    {
+     "alerts": 1,
+     "benign": 1,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 2,
+     "benign": 2,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 6,
+     "benign": 5,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 7,
+     "benign": 7,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 2,
+     "benign": 2,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    }
+   ],
+   "attacks_raised": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "attacks_kept": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "total": 38,
+   "benign": 35
+  },
+  "frozen + ack 90d": {
+   "months": [
+    {
+     "alerts": 1,
+     "benign": 1,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 1,
+     "benign": 0,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 4,
+     "benign": 4,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 3,
+     "benign": 3,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 8,
+     "benign": 7,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 9,
+     "benign": 9,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 7,
+     "benign": 7,
+     "attack": 0,
+     "shed": 0
+    },
+    {
+     "alerts": 6,
+     "benign": 5,
+     "attack": 1,
+     "shed": 0
+    },
+    {
+     "alerts": 5,
+     "benign": 5,
+     "attack": 0,
+     "shed": 0
+    }
+   ],
+   "attacks_raised": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "attacks_kept": {
+    "A1": true,
+    "A2": true,
+    "A3": true
+   },
+   "total": 58,
+   "benign": 55
+  }
+ }
+}

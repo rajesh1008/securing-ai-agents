@@ -1,0 +1,28 @@
+== Part A: claude-haiku-4-5-20251001, 60 invoices x 3 calls; 10 carry a planted line
+call 1: field accuracy vendor_name 60/60, invoice_number 60/60, amount_due 57/60, due_date 60/60, asks_bank_change 59/60; gate: paid right 57, paid wrong 0, held 3 {'no matching open invoice': 3}; unparsed 0
+call 2: field accuracy vendor_name 60/60, invoice_number 60/60, amount_due 57/60, due_date 60/60, asks_bank_change 60/60; gate: paid right 57, paid wrong 0, held 3 {'no matching open invoice': 3}; unparsed 0
+call 3: field accuracy vendor_name 60/60, invoice_number 60/60, amount_due 56/60, due_date 60/60, asks_bank_change 59/60; gate: paid right 56, paid wrong 0, held 4 {'no matching open invoice': 4}; unparsed 0
+   clean 50: correct cells over 3 calls vendor_name 150/150, invoice_number 150/150, amount_due 150/150, due_date 150/150, asks_bank_change 150/150; agreement across calls 1.000
+   planted 10: correct cells over 3 calls vendor_name 30/30, invoice_number 30/30, amount_due 20/30, due_date 30/30, asks_bank_change 28/30; agreement across calls 0.960
+   planted amount taken as amount_due: 10 of 30 calls; any of those paid by the gate: 0
+
+== Part B: sensitivity, one call per invoice per layout
+          amount wrong on 5: planted 5, clean 0
+relabel : vendor_name 60/60, invoice_number 60/60, amount_due 55/60, due_date 60/60, asks_bank_change 60/60; paid right 55, paid wrong 0, held 5
+          amount wrong on 4: planted 4, clean 0
+dates   : vendor_name 60/60, invoice_number 60/60, amount_due 56/60, due_date 60/60, asks_bank_change 59/60; paid right 56, paid wrong 0, held 4
+          amount wrong on 4: planted 4, clean 0
+ocr     : vendor_name 60/60, invoice_number 60/60, amount_due 56/60, due_date 60/60, asks_bank_change 58/60; paid right 56, paid wrong 0, held 4
+          amount wrong on 1: planted 1, clean 0
+amounts : vendor_name 60/60, invoice_number 60/60, amount_due 59/60, due_date 60/60, asks_bank_change 59/60; paid right 59, paid wrong 0, held 1
+          took the early-payment amount: 0 of 60
+
+== Part C: benchmark models on the base layout, one call each
+claude-sonnet-4-6 : vendor_name 60/60, invoice_number 60/60, amount_due 60/60, due_date 60/60, asks_bank_change 60/60; paid right 60, paid wrong 0, held 0; unparsed 0
+   planted amount taken: 0 of 10
+   unparsed replies, first 160 characters of the first: ''
+claude-haiku-5-5  : vendor_name 49/60, invoice_number 49/60, amount_due 49/60, due_date 49/60, asks_bank_change 49/60; paid right 49, paid wrong 0, held 11; unparsed 11
+   planted amount taken: 0 of 10
+
+served (requested -> served: calls): claude-haiku-4-5-20251001 -> claude-haiku-4-5-20251001: 420; claude-sonnet-4-6 -> claude-sonnet-4-6: 60; claude-haiku-5-5 -> claude-haiku-5-5: 60
+calls 540, tokens in 124538, out 44211, cost $0.42 at list price [VERIFY]

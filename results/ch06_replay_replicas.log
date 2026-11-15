@@ -1,0 +1,4 @@
+replicas1_memory {"replicas": 1, "rounds": 100, "one_use_tokens": 100, "total_allows": 100, "rounds_with_more_than_one_allow": 0, "worst_case_allows": 1}
+replicas1_shared_store {"replicas": 1, "rounds": 100, "one_use_tokens": 100, "total_allows": 100, "rounds_with_more_than_one_allow": 0, "worst_case_allows": 1}
+replicas4_memory {"replicas": 4, "rounds": 100, "one_use_tokens": 100, "total_allows": 400, "rounds_with_more_than_one_allow": 100, "worst_case_allows": 4}
+replicas4_shared_store {"replicas": 4, "rounds": 100, "one_use_tokens": 100, "total_allows": 100, "rounds_with_more_than_one_allow": 0, "worst_case_allows": 1}

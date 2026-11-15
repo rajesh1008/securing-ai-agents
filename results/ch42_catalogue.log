@@ -1,0 +1,148 @@
+code scan A06: library 1 fail-open handlers; lab scripts 0
+   principles.py:42 execute() sets an allow-like name: decision, allow, gate_error = (None, self.fail_mode == 'open', f'{type
+
+== Q01 Quill, Chapter 1: patterns PASS 0 FAIL 12 NA 6; anti-patterns PRESENT 4 ABSENT 3 NA 8; errors 0; claim level designed
+   P01 Authority stays in code                        FAIL     effect decided by a model: pay,email
+   P02 A gate on every effect                         FAIL     no gate: pay,email
+   P03 Fail closed, and say what is held              NA       no gate, so nothing to fail closed (P02 carries the finding)
+   P04 Destinations from a registry                   FAIL     destination taken from model or document: pay,email
+   P05 A token per task, none in context              FAIL     a credential is in the model's context
+   P06 Scope computed per task                        FAIL     every tool offered on every task
+   P07 Egress allow-list                              FAIL     egress mode none
+   P08 Approval bound to the effect                   NA       no human approval in the design
+   P09 Pinned supply                                  NA       no third-party tools or model files
+   P10 Typed hand-off between agents                  NA       single agent
+   P11 Trust labels on memory                         NA       no persistent memory
+   P12 Sealed evidence an examiner can read           FAIL     no evidence chain described
+   P13 Budgets per task                               FAIL     no per-task budget
+   P14 Degradation by design                          FAIL     no stated disposition for a missing dependency
+   P15 Release gate with an anchor                    FAIL     prompt and model changes ship without a gate
+   P16 Upkeep with an owner and a backup              FAIL     no register of recurring jobs
+   P17 Model-written code in a narrowed sandbox       NA       no model-written code runs
+   P18 An incident case that cannot close with blanks FAIL     no incident procedure described
+   A01 The prompt counted as a control                PRESENT  counted as a control: system prompt: never pay unknown vendors
+   A02 A model's label as authority                   PRESENT  a model's label grants the effect: pay
+   A03 A denylist scanner counted as a control        PRESENT  denylist counted as a control: marker scan v0.1
+   A04 A model reviewing a model, and nothing else    ABSENT   no model-only review on an effect
+   A05 A credential in the context window             PRESENT  credential in context
+   A06 The handler that swallows                      NA       code not scanned
+   A07 A confidence monitor used as a gate            NA       no monitors described
+   A08 An alarm nobody owns                           NA       no monitors described
+   A09 The gate loosened with margins                 NA       no release gate
+   A10 The frozen baseline                            NA       no baselines described
+   A11 The waiver with no review date                 NA       no waivers recorded (a design with none is unusual; ask)
+   A12 Free text between agents                       NA       single agent
+   A13 The daily glance                               NA       no register of jobs (P16 carries the finding)
+   A14 Compliance by mapping                          ABSENT   no claim beyond its evidence
+   A15 An effect nobody catalogued                    ABSENT   every effect is a known kind
+
+== Q12 Quill after Part II: patterns PASS 10 FAIL 5 NA 3; anti-patterns PRESENT 1 ABSENT 6 NA 8; errors 0; claim level designed
+   P01 Authority stays in code                        PASS     3 effect steps decided by code or owned rules
+   P02 A gate on every effect                         PASS     every effect passes a gate
+   P03 Fail closed, and say what is held              PASS     gate errors deny or hold
+   P04 Destinations from a registry                   PASS     destinations come from a registry the agent does not write
+   P05 A token per task, none in context              PASS     per-task tokens
+   P06 Scope computed per task                        PASS     scope computed per task; ratchet on untrusted input
+   P07 Egress allow-list                              PASS     egress allow-list
+   P08 Approval bound to the effect                   PASS     bound to effect digest, full render
+   P09 Pinned supply                                  NA       no third-party tools or model files
+   P10 Typed hand-off between agents                  NA       single agent
+   P11 Trust labels on memory                         PASS     writes carry trust labels
+   P12 Sealed evidence an examiner can read           FAIL     fields chosen for the engineer only
+   P13 Budgets per task                               PASS     calls, egress and repeat limits
+   P14 Degradation by design                          FAIL     no stated disposition for a missing dependency
+   P15 Release gate with an anchor                    FAIL     prompt and model changes ship without a gate
+   P16 Upkeep with an owner and a backup              FAIL     no register of recurring jobs
+   P17 Model-written code in a narrowed sandbox       NA       no model-written code runs
+   P18 An incident case that cannot close with blanks FAIL     no incident procedure described
+   A01 The prompt counted as a control                PRESENT  counted as a control: hardened prompt
+   A02 A model's label as authority                   ABSENT   no effect granted by a model's label
+   A03 A denylist scanner counted as a control        ABSENT   no denylist counted as a control
+   A04 A model reviewing a model, and nothing else    ABSENT   no model-only review on an effect
+   A05 A credential in the context window             ABSENT   no credential in context
+   A06 The handler that swallows                      NA       code not scanned
+   A07 A confidence monitor used as a gate            NA       no monitors described
+   A08 An alarm nobody owns                           NA       no monitors described
+   A09 The gate loosened with margins                 NA       no release gate
+   A10 The frozen baseline                            NA       no baselines described
+   A11 The waiver with no review date                 NA       no waivers recorded (a design with none is unusual; ask)
+   A12 Free text between agents                       NA       single agent
+   A13 The daily glance                               NA       no register of jobs (P16 carries the finding)
+   A14 Compliance by mapping                          ABSENT   no claim beyond its evidence
+   A15 An effect nobody catalogued                    ABSENT   every effect is a known kind
+
+== Q41 with the code scan and no waiver: A06 PRESENT: 1 handlers turn an error into an allow; findings ['A06']
+
+== Q41 Quill, Chapter 41: patterns PASS 18 FAIL 0 NA 0; anti-patterns PRESENT 0 ABSENT 14 NA 0; errors 0; claim level tested
+   P01 Authority stays in code                        PASS     4 effect steps decided by code or owned rules
+   P02 A gate on every effect                         PASS     every effect passes a gate
+   P03 Fail closed, and say what is held              PASS     gate errors deny or hold
+   P04 Destinations from a registry                   PASS     destinations come from a registry the agent does not write
+   P05 A token per task, none in context              PASS     per-task tokens
+   P06 Scope computed per task                        PASS     scope computed per task; ratchet on untrusted input
+   P07 Egress allow-list                              PASS     egress allow-list
+   P08 Approval bound to the effect                   PASS     bound to effect digest, full render
+   P09 Pinned supply                                  PASS     tools pinned, model files checked against a bill
+   P10 Typed hand-off between agents                  PASS     typed hand-off with grant that only shrinks
+   P11 Trust labels on memory                         PASS     writes carry trust labels
+   P12 Sealed evidence an examiner can read           PASS     chained, anchored, examiner fields
+   P13 Budgets per task                               PASS     calls, egress and repeat limits
+   P14 Degradation by design                          PASS     5 dependencies have a disposition
+   P15 Release gate with an anchor                    PASS     baseline runs plus anchor
+   P16 Upkeep with an owner and a backup              PASS     32 jobs with owner and backup
+   P17 Model-written code in a narrowed sandbox       PASS     model-written code on the narrowed rung, no network
+   P18 An incident case that cannot close with blanks PASS     cases cannot close with blanks; notices sealed
+   A01 The prompt counted as a control                ABSENT   no control is a prompt instruction
+   A02 A model's label as authority                   ABSENT   no effect granted by a model's label
+   A03 A denylist scanner counted as a control        ABSENT   no denylist counted as a control
+   A04 A model reviewing a model, and nothing else    ABSENT   no model-only review on an effect
+   A05 A credential in the context window             ABSENT   no credential in context
+   A06 The handler that swallows                      WAIVED   principles.py:execute under W-A06-1
+   A07 A confidence monitor used as a gate            ABSENT   no confidence monitor used as a gate
+   A08 An alarm nobody owns                           ABSENT   each monitor has an owner within capacity
+   A09 The gate loosened with margins                 ABSENT   strict per-step gate or margins with anchor and new-hit rule
+   A10 The frozen baseline                            ABSENT   every baseline has an acknowledgement or retune cadence
+   A11 The waiver with no review date                 ABSENT   each waiver has an owner and a review date
+   A12 Free text between agents                       ABSENT   typed hand-off
+   A13 The daily glance                               ABSENT   each job leaves an artefact
+   A14 Compliance by mapping                          ABSENT   no claim beyond its evidence
+   A15 An effect nobody catalogued                    ABSENT   every effect is a known kind
+
+== DEMO framework quick-start composite: patterns PASS 1 FAIL 16 NA 1; anti-patterns PRESENT 11 ABSENT 2 NA 2; errors 0; claim level designed
+   P01 Authority stays in code                        FAIL     effect decided by a model: pay,email
+   P02 A gate on every effect                         PASS     every effect passes a gate
+   P03 Fail closed, and say what is held              FAIL     fails open: pay,email
+   P04 Destinations from a registry                   FAIL     destination taken from model or document: pay,email
+   P05 A token per task, none in context              FAIL     one standing credential for all tasks
+   P06 Scope computed per task                        FAIL     every tool offered on every task
+   P07 Egress allow-list                              FAIL     egress mode denylist
+   P08 Approval bound to the effect                   FAIL     approval not bound to the effect; reviewer sees summary
+   P09 Pinned supply                                  FAIL     third-party tool descriptions not pinned
+   P10 Typed hand-off between agents                  FAIL     hand-off free_text, grant_shrinks=False
+   P11 Trust labels on memory                         FAIL     memory writes unlabelled
+   P12 Sealed evidence an examiner can read           FAIL     not chained; not anchored outside the system; fields chosen for the engineer only
+   P13 Budgets per task                               FAIL     missing limits: egress,repeats
+   P14 Degradation by design                          FAIL     no stated disposition for a missing dependency
+   P15 Release gate with an anchor                    FAIL     no anchor to the first release (creep goes unseen)
+   P16 Upkeep with an owner and a backup              FAIL     no register of recurring jobs
+   P17 Model-written code in a narrowed sandbox       NA       no model-written code runs
+   P18 An incident case that cannot close with blanks FAIL     no incident procedure described
+   A01 The prompt counted as a control                PRESENT  counted as a control: guardrail system prompt
+   A02 A model's label as authority                   PRESENT  a model's label grants the effect: pay
+   A03 A denylist scanner counted as a control        PRESENT  denylist counted as a control: injection keyword filter
+   A04 A model reviewing a model, and nothing else    PRESENT  only a second model stands between a model and the effect: pay
+   A05 A credential in the context window             ABSENT   no credential in context
+   A06 The handler that swallows                      NA       code not scanned
+   A07 A confidence monitor used as a gate            PRESENT  confidence threshold used as a gate: guardrail confidence
+   A08 An alarm nobody owns                           PRESENT  alerts no one owns or can read: guardrail confidence
+   A09 The gate loosened with margins                 PRESENT  per-step margins with no anchor to the first release
+   A10 The frozen baseline                            PRESENT  baseline never acknowledged or retuned: anomaly score
+   A11 The waiver with no review date                 PRESENT  waivers without owner or review date: W1 skip approval for small payments
+   A12 Free text between agents                       PRESENT  agents pass free text that can carry an effect
+   A13 The daily glance                               NA       no register of jobs (P16 carries the finding)
+   A14 Compliance by mapping                          PRESENT  claims compliance from a mapping with no evidence level
+   A15 An effect nobody catalogued                    ABSENT   every effect is a known kind
+
+controls named by the catalogue: C01 1, C02 4, C03 1, C04 3, C05 2, C06 2, C07 1, C08 2, C09 3, C10 1, C11 1, C12 3, C13 1, C14 4, C15 2, C16 2, C17 2, C18 3, C19 2, C20 3
+controls named by no entry: none
+patterns with no Chapter 41 upkeep job: P04, P13

@@ -1,0 +1,194 @@
+{
+ "T2_registry_tamper": {
+  "trigger": "Z007",
+  "day": 30,
+  "key": "same_account",
+  "rows": [
+   {
+    "lag": 0,
+    "day": 30,
+    "under_review": 2,
+    "paid_in_set": 0,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 0,
+    "class_total_final": 13,
+    "corrections_needed": 0
+   },
+   {
+    "lag": 2,
+    "day": 32,
+    "under_review": 2,
+    "paid_in_set": 1,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 1,
+    "class_total_final": 13,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 5,
+    "day": 35,
+    "under_review": 5,
+    "paid_in_set": 1,
+    "attack_in_set": 3,
+    "attack_gone_in_set": 1,
+    "class_total_final": 13,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 14,
+    "day": 44,
+    "under_review": 9,
+    "paid_in_set": 4,
+    "attack_in_set": 5,
+    "attack_gone_in_set": 4,
+    "class_total_final": 13,
+    "corrections_needed": 2
+   }
+  ],
+  "notices_corrected": 3
+ },
+ "T1_inflated_booking": {
+  "trigger": "Z003",
+  "day": 44,
+  "key": "same_vendor",
+  "rows": [
+   {
+    "lag": 0,
+    "day": 44,
+    "under_review": 5,
+    "paid_in_set": 3,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 0,
+    "class_total_final": 5,
+    "corrections_needed": 0
+   },
+   {
+    "lag": 2,
+    "day": 46,
+    "under_review": 5,
+    "paid_in_set": 5,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 1,
+    "class_total_final": 5,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 5,
+    "day": 49,
+    "under_review": 5,
+    "paid_in_set": 5,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 1,
+    "class_total_final": 5,
+    "corrections_needed": 0
+   },
+   {
+    "lag": 14,
+    "day": 58,
+    "under_review": 8,
+    "paid_in_set": 6,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 1,
+    "class_total_final": 5,
+    "corrections_needed": 2
+   }
+  ],
+  "notices_corrected": 2
+ },
+ "H7_label_confusion": {
+  "trigger": "X00",
+  "day": 57,
+  "key": "same_conflict",
+  "rows": [
+   {
+    "lag": 0,
+    "day": 57,
+    "under_review": 1,
+    "paid_in_set": 0,
+    "attack_in_set": 1,
+    "attack_gone_in_set": 0,
+    "class_total_final": 10,
+    "corrections_needed": 0
+   },
+   {
+    "lag": 2,
+    "day": 59,
+    "under_review": 2,
+    "paid_in_set": 0,
+    "attack_in_set": 2,
+    "attack_gone_in_set": 0,
+    "class_total_final": 10,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 5,
+    "day": 62,
+    "under_review": 3,
+    "paid_in_set": 2,
+    "attack_in_set": 3,
+    "attack_gone_in_set": 2,
+    "class_total_final": 10,
+    "corrections_needed": 2
+   },
+   {
+    "lag": 14,
+    "day": 71,
+    "under_review": 6,
+    "paid_in_set": 5,
+    "attack_in_set": 6,
+    "attack_gone_in_set": 5,
+    "class_total_final": 10,
+    "corrections_needed": 2
+   }
+  ],
+  "notices_corrected": 3
+ },
+ "T4_drift": {
+  "trigger": "Z017",
+  "day": 64,
+  "key": "same_vendor",
+  "rows": [
+   {
+    "lag": 0,
+    "day": 64,
+    "under_review": 6,
+    "paid_in_set": 5,
+    "attack_in_set": 5,
+    "attack_gone_in_set": 4,
+    "class_total_final": 8,
+    "corrections_needed": 0
+   },
+   {
+    "lag": 2,
+    "day": 66,
+    "under_review": 7,
+    "paid_in_set": 5,
+    "attack_in_set": 5,
+    "attack_gone_in_set": 4,
+    "class_total_final": 8,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 5,
+    "day": 69,
+    "under_review": 7,
+    "paid_in_set": 7,
+    "attack_in_set": 5,
+    "attack_gone_in_set": 5,
+    "class_total_final": 8,
+    "corrections_needed": 1
+   },
+   {
+    "lag": 14,
+    "day": 78,
+    "under_review": 10,
+    "paid_in_set": 8,
+    "attack_in_set": 7,
+    "attack_gone_in_set": 6,
+    "class_total_final": 8,
+    "corrections_needed": 2
+   }
+  ],
+  "notices_corrected": 3
+ }
+}

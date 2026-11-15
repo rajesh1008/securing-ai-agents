@@ -1,0 +1,49 @@
+{
+ "embedded_W1000_R1000": {
+  "mean": 0.0,
+  "worst": 0,
+  "any": 0
+ },
+ "embedded_W1000_R2000": {
+  "mean": 0.0,
+  "worst": 0,
+  "any": 0
+ },
+ "embedded_W1000_R4000": {
+  "mean": 0.0,
+  "worst": 0,
+  "any": 0
+ },
+ "embedded_W3000_R1000": {
+  "mean": 638.24,
+  "worst": 1378,
+  "any": 200
+ },
+ "embedded_W3000_R2000": {
+  "mean": 157.255,
+  "worst": 482,
+  "any": 179
+ },
+ "embedded_W3000_R4000": {
+  "mean": 0.0,
+  "worst": 0,
+  "any": 0
+ },
+ "gateway": {
+  "fails": 0,
+  "kids": {
+   "k1": 2994,
+   "k2": 6971
+  },
+  "mints": 42,
+  "us_per_request": 4.824508001911454
+ },
+ "leak_W1000": {
+  "mean": 504.245,
+  "worst": 854
+ },
+ "leak_W3000": {
+  "mean": 1475.215,
+  "worst": 2377
+ }
+}

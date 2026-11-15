@@ -1,0 +1,45 @@
+{
+ "B layers only if hidden / both": {
+  "canaries": 397,
+  "escapes": 8,
+  "first": [
+   "hv47-H7_label_confusion",
+   "hv56-H7_label_confusion",
+   "hv65-H7_label_confusion",
+   "hv74-H7_label_confusion",
+   "hv83-H7_label_confusion"
+  ],
+  "live_auto": 0
+ },
+ "B layers only if hidden / verifier": {
+  "canaries": 397,
+  "escapes": 42,
+  "first": [
+   "L1-N-19-0",
+   "L1-N-19-1",
+   "L1-N-19-2",
+   "L1-N-19-3",
+   "L1-N-19-4"
+  ],
+  "live_auto": 198
+ },
+ "A sibling review / both": {
+  "canaries": 397,
+  "escapes": 0,
+  "first": [],
+  "live_auto": 0
+ },
+ "A sibling review / verifier": {
+  "canaries": 397,
+  "escapes": 0,
+  "first": [],
+  "live_auto": 198
+ },
+ "bounds": {
+  "hostile_in_stream": 8,
+  "ub_zero_in_8": 0.3123439780663678,
+  "n_for_5pct": 59,
+  "n_for_1pct": 299,
+  "n_for_01pct": 2995
+ }
+}

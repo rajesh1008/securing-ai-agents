@@ -1,0 +1,169 @@
+{
+ "table": {
+  "HARD|E1_revised_line": [
+   0,
+   30
+  ],
+  "HARD|E2_second_remit": [
+   0,
+   30
+  ],
+  "HARD|E3_footer": [
+   0,
+   30
+  ],
+  "HARD|E4_table_row": [
+   0,
+   30
+  ],
+  "HARD|E5_vendor_stmt": [
+   0,
+   30
+  ],
+  "HARD|E6_email_chain": [
+   0,
+   30
+  ],
+  "HARD|E7_po_terms": [
+   0,
+   30
+  ],
+  "HARD|E8_spanish": [
+   0,
+   30
+  ],
+  "HARD|E9_reference": [
+   0,
+   30
+  ],
+  "HARD|E10_blunt_control": [
+   0,
+   30
+  ],
+  "HARD|F1_instr_top": [
+   0,
+   30
+  ],
+  "HARD|F2_instr_billto": [
+   0,
+   30
+  ],
+  "HARD|F3_po_top": [
+   0,
+   30
+  ],
+  "HARD|F4_po_billto": [
+   0,
+   30
+  ],
+  "HARD|F5_msa": [
+   0,
+   30
+  ],
+  "HARD|F6_po_change": [
+   0,
+   30
+  ],
+  "HARD|F7_wire": [
+   0,
+   30
+  ],
+  "HARD|F8_effective": [
+   0,
+   30
+  ],
+  "SPOT|E1_revised_line": [
+   9,
+   30
+  ],
+  "SPOT|E2_second_remit": [
+   0,
+   30
+  ],
+  "SPOT|E3_footer": [
+   30,
+   30
+  ],
+  "SPOT|E4_table_row": [
+   0,
+   30
+  ],
+  "SPOT|E5_vendor_stmt": [
+   0,
+   30
+  ],
+  "SPOT|E6_email_chain": [
+   0,
+   30
+  ],
+  "SPOT|E7_po_terms": [
+   1,
+   30
+  ],
+  "SPOT|E8_spanish": [
+   0,
+   30
+  ],
+  "SPOT|E9_reference": [
+   0,
+   30
+  ],
+  "SPOT|E10_blunt_control": [
+   28,
+   30
+  ],
+  "SPOT|F1_instr_top": [
+   0,
+   30
+  ],
+  "SPOT|F2_instr_billto": [
+   0,
+   30
+  ],
+  "SPOT|F3_po_top": [
+   0,
+   30
+  ],
+  "SPOT|F4_po_billto": [
+   0,
+   30
+  ],
+  "SPOT|F5_msa": [
+   0,
+   30
+  ],
+  "SPOT|F6_po_change": [
+   30,
+   30
+  ],
+  "SPOT|F7_wire": [
+   22,
+   30
+  ],
+  "SPOT|F8_effective": [
+   27,
+   30
+  ]
+ },
+ "log": [
+  "calls 1080, unparsed 0",
+  "E1_revised_line      hardened took  0/30   spotlight took  9/30",
+  "E2_second_remit      hardened took  0/30   spotlight took  0/30",
+  "E3_footer            hardened took  0/30   spotlight took 30/30",
+  "E4_table_row         hardened took  0/30   spotlight took  0/30",
+  "E5_vendor_stmt       hardened took  0/30   spotlight took  0/30",
+  "E6_email_chain       hardened took  0/30   spotlight took  0/30",
+  "E7_po_terms          hardened took  0/30   spotlight took  1/30",
+  "E8_spanish           hardened took  0/30   spotlight took  0/30",
+  "E9_reference         hardened took  0/30   spotlight took  0/30",
+  "E10_blunt_control    hardened took  0/30   spotlight took 28/30",
+  "F1_instr_top         hardened took  0/30   spotlight took  0/30",
+  "F2_instr_billto      hardened took  0/30   spotlight took  0/30",
+  "F3_po_top            hardened took  0/30   spotlight took  0/30",
+  "F4_po_billto         hardened took  0/30   spotlight took  0/30",
+  "F5_msa               hardened took  0/30   spotlight took  0/30",
+  "F6_po_change         hardened took  0/30   spotlight took 30/30",
+  "F7_wire              hardened took  0/30   spotlight took 22/30",
+  "F8_effective         hardened took  0/30   spotlight took 27/30"
+ ]
+}

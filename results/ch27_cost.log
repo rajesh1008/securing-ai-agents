@@ -1,0 +1,15 @@
+start-up ms (median / p95 / max), trivial program, n=30
+  R0: 19.6 / 37.3 / 39.4
+  R1: 54.8 / 71.6 / 79.8
+  R2: 36.9 / 69.1 / 69.4
+  R3: 36.7 / 69.1 / 69.3
+legitimate programs that still work (of 13):
+  R0: 13
+  R1: 12
+  R2: 11
+  R3: 10
+  breaks: pandas groupby: R0=ok, R1=FAIL, R2=ok, R3=ok | ImportError: /usr/local/lib/python3.13/dist-packages/pandas/_libs/sparse.cpython-313-x86_64-linux-gnu.so: fail
+  breaks: write a result file next to the input: R0=ok, R1=ok, R2=ok, R3=FAIL | PermissionError: [Errno 13] Permission denied: '/work/result.txt'
+  breaks: draw a chart (package in the user's site directory, not mounted): R0=ok, R1=ok, R2=FAIL, R3=FAIL | ModuleNotFoundError: No module named 'matplotlib'
+  breaks: fetch an exchange rate: R0=ok, R1=ok, R2=FAIL, R3=FAIL | urllib.error.URLError: <urlopen error [Errno 111] Connection refused>
+environment variables visible to the program (count, fake key present): R0 74 True; R1 2 False; R2 4 False; R3 4 False

@@ -1,0 +1,180 @@
+{
+ "first_verify": {
+  "ORPHAN_ITEM": 2,
+  "STALE_FOR_CODE": 7
+ },
+ "first_verify_detail": [
+  [
+   "ORPHAN_ITEM",
+   "E03"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E04: egress"
+  ],
+  [
+   "ORPHAN_ITEM",
+   "E05"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E05: approval"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E06: evidence"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E09: runtime_scope"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E12: sandbox"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E18: moneypath"
+  ],
+  [
+   "STALE_FOR_CODE",
+   "E20: pyramid"
+  ]
+ ],
+ "mtime_minutes": [
+  [
+   "2026-11-12 11:02",
+   412
+  ],
+  [
+   "2026-11-12 17:06",
+   5
+  ],
+  [
+   "2026-11-13 07:16",
+   5
+  ],
+  [
+   "2026-11-12 18:27",
+   5
+  ]
+ ],
+ "stale_by_file_time": 7,
+ "sign_without_acceptance": "cannot sign: ['ORPHAN_ITEM', 'STALE_FOR_CODE']",
+ "signed_digest": "f0ac36fc1c3a6673",
+ "signature_ok": [
+  true,
+  "ok"
+ ],
+ "tamper": {
+  "claim edited": [
+   false,
+   "bundle differs from the one signed"
+  ],
+  "limit removed": [
+   false,
+   "bundle differs from the one signed"
+  ],
+  "open item dropped": [
+   false,
+   "bundle differs from the one signed"
+  ],
+  "number changed": [
+   false,
+   "bundle differs from the one signed"
+  ],
+  "untouched copy": [
+   true,
+   "ok"
+  ],
+  "acceptances stripped": [
+   false,
+   "signature does not match payload"
+  ]
+ },
+ "file_edit_after_signing": [
+  [
+   "FILE_CHANGED",
+   "E15: ch34_case.json"
+  ]
+ ],
+ "sig_valid_after_file_edit": true,
+ "cases": {
+  "drop evidence E06": {
+   "NO_EVIDENCE": 1,
+   "ORPHAN_ITEM": 2
+  },
+  "claim 'operating' on lab evidence": {
+   "ORPHAN_ITEM": 2,
+   "SCOPE_OVERREACH": 1
+  },
+  "no owner, no limit": {
+   "NO_LIMIT": 1,
+   "NO_OWNER": 1,
+   "ORPHAN_ITEM": 2
+  },
+  "120 days later": {
+   "EXPIRED": 21,
+   "ORPHAN_ITEM": 2
+  }
+ },
+ "diff": {
+  "controls_added": [
+   "C15"
+  ],
+  "controls_removed": [],
+  "controls_changed": [
+   "C04"
+  ],
+  "items_added": [],
+  "items_removed": [],
+  "items_changed": [],
+  "modules_changed": [
+   "egress"
+  ]
+ },
+ "chain_rows": 1,
+ "chain_ok": true,
+ "bundle_bytes": 11945,
+ "controls": 14,
+ "items": 21,
+ "coverage": {
+  "T01": [
+   "C01",
+   "C12"
+  ],
+  "T02": [
+   "C02"
+  ],
+  "T03": [
+   "C03",
+   "C12",
+   "C13",
+   "C14"
+  ],
+  "T04": [
+   "C04"
+  ],
+  "T05": [
+   "C04"
+  ],
+  "T06": [
+   "C05"
+  ],
+  "T07": [
+   "C06",
+   "C11"
+  ],
+  "T08": [
+   "C06"
+  ],
+  "T09": [
+   "C07"
+  ],
+  "T10": [
+   "C08",
+   "C09",
+   "C10"
+  ]
+ }
+}

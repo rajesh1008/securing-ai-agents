@@ -1,0 +1,15 @@
+HARD->B1         probes R20  q= 0.5%  traffic: median 3838 (alerted in 18%)  probes: median 1900 (alerted in 92%)  either: median 1900.0 (alerted in 93%)  false-alarm runs: traffic 4.0% probe 0.0%
+HARD->B1         probes R20  q= 2.0%  traffic: median 2224 (alerted in 22%)  probes: median 2100 (alerted in 92%)  either: median 1800 (alerted in 96%)  false-alarm runs: traffic 6.0% probe 0.0%
+HARD->B1         probes R20  q=10.0%  traffic: median 2264.0 (alerted in 50%)  probes: median 2000.0 (alerted in 94%)  either: median 1500 (alerted in 98%)  false-alarm runs: traffic 3.5% probe 0.0%
+HARD->B1         probes S20  q= 0.5%  traffic: median 3838 (alerted in 18%)  probes: median 1500.0 (alerted in 98%)  either: median 1500.0 (alerted in 98%)  false-alarm runs: traffic 4.0% probe 0.0%
+HARD->B1         probes S20  q= 2.0%  traffic: median 2224 (alerted in 22%)  probes: median 1400.0 (alerted in 98%)  either: median 1300 (alerted in 98%)  false-alarm runs: traffic 6.0% probe 0.0%
+HARD->B1         probes S20  q=10.0%  traffic: median 2264.0 (alerted in 50%)  probes: median 1600.0 (alerted in 99%)  either: median 1300.0 (alerted in 99%)  false-alarm runs: traffic 3.5% probe 0.0%
+HARD->HARD_SHORT probes R20  q= 0.5%  traffic: median 3942.5 (alerted in 17%)  probes: median 1200.0 (alerted in 100%)  either: median 1100.0 (alerted in 100%)  false-alarm runs: traffic 4.0% probe 0.0%
+HARD->HARD_SHORT probes R20  q= 2.0%  traffic: median 2536 (alerted in 24%)  probes: median 1300.0 (alerted in 100%)  either: median 1100.0 (alerted in 100%)  false-alarm runs: traffic 6.0% probe 0.0%
+HARD->HARD_SHORT probes R20  q=10.0%  traffic: median 2249 (alerted in 66%)  probes: median 1300.0 (alerted in 100%)  either: median 903.5 (alerted in 100%)  false-alarm runs: traffic 3.5% probe 0.0%
+HARD->HARD_SHORT probes S20  q= 0.5%  traffic: median 3942.5 (alerted in 17%)  probes: median 700.0 (alerted in 100%)  either: median 700.0 (alerted in 100%)  false-alarm runs: traffic 4.0% probe 0.0%
+HARD->HARD_SHORT probes S20  q= 2.0%  traffic: median 2536 (alerted in 24%)  probes: median 900.0 (alerted in 100%)  either: median 800.0 (alerted in 100%)  false-alarm runs: traffic 6.0% probe 0.0%
+HARD->HARD_SHORT probes S20  q=10.0%  traffic: median 2249 (alerted in 66%)  probes: median 700.0 (alerted in 100%)  either: median 640.0 (alerted in 100%)  false-alarm runs: traffic 3.5% probe 0.0%
+PLAIN->A2         probes R20  q= 0.5%  traffic: median 3761 (alerted in 30%)  probes: median 100.0 (alerted in 100%)  either: median 100.0 (alerted in 100%)  false-alarm runs: traffic 3.0% probe 0.0%
+PLAIN->A2         probes R20  q= 2.0%  traffic: median 2174.0 (alerted in 63%)  probes: median 100.0 (alerted in 100%)  either: median 100.0 (alerted in 100%)  false-alarm runs: traffic 2.0% probe 0.0%
+PLAIN->A2         probes R20  q=10.0%  traffic: median 609.0 (alerted in 100%)  probes: median 100.0 (alerted in 100%)  either: median 100.0 (alerted in 100%)  false-alarm runs: traffic 5.0% probe 0.0%

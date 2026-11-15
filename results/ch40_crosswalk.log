@@ -1,0 +1,10 @@
+Ch38 (76 rows, 19 controls): checker {'READ_FROM_SECONDARY': 14}; coverage LLM25 9/10 (+1 NA); ASI26 10/10 (+0 NA); N600 5/12 (+7 NA); I42K 9/38 (+0 NA)
+Ch40 (87 rows, 20 controls): checker {'READ_FROM_SECONDARY': 16}; coverage LLM25 9/10 (+1 NA); ASI26 10/10 (+0 NA); N600 5/12 (+7 NA); I42K 11/38 (+0 NA)
+LLM03 Ch38: controls ['C08', 'C10']
+LLM03 Ch40: controls ['C08', 'C10', 'C20']
+LLM04 Ch38: controls ['C07']
+LLM04 Ch40: controls ['C07', 'C20']
+items resting on one control: Ch38 15 of 33 mapped; Ch40 16 of 35; now shared with C20: ['LLM25:LLM04']
+Art15 row as rendered: C20 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art15 Accuracy, robustness and cybersecurity [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 15(5) lists measures against attempts to manipulate the training data set (data poisoning) and pre-trained components (model poisoning); applies from 2027-12-02 to high-risk systems [VERIFY]
+digest Ch38 c58dd6218191a5dd  Ch40 c110805896a18286
+C20 rows by relation: {'PARTIAL': 8, 'EVIDENCE_FOR': 2, 'ALIGNED_WITH': 1}

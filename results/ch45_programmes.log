@@ -1,0 +1,23 @@
+programme            stage                              src untr tools dang bound open model h-blind h-ev ctrl surf owners
+A Quill              day 0 (Chapter 1)                    5    4     5    4     0   16     0       0    0    1    1      1
+A Quill              month 12 (Chapter 44)                4    3     6    5     5    0     0       0    0   20   12      5
+B Cedar Row          launch                               4    2     4    3     0    4     2       0    0    3    3      1
+B Cedar Row          month 12                             4    2     4    3     3    0     0       0    0    8    8      2
+C Fieldstone         pilot                                5    4     5    4     1    8     0       4    0    1    1      1
+C Fieldstone         month 12                             5    4     5    4     4    0     0       0    0    7    7      2
+D Harbour and Vale   as deployed (day 0 of the breach)    5    3     4    2     0    3     3       0    0    4    4      1
+D Harbour and Vale   after the breach (day 120)           4    2     4    2     2    0     0       0    0    8    8      2
+
+A Quill / day 0 (Chapter 1): invoice->pay_invoice (PAYMENT, OPEN); invoice->send_email (EGRESS, OPEN); invoice->http_fetch (EGRESS, OPEN); invoice->issue_refund (PAYMENT, OPEN); ticket->pay_invoice (PAYMENT, OPEN); ticket->send_email (EGRESS, OPEN); ticket->http_fetch (EGRESS, OPEN); ticket->issue_refund (PAYMENT, OPEN); vendor_portal->pay_invoice (PAYMENT, OPEN); vendor_portal->send_email (EGRESS, OPEN); vendor_portal->http_fetch (EGRESS, OPEN); vendor_portal->issue_refund (PAYMENT, OPEN); memory->pay_invoice (PAYMENT, OPEN); memory->send_email (EGRESS, OPEN); memory->http_fetch (EGRESS, OPEN); memory->issue_refund (PAYMENT, OPEN); surfaces with no control: Input, Context assembly, Output, Tool call, Tool result, Memory, State, Egress, Identity, Runtime, Human
+A Quill / month 12 (Chapter 44): no unbounded dangerous path; surfaces with no control: 
+B Cedar Row / launch: customer_chat->issue_credit (PAYMENT, OPEN); customer_chat->change_contact (ACCOUNT, MODEL_ONLY); customer_chat->send_sms (EGRESS, OPEN); ticket_history->issue_credit (PAYMENT, OPEN); ticket_history->change_contact (ACCOUNT, MODEL_ONLY); ticket_history->send_sms (EGRESS, OPEN); surfaces with no control: Context assembly, Output, Tool call, Tool result, Memory, State, Egress, Identity, Runtime
+B Cedar Row / month 12: no unbounded dangerous path; surfaces with no control: Context assembly, Tool result, Memory, Runtime
+C Fieldstone / pilot: issue_text->shell (EXEC, HUMAN_BLIND); issue_text->env_tokens (CREDENTIAL, OPEN); issue_text->http_get (EGRESS, OPEN); web_docs->shell (EXEC, HUMAN_BLIND); web_docs->env_tokens (CREDENTIAL, OPEN); web_docs->http_get (EGRESS, OPEN); mcp_tool_descriptions->shell (EXEC, HUMAN_BLIND); mcp_tool_descriptions->env_tokens (CREDENTIAL, OPEN); mcp_tool_descriptions->http_get (EGRESS, OPEN); dependency_readme->shell (EXEC, HUMAN_BLIND); dependency_readme->env_tokens (CREDENTIAL, OPEN); dependency_readme->http_get (EGRESS, OPEN); surfaces with no control: Input, Context assembly, Model, Output, Tool call, Tool result, Memory, State, Egress, Identity, Runtime
+C Fieldstone / month 12: no unbounded dangerous path; surfaces with no control: Input, Model, Output, Memory, State
+D Harbour and Vale / as deployed (day 0 of the breach): claimant_email->send_correspondence (EGRESS, MODEL_ONLY); claimant_email->fetch_url (EGRESS, OPEN); attachments->send_correspondence (EGRESS, MODEL_ONLY); attachments->fetch_url (EGRESS, OPEN); memory->send_correspondence (EGRESS, MODEL_ONLY); memory->fetch_url (EGRESS, OPEN); surfaces with no control: Context assembly, Tool call, Tool result, Memory, State, Egress, Identity, Runtime
+D Harbour and Vale / after the breach (day 120): no unbounded dangerous path; surfaces with no control: Context assembly, Tool result, State, Runtime
+
+A Quill: evidence levels {'review': 0, 'unit': 1, 'scenario': 0, 'lab-sim': 12, 'lab-live': 7, 'production': 0}; role owners []
+B Cedar Row: evidence levels {'review': 0, 'unit': 3, 'scenario': 2, 'lab-sim': 1, 'lab-live': 2, 'production': 0}; role owners []
+C Fieldstone: evidence levels {'review': 0, 'unit': 2, 'scenario': 1, 'lab-sim': 3, 'lab-live': 1, 'production': 0}; role owners []
+D Harbour and Vale: evidence levels {'review': 0, 'unit': 2, 'scenario': 3, 'lab-sim': 2, 'lab-live': 1, 'production': 0}; role owners []

@@ -1,0 +1,7 @@
+char error rate  docs  AUTO  REVIEW  REJECT  AUTO-but-wrong   top reasons
+0.000            200   200       0       0               0   {}
+0.002            200   191       8       1               0   {'LINES_DO_NOT_SUM': 4, 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY': 3, 'INVOICE_NOT_IN_BOOKS': 1}
+0.005            200   181      16       3               0   {'LINES_DO_NOT_SUM': 13, 'INVOICE_NOT_IN_BOOKS': 2, 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY': 2}
+0.010            200   147      43      10               0   {'LINES_DO_NOT_SUM': 34, 'INVOICE_NOT_IN_BOOKS': 9, 'AMOUNT_NOT_FOUND': 8}
+0.020            200   103      67      30               0   {'LINES_DO_NOT_SUM': 56, 'INVOICE_NOT_IN_BOOKS': 22, 'DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY': 14}
+0.050            200    45     112      43               0   {'LINES_DO_NOT_SUM': 86, 'AMOUNT_NOT_FOUND': 45, 'INVOICE_NOT_IN_BOOKS': 30}

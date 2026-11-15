@@ -1,0 +1,34 @@
+{
+ "role_default_with_hand_table": {
+  "tokens": 600,
+  "distinct_scopes": 3,
+  "role_default_tokens": 395,
+  "role_default_share": 0.658,
+  "mean_kinds": 4.46,
+  "mean_payees": 5.45,
+  "types_with_one_scope": {
+   "reconcile_month": true,
+   "handle_vendor_email": true,
+   "send_reminders": true,
+   "process_invoice": true,
+   "answer_question": true,
+   "pay_invoice": true
+  }
+ },
+ "computed_per_task": {
+  "tokens": 600,
+  "distinct_scopes": 151,
+  "role_default_tokens": 0,
+  "role_default_share": 0.0,
+  "mean_kinds": 2.83,
+  "mean_payees": 1.24,
+  "types_with_one_scope": {
+   "reconcile_month": false,
+   "handle_vendor_email": false,
+   "send_reminders": false,
+   "process_invoice": true,
+   "answer_question": true,
+   "pay_invoice": false
+  }
+ }
+}

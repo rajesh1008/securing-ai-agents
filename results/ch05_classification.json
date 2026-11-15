@@ -1,0 +1,227 @@
+{
+ "naive": {
+  "steps": [
+   {
+    "name": "read_document",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": false,
+    "note": "model reads the whole file"
+   },
+   {
+    "name": "extract_vendor",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": false,
+    "note": "vendor name taken from free text"
+   },
+   {
+    "name": "extract_amount",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": false,
+    "note": "amount taken from free text"
+   },
+   {
+    "name": "compute_due_date",
+    "cls": 3,
+    "untrusted_input": false,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": false,
+    "note": "date arithmetic by the model"
+   },
+   {
+    "name": "check_duplicate",
+    "cls": 3,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": false,
+    "note": ""
+   },
+   {
+    "name": "check_monthly_cap",
+    "cls": 3,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": false,
+    "note": ""
+   },
+   {
+    "name": "check_totals",
+    "cls": 3,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": false,
+    "note": ""
+   },
+   {
+    "name": "choose_payee",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": false,
+    "note": ""
+   },
+   {
+    "name": "authorise_payment",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": false,
+    "note": ""
+   },
+   {
+    "name": "draft_memo",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": false,
+    "note": "memo text"
+   }
+  ],
+  "findings": [
+   "L1 check_duplicate: authority decision made by a model (class C3)",
+   "L2 check_duplicate: free-form model output with an irreversible effect and no downstream check",
+   "L5 check_duplicate: rules or model decide authority but nobody is named as the owner of the table",
+   "L1 check_monthly_cap: authority decision made by a model (class C3)",
+   "L2 check_monthly_cap: free-form model output with an irreversible effect and no downstream check",
+   "L5 check_monthly_cap: rules or model decide authority but nobody is named as the owner of the table",
+   "L1 check_totals: authority decision made by a model (class C3)",
+   "L2 check_totals: free-form model output with an irreversible effect and no downstream check",
+   "L5 check_totals: rules or model decide authority but nobody is named as the owner of the table",
+   "L1 choose_payee: authority decision made by a model (class C3)",
+   "L2 choose_payee: free-form model output with an irreversible effect and no downstream check",
+   "L3 choose_payee: model reads untrusted text and nothing checks its output before it acts",
+   "L4 choose_payee: frontier model, untrusted input and an authority decision together",
+   "L5 choose_payee: rules or model decide authority but nobody is named as the owner of the table",
+   "L1 authorise_payment: authority decision made by a model (class C3)",
+   "L2 authorise_payment: free-form model output with an irreversible effect and no downstream check",
+   "L3 authorise_payment: model reads untrusted text and nothing checks its output before it acts",
+   "L4 authorise_payment: frontier model, untrusted input and an authority decision together",
+   "L5 authorise_payment: rules or model decide authority but nobody is named as the owner of the table"
+  ],
+  "n_findings": 19,
+  "model_steps": 10,
+  "authority_on_model": 5
+ },
+ "classified": {
+  "steps": [
+   {
+    "name": "read_document",
+    "cls": 0,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "bytes on disk; no interpretation"
+   },
+   {
+    "name": "extract_vendor",
+    "cls": 1,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "header-line regex; owner Kevin"
+   },
+   {
+    "name": "extract_amount",
+    "cls": 1,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "labelled Amount-due field; owner Kevin"
+   },
+   {
+    "name": "compute_due_date",
+    "cls": 0,
+    "untrusted_input": false,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "calendar arithmetic"
+   },
+   {
+    "name": "check_duplicate",
+    "cls": 0,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": true,
+    "note": "normalised number plus payee"
+   },
+   {
+    "name": "check_monthly_cap",
+    "cls": 0,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": true,
+    "note": "integer cents"
+   },
+   {
+    "name": "check_totals",
+    "cls": 0,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": true,
+    "note": "integer cents"
+   },
+   {
+    "name": "choose_payee",
+    "cls": 1,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": true,
+    "note": "exact registry match; owner Sophie"
+   },
+   {
+    "name": "authorise_payment",
+    "cls": 0,
+    "untrusted_input": false,
+    "decides_authority": true,
+    "reversible": false,
+    "checked_downstream": true,
+    "note": "gate; owner Ian"
+   },
+   {
+    "name": "draft_memo",
+    "cls": 3,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "model writes prose the gate does not trust"
+   },
+   {
+    "name": "summarise_exceptions",
+    "cls": 2,
+    "untrusted_input": true,
+    "decides_authority": false,
+    "reversible": true,
+    "checked_downstream": true,
+    "note": "small model lists why a check failed, for a human"
+   }
+  ],
+  "findings": [],
+  "n_findings": 0,
+  "model_steps": 2,
+  "authority_on_model": 0
+ }
+}

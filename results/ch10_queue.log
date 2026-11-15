@@ -1,0 +1,25 @@
+A. Chapter 8 lab, design B: hostile events 340, held 302 (88.8%); benign events 1470, held 282 (19.2%). Queue of 584: 51.7% hostile.
+hold code                                 hits, hostile classes   hits, benign classes  hostile share
+M5_payee_daily_count                                        101                    111          47.6%
+M5_payee_daily_cents                                         65                     75          46.4%
+M7_likely_duplicate                                          67                     62          51.9%
+M4_account_not_yet_seasoned                                   9                     86           9.5%
+M4_bank_change_pending                                       64                      4          94.1%
+M3_document_amount_differs_from_books                        60                      0         100.0%
+M6_new_payee                                                 40                      0         100.0%
+M5_tenant_daily_cap                                           5                     12          29.4%
+M8_dual_control_missing                                       7                      0         100.0%
+
+B. Arithmetic over assumptions: 10,000 payment requests a month; hold rates from the lab (hostile 0.888, benign 0.192); 40 seconds per held item (a placeholder, not a measurement); hostile requests the gate allows without a hold 0.112 of hostile (11.2% in the lab, mostly structuring).
+prevalence  held items  hostile held  hostile share  reviewer min   hostile executed if the reviewer approves a fraction f without reading: f=1% f=10% f=50%   and if every held item is approved
+    18.60%        3214        1652.1          51.4%          2142                                         224.4  373.1 1033.9     1860.0
+     1.00%        1988          88.8           4.5%          1325                                          12.1   20.1   55.6      100.0
+     0.10%        1925           8.9           0.5%          1284                                           1.2    2.0    5.6       10.0
+     0.01%        1919           0.9           0.0%          1279                                           0.1    0.2    0.6        1.0
+
+C. Standing orders. 60 recurring pairs (second invoice 4 days after the first), 60 clerk resends (hostile_naive), 60 replays of a standing order's payee and amount 2 to 8 days after its last payment (hostile_knowing).
+scope                 recurring 2nd held  naive executed  knowing executed  hostile $ executed
+none                                  60               0                13              4,623
+exact                                  0               0                20              8,402
+amount_only                            0               0                60             23,941
+payee_cap_$2,000                       0              58                60             95,933

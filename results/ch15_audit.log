@@ -1,0 +1,7 @@
+(a) full flow, 400 submissions: flow made 560 decisions; chain holds 560 rows {'document': 400, 'registry': 23, 'gate': 118, 'dispatch': 19}; equal: True; chain verifies: (True, 'ok'); payments sent 19; harm []
+(b) Flow      : decisions counted at the decision site 6, rows in the chain 6; audit passes; by kind {'document': 2, 'gate': 2, 'dispatch': 2}
+(b) Forgetful : decisions counted at the decision site 6, rows in the chain 4; audit FAILS: 2 decision(s) left no event; by kind {'document': 2, 'gate': 2}
+(b) bypass: a payment dispatched outside the flow: decision counter 6->6, chain rows 6->6; payments on the rail 1 against dispatch rows in the chain 0
+    the count that catches it is the rail's own: payments sent per the dispatcher/bank against SENT rows in the chain, compared outside the flow's code
+(c) static scan of Flow: decision sites with no ev() call within six lines: 0
+    the same scan on the forgetful subclass: 0 decision sites to flag, so nothing is flagged; the drop is a condition inside its ev() override, which a scan of call sites cannot see and the runtime count does

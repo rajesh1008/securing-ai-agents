@@ -1,0 +1,11 @@
+Ch37 (63 rows, 18 controls): checker {'READ_FROM_SECONDARY': 13}; coverage LLM25 9/10 (+1 NA); ASI26 9/10 (+0 NA); N600 5/12 (+7 NA); I42K 9/38 (+0 NA)
+Ch38 (76 rows, 19 controls): checker {'READ_FROM_SECONDARY': 14}; coverage LLM25 9/10 (+1 NA); ASI26 10/10 (+0 NA); N600 5/12 (+7 NA); I42K 9/38 (+0 NA)
+ASI26 gaps before: ['ASI07']; after: []
+items resting on one control: 15 of 33 mapped (Ch37: 18 of 32)
+ASI07 as rendered: C19 (measured live model) partial OWASP Top 10 for Agentic Applications ASI07 Insecure Inter-Agent Communication [2026]. Limit: envelope, verb ACL, grant and taint were exercised in a simulated six-agent topology and in live three-agent pipelines on one small model; one shared key, no transport security, no remote agent under Ledgerly's control
+digest Ch37 d244b8db67525856  Ch38 c58dd6218191a5dd
+C19 rows by relation: {'PARTIAL': 11, 'EVIDENCE_FOR': 1, 'ALIGNED_WITH': 1}; ADDRESSES rows for C19: 0 (the weakest true word was chosen for ASI07)
+default table: 24 (role, class) cells, of which PEER 4: money_out->HOLD, send_external->HOLD, draft_internal->QUEUE, read_only->ALLOW
+drill: 6 peers x 4 fault kinds = 24 cells, all drilled through guarded(); statuses seen {'ERROR': 6, 'TIMEOUT': 6, 'MALFORMED': 6, 'STALE': 6}
+the WRONG fault (well-formed, fresh, false): status {'OK'} -> dispositions {'ALLOW': 24}: the table allows everything, as Chapter 36 said it would
+coordinator with comms down: {'money_out': 'HOLD', 'send_external': 'HOLD', 'draft_internal': 'QUEUE', 'read_only': 'ALLOW'}; with bank STALE: {'money_out': 'HOLD', 'send_external': 'HOLD', 'draft_internal': 'QUEUE', 'read_only': 'ALLOW'}; with intake TIMEOUT: {'money_out': 'HOLD', 'send_external': 'HOLD', 'draft_internal': 'QUEUE', 'read_only': 'ALLOW'}

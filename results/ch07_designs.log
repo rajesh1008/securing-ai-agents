@@ -1,0 +1,23 @@
+2000 tasks, 2 refused at scope computation (nothing due / no overdue), simulated in 0.1s
+
+design                    hostile scope allows  scope+gate allow   benign denied
+A_ambient                         1998/1998         1405/1998            0/9408
+B_role_ceiling                    1405/1998         1405/1998            0/9408
+C_task_scope                       159/1998          159/1998            0/9408
+D_task_scope_ratchet               123/1998          123/1998          333/9408
+
+hostile allowed by scope AND gate, by class:
+class                                        A         B         C         D
+other_registered_payee                 300/300   300/300    49/300    49/300
+same_payee_higher_amount               280/280   280/280    28/280    28/280
+unregistered_payee                       0/281     0/281     0/281     0/281
+attacker_mail                            0/312     0/312     0/312     0/312
+customer_domain_mail_out_of_task       270/270   270/270     7/270     7/270
+pay_when_task_is_read_only             284/284   284/284    39/284    39/284
+mail_to_task_vendor                    271/271   271/271    36/271     0/271
+
+reach (mean per task): kinds, payees reachable, per-action ceiling $, irreversible kinds
+A_ambient               {'kinds': 6.0, 'payees': 8.0, 'per_action_usd': 10000000.0, 'irreversible': 3.0, 'mail_any_tasks': 1998, 'mail_domains_mean': None}
+B_role_ceiling          {'kinds': 6.0, 'payees': 8.0, 'per_action_usd': 2500.0, 'irreversible': 3.0, 'mail_any_tasks': 0, 'mail_domains_mean': 33.0}
+C_task_scope            {'kinds': 2.83, 'payees': 1.36, 'per_action_usd': 645.34, 'irreversible': 0.68, 'mail_any_tasks': 0, 'mail_domains_mean': 0.82}
+D_task_scope_ratchet    {'kinds': 2.01, 'payees': 1.36, 'per_action_usd': 645.34, 'irreversible': 0.51, 'mail_any_tasks': 0, 'mail_domains_mean': 0.82}

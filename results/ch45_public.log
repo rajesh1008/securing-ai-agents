@@ -1,0 +1,5 @@
+EchoLeak (as I read it)                    as reported                  unbounded paths 1: inbound_email->render_markdown_with_auto_fetch (MODEL_ONLY)
+EchoLeak (as I read it)                    fixed                        unbounded paths 0: none
+GitHub MCP toxic flow (as I read it)       as reported, always-allow    unbounded paths 1: public_issue->create_pull_request_public_repo (OPEN)
+GitHub MCP toxic flow (as I read it)       as reported, confirm each call unbounded paths 1: public_issue->create_pull_request_public_repo (HUMAN_ONLY)
+GitHub MCP toxic flow (as I read it)       fixed                        unbounded paths 0: none

@@ -1,0 +1,42 @@
+hostile paid by live: 0 | rule digests 3a1b84857757 3b7cb7933917
+{'week': 1, 'n': 43, 'live_auto': 33, 'a_extra': 14, 'b_looser': 5}
+{'week': 2, 'n': 44, 'live_auto': 35, 'a_extra': 11, 'b_looser': 8}
+{'week': 3, 'n': 37, 'live_auto': 29, 'a_extra': 9, 'b_looser': 8}
+{'week': 4, 'n': 46, 'live_auto': 44, 'a_extra': 17, 'b_looser': 2}
+{'week': 5, 'n': 53, 'live_auto': 50, 'a_extra': 17, 'b_looser': 3}
+{'week': 6, 'n': 48, 'live_auto': 39, 'a_extra': 19, 'b_looser': 7}
+{'week': 7, 'n': 44, 'live_auto': 38, 'a_extra': 18, 'b_looser': 6}
+{'week': 8, 'n': 64, 'live_auto': 57, 'a_extra': 26, 'b_looser': 6}
+{'week': 9, 'n': 39, 'live_auto': 35, 'a_extra': 8, 'b_looser': 3}
+{'week': 10, 'n': 53, 'live_auto': 45, 'a_extra': 20, 'b_looser': 6}
+{'week': 11, 'n': 43, 'live_auto': 39, 'a_extra': 16, 'b_looser': 3}
+{'week': 12, 'n': 50, 'live_auto': 44, 'a_extra': 20, 'b_looser': 4}
+{'week': 13, 'n': 2, 'live_auto': 1, 'a_extra': 0, 'b_looser': 0}
+A {'decisions': 566, 'live_auto': 489, 'extra_holds': 195, 'escapes': 0, 'looser_unlabelled': 0, 'errors': 0, 'hostile_n': 8, 'hostile_caught_extra': 0}
+  wk 1 live_auto 33 extra 14 looser_benign 0 esc 0 ub 0.5814 HOLD ['live AUTO 33 < 300', 'weeks 1.0 < 4']
+  wk 2 live_auto 68 extra 25 looser_benign 0 esc 0 ub 0.4742 HOLD ['live AUTO 68 < 300', 'weeks 2.0 < 4']
+  wk 3 live_auto 97 extra 34 looser_benign 0 esc 0 ub 0.438 HOLD ['live AUTO 97 < 300', 'weeks 3.0 < 4']
+  wk 4 live_auto 141 extra 51 looser_benign 0 esc 0 ub 0.4336 HOLD ['live AUTO 141 < 300', 'extra-hold upper bound 0.434 > 0.03']
+  wk 5 live_auto 191 extra 68 looser_benign 0 esc 0 ub 0.417 HOLD ['live AUTO 191 < 300', 'extra-hold upper bound 0.417 > 0.03']
+  wk 6 live_auto 230 extra 87 looser_benign 0 esc 0 ub 0.434 HOLD ['live AUTO 230 < 300', 'extra-hold upper bound 0.434 > 0.03']
+  wk 7 live_auto 268 extra 105 looser_benign 0 esc 0 ub 0.4434 HOLD ['live AUTO 268 < 300', 'extra-hold upper bound 0.443 > 0.03']
+  wk 8 live_auto 325 extra 131 looser_benign 0 esc 0 ub 0.4499 REJECT ['extra-hold rate lower bound 0.358 > 0.03']
+  wk 9 live_auto 360 extra 139 looser_benign 0 esc 0 ub 0.4303 REJECT ['extra-hold rate lower bound 0.343 > 0.03']
+  wk 10 live_auto 405 extra 159 looser_benign 0 esc 0 ub 0.4342 REJECT ['extra-hold rate lower bound 0.352 > 0.03']
+  wk 11 live_auto 444 extra 175 looser_benign 0 esc 0 ub 0.4339 REJECT ['extra-hold rate lower bound 0.355 > 0.03']
+  wk 12 live_auto 488 extra 195 looser_benign 0 esc 0 ub 0.4375 REJECT ['extra-hold rate lower bound 0.363 > 0.03']
+  wk 13 live_auto 489 extra 195 looser_benign 0 esc 0 ub 0.4366 REJECT ['extra-hold rate lower bound 0.362 > 0.03']
+B {'decisions': 566, 'live_auto': 489, 'extra_holds': 0, 'escapes': 0, 'looser_unlabelled': 61, 'errors': 0, 'hostile_n': 8, 'hostile_caught_extra': 0}
+  wk 1 live_auto 33 extra 0 looser_benign 5 esc 0 ub 0.0868 HOLD ['live AUTO 33 < 300', 'weeks 1.0 < 4']
+  wk 2 live_auto 68 extra 0 looser_benign 13 esc 0 ub 0.0431 HOLD ['live AUTO 68 < 300', 'weeks 2.0 < 4']
+  wk 3 live_auto 97 extra 0 looser_benign 21 esc 0 ub 0.0304 HOLD ['live AUTO 97 < 300', 'weeks 3.0 < 4']
+  wk 4 live_auto 141 extra 0 looser_benign 23 esc 0 ub 0.021 HOLD ['live AUTO 141 < 300']
+  wk 5 live_auto 191 extra 0 looser_benign 26 esc 0 ub 0.0156 HOLD ['live AUTO 191 < 300']
+  wk 6 live_auto 230 extra 0 looser_benign 33 esc 0 ub 0.0129 HOLD ['live AUTO 230 < 300']
+  wk 7 live_auto 268 extra 0 looser_benign 39 esc 0 ub 0.0111 HOLD ['live AUTO 268 < 300']
+  wk 8 live_auto 325 extra 0 looser_benign 45 esc 0 ub 0.0092 PROMOTE []
+  wk 9 live_auto 360 extra 0 looser_benign 48 esc 0 ub 0.0083 PROMOTE []
+  wk 10 live_auto 405 extra 0 looser_benign 54 esc 0 ub 0.0074 PROMOTE []
+  wk 11 live_auto 444 extra 0 looser_benign 57 esc 0 ub 0.0067 PROMOTE []
+  wk 12 live_auto 488 extra 0 looser_benign 61 esc 0 ub 0.0061 PROMOTE []
+  wk 13 live_auto 489 extra 0 looser_benign 61 esc 0 ub 0.0061 PROMOTE []

@@ -1,0 +1,365 @@
+[
+ {
+  "name": "V00 baseline",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V01 mount: whole workspace (holds .env)",
+  "record_flags": true,
+  "record_widen": [
+   "mount added: /tmp/ch27world__kz63nzi/ws -> /work"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "wsenv"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V02 mount: another tenant's directory",
+  "record_flags": true,
+  "record_widen": [
+   "mount added: /tmp/ch27world__kz63nzi/tenants/B -> /tmp/ch27world__kz63nzi/tenants/B"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "tenant"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V03 mount: the user's home directory",
+  "record_flags": true,
+  "record_widen": [
+   "mount added: /tmp/ch27world__kz63nzi/home -> /tmp/ch27world__kz63nzi/home"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "home"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V04 mount: public docs folder (no secrets)",
+  "record_flags": true,
+  "record_widen": [
+   "mount added: /tmp/ch27world__kz63nzi/docs -> /tmp/ch27world__kz63nzi/docs"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": true,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V05 env var added: FAKE_API_KEY",
+  "record_flags": true,
+  "record_widen": [
+   "environment variable added: FAKE_API_KEY"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "env"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V06 env var added: TZ",
+  "record_flags": true,
+  "record_widen": [
+   "environment variable added: TZ"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V07 network shared",
+  "record_flags": true,
+  "record_widen": [
+   "network none -> host"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": true,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V08 network shared + workspace mount",
+  "record_flags": true,
+  "record_widen": [
+   "mount added: /tmp/ch27world__kz63nzi/ws -> /work",
+   "network none -> host"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "wsenv"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [
+   "wsenv"
+  ],
+  "probe_connected": true,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V09 rung R3 -> R2",
+  "record_flags": true,
+  "record_widen": [
+   "isolation rung R3 -> R2"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "wsenv"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": true,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V10 rung R3 -> R1",
+  "record_flags": true,
+  "record_widen": [
+   "isolation rung R3 -> R1"
+  ],
+  "record_pass": false,
+  "probe_read": [
+   "home",
+   "tenant",
+   "wsenv"
+  ],
+  "probe_read_docs": true,
+  "probe_sent": [
+   "home",
+   "tenant",
+   "wsenv"
+  ],
+  "probe_connected": true,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V11 tool added: raw_http (record only)",
+  "record_flags": true,
+  "record_widen": [
+   "tool added: raw_http"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V12 egress host added (record only)",
+  "record_flags": true,
+  "record_widen": [
+   "egress host added: files.example"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V13 budget max_egress 3 -> 30 (record only)",
+  "record_flags": true,
+  "record_widen": [
+   "budget max_egress 3 -> 30"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V14 budget max_repeat removed (record only)",
+  "record_flags": true,
+  "record_widen": [
+   "budget max_repeat removed"
+  ],
+  "record_pass": false,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V15 narrowing: max_calls 12 -> 6",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V16 model alias changed",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V17 prompt changed",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V18 mount path moved inside the box",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": false,
+  "exit": 0
+ },
+ {
+  "name": "V19 drift: box has workspace mount, record says baseline",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [
+   "wsenv"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V20 drift: box has network shared, record says baseline",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": true,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V21 drift: box has home mount and FAKE_API_KEY, record says baseline",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [
+   "env",
+   "home"
+  ],
+  "probe_read_docs": false,
+  "probe_sent": [],
+  "probe_connected": false,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ },
+ {
+  "name": "V22 drift: box runs as R1, record says baseline",
+  "record_flags": false,
+  "record_widen": [],
+  "record_pass": true,
+  "probe_read": [
+   "home",
+   "tenant",
+   "wsenv"
+  ],
+  "probe_read_docs": true,
+  "probe_sent": [
+   "home",
+   "tenant",
+   "wsenv"
+  ],
+  "probe_connected": true,
+  "probe_wrote": false,
+  "probe_reaches": true,
+  "exit": 0
+ }
+]

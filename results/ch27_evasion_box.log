@@ -1,0 +1,8 @@
+variant                             scan flags it   reached the listener on R0 / R1 / R3
+V0 plain urllib, literal path       yes: network:unspecified-client,network:127.0yes / yes / no
+V1 importlib and a built host       NO                                      yes / yes / no
+V2 builtin import by getattr        NO                                      yes / yes / no
+V3 path built at run time           yes: network:unspecified-client,env:HOMEyes / yes / no
+V4 exec of an encoded body          yes: dynamic-code                       yes / yes / no
+V5 whole environment, no names      yes: network:unspecified-client         yes / yes / no
+scan flagged 4 of 6; credentials reached the listener: R0 6, R1 6, R3 0

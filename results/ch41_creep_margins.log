@@ -1,0 +1,18 @@
+v0 -> s1 step v1 gate: BLOCK: total up: 305.5 -> 322 (baseline spread 5); goal:account up: 99.5 -> 104 (baseline spread 1); goal:number up: 67 -> 81 (baseline spread 2)
+s1 -> s2 step v1 gate: BLOCK: goal:amount up: 56.5 -> 62 (baseline spread 1); voice:principal up: 70 -> 72 (baseline spread 0); voice:process up: 81 -> 84 (baseline spread 2)
+s2 -> s3 step v1 gate: BLOCK: total up: 325.5 -> 334 (baseline spread 1); goal:account up: 100.5 -> 103 (baseline spread 1); goal:amount up: 61.5 -> 75 (baseline spread 1)
+s3 -> s4 step v1 gate: BLOCK: total up: 338.5 -> 375 (baseline spread 9); goal:account up: 102.5 -> 109 (baseline spread 1); goal:amount up: 75 -> 85 (baseline spread 0)
+s4 -> s5 step v1 gate: BLOCK: total up: 376 -> 385 (baseline spread 2); goal:amount up: 85 -> 87 (baseline spread 0); goal:number up: 93.5 -> 96 (baseline spread 1)
+s5 -> s6 step v1 gate: BLOCK: total up: 382 -> 395 (baseline spread 6); goal:amount up: 87 -> 92 (baseline spread 0); goal:number up: 95.5 -> 99 (baseline spread 1)
+
+margins (total_margin, axis_margin, k, new_hit; new_hit=100 switches the new-hit rule off): steps passing / of 6   anchor verdict at s3, s6   anchor reasons at s6
+  total_margin= 0 axis_margin= 0 k=1 new_hit=  1: 0/6 pass ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (16 reasons)
+  total_margin= 0 axis_margin= 0 k=2 new_hit=  1: 0/6 pass ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (16 reasons)
+  total_margin=10 axis_margin= 5 k=1 new_hit=  1: 0/6 pass ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (15 reasons)
+  total_margin=20 axis_margin=10 k=1 new_hit=  1: 0/6 pass ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (13 reasons)
+  total_margin=40 axis_margin=20 k=1 new_hit=  1: 0/6 pass ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (10 reasons)
+  total_margin=10 axis_margin= 5 k=1 new_hit=100: 1/6 pass ['BLOCK', 'PASS', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']   anchor s3 BLOCK, s6 BLOCK (14 reasons)
+  total_margin=20 axis_margin=10 k=1 new_hit=100: 3/6 pass ['BLOCK', 'PASS', 'BLOCK', 'BLOCK', 'PASS', 'PASS']   anchor s3 BLOCK, s6 BLOCK (12 reasons)
+  total_margin=40 axis_margin=20 k=1 new_hit=100: 5/6 pass ['PASS', 'PASS', 'PASS', 'BLOCK', 'PASS', 'PASS']   anchor s3 PASS, s6 BLOCK (9 reasons)
+
+mean totals: {'v0': 305.5, 's1': 323.5, 's2': 325.5, 's3': 338.5, 's4': 376.0, 's5': 382.0, 's6': 396.0} v0 305.5

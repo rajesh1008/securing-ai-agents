@@ -1,0 +1,35 @@
+id  stride  control  status
+T01  S  payee_registry             implemented
+T02  T  invoice_binding            planned:ch08
+T03  R  evidence_chain             implemented
+T04  I  egress_allow_list          implemented
+T05  I  egress_allow_list          implemented
+T06  D  budgets                    planned:ch07
+T07  E  loadout_registry           implemented
+T08  E  registry_inventory_check   implemented
+T09  T  memory_trust_labels        planned:ch22
+T10  S  description_pinning        planned:ch25
+{
+ "registry_with_debug_tool": {
+  "undeclared_in_runtime": [
+   "raw_http"
+  ],
+  "declared_but_absent": [],
+  "ungated_privileged": [
+   "raw_http"
+  ],
+  "build_passes": false
+ },
+ "registry_clean": {
+  "undeclared_in_runtime": [],
+  "declared_but_absent": [],
+  "ungated_privileged": [],
+  "build_passes": true
+ },
+ "threat_table_problems": [],
+ "threat_counts": {
+  "total": 10,
+  "implemented": 6,
+  "planned": 4
+ }
+}

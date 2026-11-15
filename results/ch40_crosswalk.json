@@ -1,0 +1,83 @@
+{
+ "Ch38 (76 rows, 19 controls)": {
+  "issues": {
+   "READ_FROM_SECONDARY": 14
+  },
+  "coverage": {
+   "LLM25": {
+    "items": 10,
+    "mapped": 9,
+    "na": 1,
+    "empty": 0
+   },
+   "ASI26": {
+    "items": 10,
+    "mapped": 10,
+    "na": 0,
+    "empty": 0
+   },
+   "N600": {
+    "items": 12,
+    "mapped": 5,
+    "na": 7,
+    "empty": 0
+   },
+   "I42K": {
+    "items": 38,
+    "mapped": 9,
+    "na": 0,
+    "empty": 29
+   }
+  }
+ },
+ "Ch40 (87 rows, 20 controls)": {
+  "issues": {
+   "READ_FROM_SECONDARY": 16
+  },
+  "coverage": {
+   "LLM25": {
+    "items": 10,
+    "mapped": 9,
+    "na": 1,
+    "empty": 0
+   },
+   "ASI26": {
+    "items": 10,
+    "mapped": 10,
+    "na": 0,
+    "empty": 0
+   },
+   "N600": {
+    "items": 12,
+    "mapped": 5,
+    "na": 7,
+    "empty": 0
+   },
+   "I42K": {
+    "items": 38,
+    "mapped": 11,
+    "na": 0,
+    "empty": 27
+   }
+  }
+ },
+ "single": [
+  "ASI26:ASI05",
+  "ASI26:ASI06",
+  "ASI26:ASI07",
+  "I42K:A.4.4",
+  "I42K:A.6.2.8",
+  "I42K:A.7.3",
+  "I42K:A.7.5",
+  "I42K:A.8.3",
+  "I42K:A.8.4",
+  "I42K:A.9.2",
+  "LLM25:LLM02",
+  "LLM25:LLM07",
+  "LLM25:LLM08",
+  "N600:R02",
+  "N600:R04",
+  "N600:R07"
+ ],
+ "art15": "C20 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art15 Accuracy, robustness and cybersecurity [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 15(5) lists measures against attempts to manipulate the training data set (data poisoning) and pre-trained components (model poisoning); applies from 2027-12-02 to high-risk systems [VERIFY]"
+}

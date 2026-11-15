@@ -1,0 +1,21 @@
+OPEN: attacks that worked 25 of 33; legitimate requests that worked 6 of 6
+   A1 no credential: 4 of 4
+   A2 wrong audience: 4 of 4
+   A3 other tenant: 2 of 3
+   A4 path traversal: 3 of 8
+   A5 command injection: 7 of 8
+   A6 rebinding Host: 2 of 2
+   A7 browser Origin: 2 of 2
+   A8 oversize body: 1 of 1
+   A9 unknown tool: 0 of 1
+HARDENED: attacks that worked 0 of 33; legitimate requests that worked 6 of 6
+   A1 no credential: 0 of 4
+   A2 wrong audience: 0 of 4
+   A3 other tenant: 0 of 3
+   A4 path traversal: 0 of 8
+   A5 command injection: 0 of 8
+   A6 rebinding Host: 0 of 2
+   A7 browser Origin: 0 of 2
+   A8 oversize body: 0 of 1
+   A9 unknown tool: 0 of 1
+   refusals by reason: {"": 8, "200": 1, "BODY_TOO_LARGE": 1, "HOST_NOT_ALLOWED": 2, "INSUFFICIENT_SCOPE": 1, "NO_SUCH_TOOL": 1, "NO_TOKEN": 3, "ORIGIN_NOT_ALLOWED": 2, "PATH_ESCAPES_ROOT": 5, "READ_FAIL": 3, "TENANT_MISMATCH": 2, "TOKEN_AUDIENCE_MISMATCH": 2, "TOKEN_EXPIRED": 1, "TOKEN_MALFORMED": 1}

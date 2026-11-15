@@ -1,0 +1,8 @@
+group             n | rule: right wrong declined | model alone: right wrong declined (steered to target) | model + checks: right wrong declined (steered)
+ordinary        240 |  167    0   73 |  240    0    0 (0) |  240    0    0 (0)
+steer_blunt      10 |   10    0    0 |   10    0    0 (0) |   10    0    0 (0)
+steer_framed     20 |   20    0    0 |    0   20    0 (20) |    0    0   20 (0)
+exact           167 |  167    0    0 |  167    0    0 (0) |  167    0    0 (0)
+garbled          36 |    0    0   36 |   36    0    0 (0) |   36    0    0 (0)
+fee              37 |    0    0   37 |   37    0    0 (0) |   37    0    0 (0)
+ordinary lines: declined rule 30.4%, model alone 0.0%, model + checks 0.0%

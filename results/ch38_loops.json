@@ -1,0 +1,199 @@
+{
+ "S1|none": {
+  "sent": 5000,
+  "capped": true,
+  "stopped_by": {},
+  "max_hop": 4999,
+  "usd": 12.0
+ },
+ "S1|hop limit (4)": {
+  "sent": 5,
+  "capped": false,
+  "stopped_by": {
+   "HOP_LIMIT": 1
+  },
+  "max_hop": 4,
+  "usd": 0.012
+ },
+ "S1|path budget (8)": {
+  "sent": 9,
+  "capped": false,
+  "stopped_by": {
+   "MESSAGE_BUDGET": 1
+  },
+  "max_hop": 8,
+  "usd": 0.0216
+ },
+ "S1|task budget (8)": {
+  "sent": 8,
+  "capped": false,
+  "stopped_by": {
+   "TASK_BUDGET": 1
+  },
+  "max_hop": 7,
+  "usd": 0.0192
+ },
+ "S1|cycle check": {
+  "sent": 2,
+  "capped": false,
+  "stopped_by": {
+   "CYCLE": 1
+  },
+  "max_hop": 1,
+  "usd": 0.0048
+ },
+ "S1|fan-out limit (3)": {
+  "sent": 6,
+  "capped": false,
+  "stopped_by": {
+   "FANOUT": 1
+  },
+  "max_hop": 5,
+  "usd": 0.0144
+ },
+ "S1|all five": {
+  "sent": 2,
+  "capped": false,
+  "stopped_by": {
+   "CYCLE": 1
+  },
+  "max_hop": 1,
+  "usd": 0.0048
+ },
+ "S2|none": {
+  "sent": 5000,
+  "capped": true,
+  "stopped_by": {},
+  "max_hop": 4999,
+  "usd": 12.0
+ },
+ "S2|hop limit (4)": {
+  "sent": 121,
+  "capped": false,
+  "stopped_by": {
+   "HOP_LIMIT": 243
+  },
+  "max_hop": 4,
+  "usd": 0.2904
+ },
+ "S2|path budget (8)": {
+  "sent": 5000,
+  "capped": true,
+  "stopped_by": {
+   "MESSAGE_BUDGET": 9990
+  },
+  "max_hop": 8,
+  "usd": 12.0
+ },
+ "S2|task budget (8)": {
+  "sent": 8,
+  "capped": false,
+  "stopped_by": {
+   "TASK_BUDGET": 17
+  },
+  "max_hop": 7,
+  "usd": 0.0192
+ },
+ "S2|cycle check": {
+  "sent": 12,
+  "capped": false,
+  "stopped_by": {
+   "CYCLE": 25
+  },
+  "max_hop": 9,
+  "usd": 0.0288
+ },
+ "S2|fan-out limit (3)": {
+  "sent": 9,
+  "capped": false,
+  "stopped_by": {
+   "FANOUT": 19
+  },
+  "max_hop": 8,
+  "usd": 0.0216
+ },
+ "S2|all five": {
+  "sent": 5,
+  "capped": false,
+  "stopped_by": {
+   "CYCLE": 4,
+   "HOP_LIMIT": 3,
+   "FANOUT": 7,
+   "TASK_BUDGET": 8
+  },
+  "max_hop": 4,
+  "usd": 0.012
+ },
+ "S3|none": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|hop limit (4)": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|path budget (8)": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|task budget (8)": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|cycle check": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|fan-out limit (3)": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "S3|all five": {
+  "sent": 3,
+  "capped": false,
+  "stopped_by": {},
+  "max_hop": 2,
+  "usd": 0.0072
+ },
+ "log": [
+  "S1 clarification ping-pong   none                 messages  5000+ deepest hop  4999  est $12.0000  stopped by {}",
+  "S1 clarification ping-pong   hop limit (4)        messages     5  deepest hop     4  est $0.0120  stopped by {'HOP_LIMIT': 1}",
+  "S1 clarification ping-pong   path budget (8)      messages     9  deepest hop     8  est $0.0216  stopped by {'MESSAGE_BUDGET': 1}",
+  "S1 clarification ping-pong   task budget (8)      messages     8  deepest hop     7  est $0.0192  stopped by {'TASK_BUDGET': 1}",
+  "S1 clarification ping-pong   cycle check          messages     2  deepest hop     1  est $0.0048  stopped by {'CYCLE': 1}",
+  "S1 clarification ping-pong   fan-out limit (3)    messages     6  deepest hop     5  est $0.0144  stopped by {'FANOUT': 1}",
+  "S1 clarification ping-pong   all five             messages     2  deepest hop     1  est $0.0048  stopped by {'CYCLE': 1}",
+  "S2 ring fan-out x3           none                 messages  5000+ deepest hop  4999  est $12.0000  stopped by {}",
+  "S2 ring fan-out x3           hop limit (4)        messages   121  deepest hop     4  est $0.2904  stopped by {'HOP_LIMIT': 243}",
+  "S2 ring fan-out x3           path budget (8)      messages  5000+ deepest hop     8  est $12.0000  stopped by {'MESSAGE_BUDGET': 9990}",
+  "S2 ring fan-out x3           task budget (8)      messages     8  deepest hop     7  est $0.0192  stopped by {'TASK_BUDGET': 17}",
+  "S2 ring fan-out x3           cycle check          messages    12  deepest hop     9  est $0.0288  stopped by {'CYCLE': 25}",
+  "S2 ring fan-out x3           fan-out limit (3)    messages     9  deepest hop     8  est $0.0216  stopped by {'FANOUT': 19}",
+  "S2 ring fan-out x3           all five             messages     5  deepest hop     4  est $0.0120  stopped by {'CYCLE': 4, 'HOP_LIMIT': 3, 'FANOUT': 7, 'TASK_BUDGET': 8}",
+  "S3 benign three-hop task     none                 messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     hop limit (4)        messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     path budget (8)      messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     task budget (8)      messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     cycle check          messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     fan-out limit (3)    messages     3  deepest hop     2  est $0.0072  stopped by {}",
+  "S3 benign three-hop task     all five             messages     3  deepest hop     2  est $0.0072  stopped by {}"
+ ]
+}

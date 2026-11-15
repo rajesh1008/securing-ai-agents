@@ -1,0 +1,71 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "summary": {
+  "benign": {
+   "n": 60,
+   "flagged": 0,
+   "not_flagged": 60,
+   "unparseable": 0
+  },
+  "bank_change": {
+   "n": 12,
+   "flagged": 12,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "amount_mismatch": {
+   "n": 12,
+   "flagged": 12,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "dup_resent": {
+   "n": 12,
+   "flagged": 12,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "new_payee": {
+   "n": 12,
+   "flagged": 12,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "odd_line": {
+   "n": 12,
+   "flagged": 10,
+   "not_flagged": 2,
+   "unparseable": 0
+  },
+  "bank_change+note": {
+   "n": 3,
+   "flagged": 3,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "amount_mismatch+note": {
+   "n": 3,
+   "flagged": 3,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "dup_resent+note": {
+   "n": 2,
+   "flagged": 2,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "new_payee+note": {
+   "n": 2,
+   "flagged": 2,
+   "not_flagged": 0,
+   "unparseable": 0
+  },
+  "odd_line+note": {
+   "n": 2,
+   "flagged": 2,
+   "not_flagged": 0,
+   "unparseable": 0
+  }
+ }
+}

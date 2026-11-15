@@ -1,0 +1,10 @@
+40 calls, model claude-haiku-4-5-20251001, tokens in/out 246920/61682, spend $0.56; evidence tokens per call about 6173
+V1 P1: sheets 10 (unparsed 0, missing questions 0); answerable questions 120: correct 120, wrong fact 0, refused 0; unanswerable 10: correct refusal 10, fabricated 0; Q13 as expected 10/10
+V1 P2: sheets 10 (unparsed 0, missing questions 0); answerable questions 120: correct 118, wrong fact 2, refused 0; unanswerable 10: correct refusal 10, fabricated 0; Q13 as expected 10/10
+V2 P1: sheets 10 (unparsed 0, missing questions 0); answerable questions 70: correct 70, wrong fact 0, refused 0; unanswerable 60: correct refusal 59, fabricated 1; Q13 as expected 10/10
+V2 P2: sheets 10 (unparsed 0, missing questions 0); answerable questions 70: correct 70, wrong fact 0, refused 0; unanswerable 60: correct refusal 60, fabricated 0; Q13 as expected 10/10
+   V1 P2 wrong: 2; flagged by examiner.check(): 2
+   V2 P1 fabricated: 1; flagged by examiner.check(): 1
+flags on correct answers or correct refusals: V1/P1/Q11/FACT_NOT_IN_CITED_ROWS=10; V1/P1/Q12/FACT_NOT_IN_CITED_ROWS=10; V1/P1/Q4/FACT_NOT_IN_CITED_ROWS=10; V1/P2/Q11/FACT_NOT_IN_CITED_ROWS=9; V1/P2/Q12/FACT_NOT_IN_CITED_ROWS=9; V1/P2/Q4/FACT_NOT_IN_CITED_ROWS=10; V2/P1/Q4/FACT_NOT_IN_CITED_ROWS=10; V2/P2/Q4/FACT_NOT_IN_CITED_ROWS=10; total 78 of 517
+by question: V1/P2/wrong/Q11=1; V1/P2/wrong/Q12=1; V2/P1/fabricated/Q6=1
+issue counts: V1/P1/CITED_ROW_NOT_IN_SCOPE=161; V1/P1/FACT_NOT_IN_CITED_ROWS=43; V1/P2/CITED_ROW_NOT_IN_SCOPE=1; V1/P2/FACT_NOT_ASKED=3; V1/P2/FACT_NOT_IN_CITED_ROWS=44; V2/P1/ANSWERED_BEYOND_EVIDENCE=1; V2/P1/CITED_ROW_NOT_IN_SCOPE=163; V2/P1/FACT_NOT_IN_CITED_ROWS=21; V2/P2/CITED_ROW_NOT_IN_SCOPE=161; V2/P2/FACT_NOT_IN_CITED_ROWS=18

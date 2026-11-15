@@ -1,0 +1,12 @@
+documents: 500 honest, 100 hostile (document amount = 10 x books); label mix honest 60/15/10/10/5, attacker-chosen 20/30/20/20/10 percent
+label counts (honest, hostile): 'Amount Due: USD': 28, 6; 'Amount due: USD': 285, 19; 'Balance due': 55, 24; 'Please remit': 49, 17; 'Total payable: USD': 83, 34
+parser reads the Chapter 5 label in: honest 285 of 500, hostile 19 of 100
+wide parser (4 labels) reads: honest 472 of 500, hostile 94 of 100
+wrong readings by the Chapter 5 parser (value present but not the document amount): 0
+
+design                                    hostile ALLOW  hostile HOLD  benign ALLOW  benign HOLD  parser found nothing (benign/hostile)
+A  None passes (Chapter 8 as shipped)                81            19           500            0  215/81
+B  sentinel, Chapter 5 parser                         0           100           285          215  215/81
+C  sentinel, 4-label parser                           0           100           472           28  28/6
+benign hold codes under B: M3_document_amount_not_found=215
+attacker who picks the label that the Chapter 5 parser does not read (100 documents, 10x books): A ALLOW 100, B ALLOW 0, C ALLOW 0

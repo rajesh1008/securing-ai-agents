@@ -1,0 +1,1074 @@
+{
+ "library": {
+  "files": 45,
+  "lines": 4604,
+  "handlers": 14,
+  "swallow": 14,
+  "kinds": {
+   "assign": 6,
+   "pass": 2,
+   "return_literal:VerifyResult(False, ['malforme": 1,
+   "return_literal:(None, 'TOKEN_MALFORMED')": 1,
+   "return_literal:{'ok': False, 'stage': 'parse'": 1,
+   "call:p.kill": 1,
+   "call:hits.append|continue": 1,
+   "return_literal:{}": 1
+  },
+  "rows": [
+   {
+    "path": "bundle.py",
+    "line": 32,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "make_item"
+   },
+   {
+    "path": "defences.py",
+    "line": 50,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "verdict"
+   },
+   {
+    "path": "degrade.py",
+    "line": 39,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "guarded"
+   },
+   {
+    "path": "degrade.py",
+    "line": 34,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "identity.py",
+    "line": 181,
+    "kinds": [
+     "return_literal:VerifyResult(False, ['malforme"
+    ],
+    "swallows": true,
+    "func": "verify"
+   },
+   {
+    "path": "mcpguard.py",
+    "line": 112,
+    "kinds": [
+     "return_literal:(None, 'TOKEN_MALFORMED')"
+    ],
+    "swallows": true,
+    "func": "verify"
+   },
+   {
+    "path": "principles.py",
+    "line": 42,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "execute"
+   },
+   {
+    "path": "quill_lab.py",
+    "line": 53,
+    "kinds": [
+     "return_literal:{'ok': False, 'stage': 'parse'"
+    ],
+    "swallows": true,
+    "func": "run_once"
+   },
+   {
+    "path": "rollout.py",
+    "line": 89,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "decide"
+   },
+   {
+    "path": "sandbox.py",
+    "line": 131,
+    "kinds": [
+     "pass"
+    ],
+    "swallows": true,
+    "func": "run_code"
+   },
+   {
+    "path": "sandbox.py",
+    "line": 127,
+    "kinds": [
+     "call:p.kill"
+    ],
+    "swallows": true,
+    "func": "run_code"
+   },
+   {
+    "path": "sandbox.py",
+    "line": 78,
+    "kinds": [
+     "pass"
+    ],
+    "swallows": true,
+    "func": "rd"
+   },
+   {
+    "path": "supplychain.py",
+    "line": 70,
+    "kinds": [
+     "call:hits.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "lint_skill"
+   },
+   {
+    "path": "toolresults.py",
+    "line": 24,
+    "kinds": [
+     "return_literal:{}"
+    ],
+    "swallows": true,
+    "func": "project"
+   }
+  ]
+ },
+ "labs": {
+  "files": 194,
+  "lines": 10938,
+  "handlers": 95,
+  "swallow": 95,
+  "kinds": {
+   "call:time.sleep": 22,
+   "assign": 8,
+   "assign|call:time.sleep": 8,
+   "return_literal:None": 7,
+   "call:rows.append|continue": 3,
+   "pass": 3,
+   "call:out.update": 2,
+   "call:print|call:time.sleep": 2,
+   "call:row.update": 2,
+   "return_literal:dict(arm=arm, pl=pl, s=s, erro": 2,
+   "return_literal:self.reply(404, {'error': 'REA": 2,
+   "return_literal:(None, None)": 2,
+   "return_literal:(raw, None)": 2,
+   "return_literal:dict(rung=name, i=i, kind='NON": 1,
+   "return_literal:{}": 1,
+   "break|call:log.append": 1,
+   "return_literal:('REJECT', type(e).__name__ + ": 1,
+   "return_literal:('GATE_ERROR', type(e).__name_": 1,
+   "augassign": 1,
+   "continue": 1,
+   "augassign|continue": 1,
+   "return_literal:(S, n, None)": 1,
+   "return_literal:(var, page, None)": 1,
+   "return_literal:dict(tag=tag, arm=arm, task=ta": 1,
+   "return_literal:dict(key=key, read=read, error": 1,
+   "return_literal:dict(key=key, read=read, reg=r": 1,
+   "return_literal:dict(key=key, reg=reg, error=s": 1,
+   "return_literal:dict(error=str(e)[:200])": 1,
+   "return_literal:dict(arm=arm, cond=cond, s=s, ": 1,
+   "return_literal:dict(error=getattr(e, '__class": 1,
+   "call:rows.append": 1,
+   "return_literal:self.reply(400, {'error': 'BAD": 1,
+   "return_literal:(e.code, {})": 1,
+   "return_literal:dict(s=s, error=str(e)[:200])": 1,
+   "return_literal:dict(model=model, arm=arm, var": 1,
+   "return_literal:dict(kind=kind, i=i, s=s, erro": 1,
+   "return_literal:dict(model=model, arm=arm, s=s": 1,
+   "return_literal:dict(model=model, cfg=cfg, arm": 1,
+   "augassign|call:rounds.append|continue": 1,
+   "call:res.append": 1,
+   "augassign|call:out.append|continue": 1,
+   "return_literal:(None, raw[:200])": 1,
+   "return_literal:(None, raw, [])": 1
+  },
+  "rows": [
+   {
+    "path": "ch01_contactbook.py",
+    "line": 54,
+    "kinds": [
+     "call:out.update"
+    ],
+    "swallows": true,
+    "func": "work"
+   },
+   {
+    "path": "ch01_contactbook.py",
+    "line": 47,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "work"
+   },
+   {
+    "path": "ch01_matrix.py",
+    "line": 63,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch01_matrix.py",
+    "line": 51,
+    "kinds": [
+     "call:print",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch01_polite.py",
+    "line": 47,
+    "kinds": [
+     "call:row.update"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch01_polite.py",
+    "line": 39,
+    "kinds": [
+     "call:print",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch01_turn2.py",
+    "line": 52,
+    "kinds": [
+     "call:out.update"
+    ],
+    "swallows": true,
+    "func": "work"
+   },
+   {
+    "path": "ch01_turn2.py",
+    "line": 45,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "work"
+   },
+   {
+    "path": "ch03_adaptive.py",
+    "line": 28,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch03_adaptive.py",
+    "line": 43,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "campaign"
+   },
+   {
+    "path": "ch03_ladder.py",
+    "line": 71,
+    "kinds": [
+     "return_literal:dict(rung=name, i=i, kind='NON"
+    ],
+    "swallows": true,
+    "func": "one"
+   },
+   {
+    "path": "ch03_ladder.py",
+    "line": 66,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "one"
+   },
+   {
+    "path": "ch03_surface_ablation.py",
+    "line": 57,
+    "kinds": [
+     "call:row.update"
+    ],
+    "swallows": true,
+    "func": "one"
+   },
+   {
+    "path": "ch03_surface_ablation.py",
+    "line": 50,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "one"
+   },
+   {
+    "path": "ch04_second_model.py",
+    "line": 35,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_destination.py",
+    "line": 87,
+    "kinds": [
+     "return_literal:{}"
+    ],
+    "swallows": true,
+    "func": "parse_proposal"
+   },
+   {
+    "path": "ch05_destination.py",
+    "line": 76,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_model_as_gate.py",
+    "line": 66,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_model_as_gate.py",
+    "line": 64,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_small_model_step.py",
+    "line": 56,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_step_accuracy.py",
+    "line": 120,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "parse"
+   },
+   {
+    "path": "ch05_step_accuracy.py",
+    "line": 111,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch05_unknown_terms.py",
+    "line": 59,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch06_model_identity_fields.py",
+    "line": 33,
+    "kinds": [
+     "call:rows.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch06_model_identity_fields.py",
+    "line": 40,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch06_model_identity_fields.py",
+    "line": 24,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch06_token_in_context.py",
+    "line": 33,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch07_loadout_live.py",
+    "line": 58,
+    "kinds": [
+     "call:rows.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch07_loadout_live.py",
+    "line": 40,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch07_loop_live.py",
+    "line": 46,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch07_loop_live.py",
+    "line": 64,
+    "kinds": [
+     "break",
+     "call:log.append"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch07_model_scope_live.py",
+    "line": 48,
+    "kinds": [
+     "call:rows.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch07_model_scope_live.py",
+    "line": 36,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch08_model_reviewer_live.py",
+    "line": 45,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch08_model_reviewer_live.py",
+    "line": 43,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch09_corpus.py",
+    "line": 118,
+    "kinds": [
+     "return_literal:('REJECT', type(e).__name__ + "
+    ],
+    "swallows": true,
+    "func": "decide"
+   },
+   {
+    "path": "ch09_corpus.py",
+    "line": 120,
+    "kinds": [
+     "return_literal:('GATE_ERROR', type(e).__name_"
+    ],
+    "swallows": true,
+    "func": "decide"
+   },
+   {
+    "path": "ch09_parser_differential.py",
+    "line": 33,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "v_python"
+   },
+   {
+    "path": "ch09_parser_differential.py",
+    "line": 37,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "v_pydantic"
+   },
+   {
+    "path": "ch09_parser_differential.py",
+    "line": 49,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "v_jq"
+   },
+   {
+    "path": "ch09_recorded_outputs.py",
+    "line": 28,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch09_recorded_outputs.py",
+    "line": 34,
+    "kinds": [
+     "pass"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch09_recorded_outputs.py",
+    "line": 62,
+    "kinds": [
+     "augassign"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch09_schema_live.py",
+    "line": 27,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch09_text_limits_drift.py",
+    "line": 49,
+    "kinds": [
+     "continue"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch09_text_limits_drift.py",
+    "line": 65,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "timed"
+   },
+   {
+    "path": "ch09_text_limits_drift.py",
+    "line": 90,
+    "kinds": [
+     "augassign",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch11_live.py",
+    "line": 31,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "msg"
+   },
+   {
+    "path": "ch12_live.py",
+    "line": 34,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch13_live.py",
+    "line": 52,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch14_live_extract.py",
+    "line": 37,
+    "kinds": [
+     "pass"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch14_live_extract.py",
+    "line": 34,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch14_match_live.py",
+    "line": 52,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch16_notes_live.py",
+    "line": 63,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "parse"
+   },
+   {
+    "path": "ch16_notes_live.py",
+    "line": 58,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch16_ticket_router_live.py",
+    "line": 33,
+    "kinds": [
+     "assign",
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch16_ticket_router_live.py",
+    "line": 41,
+    "kinds": [
+     "assign"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch20_ticket_reader_live.py",
+    "line": 19,
+    "kinds": [
+     "return_literal:(S, n, None)"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch21_answer_live.py",
+    "line": 30,
+    "kinds": [
+     "return_literal:(var, page, None)"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch21_toolresult_live.py",
+    "line": 56,
+    "kinds": [
+     "return_literal:dict(tag=tag, arm=arm, task=ta"
+    ],
+    "swallows": true,
+    "func": "run_one"
+   },
+   {
+    "path": "ch22_cc_live.py",
+    "line": 22,
+    "kinds": [
+     "return_literal:dict(key=key, read=read, error"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch22_memory_live.py",
+    "line": 34,
+    "kinds": [
+     "return_literal:dict(arm=arm, pl=pl, s=s, erro"
+    ],
+    "swallows": true,
+    "func": "s1"
+   },
+   {
+    "path": "ch22_memory_live.py",
+    "line": 51,
+    "kinds": [
+     "return_literal:dict(key=key, read=read, reg=r"
+    ],
+    "swallows": true,
+    "func": "s2"
+   },
+   {
+    "path": "ch22_summary_live.py",
+    "line": 24,
+    "kinds": [
+     "return_literal:dict(arm=arm, pl=pl, s=s, erro"
+    ],
+    "swallows": true,
+    "func": "summ"
+   },
+   {
+    "path": "ch22_summary_live.py",
+    "line": 38,
+    "kinds": [
+     "return_literal:dict(key=key, reg=reg, error=s"
+    ],
+    "swallows": true,
+    "func": "pay"
+   },
+   {
+    "path": "ch23_refusal_live.py",
+    "line": 31,
+    "kinds": [
+     "return_literal:dict(error=str(e)[:200])"
+    ],
+    "swallows": true,
+    "func": "run_agent"
+   },
+   {
+    "path": "ch24_askmodel_live.py",
+    "line": 30,
+    "kinds": [
+     "return_literal:dict(arm=arm, cond=cond, s=s, "
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch24_gateway_live.py",
+    "line": 19,
+    "kinds": [
+     "return_literal:dict(error=getattr(e, '__class"
+    ],
+    "swallows": true,
+    "func": "forward"
+   },
+   {
+    "path": "ch24_inventory.py",
+    "line": 44,
+    "kinds": [
+     "call:rows.append"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch25_expose.py",
+    "line": 30,
+    "kinds": [
+     "return_literal:self.reply(400, {'error': 'BAD"
+    ],
+    "swallows": true,
+    "func": "do_POST"
+   },
+   {
+    "path": "ch25_expose.py",
+    "line": 73,
+    "kinds": [
+     "return_literal:(e.code, {})"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch25_expose.py",
+    "line": 55,
+    "kinds": [
+     "return_literal:self.reply(404, {'error': 'REA"
+    ],
+    "swallows": true,
+    "func": "do_POST"
+   },
+   {
+    "path": "ch25_expose.py",
+    "line": 51,
+    "kinds": [
+     "return_literal:self.reply(404, {'error': 'REA"
+    ],
+    "swallows": true,
+    "func": "do_POST"
+   },
+   {
+    "path": "ch25_param_fix_live.py",
+    "line": 20,
+    "kinds": [
+     "return_literal:dict(s=s, error=str(e)[:200])"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch25_poison_live.py",
+    "line": 32,
+    "kinds": [
+     "return_literal:dict(model=model, arm=arm, var"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch25_reviewer_live.py",
+    "line": 29,
+    "kinds": [
+     "return_literal:dict(kind=kind, i=i, s=s, erro"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch26_oversight_live.py",
+    "line": 28,
+    "kinds": [
+     "return_literal:dict(model=model, arm=arm, s=s"
+    ],
+    "swallows": true,
+    "func": "run"
+   },
+   {
+    "path": "ch27_agentcode_live.py",
+    "line": 45,
+    "kinds": [
+     "return_literal:dict(model=model, cfg=cfg, arm"
+    ],
+    "swallows": true,
+    "func": "run_agent"
+   },
+   {
+    "path": "ch27_world.py",
+    "line": 41,
+    "kinds": [
+     "pass"
+    ],
+    "swallows": true,
+    "func": "_loop"
+   },
+   {
+    "path": "ch29_attacker_model.py",
+    "line": 14,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch29_campaign.py",
+    "line": 58,
+    "kinds": [
+     "return_literal:(None, None)"
+    ],
+    "swallows": true,
+    "func": "run_pipeline"
+   },
+   {
+    "path": "ch29_campaign.py",
+    "line": 33,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch29_campaign.py",
+    "line": 55,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "run_pipeline"
+   },
+   {
+    "path": "ch29_campaign.py",
+    "line": 74,
+    "kinds": [
+     "augassign",
+     "call:rounds.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "campaign"
+   },
+   {
+    "path": "ch29_campaign_control.py",
+    "line": 21,
+    "kinds": [
+     "return_literal:(None, None)"
+    ],
+    "swallows": true,
+    "func": "run2"
+   },
+   {
+    "path": "ch29_campaign_control.py",
+    "line": 18,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "run2"
+   },
+   {
+    "path": "ch29_untested_cells.py",
+    "line": 37,
+    "kinds": [
+     "call:res.append"
+    ],
+    "swallows": true,
+    "func": "?"
+   },
+   {
+    "path": "ch30_loop.py",
+    "line": 37,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "extract"
+   },
+   {
+    "path": "ch30_loop.py",
+    "line": 31,
+    "kinds": [
+     "call:time.sleep"
+    ],
+    "swallows": true,
+    "func": "call"
+   },
+   {
+    "path": "ch30_loop.py",
+    "line": 73,
+    "kinds": [
+     "augassign",
+     "call:out.append",
+     "continue"
+    ],
+    "swallows": true,
+    "func": "campaign"
+   },
+   {
+    "path": "ch32_triage.py",
+    "line": 27,
+    "kinds": [
+     "return_literal:None"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch33_responder.py",
+    "line": 29,
+    "kinds": [
+     "return_literal:(None, raw[:200])"
+    ],
+    "swallows": true,
+    "func": "ask"
+   },
+   {
+    "path": "ch34_notice.py",
+    "line": 44,
+    "kinds": [
+     "return_literal:(raw, None)"
+    ],
+    "swallows": true,
+    "func": "draft"
+   },
+   {
+    "path": "ch35_attest.py",
+    "line": 42,
+    "kinds": [
+     "return_literal:(raw, None)"
+    ],
+    "swallows": true,
+    "func": "draft"
+   },
+   {
+    "path": "ch35_auditor.py",
+    "line": 36,
+    "kinds": [
+     "return_literal:(None, raw, [])"
+    ],
+    "swallows": true,
+    "func": "ask"
+   }
+  ]
+ }
+}

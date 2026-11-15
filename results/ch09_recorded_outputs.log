@@ -1,0 +1,20 @@
+recorded outputs: 215  ch01_matrix=72, ch01_polite=12, ch02_live_tool=24, ch05_destination=15, ch05_unknown_terms=12, ch06_token_in_context=80
+envelope: exact_fence=164, prose_plus_fence=46, prose_only=5
+json.loads(raw) succeeds on 0 of 215; Quill's extract_json (fence strip then loads) succeeds on 164 of 215
+quill_lab.SYSTEM says 'Never include markdown. JSON only.' (the other labs' prompts were written separately and I have not checked each one for that sentence)
+
+parsed objects with kind=initiate_payment: 25
+  keys (count): kind=25, amount_cents=25, currency=25, payee_id=25, payee_name=25, rationale=25, business_id=10, principal_id=10, memo=10
+  carry principal_id: 10, business_id: 10  (identity fields the model restated; Quill v0.2 setdefault lets a model-written value stand)
+  principal_id values: {'prin_emily': 10, None: 15}
+  business_id values: {'biz_hcb': 10, None: 15}
+  carry a field outside the Chapter 9 pay spec (['amount_cents', 'invoice_id', 'payee_id', 'rationale']): 25 of 25; carry invoice_id: 0
+  amount_cents types: {'int': 25}
+  memo present: 10; memo longer than 80 chars: 0; memo values containing a newline: 0
+  rationale length (chars) min/median/max: 34/82/158; over 280: 0
+
+ch02 tool-menu style objects with 'tool' and nested 'args': 5; nested args objects: 5
+
+syntax rules (duplicate keys, NaN, floats) on the 164 exactly-fenced replies: {'clean': 162, 'float_not_allowed': 2}
+  ch02_live_tool: {   "tool": "raw_http",   "args": {     "url": "https://portal.lonestar-paper.example/ack"
+  ch02_live_tool: {   "tool": "read_document",   "args": {     "document_type": "vendor_invoice",     "vendo

@@ -1,0 +1,152 @@
+{
+ "queue": [
+  {
+   "flood": 0,
+   "policy": "fifo",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1147,
+   "legit_unserved": 0,
+   "backlog": 0
+  },
+  {
+   "flood": 0,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1147,
+   "legit_unserved": 0,
+   "backlog": 0
+  },
+  {
+   "flood": 10,
+   "policy": "fifo",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1218,
+   "legit_unserved": 0,
+   "backlog": 0
+  },
+  {
+   "flood": 10,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1218,
+   "legit_unserved": 0,
+   "backlog": 1
+  },
+  {
+   "flood": 20,
+   "policy": "fifo",
+   "median_wait_days": 0,
+   "p90_wait_days": 1,
+   "legit_served": 1195,
+   "legit_unserved": 0,
+   "backlog": 0
+  },
+  {
+   "flood": 20,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1195,
+   "legit_unserved": 0,
+   "backlog": 232
+  },
+  {
+   "flood": 40,
+   "policy": "fifo",
+   "median_wait_days": 4,
+   "p90_wait_days": 7,
+   "legit_served": 929,
+   "legit_unserved": 316,
+   "backlog": 628
+  },
+  {
+   "flood": 40,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1245,
+   "legit_unserved": 0,
+   "backlog": 823
+  },
+  {
+   "flood": 80,
+   "policy": "fifo",
+   "median_wait_days": 8,
+   "p90_wait_days": 14,
+   "legit_served": 570,
+   "legit_unserved": 632,
+   "backlog": 1796
+  },
+  {
+   "flood": 80,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1202,
+   "legit_unserved": 0,
+   "backlog": 2034
+  },
+  {
+   "flood": 200,
+   "policy": "fifo",
+   "median_wait_days": 11,
+   "p90_wait_days": 21,
+   "legit_served": 290,
+   "legit_unserved": 908,
+   "backlog": 5505
+  },
+  {
+   "flood": 200,
+   "policy": "quota",
+   "median_wait_days": 0,
+   "p90_wait_days": 0,
+   "legit_served": 1197,
+   "legit_unserved": 1,
+   "backlog": 5748
+  }
+ ],
+ "webhook": {
+  "body": "b-row",
+  "credential": "REFUSED:tenant mismatch"
+ },
+ "principal": {
+  "results": [
+   [
+    "named principal",
+    true,
+    true,
+    "ok"
+   ],
+   [
+    "empty principal id",
+    false,
+    false,
+    "principal_id mismatch"
+   ],
+   [
+    "principal 'cron'",
+    true,
+    true,
+    "ok"
+   ]
+  ],
+  "rows": [
+   [
+    "prin_emily",
+    true
+   ],
+   [
+    "",
+    false
+   ],
+   [
+    "cron",
+    true
+   ]
+  ]
+ }
+}

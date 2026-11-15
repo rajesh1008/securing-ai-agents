@@ -1,0 +1,25 @@
+
+rota A: 30 jobs, 23 periodic, 7 triggered; issues 27 {'NO_BACKUP': 25, 'OVERLOAD': 1, 'SINGLE_POINT': 1}
+  minutes per 30-day month: {'Ian': 20, 'security': 2016}  total 2036 = 33.9 hours
+    OVERLOAD security:2016min/month
+    SINGLE_POINT security:24 jobs without a second person
+
+rota B: 30 jobs, 23 periodic, 7 triggered; issues 2 {'OVERLOAD': 2}
+  minutes per 30-day month: {'Ian': 20, 'Kevin': 995, 'Nina': 99, 'Sophie': 105, 'security': 817}  total 2036 = 33.9 hours
+    OVERLOAD Kevin:995min/month
+    OVERLOAD security:817min/month
+
+rota C: 30 jobs, 21 periodic, 9 triggered; issues 1 {'OVERLOAD': 1}
+  minutes per 30-day month: {'Ian': 20, 'Kevin': 597, 'Nina': 99, 'Sophie': 105, 'security': 817}  total 1638 = 27.3 hours
+    OVERLOAD security:817min/month
+
+rota B first quarter: 235 scheduled periodic runs; minutes per week [275, 605, 185, 215, 320, 395, 245, 395, 485, 275, 335, 905, 305]
+
+simulated years (400 each; absence start rate 0.04/mean-length per day per person, mean 8 days)
+  A no backup, no alarm      runs/yr 946  missed mean   28.2 ( 2.98%)  5th-95th pct 0-106  mean lag 0.35 days
+  A alarm only               runs/yr 946  missed mean   24.4 ( 2.57%)  5th-95th pct 0-92  mean lag 0.14 days
+  B backup only              runs/yr 946  missed mean    0.8 ( 0.09%)  5th-95th pct 0-5  mean lag 0.01 days
+  B backup + alarm           runs/yr 946  missed mean    0.7 ( 0.07%)  5th-95th pct 0-4  mean lag 0.0 days
+  A with its own backups     runs/yr 946  missed mean   25.2 ( 2.66%)  5th-95th pct 0-96  mean lag 0.31 days
+  C backup only              runs/yr 216  missed mean    0.1 ( 0.06%)  5th-95th pct 0-1  mean lag 0.01 days
+  (rota B owners, no backup used, daily alarm instead of weekly): missed mean 0.0

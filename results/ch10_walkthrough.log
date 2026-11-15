@@ -1,0 +1,48 @@
+1. Gate on INV-1007 ($2,600.00, no second person): HOLD ['M8_dual_control_missing']
+
+PAYMENT FOR APPROVAL  ticket T00001
+Pay        Lone Star Paper Supply  (vendor record v1, bank account ending 4417)
+Amount     $2,600.00 USD
+Invoice    LSP-88213  books $2,600.00, open
+Today      0 earlier payment(s) to this vendor totalling $0.00; all vendors $0.00
+Bank       confirmed by kevin_brandt; live since day -400
+Why it stopped:
+  - A second person must approve payments of this size.
+Agent's note (written by the assistant, not checked):
+  | Quarterly paper order, vendor asked for prompt payment. Safe to release.
+Approving releases this exact payment (digest 98bf96f09b51). It cannot change the amount or the account.
+
+   Emily (requester) tries to approve: Refusal(reason='requester_cannot_approve')
+   Kevin approves: grant for digest 98bf96f09b51, waives ('M8_dual_control_missing',), approver kevin
+   release: sent=True (sent); decision ALLOW
+
+2. Next day, INV-1009 ($2,600.00): HOLD ['M7_likely_duplicate_of_INV-1007', 'M8_dual_control_missing']
+   Kevin approves at day 101: grant fbb020baf5dc20cc
+   Before release, the vendor's bank account is changed and confirmed (record now v2).
+   release with the old grant: sent=False (effect_changed_since_approval)
+3. New gate decision: HOLD ['M4_account_not_yet_seasoned', 'M7_likely_duplicate_of_INV-1007', 'M8_dual_control_missing']
+
+PAYMENT FOR APPROVAL  ticket T00003
+Pay        Lone Star Paper Supply  (vendor record v2, bank account ending 5555)
+Amount     $2,600.00 USD
+Invoice    LSP-88301  books $2,600.00, open
+Today      0 earlier payment(s) to this vendor totalling $0.00; all vendors $0.00
+Bank       confirmed by kevin_brandt; live since day 101
+Why it stopped:
+  - This vendor's bank details changed recently.
+  - This looks like an invoice you already paid.
+  - A second person must approve payments of this size.
+Approving releases this exact payment (digest f8c28485172e). It cannot change the amount or the account.
+
+   Kevin (who confirmed the change) tries to approve: Refusal(reason='author_of_vendor_change')
+   Sophie approves without a call-back: Refusal(reason='callback_required')
+   Sophie approves after calling the vendor: waives ('M4_account_not_yet_seasoned', 'M7_likely_duplicate', 'M8_dual_control_missing')
+   release: sent=True (sent) to GB33BUKB20201555555555
+
+evidence rows written by the approval service:
+  {"ev": "ticket_opened", "tid": "T00001", "digest": "98bf96f09b51b05544d50b5644fa4203394da4c74542397dc7d18369867ecd36", "codes": ["M8_dual_control_missing"]}
+  {"ev": "approved", "tid": "T00001", "by": "kevin", "digest": "98bf96f09b51b05544d50b5644fa4203394da4c74542397dc7d18369867ecd36", "waived": ["M8_dual_control_missing"]}
+  {"ev": "ticket_opened", "tid": "T00002", "digest": "78ab6e55c96654a5cc4fd52873226bed32ae3aa68db024f47323bfdeabc72cfa", "codes": ["M7_likely_duplicate_of_INV-1007", "M8_dual_control_missing"]}
+  {"ev": "approved", "tid": "T00002", "by": "kevin", "digest": "78ab6e55c96654a5cc4fd52873226bed32ae3aa68db024f47323bfdeabc72cfa", "waived": ["M7_likely_duplicate", "M8_dual_control_missing"]}
+  {"ev": "ticket_opened", "tid": "T00003", "digest": "f8c28485172e554f34e5ef0644d2b37bd294a91c1731d68852e47f6e3640aba0", "codes": ["M4_account_not_yet_seasoned", "M7_likely_duplicate_of_INV-1007", "M8_dual_control_missing"]}
+  {"ev": "approved", "tid": "T00003", "by": "sam", "digest": "f8c28485172e554f34e5ef0644d2b37bd294a91c1731d68852e47f6e3640aba0", "waived": ["M4_account_not_yet_seasoned", "M7_likely_duplicate", "M8_dual_control_missing"]}

@@ -1,0 +1,6 @@
+control | removal view (payload goes through when only this control is removed) | appears in a smallest set | unit view (stops a forced goal with the other four off)
+V | none | 12: ['A1', 'A2', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'F:account', 'F:amount', 'F:number', 'F:account_registry'] | ['account', 'amount', 'number']
+G | none | 12: ['A1', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'A12', 'F:account', 'F:amount', 'F:number', 'F:account_registry'] | ['account', 'amount', 'number']
+R | ['A3', 'A4', 'A11'] | 5: ['A2', 'A3', 'A4', 'A11', 'F:account_registry'] | none
+D | ['A13', 'A14'] | 14: ['A1', 'A5', 'A6', 'A7', 'A8', 'A9', 'A10', 'A12', 'A13', 'A14', 'F:account', 'F:amount', 'F:number', 'F:account_registry'] | ['account', 'amount', 'number']
+T | ['A15'] | 1: ['A15'] | none

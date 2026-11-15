@@ -1,0 +1,36 @@
+PART 1: named documents. Each cell is the (invoice, amount) the parser reports; - means the parser rejected the bytes or found no object.
+document                                             python           pydantic               node                 go                 jq   strict
+baseline                                             141200             141200             141200             141200             141200   accept
+dup amount (first 99, last 141200)                   141200             141200             141200             141200             141200   reject:duplicate_key
+dup amount (first 141200, last 99)                       99                 99                 99                 99                 99   reject:duplicate_key
+dup key by escape (\u0061mount...)                       99                 99                 99                 99                 99   reject:duplicate_key
+extra key differing only in case                     141200             141200             141200                 99             141200   reject:unexpected_field:Amount_Cent   <- parsers disagree
+only the case-variant key                              None               None               None             141200               None   reject:unexpected_field:Amount_Cent   <- parsers disagree
+integer above 2^53                         9007199254740993   9007199254740993   9007199254740992   9007199254740993   9007199254740993   reject:amount_cents:amount_range   <- parsers disagree
+amount 1.412e5                                       141200             141200             141200             141200             141200   reject:float_not_allowed
+amount 141200.0                                      141200             141200             141200             141200             141200   reject:float_not_allowed
+amount as string                                     141200             141200             141200             141200             141200   reject:amount_cents:type_not_intege
+amount NaN                                              nan                nan                  -                  -               null   reject:non_finite_number   <- parsers disagree
+amount Infinity                                         inf                inf                  -                  - 1.7976931348623157e+308   reject:non_finite_number   <- parsers disagree
+trailing comma                                            -                  -                  -                  -                  -   reject:json_syntax
+line comment                                              -                  -                  -                  -                  -   reject:json_syntax
+single quotes                                             -                  -                  -                  -                  -   reject:json_syntax
+UTF-8 BOM                                                 -                  -                  -                  -             141200   reject:bom   <- parsers disagree
+trailing garbage                                          -                  -                  -                  -                  -   reject:not_one_json_object
+two objects                                               -                  -                  -                  -             141200   reject:json_syntax   <- parsers disagree
+lone surrogate in id                           INV-\ud800/141200                  -       INV-\ud800/141200       INV-�/141200                  -   reject:invoice_id:id_not_ascii   <- parsers disagree
+invalid UTF-8 byte in id                                  -                  -       INV-�/141200       INV-�/141200       INV-�/141200   reject:bad_utf8   <- parsers disagree
+raw control char in id                                    -                  -                  -                  -                  -   reject:json_syntax
+leading zero amount                                       -                  -                  -                  -             141200   reject:json_syntax   <- parsers disagree
+negative zero                                             0                  0                  0                  0                  0   reject:amount_cents:amount_range
+null amount                                            None               None               null               None               None   reject:amount_cents:type_not_intege   <- parsers disagree
+
+11 of 24 documents are read differently by at least one parser; strict accepts 1 and all five parsers agree on those: True
+
+PART 2: seeded mutation fuzz of the baseline document
+mutants: 3000; parsers disagreed on 334 (11.1%)
+strict accepted 136; on those, parsers disagreed on 0
+pairwise disagreement counts (of 3000): python/node=112, python/go=228, python/jq=100, python/pydantic=42, node/go=255
+mutants where the gate's reader (Python) sees the honest request, and the executor reads something else: node=0, go=101, jq=0
+   of those, executor reads a different amount: node=0 go=54
+   of those 101 go-differs mutants, strict_parse accepted 0

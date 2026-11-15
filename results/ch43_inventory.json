@@ -1,0 +1,575 @@
+{
+ "components": {
+  "M01": {
+   "name": "invoice field extractor (Haiku 4.5)",
+   "cls": "OUT_OF_SCOPE_GENAI_AGENTIC",
+   "why": "generative or agentic: outside the guidance's scope; the bank's broader risk management applies",
+   "tier": "MEDIUM",
+   "feeds": "payment",
+   "gate_after": true,
+   "owner": "Emily Carter"
+  },
+  "M02": {
+   "name": "vendor bank-change classifier (own, bag of words)",
+   "cls": "IN_SCOPE_MODEL",
+   "why": "statistical method producing a quantitative estimate or a label from one",
+   "tier": "LOW",
+   "feeds": "hold",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M03": {
+   "name": "amount detector (vendor history baseline)",
+   "cls": "IN_SCOPE_MODEL",
+   "why": "statistical method producing a quantitative estimate or a label from one",
+   "tier": "LOW",
+   "feeds": "alert",
+   "gate_after": true,
+   "owner": "Ian Walsh"
+  },
+  "M04": {
+   "name": "prompt release gate floor (spread of identical runs plus margin)",
+   "cls": "IN_SCOPE_MODEL",
+   "why": "statistical method producing a quantitative estimate or a label from one",
+   "tier": "HIGH",
+   "feeds": "release",
+   "gate_after": false,
+   "owner": "Emily Carter"
+  },
+  "M05": {
+   "name": "model second reviewer on payments",
+   "cls": "OUT_OF_SCOPE_GENAI_AGENTIC",
+   "why": "generative or agentic: outside the guidance's scope; the bank's broader risk management applies",
+   "tier": "LOW",
+   "feeds": "hold",
+   "gate_after": true,
+   "owner": ""
+  },
+  "M06": {
+   "name": "coordinator agent (multi-agent drafting)",
+   "cls": "OUT_OF_SCOPE_GENAI_AGENTIC",
+   "why": "generative or agentic: outside the guidance's scope; the bank's broader risk management applies",
+   "tier": "LOW",
+   "feeds": "text_only",
+   "gate_after": true,
+   "owner": "Nina Cole"
+  },
+  "M07": {
+   "name": "fallback model for degraded mode (Sonnet 4.6)",
+   "cls": "OUT_OF_SCOPE_GENAI_AGENTIC",
+   "why": "generative or agentic: outside the guidance's scope; the bank's broader risk management applies",
+   "tier": "MEDIUM",
+   "feeds": "payment",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M08": {
+   "name": "extractor confidence threshold (routes to review)",
+   "cls": "IN_SCOPE_MODEL",
+   "why": "statistical method producing a quantitative estimate or a label from one",
+   "tier": "LOW",
+   "feeds": "hold",
+   "gate_after": true,
+   "owner": "security"
+  },
+  "M09": {
+   "name": "hosted-model behavioural fingerprint",
+   "cls": "IN_SCOPE_MODEL",
+   "why": "statistical method producing a quantitative estimate or a label from one",
+   "tier": "LOW",
+   "feeds": "alert",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M10": {
+   "name": "incident responder model (reads a case, recommends)",
+   "cls": "OUT_OF_SCOPE_GENAI_AGENTIC",
+   "why": "generative or agentic: outside the guidance's scope; the bank's broader risk management applies",
+   "tier": "LOW",
+   "feeds": "text_only",
+   "gate_after": true,
+   "owner": "Ian Walsh"
+  },
+  "M11": {
+   "name": "money gate M1-M8",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "MEDIUM",
+   "feeds": "payment",
+   "gate_after": true,
+   "owner": "Sophie Adler"
+  },
+  "M12": {
+   "name": "egress allow-list",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "LOW",
+   "feeds": "text_only",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M13": {
+   "name": "evidence chain and anchors",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "LOW",
+   "feeds": "evidence",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M14": {
+   "name": "per-task budgets",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "MEDIUM",
+   "feeds": "payment",
+   "gate_after": true,
+   "owner": "Kevin Brandt"
+  },
+  "M15": {
+   "name": "detector merge and alert routing rules",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "LOW",
+   "feeds": "alert",
+   "gate_after": true,
+   "owner": "Ian Walsh"
+  },
+  "M16": {
+   "name": "rota scorecard",
+   "cls": "EXCLUDED_DETERMINISTIC",
+   "why": "deterministic, no statistical theory in its design",
+   "tier": "LOW",
+   "feeds": "text_only",
+   "gate_after": true,
+   "owner": "Ian Walsh"
+  }
+ },
+ "pack": [
+  {
+   "c": "M01",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D14"
+   ]
+  },
+  {
+   "c": "M01",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E31"
+   ]
+  },
+  {
+   "c": "M01",
+   "e": "ongoing_monitoring",
+   "s": "WEAK",
+   "ids": [
+    "E33"
+   ]
+  },
+  {
+   "c": "M01",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E07",
+    "E16"
+   ]
+  },
+  {
+   "c": "M01",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M01",
+   "e": "third_party",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M02",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D40"
+   ]
+  },
+  {
+   "c": "M02",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E29"
+   ]
+  },
+  {
+   "c": "M02",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M02",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E29",
+    "E01"
+   ]
+  },
+  {
+   "c": "M02",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M03",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D32"
+   ]
+  },
+  {
+   "c": "M03",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E13"
+   ]
+  },
+  {
+   "c": "M03",
+   "e": "ongoing_monitoring",
+   "s": "WEAK",
+   "ids": [
+    "E13"
+   ]
+  },
+  {
+   "c": "M03",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E01",
+    "E13"
+   ]
+  },
+  {
+   "c": "M03",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M04",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D18"
+   ]
+  },
+  {
+   "c": "M04",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E16",
+    "E33"
+   ]
+  },
+  {
+   "c": "M04",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M04",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E01"
+   ]
+  },
+  {
+   "c": "M04",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M05",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D08"
+   ]
+  },
+  {
+   "c": "M05",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E18"
+   ]
+  },
+  {
+   "c": "M05",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M05",
+   "e": "development_and_use_testing",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M05",
+   "e": "governance_roles",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M05",
+   "e": "third_party",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M06",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D38"
+   ]
+  },
+  {
+   "c": "M06",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E27"
+   ]
+  },
+  {
+   "c": "M06",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M06",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E26"
+   ]
+  },
+  {
+   "c": "M06",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M06",
+   "e": "third_party",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M07",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D36"
+   ]
+  },
+  {
+   "c": "M07",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E25"
+   ]
+  },
+  {
+   "c": "M07",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M07",
+   "e": "development_and_use_testing",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M07",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M07",
+   "e": "third_party",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M08",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D36"
+   ]
+  },
+  {
+   "c": "M08",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E25"
+   ]
+  },
+  {
+   "c": "M08",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M08",
+   "e": "development_and_use_testing",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M08",
+   "e": "governance_roles",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M09",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D40"
+   ]
+  },
+  {
+   "c": "M09",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M09",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M09",
+   "e": "development_and_use_testing",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  },
+  {
+   "c": "M09",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M10",
+   "e": "conceptual_soundness",
+   "s": "OK",
+   "ids": [
+    "D33"
+   ]
+  },
+  {
+   "c": "M10",
+   "e": "outcomes_analysis",
+   "s": "OK",
+   "ids": [
+    "E32"
+   ]
+  },
+  {
+   "c": "M10",
+   "e": "ongoing_monitoring",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M10",
+   "e": "development_and_use_testing",
+   "s": "MISSING",
+   "ids": []
+  },
+  {
+   "c": "M10",
+   "e": "governance_roles",
+   "s": "OK",
+   "ids": [
+    "OWN"
+   ]
+  },
+  {
+   "c": "M10",
+   "e": "third_party",
+   "s": "OK",
+   "ids": [
+    "E30"
+   ]
+  }
+ ],
+ "pack_counts": {
+  "OK": 39,
+  "WEAK": 2,
+  "MISSING": 14
+ },
+ "sim_only": [
+  "M02",
+  "M03"
+ ]
+}

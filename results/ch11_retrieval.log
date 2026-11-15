@@ -1,0 +1,21 @@
+--- 6 tenants x 40 documents = 240 documents; 60 benign, 60 hostile queries
+mode       | benign: q with foreign foreign docs secret recall@5 | hostile: q  docs secret | forged arg: q  docs secret
+none       |                     55          175     28    0.967 |         60   243    243 |            60   243    243
+arg        |                      0            0      0    1.000 |          0     0      0 |            60   300    300
+post       |                      0            0      0    0.967 |          0     0      0 |             0     0      0
+pushdown   |                      0            0      0    1.000 |          0     0      0 |             0     0      0
+partition  |                      0            0      0    1.000 |          0     0      0 |             0     0      0
+--- 30 tenants x 40 documents = 1200 documents; 60 benign, 60 hostile queries
+mode       | benign: q with foreign foreign docs secret recall@5 | hostile: q  docs secret | forged arg: q  docs secret
+none       |                     60          261     45    0.465 |         60   294    294 |            60   294    294
+arg        |                      0            0      0    1.000 |          0     0      0 |            60   300    300
+post       |                      0            0      0    0.465 |          0     0      0 |             0     0      0
+pushdown   |                      0            0      0    1.000 |          0     0      0 |             0     0      0
+partition  |                      0            0      0    1.000 |          0     0      0 |             0     0      0
+--- 120 tenants x 40 documents = 4800 documents; 60 benign, 60 hostile queries
+mode       | benign: q with foreign foreign docs secret recall@5 | hostile: q  docs secret | forged arg: q  docs secret
+none       |                     60          284     63    0.167 |         60   295    295 |            60   295    295
+arg        |                      0            0      0    1.000 |          0     0      0 |            60   300    300
+post       |                      0            0      0    0.167 |          0     0      0 |             0     0      0
+pushdown   |                      0            0      0    1.000 |          0     0      0 |             0     0      0
+partition  |                      0            0      0    1.000 |          0     0      0 |             0     0      0

@@ -1,0 +1,577 @@
+{
+ "rules": {
+  "A": {
+   "digest": "3a1b84857757",
+   "name": "A sibling review",
+   "min_decisions": 300,
+   "max_extra_hold_rate": 0.03,
+   "max_escapes": 0,
+   "max_candidate_errors": 0.01,
+   "min_weeks": 4,
+   "queue_capacity_per_week": 6
+  },
+  "B": {
+   "digest": "3b7cb7933917",
+   "name": "B layers only if hidden",
+   "min_decisions": 300,
+   "max_extra_hold_rate": 0.03,
+   "max_escapes": 0,
+   "max_candidate_errors": 0.01,
+   "min_weeks": 4,
+   "queue_capacity_per_week": 6
+  }
+ },
+ "weekly": [
+  {
+   "week": 1,
+   "n": 43,
+   "live_auto": 33,
+   "a_extra": 14,
+   "b_looser": 5
+  },
+  {
+   "week": 2,
+   "n": 44,
+   "live_auto": 35,
+   "a_extra": 11,
+   "b_looser": 8
+  },
+  {
+   "week": 3,
+   "n": 37,
+   "live_auto": 29,
+   "a_extra": 9,
+   "b_looser": 8
+  },
+  {
+   "week": 4,
+   "n": 46,
+   "live_auto": 44,
+   "a_extra": 17,
+   "b_looser": 2
+  },
+  {
+   "week": 5,
+   "n": 53,
+   "live_auto": 50,
+   "a_extra": 17,
+   "b_looser": 3
+  },
+  {
+   "week": 6,
+   "n": 48,
+   "live_auto": 39,
+   "a_extra": 19,
+   "b_looser": 7
+  },
+  {
+   "week": 7,
+   "n": 44,
+   "live_auto": 38,
+   "a_extra": 18,
+   "b_looser": 6
+  },
+  {
+   "week": 8,
+   "n": 64,
+   "live_auto": 57,
+   "a_extra": 26,
+   "b_looser": 6
+  },
+  {
+   "week": 9,
+   "n": 39,
+   "live_auto": 35,
+   "a_extra": 8,
+   "b_looser": 3
+  },
+  {
+   "week": 10,
+   "n": 53,
+   "live_auto": 45,
+   "a_extra": 20,
+   "b_looser": 6
+  },
+  {
+   "week": 11,
+   "n": 43,
+   "live_auto": 39,
+   "a_extra": 16,
+   "b_looser": 3
+  },
+  {
+   "week": 12,
+   "n": 50,
+   "live_auto": 44,
+   "a_extra": 20,
+   "b_looser": 4
+  },
+  {
+   "week": 13,
+   "n": 2,
+   "live_auto": 1,
+   "a_extra": 0,
+   "b_looser": 0
+  }
+ ],
+ "paid_hostile_live": 0,
+ "A": {
+  "tally": {
+   "decisions": 566,
+   "live_auto": 489,
+   "extra_holds": 195,
+   "escapes": 0,
+   "looser_unlabelled": 0,
+   "errors": 0,
+   "hostile_n": 8,
+   "hostile_caught_extra": 0
+  },
+  "cum": [
+   {
+    "week": 1,
+    "decisions": 43,
+    "live_auto": 33,
+    "extra_holds": 14,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.5814,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 33 < 300",
+     "weeks 1.0 < 4",
+     "extra-hold upper bound 0.581 > 0.03",
+     "worst week 14 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 2,
+    "decisions": 87,
+    "live_auto": 68,
+    "extra_holds": 25,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.4742,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 68 < 300",
+     "weeks 2.0 < 4",
+     "extra-hold upper bound 0.474 > 0.03",
+     "worst week 14 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 3,
+    "decisions": 124,
+    "live_auto": 97,
+    "extra_holds": 34,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.438,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 97 < 300",
+     "weeks 3.0 < 4",
+     "extra-hold upper bound 0.438 > 0.03",
+     "worst week 14 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 4,
+    "decisions": 170,
+    "live_auto": 141,
+    "extra_holds": 51,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.4336,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 141 < 300",
+     "extra-hold upper bound 0.434 > 0.03",
+     "worst week 17 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 5,
+    "decisions": 223,
+    "live_auto": 191,
+    "extra_holds": 68,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.417,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 191 < 300",
+     "extra-hold upper bound 0.417 > 0.03",
+     "worst week 17 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 6,
+    "decisions": 271,
+    "live_auto": 230,
+    "extra_holds": 87,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.434,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 230 < 300",
+     "extra-hold upper bound 0.434 > 0.03",
+     "worst week 19 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 7,
+    "decisions": 315,
+    "live_auto": 268,
+    "extra_holds": 105,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.4434,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 268 < 300",
+     "extra-hold upper bound 0.443 > 0.03",
+     "worst week 19 extra holds > capacity 6"
+    ]
+   },
+   {
+    "week": 8,
+    "decisions": 379,
+    "live_auto": 325,
+    "extra_holds": 131,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.4499,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.358 > 0.03"
+    ]
+   },
+   {
+    "week": 9,
+    "decisions": 418,
+    "live_auto": 360,
+    "extra_holds": 139,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 5,
+    "hostile_caught_extra": 0,
+    "ub": 0.4303,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.343 > 0.03"
+    ]
+   },
+   {
+    "week": 10,
+    "decisions": 471,
+    "live_auto": 405,
+    "extra_holds": 159,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.4342,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.352 > 0.03"
+    ]
+   },
+   {
+    "week": 11,
+    "decisions": 514,
+    "live_auto": 444,
+    "extra_holds": 175,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.4339,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.355 > 0.03"
+    ]
+   },
+   {
+    "week": 12,
+    "decisions": 564,
+    "live_auto": 488,
+    "extra_holds": 195,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.4375,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.363 > 0.03"
+    ]
+   },
+   {
+    "week": 13,
+    "decisions": 566,
+    "live_auto": 489,
+    "extra_holds": 195,
+    "escapes": 0,
+    "looser_unlabelled": 0,
+    "errors": 0,
+    "hostile_n": 8,
+    "hostile_caught_extra": 0,
+    "ub": 0.4366,
+    "verdict": "REJECT",
+    "why": [
+     "extra-hold rate lower bound 0.362 > 0.03"
+    ]
+   }
+  ]
+ },
+ "B": {
+  "tally": {
+   "decisions": 566,
+   "live_auto": 489,
+   "extra_holds": 0,
+   "escapes": 0,
+   "looser_unlabelled": 61,
+   "errors": 0,
+   "hostile_n": 8,
+   "hostile_caught_extra": 0
+  },
+  "cum": [
+   {
+    "week": 1,
+    "decisions": 43,
+    "live_auto": 33,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 5,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.0868,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 33 < 300",
+     "weeks 1.0 < 4",
+     "extra-hold upper bound 0.087 > 0.03"
+    ]
+   },
+   {
+    "week": 2,
+    "decisions": 87,
+    "live_auto": 68,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 13,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.0431,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 68 < 300",
+     "weeks 2.0 < 4",
+     "extra-hold upper bound 0.043 > 0.03"
+    ]
+   },
+   {
+    "week": 3,
+    "decisions": 124,
+    "live_auto": 97,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 21,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.0304,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 97 < 300",
+     "weeks 3.0 < 4",
+     "extra-hold upper bound 0.030 > 0.03"
+    ]
+   },
+   {
+    "week": 4,
+    "decisions": 170,
+    "live_auto": 141,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 23,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.021,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 141 < 300"
+    ]
+   },
+   {
+    "week": 5,
+    "decisions": 223,
+    "live_auto": 191,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 26,
+    "errors": 0,
+    "hostile_n": 3,
+    "hostile_caught_extra": 0,
+    "ub": 0.0156,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 191 < 300"
+    ]
+   },
+   {
+    "week": 6,
+    "decisions": 271,
+    "live_auto": 230,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 33,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.0129,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 230 < 300"
+    ]
+   },
+   {
+    "week": 7,
+    "decisions": 315,
+    "live_auto": 268,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 39,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.0111,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 268 < 300"
+    ]
+   },
+   {
+    "week": 8,
+    "decisions": 379,
+    "live_auto": 325,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 45,
+    "errors": 0,
+    "hostile_n": 4,
+    "hostile_caught_extra": 0,
+    "ub": 0.0092,
+    "verdict": "PROMOTE",
+    "why": []
+   },
+   {
+    "week": 9,
+    "decisions": 418,
+    "live_auto": 360,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 48,
+    "errors": 0,
+    "hostile_n": 5,
+    "hostile_caught_extra": 0,
+    "ub": 0.0083,
+    "verdict": "PROMOTE",
+    "why": []
+   },
+   {
+    "week": 10,
+    "decisions": 471,
+    "live_auto": 405,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 54,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.0074,
+    "verdict": "PROMOTE",
+    "why": []
+   },
+   {
+    "week": 11,
+    "decisions": 514,
+    "live_auto": 444,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 57,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.0067,
+    "verdict": "PROMOTE",
+    "why": []
+   },
+   {
+    "week": 12,
+    "decisions": 564,
+    "live_auto": 488,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 61,
+    "errors": 0,
+    "hostile_n": 7,
+    "hostile_caught_extra": 0,
+    "ub": 0.0061,
+    "verdict": "PROMOTE",
+    "why": []
+   },
+   {
+    "week": 13,
+    "decisions": 566,
+    "live_auto": 489,
+    "extra_holds": 0,
+    "escapes": 0,
+    "looser_unlabelled": 61,
+    "errors": 0,
+    "hostile_n": 8,
+    "hostile_caught_extra": 0,
+    "ub": 0.0061,
+    "verdict": "PROMOTE",
+    "why": []
+   }
+  ]
+ },
+ "cand_ms_max": {
+  "A": 4.390833000798011,
+  "B": 5.211237999901641
+ }
+}

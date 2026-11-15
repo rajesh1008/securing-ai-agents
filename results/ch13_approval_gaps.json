@@ -1,0 +1,12 @@
+{
+ "lines": [
+  "A. duplicate holds, screen Chapter 10 text only: held 60 of 60 (30 recurring benign, 30 hostile same-number replays); the earlier invoice's number is on the screen in 0; a reviewer who compares it with this invoice's number is right in 0; on the other 60 nothing separates the two kinds, so the reviewer's best policy approves all (30 hostile approved) or rejects all (30 benign rejected)",
+  "A. duplicate holds, screen with the earlier invoice named: held 60 of 60 (30 recurring benign, 30 hostile same-number replays); the earlier invoice's number is on the screen in 60; a reviewer who compares it with this invoice's number is right in 60; on the other 0 nothing separates the two kinds, so the reviewer's best policy approves all (30 hostile approved) or rejects all (30 benign rejected)",
+  "B. bank-change holds (pending change, 24): both the account on file and the requested one are on the screen: Chapter 10 text 0 of 24; with the previous account beside the new 24 of 24; the line also names the source of the request (a string the attacker may write, passed through safe_text)",
+  "   after a confirmed change (day 99), the screen on day 100, with show_previous:\n   PAYMENT FOR APPROVAL  ticket T00001\n   Pay        Capitol Flour Mills  (vendor record v2, bank account ending 8427)\n   Amount     $342.00 USD\n   Invoice    INV-7001  books $342.00, open\n   Today      0 earlier payment(s) to this vendor totalling $0.00; all vendors $0.00\n   Bank       confirmed by kb; live since day 99\n   Account    now ends 8427; before day 99 it ended 2278\n   Why it stopped:",
+  "C. Chapter 8 design B hold-code hits routed (a payment with two codes counts once per code, so the totals exceed the number of held payments):",
+  "   queue callback  hostile-class hits   73  benign-class hits   90  hostile share  44.8%",
+  "   queue dual      hostile-class hits    7  benign-class hits    0  hostile share 100.0%",
+  "   queue review    hostile-class hits  338  benign-class hits  260  hostile share  56.5%"
+ ]
+}

@@ -1,0 +1,431 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "repeats": 3,
+ "date": "2026-11-09",
+ "steps": {
+  "due_date": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 75,
+   "cases_all_correct": 24,
+   "cases_none_correct": 4,
+   "cases_repeats_disagree": 2,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 563,
+   "median_in_tokens": 96,
+   "median_out_tokens": 21,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 1.48,
+   "wrong_cases": [
+    {
+     "case": {
+      "invoice_date": "2028-01-31",
+      "terms": "Net 30",
+      "truth": "2028-03-01"
+     },
+     "answers": [
+      "2028-02-29",
+      "2028-02-29",
+      "2028-02-29"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-12-20",
+      "terms": "Net 45",
+      "truth": "2027-02-03"
+     },
+     "answers": [
+      "2027-02-04",
+      "2027-02-03",
+      "2027-02-04"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-10-06",
+      "terms": "EOM+10",
+      "truth": "2026-11-10"
+     },
+     "answers": [
+      "2026-11-10",
+      "2026-11-09",
+      "2026-11-10"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2027-08-20",
+      "terms": "EOM+10",
+      "truth": "2027-09-10"
+     },
+     "answers": [
+      "2027-09-09",
+      "2027-09-09",
+      "2027-09-09"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-02-10",
+      "terms": "EOM+15",
+      "truth": "2026-03-15"
+     },
+     "answers": [
+      "2026-03-17",
+      "2026-03-17",
+      "2026-03-17"
+     ]
+    },
+    {
+     "case": {
+      "invoice_date": "2026-08-08",
+      "terms": "EOM+10",
+      "truth": "2026-09-10"
+     },
+     "answers": [
+      "2026-09-09",
+      "2026-09-09",
+      "2026-09-09"
+     ]
+    }
+   ]
+  },
+  "duplicate": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 88,
+   "cases_all_correct": 28,
+   "cases_none_correct": 0,
+   "cases_repeats_disagree": 2,
+   "unparseable": 2,
+   "api_errors": 0,
+   "median_ms": 500,
+   "median_in_tokens": 259,
+   "median_out_tokens": 13,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 8.03,
+   "wrong_cases": [
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0211",
+        "amount": 103336
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0231",
+        "amount": 129866
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0505",
+        "amount": 150731
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0737",
+        "amount": 255352
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0638",
+        "amount": 90777
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0165",
+        "amount": 90479
+       }
+      ],
+      "new": {
+       "payee_id": "payee_lone_star",
+       "number": "INV737",
+       "amount": 255352
+      },
+      "truth": false
+     },
+     "answers": [
+      null,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "ledger": [
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0223",
+        "amount": 15624
+       },
+       {
+        "payee_id": "payee_riverside",
+        "number": "INV-0258",
+        "amount": 10009
+       },
+       {
+        "payee_id": "payee_hill_tools",
+        "number": "INV-0768",
+        "amount": 389698
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0135",
+        "amount": 374442
+       },
+       {
+        "payee_id": "payee_gulf_coast",
+        "number": "INV-0263",
+        "amount": 143928
+       },
+       {
+        "payee_id": "payee_lone_star",
+        "number": "INV-0237",
+        "amount": 247154
+       }
+      ],
+      "new": {
+       "payee_id": "payee_gulf_coast",
+       "number": "Inv-135",
+       "amount": 374442
+      },
+      "truth": false
+     },
+     "answers": [
+      false,
+      false,
+      null
+     ]
+    }
+   ]
+  },
+  "over_cap": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 28,
+   "cases_all_correct": 9,
+   "cases_none_correct": 20,
+   "cases_repeats_disagree": 1,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 522,
+   "median_in_tokens": 87,
+   "median_out_tokens": 15,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 0.14,
+   "wrong_cases": [
+    {
+     "case": {
+      "cap": 250000,
+      "paid": 215764,
+      "amount": 34237,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1000000,
+      "paid": 367308,
+      "amount": 637692,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 920296,
+      "amount": 329804,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 324430,
+      "amount": 175571,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 1250000,
+      "paid": 440848,
+      "amount": 809153,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "cap": 500000,
+      "paid": 263709,
+      "amount": 241291,
+      "truth": true
+     },
+     "answers": [
+      false,
+      false,
+      false
+     ]
+    }
+   ]
+  },
+  "totals": {
+   "cases": 30,
+   "calls": 90,
+   "model_correct": 59,
+   "cases_all_correct": 18,
+   "cases_none_correct": 9,
+   "cases_repeats_disagree": 3,
+   "unparseable": 0,
+   "api_errors": 0,
+   "median_ms": 510,
+   "median_in_tokens": 83,
+   "median_out_tokens": 13,
+   "code_correct": 30,
+   "code_cases": 30,
+   "code_microseconds_per_case": 0.21,
+   "wrong_cases": [
+    {
+     "case": {
+      "lines": [
+       74869,
+       81961,
+       27214,
+       16377
+      ],
+      "tax": 16535,
+      "total": 217956,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       18824,
+       40733,
+       61102
+      ],
+      "tax": 9954,
+      "total": 130513,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       6310,
+       6852,
+       9123
+      ],
+      "tax": 1839,
+      "total": 25124,
+      "truth": false
+     },
+     "answers": [
+      true,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       29312,
+       29545,
+       86684,
+       87810,
+       22276
+      ],
+      "tax": 21089,
+      "total": 276717,
+      "truth": false
+     },
+     "answers": [
+      true,
+      false,
+      false
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       43678,
+       63993,
+       4232,
+       88324,
+       15570,
+       87334
+      ],
+      "tax": 25008,
+      "total": 328239,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    },
+    {
+     "case": {
+      "lines": [
+       83064,
+       76128,
+       3063
+      ],
+      "tax": 13386,
+      "total": 175642,
+      "truth": false
+     },
+     "answers": [
+      true,
+      true,
+      true
+     ]
+    }
+   ]
+  }
+ }
+}

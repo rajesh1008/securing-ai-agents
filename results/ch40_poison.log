@@ -1,0 +1,31 @@
+== A. attack success against k (of 4000 training messages), 20 seeds, mean (min-max)
+   k  share              clean acc          ASR triggered       miss w/o trigger
+   0  0.00%    1.000 (1.000-1.000)    0.000 (0.000-0.000)    0.000 (0.000-0.000)
+   4  0.10%    1.000 (1.000-1.000)    0.000 (0.000-0.001)    0.000 (0.000-0.000)
+  10  0.25%    1.000 (1.000-1.000)    0.014 (0.002-0.025)    0.000 (0.000-0.000)
+  20  0.50%    1.000 (1.000-1.000)    0.347 (0.199-0.470)    0.000 (0.000-0.000)
+  40  1.00%    1.000 (1.000-1.000)    0.945 (0.865-0.994)    0.000 (0.000-0.000)
+  80  2.00%    1.000 (1.000-1.000)    1.000 (0.999-1.000)    0.000 (0.000-0.000)
+ 200  5.00%    1.000 (1.000-1.000)    1.000 (1.000-1.000)    0.000 (0.000-0.000)
+
+MLP (32 hidden), 10 seeds
+k=  0: clean acc 1.000 (1.000-1.000)  ASR 0.000 (0.000-0.000)
+k= 20: clean acc 1.000 (1.000-1.000)  ASR 0.045 (0.029-0.060)
+k= 80: clean acc 1.000 (0.999-1.000)  ASR 0.507 (0.401-0.576)
+
+== B. owner fine-tunes on clean data afterwards (SGD log-loss, 10 seeds); ASR after e epochs over 2000 clean messages
+k= 20: e0:0.25  e1:0.18  e3:0.10  e10:0.02  e20:0.00
+k= 80: e0:1.00  e1:1.00  e3:0.99  e10:0.87  e20:0.52
+k=200: e0:1.00  e1:1.00  e3:1.00  e10:1.00  e20:0.91
+
+== C. looking for it (logistic regression, 20 seeds per k)
+   k  token audit: trigger rank 1  trigger flip rate  OOF flag recall  OOF precision  ASR after drop+retrain
+   4                        20/20               0.75             1.00           1.00                   0.000
+  10                        20/20               1.00             0.96           1.00                   0.000
+  20                        20/20               1.00             0.47           1.00                   0.023
+  40                        20/20               1.00             0.02           1.00                   0.924
+  80                        20/20               1.00             0.00           1.00                   1.000
+ 200                        20/20               1.00             0.00           1.00                   1.000
+
+== black-box sweep over a candidate list (target label 0; 40 triggered-class messages; threshold: at least half flip); k=40, 20 seeds
+flagged the trigger: in list 20/20; nothing flagged when it is not in the list: 20/20; other candidates flagged (over 20 seeds): 0

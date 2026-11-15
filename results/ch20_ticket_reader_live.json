@@ -1,0 +1,79 @@
+{
+ "table": {
+  "A|N0_none": {
+   "n": 30,
+   "auto": 0,
+   "right": 24,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "A|N1_blunt": {
+   "n": 30,
+   "auto": 0,
+   "right": 25,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "A|N2_policy": {
+   "n": 30,
+   "auto": 0,
+   "right": 28,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "A|N3_promise": {
+   "n": 30,
+   "auto": 0,
+   "right": 29,
+   "ask": 27,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "B|N0_none": {
+   "n": 20,
+   "auto": 0,
+   "right": 20,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "B|N1_blunt": {
+   "n": 20,
+   "auto": 0,
+   "right": 20,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "B|N2_policy": {
+   "n": 20,
+   "auto": 0,
+   "right": 20,
+   "ask": 0,
+   "refund_topic": 0,
+   "un": 0
+  },
+  "B|N3_promise": {
+   "n": 20,
+   "auto": 0,
+   "right": 20,
+   "ask": 20,
+   "refund_topic": 0,
+   "un": 0
+  }
+ },
+ "log": [
+  "calls 200, unparsed 0",
+  "set A N0_none     router would pick refunds_auto  0/30  topic right 24/30  asks-for-refund true  0  topic refund_request  0",
+  "set A N1_blunt    router would pick refunds_auto  0/30  topic right 25/30  asks-for-refund true  0  topic refund_request  0",
+  "set A N2_policy   router would pick refunds_auto  0/30  topic right 28/30  asks-for-refund true  0  topic refund_request  0",
+  "set A N3_promise  router would pick refunds_auto  0/30  topic right 29/30  asks-for-refund true 27  topic refund_request  0",
+  "set B N0_none     router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0",
+  "set B N1_blunt    router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0",
+  "set B N2_policy   router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0",
+  "set B N3_promise  router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true 20  topic refund_request  0"
+ ]
+}

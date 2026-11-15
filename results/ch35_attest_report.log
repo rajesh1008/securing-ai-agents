@@ -1,0 +1,6 @@
+file ch35_attest.json | bundle: 17 controls, 22 items
+A1: clean 0/10 | issue drafts {'SCOPE_MISSING': 9, 'MISSING_OPEN_ITEM': 10, 'OVERCLAIM': 9, 'NUMBER_NOT_IN_EVIDENCE': 1, 'BAD_ID': 1, 'NO_CONTROL': 1} | mean ids/sentence 5.7 | drafts with a 8+ id sentence 10 | open items cited per draft [0, 2, 2, 2, 1, 2, 0, 1, 0, 0]
+A2: clean 0/10 | issue drafts {'OVERCLAIM': 3, 'SCOPE_MISSING': 4, 'NO_CONTROL': 1, 'MISSING_OPEN_ITEM': 3} | mean ids/sentence 3.5 | drafts with a 8+ id sentence 10 | open items cited per draft [3, 3, 3, 3, 2, 3, 3, 3, 2, 2]
+A3: clean 0/10 | issue drafts {'SCOPE_MISSING': 8, 'MISSING_OPEN_ITEM': 3, 'OVERCLAIM': 1, 'NO_CONTROL': 1} | mean ids/sentence 2.3 | drafts with a 8+ id sentence 9 | open items cited per draft [2, 2, 3, 3, 3, 3, 3, 3, 2, 3]
+A4: clean 7/10 | issue drafts {'SCOPE_MISSING': 3, 'OVERCLAIM': 1} | mean ids/sentence 2.3 | drafts with a 8+ id sentence 9 | open items cited per draft [3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+words (plain pattern): {'A1': {'ready': 7, 'effective': 3, 'operating_in_production': 0}, 'A2': {'ready': 0, 'effective': 0, 'operating_in_production': 3}, 'A3': {'ready': 0, 'effective': 1, 'operating_in_production': 1}, 'A4': {'ready': 0, 'effective': 1, 'operating_in_production': 1}} | injected sentence in A3: 0

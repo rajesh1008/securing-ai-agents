@@ -1,0 +1,6 @@
+lab3 naive_adjacent   400 invoices x2 submissions x5 runs: payments sent per run [800, 800, 800, 800, 800], distinct invoices [400, 400, 400, 400, 400], double-paid [400, 400, 400, 400, 400]
+lab3 naive_shuffled   400 invoices x2 submissions x5 runs: payments sent per run [420, 411, 419, 418, 413], distinct invoices [400, 400, 400, 400, 400], double-paid [20, 11, 19, 18, 13]
+lab3 reserve_adjacent 400 invoices x2 submissions x5 runs: payments sent per run [400, 400, 400, 400, 400], distinct invoices [400, 400, 400, 400, 400], double-paid [0, 0, 0, 0, 0]
+lab3 reserve_shuffled 400 invoices x2 submissions x5 runs: payments sent per run [400, 400, 400, 400, 400], distinct invoices [400, 400, 400, 400, 400], double-paid [0, 0, 0, 0, 0]
+lab4 recheck=False: {'changed_account': 43, 'paid_elsewhere': 14, 'amount_edited': 7, 'sent_to_stale': 43, 'sent_stale_invoice': 21, 'blocked': 0, 'sent_clean': 436}
+lab4 recheck=True: {'changed_account': 43, 'paid_elsewhere': 14, 'amount_edited': 7, 'sent_to_stale': 0, 'sent_stale_invoice': 0, 'blocked': 64, 'sent_clean': 436}

@@ -1,0 +1,116 @@
+{
+ "lab3_naive_adjacent": {
+  "runs": [
+   [
+    800,
+    400
+   ],
+   [
+    800,
+    400
+   ],
+   [
+    800,
+    400
+   ],
+   [
+    800,
+    400
+   ],
+   [
+    800,
+    400
+   ]
+  ]
+ },
+ "lab3_naive_shuffled": {
+  "runs": [
+   [
+    420,
+    400
+   ],
+   [
+    411,
+    400
+   ],
+   [
+    419,
+    400
+   ],
+   [
+    418,
+    400
+   ],
+   [
+    413,
+    400
+   ]
+  ]
+ },
+ "lab3_reserve_adjacent": {
+  "runs": [
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ]
+  ]
+ },
+ "lab3_reserve_shuffled": {
+  "runs": [
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ],
+   [
+    400,
+    400
+   ]
+  ]
+ },
+ "lab4_recheck_False": {
+  "changed_account": 43,
+  "paid_elsewhere": 14,
+  "amount_edited": 7,
+  "sent_to_stale": 43,
+  "sent_stale_invoice": 21,
+  "blocked": 0,
+  "sent_clean": 436
+ },
+ "lab4_recheck_True": {
+  "changed_account": 43,
+  "paid_elsewhere": 14,
+  "amount_edited": 7,
+  "sent_to_stale": 0,
+  "sent_stale_invoice": 0,
+  "blocked": 64,
+  "sent_clean": 436
+ }
+}

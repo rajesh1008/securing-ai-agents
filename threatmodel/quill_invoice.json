@@ -1,0 +1,21 @@
+{
+  "system": "Quill invoice and payment-proposal flow",
+  "version": "tm-0.1",
+  "date": "2026-11-09",
+  "assets": ["customer_ledger", "vendor_bank_details", "tool_credentials", "evidence_store", "tenant_boundary", "prompt_registry"],
+  "principals": ["prin_emily", "ledgerly_support", "quill_workload", "nina_cole_redteam"],
+  "entry_points": ["web_chat", "email_intake", "bank_feed_webhook", "document_upload", "mcp_install", "scheduled_reconcile", "admin_impersonation"],
+  "declared_tools": ["query_books", "read_document", "draft_invoice", "send_invoice", "send_email", "initiate_payment"],
+  "threats": [
+    {"id": "T01", "stride": "S", "title": "Document impersonates vendor", "asset": "vendor_bank_details", "entry": "email_intake", "control": "payee_registry", "test": "forced:F03b", "status": "implemented"},
+    {"id": "T02", "stride": "T", "title": "Payee or amount tampered in proposal", "asset": "vendor_bank_details", "entry": "document_upload", "control": "invoice_binding", "test": "forced:F03", "status": "planned:ch08"},
+    {"id": "T03", "stride": "R", "title": "Action without evidence record", "asset": "evidence_store", "entry": "web_chat", "control": "evidence_chain", "test": "chain_verify", "status": "implemented"},
+    {"id": "T04", "stride": "I", "title": "Customer data mailed to unlisted domain", "asset": "customer_ledger", "entry": "document_upload", "control": "egress_allow_list", "test": "forced:F01", "status": "implemented"},
+    {"id": "T05", "stride": "I", "title": "Model invents a recipient address", "asset": "customer_ledger", "entry": "bank_feed_webhook", "control": "egress_allow_list", "test": "turn2:invented_recipient", "status": "implemented"},
+    {"id": "T06", "stride": "D", "title": "Token spend loop or approval flooding", "asset": "tenant_boundary", "entry": "web_chat", "control": "budgets", "test": "", "status": "planned:ch07"},
+    {"id": "T07", "stride": "E", "title": "Tool outside the loadout is callable", "asset": "tool_credentials", "entry": "mcp_install", "control": "loadout_registry", "test": "registry:raw_http", "status": "implemented"},
+    {"id": "T08", "stride": "E", "title": "Unregistered tool bypasses the gate", "asset": "tool_credentials", "entry": "mcp_install", "control": "registry_inventory_check", "test": "inventory_check", "status": "implemented"},
+    {"id": "T09", "stride": "T", "title": "Memory write poisons later sessions", "asset": "prompt_registry", "entry": "scheduled_reconcile", "control": "memory_trust_labels", "test": "", "status": "planned:ch22"},
+    {"id": "T10", "stride": "S", "title": "Tool description impersonation (MCP)", "asset": "tool_credentials", "entry": "mcp_install", "control": "description_pinning", "test": "", "status": "planned:ch25"}
+  ]
+}

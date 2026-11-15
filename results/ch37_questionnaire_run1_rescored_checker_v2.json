@@ -1,0 +1,853 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "repeats": 5,
+ "calls": 120,
+ "usd": 0.439,
+ "checker": "v2 (rescored; same answers as run 1)",
+ "views": {
+  "F": {
+   "per_question": {
+    "Q1": [
+     0,
+     5
+    ],
+    "Q2": [
+     1,
+     5
+    ],
+    "Q3": [
+     4,
+     5
+    ],
+    "Q4": [
+     4,
+     5
+    ],
+    "Q5": [
+     1,
+     5
+    ],
+    "Q6": [
+     0,
+     5
+    ],
+    "Q7": [
+     1,
+     5
+    ],
+    "Q8": [
+     0,
+     5
+    ],
+    "Q9": [
+     4,
+     5
+    ],
+    "Q10": [
+     5,
+     5
+    ],
+    "Q11": [
+     0,
+     5
+    ],
+    "Q12": [
+     0,
+     5
+    ]
+   },
+   "gap_questions": [
+    10,
+    25
+   ],
+   "all_questions": [
+    20,
+    60
+   ],
+   "compliance_words": 11
+  },
+  "R": {
+   "per_question": {
+    "Q1": [
+     5,
+     5
+    ],
+    "Q2": [
+     5,
+     5
+    ],
+    "Q3": [
+     5,
+     5
+    ],
+    "Q4": [
+     5,
+     5
+    ],
+    "Q5": [
+     5,
+     5
+    ],
+    "Q6": [
+     4,
+     5
+    ],
+    "Q7": [
+     5,
+     5
+    ],
+    "Q8": [
+     5,
+     5
+    ],
+    "Q9": [
+     5,
+     5
+    ],
+    "Q10": [
+     5,
+     5
+    ],
+    "Q11": [
+     3,
+     5
+    ],
+    "Q12": [
+     5,
+     5
+    ]
+   },
+   "gap_questions": [
+    25,
+    25
+   ],
+   "all_questions": [
+    57,
+    60
+   ],
+   "compliance_words": 1
+  }
+ },
+ "answers": [
+  [
+   "F",
+   "Q1",
+   0,
+   "# EU AI Act Article 14 Compliance\n\nBased on the control mapping table, only **C16** addresses EUAI:Art14 (human oversight requirement). This indicates that Quill has implemented at least one control specifically designed to meet the EU AI Act's Article 14 human oversight requirements. However, the table shows limited controls mapped to this requirement, suggesting compliance may be focused in specific areas rather than comprehensively across all systems. For detailed information about the scope and effectiveness of this human oversight implementation, please contact Quill's compliance team."
+  ],
+  [
+   "F",
+   "Q1",
+   1,
+   "Based on the table provided, Quill's compliance with the EU AI Act's human oversight requirement (Article 14) is addressed through control C16. This control maps to EUAI:Art14, indicating that Quill has implemented measures to satisfy this requirement. However, the table only shows which controls address which regulatory requirements\u2014it does not provide specific details about what those controls actually do or how comprehensively they satisfy Article 14's obligations. To fully understand the nature and effectiveness of Quill's human oversight implementation, you would need to review the detailed documentation of control C16."
+  ],
+  [
+   "F",
+   "Q1",
+   2,
+   "Based on the table provided, only control C16 maps to EUAI:Art14 (EU AI Act Article 14 - human oversight requirement). This indicates that Quill has implemented at least one control specifically addressing this requirement. However, the table alone does not provide details about the nature, scope, or effectiveness of this control in meeting Article 14's human oversight obligations. For a comprehensive assessment of compliance with Article 14's requirements, you would need additional documentation detailing how C16 specifically ensures meaningful human oversight of AI systems."
+  ],
+  [
+   "F",
+   "Q1",
+   3,
+   "# EU AI Act Article 14 Compliance\n\nBased on the table provided, **C16 is the only control that maps to EUAI:Art14** (EU AI Act Article 14 on human oversight). C16 implements human oversight through documented review procedures and approval workflows.\n\nHowever, I can only confirm that Quill has **one control addressing this requirement**. To fully assess compliance with Article 14's human oversight obligations, you would need to review C16's detailed implementation documentation to verify it adequately covers all aspects of the requirement, such as the ability to understand AI system decisions, intervene when necessary, and oversee high-risk AI system outputs.\n\nFor a complete compliance assessment, I recommend consulting with your legal and compliance teams regarding the specific scope of Article 14 applicability to your use case."
+  ],
+  [
+   "F",
+   "Q1",
+   4,
+   "Based on the table provided, **C16 is the only control that maps to EUAI:Art14** (EU AI Act Article 14 on human oversight). This indicates that Quill has implemented at least one control addressing this requirement. However, the table alone does not provide details about what that control entails or how comprehensively it addresses the full scope of Article 14's human oversight obligations. For a complete assessment of Quill's compliance with Article 14, you would need additional documentation detailing the specific measures C16 encompasses."
+  ],
+  [
+   "F",
+   "Q2",
+   0,
+   "# ISO/IEC 42001 Certification Response\n\nBased on the control table provided, Quill demonstrates compliance with multiple ISO/IEC 42001 (I42K) controls, including A.10.3, A.4.4, A.6.2.4, A.6.2.5, A.6.2.6, A.6.2.8, A.8.3, A.8.4, and A.9.2. However, the table shows control mappings rather than formal certification status. To confirm whether Quill holds an active ISO/IEC 42001 certification from an accredited certification body, you would need to contact Quill directly or request their official certification documentation."
+  ],
+  [
+   "F",
+   "Q2",
+   1,
+   "# ISO/IEC 42001 Certification Response\n\nBased on the table provided, I cannot confirm that Quill is ISO/IEC 42001 certified. The table shows mappings to various I42K controls (which reference ISO/IEC 42001 requirements), indicating that Quill implements controls aligned with ISO/IEC 42001 standards in areas such as AI governance, risk management, and data handling. However, the presence of these control mappings does not constitute formal ISO/IEC 42001 certification. To verify Quill's actual certification status, you would need to request official certification documentation or visit the relevant certification body's registry."
+  ],
+  [
+   "F",
+   "Q2",
+   2,
+   "Based on the table provided, I can see that Quill addresses multiple ISO/IEC 42001 controls (I42K prefix), including A.4.4, A.6.2.4, A.6.2.5, A.6.2.6, A.6.2.8, A.8.3, A.8.4, A.9.2, and A.10.3. However, the table alone does not indicate whether Quill holds an active ISO/IEC 42001 certification. To confirm current certification status, I recommend contacting Quill directly or requesting their official certification documentation from an accredited certifying body."
+  ],
+  [
+   "F",
+   "Q2",
+   3,
+   "Based on the table provided, I can see that Quill maps to several ISO/IEC 42001 controls (I42K prefix), including A.4.4, A.6.2.4, A.6.2.5, A.6.2.6, A.6.2.8, A.8.3, A.8.4, A.9.2, and A.10.3. However, the table does not indicate whether Quill holds formal ISO/IEC 42001 certification. To obtain definitive information about Quill's certification status, I recommend contacting Quill directly or consulting their official security documentation."
+  ],
+  [
+   "F",
+   "Q2",
+   4,
+   "# ISO/IEC 42001 Certification Response\n\nBased on the table provided, I cannot confirm that Quill holds an ISO/IEC 42001 certification. While the table references I42K controls (which relate to ISO/IEC 42001 requirements), the presence of these controls in Quill's implementation does not constitute formal ISO/IEC 42001 certification. To verify whether Quill has obtained official ISO/IEC 42001 certification from an accredited certification body, you would need to contact Quill directly or check their official certification documentation."
+  ],
+  [
+   "F",
+   "Q3",
+   0,
+   "Based on the table provided, Quill does not cover OWASP Agentic ASI07 (insecure inter-agent communication). The table includes mappings for ASI01, ASI02, ASI03, ASI04, ASI05, ASI06, ASI08, ASI09, and ASI10, but ASI07 is notably absent from the control framework. If coverage of this specific vulnerability is important for your security requirements, I recommend discussing this gap with Quill's team."
+  ],
+  [
+   "F",
+   "Q3",
+   1,
+   "# OWASP Agentic ASI07 Coverage\n\nBased on the control mapping table provided, **ASI07 (insecure inter-agent communication) is not covered** in Quill's current control set. The table shows mappings for ASI01 through ASI06 and ASI08 through ASI10, but ASI07 is notably absent from all control rows. If you have concerns about inter-agent communication security, I recommend discussing this gap with your Quill representative."
+  ],
+  [
+   "F",
+   "Q3",
+   2,
+   "No, Quill does not cover OWASP Agentic ASI07 (insecure inter-agent communication). Looking at the control mappings in our compliance table, we map to other OWASP Agentic Security Institute controls including ASI01, ASI02, ASI03, ASI04, ASI05, ASI06, ASI08, ASI09, and ASI10, but ASI07 is not included in our current control set. If this is a critical requirement for your organization, I recommend discussing your specific security needs with our team."
+  ],
+  [
+   "F",
+   "Q3",
+   3,
+   "Based on the table provided, Quill does not have coverage for OWASP Agentic ASI07 (insecure inter-agent communication). The table includes controls mapped to ASI01, ASI02, ASI03, ASI04, ASI05, ASI06, ASI08, ASI09, and ASI10, but ASI07 is not present in any of the control mappings. If coverage for this specific control is important to your security requirements, I'd recommend discussing this gap with Quill's security team."
+  ],
+  [
+   "F",
+   "Q3",
+   4,
+   "Based on the table provided, Quill does not have coverage for ASI26:ASI07 (OWASP Agentic AI - Insecure Inter-Agent Communication). The table shows controls mapped to various security standards and frameworks, but ASI07 is not included in any of the control mappings listed. If insecure inter-agent communication is a critical concern for your use case, I'd recommend discussing this specific requirement with Quill's security team to understand if it's addressed through other means or if it's on their roadmap."
+  ],
+  [
+   "F",
+   "Q4",
+   0,
+   "Based on the table provided, Quill's controls are mapped to **LLM25**, which represents the **2025 edition** of the OWASP Top 10 for LLM Applications. This is evident from the LLM25 control family column headers (LLM25:LLM01 through LLM25:LLM10) that appear in the mapping table. The controls in this family are distributed across multiple Quill security controls to address the latest LLM-specific vulnerabilities and risks identified in that version."
+  ],
+  [
+   "F",
+   "Q4",
+   1,
+   "# OWASP Top 10 for LLM Applications Mapping\n\nBased on the control table provided, Quill's controls are mapped to the **LLM25 edition** of the OWASP Top 10 for LLM Applications. This is evident from the LLM25 column headers (LLM25:LLM01 through LLM25:LLM08, and LLM25:LLM10) which indicate controls are aligned with the 2025 version of this framework. Multiple controls throughout the table reference these LLM25 mappings, demonstrating comprehensive coverage of current LLM security risks."
+  ],
+  [
+   "F",
+   "Q4",
+   2,
+   "# OWASP Top 10 for LLM Applications Mapping\n\nBased on the table provided, Quill's controls are mapped to the **LLM25** framework, which represents the **2025 edition** of the OWASP Top 10 for LLM Applications. The controls reference specific vulnerabilities identified in this edition (LLM01 through LLM10), which address critical security risks unique to large language model deployments. This mapping demonstrates Quill's commitment to addressing the latest and most current threats to LLM-based systems."
+  ],
+  [
+   "F",
+   "Q4",
+   3,
+   "Based on the table provided, the controls are mapped to **LLM25**, which corresponds to the **2025 edition** of the OWASP Top 10 for Large Language Model Applications. This is evident from the column headers that include references like LLM25:LLM01 through LLM25:LLM10, where \"LLM25\" indicates the 2025 version of this framework. Multiple controls in the Quill security control set reference these LLM25 mappings to demonstrate alignment with the latest OWASP LLM security guidance."
+  ],
+  [
+   "F",
+   "Q4",
+   4,
+   "# OWASP Top 10 for LLM Applications Mapping\n\nBased on the control mappings in the table, Quill's controls are mapped to the **2023 edition** of the OWASP Top 10 for LLM Applications. This is evident from the LLM25 control references (LLM25:LLM01 through LLM25:LLM10), where \"25\" indicates the 2025 version designation used in the mapping framework, though the underlying standards align with the 2023 OWASP LLM Top 10 taxonomy. Multiple controls across our system (C01, C02, C04, C06, C07, C08, C09, C10, C15, and C18) reference these LLM security controls to address risks specific to large language model applications."
+  ],
+  [
+   "F",
+   "Q5",
+   0,
+   "# Response to Security Questionnaire\n\nBased on the control mapping table, Quill addresses OWASP LLM01 (Prompt Injection) through control **C01**, which implements measures aligned with LLM25:LLM06. However, the table shows only a single control mapped to this vulnerability, which suggests Quill provides **baseline protections** rather than comprehensive multi-layered defense. To fully address prompt injection risk, you should inquire about specific implementation details such as input validation, output filtering, prompt engineering practices, and ongoing monitoring for injection attempts. I recommend requesting detailed documentation on Quill's prompt injection mitigation strategy beyond what this control mapping indicates."
+  ],
+  [
+   "F",
+   "Q5",
+   1,
+   "# OWASP LLM01 Prompt Injection Coverage\n\nBased on the table, Quill addresses OWASP LLM01 (LLM25:LLM01) through control **C01 only**. This represents partial coverage of prompt injection risks. To fully address prompt injection vulnerabilities, organizations would typically need multiple complementary controls beyond C01, such as input validation, output filtering, and monitoring mechanisms. I recommend reviewing Quill's documentation for C01's specific implementation details and considering additional security layers for comprehensive LLM01 protection."
+  ],
+  [
+   "F",
+   "Q5",
+   2,
+   "Based on the table, Quill addresses OWASP LLM01 (Prompt Injection) through control C01, which maps to LLM25:LLM01. However, the table only shows that one control is mapped to this specific security requirement, which suggests partial rather than comprehensive coverage. To fully address prompt injection risks, additional complementary controls beyond C01 would typically be needed to cover input validation, output filtering, and detection mechanisms. I recommend reviewing Quill's detailed security documentation to understand the complete scope of protections implemented against prompt injection attacks."
+  ],
+  [
+   "F",
+   "Q5",
+   3,
+   "Based on the table provided, Quill addresses OWASP LLM01 prompt injection partially through control C01, which maps to the LLM25:LLM01 framework. However, this represents only a single control point, suggesting that Quill's coverage of prompt injection risks may not be comprehensive. To fully address prompt injection vulnerabilities, organizations should evaluate whether C01 provides adequate protection for your specific use case or if additional complementary controls are needed. I recommend reviewing the detailed specifications of C01 to understand its scope and limitations in relation to your security requirements."
+  ],
+  [
+   "F",
+   "Q5",
+   4,
+   "Based on the table provided, Quill addresses OWASP LLM01 (Prompt Injection) through control C01, which maps to LLM25:LLM01. However, the table only shows that one control is mapped to this requirement, which suggests **partial rather than full coverage**. To determine if this represents comprehensive protection against prompt injection attacks, you would need to review the specific details of control C01 and assess whether it adequately covers all prompt injection vectors relevant to your use case. I recommend discussing the scope and effectiveness of this control directly with Quill's security team for a definitive answer."
+  ],
+  [
+   "F",
+   "Q6",
+   0,
+   "Based on the table provided, **C12 demonstrates compliance with ISO 42001 A.6.2.8** on event logs. C12 maps to controls I42K:A.6.2.8, indicating that this control addresses the requirement for maintaining event logs. C12 also includes I42K:A.8.4 and N600:R09, suggesting a comprehensive approach to logging and monitoring activities. To fully verify compliance, you should ensure that your evidence chain documents the implementation, maintenance, and review procedures for event logs as specified in the ISO 42001 standard."
+  ],
+  [
+   "F",
+   "Q6",
+   1,
+   "# Evidence Chain Compliance with ISO 42001 A.6.2.8\n\nBased on the table provided, **ISO 42001 A.6.2.8 does not appear to map to any controls in this evidence chain documentation**. The control column shows no \"x\" marks under the I42K:A.6.2.8 column across any of the 18 controls (C01-C18).\n\nTo properly assess compliance with ISO 42001 A.6.2.8 (which addresses event logging requirements), you would need to review your actual control implementations and gather specific evidence demonstrating event logging practices. I recommend consulting your ISO 42001 compliance documentation or control matrix to identify which controls do address event logging and what evidence you've collected for them."
+  ],
+  [
+   "F",
+   "Q6",
+   2,
+   "# ISO 42001 A.6.2.8 Compliance Assessment\n\nBased on the table provided, **C03** is the control mapped to ISO 42001 A.6.2.8 regarding event logs. However, the table does not contain information about an \"evidence chain\" control or its specific compliance details with this standard.\n\nTo properly assess compliance with ISO 42001 A.6.2.8 on event logs, I would need additional documentation detailing: (1) your current event logging implementation, (2) the scope and retention of logs captured, and (3) how logs are protected and audited. Without access to these implementation details, I cannot confirm compliance status.\n\nI recommend reviewing your event logging procedures against the ISO 42001 requirement and conducting an internal audit to verify alignment."
+  ],
+  [
+   "F",
+   "Q6",
+   3,
+   "Based on the table provided, I cannot find a direct mapping between evidence chain requirements and ISO 42001 A.6.2.8 on event logs. The control I42K:A.6.2.8 appears in the table but is only associated with C03, which addresses a different control objective. To properly answer whether your evidence chain is compliant with ISO 42001 A.6.2.8 event log requirements, I would need additional documentation detailing your specific event logging procedures, retention policies, and how they align with ISO 42001 standards. I recommend reviewing your evidence chain procedures against the ISO 42001 A.6.2.8 requirements directly or consulting with your compliance team."
+  ],
+  [
+   "F",
+   "Q6",
+   4,
+   "# ISO 42001 A.6.2.8 Compliance Response\n\nBased on the control mapping table, **ISO 42001 A.6.2.8 appears in control C03 only**. Control C03 also maps to EUAI:Art12, suggesting it addresses AI governance and documentation requirements.\n\nHowever, the table itself does not contain specific information about event logs or evidence chain compliance details. To provide a definitive answer about your evidence chain's compliance with A.6.2.8's event log requirements, I would need additional documentation detailing your current event logging practices, retention policies, and audit trail mechanisms.\n\nI recommend reviewing your event log procedures against ISO 42001 A.6.2.8's specific requirements for completeness, accuracy, and accessibility of audit trails related to AI system operations."
+  ],
+  [
+   "F",
+   "Q7",
+   0,
+   "# Security Response\n\nBased on the available control mappings for Quill, I cannot confirm that degraded modes have been comprehensively tested against every dependency and fault. The table shows controls related to system resilience, fault tolerance, and operational continuity (such as C05, C07, C08, and C12 which map to various testing and operational standards), but it does not provide specific evidence of exhaustive degraded mode testing across all identified dependencies and potential fault scenarios. \n\nTo verify this capability, you would need to review Quill's detailed test plans, fault injection testing documentation, and dependency analysis records. I recommend requesting the specific test matrices that map degraded mode scenarios against your critical dependencies and known fault modes."
+  ],
+  [
+   "F",
+   "Q7",
+   1,
+   "# Answer\n\nBased on the control mappings in the table, Quill's degraded modes testing is addressed through controls C07, C08, and C10, which map to fault tolerance and resilience standards (ATLS:AML.T0080, ATLS:AML.T0110, and I42K:A.10.3). However, the table does not provide explicit evidence that degraded modes have been comprehensively tested against *every* dependency and fault. Testing coverage appears to follow established fault tolerance frameworks rather than guaranteeing exhaustive fault enumeration. For complete assurance on comprehensive degraded mode testing across all dependencies, you would need to review the detailed test plans and dependency documentation beyond this control matrix."
+  ],
+  [
+   "F",
+   "Q7",
+   2,
+   "Based on the table provided, I cannot find specific information about degraded modes testing against every dependency and fault. The controls shown (C01-C18) map to various compliance frameworks and security standards, but there are no entries that explicitly address degraded mode testing or comprehensive fault dependency analysis. To properly answer your question about degraded mode testing coverage, I would need access to documentation detailing your testing procedures, fault trees, and dependency analyses. I recommend reviewing your system's failure mode and effects analysis (FMEA) and business continuity test reports for this specific information."
+  ],
+  [
+   "F",
+   "Q7",
+   3,
+   "# Degraded Mode Testing Response\n\nBased on the control framework mapping provided, Quill implements testing of degraded modes through controls C07 (ATLS:AML.T0080), C08 (ATLS:AML.T0110), and C10 (I42K:A.4.4), which address fault tolerance and resilience testing. However, the table does not provide sufficient detail to confirm whether **every** dependency and fault condition has been explicitly tested. \n\nTo give you a comprehensive answer, I would need additional documentation specifying: (1) the complete inventory of system dependencies, (2) the full fault taxonomy covered, and (3) evidence that degraded mode testing was executed against each identified fault scenario.\n\nI recommend reviewing your internal test plans and fault injection testing reports to verify complete coverage."
+  ],
+  [
+   "F",
+   "Q7",
+   4,
+   "# Security Assessment Response\n\nBased on the control mappings in the table, Quill has implemented testing controls (C07, C08, C10) that address degraded modes and fault testing through standards including ATLS:AML.T0080 for fault analysis and LLM25 controls for comprehensive testing protocols. However, the table does not provide sufficient detail to confirm that every single dependency and fault combination has been exhaustively tested\u2014this would typically require reviewing the actual test plans and coverage reports. I recommend requesting the detailed test matrices and fault injection reports to verify complete coverage of your specific system's dependencies and failure modes."
+  ],
+  [
+   "F",
+   "Q8",
+   0,
+   "Yes, Quill addresses OWASP LLM07 system prompt leakage through control C07, which implements measures against prompt injection and unauthorized access to system instructions. Additionally, C04 includes protections through LLM02 controls that help prevent leakage of sensitive system prompts. These controls work together with our broader security framework to ensure system prompts remain protected from extraction attempts. For comprehensive details on our specific technical implementations for this threat, I recommend consulting with our security team directly."
+  ],
+  [
+   "F",
+   "Q8",
+   1,
+   "Yes, Quill addresses OWASP LLM07 system prompt leakage through control **C07**, which maps to the LLM25:LLM07 requirement. This control is designed to prevent unauthorized disclosure of system prompts and internal instructions. Additionally, control **C04** also provides relevant protections by mapping to LLM25:LLM01 and LLM25:LLM02, which support broader LLM security practices that help safeguard sensitive model configuration details. These controls work together to mitigate prompt injection and leakage risks."
+  ],
+  [
+   "F",
+   "Q8",
+   2,
+   "# OWASP LLM07 System Prompt Leakage Coverage\n\nYes, Quill addresses OWASP LLM07 system prompt leakage through **control C04**, which maps to the LLM25:LLM07 requirement. This control implements safeguards to prevent unauthorized extraction or manipulation of system prompts that could compromise the LLM's security boundaries. C04 also incorporates multiple complementary controls including ASI26:ASI01, ASI26:ASI02, ATLS:AML.T0086, and LLM25:LLM01/LLM02, providing defense-in-depth against prompt leakage attacks and injection attempts."
+  ],
+  [
+   "F",
+   "Q8",
+   3,
+   "# OWASP LLM07 System Prompt Leakage Coverage\n\nYes, Quill addresses system prompt leakage through **control C07**, which maps to **LLM25:LLM08**. This control implements safeguards against prompt injection and extraction attacks that could expose system instructions.\n\nAdditionally, **C04** provides complementary protection by mapping to **LLM25:LLM02**, which covers broader LLM security governance and monitoring practices that help detect and prevent prompt leakage attempts.\n\nThese controls work together to mitigate risks associated with unauthorized exposure of system prompts and instructions."
+  ],
+  [
+   "F",
+   "Q8",
+   4,
+   "# OWASP LLM07 System Prompt Leakage Coverage\n\nYes, Quill addresses OWASP LLM07 (System Prompt Leakage) through **Control C07**. This control maps to **LLM25:LLM08**, which directly covers protections against system prompt injection and leakage vulnerabilities.\n\nAdditionally, **Control C04** provides complementary coverage through **LLM25:LLM02**, which helps prevent prompt-based attacks more broadly. These controls work together to prevent attackers from extracting or manipulating system prompts through various injection techniques."
+  ],
+  [
+   "F",
+   "Q9",
+   0,
+   "# Control for ASI02 Tool Misuse\n\nControl **C01** primarily addresses ASI26:ASI02 (tool misuse) and is tested through **LLM25:LLM06**, which indicates moderate testing coverage. However, multiple other controls also map to ASI02 (C02, C04, C06, C16), suggesting this risk is addressed across several complementary controls rather than relying on a single solution. The distributed approach across C01, C04, and C06\u2014each with different testing frameworks\u2014provides reasonable defense-in-depth for tool misuse scenarios."
+  ],
+  [
+   "F",
+   "Q9",
+   1,
+   "# Control for ASI02 Tool Misuse\n\n**Control C01** primarily addresses ASI02 tool misuse and is tested through **LLM25:LLM06**, which indicates moderate testing coverage. Additionally, **controls C02, C04, and C06** also map to ASI02, suggesting a multi-layered approach to preventing tool misuse. C02 and C04 have additional testing touchpoints (LLM25:LLM05, LLM25:LLM30, and N600:R02), indicating more comprehensive validation across multiple security frameworks. The coverage demonstrates that Quill implements several overlapping safeguards rather than relying on a single control."
+  ],
+  [
+   "F",
+   "Q9",
+   2,
+   "# Control for ASI02 Tool Misuse\n\nControl **C01** addresses ASI02 tool misuse. However, based on the table, this control shows **limited testing coverage** - it maps to only two standards: ASI26:ASI02 and LLM25:LLM06. This narrow mapping suggests the control may not be comprehensively validated against multiple independent frameworks or testing methodologies. To ensure robust protection against tool misuse, you should consider supplementing C01 with additional testing frameworks or controls that address related security domains."
+  ],
+  [
+   "F",
+   "Q9",
+   3,
+   "# Control for ASI02 Tool Misuse\n\n**Control C01** primarily addresses ASI26:ASI02 (tool misuse). This control is tested through **LLM25:LLM06**, which appears to be a dedicated testing mechanism for this specific security concern.\n\nThe mapping suggests focused testing coverage for tool misuse vulnerabilities. However, C01's limited connections to other regulatory frameworks (only one additional mapping to ASI26:ASI09) indicates this may be a specialized control with narrower scope compared to broader security controls like C02, which maps to multiple testing and compliance standards."
+  ],
+  [
+   "F",
+   "Q9",
+   4,
+   "# Control for ASI02 Tool Misuse\n\n**C01, C02, C04, and C06** all address ASI26:ASI02 (tool misuse). Among these, **C04** appears to be the most comprehensively tested, as it maps to multiple frameworks including ASI26:ASI01, ATLS:AML.T0086, and LLM25:LLM01/LLM02, providing coverage across different security perspectives. **C02** also shows strong testing with mappings to I42K:A.6.2.4, N600:R02, and LLM25:LLM05/LLM06. The presence of these multiple control framework mappings indicates these controls have been evaluated against several compliance and security standards."
+  ],
+  [
+   "F",
+   "Q10",
+   0,
+   "# Quill's NIST AI 600-1 Alignment\n\nBased on the table, Quill demonstrates alignment with NIST AI 600-1 across multiple risk management controls. The mapping shows coverage of key requirements including risk assessment (N600:R02, R04), risk mitigation (N600:R07, R09), and monitoring practices (N600:R12) through various implemented controls like C04, C08, C12, and C16.\n\nHowever, this table alone does not provide a complete compliance assessment. A full NIST AI 600-1 evaluation would require detailed documentation of how each control is implemented, the scope of coverage, and independent verification of compliance across all relevant sections of the framework."
+  ],
+  [
+   "F",
+   "Q10",
+   1,
+   "# NIST AI 600-1 Compliance for Quill\n\nBased on the table provided, Quill demonstrates compliance with NIST AI 600-1 through the following mapped controls: N600:R02, N600:R04, N600:R07, N600:R09, and N600:R12. These controls address key requirements across risk management, transparency, and accountability practices.\n\nThe controls are implemented across multiple security domains including data governance (I42K), LLM-specific safeguards (LLM25), and ASI standards. This multi-layered approach helps ensure that Quill meets the foundational AI risk management principles outlined in NIST AI 600-1."
+  ],
+  [
+   "F",
+   "Q10",
+   2,
+   "# NIST AI 600-1 Compliance\n\nBased on the table provided, Quill demonstrates coverage across multiple NIST AI 600-1 requirements (N600 controls). Specifically, Quill maps to N600:R02, N600:R04, N600:R07, N600:R09, and N600:R12 through various implemented controls (C02, C04, C12, C16, and C08 respectively).\n\nHowever, this table alone cannot confirm complete compliance with NIST AI 600-1, as it shows only partial mapping to specific requirements. For a definitive compliance assessment, you would need to review the full control implementation details and any gaps against all NIST AI 600-1 requirements to ensure comprehensive coverage."
+  ],
+  [
+   "F",
+   "Q10",
+   3,
+   "# NIST AI 600-1 Compliance for Quill\n\nBased on the table provided, Quill demonstrates alignment with NIST AI 600-1 requirements across multiple control areas. The mapping shows coverage of N600 controls (R02, R04, R07, R09, R12) implemented through various supporting controls including C02, C04, C16, and C12, which address risk management, governance, and accountability measures. These implementations span critical domains such as AI system monitoring, documentation, and performance assessment. Overall, Quill meets the foundational NIST AI 600-1 framework requirements through its implemented control structure."
+  ],
+  [
+   "F",
+   "Q10",
+   4,
+   "# NIST AI 600-1 Compliance\n\nBased on the control mapping table provided, Quill addresses several NIST AI 600-1 requirements through its implemented controls. The system maps to multiple N600 controls including R02, R04, R07, R09, and R12, which are covered by controls C02, C04, C16, C08, and C12 respectively.\n\nHowever, I cannot definitively confirm full compliance with NIST AI 600-1 based solely on this table, as the mapping shows partial coverage rather than comprehensive alignment with all framework requirements. For a complete compliance assessment, you would need a detailed gap analysis against the full NIST AI 600-1 standard to identify any unmapped or unaddressed requirements."
+  ],
+  [
+   "F",
+   "Q11",
+   0,
+   "I cannot determine from the provided table whether the OWASP mapping is current. The table contains various security control frameworks (ASI26, ATLS, EUAI, I42K, LLM25, N600) and their mappings to controls C01-C18, but it does not include any OWASP references or timestamp information indicating when these mappings were last updated. To answer your question about OWASP mapping currency, I would need additional documentation showing OWASP framework mappings and their update dates."
+  ],
+  [
+   "F",
+   "Q11",
+   1,
+   "I cannot answer this question based on the provided table. The table shows control mappings to various frameworks and standards (ASI26, ATLS, EUAI, I42K, LLM25, N600), but does not contain any OWASP mappings or information about mapping currency/recency. To answer your question about OWASP mapping status, you would need to consult current OWASP documentation or contact Quill directly for information about their OWASP framework alignment."
+  ],
+  [
+   "F",
+   "Q11",
+   2,
+   "I don't have information about OWASP mappings in the provided table. The table contains controls (C01-C18) mapped to various security frameworks and standards including ASI26, ATLS, EUAI, I42K, LLM25, and N600, but there are no OWASP-related columns or references present. To answer your question about OWASP mapping currency, I would need access to documentation or a table that includes OWASP framework mappings. I recommend contacting Quill's security team directly for the current status of any OWASP mappings."
+  ],
+  [
+   "F",
+   "Q11",
+   3,
+   "I don't have information in the provided table about OWASP mappings or their currency status. The table contains controls (C01-C18) mapped to various security frameworks and standards including ASI, ATLS, EUAI, I42K, LLM25, and N600, but there is no OWASP column or metadata indicating update dates. To answer your question about OWASP mapping currency, you would need to consult Quill's documentation or contact their security team directly for current mapping information."
+  ],
+  [
+   "F",
+   "Q11",
+   4,
+   "I don't have information about OWASP mappings in the provided table. The table contains controls (C01-C18) mapped to various security frameworks and standards including ASI, ATLS, EUAI, I42K, LLM25, and N600, but there are no OWASP-related entries. To answer your question about OWASP mapping currency, I would need access to Quill's OWASP documentation or a table that includes OWASP mappings."
+  ],
+  [
+   "F",
+   "Q12",
+   0,
+   "Based on the table provided, Quill's mapping to EUAI:Art73 (EU AI Act Article 73 - serious incident reporting) is reflected in control C13. However, I cannot determine from this table alone whether this mapping is \"in force today,\" as the table only shows which controls map to which regulatory requirements, not their implementation status or effective dates. To answer whether this requirement is currently active, you would need to verify the current enforcement status of EU AI Act Article 73 and confirm that C13 has been implemented in Quill's systems."
+  ],
+  [
+   "F",
+   "Q12",
+   1,
+   "# EU AI Act Article 73 Mapping Status\n\nBased on the control mapping table, **C03 is mapped to EUAI:Art73** (serious incident reporting requirements). However, I cannot definitively confirm from this table alone whether this mapping is currently \"in force today,\" as the table shows the structural relationship but not implementation dates or current enforcement status.\n\nTo provide you with an accurate answer about enforcement status, I would need additional information about Quill's compliance timeline and the EU AI Act's current implementation phase. I recommend checking Quill's compliance documentation or contacting their security team directly for the most current status on Article 73 implementation."
+  ],
+  [
+   "F",
+   "Q12",
+   2,
+   "Based on the table provided, control C13 maps to EUAI:Art73 (EU AI Act Article 73 on serious incident reporting). However, I cannot determine from this table alone whether this mapping is \"in force today\" or what its current implementation status is. The table only shows which controls map to which regulatory frameworks, not their effective dates or operational status. To answer whether Article 73 serious incident reporting requirements are currently active for Quill, you would need to consult Quill's compliance documentation or regulatory status updates that address implementation timelines."
+  ],
+  [
+   "F",
+   "Q12",
+   3,
+   "# EU AI Act Article 73 Compliance\n\nBased on the table provided, **C03** maps to EUAI:Art73 (EU AI Act Article 73 - serious incident reporting). However, I cannot definitively confirm from this table alone whether this mapping is \"in force today,\" as the table does not include temporal/effective date information.\n\nTo answer your question accurately, I would need to know: (1) Quill's current compliance status, (2) the effective date of Article 73 in your jurisdiction, and (3) whether Quill has implemented the required serious incident reporting mechanisms. I recommend contacting Quill directly for current implementation details and timelines."
+  ],
+  [
+   "F",
+   "Q12",
+   4,
+   "# EU AI Act Article 73 Mapping Status\n\nBased on the table provided, Quill has a mapping to EUAI:Art73 through control **C13 only**. However, I cannot determine from this table alone whether that mapping is currently \"in force\" or its implementation status. To answer your question definitively, you would need to check Quill's current compliance documentation, release notes, or contact your Quill representative directly regarding the active status of C13 and its EUAI:Art73 obligations for serious incident reporting."
+  ],
+  [
+   "R",
+   "Q1",
+   0,
+   "The table shows partial evidence addressing EU AI Act Article 14 human oversight (C16), limited to simulated reviewers approving payment effects; whether reviewers actually read the approval details is untested. Article 14(4)(d)(e) requirements to override and stop apply from 2027-12-02 to high-risk systems only\u2014you should verify with counsel whether Quill is classified as high-risk. The author has not classified Quill as high-risk, and no audit has assessed full Article 14 alignment."
+  ],
+  [
+   "R",
+   "Q1",
+   1,
+   "The table shows evidence for Article 14 under C16, but with important limits: approval names the effect that will occur, though whether a person actually reads it is untested. Article 14(4)(d)(e) requires the ability to override and to stop a system, and those obligations apply only from 2027-12-02 to systems classified as high-risk under the Act; the author has not classified Quill as high-risk, so you should verify this classification with counsel. The current controls address human review of payment effects in simulation only, not in production."
+  ],
+  [
+   "R",
+   "Q1",
+   2,
+   "The table shows C16 provides partial support for EU AI Act Article 14 human oversight, with a limit: reviewers are simulated in testing, and the control addresses the ability to name effects and require new approvals for changed effects. However, Article 14(4)(d)(e) requirements to override and stop apply only from 2027-12-02 to high-risk systems, and the author has not classified Quill as high-risk\u2014you should verify this classification with counsel. The table does not support a yes to full Article 14 compliance because the author has not tested whether reviewers actually read the approval information or measure automation bias."
+  ],
+  [
+   "R",
+   "Q1",
+   3,
+   "The table shows that C16 provides partial evidence related to Article 14's human oversight requirement, specifically addressing the ability to override and stop automated decisions. However, the evidence has a critical limit: reviewers are simulated rather than real, and automation bias is not measured. Additionally, Article 14(4)(d)(e) applies only from 2027-12-02 to systems classified as high-risk under the EU AI Act, and the author has not classified Quill as high-risk\u2014you should verify this classification with counsel. The table does not support a claim that Quill fully meets Article 14."
+  ],
+  [
+   "R",
+   "Q1",
+   4,
+   "The table shows C16 provides partial coverage of EU AI Act Article 14's human oversight requirement, limited to simulated reviewers approving changed payment effects; whether the person actually reads the approval is untested. Article 14(4)(d)(e) ask for the ability to override and stop, which the table notes applies from 2027-12-02 to high-risk systems, and you should verify Quill's classification with counsel. The author has not classified Quill as high-risk, so these obligations may not yet apply. Quill is not certified for Article 14."
+  ],
+  [
+   "R",
+   "Q2",
+   0,
+   "No. Quill has no ISO/IEC 42001 certificate and no AI management system audit. The table shows evidence for several ISO/IEC 42001 Annex A controls (such as A.6.2.4, A.6.2.5, A.6.2.6, A.6.2.8, A.8.4, and A.10.3), but this evidence comes from measurements and tests of Quill's own design, not from an independent certification audit."
+  ],
+  [
+   "R",
+   "Q2",
+   1,
+   "No. Quill has no ISO/IEC 42001 certificate and no AI management system audit. The table shows evidence for several ISO/IEC 42001 Annex A requirements (such as A.6.2.4 AI system verification and validation, A.6.2.5 deployment, A.6.2.6 operation and monitoring, A.6.2.8 event logging, A.4.4 tooling resources, A.8.3 external reporting, A.8.4 incident communication, A.9.2 responsible use processes, and A.10.3 supplier controls), but evidence of meeting some requirements is not the same as certification."
+  ],
+  [
+   "R",
+   "Q2",
+   2,
+   "No. Quill has no ISO/IEC 42001 certificate and no AI management system audit. The table documents evidence for some controls from ISO/IEC 42001 Annex A (such as verification, validation, deployment, monitoring, and incident communication), but this evidence comes from the author's own measurements in simulation or live model tests, not from an independent certification body."
+  ],
+  [
+   "R",
+   "Q2",
+   3,
+   "No, Quill has no ISO/IEC 42001 certificate and no AI management system audit. The table shows evidence for several ISO/IEC 42001 Annex A sections (such as A.6.2.4, A.6.2.5, A.6.2.6, A.6.2.8, A.8.4, A.10.3), but this evidence comes from specific controls with stated limits, not from a full audit or certification."
+  ],
+  [
+   "R",
+   "Q2",
+   4,
+   "No. The table states that Quill has no ISO/IEC 42001 certificate and no AI management system audit. The evidence entries reference specific controls and their limits, but these do not constitute certification."
+  ],
+  [
+   "R",
+   "Q3",
+   0,
+   "The table does not support a yes for ASI07. There is no row covering OWASP Top 10 for Agentic Applications ASI07 in the evidence provided."
+  ],
+  [
+   "R",
+   "Q3",
+   1,
+   "The table does not support a yes for ASI07. ASI07 (insecure inter-agent communication) is listed among items from complete catalogues with no row at all, meaning no control addresses it."
+  ],
+  [
+   "R",
+   "Q3",
+   2,
+   "The table does not support a yes for OWASP Top 10 for Agentic Applications ASI07 Insecure Inter-Agent Communication [2026]. ASI07 is not listed in the control set."
+  ],
+  [
+   "R",
+   "Q3",
+   3,
+   "The table does not support a yes for ASI07. This item appears in the list of complete catalogues with no row at all, meaning no control addresses it. You may want to verify with the author whether insecure inter-agent communication is out of scope for Quill or remains unaddressed."
+  ],
+  [
+   "R",
+   "Q3",
+   4,
+   "The table does not support a yes for ASI07. No row addresses OWASP Top 10 for Agentic Applications ASI07 Insecure Inter-Agent Communication [2026]."
+  ],
+  [
+   "R",
+   "Q4",
+   0,
+   "Quill's controls are mapped to the OWASP Top 10 for LLM Applications 2025 edition. The table shows evidence across multiple LLM items (LLM01, LLM02, LLM03, LLM04, LLM05, LLM06, LLM07, LLM08, LLM10) all labeled with the 2025 version. No mappings reference an earlier or later edition of that catalogue."
+  ],
+  [
+   "R",
+   "Q4",
+   1,
+   "Quill's controls are mapped to the OWASP Top 10 for LLM Applications 2025 edition. This is shown throughout the table in references such as \"LLM06 Excessive Agency [2025]\" and \"LLM02 Sensitive Information Disclosure [2025].\""
+  ],
+  [
+   "R",
+   "Q4",
+   2,
+   "Quill's controls are mapped to the OWASP Top 10 for LLM Applications [2025]. The table shows evidence across LLM01 through LLM10 from that 2025 edition, with controls C01 through C18 addressing risks such as Prompt Injection, Sensitive Information Disclosure, Supply Chain, Data and Model Poisoning, Improper Output Handling, Excessive Agency, System Prompt Leakage, Vector and Embedding Weaknesses, and Unbounded Consumption."
+  ],
+  [
+   "R",
+   "Q4",
+   3,
+   "Quill's controls are mapped to the OWASP Top 10 for LLM Applications 2025 edition. The table shows mappings to LLM01 through LLM10 from that year across controls C01 through C18, though coverage is partial and limited in scope for each item."
+  ],
+  [
+   "R",
+   "Q4",
+   4,
+   "Quill's controls are mapped to the OWASP Top 10 for LLM Applications [2025]. The table shows controls addressing LLM01 through LLM10 from that edition, with evidence spanning items such as LLM06 Excessive Agency, LLM02 Sensitive Information Disclosure, LLM05 Improper Output Handling, and LLM10 Unbounded Consumption. However, the table notes that several LLM items have no controls at all, including LLM09 and others listed in the complete catalogue gaps."
+  ],
+  [
+   "R",
+   "Q5",
+   0,
+   "No. The table shows that C04 provides only a **partial** address of OWASP Top 10 for LLM Applications LLM01 Prompt Injection [2025], with the limit that it \"limits the effect of an injection that reaches the model; does not detect it.\" Quill does not fully address prompt injection."
+  ],
+  [
+   "R",
+   "Q5",
+   1,
+   "No, the table does not support a full address of OWASP LLM01 Prompt Injection. C04 only partially addresses it: it limits the effect of an injection that reaches the model, but does not detect the injection itself. Other OWASP LLM items without rows\u2014including the full LLM01 catalogue entry\u2014are not covered by the control set."
+  ],
+  [
+   "R",
+   "Q5",
+   2,
+   "No. C04 provides partial coverage for OWASP LLM Applications LLM01 Prompt Injection [2025], with the limit that it only limits the effect of an injection that reaches the model; it does not detect the injection itself. The table does not show complete coverage for this risk."
+  ],
+  [
+   "R",
+   "Q5",
+   3,
+   "No. The table shows that C04 only **partially** addresses OWASP Top 10 for LLM Applications LLM01 Prompt Injection [2025], with the limit that it \"limits the effect of an injection that reaches the model; does not detect it.\" Quill does not fully address prompt injection."
+  ],
+  [
+   "R",
+   "Q5",
+   4,
+   "No. The table shows that C04 only partially addresses OWASP Top 10 for LLM Applications LLM01 Prompt Injection [2025], with the limit that it \"limits the effect of an injection that reaches the model; does not detect it.\" Quill bounds where a hijacked agent can send data but does not stop the injection itself from occurring."
+  ],
+  [
+   "R",
+   "Q6",
+   0,
+   "The table shows that C03 provides evidence for ISO/IEC 42001 Annex A A.6.2.8 on AI system recording of event logs, but only with a significant limit: one chain implementation with the anchor service simulated. This means the evidence covers a single implementation scenario rather than comprehensive event logging across the system. I cannot say the evidence chain is fully supported for production use, as the simulation does not represent real operational conditions."
+  ],
+  [
+   "R",
+   "Q6",
+   1,
+   "The table shows that C03 provides evidence for ISO/IEC 42001 Annex A A.6.2.8 on AI system recording of event logs, but with a significant limit: it covers only one chain implementation with the anchor service simulated. I cannot say whether this meets ISO 42001's full requirements, as Quill has no ISO/IEC 42001 audit or certificate. The evidence is partial in scope and laboratory conditions rather than production verification."
+  ],
+  [
+   "R",
+   "Q6",
+   2,
+   "The table shows C03 provides evidence for ISO/IEC 42001 Annex A A.6.2.8 AI system recording of event logs [2023], but with a limit: one chain implementation and the anchor service simulated. Quill has no ISO/IEC 42001 certificate and no AI management system audit, so I cannot say the evidence chain satisfies a standard or meets its full intent. The simulated anchor service means the live logging path has not been tested end-to-end."
+  ],
+  [
+   "R",
+   "Q6",
+   3,
+   "The table shows partial evidence for ISO/IEC 42001 Annex A A.6.2.8 AI system recording of event logs, limited to one chain implementation with the anchor service simulated. This means the logging function has been demonstrated in a lab setting but not in production, and only one code path has been tested. Quill has no ISO/IEC 42001 certificate and no AI management system audit. The evidence supports the control narrowly; broader deployment scenarios remain untested."
+  ],
+  [
+   "R",
+   "Q6",
+   4,
+   "The table shows C03 provides evidence for ISO/IEC 42001 Annex A A.6.2.8 AI system recording of event logs, but with a significant limit: it covers one chain implementation only, with the anchor service simulated. The evidence does not represent a full production system or multiple implementations. Additionally, Quill has no ISO/IEC 42001 certificate and no AI management system audit, so this evidence is not part of a certified compliance framework."
+  ],
+  [
+   "R",
+   "Q7",
+   0,
+   "No. C18 records that 12 of 36 dependency-and-fault cells were drilled in replay; 24 remain untested. The evidence covers degraded modes that are declared and recorded, but production outages are not yet in the evidence."
+  ],
+  [
+   "R",
+   "Q7",
+   1,
+   "No. C18 shows that degraded modes were declared and recorded for 12 of 36 dependency-and-fault cells that were drilled in replay simulation; 24 remained untested. The table does not support testing every dependency and fault combination."
+  ],
+  [
+   "R",
+   "Q7",
+   2,
+   "No. C18 shows that 12 of 36 dependency-and-fault cells were drilled in replay; 24 remain untested. Degraded modes are declared and recorded, but production outages are not yet in the evidence. The table does not support a statement that degraded modes have been tested against every dependency and fault."
+  ],
+  [
+   "R",
+   "Q7",
+   3,
+   "No. C18 states that only 12 of 36 dependency-and-fault cells were drilled in replay; 24 remain untested. The table also notes that production outages are not yet in the evidence, and provider rate limits were not simulated. Degraded modes are declared and recorded, but the testing has significant gaps."
+  ],
+  [
+   "R",
+   "Q7",
+   4,
+   "No. C18 states that only 12 of 36 dependency-and-fault cells were drilled in replay; 24 remain untested. Additionally, production outages are not yet in the evidence, so real-world degradation has not been observed. The table shows degraded modes are declared and recorded in simulation, but coverage is incomplete."
+  ],
+  [
+   "R",
+   "Q8",
+   0,
+   "C09 provides partial coverage of OWASP Top 10 for LLM Applications LLM07 System Prompt Leakage (2025), with the following limits: prompts are versioned and gated for behaviour (Chapter 18); no test tries to extract one, and no prompt is claimed to be free of anything an attacker could use. This means the control gates prompt changes but does not test extraction resistance or claim the prompt itself contains no exploitable content."
+  ],
+  [
+   "R",
+   "Q8",
+   1,
+   "C09 addresses OWASP Top 10 for LLM Applications LLM07 System Prompt Leakage, but with limits: prompts are versioned and gated for behaviour, yet no test tries to extract a prompt, and no prompt is claimed to be free of anything an attacker could use. The control does not prevent prompt leakage, only manages changes to prompts through a release gate."
+  ],
+  [
+   "R",
+   "Q8",
+   2,
+   "C09 partially addresses OWASP Top 10 for LLM Applications LLM07 System Prompt Leakage [2025]. Prompts are versioned and gated for behaviour, but no test tries to extract one, and no prompt is claimed to be free of anything an attacker could use. The gate applies to prompt changes before they ship, and baseline runs are measured against one model. However, other defences against prompt extraction are not in the table."
+  ],
+  [
+   "R",
+   "Q8",
+   3,
+   "Yes, partially. C09 addresses OWASP Top 10 for LLM Applications LLM07 System Prompt Leakage [2025], with the limit that prompts are versioned and gated for behaviour; however, no test tries to extract a prompt, and no prompt is claimed to be free of anything an attacker could use."
+  ],
+  [
+   "R",
+   "Q8",
+   4,
+   "C09 addresses OWASP Top 10 for LLM Applications LLM07 System Prompt Leakage [2025], but with limits: prompts are versioned and gated for behaviour, yet no test tries to extract a prompt, and no prompt is claimed to be free of anything an attacker could use. This means the control gates changes to prompts and tracks versions, but does not test resistance to extraction attacks or guarantee prompt secrecy."
+  ],
+  [
+   "R",
+   "Q9",
+   0,
+   "Multiple controls address OWASP ASI02 Tool Misuse and Exploitation [2026], each with distinct limits.\n\n**C01** (measured in simulation) addresses it partially\u2014covering the bank-change path only. **C02** (measured live model) addresses it more fully, tested against payment classes the author built; a second reviewer tried it live on one prompt. **C04** (measured live model) addresses it partially, limited to mail destination only. **C06** (tested) addresses it, with loadouts and registry inventory checked at build, though runtime tool lists fall outside this control. **C16** (measured in simulation) addresses it partially\u2014a changed effect requires new approval.\n\nThe most comprehensive measurement is C02's live model testing, though it remains limited to payment tool classes and a single reviewer's trial."
+  ],
+  [
+   "R",
+   "Q9",
+   1,
+   "ASI02 Tool Misuse and Exploitation is addressed by multiple controls with varying test scope. **C01** addresses it in simulation but only covers the bank-change path. **C02** addresses it via live model testing of payment classes that the author built, with a second reviewer's single live prompt attempt. **C04** addresses it via live model testing but limits coverage to mail destination only. **C06** addresses it through tested build-time checks of loadouts and registry inventory, though runtime tool lists fall outside its scope."
+  ],
+  [
+   "R",
+   "Q9",
+   2,
+   "C02 addresses OWASP Top 10 for Agentic Applications ASI02 Tool Misuse and Exploitation [2026], measured live on the model with a limit of payment classes the author built; a model second reviewer tried it live on one prompt. C01 also partially addresses ASI02 in simulation, covering the bank-change path only. C04 partially addresses ASI02 in simulation, limited to mail destination only. C16 partially addresses ASI02 in simulation, requiring a new approval when an effect changes."
+  ],
+  [
+   "R",
+   "Q9",
+   3,
+   "Multiple controls address OWASP ASI02 Tool Misuse and Exploitation [2026], each with different scope and test methods:\n\n**C01** (measured in simulation) partially addresses it, covering the bank-change path only. **C02** (measured live model) addresses it for payment classes the author built, tested by a second reviewer on one live prompt. **C04** (measured live model) partially addresses it for mail destination only. **C06** (tested) addresses it by checking loadouts and registry inventory at build time, though runtime tool lists are outside this control's scope. **C16** (measured in simulation) partially addresses it, requiring a new approval when an effect changes.\n\nThe testing varies from simulation to live model to build-time checks, and each control covers a different subset of tool misuse scenarios rather than the threat comprehensively."
+  ],
+  [
+   "R",
+   "Q9",
+   4,
+   "C02 addresses OWASP ASI02 Tool Misuse and Exploitation through live model measurement, covering payment classes the author built; a second reviewer tried the control live on one prompt. C01 also partially addresses ASI02 in simulation, limited to the bank-change path only. C04 partially addresses ASI02 through live model measurement, but only for mail destination. C16 partially addresses ASI02 in simulation, requiring a new approval when an effect changes."
+  ],
+  [
+   "R",
+   "Q10",
+   0,
+   "The table does not support a yes for full NIST AI 600-1 coverage. Quill addresses or partially addresses five of the Generative AI Profile risks: R02 (Confabulation, checked against invoice fields only), R04 (Data Privacy, for outbound mail only), R07 (Human-AI Configuration, with simulated reviewers), R09 (Information Security, for the agent's own tools), and R12 (Value Chain, pinning tool descriptors). The author marked R01, R03, R05, R06, R08, R10, and R11 as not applicable to an invoice agent. This leaves significant gaps in the profile's scope."
+  ],
+  [
+   "R",
+   "Q10",
+   1,
+   "The table does not support a yes for NIST AI 600-1 as a whole. Quill addresses partial evidence on R02 Confabulation (C02: checks amount and payee fields, not the whole text), partial evidence on R04 Data Privacy (C04: covers outbound mail only, no inspection of stored data), and partial evidence on R09 Information Security (C12: detection of misuse of the agent's own tools). R01, R03, R05, R06, R08, R10, and R11 are marked not applicable by the author. R07, R12 are covered in part by C16 and C08 with stated limits. R02, R04, R09 do not meet the full profile."
+  ],
+  [
+   "R",
+   "Q10",
+   2,
+   "The table shows partial evidence for NIST AI 600-1 in three areas: Quill addresses confabulation detection (R02) by checking payment amount and payee fields; provides partial coverage of data privacy (R04) for outbound email only; and partial coverage of value chain integration (R12) by pinning what third-party tools claim about themselves. The table does not address the remaining risks in NIST AI 600-1, and several risks are marked not applicable by the author (R01, R03, R05, R06, R08, R10, R11)."
+  ],
+  [
+   "R",
+   "Q10",
+   3,
+   "The table does not support a yes for NIST AI 600-1 as a whole. Quill addresses or partially addresses four of the Generative AI Profile risks: R02 Confabulation (C02, limited to amount and payee checks), R04 Data Privacy (C04, outbound mail only), R07 Human-AI Configuration (C16, with simulated reviewers), and R09 Information Security (C12, detection of tool misuse). The author marked R01, R03, R05, R06, R08, R10, and R11 as not applicable to an invoice agent. No evidence is shown for R12 Value Chain and Component Integration beyond descriptor-level pinning (C08)."
+  ],
+  [
+   "R",
+   "Q10",
+   4,
+   "The table does not support a yes answer for NIST AI 600-1 overall. Quill addresses partial or marked-not-applicable coverage of several NIST AI 600-1 risks: R02 Confabulation (checked for amount and payee only, not full model text in C02), R04 Data Privacy (outbound mail only, no stored data inspection in C04), R07 Human-AI Configuration (reviewers simulated, automation bias unmeasured in C16), R09 Information Security (detection of agent tool misuse in C12), and R12 Value Chain and Component Integration (pins tool descriptors, not runtime responses in C08). Eight other risks are marked not applicable by the author. The standard's remaining risks have no coverage in the table."
+  ],
+  [
+   "R",
+   "Q11",
+   0,
+   "The OWASP Top 10 for LLM Applications (LLM23) was published in 2025, and the OWASP Top 10 for Agentic Applications (ASI26) was published in 2026; both mappings in the table use these current versions. However, the table does not cover all items in either catalogue\u2014for example, LLM09 is marked not applicable rather than addressed, and ASI07 has no row at all. The measurements themselves are a mix of simulation, live model testing, and lab cases, so their currency depends on when Quill's code last changed relative to when each control was measured. You should verify with the Quill team when the most recent measurement was taken."
+  ],
+  [
+   "R",
+   "Q11",
+   1,
+   "The table uses OWASP Top 10 for LLM Applications [2025] and OWASP Top 10 for Agentic Applications ASI [2026], which are the latest published versions as of the table's creation. However, OWASP frameworks evolve, so you should verify whether newer versions have been released since this table was built. The evidence is limited: most controls address only subsets of each risk (marked \"partial\" or with specific limits), and some catalogue items have no row at all\u2014for example, LLM01 through LLM10 each lack entries in at least one control."
+  ],
+  [
+   "R",
+   "Q11",
+   2,
+   "The table shows measurements against OWASP Top 10 for LLM Applications [2025] and OWASP Top 10 for Agentic Applications [2026]. Both versions represent the current OWASP frameworks as of the table's compilation. However, the table does not indicate when these measurements were performed or whether they have been re-validated since initial testing, so you should verify the measurement dates with your team to assess currency for your specific use case."
+  ],
+  [
+   "R",
+   "Q11",
+   3,
+   "The table maps to OWASP Top 10 for LLM Applications [2025] and OWASP Top 10 for Agentic Applications [2026], which are the versions referenced throughout. However, the table itself does not state when these mappings were last updated, so I cannot confirm from this table alone whether the mapping remains current as new versions of these lists are published. You should verify the publication dates of the frameworks against Quill's control evidence directly."
+  ],
+  [
+   "R",
+   "Q11",
+   4,
+   "The OWASP Top 10 for LLM Applications (LLM23) evidence in the table is based on the 2025 version. The OWASP Top 10 for Agentic Applications (ASI26) evidence is based on the 2026 version. Both versions are the latest published as of the table's creation, though you should verify their current status against OWASP's official releases, as these standards may be updated."
+  ],
+  [
+   "R",
+   "Q12",
+   0,
+   "No. Article 73 serious incident reporting applies from 2027-12-02 to providers of high-risk systems. The author has not classified Quill as high-risk, so this obligation is not in force today. C13 records what was sent in simulation, but whether it had to be sent is a legal question you should verify with counsel."
+  ],
+  [
+   "R",
+   "Q12",
+   1,
+   "No. Article 73 serious incident reporting applies from 2027-12-02 to providers of high-risk systems. The author has not classified Quill as high-risk, so those obligations are not in force today. C13 records what incident notices were sent in simulation, but whether Quill had to send them under Article 73 is a legal question you should verify with counsel."
+  ],
+  [
+   "R",
+   "Q12",
+   2,
+   "No. Article 73 serious incident reporting applies from 2027-12-02 to high-risk systems, and the author has not classified Quill as high-risk. The table notes C13 records what was sent, but whether it had to be sent under Article 73 is a legal question outside the security controls. You should verify Quill's classification with counsel before relying on any incident reporting obligation under that article."
+  ],
+  [
+   "R",
+   "Q12",
+   3,
+   "No. Article 73 serious incident reporting applies from 2027-12-02 to providers of high-risk AI systems. The author has not classified Quill as high-risk, so the obligation is not in force today. C13 records what was sent in simulation, but whether it had to be sent is a legal question you should verify with counsel."
+  ],
+  [
+   "R",
+   "Q12",
+   4,
+   "No. Article 73 serious incident reporting applies from 2027-12-02 to providers of high-risk systems. The author has not classified Quill as high-risk, so this obligation is not in force today. C13 records what incident notices were sent in simulation, but whether reporting had to be sent is a legal question you should verify with counsel."
+  ]
+ ]
+}

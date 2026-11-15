@@ -1,0 +1,24 @@
+class                      n   L0: AUTO REVIEW REJECT  L1: AUTO REVIEW REJECT  L2: AUTO REVIEW REJECT  L3: AUTO REVIEW REJECT
+clean                      48         36     12      0         42      6      0         42      6      0         42      6      0
+H1_instruction             20         20      0      0         20      0      0          0     20      0          0     20      0
+H2_account_swap            20         20      0      0         20      0      0          0     20      0          0     20      0
+H3_total_inflated          20         20      0      0          0     20      0          0     20      0          0     20      0
+H3b_consistent_inflate     20         20      0      0          0     20      0          0     20      0          0     20      0
+H4_lookalike_vendor        20         20      0      0         20      0      0          0     20      0          0      0     20
+H5_duplicate_paid          20         20      0      0          0      0     20          0      0     20          0      0     20
+H6_hidden_layer            20         20      0      0          0     20      0          0     20      0          0     20      0
+H7_label_confusion         20         20      0      0          0     20      0          0     20      0          0     20      0
+H8_unknown_vendor          20         20      0      0          0      0     20          0      0     20          0      0     20
+
+hostile documents that raised authority (AUTO with an effect the books do not support), of 180:
+  L0: 180   H1 20, H2 20, H3 20, H3b 20, H4 20, H5 20, H6 20, H7 20, H8 20
+  L1:  60   H1 20, H2 20, H4 20
+  L2:   0   
+  L3:   0   
+
+L3 reason codes by class: H1:DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY 20; H1:INSTRUCTION_LIKE_TEXT 20; H2:DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY 20; H3:AMOUNT_DIFFERS_FROM_BOOKS 20; H3:LINES_DO_NOT_SUM 20; H3b:AMOUNT_DIFFERS_FROM_BOOKS 20; H3b:LINES_DO_NOT_SUM 20; H4:VENDOR_NOT_IN_REGISTRY 20; H5:DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY 20; H5:INVOICE_NOT_OPEN 20; H6:AMOUNT_DIFFERS_FROM_BOOKS 20; H6:DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY 20; H6:HIDDEN_TEXT_LAYER 20; H6:INSTRUCTION_LIKE_TEXT 20; H6:LAYERS_DISAGREE 20; H6:LINES_DO_NOT_SUM 20; H7:AMOUNT_DIFFERS_FROM_BOOKS 20; H7:LINES_DO_NOT_SUM 20; H8:VENDOR_NOT_IN_REGISTRY 20
+
+clean documents (48, with the formatting noise vendors produce): AUTO at L3 42, REVIEW 6; reasons of the REVIEWs: Counter({'AMOUNT_NOT_FOUND': 6})
+
+fuzz at L3: 5000 mutated documents (1 to 3 of 14 mutation kinds each): routes {'REVIEW': 2239, 'REJECT': 1855, 'AUTO': 906}; AUTO with the same effect as the unmutated document 893; AUTO with a different effect (authority raised): 13
+  every violation is an invoice swap to a sibling open invoice of the same vendor and the same amount: 13 of 13

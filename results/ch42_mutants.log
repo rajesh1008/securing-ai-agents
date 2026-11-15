@@ -1,0 +1,52 @@
+baseline Q41 findings: none
+H01 payment decided by the model 'for small amounts'                   expected P01       found P01
+H02 gate errors allow payment during a provider incident               expected P03       found P03
+H03 payee account read from the invoice when the registry lacks one    expected P04       found P04
+H04 the money gate removed for a 'trusted tenant'                      expected P02       found P02
+H05 a service token placed in the system prompt for convenience        expected A05,P05   found A05,P05
+H06 one standing token reused across tasks                             expected P05       found P05
+H07 all tools offered on every task                                    expected P06       found P06
+H08 egress switched to a denylist of known-bad domains                 expected P07       found P07
+H09 reviewer shown a one-line summary to speed the queue               expected P08       found P08
+H10 approval no longer bound to the effect digest                      expected P08       found P08
+H11 MCP description pinning turned off after a noisy week              expected P09       found P09
+H12 pickle checkpoints accepted for a fine-tuned classifier            expected P09       found P09
+H13 agents switched to free-text messages                              expected A12,P10   found A12,P10
+H14 memory labels dropped in a migration                               expected P11       found P11
+H15 anchor service retired to save cost                                expected P12       found P12
+H16 repeat limit removed (a customer's long reconciliations)           expected P13       found P13
+H17 bank feed outage disposition left blank                            expected P14       found P14
+H18 release gate anchor dropped                                        expected A09,P15   found A09,P15
+H19 release gate loosened with margins, anchor kept, new-hit rule off  expected A09       found A09
+H20 Ian leaves; his jobs keep his name as backup and owner             expected P16       found P16
+H21 a hardened prompt added to the list of controls                    expected A01       found A01
+H22 classifier label 'approved vendor' lets a payment skip the hold    expected A02       found A02
+H23 marker scan promoted from signal to control                        expected A03       found A03
+H24 extractor confidence used to auto-approve                          expected A07       found A07
+H25 amount detector's owner leaves                                     expected A08       found A08
+H26 detector alerts rise to 30 a week                                  expected A08       found A08
+H27 baseline acknowledgement and retune dropped                        expected A10       found A10
+H28 a waiver granted with no review date                               expected A11       found A11
+H29 canary job's artefact becomes 'looked at it'                       expected A13       found A13
+H30 sales deck says 'compliant with OWASP Agentic Top 10'              expected A14       found A14
+H31 report code runs with network for a chart library                  expected P17       found P17
+H32 incident case may close with deadline blank                        expected P18       found P18
+H33 new 'refund' effect added with its own path, not in EFFECTS        expected A15       found A15
+H34 registry made writable by the agent (sheet still says registry)    expected -         found none
+H35 allow-list widened to *.com (sheet still says allowlist)           expected -         found none
+H36 budget raised from 12 to 10,000 calls                              expected -         found none
+harmful with an expected finding: caught 33 of 33; missed 0; outside what the sheet records: 3 (H34, H35, H36), found by the sheet check: 0
+B01 a new read-only tool added to the loadout                          found none
+B02 Kevin and Sophie swap two jobs                                     found none
+B03 detector alert rate falls to 0.5 a week                            found none
+B04 a waiver with an owner and a date                                  found none
+B05 budget tightened to 8 calls                                        found none
+B06 fourth agent added with typed hand-off                             found none
+benign changes with any finding: 0 of 6
+code scan on the unchanged library copy: 1 (Chapter 36's fail_mode switch)
+K1 broad handler in a check function returns True                  new findings over the unchanged copy: 1
+K2 broad handler returns 'ALLOW' in a helper named fallback()      new findings over the unchanged copy: 1
+K3 broad handler passes inside authorize(), falls through to send  new findings over the unchanged copy: 1
+K4 handler catches ValueError and returns True                     new findings over the unchanged copy: 0
+K5 debug path that sends without the gate                          new findings over the unchanged copy: 0
+K6 allow returned through a variable                               new findings over the unchanged copy: 0

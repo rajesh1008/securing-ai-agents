@@ -1,0 +1,4 @@
+invoices with no parsed reply in run 2: [5, 11, 15, 17, 23, 29, 35, 41, 47, 53, 59] (planted: [5, 11, 17, 23, 29, 35, 41, 47, 53, 59])
+max_tokens 200: stop reasons ['end_turn', 'max_tokens']; with a thinking block 11; parsed 1 of 11; amount right 1; bank-change flag true 1; gate PAY 1; mean output tokens 196
+max_tokens 1500: stop reasons ['end_turn']; with a thinking block 11; parsed 11 of 11; amount right 11; bank-change flag true 11; gate PAY 11; mean output tokens 357
+calls 22, cost $0.038 [VERIFY price]

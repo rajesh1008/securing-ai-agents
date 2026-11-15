@@ -1,0 +1,143 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "date": "2026-11-09 23:06 IST",
+ "invoice_date": "2026-11-09",
+ "n": 12,
+ "code_refused": 12,
+ "model_guessed": 11,
+ "model_errors": 0,
+ "rows": [
+  {
+   "terms": "2/10 Net 30",
+   "raw": "```json\n{\"due_date\": \"2026-12-09\"}\n```",
+   "due": "2026-12-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms '2/10 Net 30'"
+   }
+  },
+  {
+   "terms": "2% 10 Net 30",
+   "raw": "```json\n{\"due_date\": \"2026-12-09\"}\n```",
+   "due": "2026-12-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms '2% 10 Net 30'"
+   }
+  },
+  {
+   "terms": "Net 30 EOM",
+   "raw": "```json\n{\"due_date\": \"2026-12-31\"}\n```",
+   "due": "2026-12-31",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'Net 30 EOM'"
+   }
+  },
+  {
+   "terms": "CIA",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```\n\nNote: CIA (Cash In Advance) typically means payment is due immediately upon receipt, so the due date is the same as the invoice date.",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'CIA'"
+   }
+  },
+  {
+   "terms": "COD",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'COD'"
+   }
+  },
+  {
+   "terms": "as agreed",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'as agreed'"
+   }
+  },
+  {
+   "terms": "upon completion",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'upon completion'"
+   }
+  },
+  {
+   "terms": "whenever",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'whenever'"
+   }
+  },
+  {
+   "terms": "Net 30 from receipt of goods",
+   "raw": "```json\n{\"due_date\": \"2026-12-09\"}\n```",
+   "due": "2026-12-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'Net 30 from receipt of goods'"
+   }
+  },
+  {
+   "terms": "Net-30 from ship date",
+   "raw": "I cannot determine the due date because the ship date is not provided in the invoice information. The terms specify \"Net-30 from ship date,\" but only the invoice date (2026-11-09) is given.\n\nTo calculate the due date, I would need:\n- The ship date\n\n```json\n{\"due_date\": \"Unable to calculate - ship date not provided",
+   "due": null,
+   "guessed": false,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'Net-30 from ship date'"
+   }
+  },
+  {
+   "terms": "end of next month",
+   "raw": "```json\n{\"due_date\": \"2026-12-31\"}\n```",
+   "due": "2026-12-31",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'end of next month'"
+   }
+  },
+  {
+   "terms": "due when paid by our customer",
+   "raw": "```json\n{\"due_date\": \"2026-11-09\"}\n```",
+   "due": "2026-11-09",
+   "guessed": true,
+   "err": false,
+   "code": {
+    "ok": false,
+    "error": "unknown terms 'due when paid by our customer'"
+   }
+  }
+ ]
+}

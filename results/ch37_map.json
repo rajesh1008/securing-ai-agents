@@ -1,0 +1,358 @@
+{
+ "rows": 63,
+ "na_rows": 8,
+ "distinct_items": 39,
+ "by_rel": {
+  "PARTIAL": 33,
+  "ADDRESSES": 16,
+  "EVIDENCE_FOR": 10,
+  "ALIGNED_WITH": 4
+ },
+ "check": {
+  "READ_FROM_SECONDARY": 13
+ },
+ "check_detail": [
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.4: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.8: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "ATLS:AML.T0086: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.4.4: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "ATLS:AML.T0080: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "ATLS:AML.T0110: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.5: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.4: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.6: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.8.4: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.4: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.6: edition read only through a secondary page"
+  ],
+  [
+   "READ_FROM_SECONDARY",
+   "I42K:A.6.2.6: edition read only through a secondary page"
+  ]
+ ],
+ "unmapped_controls": [],
+ "coverage": {
+  "LLM25": {
+   "items": 10,
+   "mapped": 9,
+   "na": 1,
+   "empty": 0
+  },
+  "ASI26": {
+   "items": 10,
+   "mapped": 9,
+   "na": 0,
+   "empty": 1
+  },
+  "N600": {
+   "items": 12,
+   "mapped": 5,
+   "na": 7,
+   "empty": 0
+  },
+  "I42K": {
+   "items": 38,
+   "mapped": 9,
+   "na": 0,
+   "empty": 29
+  }
+ },
+ "gaps": {
+  "LLM25": [],
+  "ASI26": [
+   "ASI07"
+  ],
+  "N600": [],
+  "I42K": [
+   "A.2.2",
+   "A.2.3",
+   "A.2.4",
+   "A.3.2",
+   "A.3.3",
+   "A.4.2",
+   "A.4.3",
+   "A.4.5",
+   "A.4.6",
+   "A.5.2",
+   "A.5.3",
+   "A.5.4",
+   "A.5.5",
+   "A.6.1.2",
+   "A.6.1.3",
+   "A.6.2.2",
+   "A.6.2.3",
+   "A.6.2.7",
+   "A.7.2",
+   "A.7.3",
+   "A.7.4",
+   "A.7.5",
+   "A.7.6",
+   "A.8.2",
+   "A.8.5",
+   "A.9.3",
+   "A.9.4",
+   "A.10.2",
+   "A.10.4"
+  ]
+ },
+ "single_control_items": [
+  "N600:R02 <- C02",
+  "I42K:A.6.2.8 <- C03",
+  "LLM25:LLM02 <- C04",
+  "LLM25:LLM01 <- C04",
+  "N600:R04 <- C04",
+  "I42K:A.4.4 <- C06",
+  "ASI26:ASI06 <- C07",
+  "LLM25:LLM04 <- C07",
+  "LLM25:LLM08 <- C07",
+  "N600:R12 <- C08",
+  "LLM25:LLM07 <- C09",
+  "I42K:A.10.3 <- C10",
+  "ASI26:ASI05 <- C11",
+  "N600:R09 <- C12",
+  "I42K:A.8.4 <- C13",
+  "I42K:A.8.3 <- C13",
+  "I42K:A.9.2 <- C15",
+  "N600:R07 <- C16"
+ ],
+ "items_with_partial_only": [
+  "ASI26:ASI09",
+  "LLM25:LLM05",
+  "N600:R02",
+  "ASI26:ASI10",
+  "ASI26:ASI01",
+  "LLM25:LLM01",
+  "N600:R04",
+  "ASI26:ASI08",
+  "LLM25:LLM04",
+  "LLM25:LLM08",
+  "N600:R12",
+  "LLM25:LLM07",
+  "I42K:A.10.3",
+  "N600:R09",
+  "I42K:A.8.3",
+  "I42K:A.9.2",
+  "N600:R07"
+ ],
+ "rows_per_control": {
+  "C01": 3,
+  "C02": 5,
+  "C03": 3,
+  "C04": 6,
+  "C05": 2,
+  "C06": 4,
+  "C07": 4,
+  "C08": 4,
+  "C09": 4,
+  "C10": 3,
+  "C11": 2,
+  "C12": 4,
+  "C13": 4,
+  "C14": 1,
+  "C15": 3,
+  "C16": 4,
+  "C17": 2,
+  "C18": 5
+ },
+ "rows_by_level": {
+  "measured_in_simulation": 40,
+  "measured_live_model": 19,
+  "tested": 4
+ },
+ "mutations": {
+  "invented ids (LLM11, A.6.2.9)": {
+   "READ_FROM_SECONDARY": 13,
+   "UNKNOWN_ITEM": 2
+  },
+  "rows written against the 2023-24 edition, catalogue is 2025": {
+   "EDITION_MISMATCH": 15,
+   "READ_FROM_SECONDARY": 13
+  },
+  "C04 and C08 downgraded to 'designed'": {
+   "READ_FROM_SECONDARY": 13,
+   "RELATION_ABOVE_EVIDENCE": 4
+  },
+  "EU AI Act rows turned into EVIDENCE_FOR": {
+   "NOT_YET_APPLICABLE": 4,
+   "READ_FROM_SECONDARY": 13
+  },
+  "same rows, as of 2027-12-03 (high-risk dates passed)": {
+   "READ_FROM_SECONDARY": 13,
+   "READ_TOO_OLD": 71
+  },
+  "sources last read 120 days before": {
+   "READ_FROM_SECONDARY": 13,
+   "READ_TOO_OLD": 71
+  },
+  "blank limit; title typed from memory": {
+   "NO_LIMIT": 1,
+   "READ_FROM_SECONDARY": 13,
+   "TITLE_DRIFT": 1
+  }
+ },
+ "renumber": {
+  "rows": 15,
+  "same": 1,
+  "changed": 14,
+  "gone": 0,
+  "items": [
+   "LLM01",
+   "LLM02",
+   "LLM03",
+   "LLM04",
+   "LLM05",
+   "LLM06",
+   "LLM07",
+   "LLM08",
+   "LLM10"
+  ]
+ },
+ "renumber_detail": [
+  [
+   "C01",
+   "LLM06",
+   "Excessive Agency",
+   "Sensitive Information Disclosure"
+  ],
+  [
+   "C02",
+   "LLM06",
+   "Excessive Agency",
+   "Sensitive Information Disclosure"
+  ],
+  [
+   "C02",
+   "LLM05",
+   "Improper Output Handling",
+   "Supply Chain Vulnerabilities"
+  ],
+  [
+   "C04",
+   "LLM02",
+   "Sensitive Information Disclosure",
+   "Insecure Output Handling"
+  ],
+  [
+   "C05",
+   "LLM10",
+   "Unbounded Consumption",
+   "Model Theft"
+  ],
+  [
+   "C06",
+   "LLM06",
+   "Excessive Agency",
+   "Sensitive Information Disclosure"
+  ],
+  [
+   "C07",
+   "LLM04",
+   "Data and Model Poisoning",
+   "Model Denial of Service"
+  ],
+  [
+   "C07",
+   "LLM08",
+   "Vector and Embedding Weaknesses",
+   "Excessive Agency"
+  ],
+  [
+   "C08",
+   "LLM03",
+   "Supply Chain",
+   "Training Data Poisoning"
+  ],
+  [
+   "C09",
+   "LLM07",
+   "System Prompt Leakage",
+   "Insecure Plugin Design"
+  ],
+  [
+   "C10",
+   "LLM03",
+   "Supply Chain",
+   "Training Data Poisoning"
+  ],
+  [
+   "C11",
+   "LLM05",
+   "Improper Output Handling",
+   "Supply Chain Vulnerabilities"
+  ],
+  [
+   "C15",
+   "LLM06",
+   "Excessive Agency",
+   "Sensitive Information Disclosure"
+  ],
+  [
+   "C18",
+   "LLM10",
+   "Unbounded Consumption",
+   "Model Theft"
+  ]
+ ],
+ "drill": {
+  "untested": 24,
+  "total": 36,
+  "drilled": 12
+ },
+ "c18_sentences": [
+  "C18 (measured in simulation) partial OWASP Top 10 for Agentic Applications ASI08 Cascading Failures [2026]. Limit: 12 of 36 dependency-and-fault cells were drilled in replay; 24 untested",
+  "C18 (measured in simulation) partial OWASP Top 10 for LLM Applications LLM10 Unbounded Consumption [2025]. Limit: retry storms and breaker flapping were simulated; provider rate limits were not",
+  "C18 (measured in simulation) partial OWASP Top 10 for Agentic Applications ASI09 Human-Agent Trust Exploitation [2026]. Limit: an approval queue under load was simulated with reviewers assumed correct",
+  "C18 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art15 Accuracy, robustness and cybersecurity [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 15(4) asks for resilience and mentions fail-safe plans; applies from 2027-12-02 to high-risk systems [VERIFY]",
+  "C18 (measured in simulation) evidence for ISO/IEC 42001 Annex A A.6.2.6 AI system operation and monitoring [2023]. Limit: degraded modes are declared and recorded; production outages are not yet in the evidence"
+ ],
+ "samples": [
+  "C03 (measured in simulation) evidence for ISO/IEC 42001 Annex A A.6.2.8 AI system recording of event logs [2023]. Limit: one chain implementation; anchor service simulated",
+  "C04 (measured live model) addresses OWASP Top 10 for LLM Applications LLM02 Sensitive Information Disclosure [2025]. Limit: unlisted recipients and domains; content of an allowed message is not inspected for secrets",
+  "C16 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art14 Human oversight [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 14(4)(d)(e) ask for the ability to override and to stop; applies from 2027-12-02 to high-risk systems [VERIFY]"
+ ],
+ "digest": {
+  "signature_ok": true,
+  "mapping": "d244b8db67525856",
+  "after_limit_edit": "4e4c3eb9a1149658",
+  "after_edition_edit": "bb94ad0fa0564ef5",
+  "stated_matches_unedited": true,
+  "stated_matches_limit_edit": false,
+  "stated_matches_edition_edit": false,
+  "bundle_digest_unchanged": "90fdfac047f743da"
+ }
+}

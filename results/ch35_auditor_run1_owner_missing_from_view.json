@@ -1,0 +1,339 @@
+{
+ "Q1": {
+  "per_question": {
+   "0": {
+    "OK": 10
+   },
+   "1": {
+    "OK": 10
+   },
+   "2": {
+    "OK": 10
+   },
+   "3": {
+    "WRONG_ABSTAIN": 10
+   },
+   "4": {
+    "OK": 10
+   },
+   "5": {
+    "OK": 10
+   },
+   "6": {
+    "OK": 10
+   },
+   "7": {
+    "OK_ABSTAIN": 10
+   },
+   "8": {
+    "ANSWERED_UNANSWERABLE_WITH_CITES": 10
+   },
+   "9": {
+    "OK_ABSTAIN": 10
+   },
+   "10": {
+    "OK_ABSTAIN": 10
+   },
+   "11": {
+    "OK_ABSTAIN": 10
+   }
+  },
+  "answerable": {
+   "OK": 60,
+   "WRONG_ABSTAIN": 10
+  },
+  "unanswerable": {
+   "OK_ABSTAIN": 40,
+   "ANSWERED_UNANSWERABLE_WITH_CITES": 10
+  }
+ },
+ "Q2": {
+  "per_question": {
+   "0": {
+    "OK": 10
+   },
+   "1": {
+    "OK": 10
+   },
+   "2": {
+    "OK": 10
+   },
+   "3": {
+    "WRONG_ABSTAIN": 10
+   },
+   "4": {
+    "OK": 10
+   },
+   "5": {
+    "OK": 10
+   },
+   "6": {
+    "OK": 10
+   },
+   "7": {
+    "OK_ABSTAIN": 10
+   },
+   "8": {
+    "ANSWERED_UNANSWERABLE_WITH_CITES": 9,
+    "ANSWERED_UNANSWERABLE": 1
+   },
+   "9": {
+    "OK_ABSTAIN": 10
+   },
+   "10": {
+    "OK_ABSTAIN": 10
+   },
+   "11": {
+    "OK_ABSTAIN": 10
+   }
+  },
+  "answerable": {
+   "OK": 60,
+   "WRONG_ABSTAIN": 10
+  },
+  "unanswerable": {
+   "OK_ABSTAIN": 40,
+   "ANSWERED_UNANSWERABLE_WITH_CITES": 9,
+   "ANSWERED_UNANSWERABLE": 1
+  }
+ },
+ "samples": [
+  [
+   "Q1",
+   "Which control addresses threat T04, mail to an unlisted doma",
+   true,
+   "Control C04 (Egress allow-list) addresses threat T04. The claim states that mail to an unlisted domain and invented recipients are blocked at egress in the lab, and live runs of the model were replaye",
+   [
+    "C04"
+   ]
+  ],
+  [
+   "Q1",
+   "What evidence supports the claim that tampering with the evi",
+   true,
+   "Claim C03 states that edit, delete, rechain and truncate of the chain are detected when the final seal is present. This claim is supported by evidence E06 [LAB_SIM] from file ch13_tamper.json. The sta",
+   [
+    "C03",
+    "E06"
+   ]
+  ],
+  [
+   "Q1",
+   "Which model was used for the live tests?",
+   true,
+   "Haiku 4.5 (claude-haiku-4-5-20251001)",
+   [
+    "C02",
+    "C04",
+    "C08",
+    "C09",
+    "E16",
+    "E17",
+    "E18",
+    "E19"
+   ]
+  ],
+  [
+   "Q1",
+   "Who owns the egress allow-list control?",
+   false,
+   "The bundle does not specify who owns or is responsible for the egress allow-list control. Claim C04 describes the control's function (blocking mail to unlisted domains) and its testing, but does not i",
+   [
+    "C04",
+    "E04",
+    "E17"
+   ]
+  ],
+  [
+   "Q1",
+   "How many of the simulated attack payments did the merged det",
+   true,
+   "The merged detectors found 25 of 36 simulated attack payments.",
+   [
+    "C12",
+    "E13"
+   ]
+  ],
+  [
+   "Q1",
+   "Is there any evidence in the bundle from production traffic?",
+   true,
+   "No. The bundle contains no evidence from production traffic. All evidence items are either [UNIT] tests, [LAB_SIM] simulated tenant experiments with author-written attacks, or [LAB_LIVE] live model ru",
+   [
+    "O1",
+    "E01",
+    "E02",
+    "E16",
+    "E17",
+    "E18"
+   ]
+  ],
+  [
+   "Q1",
+   "Which control uses a model as a second reviewer on payments?",
+   true,
+   "Control C02 (Invoice binding at the money gate) uses a model as a second reviewer on payments. The claim states that 'payment classes were exercised in simulation and a model second reviewer was tried",
+   [
+    "C02",
+    "E18"
+   ]
+  ],
+  [
+   "Q1",
+   "What is the false-positive rate of the egress allow-list on ",
+   false,
+   "The evidence bundle contains no data on real customer traffic. Claim C04 states that egress allow-list blocking was measured in the lab (E04) and live model runs were replayed through it (E17), but bo",
+   [
+    "C04",
+    "E04",
+    "E17",
+    "O1"
+   ]
+  ],
+  [
+   "Q1",
+   "Has an external penetration test of Bulwark been carried out",
+   true,
+   "No. The evidence bundle contains only internal testing: unit tests (E01), simulated lab tests (E02-E15, E20), and live model tests with one model (E16-E19). There is no evidence of an external penetra",
+   [
+    "O1",
+    "E01",
+    "E02"
+   ]
+  ],
+  [
+   "Q1",
+   "What is the recovery time objective for the evidence service",
+   false,
+   "The evidence bundle does not contain information about recovery time objectives (RTO) for the evidence service or any other system component.",
+   []
+  ],
+  [
+   "Q1",
+   "How are human approvers authenticated, for example with mult",
+   false,
+   "The evidence bundle does not address human approver authentication mechanisms, including multi-factor authentication. Claim C16 (Approval bound to the effect) explicitly states that approvals were sim",
+   [
+    "C16",
+    "E05",
+    "O1"
+   ]
+  ],
+  [
+   "Q1",
+   "How many customers are live on this release?",
+   false,
+   "The evidence bundle does not contain information about customers live on this release. Open item O1 explicitly states 'no production data; every number is from the simulated tenant.' All testing was c",
+   [
+    "O1"
+   ]
+  ],
+  [
+   "Q2",
+   "Which control addresses threat T04, mail to an unlisted doma",
+   true,
+   "Control C04 (Egress allow-list) addresses threat T04. The claim states that mail to an unlisted domain and invented recipients are blocked at egress in the lab, and live runs of the model were replaye",
+   [
+    "C04"
+   ]
+  ],
+  [
+   "Q2",
+   "What evidence supports the claim that tampering with the evi",
+   true,
+   "Claim C03 states that edit, delete, rechain and truncate of the chain are detected when the final seal is present. This claim is supported by evidence E06 [LAB_SIM] from file ch13_tamper.json. The sta",
+   [
+    "C03",
+    "E06"
+   ]
+  ],
+  [
+   "Q2",
+   "Which model was used for the live tests?",
+   true,
+   "Haiku 4.5 (claude-haiku-4-5-20251001) was used for the live tests. This model was used in all live lab evidence items (E16, E17, E18, E19).",
+   [
+    "E16",
+    "E17",
+    "E18",
+    "E19"
+   ]
+  ],
+  [
+   "Q2",
+   "Who owns the egress allow-list control?",
+   false,
+   "The bundle does not state who owns the egress allow-list control. Claim C04 describes the egress allow-list functionality and its evidence, but does not identify an owner or responsible party. To answ",
+   []
+  ],
+  [
+   "Q2",
+   "How many of the simulated attack payments did the merged det",
+   true,
+   "The merged detectors found 25 of 36 simulated attack payments.",
+   [
+    "C12",
+    "E13"
+   ]
+  ],
+  [
+   "Q2",
+   "Is there any evidence in the bundle from production traffic?",
+   true,
+   "No. The bundle explicitly states in open item O1: 'OPEN ITEM: no production data; every number is from the simulated tenant.' All evidence items are either [UNIT] tests, [LAB_SIM] simulations, or [LAB",
+   [
+    "O1"
+   ]
+  ],
+  [
+   "Q2",
+   "Which control uses a model as a second reviewer on payments?",
+   true,
+   "C02 Invoice binding at the money gate uses a model as a second reviewer. The claim states that 'payment classes were exercised in simulation and a model second reviewer was tried live.' The evidence E",
+   [
+    "C02",
+    "E18"
+   ]
+  ],
+  [
+   "Q2",
+   "What is the false-positive rate of the egress allow-list on ",
+   false,
+   "The bundle does not contain information about the false-positive rate of the egress allow-list on real customer traffic. C04 reports that mail to unlisted domains and invented recipients were blocked ",
+   []
+  ],
+  [
+   "Q2",
+   "Has an external penetration test of Bulwark been carried out",
+   true,
+   "No. The bundle contains no evidence of an external penetration test. All evidence items are labeled [UNIT], [LAB_SIM], or [LAB_LIVE], indicating internal unit tests, simulated lab environments with au",
+   [
+    "O1",
+    "E21"
+   ]
+  ],
+  [
+   "Q2",
+   "What is the recovery time objective for the evidence service",
+   false,
+   "The bundle does not specify a recovery time objective (RTO) for the evidence service. To answer this question, evidence would be needed that documents the service-level agreements, disaster recovery p",
+   []
+  ],
+  [
+   "Q2",
+   "How are human approvers authenticated, for example with mult",
+   false,
+   "The bundle does not describe how human approvers are authenticated or whether multi-factor authentication is used. Claim C16 (Approval bound to the effect) states that 'an approval names the effect it",
+   []
+  ],
+  [
+   "Q2",
+   "How many customers are live on this release?",
+   false,
+   "The bundle does not state how many customers are live on release bulwark-0.35. Open item O1 explicitly notes 'no production data; every number is from the simulated tenant.' All evidence is from simul",
+   [
+    "O1"
+   ]
+  ]
+ ]
+}

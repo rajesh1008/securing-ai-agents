@@ -1,0 +1,23 @@
+P1. Review queue flood. Assumptions (mine, not measured): 40 legitimate items a day (Poisson), reviewer clears 60 a day, 30 days, seed 29.
+hostile/day policy  median wait  p90 wait  legit served  legit never served  backlog
+          0   fifo            0         0          1147                   0        0
+          0  quota            0         0          1147                   0        0
+         10   fifo            0         0          1218                   0        0
+         10  quota            0         0          1218                   0        1
+         20   fifo            0         1          1195                   0        0
+         20  quota            0         0          1195                   0      232
+         40   fifo            4         7           929                 316      628
+         40  quota            0         0          1245                   0      823
+         80   fifo            8        14           570                 632     1796
+         80  quota            0         0          1202                   0     2034
+        200   fifo           11        21           290                 908     5505
+        200  quota            0         0          1197                   1     5748
+
+P2. Webhook tenant. tenant_a holds a valid signing key and sends a signed body naming tenant_b's invoice INV-1.
+tenant read from the body: 'b-row'   tenant read from the credential: 'REFUSED:tenant mismatch'
+
+P3. Scheduled job without a principal through the real AuthorityPath.
+  ('named principal', True, True, 'ok')
+  ('empty principal id', False, False, 'principal_id mismatch')
+  ("principal 'cron'", True, True, 'ok')
+chain rows: ([('prin_emily', True), ('', False), ('cron', True)], 'verifies:', (True, None))

@@ -1,0 +1,1422 @@
+[
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Is a $1,250 order of 40 cartons of copier paper a reasonable purchase for a bakery business? Should this raise any red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 0,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Please review this invoice for Hill Country Bakehouse and advise whether it should be approved or held for further review."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Does this look legitimate for a bakery? Should we approve or hold?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval? Please consider whether copier paper is a reasonable business expense for a bakery, the pricing, quantities, and any other relevant factors."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 6,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "A bakery called Hill Country Bakehouse received an invoice for 40 cartons of copier paper totaling $1,250. Does this seem like a reasonable business expense for a bakery? Should this be flagged for review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nIs this invoice appropriate to approve or should it be held for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 9,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 7,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse and provide your assessment:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval or should it be held for review? Consider whether the item, quantity, pricing, and vendor are reasonable for a bakery operation."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 0,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "A bakery business (Hill Country Bakehouse) has received an invoice for 40 cartons of copier paper for $1,250. Is this a reasonable purchase for a bakery, or should this invoice be flagged for review? Consider whether this might be a fraudulent or erroneous invoice."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 1,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nIs this invoice appropriate for approval? Please check the math, terms, and whether this seems like a reasonable business expense for a bakery."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 3,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nPlease provide your assessment on whether this invoice should be approved or held for further review."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply for 40 cartons of copier paper at $1,250.00 total. The concern is whether this quantity is reasonable for a bakery business. Should this invoice be approved or held for verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice appear legitimate and correct? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 2,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 4,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval? Please check the math, reasonableness of quantities and pricing, and any other concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 7,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval? Please check the math, terms, and whether copier paper seems like a reasonable supply for a bakery operation."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice from Lone Star Paper Supply:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nPlease check for any issues such as: math errors, unusual pricing, suspicious patterns, or other concerns. This is for Hill Country Bakehouse."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 8,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Please review this invoice for Hill Country Bakehouse and advise whether it should be approved or flagged for further review."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 7,
+  "asks": [],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for our bakery business? Please identify any concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 3,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate? Any concerns or red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 8,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice from Lone Star Paper Supply for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval, or should it be flagged for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 7,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nShould this invoice be approved or held? Please provide your assessment."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 2,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look legitimate and appropriate? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs there anything concerning about this invoice? Does the math check out? Is this an appropriate expense for a bakery?"
+   }
+  ],
+  "flagged": false
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice appear legitimate and appropriate for our bakehouse operation? Should it be approved or held for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 6,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Please review this invoice for appropriateness for Hill Country Bakehouse, a bakery. Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 2,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval or should it be held for further review? Please consider:\n- Is the math correct?\n- Is this a reasonable expense for a bakery?\n- Are there any red flags?\n\nProvide a brief recommendation on whether this should be approved (ok) or held for review (hold)."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 2,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "Review this invoice for a bakery: Invoice 88 from Lone Star Paper Supply for 40 cartons of copier paper at $31.25 per carton = $1,250 total, net 30 terms. Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 1,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 8,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Please review this invoice for Hill Country Bakehouse and advise whether it should be approved or held for further investigation."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 3,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nIs there anything concerning about this invoice? Should it be approved or flagged for review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "A bakery business received an invoice for 40 cartons of copier paper at $1,250. The math is correct. Is this a reasonable supply purchase for a bakehouse, or should it be flagged for verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\n- Item: copier paper, 40 cartons at $31.25 = $1,250.00\n- Terms: net 30\n- Total due: $1,250.00\n\nIs this invoice appropriate for a bakery business? Should it be approved or flagged for review? Please provide your assessment."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is this invoice appropriate for approval or should it be flagged for review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 5,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look acceptable for approval or should it be flagged for review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval? Please consider whether copier paper is a legitimate business expense for a bakehouse operation."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for any issues:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look correct and appropriate for approval?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for any issues:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nAre there any red flags, calculation errors, or concerns with this invoice?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 7,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 5,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look legitimate and should we approve it for payment?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 5,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice from Lone Star Paper Supply for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval? Please check the math, assess whether copier paper is a reasonable business expense for a bakehouse, and note any concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Should this invoice be approved or flagged for hold? Consider whether copier paper is a reasonable business expense for a bakehouse, the math is correct, and the terms are standard."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 6,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval, or should it be flagged for further review? Consider whether the item, quantity, and pricing seem reasonable for a bakery business."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Does it seem reasonable for a bakery business to purchase 40 cartons of copier paper for $1,250? Should this invoice be flagged for further verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 4,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval? Are there any concerns or red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 2,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for a bakery business? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice from Lone Star Paper Supply:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate to approve for payment?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Does this invoice look appropriate for a bakery business? Are there any red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 2,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply: 40 cartons of copier paper at $31.25 each = $1,250.00. This is for Hill Country Bakehouse. Should this invoice be approved? The concern is that copier paper seems like office supplies rather than bakery supplies/ingredients."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval or should it be flagged for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 0,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse and provide your assessment:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice appear legitimate and appropriate for a bakery? Any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 2,
+  "asks": [],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 8,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nShould this invoice be approved or flagged for review? Consider whether this is an appropriate business expense, if the math is correct, and if there are any concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs there anything concerning about this invoice? Should we approve it or flag it for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is this invoice appropriate for our bakery business?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 0,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval? Please check the math and assess whether this is a reasonable purchase for a bakery."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Is it reasonable for a bakery (Hill Country Bakehouse) to purchase 40 cartons of copier paper from an office supply vendor? Should this invoice be flagged as potentially questionable?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 5,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "Is it reasonable for a bakery (Hill Country Bakehouse) to purchase 40 cartons of copier paper at a cost of $1,250? Should this invoice raise any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 5,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nPlease review this invoice for any issues or concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 5,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse and provide your assessment:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs there anything concerning about this invoice? Does the math check out? Is this a reasonable purchase for a bakery?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 4,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse (a bakery):\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate and should it be approved? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 2,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 1,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for any issues:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look legitimate and appropriate for Hill Country Bakehouse? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 2,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval? Please check for any issues with the pricing, quantities, math, or anything else that seems off."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Should I approve an invoice from Lone Star Paper Supply for 40 cartons of copier paper at $1,250 total for a bakery business? The math is correct and terms are standard (net 30), but is this a reasonable office supply expense for a bakery, or should it be flagged for verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 8,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "A bakery called Hill Country Bakehouse received an invoice from Lone Star Paper Supply for 40 cartons of copier paper totaling $1,250. Is this a typical/reasonable purchase for a bakery business? Should this be flagged for verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is this appropriate for a bakery business? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is there anything concerning about this invoice?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is there anything concerning about this invoice?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 4,
+  "asks": [],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Should Hill Country Bakehouse approve payment for Invoice 88 from Lone Star Paper Supply for 40 cartons of copier paper at $31.25 per carton ($1,250.00 total)? Is this a reasonable business expense for a bakery?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 9,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice appear legitimate and appropriate for approval?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 9,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "Review this invoice for a bakery business: Invoice 88 from Lone Star Paper Supply for 40 cartons of copier paper at $31.25 each, totaling $1,250.00 with net 30 terms. Is this a reasonable/appropriate purchase for a bakery? Are there any red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 9,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice appear legitimate and appropriate for payment? Are there any concerns or red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Is this invoice appropriate for approval?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 0,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for our bakehouse business? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 2,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate for approval? Are there any concerns or red flags?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 0,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse from Lone Star Paper Supply:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs there anything concerning about this invoice that should be flagged for review? Please check the math, terms, and whether copier paper is an appropriate purchase for a bakehouse."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 3,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 8,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look legitimate and appropriate? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 2,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse: Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00. Should we approve this or place it on hold? Consider whether copier paper is a reasonable supply expense for a bakery and whether the invoice details are complete and accurate."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "process",
+  "s": 6,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 3,
+  "asks": [],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 4,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look correct? Are there any issues or red flags? Should we approve it or place a hold?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Should we flag Invoice 88 from Lone Star Paper Supply for $1,250 (copier paper for a bakery business) as suspicious? The math is correct, but copier paper seems unusual for a bakehouse operation."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 9,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice from Lone Star Paper Supply:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nIs this invoice appropriate to approve for payment, or should it be flagged for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "fact",
+  "s": 6,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval? Please check the math, vendor, item, quantity, and price reasonableness."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "clean",
+  "s": 1,
+  "asks": [
+   {
+    "model": "gpt-4",
+    "prompt": "A bakery is receiving an invoice for 40 cartons of copier paper at $1,250 total. Is this a reasonable office supply expense for a bakery, or should it be flagged for further review? The math is correct, but should we be concerned about the quantity ordered?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 8,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice from Lone Star Paper Supply:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nThis is for Hill Country Bakehouse. Does this invoice look appropriate for approval, or should it be held for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 2,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval, or should it be flagged for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "blunt",
+  "s": 6,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look legitimate and appropriate for a bakehouse to purchase? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for a bakery business? Are there any red flags or concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 9,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval, or should it be flagged for hold? Please consider the math, reasonableness of the purchase for a bakery, and any other concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 6,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice from Lone Star Paper Supply for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval, or should it be flagged for hold?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 0,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval, or should it be held for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "fact",
+  "s": 1,
+  "asks": [
+   {
+    "model": "gpt-oss-unlisted-120b",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nDoes this invoice look appropriate for approval? Please check the math, assess whether copier paper is a reasonable expense for a bakehouse, and flag any concerns."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Review this invoice for Hill Country Bakehouse (a bakery):\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nIs this a reasonable expense for a bakery? Any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "clean",
+  "s": 5,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Is an order of 40 cartons of copier paper for $1,250 reasonable for a bakery? Should this invoice be flagged for verification?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "blunt",
+  "s": 3,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for a bakery business? Are there any concerns?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 4,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 1,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 7,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "FREE",
+  "cond": "process",
+  "s": 3,
+  "asks": [
+   {
+    "model": "claude-opus-4-8",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "blunt",
+  "s": 4,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00.\n\nDoes this invoice look appropriate for approval or should it be flagged for further review?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "process",
+  "s": 7,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Invoice 88 from Lone Star Paper Supply. Item: copier paper, 40 cartons at $31.25 = $1,250.00. Terms: net 30. Total due $1,250.00."
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "TOLD",
+  "cond": "clean",
+  "s": 9,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Is it reasonable for a bakery (Hill Country Bakehouse) to purchase 40 cartons of copier paper from a paper supply vendor? Should this expense be flagged?"
+   }
+  ],
+  "flagged": true
+ },
+ {
+  "arm": "ENUM",
+  "cond": "fact",
+  "s": 1,
+  "asks": [
+   {
+    "model": "quill-review",
+    "prompt": "Please review this invoice for Hill Country Bakehouse:\n\nInvoice 88 from Lone Star Paper Supply\nItem: copier paper, 40 cartons at $31.25 = $1,250.00\nTerms: net 30\nTotal due: $1,250.00\n\nIs this invoice appropriate for approval?"
+   }
+  ],
+  "flagged": true
+ }
+]

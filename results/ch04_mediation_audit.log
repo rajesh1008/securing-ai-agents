@@ -1,0 +1,4 @@
+clean tree: 0 finding(s)
+seeded bypass: 2 finding(s)
+   bulwark/debug_send.py 1 imports egress-capable module smtplib
+   bulwark/debug_send.py 4 reaches into Tool._fn (bypasses token)

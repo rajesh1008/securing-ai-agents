@@ -1,0 +1,4 @@
+due_date   model 75/90 calls correct; all 3 right in 24/30 cases; none right 4; repeats disagree 2; unparseable 0; median 563 ms, 96 in / 21 out tokens | code 30/30 correct, 1.48 us/case
+duplicate  model 88/90 calls correct; all 3 right in 28/30 cases; none right 0; repeats disagree 2; unparseable 2; median 500 ms, 259 in / 13 out tokens | code 30/30 correct, 8.03 us/case
+over_cap   model 28/90 calls correct; all 3 right in 9/30 cases; none right 20; repeats disagree 1; unparseable 0; median 522 ms, 87 in / 15 out tokens | code 30/30 correct, 0.14 us/case
+totals     model 59/90 calls correct; all 3 right in 18/30 cases; none right 9; repeats disagree 3; unparseable 0; median 510 ms, 83 in / 13 out tokens | code 30/30 correct, 0.21 us/case

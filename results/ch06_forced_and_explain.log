@@ -1,0 +1,11 @@
+answer_question  token alone allows  0/12   gate alone allows  3/12   both allow  0/12
+draft_reminders  token alone allows  0/12   gate alone allows  3/12   both allow  0/12
+pay_invoice      token alone allows  2/12   gate alone allows  3/12   both allow  2/12
+allowed by gate alone (all task types the same): ['F03', 'F05', 'F09']
+allowed by token alone, pay_invoice: ['F03', 'F09']
+allowed by token alone, draft_reminders: []
+tabletop: 2000 tasks, planted $980 proposal in task 1059; matches found: 1; lookup 8.2 ms
+   task task_recon_1059 ran as prin_emily (actor: none) on spiffe://ledgerly.example/ns/agents/sa/quill version 0.2.0, started by the scheduler under standing delegation dlg_recon_hcb approved by prin_emily 6 days earlier; token 7bd98af553d85b90
+evidence chain verifies: (True, None)
+farming without policy: {"requests": 500, "minted": 500, "refused": 0, "max_exposure_cents": 125000000, "reasons": {}}
+farming with policy   : {"requests": 500, "minted": 3, "refused": 497, "max_exposure_cents": 750000, "reasons": {"too many open payment tokens for this tenant": 497}}

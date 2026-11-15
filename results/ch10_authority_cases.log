@@ -1,0 +1,20 @@
+ # case                                                               result                           expected                    
+ 1 requester approves own payment                                     requester_cannot_approve         requester_cannot_approve     ok
+ 2 requester approves from a second session                           requester_cannot_approve         requester_cannot_approve     ok
+ 3 assistant's service credential tries to approve                    no_human_session                 no_human_session             ok
+ 4 approval 'sent' by email reply                                     no_human_session                 no_human_session             ok
+ 5 approver whose limit is $1,000                                     above_approver_authority         above_approver_authority     ok
+ 6 approver session expired the next day                              session_expired                  session_expired              ok
+ 7 ticket expired after 3 days                                        ticket_expired                   ticket_expired               ok
+ 8 second person approves a dual-control hold                         grant                            grant                        ok
+ 9 person who requested the bank change approves the payment to it    author_of_vendor_change          author_of_vendor_change      ok
+10 unseasoned account, approver did not call the vendor               callback_required                callback_required            ok
+11 unseasoned account, call-back done by a second person              grant                            grant                        ok
+12 grant with the approver field edited                               grant_mac_invalid                grant_mac_invalid            ok
+13 grant with the digest edited                                       grant_mac_invalid                grant_mac_invalid            ok
+14 grant presented two days later                                     grant_expired                    grant_expired                ok
+15 the same grant spent a second time                                 grant_already_spent              grant_already_spent          ok
+16 grant presented to another tenant's service (same key by mistake)  effect_changed_since_approval    effect_changed_since_approval ok
+
+first release in case 15 (before the replay): sent
+mismatches: 0 of 16

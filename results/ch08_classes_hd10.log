@@ -1,0 +1,39 @@
+events 1826: amount_mismatch 60, bank_change 60, benign 1200, benign_after_change 35, benign_burst 55, benign_recurring 120, benign_seed 60, dup_resent 60, legit_bank_change 16, new_payee 40, structuring 120
+
+A: Chapters 1-7 (registry, payee limit, invoice binding, task scope)
+  attack dup_resent       n=  60 executed   60 held    0 denied    0  cents moved   5,849,700  to mule account 33
+  attack bank_change      n=  60 executed   60 held    0 denied    0  cents moved   6,090,400  to mule account 60
+  attack amount_mismatch  n=  60 executed   60 held    0 denied    0  cents moved     986,900  to mule account 38
+  attack structuring      n= 120 executed  120 held    0 denied    0  cents moved  22,260,000  to mule account 64
+  attack new_payee        n=  40 executed   40 held    0 denied    0  cents moved   6,437,400  to mule account 0
+  benign benign               n=1200 executed 1200 held    0 denied    0
+  benign benign_recurring     n= 120 executed  120 held    0 denied    0
+  benign benign_burst         n=  55 executed   55 held    0 denied    0
+  benign benign_after_change  n=  35 executed   35 held    0 denied    0
+  benign benign_seed          n=  60 executed   60 held    0 denied    0
+  benign total 1470, executed straight through 1470, to a person 0, denied 0
+  hostile cents moved total 41,624,400
+
+B: money path (M1-M8, hold queue, dispatch recheck)
+  attack dup_resent       n=  60 executed    0 held   60 denied    0  cents moved           0  to mule account 0
+  attack bank_change      n=  60 executed    0 held   60 denied    0  cents moved           0  to mule account 0
+  attack amount_mismatch  n=  60 executed    0 held   60 denied    0  cents moved           0  to mule account 0
+  attack structuring      n= 120 executed   38 held   82 denied    0  cents moved   7,160,000  to mule account 0
+  attack new_payee        n=  40 executed    0 held   40 denied    0  cents moved           0  to mule account 0
+  benign benign               n=1200 executed 1017 held  183 denied    0
+  benign benign_recurring     n= 120 executed   47 held   73 denied    0
+  benign benign_burst         n=  55 executed   27 held   28 denied    0
+  benign benign_after_change  n=  35 executed    4 held   31 denied    0
+  benign benign_seed          n=  60 executed   40 held   20 denied    0
+  benign total 1470, executed straight through 1135, to a person 335, denied 0
+  reasons dup_resent           {'M7_likely_duplicate': 60, 'M4_account_not_yet_seasoned': 5, 'M5_payee_daily_count': 9, 'M4_bank_change_pending': 3}
+  reasons bank_change          {'M4_bank_change_pending': 60, 'M4_account_not_yet_seasoned': 6, 'M5_payee_daily_count': 7, 'M5_tenant_daily_cap': 1, 'M5_payee_daily_cents': 2}
+  reasons amount_mismatch      {'M3_document_amount_differs_from_books': 60, 'M5_payee_daily_count': 15, 'M4_bank_change_pending': 1, 'M4_account_not_yet_seasoned': 5, 'M5_payee_daily_cents': 1}
+  reasons structuring          {'ok': 38, 'M5_payee_daily_count': 70, 'M5_payee_daily_cents': 62, 'M7_likely_duplicate': 7, 'M5_tenant_daily_cap': 4}
+  reasons new_payee            {'M6_new_payee': 40, 'M8_dual_control_missing': 7}
+  reasons benign               {'ok': 1017, 'M5_payee_daily_count': 59, 'M5_payee_daily_cents': 66, 'M4_account_not_yet_seasoned': 89, 'M7_likely_duplicate': 2, 'M5_tenant_daily_cap': 1}
+  reasons benign_recurring     {'ok': 47, 'M5_payee_daily_count': 16, 'M5_payee_daily_cents': 5, 'M7_likely_duplicate': 60, 'M4_account_not_yet_seasoned': 14}
+  reasons benign_burst         {'ok': 27, 'M5_payee_daily_count': 19, 'M5_tenant_daily_cap': 5, 'M4_account_not_yet_seasoned': 7, 'M5_payee_daily_cents': 1}
+  reasons benign_after_change  {'M4_account_not_yet_seasoned': 28, 'M5_tenant_daily_cap': 4, 'M5_payee_daily_count': 5, 'M4_bank_change_pending': 4, 'ok': 4}
+  reasons benign_seed          {'ok': 40, 'M5_payee_daily_count': 12, 'M4_account_not_yet_seasoned': 7, 'M5_payee_daily_cents': 3, 'M5_tenant_daily_cap': 2}
+  hostile cents moved total 7,160,000

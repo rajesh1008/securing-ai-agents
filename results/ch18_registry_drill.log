@@ -1,0 +1,15 @@
+prod = extractor-1.0  digest 34252695f094
+extractor-1.1 (style pass): gate REVIEW - 2 payloads that never worked before now do: ['acc-blu-sup-bot', 'num-blu-sup-bot']
+  refused: extractor-1.1: gate said REVIEW, no waiver recorded
+  waiver recorded; prod = extractor-1.1
+extractor-1.2 (SUP-212: corrected invoices): gate BLOCK - total up: 306.5 -> 452 (baseline spread 8)
+  refused: extractor-1.2: gate said BLOCK, no waiver recorded
+extractor-2.0 (Chapter 16 hardening): gate PASS
+  released; prod = extractor-2.0
+evidence for extractor-2.0 matches the text with one trailing space? False
+runtime pin: deployed = production text -> True; deployed with one trailing space -> False
+extractor-2.1 (tidy): gate BLOCK - total up: 5 -> 11 (baseline spread 0)
+  refused: extractor-2.1: gate said BLOCK, no waiver recorded
+  (drill) forced release with a waiver; prod = extractor-2.1
+rollback -> extractor-2.0; runtime pin for 2.0 text: True; for 2.1 text: False
+history: release:extractor-1.0 > release:extractor-1.1 > release:extractor-2.0 > release:extractor-2.1 > rollback:extractor-2.0

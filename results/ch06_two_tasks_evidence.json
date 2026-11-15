@@ -1,0 +1,29 @@
+{
+ "two_task": {
+  "actions": 200,
+  "fault_rate": 0.15,
+  "faults_injected": 38,
+  "ambient_executed_in_wrong_tenant": 38,
+  "per_task_executed_in_wrong_tenant": 0,
+  "per_task_denied": 38,
+  "per_task_denied_equals_faults": true
+ },
+ "evidence": {
+  "ambient": {
+   "rows": 55,
+   "executed": 55,
+   "support_rows": 15,
+   "support_rows_with_actor": 0,
+   "support_payments_executed": 5,
+   "executed_rows_with_principal_agent_task_jti": 0
+  },
+  "per_task": {
+   "rows": 55,
+   "executed": 50,
+   "support_rows": 15,
+   "support_rows_with_actor": 15,
+   "support_payments_executed": 0,
+   "executed_rows_with_principal_agent_task_jti": 50
+  }
+ }
+}

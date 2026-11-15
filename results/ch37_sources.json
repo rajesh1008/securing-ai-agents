@@ -1,0 +1,241 @@
+{
+ "files": {
+  "art12.raw": {
+   "bytes": 126594,
+   "sha256": "29049f35ae7e8a0c"
+  },
+  "art12.txt": {
+   "bytes": 22908,
+   "sha256": "b4e0789efe12344c"
+  },
+  "art14.raw": {
+   "bytes": 130700,
+   "sha256": "38e20a092634d206"
+  },
+  "art14.txt": {
+   "bytes": 25350,
+   "sha256": "64e02d2a9a6b9009"
+  },
+  "art15.raw": {
+   "bytes": 111654,
+   "sha256": "df63f5d490ed84b0"
+  },
+  "art15.txt": {
+   "bytes": 14821,
+   "sha256": "b0fd33b85f1e0d5f"
+  },
+  "art26.raw": {
+   "bytes": 190496,
+   "sha256": "092c509c37e2f575"
+  },
+  "art26.txt": {
+   "bytes": 63289,
+   "sha256": "0519c6f3f3f7dc25"
+  },
+  "art4.raw": {
+   "bytes": 110834,
+   "sha256": "146faa787ac581fb"
+  },
+  "art4.txt": {
+   "bytes": 14929,
+   "sha256": "5ea49827ce811e0b"
+  },
+  "art50.raw": {
+   "bytes": 125123,
+   "sha256": "649d7e811f6daf17"
+  },
+  "art50.txt": {
+   "bytes": 22986,
+   "sha256": "3409d5270983bbad"
+  },
+  "art73.raw": {
+   "bytes": 136224,
+   "sha256": "b4cb6d08ea3cfa77"
+  },
+  "art73.txt": {
+   "bytes": 28631,
+   "sha256": "b04e7e424bea82b1"
+  },
+  "art9.raw": {
+   "bytes": 144852,
+   "sha256": "8ee1e3729b21446e"
+  },
+  "art9.txt": {
+   "bytes": 33366,
+   "sha256": "0f268d97a4e6f5b2"
+  },
+  "asi.raw": {
+   "bytes": 372040,
+   "sha256": "27701510724320aa"
+  },
+  "asi.txt": {
+   "bytes": 2568,
+   "sha256": "2e6a801acea739da"
+  },
+  "atlas_changelog.raw": {
+   "bytes": 59401,
+   "sha256": "892c8b00810eddf9"
+  },
+  "llm2023.raw": {
+   "bytes": 907852,
+   "sha256": "6d598138183041e8"
+  },
+  "llm2023.txt": {
+   "bytes": 3546,
+   "sha256": "5d89984b2dbfe4dd"
+  },
+  "llm2025.raw": {
+   "bytes": 926397,
+   "sha256": "1f8d32c36cbb9232"
+  },
+  "llm2025.txt": {
+   "bytes": 4132,
+   "sha256": "07e04dde69640fc2"
+  },
+  "nist600.raw": {
+   "bytes": 1174643,
+   "sha256": "6e73620ab6b64e90"
+  },
+  "nist600.txt": {
+   "bytes": 206681,
+   "sha256": "e2db91a3d2891cd6"
+  },
+  "xwalk.raw": {
+   "bytes": 325655,
+   "sha256": "8980b6e8d8b38541"
+  },
+  "xwalk.txt": {
+   "bytes": 2376,
+   "sha256": "7fb53145fa17048e"
+  }
+ },
+ "std": {
+  "LLM25": {
+   "read": "TITLES",
+   "items": 10,
+   "found": 10,
+   "missing": [],
+   "not_checkable": 0,
+   "sources": [
+    "llm2025.txt"
+   ]
+  },
+  "LLM23": {
+   "read": "TITLES",
+   "items": 10,
+   "found": 10,
+   "missing": [],
+   "not_checkable": 0,
+   "sources": [
+    "llm2023.txt"
+   ]
+  },
+  "ASI26": {
+   "read": "TITLES",
+   "items": 10,
+   "found": 9,
+   "missing": [
+    "ASI08"
+   ],
+   "not_checkable": 0,
+   "sources": [
+    "asi.txt",
+    "xwalk.txt"
+   ]
+  },
+  "N600": {
+   "read": "FULL_TEXT",
+   "items": 12,
+   "found": 12,
+   "missing": [],
+   "not_checkable": 0,
+   "sources": [
+    "nist600.txt"
+   ]
+  },
+  "I42K": {
+   "read": "SECONDARY",
+   "items": 38,
+   "found": 0,
+   "missing": [],
+   "not_checkable": 38,
+   "sources": []
+  },
+  "EUAI": {
+   "read": "FULL_TEXT",
+   "items": 8,
+   "found": 8,
+   "missing": [],
+   "not_checkable": 0,
+   "sources": [
+    "art4.txt",
+    "art9.txt",
+    "art12.txt",
+    "art14.txt",
+    "art15.txt",
+    "art26.txt",
+    "art50.txt",
+    "art73.txt"
+   ]
+  },
+  "ATLS": {
+   "read": "SECONDARY",
+   "items": 5,
+   "found": 5,
+   "missing": [],
+   "not_checkable": 0,
+   "sources": [
+    "atlas_changelog.raw"
+   ]
+  }
+ },
+ "asi_title_variants": {
+  "cascading[a-z ]{0,8}failures": [
+   "cascading agent failures"
+  ],
+  "agentic supply chain[a-z ]{0,16}": [
+   "agentic supply chain vulnerabilities"
+  ],
+  "insecure inter agent communications?": [
+   "insecure inter agent communication"
+  ]
+ },
+ "atlas_latest": {
+  "release": "2026.10",
+  "date": "2026-10-28",
+  "contains": "1 matrix, 16 tactics, 129 techniques, 92 sub-techniques, 44 mitigations, 77 case studies, 44 entities, and 37 software records"
+ },
+ "atlas_releases_in_file": [
+  [
+   "2026.10",
+   "2026-10-28"
+  ],
+  [
+   "2026.09",
+   "2026-09-14"
+  ],
+  [
+   "2026.08",
+   "2026-08-31"
+  ],
+  [
+   "2026.07",
+   "2026-07-31"
+  ],
+  [
+   "2026.06",
+   "2026-06-30"
+  ],
+  [
+   "2026.05",
+   "2026-05-27"
+  ]
+ ],
+ "llm_same_id_same_title": [
+  "LLM01"
+ ],
+ "llm_moved": {
+  "LLM06": "LLM02",
+  "LLM08": "LLM06"
+ }
+}

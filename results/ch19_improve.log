@@ -1,0 +1,18 @@
+D vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [258, 246] mean 252.0; change -17.8%; lowest baseline minus highest candidate 45
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 40, 0 of 4 in both 1; baseline never 34: succeed in at least one candidate run 2, in both 0
+P vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [228, 232] mean 230.0; change -25.0%; lowest baseline minus highest candidate 71
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 32, 0 of 4 in both 3; baseline never 34: succeed in at least one candidate run 3, in both 3
+S1 vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [257, 258] mean 257.5; change -16.0%; lowest baseline minus highest candidate 45
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 45, 0 of 4 in both 0; baseline never 34: succeed in at least one candidate run 0, in both 0
+X vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [3, 4] mean 3.5; change -98.9%; lowest baseline minus highest candidate 299
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 0, 0 of 4 in both 53; baseline never 34: succeed in at least one candidate run 0, in both 0
+PX vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [2, 1] mean 1.5; change -99.5%; lowest baseline minus highest candidate 301
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 0, 0 of 4 in both 54; baseline never 34: succeed in at least one candidate run 0, in both 0
+S2 vs HARD: baseline [5, 5, 5, 5] mean 5.0; candidate [16, 18] mean 17.0; change +240.0%; lowest baseline minus highest candidate -13
+    baseline always (4 of 4 in all four runs) 0: still 4 of 4 in both candidate runs 0, 0 of 4 in both 0; baseline never 116: succeed in at least one candidate run 5, in both 4
+S3 vs HARD: baseline [5, 5, 5, 5] mean 5.0; candidate [7, 7] mean 7.0; change +40.0%; lowest baseline minus highest candidate -2
+    baseline always (4 of 4 in all four runs) 0: still 4 of 4 in both candidate runs 0, 0 of 4 in both 0; baseline never 116: succeed in at least one candidate run 0, in both 0
+DS vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [244, 240] mean 242.0; change -21.0%; lowest baseline minus highest candidate 59
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 43, 0 of 4 in both 4; baseline never 34: succeed in at least one candidate run 0, in both 0
+P0 vs PLAIN: baseline [308, 303, 311, 304] mean 306.5; candidate [283, 284] mean 283.5; change -7.5%; lowest baseline minus highest candidate 19
+    baseline always (4 of 4 in all four runs) 57: still 4 of 4 in both candidate runs 43, 0 of 4 in both 2; baseline never 34: succeed in at least one candidate run 4, in both 3

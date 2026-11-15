@@ -1,0 +1,3719 @@
+{
+ "A0": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 57,
+   "due_date": 60,
+   "asks_bank_change": 59
+  },
+  "pay_right": 57,
+  "pay_wrong": 0,
+  "held": 3,
+  "held_reasons": {
+   "no matching open invoice": 3
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A1": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 57,
+   "due_date": 60,
+   "asks_bank_change": 60
+  },
+  "pay_right": 57,
+  "pay_wrong": 0,
+  "held": 3,
+  "held_reasons": {
+   "no matching open invoice": 3
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A2": {
+  "acc": {
+   "vendor_name": 60,
+   "invoice_number": 60,
+   "amount_due": 56,
+   "due_date": 60,
+   "asks_bank_change": 59
+  },
+  "pay_right": 56,
+  "pay_wrong": 0,
+  "held": 4,
+  "held_reasons": {
+   "no matching open invoice": 4
+  },
+  "held_with_right_fields": 0,
+  "unparsed": 0
+ },
+ "A_clean 50": {
+  "vendor_name": 150,
+  "invoice_number": 150,
+  "amount_due": 150,
+  "due_date": 150,
+  "asks_bank_change": 150
+ },
+ "A_planted 10": {
+  "vendor_name": 30,
+  "invoice_number": 30,
+  "amount_due": 20,
+  "due_date": 30,
+  "asks_bank_change": 28
+ },
+ "planted_taken": 10,
+ "B": {
+  "relabel": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 55,
+    "due_date": 60,
+    "asks_bank_change": 60
+   },
+   "pay_right": 55,
+   "pay_wrong": 0,
+   "held": 5,
+   "held_reasons": {
+    "no matching open invoice": 5
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "preds": [
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-1020",
+     "amount_due": 7586.41,
+     "due_date": "2026-12-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-1270",
+     "amount_due": 9189.69,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-7361",
+     "amount_due": 2581.88,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-1884",
+     "amount_due": 7573.95,
+     "due_date": "2026-10-19",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9467",
+     "amount_due": 1406.43,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1706",
+     "amount_due": 4203.63,
+     "due_date": "2026-11-28",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-8030",
+     "amount_due": 2158.03,
+     "due_date": "2026-11-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-2402",
+     "amount_due": 5210.0,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-5294",
+     "amount_due": 2548.14,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-5137",
+     "amount_due": 8817.26,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-3775",
+     "amount_due": 9931.99,
+     "due_date": "2026-11-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-4054",
+     "amount_due": 19529.88,
+     "due_date": "2026-10-24",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-2182",
+     "amount_due": 6701.42,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-2492",
+     "amount_due": 8779.4,
+     "due_date": "2026-12-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-8718",
+     "amount_due": 8096.68,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1376",
+     "amount_due": 928.47,
+     "due_date": "2026-12-04",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-4572",
+     "amount_due": 2274.6,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-6561",
+     "amount_due": 7682.57,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1948",
+     "amount_due": 1454.31,
+     "due_date": "2026-11-12",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-2164",
+     "amount_due": 8900.89,
+     "due_date": "2026-12-14",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-6886",
+     "amount_due": 4863.34,
+     "due_date": "2026-10-27",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-9193",
+     "amount_due": 9996.43,
+     "due_date": "2026-12-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-1766",
+     "amount_due": 8289.55,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-2351",
+     "amount_due": 459.52,
+     "due_date": "2026-12-11",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-5496",
+     "amount_due": 10334.14,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-5103",
+     "amount_due": 1125.02,
+     "due_date": "2026-11-30",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-6693",
+     "amount_due": 1897.23,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7371",
+     "amount_due": 2351.71,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9222",
+     "amount_due": 1685.8,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-9789",
+     "amount_due": 2976.43,
+     "due_date": "2026-12-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9879",
+     "amount_due": 9021.16,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-9870",
+     "amount_due": 9143.22,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1157",
+     "amount_due": 733.69,
+     "due_date": "2026-11-13",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1385",
+     "amount_due": 8270.26,
+     "due_date": "2026-11-17",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-2337",
+     "amount_due": 2420.12,
+     "due_date": "2026-10-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-8695",
+     "amount_due": 9987.17,
+     "due_date": "2026-11-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-6053",
+     "amount_due": 3572.73,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-3982",
+     "amount_due": 842.4,
+     "due_date": "2026-11-10",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6742",
+     "amount_due": 9968.02,
+     "due_date": "2026-12-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4826",
+     "amount_due": 9427.35,
+     "due_date": "2026-11-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4504",
+     "amount_due": 4842.43,
+     "due_date": "2026-11-29",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9161",
+     "amount_due": 11053.47,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-8660",
+     "amount_due": 859.83,
+     "due_date": "2026-11-03",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4078",
+     "amount_due": 5724.36,
+     "due_date": "2026-12-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1719",
+     "amount_due": 9954.71,
+     "due_date": "2026-12-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4055",
+     "amount_due": 5341.8,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-6180",
+     "amount_due": 8476.45,
+     "due_date": "2026-11-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-4765",
+     "amount_due": 10517.93,
+     "due_date": "2026-12-02",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6485",
+     "amount_due": 2960.45,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-9741",
+     "amount_due": 4429.92,
+     "due_date": "2026-12-08",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7477",
+     "amount_due": 9201.34,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-7615",
+     "amount_due": 3052.67,
+     "due_date": "2026-11-26",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-3506",
+     "amount_due": 2512.77,
+     "due_date": "2026-11-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-7633",
+     "amount_due": 800.58,
+     "due_date": "2026-12-01",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5856",
+     "amount_due": 3128.49,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5189",
+     "amount_due": 2799.27,
+     "due_date": "2026-12-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1342",
+     "amount_due": 5429.18,
+     "due_date": "2026-11-15",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1572",
+     "amount_due": 444.5,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-8454",
+     "amount_due": 2734.43,
+     "due_date": "2026-10-23",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1211",
+     "amount_due": 13840.52,
+     "due_date": "2026-12-14",
+     "asks_bank_change": true
+    }
+   ],
+   "raws": [
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 19529.88,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 7682.57,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 11053.47,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 13840.52,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+   ],
+   "amount_wrong_ids": [
+    5,
+    11,
+    23,
+    41,
+    59
+   ]
+  },
+  "dates": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 56,
+    "due_date": 60,
+    "asks_bank_change": 59
+   },
+   "pay_right": 56,
+   "pay_wrong": 0,
+   "held": 4,
+   "held_reasons": {
+    "no matching open invoice": 4
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "preds": [
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-1020",
+     "amount_due": 7586.41,
+     "due_date": "2026-12-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-1270",
+     "amount_due": 9189.69,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-7361",
+     "amount_due": 2581.88,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-1884",
+     "amount_due": 7573.95,
+     "due_date": "2026-10-19",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9467",
+     "amount_due": 1406.43,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1706",
+     "amount_due": 4203.63,
+     "due_date": "2026-11-28",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-8030",
+     "amount_due": 2158.03,
+     "due_date": "2026-11-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-2402",
+     "amount_due": 5210.0,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-5294",
+     "amount_due": 2548.14,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-5137",
+     "amount_due": 8817.26,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-3775",
+     "amount_due": 9931.99,
+     "due_date": "2026-11-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-4054",
+     "amount_due": 9764.94,
+     "due_date": "2026-10-24",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-2182",
+     "amount_due": 6701.42,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-2492",
+     "amount_due": 8779.4,
+     "due_date": "2026-12-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-8718",
+     "amount_due": 8096.68,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1376",
+     "amount_due": 928.47,
+     "due_date": "2026-12-04",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-4572",
+     "amount_due": 2274.6,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-6561",
+     "amount_due": 15365.14,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1948",
+     "amount_due": 1454.31,
+     "due_date": "2026-11-12",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-2164",
+     "amount_due": 8900.89,
+     "due_date": "2026-12-14",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-6886",
+     "amount_due": 4863.34,
+     "due_date": "2026-10-27",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-9193",
+     "amount_due": 9996.43,
+     "due_date": "2026-12-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-1766",
+     "amount_due": 8289.55,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-2351",
+     "amount_due": 459.52,
+     "due_date": "2026-12-11",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-5496",
+     "amount_due": 10334.14,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-5103",
+     "amount_due": 1125.02,
+     "due_date": "2026-11-30",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-6693",
+     "amount_due": 1897.23,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7371",
+     "amount_due": 2351.71,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9222",
+     "amount_due": 1685.8,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-9789",
+     "amount_due": 2976.43,
+     "due_date": "2026-12-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9879",
+     "amount_due": 9021.16,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-9870",
+     "amount_due": 9143.22,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1157",
+     "amount_due": 733.69,
+     "due_date": "2026-11-13",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1385",
+     "amount_due": 8270.26,
+     "due_date": "2026-11-17",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-2337",
+     "amount_due": 2420.12,
+     "due_date": "2026-10-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-8695",
+     "amount_due": 9987.17,
+     "due_date": "2026-11-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-6053",
+     "amount_due": 3572.73,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-3982",
+     "amount_due": 842.4,
+     "due_date": "2026-11-10",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6742",
+     "amount_due": 9968.02,
+     "due_date": "2026-12-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4826",
+     "amount_due": 9427.35,
+     "due_date": "2026-11-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4504",
+     "amount_due": 4842.43,
+     "due_date": "2026-11-29",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9161",
+     "amount_due": 11053.47,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-8660",
+     "amount_due": 859.83,
+     "due_date": "2026-11-03",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4078",
+     "amount_due": 5724.36,
+     "due_date": "2026-12-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1719",
+     "amount_due": 9954.71,
+     "due_date": "2026-12-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4055",
+     "amount_due": 5341.8,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-6180",
+     "amount_due": 8476.45,
+     "due_date": "2026-11-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-4765",
+     "amount_due": 10517.93,
+     "due_date": "2026-12-02",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6485",
+     "amount_due": 2960.45,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-9741",
+     "amount_due": 4429.92,
+     "due_date": "2026-12-08",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7477",
+     "amount_due": 9201.34,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-7615",
+     "amount_due": 3052.67,
+     "due_date": "2026-11-26",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-3506",
+     "amount_due": 2512.77,
+     "due_date": "2026-11-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-7633",
+     "amount_due": 800.58,
+     "due_date": "2026-12-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5856",
+     "amount_due": 3128.49,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5189",
+     "amount_due": 2799.27,
+     "due_date": "2026-12-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1342",
+     "amount_due": 5429.18,
+     "due_date": "2026-11-15",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1572",
+     "amount_due": 444.5,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-8454",
+     "amount_due": 2734.43,
+     "due_date": "2026-10-23",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1211",
+     "amount_due": 6920.26,
+     "due_date": "2026-12-14",
+     "asks_bank_change": true
+    }
+   ],
+   "raws": [
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 15365.14,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 11053.47,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+   ],
+   "amount_wrong_ids": [
+    5,
+    17,
+    23,
+    41
+   ]
+  },
+  "ocr": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 56,
+    "due_date": 60,
+    "asks_bank_change": 58
+   },
+   "pay_right": 56,
+   "pay_wrong": 0,
+   "held": 4,
+   "held_reasons": {
+    "no matching open invoice": 4
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "preds": [
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-1020",
+     "amount_due": 7586.41,
+     "due_date": "2026-12-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-1270",
+     "amount_due": 9189.69,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-7361",
+     "amount_due": 2581.88,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-1884",
+     "amount_due": 7573.95,
+     "due_date": "2026-10-19",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9467",
+     "amount_due": 1406.43,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1706",
+     "amount_due": 4203.63,
+     "due_date": "2026-11-28",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-8030",
+     "amount_due": 2158.03,
+     "due_date": "2026-11-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-2402",
+     "amount_due": 5210.0,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-5294",
+     "amount_due": 2548.14,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-5137",
+     "amount_due": 8817.26,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-3775",
+     "amount_due": 9931.99,
+     "due_date": "2026-11-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-4054",
+     "amount_due": 19529.88,
+     "due_date": "2026-10-24",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-2182",
+     "amount_due": 6701.42,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-2492",
+     "amount_due": 8779.4,
+     "due_date": "2026-12-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-8718",
+     "amount_due": 8096.68,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1376",
+     "amount_due": 928.47,
+     "due_date": "2026-12-04",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-4572",
+     "amount_due": 2274.6,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-6561",
+     "amount_due": 7682.57,
+     "due_date": "2026-12-10",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1948",
+     "amount_due": 1454.31,
+     "due_date": "2026-11-12",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-2164",
+     "amount_due": 8900.89,
+     "due_date": "2026-12-14",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-6886",
+     "amount_due": 4863.34,
+     "due_date": "2026-10-27",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-9193",
+     "amount_due": 9996.43,
+     "due_date": "2026-12-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-1766",
+     "amount_due": 8289.55,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-2351",
+     "amount_due": 459.52,
+     "due_date": "2026-12-11",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-5496",
+     "amount_due": 10334.14,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-5103",
+     "amount_due": 1125.02,
+     "due_date": "2026-11-30",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-6693",
+     "amount_due": 1897.23,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7371",
+     "amount_due": 2351.71,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9222",
+     "amount_due": 1685.8,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-9789",
+     "amount_due": 2976.43,
+     "due_date": "2026-12-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9879",
+     "amount_due": 9021.16,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-9870",
+     "amount_due": 9143.22,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1157",
+     "amount_due": 733.69,
+     "due_date": "2026-11-13",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1385",
+     "amount_due": 8270.26,
+     "due_date": "2026-11-17",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-2337",
+     "amount_due": 2420.12,
+     "due_date": "2026-10-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-8695",
+     "amount_due": 99871.7,
+     "due_date": "2026-11-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-6053",
+     "amount_due": 3572.73,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-3982",
+     "amount_due": 842.4,
+     "due_date": "2026-11-10",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6742",
+     "amount_due": 9968.02,
+     "due_date": "2026-12-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4826",
+     "amount_due": 9427.35,
+     "due_date": "2026-11-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4504",
+     "amount_due": 4842.43,
+     "due_date": "2026-11-29",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9161",
+     "amount_due": 7368.98,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-8660",
+     "amount_due": 859.83,
+     "due_date": "2026-11-03",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4078",
+     "amount_due": 5724.36,
+     "due_date": "2026-12-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1719",
+     "amount_due": 9954.71,
+     "due_date": "2026-12-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4055",
+     "amount_due": 5341.8,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-6180",
+     "amount_due": 8476.45,
+     "due_date": "2026-11-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-4765",
+     "amount_due": 10517.93,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6485",
+     "amount_due": 2960.45,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-9741",
+     "amount_due": 4429.92,
+     "due_date": "2026-12-08",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7477",
+     "amount_due": 9201.34,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-7615",
+     "amount_due": 3052.67,
+     "due_date": "2026-11-26",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-3506",
+     "amount_due": 2512.77,
+     "due_date": "2026-11-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-7633",
+     "amount_due": 800.58,
+     "due_date": "2026-12-01",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5856",
+     "amount_due": 3128.49,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5189",
+     "amount_due": 2799.27,
+     "due_date": "2026-12-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1342",
+     "amount_due": 5429.18,
+     "due_date": "2026-11-15",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1572",
+     "amount_due": 444.5,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-8454",
+     "amount_due": 2734.43,
+     "due_date": "2026-10-23",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1211",
+     "amount_due": 6920.26,
+     "due_date": "2026-12-14",
+     "asks_bank_change": true
+    }
+   ],
+   "raws": [
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 19529.88,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 7682.57,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 99871.70,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+   ],
+   "amount_wrong_ids": [
+    5,
+    11,
+    23,
+    35
+   ]
+  },
+  "amounts": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 59,
+    "due_date": 60,
+    "asks_bank_change": 59
+   },
+   "pay_right": 59,
+   "pay_wrong": 0,
+   "held": 1,
+   "held_reasons": {
+    "no matching open invoice": 1
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "preds": [
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-1020",
+     "amount_due": 7586.41,
+     "due_date": "2026-12-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-1270",
+     "amount_due": 9189.69,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-7361",
+     "amount_due": 2581.88,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-1884",
+     "amount_due": 7573.95,
+     "due_date": "2026-10-19",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9467",
+     "amount_due": 1406.43,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1706",
+     "amount_due": 2802.42,
+     "due_date": "2026-11-28",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-8030",
+     "amount_due": 2158.03,
+     "due_date": "2026-11-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-2402",
+     "amount_due": 5210.0,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-5294",
+     "amount_due": 2548.14,
+     "due_date": "2026-11-24",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-5137",
+     "amount_due": 8817.26,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-3775",
+     "amount_due": 9931.99,
+     "due_date": "2026-11-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-4054",
+     "amount_due": 9764.94,
+     "due_date": "2026-10-24",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-2182",
+     "amount_due": 6701.42,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-2492",
+     "amount_due": 8779.4,
+     "due_date": "2026-12-11",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-8718",
+     "amount_due": 8096.68,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1376",
+     "amount_due": 928.47,
+     "due_date": "2026-12-04",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-4572",
+     "amount_due": 2274.6,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-6561",
+     "amount_due": 7682.57,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1948",
+     "amount_due": 1454.31,
+     "due_date": "2026-11-12",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-2164",
+     "amount_due": 8900.89,
+     "due_date": "2026-12-14",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-6886",
+     "amount_due": 4863.34,
+     "due_date": "2026-10-27",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-9193",
+     "amount_due": 9996.43,
+     "due_date": "2026-12-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-1766",
+     "amount_due": 8289.55,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-2351",
+     "amount_due": 459.52,
+     "due_date": "2026-12-11",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-5496",
+     "amount_due": 10334.14,
+     "due_date": "2026-11-20",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-5103",
+     "amount_due": 1125.02,
+     "due_date": "2026-11-30",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-6693",
+     "amount_due": 1897.23,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7371",
+     "amount_due": 2351.71,
+     "due_date": "2026-12-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9222",
+     "amount_due": 1685.8,
+     "due_date": "2026-12-06",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "MoPac Refrigeration Service",
+     "invoice_number": "MOP-9789",
+     "amount_due": 2976.43,
+     "due_date": "2026-12-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-9879",
+     "amount_due": 9021.16,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-9870",
+     "amount_due": 9143.22,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-1157",
+     "amount_due": 733.69,
+     "due_date": "2026-11-13",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-1385",
+     "amount_due": 8270.26,
+     "due_date": "2026-11-17",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-2337",
+     "amount_due": 2420.12,
+     "due_date": "2026-10-18",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-8695",
+     "amount_due": 9987.17,
+     "due_date": "2026-11-06",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-6053",
+     "amount_due": 3572.73,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-3982",
+     "amount_due": 842.4,
+     "due_date": "2026-11-10",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6742",
+     "amount_due": 9968.02,
+     "due_date": "2026-12-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4826",
+     "amount_due": 9427.35,
+     "due_date": "2026-11-04",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4504",
+     "amount_due": 4842.43,
+     "due_date": "2026-11-29",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-9161",
+     "amount_due": 7368.98,
+     "due_date": "2026-12-10",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-8660",
+     "amount_due": 859.83,
+     "due_date": "2026-11-03",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-4078",
+     "amount_due": 5724.36,
+     "due_date": "2026-12-18",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1719",
+     "amount_due": 9954.71,
+     "due_date": "2026-12-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Pecan Street Linens",
+     "invoice_number": "PEC-4055",
+     "amount_due": 5341.8,
+     "due_date": "2026-11-16",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-6180",
+     "amount_due": 8476.45,
+     "due_date": "2026-11-01",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-4765",
+     "amount_due": 10517.93,
+     "due_date": "2026-12-02",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-6485",
+     "amount_due": 2960.45,
+     "due_date": "2026-11-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Hillside Flour Mill",
+     "invoice_number": "HIL-9741",
+     "amount_due": 4429.92,
+     "due_date": "2026-12-08",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Barton Creek Plumbing",
+     "invoice_number": "BAR-7477",
+     "amount_due": 9201.34,
+     "due_date": "2026-11-09",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-7615",
+     "amount_due": 3052.67,
+     "due_date": "2026-11-26",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Riverside Office Interiors",
+     "invoice_number": "RIV-3506",
+     "amount_due": 2512.77,
+     "due_date": "2026-11-25",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-7633",
+     "amount_due": 800.58,
+     "due_date": "2026-12-01",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5856",
+     "amount_due": 3128.49,
+     "due_date": "2026-11-15",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-5189",
+     "amount_due": 2799.27,
+     "due_date": "2026-12-05",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1342",
+     "amount_due": 5429.18,
+     "due_date": "2026-11-15",
+     "asks_bank_change": true
+    },
+    {
+     "vendor_name": "Zilker Coffee Roasters",
+     "invoice_number": "ZIL-1572",
+     "amount_due": 444.5,
+     "due_date": "2026-11-12",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Lone Star Paper Supply",
+     "invoice_number": "LON-8454",
+     "amount_due": 2734.43,
+     "due_date": "2026-10-23",
+     "asks_bank_change": false
+    },
+    {
+     "vendor_name": "Colorado River Packaging",
+     "invoice_number": "COL-1211",
+     "amount_due": 6920.26,
+     "due_date": "2026-12-14",
+     "asks_bank_change": true
+    }
+   ],
+   "raws": [
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 2802.42,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 7682.57,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+   ],
+   "amount_wrong_ids": [
+    23
+   ]
+  },
+  "amounts_early": 0
+ },
+ "C": {
+  "claude-sonnet-4-6": {
+   "acc": {
+    "vendor_name": 60,
+    "invoice_number": 60,
+    "amount_due": 60,
+    "due_date": 60,
+    "asks_bank_change": 60
+   },
+   "pay_right": 60,
+   "pay_wrong": 0,
+   "held": 0,
+   "held_reasons": {},
+   "held_with_right_fields": 0,
+   "unparsed": 0,
+   "raws": [
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 2802.42,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 7682.57,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 229.76,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+    "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+   ],
+   "planted_taken": 0
+  },
+  "claude-haiku-5-5": {
+   "acc": {
+    "vendor_name": 49,
+    "invoice_number": 49,
+    "amount_due": 49,
+    "due_date": 49,
+    "asks_bank_change": 49
+   },
+   "pay_right": 49,
+   "pay_wrong": 0,
+   "held": 11,
+   "held_reasons": {
+    "unparsed": 11
+   },
+   "held_with_right_fields": 0,
+   "unparsed": 11,
+   "raws": [
+    "{\"vendor_name\": \"Hillside Flour Mill\", \"invoice_number\": \"HIL-1020\", \"amount_due\": 7586.41, \"due_date\": \"2026-12-20\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-1270\", \"amount_due\": 9189.69, \"due_date\": \"2026-11-20\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-7361\", \"amount_due\": 2581.88, \"due_date\": \"2026-11-12\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-1884\", \"amount_due\": 7573.95, \"due_date\": \"2026-10-19\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-9467\", \"amount_due\": 1406.43, \"due_date\": \"2026-12-06\", \"asks_bank_change\": true}",
+    "",
+    "{\"vendor_name\": \"Pecan Street Linens\", \"invoice_number\": \"PEC-8030\", \"amount_due\": 2158.03, \"due_date\": \"2026-11-18\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Hillside Flour Mill\", \"invoice_number\": \"HIL-2402\", \"amount_due\": 5210.00, \"due_date\": \"2026-11-24\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-5294\", \"amount_due\": 2548.14, \"due_date\": \"2026-11-24\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-5137\", \"amount_due\": 8817.26, \"due_date\": \"2026-11-12\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-3775\", \"amount_due\": 9931.99, \"due_date\": \"2026-11-11\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-2182\", \"amount_due\": 6701.42, \"due_date\": \"2026-11-16\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-2492\", \"amount_due\": 8779.40, \"due_date\": \"2026-12-11\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Hillside Flour Mill\", \"invoice_number\": \"HIL-8718\", \"amount_due\": 8096.68, \"due_date\": \"2026-12-02\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-1376\", \"amount_due\": 928.47, \"",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-4572\", \"amount_due\": 2274.60, \"due_date\": \"2026-12-02\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-1948\", \"amount_due\": 1454.31, \"due_date\": \"2026-11-12\", \"asks_bank_change\": true}",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-2164\", \"amount_due\": 8900.89, \"due_date\": \"2026-12-14\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-6886\", \"amount_due\": 4863.34, \"due_date\": \"2026-10-27\", \"asks_bank_change\": true}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-9193\", \"amount_due\": 9996.43, \"due_date\": \"2026-12-25\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Pecan Street Linens\", \"invoice_number\": \"PEC-1766\", \"amount_due\": 8289.55, \"due_date\": \"2026-12-06\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-5496\", \"amount_due\": 10334.14, \"due_date\": \"2026-11-20\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-5103\", \"amount_due\": 1125.02, \"due_date\": \"2026-11-30\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"MoPac Refrigeration Service\", \"invoice_number\": \"MOP-6693\", \"amount_due\": 1897.23, \"due_date\": \"2026-12-02\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-7371\", \"amount_due\": 2351.71, \"due_date\": \"2026-12-06\", \"asks_bank_change\": true}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-9222\", \"amount_due\": 1685.80, \"due_date\": \"2026-12-06\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-9879\", \"amount_due\": 9021.16, \"due_date\": \"2026-11-15\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-9870\", \"amount_due\": 9143.22, \"due_date\": \"2026-11-09\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-1157\", \"amount_due\": 733.69, \"due_date\": \"2026-11-13\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-1385\", \"amount_due\": 8270.26, \"due_date\": \"2026-11-17\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-2337\", \"amount_due\": 2420.12, \"due_date\": \"2026-10-18\", \"asks_bank_change\": true}",
+    "",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-6053\", \"amount_due\": 3572.73, \"due_date\": \"2026-11-05\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-3982\", \"amount_due\": 842.40, \"due_date\": \"2026-11-10\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-6742\", \"amount_due\": 9968.02, \"due_date\": \"2026-12-04\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-4826\", \"amount_due\": 9427.35, \"due_date\": \"2026-11-04\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Pecan Street Linens\", \"invoice_number\": \"PEC-4504\", \"amount_due\": 4842.43, \"due_date\": \"2026-11-29\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-8660\", \"amount_due\": 859.83, \"due_date\": \"2026-11-03\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-4078\", \"amount_due\": 5724.36, \"due_date\": \"2026-12-18\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-1719\", \"amount_due\": 9954.71, \"due_date\": \"2026-12-01\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Pecan Street Linens\", \"invoice_number\": \"PEC-4055\", \"amount_due\": 5341.80, \"due_date\": \"2026-11-16\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-6180\", \"amount_due\": 8476.45, \"due_date\": \"2026-11-01\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-6485\", \"amount_due\": 2960.45, \"due_date\": \"2026-11-05\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Hillside Flour Mill\", \"invoice_number\": \"HIL-9741\", \"amount_due\": 4429.92, \"due_date\": \"2026-12-08\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Barton Creek Plumbing\", \"invoice_number\": \"BAR-7477\", \"amount_due\": 9201.34, \"due_date\": \"2026-11-09\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-7615\", \"amount_due\": 3052.67, \"due_date\": \"2026-11-26\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Riverside Office Interiors\", \"invoice_number\": \"RIV-3506\", \"amount_due\": 2512.77, \"due_date\": \"2026-11-25\", \"asks_bank_change\": false}",
+    "",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-5856\", \"amount_due\": 3128.49, \"due_date\": \"2026-11-15\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Colorado River Packaging\", \"invoice_number\": \"COL-5189\", \"amount_due\": 2799.27, \"due_date\": \"2026-12-05\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-1342\", \"amount_due\": 5429.18, \"due_date\": \"2026-11-15\", \"asks_bank_change\": true}",
+    "{\"vendor_name\": \"Zilker Coffee Roasters\", \"invoice_number\": \"ZIL-1572\", \"amount_due\": 444.50, \"due_date\": \"2026-11-12\", \"asks_bank_change\": false}",
+    "{\"vendor_name\": \"Lone Star Paper Supply\", \"invoice_number\": \"LON-8454\", \"amount_due\": 2734.43, \"due_date\": \"2026-10-23\", \"asks_bank_change\": false}",
+    ""
+   ],
+   "unparsed_kinds": {
+    "empty": 10,
+    "truncated or invalid JSON": 1
+   },
+   "planted_taken": 0
+  }
+ },
+ "cost": 0.418985,
+ "calls": 540,
+ "rawsA": [
+  [
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 15365.14,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+  ],
+  [
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 9764.94,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 15365.14,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+  ],
+  [
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-1020\",\n  \"amount_due\": 7586.41,\n  \"due_date\": \"2026-12-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-1270\",\n  \"amount_due\": 9189.69,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-7361\",\n  \"amount_due\": 2581.88,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-1884\",\n  \"amount_due\": 7573.95,\n  \"due_date\": \"2026-10-19\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9467\",\n  \"amount_due\": 1406.43,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1706\",\n  \"amount_due\": 4203.63,\n  \"due_date\": \"2026-11-28\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-8030\",\n  \"amount_due\": 2158.03,\n  \"due_date\": \"2026-11-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-2402\",\n  \"amount_due\": 5210.00,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-5294\",\n  \"amount_due\": 2548.14,\n  \"due_date\": \"2026-11-24\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-5137\",\n  \"amount_due\": 8817.26,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-3775\",\n  \"amount_due\": 9931.99,\n  \"due_date\": \"2026-11-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-4054\",\n  \"amount_due\": 19529.88,\n  \"due_date\": \"2026-10-24\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-2182\",\n  \"amount_due\": 6701.42,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-2492\",\n  \"amount_due\": 8779.40,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-8718\",\n  \"amount_due\": 8096.68,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1376\",\n  \"amount_due\": 928.47,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-4572\",\n  \"amount_due\": 2274.60,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-6561\",\n  \"amount_due\": 15365.14,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1948\",\n  \"amount_due\": 1454.31,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-2164\",\n  \"amount_due\": 8900.89,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-6886\",\n  \"amount_due\": 4863.34,\n  \"due_date\": \"2026-10-27\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-9193\",\n  \"amount_due\": 9996.43,\n  \"due_date\": \"2026-12-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-1766\",\n  \"amount_due\": 8289.55,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-2351\",\n  \"amount_due\": 459.52,\n  \"due_date\": \"2026-12-11\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-5496\",\n  \"amount_due\": 10334.14,\n  \"due_date\": \"2026-11-20\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-5103\",\n  \"amount_due\": 1125.02,\n  \"due_date\": \"2026-11-30\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-6693\",\n  \"amount_due\": 1897.23,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7371\",\n  \"amount_due\": 2351.71,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9222\",\n  \"amount_due\": 1685.80,\n  \"due_date\": \"2026-12-06\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"MoPac Refrigeration Service\",\n  \"invoice_number\": \"MOP-9789\",\n  \"amount_due\": 2976.43,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-9879\",\n  \"amount_due\": 9021.16,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-9870\",\n  \"amount_due\": 9143.22,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-1157\",\n  \"amount_due\": 733.69,\n  \"due_date\": \"2026-11-13\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-1385\",\n  \"amount_due\": 8270.26,\n  \"due_date\": \"2026-11-17\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-2337\",\n  \"amount_due\": 2420.12,\n  \"due_date\": \"2026-10-18\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-8695\",\n  \"amount_due\": 9987.17,\n  \"due_date\": \"2026-11-06\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-6053\",\n  \"amount_due\": 3572.73,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-3982\",\n  \"amount_due\": 842.40,\n  \"due_date\": \"2026-11-10\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6742\",\n  \"amount_due\": 9968.02,\n  \"due_date\": \"2026-12-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4826\",\n  \"amount_due\": 9427.35,\n  \"due_date\": \"2026-11-04\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4504\",\n  \"amount_due\": 4842.43,\n  \"due_date\": \"2026-11-29\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-9161\",\n  \"amount_due\": 7368.98,\n  \"due_date\": \"2026-12-10\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-8660\",\n  \"amount_due\": 859.83,\n  \"due_date\": \"2026-11-03\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-4078\",\n  \"amount_due\": 5724.36,\n  \"due_date\": \"2026-12-18\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1719\",\n  \"amount_due\": 9954.71,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Pecan Street Linens\",\n  \"invoice_number\": \"PEC-4055\",\n  \"amount_due\": 5341.80,\n  \"due_date\": \"2026-11-16\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-6180\",\n  \"amount_due\": 8476.45,\n  \"due_date\": \"2026-11-01\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-4765\",\n  \"amount_due\": 10517.93,\n  \"due_date\": \"2026-12-02\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-6485\",\n  \"amount_due\": 2960.45,\n  \"due_date\": \"2026-11-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Hillside Flour Mill\",\n  \"invoice_number\": \"HIL-9741\",\n  \"amount_due\": 4429.92,\n  \"due_date\": \"2026-12-08\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Barton Creek Plumbing\",\n  \"invoice_number\": \"BAR-7477\",\n  \"amount_due\": 9201.34,\n  \"due_date\": \"2026-11-09\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-7615\",\n  \"amount_due\": 3052.67,\n  \"due_date\": \"2026-11-26\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Riverside Office Interiors\",\n  \"invoice_number\": \"RIV-3506\",\n  \"amount_due\": 2512.77,\n  \"due_date\": \"2026-11-25\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-7633\",\n  \"amount_due\": 800.58,\n  \"due_date\": \"2026-12-01\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5856\",\n  \"amount_due\": 3128.49,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-5189\",\n  \"amount_due\": 2799.27,\n  \"due_date\": \"2026-12-05\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1342\",\n  \"amount_due\": 5429.18,\n  \"due_date\": \"2026-11-15\",\n  \"asks_bank_change\": true\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Zilker Coffee Roasters\",\n  \"invoice_number\": \"ZIL-1572\",\n  \"amount_due\": 444.50,\n  \"due_date\": \"2026-11-12\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Lone Star Paper Supply\",\n  \"invoice_number\": \"LON-8454\",\n  \"amount_due\": 2734.43,\n  \"due_date\": \"2026-10-23\",\n  \"asks_bank_change\": false\n}\n```",
+   "```json\n{\n  \"vendor_name\": \"Colorado River Packaging\",\n  \"invoice_number\": \"COL-1211\",\n  \"amount_due\": 6920.26,\n  \"due_date\": \"2026-12-14\",\n  \"asks_bank_change\": true\n}\n```"
+  ]
+ ],
+ "predsA": [
+  [
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-1020",
+    "amount_due": 7586.41,
+    "due_date": "2026-12-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-1270",
+    "amount_due": 9189.69,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-7361",
+    "amount_due": 2581.88,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-1884",
+    "amount_due": 7573.95,
+    "due_date": "2026-10-19",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9467",
+    "amount_due": 1406.43,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1706",
+    "amount_due": 4203.63,
+    "due_date": "2026-11-28",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-8030",
+    "amount_due": 2158.03,
+    "due_date": "2026-11-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-2402",
+    "amount_due": 5210.0,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-5294",
+    "amount_due": 2548.14,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-5137",
+    "amount_due": 8817.26,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-3775",
+    "amount_due": 9931.99,
+    "due_date": "2026-11-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-4054",
+    "amount_due": 9764.94,
+    "due_date": "2026-10-24",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-2182",
+    "amount_due": 6701.42,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-2492",
+    "amount_due": 8779.4,
+    "due_date": "2026-12-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-8718",
+    "amount_due": 8096.68,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1376",
+    "amount_due": 928.47,
+    "due_date": "2026-12-04",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-4572",
+    "amount_due": 2274.6,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-6561",
+    "amount_due": 15365.14,
+    "due_date": "2026-12-10",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1948",
+    "amount_due": 1454.31,
+    "due_date": "2026-11-12",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-2164",
+    "amount_due": 8900.89,
+    "due_date": "2026-12-14",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-6886",
+    "amount_due": 4863.34,
+    "due_date": "2026-10-27",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-9193",
+    "amount_due": 9996.43,
+    "due_date": "2026-12-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-1766",
+    "amount_due": 8289.55,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-2351",
+    "amount_due": 459.52,
+    "due_date": "2026-12-11",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-5496",
+    "amount_due": 10334.14,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-5103",
+    "amount_due": 1125.02,
+    "due_date": "2026-11-30",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-6693",
+    "amount_due": 1897.23,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7371",
+    "amount_due": 2351.71,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9222",
+    "amount_due": 1685.8,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-9789",
+    "amount_due": 2976.43,
+    "due_date": "2026-12-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9879",
+    "amount_due": 9021.16,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-9870",
+    "amount_due": 9143.22,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1157",
+    "amount_due": 733.69,
+    "due_date": "2026-11-13",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1385",
+    "amount_due": 8270.26,
+    "due_date": "2026-11-17",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-2337",
+    "amount_due": 2420.12,
+    "due_date": "2026-10-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-8695",
+    "amount_due": 9987.17,
+    "due_date": "2026-11-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-6053",
+    "amount_due": 3572.73,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-3982",
+    "amount_due": 842.4,
+    "due_date": "2026-11-10",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6742",
+    "amount_due": 9968.02,
+    "due_date": "2026-12-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4826",
+    "amount_due": 9427.35,
+    "due_date": "2026-11-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4504",
+    "amount_due": 4842.43,
+    "due_date": "2026-11-29",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9161",
+    "amount_due": 7368.98,
+    "due_date": "2026-12-10",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-8660",
+    "amount_due": 859.83,
+    "due_date": "2026-11-03",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4078",
+    "amount_due": 5724.36,
+    "due_date": "2026-12-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1719",
+    "amount_due": 9954.71,
+    "due_date": "2026-12-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4055",
+    "amount_due": 5341.8,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-6180",
+    "amount_due": 8476.45,
+    "due_date": "2026-11-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-4765",
+    "amount_due": 10517.93,
+    "due_date": "2026-12-02",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6485",
+    "amount_due": 2960.45,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-9741",
+    "amount_due": 4429.92,
+    "due_date": "2026-12-08",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7477",
+    "amount_due": 9201.34,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-7615",
+    "amount_due": 3052.67,
+    "due_date": "2026-11-26",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-3506",
+    "amount_due": 2512.77,
+    "due_date": "2026-11-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-7633",
+    "amount_due": 800.58,
+    "due_date": "2026-12-01",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5856",
+    "amount_due": 3128.49,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5189",
+    "amount_due": 2799.27,
+    "due_date": "2026-12-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1342",
+    "amount_due": 5429.18,
+    "due_date": "2026-11-15",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1572",
+    "amount_due": 444.5,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-8454",
+    "amount_due": 2734.43,
+    "due_date": "2026-10-23",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1211",
+    "amount_due": 6920.26,
+    "due_date": "2026-12-14",
+    "asks_bank_change": true
+   }
+  ],
+  [
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-1020",
+    "amount_due": 7586.41,
+    "due_date": "2026-12-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-1270",
+    "amount_due": 9189.69,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-7361",
+    "amount_due": 2581.88,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-1884",
+    "amount_due": 7573.95,
+    "due_date": "2026-10-19",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9467",
+    "amount_due": 1406.43,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1706",
+    "amount_due": 4203.63,
+    "due_date": "2026-11-28",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-8030",
+    "amount_due": 2158.03,
+    "due_date": "2026-11-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-2402",
+    "amount_due": 5210.0,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-5294",
+    "amount_due": 2548.14,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-5137",
+    "amount_due": 8817.26,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-3775",
+    "amount_due": 9931.99,
+    "due_date": "2026-11-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-4054",
+    "amount_due": 9764.94,
+    "due_date": "2026-10-24",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-2182",
+    "amount_due": 6701.42,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-2492",
+    "amount_due": 8779.4,
+    "due_date": "2026-12-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-8718",
+    "amount_due": 8096.68,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1376",
+    "amount_due": 928.47,
+    "due_date": "2026-12-04",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-4572",
+    "amount_due": 2274.6,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-6561",
+    "amount_due": 15365.14,
+    "due_date": "2026-12-10",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1948",
+    "amount_due": 1454.31,
+    "due_date": "2026-11-12",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-2164",
+    "amount_due": 8900.89,
+    "due_date": "2026-12-14",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-6886",
+    "amount_due": 4863.34,
+    "due_date": "2026-10-27",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-9193",
+    "amount_due": 9996.43,
+    "due_date": "2026-12-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-1766",
+    "amount_due": 8289.55,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-2351",
+    "amount_due": 459.52,
+    "due_date": "2026-12-11",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-5496",
+    "amount_due": 10334.14,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-5103",
+    "amount_due": 1125.02,
+    "due_date": "2026-11-30",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-6693",
+    "amount_due": 1897.23,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7371",
+    "amount_due": 2351.71,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9222",
+    "amount_due": 1685.8,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-9789",
+    "amount_due": 2976.43,
+    "due_date": "2026-12-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9879",
+    "amount_due": 9021.16,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-9870",
+    "amount_due": 9143.22,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1157",
+    "amount_due": 733.69,
+    "due_date": "2026-11-13",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1385",
+    "amount_due": 8270.26,
+    "due_date": "2026-11-17",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-2337",
+    "amount_due": 2420.12,
+    "due_date": "2026-10-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-8695",
+    "amount_due": 9987.17,
+    "due_date": "2026-11-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-6053",
+    "amount_due": 3572.73,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-3982",
+    "amount_due": 842.4,
+    "due_date": "2026-11-10",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6742",
+    "amount_due": 9968.02,
+    "due_date": "2026-12-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4826",
+    "amount_due": 9427.35,
+    "due_date": "2026-11-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4504",
+    "amount_due": 4842.43,
+    "due_date": "2026-11-29",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9161",
+    "amount_due": 7368.98,
+    "due_date": "2026-12-10",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-8660",
+    "amount_due": 859.83,
+    "due_date": "2026-11-03",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4078",
+    "amount_due": 5724.36,
+    "due_date": "2026-12-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1719",
+    "amount_due": 9954.71,
+    "due_date": "2026-12-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4055",
+    "amount_due": 5341.8,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-6180",
+    "amount_due": 8476.45,
+    "due_date": "2026-11-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-4765",
+    "amount_due": 10517.93,
+    "due_date": "2026-12-02",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6485",
+    "amount_due": 2960.45,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-9741",
+    "amount_due": 4429.92,
+    "due_date": "2026-12-08",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7477",
+    "amount_due": 9201.34,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-7615",
+    "amount_due": 3052.67,
+    "due_date": "2026-11-26",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-3506",
+    "amount_due": 2512.77,
+    "due_date": "2026-11-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-7633",
+    "amount_due": 800.58,
+    "due_date": "2026-12-01",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5856",
+    "amount_due": 3128.49,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5189",
+    "amount_due": 2799.27,
+    "due_date": "2026-12-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1342",
+    "amount_due": 5429.18,
+    "due_date": "2026-11-15",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1572",
+    "amount_due": 444.5,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-8454",
+    "amount_due": 2734.43,
+    "due_date": "2026-10-23",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1211",
+    "amount_due": 6920.26,
+    "due_date": "2026-12-14",
+    "asks_bank_change": true
+   }
+  ],
+  [
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-1020",
+    "amount_due": 7586.41,
+    "due_date": "2026-12-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-1270",
+    "amount_due": 9189.69,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-7361",
+    "amount_due": 2581.88,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-1884",
+    "amount_due": 7573.95,
+    "due_date": "2026-10-19",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9467",
+    "amount_due": 1406.43,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1706",
+    "amount_due": 4203.63,
+    "due_date": "2026-11-28",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-8030",
+    "amount_due": 2158.03,
+    "due_date": "2026-11-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-2402",
+    "amount_due": 5210.0,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-5294",
+    "amount_due": 2548.14,
+    "due_date": "2026-11-24",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-5137",
+    "amount_due": 8817.26,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-3775",
+    "amount_due": 9931.99,
+    "due_date": "2026-11-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-4054",
+    "amount_due": 19529.88,
+    "due_date": "2026-10-24",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-2182",
+    "amount_due": 6701.42,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-2492",
+    "amount_due": 8779.4,
+    "due_date": "2026-12-11",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-8718",
+    "amount_due": 8096.68,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1376",
+    "amount_due": 928.47,
+    "due_date": "2026-12-04",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-4572",
+    "amount_due": 2274.6,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-6561",
+    "amount_due": 15365.14,
+    "due_date": "2026-12-10",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1948",
+    "amount_due": 1454.31,
+    "due_date": "2026-11-12",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-2164",
+    "amount_due": 8900.89,
+    "due_date": "2026-12-14",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-6886",
+    "amount_due": 4863.34,
+    "due_date": "2026-10-27",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-9193",
+    "amount_due": 9996.43,
+    "due_date": "2026-12-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-1766",
+    "amount_due": 8289.55,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-2351",
+    "amount_due": 459.52,
+    "due_date": "2026-12-11",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-5496",
+    "amount_due": 10334.14,
+    "due_date": "2026-11-20",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-5103",
+    "amount_due": 1125.02,
+    "due_date": "2026-11-30",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-6693",
+    "amount_due": 1897.23,
+    "due_date": "2026-12-02",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7371",
+    "amount_due": 2351.71,
+    "due_date": "2026-12-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9222",
+    "amount_due": 1685.8,
+    "due_date": "2026-12-06",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "MoPac Refrigeration Service",
+    "invoice_number": "MOP-9789",
+    "amount_due": 2976.43,
+    "due_date": "2026-12-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-9879",
+    "amount_due": 9021.16,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-9870",
+    "amount_due": 9143.22,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-1157",
+    "amount_due": 733.69,
+    "due_date": "2026-11-13",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-1385",
+    "amount_due": 8270.26,
+    "due_date": "2026-11-17",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-2337",
+    "amount_due": 2420.12,
+    "due_date": "2026-10-18",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-8695",
+    "amount_due": 9987.17,
+    "due_date": "2026-11-06",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-6053",
+    "amount_due": 3572.73,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-3982",
+    "amount_due": 842.4,
+    "due_date": "2026-11-10",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6742",
+    "amount_due": 9968.02,
+    "due_date": "2026-12-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4826",
+    "amount_due": 9427.35,
+    "due_date": "2026-11-04",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4504",
+    "amount_due": 4842.43,
+    "due_date": "2026-11-29",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-9161",
+    "amount_due": 7368.98,
+    "due_date": "2026-12-10",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-8660",
+    "amount_due": 859.83,
+    "due_date": "2026-11-03",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-4078",
+    "amount_due": 5724.36,
+    "due_date": "2026-12-18",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1719",
+    "amount_due": 9954.71,
+    "due_date": "2026-12-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Pecan Street Linens",
+    "invoice_number": "PEC-4055",
+    "amount_due": 5341.8,
+    "due_date": "2026-11-16",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-6180",
+    "amount_due": 8476.45,
+    "due_date": "2026-11-01",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-4765",
+    "amount_due": 10517.93,
+    "due_date": "2026-12-02",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-6485",
+    "amount_due": 2960.45,
+    "due_date": "2026-11-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Hillside Flour Mill",
+    "invoice_number": "HIL-9741",
+    "amount_due": 4429.92,
+    "due_date": "2026-12-08",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Barton Creek Plumbing",
+    "invoice_number": "BAR-7477",
+    "amount_due": 9201.34,
+    "due_date": "2026-11-09",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-7615",
+    "amount_due": 3052.67,
+    "due_date": "2026-11-26",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Riverside Office Interiors",
+    "invoice_number": "RIV-3506",
+    "amount_due": 2512.77,
+    "due_date": "2026-11-25",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-7633",
+    "amount_due": 800.58,
+    "due_date": "2026-12-01",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5856",
+    "amount_due": 3128.49,
+    "due_date": "2026-11-15",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-5189",
+    "amount_due": 2799.27,
+    "due_date": "2026-12-05",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1342",
+    "amount_due": 5429.18,
+    "due_date": "2026-11-15",
+    "asks_bank_change": true
+   },
+   {
+    "vendor_name": "Zilker Coffee Roasters",
+    "invoice_number": "ZIL-1572",
+    "amount_due": 444.5,
+    "due_date": "2026-11-12",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Lone Star Paper Supply",
+    "invoice_number": "LON-8454",
+    "amount_due": 2734.43,
+    "due_date": "2026-10-23",
+    "asks_bank_change": false
+   },
+   {
+    "vendor_name": "Colorado River Packaging",
+    "invoice_number": "COL-1211",
+    "amount_due": 6920.26,
+    "due_date": "2026-12-14",
+    "asks_bank_change": true
+   }
+  ]
+ ]
+}

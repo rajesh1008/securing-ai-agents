@@ -1,0 +1,6 @@
+policy A (literal host only): correct on 11 of 16; policy B (resolved addresses): correct on 14 of 16; policy C (B plus numeric forms): correct on 16 of 16
+  https://hooks.attacker.example/x                        resolves ['10.0.0.7'] internal=True A_blocks=False B_blocks=True C_blocks=True
+  https://rebind.attacker.example/x                       resolves ['192.168.1.10'] internal=True A_blocks=False B_blocks=True C_blocks=True
+  https://2130706433/                                     resolves [] internal=True A_blocks=False B_blocks=False C_blocks=True
+  https://0x7f.0.0.1/                                     resolves [] internal=True A_blocks=False B_blocks=False C_blocks=True
+  https://hooks.customer.example/ledgerly                 resolves ['93.184.216.34', '10.0.0.9'] internal=True A_blocks=False B_blocks=True C_blocks=True

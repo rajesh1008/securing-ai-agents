@@ -1,0 +1,293 @@
+{
+ "6": {
+  "none": {
+   "benign": {
+    "queries_with_foreign": 55,
+    "foreign_docs": 175,
+    "foreign_secret_docs": 28,
+    "recall_at_5": 0.967
+   },
+   "hostile": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 243,
+    "foreign_secret_docs": 243
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 243,
+    "foreign_secret_docs": 243
+   },
+   "ms_per_query": 0.128
+  },
+  "arg": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 300,
+    "foreign_secret_docs": 300
+   },
+   "ms_per_query": 0.095
+  },
+  "post": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 0.967
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.101
+  },
+  "pushdown": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.039
+  },
+  "partition": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.06
+  }
+ },
+ "30": {
+  "none": {
+   "benign": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 261,
+    "foreign_secret_docs": 45,
+    "recall_at_5": 0.465
+   },
+   "hostile": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 294,
+    "foreign_secret_docs": 294
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 294,
+    "foreign_secret_docs": 294
+   },
+   "ms_per_query": 0.625
+  },
+  "arg": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 300,
+    "foreign_secret_docs": 300
+   },
+   "ms_per_query": 0.188
+  },
+  "post": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 0.465
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.579
+  },
+  "pushdown": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.15
+  },
+  "partition": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.223
+  }
+ },
+ "120": {
+  "none": {
+   "benign": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 284,
+    "foreign_secret_docs": 63,
+    "recall_at_5": 0.167
+   },
+   "hostile": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 295,
+    "foreign_secret_docs": 295
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 295,
+    "foreign_secret_docs": 295
+   },
+   "ms_per_query": 2.963
+  },
+  "arg": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 60,
+    "foreign_docs": 300,
+    "foreign_secret_docs": 300
+   },
+   "ms_per_query": 0.53
+  },
+  "post": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 0.167
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 2.656
+  },
+  "pushdown": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.576
+  },
+  "partition": {
+   "benign": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0,
+    "recall_at_5": 1.0
+   },
+   "hostile": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "forged": {
+    "queries_with_foreign": 0,
+    "foreign_docs": 0,
+    "foreign_secret_docs": 0
+   },
+   "ms_per_query": 0.481
+  }
+ }
+}

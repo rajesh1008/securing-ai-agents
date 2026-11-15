@@ -1,0 +1,11 @@
+requests 10000, deployments 6
+EMBEDDED rollout window 1000, old key revoked at 1000: failed requests mean 0, worst 0, rollouts with any failure 0 of 200
+EMBEDDED rollout window 1000, old key revoked at 2000: failed requests mean 0, worst 0, rollouts with any failure 0 of 200
+EMBEDDED rollout window 1000, old key revoked at 4000: failed requests mean 0, worst 0, rollouts with any failure 0 of 200
+EMBEDDED rollout window 3000, old key revoked at 1000: failed requests mean 638, worst 1378, rollouts with any failure 200 of 200
+EMBEDDED rollout window 3000, old key revoked at 2000: failed requests mean 157, worst 482, rollouts with any failure 179 of 200
+EMBEDDED rollout window 3000, old key revoked at 4000: failed requests mean 0, worst 0, rollouts with any failure 0 of 200
+GATEWAY: provider key swapped once at request 0; gateway-token key rotated with overlap: failed requests 0 of 10000; verifies by key {'k1': 2994, 'k2': 6971}; tokens minted 42; mean mint+verify per request 5 microseconds
+LEAK at 5000, EMBEDDED redeploy window 1000: failed requests mean 504, worst 854 of 5000; GATEWAY: 0 agent changes, one swap
+LEAK at 5000, EMBEDDED redeploy window 3000: failed requests mean 1475, worst 2377 of 5000; GATEWAY: 0 agent changes, one swap
+Revoking gateway key k1: current tokens are under k2 -> ok

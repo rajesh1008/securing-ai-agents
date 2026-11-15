@@ -1,0 +1,17 @@
+{
+ "runs": 2000,
+ "results": {
+  "single_with_binding": {
+   "hostile_exec": 7,
+   "hostile_cents": 1029700,
+   "benign_auto": 28977,
+   "benign_to_person": 7
+  },
+  "split": {
+   "hostile_exec": 0,
+   "hostile_cents": 0,
+   "benign_auto": 24680,
+   "benign_to_person": 4304
+  }
+ }
+}

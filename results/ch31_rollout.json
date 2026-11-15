@@ -1,0 +1,840 @@
+{
+ "r1_vendor": {
+  "rows": [
+   {
+    "week": 1,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.025,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.154,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 14
+   },
+   {
+    "week": 2,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.023,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.186,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 25
+   },
+   {
+    "week": 3,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.216,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 34
+   },
+   {
+    "week": 4,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.043,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 51
+   },
+   {
+    "week": 5,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.019,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.058,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 1 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 68
+   },
+   {
+    "week": 6,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.021,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.174,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 2 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 87
+   },
+   {
+    "week": 7,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.136,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 2 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 105
+   },
+   {
+    "week": 8,
+    "percent": 5,
+    "enforced_events": 3,
+    "traffic_share": 0.047,
+    "live_auto_enf": 2,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.098,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 131
+   },
+   {
+    "week": 9,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.079,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 139
+   },
+   {
+    "week": 10,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.118,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 159
+   },
+   {
+    "week": 11,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.023,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.095,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 5 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 175
+   },
+   {
+    "week": 12,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.02,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.102,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 5 < 20"
+    ],
+    "extra_cum": 0,
+    "bigbang_cum": 195
+   }
+  ],
+  "vendor_buckets": {
+   "v00": 92,
+   "v01": 41,
+   "v02": 80,
+   "v03": 87,
+   "v04": 36,
+   "v05": 19,
+   "v06": 10,
+   "v07": 16,
+   "v08": 31,
+   "v09": 72,
+   "v10": 25,
+   "v11": 99,
+   "v12": 20,
+   "v13": 96,
+   "v14": 37,
+   "v15": 65,
+   "v16": 32,
+   "v17": 20,
+   "v18": 35,
+   "v19": 59,
+   "v20": 64,
+   "v21": 32,
+   "v22": 80,
+   "v23": 86,
+   "v24": 82,
+   "v25": 97,
+   "v26": 85,
+   "v27": 37,
+   "v28": 51,
+   "v29": 92,
+   "v30": 32,
+   "v31": 10,
+   "v32": 39,
+   "v33": 41,
+   "v34": 36,
+   "v35": 79,
+   "v36": 72,
+   "v37": 68,
+   "v38": 0,
+   "v39": 77
+  },
+  "history": [
+   {
+    "week": 1,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20",
+     "extra-hold upper bound 1.000 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 2,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20",
+     "extra-hold upper bound 1.000 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 3,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20",
+     "extra-hold upper bound 1.000 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 4,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 0 < 20",
+     "extra-hold upper bound 1.000 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 5,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 1 < 20",
+     "extra-hold upper bound 0.950 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 6,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 2 < 20",
+     "extra-hold upper bound 0.776 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 7,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 2 < 20",
+     "extra-hold upper bound 0.776 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 8,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20",
+     "extra-hold upper bound 0.527 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 9,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20",
+     "extra-hold upper bound 0.527 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 10,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20",
+     "extra-hold upper bound 0.527 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 11,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 5 < 20",
+     "extra-hold upper bound 0.451 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 12,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 5 < 20",
+     "extra-hold upper bound 0.451 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   }
+  ]
+ },
+ "r1_invoice": {
+  "rows": [
+   {
+    "week": 1,
+    "percent": 5,
+    "enforced_events": 4,
+    "traffic_share": 0.1,
+    "live_auto_enf": 4,
+    "extra_holds": 1,
+    "ctl_hold_rate": 0.194,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20"
+    ],
+    "extra_cum": 1,
+    "bigbang_cum": 14
+   },
+   {
+    "week": 2,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.205,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20"
+    ],
+    "extra_cum": 1,
+    "bigbang_cum": 25
+   },
+   {
+    "week": 3,
+    "percent": 5,
+    "enforced_events": 3,
+    "traffic_share": 0.081,
+    "live_auto_enf": 2,
+    "extra_holds": 1,
+    "ctl_hold_rate": 0.206,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 6 < 20"
+    ],
+    "extra_cum": 2,
+    "bigbang_cum": 34
+   },
+   {
+    "week": 4,
+    "percent": 5,
+    "enforced_events": 3,
+    "traffic_share": 0.065,
+    "live_auto_enf": 2,
+    "extra_holds": 1,
+    "ctl_hold_rate": 0.023,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 8 < 20"
+    ],
+    "extra_cum": 3,
+    "bigbang_cum": 51
+   },
+   {
+    "week": 5,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.019,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.058,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 9 < 20"
+    ],
+    "extra_cum": 3,
+    "bigbang_cum": 68
+   },
+   {
+    "week": 6,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.021,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.174,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 10 < 20"
+    ],
+    "extra_cum": 3,
+    "bigbang_cum": 87
+   },
+   {
+    "week": 7,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.023,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.14,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 11 < 20"
+    ],
+    "extra_cum": 3,
+    "bigbang_cum": 105
+   },
+   {
+    "week": 8,
+    "percent": 5,
+    "enforced_events": 3,
+    "traffic_share": 0.047,
+    "live_auto_enf": 3,
+    "extra_holds": 1,
+    "ctl_hold_rate": 0.115,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 14 < 20"
+    ],
+    "extra_cum": 4,
+    "bigbang_cum": 131
+   },
+   {
+    "week": 9,
+    "percent": 5,
+    "enforced_events": 1,
+    "traffic_share": 0.026,
+    "live_auto_enf": 1,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.081,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 15 < 20"
+    ],
+    "extra_cum": 4,
+    "bigbang_cum": 139
+   },
+   {
+    "week": 10,
+    "percent": 5,
+    "enforced_events": 0,
+    "traffic_share": 0.0,
+    "live_auto_enf": 0,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.118,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 15 < 20"
+    ],
+    "extra_cum": 4,
+    "bigbang_cum": 159
+   },
+   {
+    "week": 11,
+    "percent": 5,
+    "enforced_events": 2,
+    "traffic_share": 0.047,
+    "live_auto_enf": 1,
+    "extra_holds": 1,
+    "ctl_hold_rate": 0.073,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 16 < 20"
+    ],
+    "extra_cum": 5,
+    "bigbang_cum": 175
+   },
+   {
+    "week": 12,
+    "percent": 5,
+    "enforced_events": 2,
+    "traffic_share": 0.04,
+    "live_auto_enf": 2,
+    "extra_holds": 0,
+    "ctl_hold_rate": 0.125,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 18 < 20"
+    ],
+    "extra_cum": 5,
+    "bigbang_cum": 195
+   }
+  ],
+  "vendor_buckets": {
+   "v00": 92,
+   "v01": 41,
+   "v02": 80,
+   "v03": 87,
+   "v04": 36,
+   "v05": 19,
+   "v06": 10,
+   "v07": 16,
+   "v08": 31,
+   "v09": 72,
+   "v10": 25,
+   "v11": 99,
+   "v12": 20,
+   "v13": 96,
+   "v14": 37,
+   "v15": 65,
+   "v16": 32,
+   "v17": 20,
+   "v18": 35,
+   "v19": 59,
+   "v20": 64,
+   "v21": 32,
+   "v22": 80,
+   "v23": 86,
+   "v24": 82,
+   "v25": 97,
+   "v26": 85,
+   "v27": 37,
+   "v28": 51,
+   "v29": 92,
+   "v30": 32,
+   "v31": 10,
+   "v32": 39,
+   "v33": 41,
+   "v34": 36,
+   "v35": 79,
+   "v36": 72,
+   "v37": 68,
+   "v38": 0,
+   "v39": 77
+  },
+  "history": [
+   {
+    "week": 1,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20",
+     "extra-hold upper bound 0.751 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 2,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 4 < 20",
+     "extra-hold upper bound 0.751 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 3,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 6 < 20",
+     "extra-hold upper bound 0.729 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 4,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 8 < 20",
+     "extra-hold upper bound 0.711 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 5,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 9 < 20",
+     "extra-hold upper bound 0.655 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 6,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 10 < 20",
+     "extra-hold upper bound 0.607 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 7,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 11 < 20",
+     "extra-hold upper bound 0.564 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 8,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 14 < 20",
+     "extra-hold upper bound 0.540 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 9,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 15 < 20",
+     "extra-hold upper bound 0.511 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 10,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 15 < 20",
+     "extra-hold upper bound 0.511 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 11,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 16 < 20",
+     "extra-hold upper bound 0.548 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   },
+   {
+    "week": 12,
+    "verdict": "HOLD",
+    "why": [
+     "live AUTO 18 < 20",
+     "extra-hold upper bound 0.498 > 0.03"
+    ],
+    "from_pct": 5,
+    "to_pct": 5
+   }
+  ]
+ },
+ "r2": {
+  "items": [
+   {
+    "id": "X00",
+    "week": 9,
+    "vendor": "v30",
+    "bucket": 71,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": false,
+    "percent": 5
+   },
+   {
+    "id": "X01",
+    "week": 9,
+    "vendor": "v30",
+    "bucket": 71,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": false,
+    "percent": 5
+   },
+   {
+    "id": "X02",
+    "week": 9,
+    "vendor": "v16",
+    "bucket": 25,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": false,
+    "percent": 5
+   },
+   {
+    "id": "X03",
+    "week": 10,
+    "vendor": "v30",
+    "bucket": 71,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": false,
+    "percent": 25
+   },
+   {
+    "id": "X04",
+    "week": 10,
+    "vendor": "v29",
+    "bucket": 13,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": true,
+    "percent": 25
+   },
+   {
+    "id": "X05",
+    "week": 10,
+    "vendor": "v36",
+    "bucket": 45,
+    "live": "REVIEW",
+    "cand": "REVIEW",
+    "escaped": false,
+    "enforced_at_stage": false,
+    "percent": 25
+   },
+   {
+    "id": "X06",
+    "week": 11,
+    "vendor": "v25",
+    "bucket": 58,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": false,
+    "percent": 50
+   },
+   {
+    "id": "X07",
+    "week": 11,
+    "vendor": "v31",
+    "bucket": 90,
+    "live": "REVIEW",
+    "cand": "REVIEW",
+    "escaped": false,
+    "enforced_at_stage": false,
+    "percent": 50
+   },
+   {
+    "id": "X08",
+    "week": 11,
+    "vendor": "v22",
+    "bucket": 16,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": true,
+    "percent": 50
+   },
+   {
+    "id": "X09",
+    "week": 12,
+    "vendor": "v05",
+    "bucket": 7,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": true,
+    "percent": 100
+   },
+   {
+    "id": "X10",
+    "week": 12,
+    "vendor": "v05",
+    "bucket": 7,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": true,
+    "percent": 100
+   },
+   {
+    "id": "X11",
+    "week": 12,
+    "vendor": "v17",
+    "bucket": 59,
+    "live": "REVIEW",
+    "cand": "AUTO",
+    "escaped": true,
+    "enforced_at_stage": true,
+    "percent": 100
+   }
+  ],
+  "totals": {
+   "bigbang": 10,
+   "ladder": 5,
+   "canary_gated": 0
+  },
+  "live_holds_all": true
+ }
+}

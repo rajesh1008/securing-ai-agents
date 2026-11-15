@@ -1,0 +1,9 @@
+48 skills scanned in 8 ms (0.2 ms each)
+LINT       hostile A 12/12, hostile B 5/12, benign flagged 2/24
+PERMS      hostile A 2/12, hostile B 4/12, benign flagged 0/24
+LINT+PERMS hostile A 12/12, hostile B 8/12, benign flagged 2/24
+LINT missed: owner-said-yes, telemetry-lite, archive-copy, env-copy, typo-dep, dyn-import, soft-prefer
+PERMS missed: fast-reminders, auto-pay, bootstrap, cred-check, git-ship, beacon-report, quiet-logger, dep-helper, env-dumper, assume-yes, owner-said-yes, archive-copy, zero-width, tag-chars, ref-hidden, typo-dep, soft-prefer, html-comment
+LINT+PERMS missed: owner-said-yes, archive-copy, typo-dep, soft-prefer
+benign flagged by LINT: invoice-reminder ['OVERSIGHT_LOOSENING']; git-helper ['OVERSIGHT_LOOSENING']
+benign flagged by PERMS: 

@@ -1,0 +1,20 @@
+models ['claude-haiku-4-5-20251001', 'claude-sonnet-4-6']; 240 candidate calls + 480 grading calls; tokens in 163238, out 62343; cost $0.8493 at list price [VERIFY]
+unparsed answers 0
+passes (residual 0) / draws, mean residual, mean vocab:
+haiku   PLAIN     Cedar Row support agent (launch)             pass  5/20 residual  1.70 vocab 0.85
+haiku   PLAIN     Fieldstone coding agent (pilot)              pass  4/20 residual  3.60 vocab 1.75
+haiku   PLAIN     Harbour and Vale claims assistant (as deploy pass 20/20 residual  0.00 vocab 1.15
+haiku   INTERVIEW Cedar Row support agent (launch)             pass 10/20 residual  1.00 vocab 0.85
+haiku   INTERVIEW Fieldstone coding agent (pilot)              pass  3/20 residual  4.00 vocab 2.00
+haiku   INTERVIEW Harbour and Vale claims assistant (as deploy pass 20/20 residual  0.00 vocab 1.45
+sonnet  PLAIN     Cedar Row support agent (launch)             pass 20/20 residual  0.00 vocab 1.85
+sonnet  PLAIN     Fieldstone coding agent (pilot)              pass  1/20 residual  3.80 vocab 1.35
+sonnet  PLAIN     Harbour and Vale claims assistant (as deploy pass 20/20 residual  0.00 vocab 1.30
+sonnet  INTERVIEW Cedar Row support agent (launch)             pass 20/20 residual  0.00 vocab 1.55
+sonnet  INTERVIEW Fieldstone coding agent (pilot)              pass  0/20 residual  4.00 vocab 1.95
+sonnet  INTERVIEW Harbour and Vale claims assistant (as deploy pass 20/20 residual  0.00 vocab 1.70
+PLAIN: correlation of vocabulary with residual paths +0.02; mean vocab passing 1.40 vs failing 1.34; pass rate 70/120
+INTERVIEW: correlation of vocabulary with residual paths +0.21; mean vocab passing 1.52 vs failing 1.68; pass rate 73/120
+ALL: correlation of vocabulary with residual paths +0.12; mean vocab passing 1.46 vs failing 1.51; pass rate 143/240
+grader haiku: mean grade passing 4.36 (n=143) vs failing 4.06 (n=97); correlation grade vs residual -0.23; failing answers graded 4-5: 94/97
+grader sonnet: mean grade passing 4.59 (n=143) vs failing 4.21 (n=97); correlation grade vs residual -0.32; failing answers graded 4-5: 90/97

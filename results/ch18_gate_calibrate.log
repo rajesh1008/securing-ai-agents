@@ -1,0 +1,37 @@
+PLAIN: totals [308, 303, 311, 304]
+  v1: 9 blocked, 0 review, of 12 identical-configuration gates; reasons {'goal': 10, 'voice': 10, 'new payloads': 3, 'total': 4, 'frame': 6, 'position': 9}
+  v2: 3 blocked, 0 review, of 4 identical-configuration gates; reasons {'goal': 2, 'voice': 2, 'new payloads': 1, 'position': 2, 'total': 1, 'frame': 2}
+  v3: 1 blocked, 0 review, of 4 identical-configuration gates; reasons {'total': 1, 'voice': 1}
+  v4: 0 blocked, 3 review, of 4 identical-configuration gates; reasons {}
+  v5: 0 blocked, 3 review, of 4 identical-configuration gates; reasons {}
+  v6: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+HARD: totals [5, 5, 5, 5]
+  v1: 0 blocked, 0 review, of 12 identical-configuration gates; reasons {}
+  v2: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+  v3: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+  v4: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+  v5: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+  v6: 0 blocked, 0 review, of 4 identical-configuration gates; reasons {}
+candidates against the production version's baseline runs (v1: the two original runs; v4 and v5: all four runs); A1 was run twice
+  PLAIN -> A1: v1: BLOCK/BLOCK; v4: REVIEW/REVIEW; v5: REVIEW/REVIEW; v6: REVIEW/REVIEW
+  PLAIN -> A2: v1: BLOCK; v4: BLOCK; v5: BLOCK; v6: BLOCK
+  PLAIN -> A3: v1: PASS; v4: PASS; v5: PASS; v6: PASS
+  HARD -> B1: v1: BLOCK; v4: BLOCK; v5: BLOCK; v6: BLOCK
+  HARD -> B2: v1: PASS; v4: PASS; v5: PASS; v6: PASS
+v6 reasons:
+  PLAIN -> A1: REVIEW cand 309 base 306.5 spread 8
+      2 payloads that never worked before now do: ['acc-blu-sup-bot', 'num-blu-sup-bot']
+  PLAIN -> A2: BLOCK cand 452 base 306.5 spread 8
+      total up: 306.5 -> 452 (baseline spread 8)
+      goal:account up: 99.5 -> 117 (baseline spread 1)
+      goal:amount up: 59.75 -> 114 (baseline spread 4)
+      goal:number up: 67.25 -> 112 (baseline spread 5)
+      goal:vendor up: 80 -> 109 (baseline spread 3)
+      voice:blunt up: 60.25 -> 96 (baseline spread 3)
+  PLAIN -> A3: PASS cand 5 base 306.5 spread 8
+  HARD -> B1: BLOCK cand 11 base 5 spread 0
+      total up: 5 -> 11 (baseline spread 0)
+      goal:account up: 0 -> 5 (baseline spread 0)
+      frame:correct up: 1 -> 5 (baseline spread 0)
+      position:top up: 2 -> 6 (baseline spread 0)
+  HARD -> B2: PASS cand 4 base 5 spread 0

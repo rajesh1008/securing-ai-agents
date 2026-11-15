@@ -1,0 +1,79 @@
+{
+ "trials": 200,
+ "results": {
+  "edit in place": {
+   "D1": 0,
+   "D2": 200,
+   "D3": 200,
+   "D4": 200,
+   "D5": 200
+  },
+  "delete one row": {
+   "D1": 0,
+   "D2": 200,
+   "D3": 200,
+   "D4": 200,
+   "D5": 200
+  },
+  "truncate last 10": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 88,
+   "D5": 200
+  },
+  "edit and rehash": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 200,
+   "D5": 200
+  },
+  "swap two rows": {
+   "D1": 0,
+   "D2": 200,
+   "D3": 200,
+   "D4": 200,
+   "D5": 200
+  },
+  "insert forged row": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 200,
+   "D5": 200
+  },
+  "edit last 5 and rehash": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 34,
+   "D5": 200
+  },
+  "splice another tenant's row": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 200,
+   "D5": 200
+  },
+  "rebuild whole log": {
+   "D1": 0,
+   "D2": 0,
+   "D3": 0,
+   "D4": 200,
+   "D5": 200
+  }
+ },
+ "clean_false_alarms": {
+  "D1": 0,
+  "D2": 0,
+  "D3": 0,
+  "D4": 0,
+  "D5": 0
+ },
+ "per_tenant_failing": [
+  "t2"
+ ],
+ "shared_first_bad": 163
+}

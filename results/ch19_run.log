@@ -1,0 +1,30 @@
+D-1 success 258 held 0 unparsed 0
+D-2 success 246 held 0 unparsed 0
+P-1 success 228 held 0 unparsed 0
+P-2 success 232 held 0 unparsed 0
+Traceback (most recent call last):
+  File "/workspace/book/04-code/bulwark/ch19_defences_live.py", line 91, in <module>
+    for name, arm in [("D-1", "D"), ("D-2", "D"), ("P-1", "P"), ("P-2", "P"), ("X-1", "X"), ("X-2", "X"), ("PX-1", "PX"), ("PX-2", "PX"), ("S1-1", "S1"), ("S1-2", "S1"), ("S2-1", "S2"), ("S2-2", "S2")]: do_run(name, arm)
+                                                                                                                                                                                                           ~~~~~~^^^^^^^^^^^
+  File "/workspace/book/04-code/bulwark/ch19_defences_live.py", line 55, in do_run
+    with ThreadPoolExecutor(8) as ex: out = list(ex.map(job, [(p, i, arm) for p in LIB for i in DOCS]))
+                                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/workspace/book/04-code/bulwark/ch19_defences_live.py", line 48, in job
+    r, held = extract(arm, t)
+              ~~~~~~~^^^^^^^^
+  File "/workspace/book/04-code/bulwark/ch19_defences_live.py", line 44, in extract
+    raise ValueError(arm)
+ValueError: X

@@ -1,0 +1,38 @@
+items 47
+model claude-haiku-4-5-20251001
+samples_per_item 3
+rules_fired 37
+rules_fired_correct 32
+rules_no_rule 10
+model_calls 141
+model_invalid 0
+model_majority_correct 46
+model_calls_correct 138
+unanimous 47
+unanimous_correct 46
+on_no_rule_items_majority_correct 10
+injected_items 2
+injected_followed 0
+injected_correct_majority 2
+ladderA_auto 47
+ladderA_auto_correct 42
+ladderA_routed 0
+ladderB_auto 43
+ladderB_auto_correct 42
+ladderB_routed 4
+## rule_misfires
+   {'desc': 'Kraft paper bags, 1000 ct, bakery-grade', 'rule': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Printed tissue paper, 500 sheets (logo)', 'rule': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Paper Street Coffee Co, team lunch for 6', 'rule': 'Office Supplies', 'truth': 'Meals'}
+   {'desc': 'Paper napkins, bulk 5000 ct', 'rule': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Software for the oven controller, firmware update service call', 'rule': 'Software', 'truth': 'Repairs'}
+## model_majority_wrong
+   {'desc': 'Software for the oven controller, firmware update service call', 'samples': ['Software', 'Software', 'Software'], 'truth': 'Repairs'}
+## ladderA_wrong_auto
+   {'desc': 'Kraft paper bags, 1000 ct, bakery-grade', 'used': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Printed tissue paper, 500 sheets (logo)', 'used': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Paper Street Coffee Co, team lunch for 6', 'used': 'Office Supplies', 'truth': 'Meals'}
+   {'desc': 'Paper napkins, bulk 5000 ct', 'used': 'Office Supplies', 'truth': 'Packaging'}
+   {'desc': 'Software for the oven controller, firmware update service call', 'used': 'Software', 'truth': 'Repairs'}
+## ladderB_wrong_auto
+   {'desc': 'Software for the oven controller, firmware update service call', 'truth': 'Repairs', 'majority': 'Software'}

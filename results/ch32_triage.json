@@ -1,0 +1,91 @@
+{
+ "A_rows": {
+  "repeats": [
+   {
+    "flagged": 204,
+    "caught": 27,
+    "false": 177,
+    "by_class": {
+     "H7_label_confusion": 8,
+     "T1_inflated_booking": 5,
+     "T2_registry_tamper": 8,
+     "T4_drift": 6
+    }
+   },
+   {
+    "flagged": 192,
+    "caught": 26,
+    "false": 166,
+    "by_class": {
+     "H7_label_confusion": 9,
+     "T1_inflated_booking": 4,
+     "T2_registry_tamper": 7,
+     "T4_drift": 6
+    }
+   },
+   {
+    "flagged": 203,
+    "caught": 27,
+    "false": 176,
+    "by_class": {
+     "H7_label_confusion": 8,
+     "T1_inflated_booking": 4,
+     "T2_registry_tamper": 9,
+     "T4_drift": 6
+    }
+   }
+  ],
+  "parse_failures": 0,
+  "rows": 555
+ },
+ "B_rows+kind": {
+  "repeats": [
+   {
+    "flagged": 212,
+    "caught": 27,
+    "false": 185,
+    "by_class": {
+     "H7_label_confusion": 10,
+     "T1_inflated_booking": 5,
+     "T2_registry_tamper": 7,
+     "T4_drift": 5
+    }
+   },
+   {
+    "flagged": 185,
+    "caught": 21,
+    "false": 164,
+    "by_class": {
+     "H7_label_confusion": 9,
+     "T1_inflated_booking": 4,
+     "T2_registry_tamper": 3,
+     "T4_drift": 5
+    }
+   },
+   {
+    "flagged": 201,
+    "caught": 28,
+    "false": 173,
+    "by_class": {
+     "H7_label_confusion": 9,
+     "T1_inflated_booking": 5,
+     "T2_registry_tamper": 8,
+     "T4_drift": 6
+    }
+   }
+  ],
+  "parse_failures": 0,
+  "rows": 555
+ },
+ "truth_n": 36,
+ "calls": 78,
+ "tokens_in": 251478,
+ "tokens_out": 58770,
+ "usd": 0.55,
+ "truth_by_class": {
+  "H7_label_confusion": 10,
+  "T1_inflated_booking": 5,
+  "T2_registry_tamper": 13,
+  "T4_drift": 8
+ }
+}

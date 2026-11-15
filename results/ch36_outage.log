@@ -1,0 +1,11 @@
+90 days; people review 12 a day on working days; outages: {'extractor': [15, 16], 'verifier': [36], 'sender_route': [57, 58], 'monitor': [49, 50, 51, 52, 53], 'approvals': [64, 65, 66], 'chain': [71]}
+
+arm     style                  hostile_auto hostile_reject hostile_stoppe      to_people      max_queue    left_unpaid benign_paid_la mean_late_days  max_late_days benign_unpaid_ unrecorded_eff released_monit
+STREAM  swallow                           0              0              8             75              8              0              0            0.0              0              0              4             41
+STREAM  closed                            0              0              8            138             15              0             11            7.0              7              0              0              0
+STREAM  table                             0              0              8            112             15              0             11            7.0              7              0              0              9
+STREAM  baseline(no outage)               0              0              8             66              6              0              -              -              -              -              0              0
+ATTACK  swallow                          12             24             32             99             24              0              1            7.0              7              0              4             41
+ATTACK  closed                            0              0             68            198             24              0             12            7.0              7              0              0              0
+ATTACK  table                             0             24             44            148             36              0             11            7.0              7              0              0              9
+ATTACK  baseline(no outage)               0             60              8             66              6              0              -              -              -              -              0              0

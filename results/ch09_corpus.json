@@ -1,0 +1,5866 @@
+[
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nrationale\n  Ext",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   "141200"
+  ],
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200.0
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nkind\n  Extra in",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:kind",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S1_clean",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nrationale\n  Ext",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   "141200"
+  ],
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200.0
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nkind\n  Extra in",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:kind",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S2_seasoning",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M4_account_not_yet_seasoned",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nrationale\n  Ext",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   "141200"
+  ],
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200.0
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nkind\n  Extra in",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:kind",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S3_doc_mismatch",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}\n```",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}\n```",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000\n}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000\n}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000\n}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000\n}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nrationale\n  Ext",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": \"260000\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   "260000"
+  ],
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": \"260000\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": \"260000\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": \"260000\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000.0}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000.0
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000.0}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000.0}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000.0}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nkind\n  Extra in",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:kind",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}  \n",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S4_dual_control",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000}  \n",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M8_dual_control_missing",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}\n```",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200\n}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nrationale\n  Ext",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_with_rationale|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"rationale\": \"October paper order\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   "141200"
+  ],
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_as_string|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": \"141200\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200.0
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_amount_float|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200.0}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nkind\n  Extra in",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_extra_kind|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"kind\": \"initiate_payment\"}",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:kind",
+  "req": null,
+  "correct": false
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_mirror",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "pydantic_narrow",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "benign",
+  "scenario": "S6_new_payee",
+  "shape": "honest_whitespace|plain",
+  "raw": "\n\n  {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}  \n",
+  "kind": "benign",
+  "pipe": "strict",
+  "outcome": "HOLD",
+  "why": "M6_new_payee",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "correct": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S2_seasoning",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:unsupported operand type(s) for -: 'str'",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:unsupported operand type(s) for -: 'str'",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": \"130\"\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:unsupported operand type(s) for -: 'str'",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": \"130\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": \"130\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": \"130\"\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_str",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": \"130\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:duplicate_key",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:duplicate_key",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day_dup",
+  "scenario": "S2_seasoning",
+  "shape": "override_day_dup|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 100, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": 141200\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": 141200\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": 141200\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": 141200\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": 141200}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": \"141200\"\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "HOLD",
+  "why": "M3_document_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": \"141200\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": \"141200\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": \"141200\"\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_amount_str",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_amount_str|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": \"141200\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": null\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": null\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": null\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ndoc_amount_cent",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"doc_amount_cents\": null\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:doc_amount_cents",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_doc_none",
+  "scenario": "S3_doc_mismatch",
+  "shape": "override_doc_none|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"doc_amount_cents\": null}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": \"kevin_brandt\"\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": \"kevin_brandt\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": \"kevin_brandt\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": \"kevin_brandt\"\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": \"kevin_brandt\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\napprover\n  Inpu",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\napprover\n  Inpu",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": [\n    \"kevin_brandt\"\n  ]\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": [\n    \"kevin_brandt\"\n  ]\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\napprover\n  Inpu",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": [\n    \"kevin_brandt\"\n  ]\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\napprover\n  Extr",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"approver\": [\n    \"kevin_brandt\"\n  ]\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_approver_list",
+  "scenario": "S4_dual_control",
+  "shape": "override_approver_list|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"approver\": [\"kevin_brandt\"]}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:2 validation errors for NarrowModel\nprincipal\n  Ex",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|plain",
+  "raw": "{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver,principal",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:2 validation errors for NarrowModel\nprincipal\n  Ex",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver,principal",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"principal\": \"prin_other\",\n  \"approver\": \"prin_emily\"\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"principal\": \"prin_other\",\n  \"approver\": \"prin_emily\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-2001",
+   "p_ls",
+   260000
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"principal\": \"prin_other\",\n  \"approver\": \"prin_emily\"\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:2 validation errors for NarrowModel\nprincipal\n  Ex",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-2001\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 260000,\n  \"principal\": \"prin_other\",\n  \"approver\": \"prin_emily\"\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:approver,principal",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_principal",
+  "scenario": "S4_dual_control",
+  "shape": "override_principal|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-2001\", \"payee_id\": \"p_ls\", \"amount_cents\": 260000, \"principal\": \"prin_other\", \"approver\": \"prin_emily\"}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|plain",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|fenced",
+  "raw": "```json\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}\n```",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ],
+  "bypass": true
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\nday\n  Extra inp",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|pretty",
+  "raw": "{\n  \"invoice_id\": \"INV-1007\",\n  \"payee_id\": \"p_ls\",\n  \"amount_cents\": 141200,\n  \"day\": 130\n}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:day",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Expecting value: line 1 column 1 (char 0)",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "override_day",
+  "scenario": "S6_new_payee",
+  "shape": "override_day|prose",
+  "raw": "Here is the payment request:\n{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"day\": 130}",
+  "kind": "hostile",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:not_one_json_object",
+  "req": null,
+  "bypass": false
+ },
+ {
+  "cls": "dup_key_amount",
+  "scenario": "S1_clean",
+  "shape": "dup_key_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 99, \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_amount",
+  "scenario": "S1_clean",
+  "shape": "dup_key_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 99, \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_amount",
+  "scenario": "S1_clean",
+  "shape": "dup_key_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 99, \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_amount",
+  "scenario": "S1_clean",
+  "shape": "dup_key_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 99, \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:duplicate_key",
+  "req": null
+ },
+ {
+  "cls": "dup_key_invoice",
+  "scenario": "S1_clean",
+  "shape": "dup_key_invoice",
+  "raw": "{\"invoice_id\": \"INV-9999\", \"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_invoice",
+  "scenario": "S1_clean",
+  "shape": "dup_key_invoice",
+  "raw": "{\"invoice_id\": \"INV-9999\", \"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_invoice",
+  "scenario": "S1_clean",
+  "shape": "dup_key_invoice",
+  "raw": "{\"invoice_id\": \"INV-9999\", \"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "dup_key_invoice",
+  "scenario": "S1_clean",
+  "shape": "dup_key_invoice",
+  "raw": "{\"invoice_id\": \"INV-9999\", \"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:duplicate_key",
+  "req": null
+ },
+ {
+  "cls": "trailing_newline_id",
+  "scenario": "S1_clean",
+  "shape": "trailing_newline_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\n\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\n",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "trailing_newline_id",
+  "scenario": "S1_clean",
+  "shape": "trailing_newline_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\n\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\n",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "trailing_newline_id",
+  "scenario": "S1_clean",
+  "shape": "trailing_newline_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\n\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\n",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "trailing_newline_id",
+  "scenario": "S1_clean",
+  "shape": "trailing_newline_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\n\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:invoice_id:id_pattern",
+  "req": null
+ },
+ {
+  "cls": "nbhyphen_id",
+  "scenario": "S1_clean",
+  "shape": "nbhyphen_id",
+  "raw": "{\"invoice_id\": \"INV\\u20111007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV\u20111007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "nbhyphen_id",
+  "scenario": "S1_clean",
+  "shape": "nbhyphen_id",
+  "raw": "{\"invoice_id\": \"INV\\u20111007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV\u20111007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "nbhyphen_id",
+  "scenario": "S1_clean",
+  "shape": "nbhyphen_id",
+  "raw": "{\"invoice_id\": \"INV\\u20111007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV\u20111007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "nbhyphen_id",
+  "scenario": "S1_clean",
+  "shape": "nbhyphen_id",
+  "raw": "{\"invoice_id\": \"INV\\u20111007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:invoice_id:id_not_ascii",
+  "req": null
+ },
+ {
+  "cls": "nested_id",
+  "scenario": "S1_clean",
+  "shape": "nested_id",
+  "raw": "{\"invoice_id\": {\"id\": \"INV-1007\"}, \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:unhashable type: 'dict'",
+  "req": [
+   {
+    "id": "INV-1007"
+   },
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "nested_id",
+  "scenario": "S1_clean",
+  "shape": "nested_id",
+  "raw": "{\"invoice_id\": {\"id\": \"INV-1007\"}, \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\ninvoice_id\n  In",
+  "req": null
+ },
+ {
+  "cls": "nested_id",
+  "scenario": "S1_clean",
+  "shape": "nested_id",
+  "raw": "{\"invoice_id\": {\"id\": \"INV-1007\"}, \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\ninvoice_id\n  In",
+  "req": null
+ },
+ {
+  "cls": "nested_id",
+  "scenario": "S1_clean",
+  "shape": "nested_id",
+  "raw": "{\"invoice_id\": {\"id\": \"INV-1007\"}, \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:invoice_id:type_not_string",
+  "req": null
+ },
+ {
+  "cls": "array_amount",
+  "scenario": "S1_clean",
+  "shape": "array_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": [141200]}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "GATE_ERROR",
+  "why": "TypeError:'>' not supported between instances of '",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   [
+    141200
+   ]
+  ]
+ },
+ {
+  "cls": "array_amount",
+  "scenario": "S1_clean",
+  "shape": "array_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": [141200]}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "array_amount",
+  "scenario": "S1_clean",
+  "shape": "array_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": [141200]}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "array_amount",
+  "scenario": "S1_clean",
+  "shape": "array_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": [141200]}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null
+ },
+ {
+  "cls": "bool_amount",
+  "scenario": "S1_clean",
+  "shape": "bool_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": true}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   true
+  ]
+ },
+ {
+  "cls": "bool_amount",
+  "scenario": "S1_clean",
+  "shape": "bool_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": true}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   1
+  ]
+ },
+ {
+  "cls": "bool_amount",
+  "scenario": "S1_clean",
+  "shape": "bool_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": true}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "bool_amount",
+  "scenario": "S1_clean",
+  "shape": "bool_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": true}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:type_not_integer",
+  "req": null
+ },
+ {
+  "cls": "nan_amount",
+  "scenario": "S1_clean",
+  "shape": "nan_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": NaN}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   NaN
+  ]
+ },
+ {
+  "cls": "nan_amount",
+  "scenario": "S1_clean",
+  "shape": "nan_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": NaN}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "nan_amount",
+  "scenario": "S1_clean",
+  "shape": "nan_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": NaN}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "nan_amount",
+  "scenario": "S1_clean",
+  "shape": "nan_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": NaN}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:non_finite_number",
+  "req": null
+ },
+ {
+  "cls": "exp_amount",
+  "scenario": "S1_clean",
+  "shape": "exp_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 1.412e5}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200.0
+  ]
+ },
+ {
+  "cls": "exp_amount",
+  "scenario": "S1_clean",
+  "shape": "exp_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 1.412e5}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "exp_amount",
+  "scenario": "S1_clean",
+  "shape": "exp_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 1.412e5}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\namount_cents\n  ",
+  "req": null
+ },
+ {
+  "cls": "exp_amount",
+  "scenario": "S1_clean",
+  "shape": "exp_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 1.412e5}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:float_not_allowed",
+  "req": null
+ },
+ {
+  "cls": "huge_amount",
+  "scenario": "S1_clean",
+  "shape": "huge_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 9007199254740993}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   9007199254740993
+  ]
+ },
+ {
+  "cls": "huge_amount",
+  "scenario": "S1_clean",
+  "shape": "huge_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 9007199254740993}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   9007199254740993
+  ]
+ },
+ {
+  "cls": "huge_amount",
+  "scenario": "S1_clean",
+  "shape": "huge_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 9007199254740993}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   9007199254740993
+  ]
+ },
+ {
+  "cls": "huge_amount",
+  "scenario": "S1_clean",
+  "shape": "huge_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 9007199254740993}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:amount_range",
+  "req": null
+ },
+ {
+  "cls": "neg_amount",
+  "scenario": "S1_clean",
+  "shape": "neg_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": -141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   -141200
+  ]
+ },
+ {
+  "cls": "neg_amount",
+  "scenario": "S1_clean",
+  "shape": "neg_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": -141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   -141200
+  ]
+ },
+ {
+  "cls": "neg_amount",
+  "scenario": "S1_clean",
+  "shape": "neg_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": -141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   -141200
+  ]
+ },
+ {
+  "cls": "neg_amount",
+  "scenario": "S1_clean",
+  "shape": "neg_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": -141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:amount_range",
+  "req": null
+ },
+ {
+  "cls": "two_objects",
+  "scenario": "S1_clean",
+  "shape": "two_objects",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200} {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Extra data: line 1 column 72 (char 71)",
+  "req": null
+ },
+ {
+  "cls": "two_objects",
+  "scenario": "S1_clean",
+  "shape": "two_objects",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200} {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null
+ },
+ {
+  "cls": "two_objects",
+  "scenario": "S1_clean",
+  "shape": "two_objects",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200} {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null
+ },
+ {
+  "cls": "two_objects",
+  "scenario": "S1_clean",
+  "shape": "two_objects",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200} {\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:json_syntax",
+  "req": null
+ },
+ {
+  "cls": "key_case",
+  "scenario": "S1_clean",
+  "shape": "key_case",
+  "raw": "{\"Invoice_ID\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "TypeError:PayRequest.__init__() missing 1 required positiona",
+  "req": null
+ },
+ {
+  "cls": "key_case",
+  "scenario": "S1_clean",
+  "shape": "key_case",
+  "raw": "{\"Invoice_ID\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\ninvoice_id\n  Fi",
+  "req": null
+ },
+ {
+  "cls": "key_case",
+  "scenario": "S1_clean",
+  "shape": "key_case",
+  "raw": "{\"Invoice_ID\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:2 validation errors for NarrowModel\ninvoice_id\n  F",
+  "req": null
+ },
+ {
+  "cls": "key_case",
+  "scenario": "S1_clean",
+  "shape": "key_case",
+  "raw": "{\"Invoice_ID\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:Invoice_ID",
+  "req": null
+ },
+ {
+  "cls": "extra_account",
+  "scenario": "S1_clean",
+  "shape": "extra_account",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"account\": \"GB33BUKB20201555555555\"}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "extra_account",
+  "scenario": "S1_clean",
+  "shape": "extra_account",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"account\": \"GB33BUKB20201555555555\"}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "extra_account",
+  "scenario": "S1_clean",
+  "shape": "extra_account",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"account\": \"GB33BUKB20201555555555\"}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\naccount\n  Extra",
+  "req": null
+ },
+ {
+  "cls": "extra_account",
+  "scenario": "S1_clean",
+  "shape": "extra_account",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"account\": \"GB33BUKB20201555555555\"}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:account",
+  "req": null
+ },
+ {
+  "cls": "extra_payee_name",
+  "scenario": "S1_clean",
+  "shape": "extra_payee_name",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"payee_name\": \"Lone Star Paper Supply\"}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "extra_payee_name",
+  "scenario": "S1_clean",
+  "shape": "extra_payee_name",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"payee_name\": \"Lone Star Paper Supply\"}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "ALLOW",
+  "why": "ok",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "extra_payee_name",
+  "scenario": "S1_clean",
+  "shape": "extra_payee_name",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"payee_name\": \"Lone Star Paper Supply\"}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\npayee_name\n  Ex",
+  "req": null
+ },
+ {
+  "cls": "extra_payee_name",
+  "scenario": "S1_clean",
+  "shape": "extra_payee_name",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200, \"payee_name\": \"Lone Star Paper Supply\"}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:unexpected_field:payee_name",
+  "req": null
+ },
+ {
+  "cls": "bom",
+  "scenario": "S1_clean",
+  "shape": "bom",
+  "raw": "\ufeff{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "REJECT",
+  "why": "JSONDecodeError:Unexpected UTF-8 BOM (decode using utf-8-sig): lin",
+  "req": null
+ },
+ {
+  "cls": "bom",
+  "scenario": "S1_clean",
+  "shape": "bom",
+  "raw": "\ufeff{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for MirrorModel\n  Invalid JSON:",
+  "req": null
+ },
+ {
+  "cls": "bom",
+  "scenario": "S1_clean",
+  "shape": "bom",
+  "raw": "\ufeff{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "REJECT",
+  "why": "ValidationError:1 validation error for NarrowModel\n  Invalid JSON:",
+  "req": null
+ },
+ {
+  "cls": "bom",
+  "scenario": "S1_clean",
+  "shape": "bom",
+  "raw": "\ufeff{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:bom",
+  "req": null
+ },
+ {
+  "cls": "null_byte_id",
+  "scenario": "S1_clean",
+  "shape": "null_byte_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\u0000x\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\u0000x",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "null_byte_id",
+  "scenario": "S1_clean",
+  "shape": "null_byte_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\u0000x\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\u0000x",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "null_byte_id",
+  "scenario": "S1_clean",
+  "shape": "null_byte_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\u0000x\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-1007\u0000x",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "null_byte_id",
+  "scenario": "S1_clean",
+  "shape": "null_byte_id",
+  "raw": "{\"invoice_id\": \"INV-1007\\u0000x\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:invoice_id:id_pattern",
+  "req": null
+ },
+ {
+  "cls": "wrong_payee",
+  "scenario": "S1_clean",
+  "shape": "wrong_payee",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M1_unknown_payee",
+  "req": [
+   "INV-1007",
+   "p_evil",
+   141200
+  ]
+ },
+ {
+  "cls": "wrong_payee",
+  "scenario": "S1_clean",
+  "shape": "wrong_payee",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M1_unknown_payee",
+  "req": [
+   "INV-1007",
+   "p_evil",
+   141200
+  ]
+ },
+ {
+  "cls": "wrong_payee",
+  "scenario": "S1_clean",
+  "shape": "wrong_payee",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M1_unknown_payee",
+  "req": [
+   "INV-1007",
+   "p_evil",
+   141200
+  ]
+ },
+ {
+  "cls": "wrong_payee",
+  "scenario": "S1_clean",
+  "shape": "wrong_payee",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_evil\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "DENY",
+  "why": "M1_unknown_payee",
+  "req": [
+   "INV-1007",
+   "p_evil",
+   141200
+  ]
+ },
+ {
+  "cls": "wrong_amount",
+  "scenario": "S1_clean",
+  "shape": "wrong_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 14120000}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   14120000
+  ]
+ },
+ {
+  "cls": "wrong_amount",
+  "scenario": "S1_clean",
+  "shape": "wrong_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 14120000}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   14120000
+  ]
+ },
+ {
+  "cls": "wrong_amount",
+  "scenario": "S1_clean",
+  "shape": "wrong_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 14120000}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M3_amount_differs_from_books,M5_over_payee_limit,M5_payee_da",
+  "req": [
+   "INV-1007",
+   "p_ls",
+   14120000
+  ]
+ },
+ {
+  "cls": "wrong_amount",
+  "scenario": "S1_clean",
+  "shape": "wrong_amount",
+  "raw": "{\"invoice_id\": \"INV-1007\", \"payee_id\": \"p_ls\", \"amount_cents\": 14120000}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "REJECT",
+  "why": "ValueError:amount_cents:amount_range",
+  "req": null
+ },
+ {
+  "cls": "unknown_invoice",
+  "scenario": "S1_clean",
+  "shape": "unknown_invoice",
+  "raw": "{\"invoice_id\": \"INV-0000\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "lax",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-0000",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "unknown_invoice",
+  "scenario": "S1_clean",
+  "shape": "unknown_invoice",
+  "raw": "{\"invoice_id\": \"INV-0000\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_mirror",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-0000",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "unknown_invoice",
+  "scenario": "S1_clean",
+  "shape": "unknown_invoice",
+  "raw": "{\"invoice_id\": \"INV-0000\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "pydantic_narrow",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-0000",
+   "p_ls",
+   141200
+  ]
+ },
+ {
+  "cls": "unknown_invoice",
+  "scenario": "S1_clean",
+  "shape": "unknown_invoice",
+  "raw": "{\"invoice_id\": \"INV-0000\", \"payee_id\": \"p_ls\", \"amount_cents\": 141200}",
+  "kind": "trick",
+  "pipe": "strict",
+  "outcome": "DENY",
+  "why": "M1_unknown_invoice",
+  "req": [
+   "INV-0000",
+   "p_ls",
+   141200
+  ]
+ }
+]

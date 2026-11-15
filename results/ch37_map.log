@@ -1,0 +1,52 @@
+mapping: 63 rows from 18 controls to 39 distinct items in 6 standards; 8 NA rows (author judged out of scope)
+relations: {'PARTIAL': 33, 'ADDRESSES': 16, 'EVIDENCE_FOR': 10, 'ALIGNED_WITH': 4}
+1 check on the real mapping: {'READ_FROM_SECONDARY': 13}
+     READ_FROM_SECONDARY I42K:A.6.2.4: edition read only through a secondary page
+     READ_FROM_SECONDARY I42K:A.6.2.8: edition read only through a secondary page
+     READ_FROM_SECONDARY ATLS:AML.T0086: edition read only through a secondary page
+     READ_FROM_SECONDARY I42K:A.4.4: edition read only through a secondary page
+     READ_FROM_SECONDARY ATLS:AML.T0080: edition read only through a secondary page
+     READ_FROM_SECONDARY ATLS:AML.T0110: edition read only through a secondary page
+controls with no non-NA row: []
+2 coverage LLM25: items  10  mapped   9  NA with reason  1  empty   0 
+2 coverage ASI26: items  10  mapped   9  NA with reason  0  empty   1 ['ASI07']
+2 coverage N600: items  12  mapped   5  NA with reason  7  empty   0 
+2 coverage I42K: items  38  mapped   9  NA with reason  0  empty  29 
+   rows to incomplete catalogues (EUAI, ATLS) have no coverage figure by design
+3 items of complete catalogues that rest on ONE control: 18 of 32 mapped items
+    ['N600:R02 <- C02', 'I42K:A.6.2.8 <- C03', 'LLM25:LLM02 <- C04', 'LLM25:LLM01 <- C04', 'N600:R04 <- C04', 'I42K:A.4.4 <- C06', 'ASI26:ASI06 <- C07', 'LLM25:LLM04 <- C07', 'LLM25:LLM08 <- C07', 'N600:R12 <- C08', 'LLM25:LLM07 <- C09', 'I42K:A.10.3 <- C10', 'ASI26:ASI05 <- C11', 'N600:R09 <- C12', 'I42K:A.8.4 <- C13', 'I42K:A.8.3 <- C13', 'I42K:A.9.2 <- C15', 'N600:R07 <- C16']
+   items where every row is PARTIAL or ALIGNED_WITH (no control ADDRESSES it or is EVIDENCE_FOR it): ['ASI26:ASI09', 'LLM25:LLM05', 'N600:R02', 'ASI26:ASI10', 'ASI26:ASI01', 'LLM25:LLM01', 'N600:R04', 'ASI26:ASI08', 'LLM25:LLM04', 'LLM25:LLM08', 'N600:R12', 'LLM25:LLM07', 'I42K:A.10.3', 'N600:R09', 'I42K:A.8.3', 'I42K:A.9.2', 'N600:R07']
+   rows per control: {'C01': 3, 'C02': 5, 'C03': 3, 'C04': 6, 'C05': 2, 'C06': 4, 'C07': 4, 'C08': 4, 'C09': 4, 'C10': 3, 'C11': 2, 'C12': 4, 'C13': 4, 'C14': 1, 'C15': 3, 'C16': 4, 'C17': 2, 'C18': 5}
+   rows by control claim level: {'measured_in_simulation': 40, 'measured_live_model': 19, 'tested': 4}
+4 invented ids (LLM11, A.6.2.9) -> {'READ_FROM_SECONDARY': 13, 'UNKNOWN_ITEM': 2}
+4 rows written against the 2023-24 edition, catalogue is 2025 -> {'EDITION_MISMATCH': 15, 'READ_FROM_SECONDARY': 13}
+4 C04 and C08 downgraded to 'designed' -> {'READ_FROM_SECONDARY': 13, 'RELATION_ABOVE_EVIDENCE': 4}
+4 EU AI Act rows turned into EVIDENCE_FOR -> {'NOT_YET_APPLICABLE': 4, 'READ_FROM_SECONDARY': 13}
+4 same rows, as of 2027-12-03 (high-risk dates passed) -> {'READ_FROM_SECONDARY': 13, 'READ_TOO_OLD': 71}
+4 sources last read 120 days before -> {'READ_FROM_SECONDARY': 13, 'READ_TOO_OLD': 71}
+4 blank limit; title typed from memory -> {'NO_LIMIT': 1, 'READ_FROM_SECONDARY': 13, 'TITLE_DRIFT': 1}
+5 15 LLM25 rows read against the 2023-24 list by id: same title 1, a different item 14, id absent 0
+    C01 LLM06: 'Excessive Agency' (2025) is 'Sensitive Information Disclosure' in 2023-24
+    C02 LLM06: 'Excessive Agency' (2025) is 'Sensitive Information Disclosure' in 2023-24
+    C02 LLM05: 'Improper Output Handling' (2025) is 'Supply Chain Vulnerabilities' in 2023-24
+    C04 LLM02: 'Sensitive Information Disclosure' (2025) is 'Insecure Output Handling' in 2023-24
+    C05 LLM10: 'Unbounded Consumption' (2025) is 'Model Theft' in 2023-24
+    C06 LLM06: 'Excessive Agency' (2025) is 'Sensitive Information Disclosure' in 2023-24
+    C07 LLM04: 'Data and Model Poisoning' (2025) is 'Model Denial of Service' in 2023-24
+    C07 LLM08: 'Vector and Embedding Weaknesses' (2025) is 'Excessive Agency' in 2023-24
+    C08 LLM03: 'Supply Chain' (2025) is 'Training Data Poisoning' in 2023-24
+    C09 LLM07: 'System Prompt Leakage' (2025) is 'Insecure Plugin Design' in 2023-24
+    C10 LLM03: 'Supply Chain' (2025) is 'Training Data Poisoning' in 2023-24
+    C11 LLM05: 'Improper Output Handling' (2025) is 'Supply Chain Vulnerabilities' in 2023-24
+    C15 LLM06: 'Excessive Agency' (2025) is 'Sensitive Information Disclosure' in 2023-24
+    C18 LLM10: 'Unbounded Consumption' (2025) is 'Model Theft' in 2023-24
+6 drill grid from Chapter 36: untested cells 24 of 36
+    C18 (measured in simulation) partial OWASP Top 10 for Agentic Applications ASI08 Cascading Failures [2026]. Limit: 12 of 36 dependency-and-fault cells were drilled in replay; 24 untested
+    C18 (measured in simulation) partial OWASP Top 10 for LLM Applications LLM10 Unbounded Consumption [2025]. Limit: retry storms and breaker flapping were simulated; provider rate limits were not
+    C18 (measured in simulation) partial OWASP Top 10 for Agentic Applications ASI09 Human-Agent Trust Exploitation [2026]. Limit: an approval queue under load was simulated with reviewers assumed correct
+    C18 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art15 Accuracy, robustness and cybersecurity [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 15(4) asks for resilience and mentions fail-safe plans; applies from 2027-12-02 to high-risk systems [VERIFY]
+    C18 (measured in simulation) evidence for ISO/IEC 42001 Annex A A.6.2.6 AI system operation and monitoring [2023]. Limit: degraded modes are declared and recorded; production outages are not yet in the evidence
+    C03 (measured in simulation) evidence for ISO/IEC 42001 Annex A A.6.2.8 AI system recording of event logs [2023]. Limit: one chain implementation; anchor service simulated
+    C04 (measured live model) addresses OWASP Top 10 for LLM Applications LLM02 Sensitive Information Disclosure [2025]. Limit: unlisted recipients and domains; content of an allowed message is not inspected for secrets
+    C16 (measured in simulation) aligned with EU AI Act (Regulation (EU) 2024/1689) Art14 Human oversight [OJ 2024, as amended by the Digital Omnibus on AI (2026)]. Limit: Art 14(4)(d)(e) ask for the ability to override and to stop; applies from 2027-12-02 to high-risk systems [VERIFY]
+7 signature over bundle verifies: True | statement carries crosswalk digest d244b8db67525856 | matches unedited rows True | after a limit-sentence edit False | after an edition edit False | the bundle signature still verifies after either edit: True

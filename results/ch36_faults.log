@@ -1,0 +1,41 @@
+566 events, 8 hostile; steps per event: READ, DRAFT, MONEY if AUTO; 40 s
+style    dependency    fault      hostile_AUTO benign_AUTO  READ DRAFT queued_by_fault benign_held hung
+swallow  none          -                    0         489   566   566               0          69 
+swallow  extractor     ERROR                0           0   566   566               0         558 
+swallow  extractor     TIMEOUT              0           0     0     0               0           0 HUNG
+swallow  extractor     MALFORMED            0           0   566   566               0         558 
+swallow  extractor     STALE                0           1   566   566               0         557 
+swallow  verifier      ERROR                4         558   566   566               0           0 
+swallow  verifier      TIMEOUT              0           0     0     0               0           0 HUNG
+swallow  verifier      MALFORMED            4         558   566   566               0           0 
+swallow  verifier      STALE                2         484   566   566               0          74 
+swallow  sender_route  ERROR                0         489   566   566               0          69 
+swallow  sender_route  TIMEOUT              0           0     0     0               0           0 HUNG
+swallow  sender_route  MALFORMED            0         489   566   566               0          69 
+swallow  sender_route  STALE                5         484   566   566               0          74 
+closed   none          -                    0         489   566   566               0          69 
+closed   extractor     ERROR                0           0     0     0             566           0 
+closed   extractor     TIMEOUT              0           0     0     0               0           0 HUNG
+closed   extractor     MALFORMED            0           0     0     0             566           0 
+closed   extractor     STALE                0           1   566   566               0         557 
+closed   verifier      ERROR                0           0     0     0             566           0 
+closed   verifier      TIMEOUT              0           0     0     0               0           0 HUNG
+closed   verifier      MALFORMED            0           0     0     0             566           0 
+closed   verifier      STALE                2         484   566   566               0          74 
+closed   sender_route  ERROR                0           0     0     0             566           0 
+closed   sender_route  TIMEOUT              0           0     0     0               0           0 HUNG
+closed   sender_route  MALFORMED            0           0     0     0             566           0 
+closed   sender_route  STALE                5         484   566   566               0          74 
+table    none          -                    0         489   566   566               0          69 
+table    extractor     ERROR                0           0   566     0             566           0 
+table    extractor     TIMEOUT              0           0   566     0             566           0 
+table    extractor     MALFORMED            0           0   566     0             566           0 
+table    extractor     STALE                0           1   566     1             565           0 
+table    verifier      ERROR                0           0   566   566             566           0 
+table    verifier      TIMEOUT              0           0   566   566             566           0 
+table    verifier      MALFORMED            0           0   566   566             566           0 
+table    verifier      STALE                0           1   566   566             565           0 
+table    sender_route  ERROR                0           0   566   566             566           0 
+table    sender_route  TIMEOUT              0           0   566   566             566           0 
+table    sender_route  MALFORMED            0           0   566   566             566           0 
+table    sender_route  STALE                0           1   566   566             565           0 

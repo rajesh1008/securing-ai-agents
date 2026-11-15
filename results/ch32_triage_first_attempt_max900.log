@@ -1,0 +1,9 @@
+A_rows rows 555 parse failures 11
+  rep {'flagged': 104, 'caught': 9, 'false': 95, 'by_class': {'H7_label_confusion': 3, 'T1_inflated_booking': 2, 'T2_registry_tamper': 1, 'T4_drift': 3}}
+  rep {'flagged': 112, 'caught': 12, 'false': 100, 'by_class': {'H7_label_confusion': 7, 'T1_inflated_booking': 1, 'T2_registry_tamper': 0, 'T4_drift': 4}}
+  rep {'flagged': 129, 'caught': 13, 'false': 116, 'by_class': {'H7_label_confusion': 5, 'T1_inflated_booking': 3, 'T2_registry_tamper': 1, 'T4_drift': 4}}
+B_rows+kind rows 555 parse failures 12
+  rep {'flagged': 111, 'caught': 12, 'false': 99, 'by_class': {'H7_label_confusion': 7, 'T1_inflated_booking': 1, 'T2_registry_tamper': 0, 'T4_drift': 4}}
+  rep {'flagged': 127, 'caught': 14, 'false': 113, 'by_class': {'H7_label_confusion': 7, 'T1_inflated_booking': 2, 'T2_registry_tamper': 1, 'T4_drift': 4}}
+  rep {'flagged': 93, 'caught': 11, 'false': 82, 'by_class': {'H7_label_confusion': 6, 'T1_inflated_booking': 1, 'T2_registry_tamper': 0, 'T4_drift': 4}}
+calls 78 usd 0.52

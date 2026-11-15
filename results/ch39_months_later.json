@@ -1,0 +1,71 @@
+{
+ "replay": {
+  "then": [
+   "ALLOW",
+   [
+    "ok"
+   ]
+  ],
+  "naive": [
+   "HOLD",
+   [
+    "M4_account_not_yet_seasoned"
+   ],
+   "US-ACC-3305"
+  ],
+  "now": [
+   "HOLD",
+   [
+    "M4_account_not_yet_seasoned"
+   ]
+  ]
+ },
+ "erasure": {
+  "destroyed": 3,
+  "chain": true,
+  "anchors": true,
+  "coverage": {
+   "ANSWERABLE": 13,
+   "PARTIAL": 0,
+   "NOT_IN_EVIDENCE": 1
+  },
+  "digest_still_links": false
+ },
+ "retention_60": {
+  "whole": [
+   false,
+   0
+  ],
+  "segment": true,
+  "msg": "segment seq 60..91 verifies; first row's prev dd30f492 unchecked; anchors inside: [74, 91]"
+ },
+ "retention_50": {
+  "whole": [
+   false,
+   0
+  ],
+  "segment": true,
+  "msg": "segment seq 50..91 verifies; first row's prev 57a9c1a2 unchecked; anchors inside: [74, 91]"
+ },
+ "retention_q9": [
+  "NOT_IN_EVIDENCE",
+  [
+   "vendor_change.decision",
+   "vendor_change.approver",
+   "vendor_change.vendor_version"
+  ]
+ ],
+ "log": [
+  "1 replay: rebuilt record for day 100 (vendor version 2, from the vendor-change rows) -> ALLOW ['ok'] destination US-ACC-9902; recorded decision was ALLOW ok",
+  "          replay on day 100 inputs against the vendor record as it is today (version 3, account changed on day 296) -> HOLD ['M4_account_not_yet_seasoned'] destination US-ACC-3305: the destination differs from the one that was paid (US-ACC-9902)",
+  "          replay of today's request on day 300 -> HOLD ['M4_account_not_yet_seasoned']",
+  "          the dispatch row carries vendor_version=2 and a keyed digest of the destination; the vendor record at that version is not in the chain, it is in the vendor table's history (if the table keeps one)",
+  "2 erasure: 3 content items destroyed (store held 3); chain verifies True, anchors (True, 'ok'); coverage of the 14 questions after erasure {'ANSWERABLE': 13, 'PARTIAL': 0, 'NOT_IN_EVIDENCE': 1} (before: 13 answerable, Q14 not in the export either way)",
+  "          a keyed digest recomputed after the key is gone (a563fd40dfa3...) differs from the one in the row (84a6488e03eb...): the digest can no longer be matched to a value; the row says dest_digest=84a6488e03eb...",
+  "3 retention: rows before seq 60 purged (32 kept): whole-chain verifier (False, 0) ; segment verifier True (segment seq 60..91 verifies; first row's prev dd30f492 unchecked; anchors inside: [74, 91])",
+  "3 retention: rows before seq 50 purged (42 kept): whole-chain verifier (False, 0) ; segment verifier True (segment seq 50..91 verifies; first row's prev 57a9c1a2 unchecked; anchors inside: [74, 91])",
+  "   edit one retained row: segment verifier -> (False, 'row 70 hash does not match its content')",
+  "   drop the last 3 rows (truncation after the last anchor at seq 91): segment verifier -> False (truncated: anchor at 91, segment ends at 88...); whole-export anchors check -> (False, 'truncated: anchor at 91, log has 89')",
+  "   with rows 0-59 purged the vendor-change rows (seq 0 and 1) are gone: Q9 -> NOT_IN_EVIDENCE missing ['vendor_change.decision', 'vendor_change.approver', 'vendor_change.vendor_version']; in scope 10 rows"
+ ]
+}

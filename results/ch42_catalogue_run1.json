@@ -1,0 +1,572 @@
+{
+ "scan": {
+  "library": {
+   "fail_open_handlers": 0,
+   "rows": []
+  },
+  "labs": {
+   "fail_open_handlers": 0,
+   "rows": []
+  }
+ },
+ "Q01": {
+  "name": "Q01 Quill, Chapter 1",
+  "pass_": 2,
+  "fail": 11,
+  "na_p": 3,
+  "present": 4,
+  "absent": 7,
+  "na_a": 3,
+  "errors": 0,
+  "result": {
+   "P01": [
+    "FAIL",
+    "effect decided by a model: pay,email"
+   ],
+   "P02": [
+    "FAIL",
+    "no gate: pay,email"
+   ],
+   "P03": [
+    "PASS",
+    "gate errors deny or hold"
+   ],
+   "P04": [
+    "FAIL",
+    "destination taken from model or document: pay,email"
+   ],
+   "P05": [
+    "FAIL",
+    "a credential is in the model's context"
+   ],
+   "P06": [
+    "FAIL",
+    "every tool offered on every task"
+   ],
+   "P07": [
+    "FAIL",
+    "egress mode none"
+   ],
+   "P08": [
+    "NA",
+    "no human approval in the design"
+   ],
+   "P09": [
+    "PASS",
+    "tools pinned, model files checked against a bill"
+   ],
+   "P10": [
+    "NA",
+    "single agent"
+   ],
+   "P11": [
+    "NA",
+    "no persistent memory"
+   ],
+   "P12": [
+    "FAIL",
+    "no evidence chain described"
+   ],
+   "P13": [
+    "FAIL",
+    "no per-task budget"
+   ],
+   "P14": [
+    "FAIL",
+    "no stated disposition for a missing dependency"
+   ],
+   "P15": [
+    "FAIL",
+    "prompt and model changes ship without a gate"
+   ],
+   "P16": [
+    "FAIL",
+    "no register of recurring jobs"
+   ],
+   "A01": [
+    "PRESENT",
+    "counted as a control: system prompt: never pay unknown vendors"
+   ],
+   "A02": [
+    "PRESENT",
+    "a model's label grants the effect: pay"
+   ],
+   "A03": [
+    "PRESENT",
+    "denylist counted as a control: marker scan v0.1"
+   ],
+   "A04": [
+    "ABSENT",
+    "no model-only review on an effect"
+   ],
+   "A05": [
+    "PRESENT",
+    "credential in context"
+   ],
+   "A06": [
+    "NA",
+    "code not scanned"
+   ],
+   "A07": [
+    "ABSENT",
+    "no confidence monitor used as a gate"
+   ],
+   "A08": [
+    "ABSENT",
+    "each monitor has an owner within capacity"
+   ],
+   "A09": [
+    "NA",
+    "no release gate"
+   ],
+   "A10": [
+    "ABSENT",
+    "every baseline has an acknowledgement or retune cadence"
+   ],
+   "A11": [
+    "ABSENT",
+    "each waiver has an owner and a review date"
+   ],
+   "A12": [
+    "NA",
+    "single agent"
+   ],
+   "A13": [
+    "ABSENT",
+    "each job leaves an artefact"
+   ],
+   "A14": [
+    "ABSENT",
+    "no claim beyond its evidence"
+   ]
+  },
+  "level": "designed"
+ },
+ "Q12": {
+  "name": "Q12 Quill after Part II",
+  "pass_": 11,
+  "fail": 4,
+  "na_p": 1,
+  "present": 1,
+  "absent": 10,
+  "na_a": 3,
+  "errors": 0,
+  "result": {
+   "P01": [
+    "PASS",
+    "3 effect steps decided by code or owned rules"
+   ],
+   "P02": [
+    "PASS",
+    "every effect passes a gate"
+   ],
+   "P03": [
+    "PASS",
+    "gate errors deny or hold"
+   ],
+   "P04": [
+    "PASS",
+    "destinations come from a registry the agent does not write"
+   ],
+   "P05": [
+    "PASS",
+    "per-task tokens"
+   ],
+   "P06": [
+    "PASS",
+    "scope computed per task; ratchet on untrusted input"
+   ],
+   "P07": [
+    "PASS",
+    "egress allow-list"
+   ],
+   "P08": [
+    "PASS",
+    "bound to effect digest, full render"
+   ],
+   "P09": [
+    "PASS",
+    "tools pinned, model files checked against a bill"
+   ],
+   "P10": [
+    "NA",
+    "single agent"
+   ],
+   "P11": [
+    "PASS",
+    "writes carry trust labels"
+   ],
+   "P12": [
+    "FAIL",
+    "fields chosen for the engineer only"
+   ],
+   "P13": [
+    "PASS",
+    "calls, egress and repeat limits"
+   ],
+   "P14": [
+    "FAIL",
+    "no stated disposition for a missing dependency"
+   ],
+   "P15": [
+    "FAIL",
+    "prompt and model changes ship without a gate"
+   ],
+   "P16": [
+    "FAIL",
+    "no register of recurring jobs"
+   ],
+   "A01": [
+    "PRESENT",
+    "counted as a control: hardened prompt"
+   ],
+   "A02": [
+    "ABSENT",
+    "no effect granted by a model's label"
+   ],
+   "A03": [
+    "ABSENT",
+    "no denylist counted as a control"
+   ],
+   "A04": [
+    "ABSENT",
+    "no model-only review on an effect"
+   ],
+   "A05": [
+    "ABSENT",
+    "no credential in context"
+   ],
+   "A06": [
+    "NA",
+    "code not scanned"
+   ],
+   "A07": [
+    "ABSENT",
+    "no confidence monitor used as a gate"
+   ],
+   "A08": [
+    "ABSENT",
+    "each monitor has an owner within capacity"
+   ],
+   "A09": [
+    "NA",
+    "no release gate"
+   ],
+   "A10": [
+    "ABSENT",
+    "every baseline has an acknowledgement or retune cadence"
+   ],
+   "A11": [
+    "ABSENT",
+    "each waiver has an owner and a review date"
+   ],
+   "A12": [
+    "NA",
+    "single agent"
+   ],
+   "A13": [
+    "ABSENT",
+    "each job leaves an artefact"
+   ],
+   "A14": [
+    "ABSENT",
+    "no claim beyond its evidence"
+   ]
+  },
+  "level": "designed"
+ },
+ "Q41": {
+  "name": "Q41 Quill, Chapter 41",
+  "pass_": 16,
+  "fail": 0,
+  "na_p": 0,
+  "present": 0,
+  "absent": 14,
+  "na_a": 0,
+  "errors": 0,
+  "result": {
+   "P01": [
+    "PASS",
+    "3 effect steps decided by code or owned rules"
+   ],
+   "P02": [
+    "PASS",
+    "every effect passes a gate"
+   ],
+   "P03": [
+    "PASS",
+    "gate errors deny or hold"
+   ],
+   "P04": [
+    "PASS",
+    "destinations come from a registry the agent does not write"
+   ],
+   "P05": [
+    "PASS",
+    "per-task tokens"
+   ],
+   "P06": [
+    "PASS",
+    "scope computed per task; ratchet on untrusted input"
+   ],
+   "P07": [
+    "PASS",
+    "egress allow-list"
+   ],
+   "P08": [
+    "PASS",
+    "bound to effect digest, full render"
+   ],
+   "P09": [
+    "PASS",
+    "tools pinned, model files checked against a bill"
+   ],
+   "P10": [
+    "PASS",
+    "typed hand-off with grant that only shrinks"
+   ],
+   "P11": [
+    "PASS",
+    "writes carry trust labels"
+   ],
+   "P12": [
+    "PASS",
+    "chained, anchored, examiner fields"
+   ],
+   "P13": [
+    "PASS",
+    "calls, egress and repeat limits"
+   ],
+   "P14": [
+    "PASS",
+    "5 dependencies have a disposition"
+   ],
+   "P15": [
+    "PASS",
+    "baseline runs plus anchor"
+   ],
+   "P16": [
+    "PASS",
+    "30 jobs with owner and backup"
+   ],
+   "A01": [
+    "ABSENT",
+    "no control is a prompt instruction"
+   ],
+   "A02": [
+    "ABSENT",
+    "no effect granted by a model's label"
+   ],
+   "A03": [
+    "ABSENT",
+    "no denylist counted as a control"
+   ],
+   "A04": [
+    "ABSENT",
+    "no model-only review on an effect"
+   ],
+   "A05": [
+    "ABSENT",
+    "no credential in context"
+   ],
+   "A06": [
+    "ABSENT",
+    "no handler returns an allow"
+   ],
+   "A07": [
+    "ABSENT",
+    "no confidence monitor used as a gate"
+   ],
+   "A08": [
+    "ABSENT",
+    "each monitor has an owner within capacity"
+   ],
+   "A09": [
+    "ABSENT",
+    "strict per-step gate or margins with anchor and new-hit rule"
+   ],
+   "A10": [
+    "ABSENT",
+    "every baseline has an acknowledgement or retune cadence"
+   ],
+   "A11": [
+    "ABSENT",
+    "each waiver has an owner and a review date"
+   ],
+   "A12": [
+    "ABSENT",
+    "typed hand-off"
+   ],
+   "A13": [
+    "ABSENT",
+    "each job leaves an artefact"
+   ],
+   "A14": [
+    "ABSENT",
+    "no claim beyond its evidence"
+   ]
+  },
+  "level": "tested"
+ },
+ "DEMO": {
+  "name": "DEMO framework quick-start composite",
+  "pass_": 1,
+  "fail": 15,
+  "na_p": 0,
+  "present": 11,
+  "absent": 1,
+  "na_a": 1,
+  "errors": 1,
+  "result": {
+   "P01": [
+    "FAIL",
+    "effect decided by a model: pay,email"
+   ],
+   "P02": [
+    "PASS",
+    "every effect passes a gate"
+   ],
+   "P03": [
+    "FAIL",
+    "fails open: pay,email"
+   ],
+   "P04": [
+    "FAIL",
+    "destination taken from model or document: pay,email"
+   ],
+   "P05": [
+    "FAIL",
+    "one standing credential for all tasks"
+   ],
+   "P06": [
+    "FAIL",
+    "every tool offered on every task"
+   ],
+   "P07": [
+    "FAIL",
+    "egress mode denylist"
+   ],
+   "P08": [
+    "FAIL",
+    "approval not bound to the effect; reviewer sees summary"
+   ],
+   "P09": [
+    "FAIL",
+    "third-party tool descriptions not pinned"
+   ],
+   "P10": [
+    "FAIL",
+    "hand-off free_text, grant_shrinks=False"
+   ],
+   "P11": [
+    "FAIL",
+    "memory writes unlabelled"
+   ],
+   "P12": [
+    "FAIL",
+    "not chained; not anchored outside the system; fields chosen for the engineer only"
+   ],
+   "P13": [
+    "FAIL",
+    "missing limits: egress,repeats"
+   ],
+   "P14": [
+    "FAIL",
+    "no stated disposition for a missing dependency"
+   ],
+   "P15": [
+    "FAIL",
+    "no anchor to the first release (creep goes unseen)"
+   ],
+   "P16": [
+    "FAIL",
+    "no register of recurring jobs"
+   ],
+   "A01": [
+    "PRESENT",
+    "counted as a control: guardrail system prompt"
+   ],
+   "A02": [
+    "PRESENT",
+    "a model's label grants the effect: pay"
+   ],
+   "A03": [
+    "PRESENT",
+    "denylist counted as a control: injection keyword filter"
+   ],
+   "A04": [
+    "PRESENT",
+    "only a second model stands between a model and the effect: pay"
+   ],
+   "A05": [
+    "ABSENT",
+    "no credential in context"
+   ],
+   "A06": [
+    "NA",
+    "code not scanned"
+   ],
+   "A07": [
+    "PRESENT",
+    "confidence threshold used as a gate: guardrail confidence"
+   ],
+   "A08": [
+    "PRESENT",
+    "alerts no one owns or can read: guardrail confidence"
+   ],
+   "A09": [
+    "PRESENT",
+    "per-step margins with no anchor to the first release"
+   ],
+   "A10": [
+    "PRESENT",
+    "baseline never acknowledged or retuned: anomaly score"
+   ],
+   "A11": [
+    "PRESENT",
+    "waivers without owner or review date: W1 skip approval for small payments"
+   ],
+   "A12": [
+    "PRESENT",
+    "agents pass free text that can carry an effect"
+   ],
+   "A13": [
+    "ERROR",
+    "TypeError: 'NoneType' object is not iterable"
+   ],
+   "A14": [
+    "PRESENT",
+    "claims compliance from a mapping with no evidence level"
+   ]
+  },
+  "level": "designed"
+ },
+ "controls": {
+  "C02": 4,
+  "C16": 2,
+  "C04": 3,
+  "C14": 4,
+  "C18": 3,
+  "C01": 1,
+  "C15": 2,
+  "C05": 2,
+  "C06": 1,
+  "C08": 2,
+  "C10": 1,
+  "C20": 3,
+  "C19": 2,
+  "C07": 1,
+  "C03": 1,
+  "C09": 3,
+  "C17": 2,
+  "C12": 3
+ },
+ "controls_missing": [
+  "C11",
+  "C13"
+ ],
+ "no_upkeep": [
+  "P04",
+  "P13"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "results": {
+  "tenant_wide": {
+   "benign_cols": 16469,
+   "benign_refused": 0,
+   "hostile_reads": 3000,
+   "hostile_cols_returned": 9642,
+   "hostile_cols_total": 9642,
+   "hostile_any_sensitive": 3000
+  },
+  "per_task_columns": {
+   "benign_cols": 16469,
+   "benign_refused": 0,
+   "hostile_reads": 3000,
+   "hostile_cols_returned": 1330,
+   "hostile_cols_total": 9642,
+   "hostile_any_sensitive": 0
+  }
+ },
+ "by_task": {
+  "send_reminders": [
+   510,
+   0
+  ],
+  "reconcile_month": [
+   489,
+   0
+  ],
+  "process_invoice": [
+   491,
+   0
+  ],
+  "handle_vendor_email": [
+   487,
+   0
+  ],
+  "answer_question": [
+   517,
+   0
+  ],
+  "pay_invoice": [
+   506,
+   0
+  ]
+ }
+}

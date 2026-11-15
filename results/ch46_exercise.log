@@ -1,0 +1,13 @@
+Cedar Row support agent (launch): dangerous tools ['issue_credit', 'change_contact', 'send_sms']; paths unbounded before any fix 6
+Fieldstone coding agent (pilot): dangerous tools ['shell', 'env_tokens', 'http_get', 'git_push']; paths unbounded before any fix 12
+Harbour and Vale claims assistant (as deployed): dangerous tools ['send_correspondence', 'fetch_url']; paths unbounded before any fix 6
+
+archetype                              Cedar Row supp | Fieldstone cod | Harbour and Va | passes  vocab
+reciter (model review everywhere)                   6 |             16 |              6 | 0/3     7
+cap-fan (limits and rates)                          6 |             16 |              6 | 0/3     6
+approver (a person looks)                           6 |             16 |              6 | 0/3     5
+pattern-matcher (lists and records)                 2 |              8 |              3 | 0/3     3
+careful                                             0 |              0 |              0 | 3/3     0
+
+residual = unbounded (source, tool) paths left after applying the picks, re-checked by bulwark.casestudy.findings
+ranked by vocabulary score: reciter 7; cap-fan 6; approver 5; pattern-matcher 3; careful 0

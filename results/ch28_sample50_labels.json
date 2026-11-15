@@ -1,0 +1,462 @@
+{
+ "labelling": "by the author, reading the diff of each mutant; E equivalent, N not a security behaviour, D covered by another control, B boundary or tuning constant, S security-relevant behaviour no test enforced",
+ "labels": [
+  {
+   "n": 0,
+   "module": "identity",
+   "idx": 77,
+   "op": "CMP",
+   "fn": "derive",
+   "label": "B",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 1,
+   "module": "identity",
+   "idx": 82,
+   "op": "CONST",
+   "fn": "__init__",
+   "label": "B",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 2,
+   "module": "policy",
+   "idx": 34,
+   "op": "CMP",
+   "fn": "check",
+   "label": "D",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 3,
+   "module": "promptrelease",
+   "idx": 10,
+   "op": "GUARD",
+   "fn": "gate",
+   "label": "S",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 4,
+   "module": "approval",
+   "idx": 101,
+   "op": "CMP",
+   "fn": "covers",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 5,
+   "module": "identity",
+   "idx": 49,
+   "op": "GUARD",
+   "fn": "_check_policy",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 6,
+   "module": "schema",
+   "idx": 39,
+   "op": "GUARD",
+   "fn": "check",
+   "label": "D",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 7,
+   "module": "schema",
+   "idx": 2,
+   "op": "GUARD",
+   "fn": "_depth_ok",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 8,
+   "module": "identity",
+   "idx": 132,
+   "op": "CMP",
+   "fn": "verify",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 9,
+   "module": "policy",
+   "idx": 19,
+   "op": "GUARD",
+   "fn": "check",
+   "label": "D",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 10,
+   "module": "identity",
+   "idx": 57,
+   "op": "CMP",
+   "fn": "_check_policy",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 11,
+   "module": "egress",
+   "idx": 2,
+   "op": "CONST",
+   "fn": "_variants",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 12,
+   "module": "moneypath",
+   "idx": 0,
+   "op": "CONST",
+   "fn": "idem_key",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 13,
+   "module": "supplychain",
+   "idx": 47,
+   "op": "CMP",
+   "fn": "observed_permissions",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 14,
+   "module": "supplychain",
+   "idx": 38,
+   "op": "CMP",
+   "fn": "observed_permissions",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 15,
+   "module": "supplychain",
+   "idx": 14,
+   "op": "GUARD",
+   "fn": "lint_skill",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 16,
+   "module": "identity",
+   "idx": 56,
+   "op": "CMP",
+   "fn": "_check_policy",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 17,
+   "module": "egress",
+   "idx": 17,
+   "op": "BOOL",
+   "fn": "is_internal_host",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 18,
+   "module": "mcpguard",
+   "idx": 20,
+   "op": "GUARD",
+   "fn": "run_argv",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 19,
+   "module": "policy",
+   "idx": 43,
+   "op": "CONST",
+   "fn": "evidence",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 20,
+   "module": "anatomy",
+   "idx": 2,
+   "op": "GUARD",
+   "fn": "describe",
+   "label": "N",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 21,
+   "module": "runtime_scope",
+   "idx": 99,
+   "op": "BOOL",
+   "fn": "reach",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 22,
+   "module": "toolresults",
+   "idx": 9,
+   "op": "CMP",
+   "fn": "project",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 23,
+   "module": "evidence",
+   "idx": 52,
+   "op": "CMP",
+   "fn": "get",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 24,
+   "module": "mcpguard",
+   "idx": 13,
+   "op": "BOOL",
+   "fn": "scan_tool",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 25,
+   "module": "egress",
+   "idx": 21,
+   "op": "CMP",
+   "fn": "is_internal_host",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 26,
+   "module": "evidence",
+   "idx": 68,
+   "op": "CMP",
+   "fn": "seal",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 27,
+   "module": "approval",
+   "idx": 99,
+   "op": "CMP",
+   "fn": "covers",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 28,
+   "module": "evidence",
+   "idx": 57,
+   "op": "CONST",
+   "fn": "__init__",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 29,
+   "module": "egress",
+   "idx": 0,
+   "op": "CONST",
+   "fn": "_variants",
+   "label": "S",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 30,
+   "module": "toolresults",
+   "idx": 20,
+   "op": "GUARD",
+   "fn": "check",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 31,
+   "module": "evidence",
+   "idx": 47,
+   "op": "CONST",
+   "fn": "_ks",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 32,
+   "module": "gateway",
+   "idx": 59,
+   "op": "BOOL",
+   "fn": "handle",
+   "label": "S",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 33,
+   "module": "reconcile",
+   "idx": 12,
+   "op": "GUARD",
+   "fn": "note_change",
+   "label": "S",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 34,
+   "module": "approval",
+   "idx": 55,
+   "op": "GUARD",
+   "fn": "decide",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 35,
+   "module": "alignment",
+   "idx": 34,
+   "op": "CONST",
+   "fn": "classify",
+   "label": "B",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 36,
+   "module": "identity",
+   "idx": 41,
+   "op": "CONST",
+   "fn": "issue",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 37,
+   "module": "promptrelease",
+   "idx": 18,
+   "op": "CMP",
+   "fn": "gate",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 38,
+   "module": "anatomy",
+   "idx": 13,
+   "op": "NOT",
+   "fn": "separates",
+   "label": "N",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 39,
+   "module": "alignment",
+   "idx": 31,
+   "op": "GUARD",
+   "fn": "classify",
+   "label": "N",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 40,
+   "module": "tenancy",
+   "idx": 3,
+   "op": "GUARD",
+   "fn": "safe_text",
+   "label": "S",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 41,
+   "module": "tenancy",
+   "idx": 15,
+   "op": "CONST",
+   "fn": "__init__",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 42,
+   "module": "tenancy",
+   "idx": 59,
+   "op": "NOT",
+   "fn": "export_for",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 43,
+   "module": "moneypath",
+   "idx": 15,
+   "op": "GUARD",
+   "fn": "check",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 44,
+   "module": "identity",
+   "idx": 16,
+   "op": "BOOL",
+   "fn": "within",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 45,
+   "module": "runtime_scope",
+   "idx": 116,
+   "op": "CONST",
+   "fn": "make_books",
+   "label": "E",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 46,
+   "module": "runtime_scope",
+   "idx": 98,
+   "op": "BOOL",
+   "fn": "reach",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 47,
+   "module": "approval",
+   "idx": 26,
+   "op": "CONST",
+   "fn": "render",
+   "label": "N",
+   "after_targeted_round": "survived"
+  },
+  {
+   "n": 48,
+   "module": "moneypath",
+   "idx": 16,
+   "op": "GUARD",
+   "fn": "check",
+   "label": "S",
+   "after_targeted_round": "killed"
+  },
+  {
+   "n": 49,
+   "module": "identity",
+   "idx": 138,
+   "op": "BOOL",
+   "fn": "verify",
+   "label": "S",
+   "after_targeted_round": "killed"
+  }
+ ],
+ "counts": {
+  "B": 3,
+  "D": 3,
+  "S": 32,
+  "E": 8,
+  "N": 4
+ }
+}

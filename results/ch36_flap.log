@@ -1,0 +1,13 @@
+200 seeds x 480 requests; mean up 3 min, mean down 2 min (dependency up 59% of minutes)
+policy                                 flips     served_normal          degraded             calls  failed_in_normal  minutes_degraded
+A last-call, no hysteresis             180.9             190.7             289.3             480.0              90.7             289.3
+B breaker k3 cool5 need3                31.9              93.8             386.2             255.0              51.2             335.6
+   median flips A 180, B 32; max flips A 226, B 47
+
+Drill grid: 9 dependencies x 4 fault kinds = 36 cells; exercised by ch36_faults.py: 12; untested 24
+   gateway       (PROVIDE): untested ERROR, TIMEOUT, MALFORMED, STALE
+   money_gate    (PREVENT): untested ERROR, TIMEOUT, MALFORMED, STALE
+   egress        (PREVENT): untested ERROR, TIMEOUT, MALFORMED, STALE
+   monitor       (DETECT): untested ERROR, TIMEOUT, MALFORMED, STALE
+   approvals     (APPROVE): untested ERROR, TIMEOUT, MALFORMED, STALE
+   chain         (RECORD): untested ERROR, TIMEOUT, MALFORMED, STALE

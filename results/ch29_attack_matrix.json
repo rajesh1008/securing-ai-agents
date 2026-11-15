@@ -1,0 +1,372 @@
+{
+ "rows": [
+  {
+   "entry": "web_chat",
+   "asset": "customer_ledger",
+   "path": "chat asks for another business's rows",
+   "chapters": [
+    11,
+    22
+   ]
+  },
+  {
+   "entry": "web_chat",
+   "asset": "vendor_bank_details",
+   "path": "user (or injected) chat text changes a vendor's account",
+   "chapters": [
+    8,
+    10
+   ]
+  },
+  {
+   "entry": "web_chat",
+   "asset": "tool_credentials",
+   "path": "chat extracts the token or the key",
+   "chapters": [
+    6,
+    23
+   ]
+  },
+  {
+   "entry": "web_chat",
+   "asset": "evidence_store",
+   "path": "chat session ends before the evidence row is written",
+   "chapters": [
+    13
+   ]
+  },
+  {
+   "entry": "web_chat",
+   "asset": "tenant_boundary",
+   "path": "chat history or cache leaks across tenants",
+   "chapters": [
+    11
+   ]
+  },
+  {
+   "entry": "web_chat",
+   "asset": "prompt_registry",
+   "path": "chat reveals or overrides the system prompt",
+   "chapters": [
+    3,
+    18,
+    23
+   ]
+  },
+  {
+   "entry": "email_intake",
+   "asset": "customer_ledger",
+   "path": "note in a mail makes Quill reply with ledger rows",
+   "chapters": [
+    3,
+    12,
+    16
+   ]
+  },
+  {
+   "entry": "email_intake",
+   "asset": "vendor_bank_details",
+   "path": "forged vendor invoice with a new account",
+   "chapters": [
+    1,
+    2,
+    14
+   ]
+  },
+  {
+   "entry": "email_intake",
+   "asset": "tool_credentials",
+   "path": "mail asks the agent to include its token in a reply",
+   "chapters": [
+    6
+   ]
+  },
+  {
+   "entry": "email_intake",
+   "asset": "evidence_store",
+   "path": "flood of hostile mail fills the review queue and the log",
+   "chapters": []
+  },
+  {
+   "entry": "email_intake",
+   "asset": "tenant_boundary",
+   "path": "mail from tenant A quotes tenant B's invoice number",
+   "chapters": [
+    11
+   ]
+  },
+  {
+   "entry": "email_intake",
+   "asset": "prompt_registry",
+   "path": null,
+   "chapters": []
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "customer_ledger",
+   "path": "memo triggers a read and a send",
+   "chapters": [
+    21
+   ]
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "vendor_bank_details",
+   "path": "memo field carries an instruction to change payee",
+   "chapters": [
+    2,
+    8,
+    21
+   ]
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "tool_credentials",
+   "path": null,
+   "chapters": []
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "evidence_store",
+   "path": "replayed webhook creates duplicate evidence and duplicate effects",
+   "chapters": [
+    10
+   ]
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "tenant_boundary",
+   "path": "webhook for one tenant matched to another's invoice",
+   "chapters": []
+  },
+  {
+   "entry": "bank_feed_webhook",
+   "asset": "prompt_registry",
+   "path": null,
+   "chapters": []
+  },
+  {
+   "entry": "document_upload",
+   "asset": "customer_ledger",
+   "path": "document makes the agent send ledger data out",
+   "chapters": [
+    12,
+    16,
+    21
+   ]
+  },
+  {
+   "entry": "document_upload",
+   "asset": "vendor_bank_details",
+   "path": "hidden text layer, label confusion, lookalike vendor",
+   "chapters": [
+    14,
+    15,
+    19,
+    20,
+    21
+   ]
+  },
+  {
+   "entry": "document_upload",
+   "asset": "tool_credentials",
+   "path": "document asks for a credential or a debug dump",
+   "chapters": [
+    6
+   ]
+  },
+  {
+   "entry": "document_upload",
+   "asset": "evidence_store",
+   "path": "oversized or malformed document makes the logger drop or truncate rows",
+   "chapters": [
+    13
+   ]
+  },
+  {
+   "entry": "document_upload",
+   "asset": "tenant_boundary",
+   "path": "document names another tenant's vendor",
+   "chapters": [
+    11
+   ]
+  },
+  {
+   "entry": "document_upload",
+   "asset": "prompt_registry",
+   "path": null,
+   "chapters": []
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "customer_ledger",
+   "path": "installed tool reads and exports rows",
+   "chapters": [
+    25,
+    26
+   ]
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "vendor_bank_details",
+   "path": "tool description steers a payment call",
+   "chapters": [
+    25
+   ]
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "tool_credentials",
+   "path": "installed server receives the user's token (passthrough)",
+   "chapters": [
+    25,
+    26
+   ]
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "evidence_store",
+   "path": "tool writes to the evidence directory",
+   "chapters": [
+    27
+   ]
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "tenant_boundary",
+   "path": "shared server serves two tenants",
+   "chapters": [
+    25
+   ]
+  },
+  {
+   "entry": "mcp_install",
+   "asset": "prompt_registry",
+   "path": "skill or tool text rewrites the behaviour tuple",
+   "chapters": [
+    26
+   ]
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "customer_ledger",
+   "path": "nightly job reads more than the task needs",
+   "chapters": [
+    7
+   ]
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "vendor_bank_details",
+   "path": "stale vendor record paid by an unattended run",
+   "chapters": [
+    7,
+    8
+   ]
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "tool_credentials",
+   "path": "long-lived credential held by an unattended job",
+   "chapters": [
+    6,
+    7
+   ]
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "evidence_store",
+   "path": "job runs under no principal and its rows have no actor",
+   "chapters": []
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "tenant_boundary",
+   "path": "batch loop mixes tenants in one context",
+   "chapters": [
+    11
+   ]
+  },
+  {
+   "entry": "scheduled_reconcile",
+   "asset": "prompt_registry",
+   "path": "prompt edited between release and the nightly run",
+   "chapters": [
+    18
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "customer_ledger",
+   "path": "support reads a tenant's books without a grant",
+   "chapters": [
+    6,
+    11
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "vendor_bank_details",
+   "path": "support session changes a vendor account",
+   "chapters": [
+    6,
+    10
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "tool_credentials",
+   "path": "support session obtains a task token",
+   "chapters": [
+    6
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "evidence_store",
+   "path": "admin edits or erases evidence",
+   "chapters": [
+    13
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "tenant_boundary",
+   "path": "impersonation crosses the tenant boundary",
+   "chapters": [
+    6,
+    11
+   ]
+  },
+  {
+   "entry": "admin_impersonation",
+   "asset": "prompt_registry",
+   "path": "admin promotes an unreviewed prompt",
+   "chapters": [
+    18
+   ]
+  }
+ ],
+ "summary": {
+  "pairs": 42,
+  "paths": 38,
+  "tested": 35,
+  "untested": [
+   [
+    "email_intake",
+    "evidence_store",
+    "flood of hostile mail fills the review queue and the log"
+   ],
+   [
+    "bank_feed_webhook",
+    "tenant_boundary",
+    "webhook for one tenant matched to another's invoice"
+   ],
+   [
+    "scheduled_reconcile",
+    "evidence_store",
+    "job runs under no principal and its rows have no actor"
+   ]
+  ]
+ }
+}

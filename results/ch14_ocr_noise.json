@@ -1,0 +1,69 @@
+{
+ "0.0": {
+  "AUTO": 200,
+  "REVIEW": 0,
+  "REJECT": 0,
+  "wrong": 0,
+  "reasons": {}
+ },
+ "0.002": {
+  "AUTO": 191,
+  "REVIEW": 8,
+  "REJECT": 1,
+  "wrong": 0,
+  "reasons": {
+   "LINES_DO_NOT_SUM": 4,
+   "DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY": 3,
+   "INVOICE_NOT_IN_BOOKS": 1,
+   "AMOUNT_NOT_FOUND": 1
+  }
+ },
+ "0.005": {
+  "AUTO": 181,
+  "REVIEW": 16,
+  "REJECT": 3,
+  "wrong": 0,
+  "reasons": {
+   "LINES_DO_NOT_SUM": 13,
+   "INVOICE_NOT_IN_BOOKS": 2,
+   "DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY": 2,
+   "VENDOR_NOT_IN_REGISTRY": 1
+  }
+ },
+ "0.01": {
+  "AUTO": 147,
+  "REVIEW": 43,
+  "REJECT": 10,
+  "wrong": 0,
+  "reasons": {
+   "LINES_DO_NOT_SUM": 34,
+   "INVOICE_NOT_IN_BOOKS": 9,
+   "AMOUNT_NOT_FOUND": 8,
+   "DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY": 3
+  }
+ },
+ "0.02": {
+  "AUTO": 103,
+  "REVIEW": 67,
+  "REJECT": 30,
+  "wrong": 0,
+  "reasons": {
+   "LINES_DO_NOT_SUM": 56,
+   "INVOICE_NOT_IN_BOOKS": 22,
+   "DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY": 14,
+   "AMOUNT_NOT_FOUND": 13
+  }
+ },
+ "0.05": {
+  "AUTO": 45,
+  "REVIEW": 112,
+  "REJECT": 43,
+  "wrong": 0,
+  "reasons": {
+   "LINES_DO_NOT_SUM": 86,
+   "AMOUNT_NOT_FOUND": 45,
+   "INVOICE_NOT_IN_BOOKS": 30,
+   "DOCUMENT_ACCOUNT_DIFFERS_FROM_REGISTRY": 15
+  }
+ }
+}

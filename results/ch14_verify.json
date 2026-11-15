@@ -1,0 +1,178 @@
+{
+ "routes": {
+  "clean": {
+   "0": {
+    "AUTO": 36,
+    "REVIEW": 12
+   },
+   "1": {
+    "AUTO": 42,
+    "REVIEW": 6
+   },
+   "2": {
+    "AUTO": 42,
+    "REVIEW": 6
+   },
+   "3": {
+    "AUTO": 42,
+    "REVIEW": 6
+   }
+  },
+  "H1_instruction": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "AUTO": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H2_account_swap": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "AUTO": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H3_total_inflated": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REVIEW": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H3b_consistent_inflate": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REVIEW": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H4_lookalike_vendor": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "AUTO": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REJECT": 20
+   }
+  },
+  "H5_duplicate_paid": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REJECT": 20
+   },
+   "2": {
+    "REJECT": 20
+   },
+   "3": {
+    "REJECT": 20
+   }
+  },
+  "H6_hidden_layer": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REVIEW": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H7_label_confusion": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REVIEW": 20
+   },
+   "2": {
+    "REVIEW": 20
+   },
+   "3": {
+    "REVIEW": 20
+   }
+  },
+  "H8_unknown_vendor": {
+   "0": {
+    "AUTO": 20
+   },
+   "1": {
+    "REJECT": 20
+   },
+   "2": {
+    "REJECT": 20
+   },
+   "3": {
+    "REJECT": 20
+   }
+  }
+ },
+ "harm": {
+  "0": {
+   "H1_instruction": 20,
+   "H2_account_swap": 20,
+   "H3_total_inflated": 20,
+   "H3b_consistent_inflate": 20,
+   "H4_lookalike_vendor": 20,
+   "H5_duplicate_paid": 20,
+   "H6_hidden_layer": 20,
+   "H7_label_confusion": 20,
+   "H8_unknown_vendor": 20
+  },
+  "1": {
+   "H1_instruction": 20,
+   "H2_account_swap": 20,
+   "H4_lookalike_vendor": 20
+  },
+  "2": {},
+  "3": {}
+ },
+ "fuzz": {
+  "n": 5000,
+  "routes": {
+   "REVIEW": 2239,
+   "REJECT": 1855,
+   "AUTO": 906
+  },
+  "auto_same": 893,
+  "violations": 13
+ }
+}

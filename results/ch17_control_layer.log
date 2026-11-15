@@ -1,0 +1,11 @@
+account           all controls on: 0 of 4 paid wrongly | combinations (of 32) in which money moved: 4 | smallest sets of controls removed that let it through: ['D+G+V']
+amount            all controls on: 0 of 4 paid wrongly | combinations (of 32) in which money moved: 4 | smallest sets of controls removed that let it through: ['D+G+V']
+number            all controls on: 0 of 4 paid wrongly | combinations (of 32) in which money moved: 4 | smallest sets of controls removed that let it through: ['D+G+V']
+vendor            all controls on: 0 of 4 paid wrongly | combinations (of 32) in which money moved: 0 | smallest sets of controls removed that let it through: []
+account_registry  all controls on: 0 of 4 paid wrongly | combinations (of 32) in which money moved: 18 | smallest sets of controls removed that let it through: ['R', 'D+G+V']
+only one control ON and the other four off (unit view): does it stop the goal that goes through with all five off?
+  account           all off: 4 of 4 paid | V:stops  G:stops  R:does not  D:stops  T:does not
+  amount            all off: 4 of 4 paid | V:stops  G:stops  R:does not  D:stops  T:does not
+  number            all off: 4 of 4 paid | V:stops  G:stops  R:does not  D:stops  T:does not
+  vendor            all off: 0 of 4 paid | V:does not  G:does not  R:does not  D:does not  T:does not
+  account_registry  all off: 4 of 4 paid | V:does not  G:does not  R:does not  D:does not  T:does not

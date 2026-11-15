@@ -1,0 +1,14 @@
+line plain: prod = extractor-1.0, 48 words, digest 34252695f094
+line hardened: prod = extractor-2.0, 118 words, digest 4c59b23d6640
+extractor-3.0 (D, on the plain line, parent extractor-1.0): worst-run verdict PASS, 69 words, digest a9a382543209
+   released; prod = extractor-3.0
+extractor-3.1 (P, on the plain line, parent extractor-3.0): worst-run verdict REVIEW, 83 words, digest a8bfa5a6a706; 1 payloads that never worked before now do: ['amo-pri-cor-top']
+   refused: extractor-3.1: gate said REVIEW, no waiver recorded
+   waiver recorded; prod = extractor-3.1
+extractor-3.2 (S1, on the plain line, parent extractor-3.1): worst-run verdict PASS, 35 words, digest 416d386e3df3
+   released; prod = extractor-3.2
+extractor-3.3 (S2, on the hardened line, parent extractor-2.0): worst-run verdict BLOCK, 80 words, digest 6efe946e8fa8; total up: 5 -> 16 (baseline spread 0)
+   refused: extractor-3.3: gate said BLOCK, no waiver recorded
+history (plain): release:extractor-1.0 > release:extractor-3.0 > release:extractor-3.1 > release:extractor-3.2
+history (hardened): release:extractor-2.0
+D template: pin compares the text with the placeholder in place: False (D is no longer production on the plain line, so False is expected)

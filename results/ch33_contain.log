@@ -1,0 +1,134 @@
+attack payments by class: {'H7_label_confusion': 10, 'T1_inflated_booking': 5, 'T2_registry_tamper': 13, 'T4_drift': 8} loss {'H7_label_confusion': 0.0, 'T1_inflated_booking': 23290.0, 'T2_registry_tamper': 9207.0, 'T4_drift': 22810.0}
+first caught alert by class: {'T2_registry_tamper': ('Z007', 30, 'account+amount'), 'T1_inflated_booking': ('Z003', 44, 'amount'), 'H7_label_confusion': ('X00', 57, 'reverse_shadow'), 'T4_drift': ('Z017', 64, 'run')} | no alert for: []
+
+Lab 1 scope for T2_registry_tamper (alert Z007 day 30, vendor v02):
+  same_item        size    1  attack payments in set  1/13 (from alert day on: 1/13)
+  same_vendor      size   24  attack payments in set  6/13 (from alert day on: 6/13)
+  same_account     size   20  attack payments in set  6/13 (from alert day on: 6/13)
+  same_conflict    size    0  attack payments in set  0/13 (from alert day on: 0/13)
+  changed_vendors  size   24  attack payments in set  6/13 (from alert day on: 6/13)
+  all_auto         size  555  attack payments in set 13/13 (from alert day on: 13/13)
+
+Lab 1 scope for T1_inflated_booking (alert Z003 day 44, vendor v12):
+  same_item        size    1  attack payments in set  1/ 5 (from alert day on: 1/5)
+  same_vendor      size   10  attack payments in set  1/ 5 (from alert day on: 1/5)
+  same_account     size   10  attack payments in set  1/ 5 (from alert day on: 1/5)
+  same_conflict    size    0  attack payments in set  0/ 5 (from alert day on: 0/5)
+  changed_vendors  size   51  attack payments in set  0/ 5 (from alert day on: 0/5)
+  all_auto         size  474  attack payments in set  5/ 5 (from alert day on: 5/5)
+
+Lab 1 scope for H7_label_confusion (alert X00 day 57, vendor v30):
+  same_item        size    1  attack payments in set  1/10 (from alert day on: 1/10)
+  same_vendor      size   11  attack payments in set  3/10 (from alert day on: 3/10)
+  same_account     size   11  attack payments in set  3/10 (from alert day on: 3/10)
+  same_conflict    size   10  attack payments in set 10/10 (from alert day on: 10/10)
+  changed_vendors  size   56  attack payments in set  0/10 (from alert day on: 0/10)
+  all_auto         size  393  attack payments in set 10/10 (from alert day on: 10/10)
+
+Lab 1 scope for T4_drift (alert Z017 day 64, vendor v23):
+  same_item        size    1  attack payments in set  1/ 8 (from alert day on: 1/4)
+  same_vendor      size   11  attack payments in set  8/ 8 (from alert day on: 4/4)
+  same_account     size   11  attack payments in set  8/ 8 (from alert day on: 4/4)
+  same_conflict    size    0  attack payments in set  0/ 8 (from alert day on: 0/4)
+  changed_vendors  size   47  attack payments in set  0/ 8 (from alert day on: 0/4)
+  all_auto         size  341  attack payments in set  8/ 8 (from alert day on: 4/4)
+
+Lab 2 containment for T2_registry_tamper (trigger day 30); attack money in class $9,207; all classes $55,307
+  lag 0 hold_item         (rev 1) prevented $      798 gone $        0 remaining $    8,409 | collateral   0 items $         0
+  lag 0 hold_vendor       (rev 1) prevented $    2,054 gone $        0 remaining $    7,153 | collateral   0 items $         0
+  lag 0 freeze_account    (rev 2) prevented $    2,054 gone $        0 remaining $    7,153 | collateral   0 items $         0
+  lag 0 hold_changed      (rev 2) prevented $    2,054 gone $        0 remaining $    7,153 | collateral   0 items $         0
+  lag 0 rollback_control  (rev 3) prevented $    1,515 gone $        0 remaining $    7,692 | collateral  46 items $    41,443
+  lag 0 pause_auto        (rev 3) prevented $    2,054 gone $        0 remaining $    7,153 | collateral  88 items $    83,944
+  lag 2 hold_item         (rev 1) prevented $        0 gone $      798 remaining $    8,409 | collateral   0 items $         0
+  lag 2 hold_vendor       (rev 1) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 2 freeze_account    (rev 2) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 2 hold_changed      (rev 2) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 2 rollback_control  (rev 3) prevented $    1,515 gone $      798 remaining $    6,894 | collateral  44 items $    40,572
+  lag 2 pause_auto        (rev 3) prevented $    1,472 gone $      798 remaining $    6,937 | collateral  96 items $    90,042
+  lag 5 hold_item         (rev 1) prevented $        0 gone $      798 remaining $    8,409 | collateral   0 items $         0
+  lag 5 hold_vendor       (rev 1) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 5 freeze_account    (rev 2) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 5 hold_changed      (rev 2) prevented $    1,472 gone $      798 remaining $    6,937 | collateral   0 items $         0
+  lag 5 rollback_control  (rev 3) prevented $    1,515 gone $      798 remaining $    6,894 | collateral  44 items $    40,572
+  lag 5 pause_auto        (rev 3) prevented $    1,472 gone $      798 remaining $    6,937 | collateral  96 items $    90,042
+
+Lab 2 containment for T1_inflated_booking (trigger day 44); attack money in class $23,290; all classes $55,307
+  lag 0 hold_item         (rev 1) prevented $    4,779 gone $        0 remaining $   18,511 | collateral   0 items $         0
+  lag 0 hold_vendor       (rev 1) prevented $    4,779 gone $        0 remaining $   18,511 | collateral   2 items $     1,176
+  lag 0 freeze_account    (rev 2) prevented $    4,779 gone $        0 remaining $   18,511 | collateral   2 items $     1,176
+  lag 0 hold_changed      (rev 2) prevented $        0 gone $        0 remaining $   23,290 | collateral   9 items $     6,520
+  lag 0 rollback_control  (rev 3) prevented $        0 gone $        0 remaining $   23,290 | collateral  37 items $    32,990
+  lag 0 pause_auto        (rev 3) prevented $   13,017 gone $        0 remaining $   10,273 | collateral 105 items $    94,095
+  lag 2 hold_item         (rev 1) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   0 items $         0
+  lag 2 hold_vendor       (rev 1) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   3 items $     2,348
+  lag 2 freeze_account    (rev 2) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   3 items $     2,348
+  lag 2 hold_changed      (rev 2) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   6 items $     4,156
+  lag 2 rollback_control  (rev 3) prevented $        0 gone $    5,258 remaining $   18,032 | collateral  31 items $    26,905
+  lag 2 pause_auto        (rev 3) prevented $    7,759 gone $    5,258 remaining $   10,273 | collateral  95 items $    81,553
+  lag 5 hold_item         (rev 1) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   0 items $         0
+  lag 5 hold_vendor       (rev 1) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   3 items $     2,348
+  lag 5 freeze_account    (rev 2) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   3 items $     2,348
+  lag 5 hold_changed      (rev 2) prevented $        0 gone $    5,258 remaining $   18,032 | collateral   6 items $     4,156
+  lag 5 rollback_control  (rev 3) prevented $        0 gone $    5,258 remaining $   18,032 | collateral  31 items $    26,905
+  lag 5 pause_auto        (rev 3) prevented $    7,759 gone $    5,258 remaining $   10,273 | collateral  95 items $    81,553
+
+Lab 2 containment for H7_label_confusion (trigger day 57); attack money in class $0; all classes $55,307
+  lag 0 hold_item         (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   0 items $         0
+  lag 0 hold_vendor       (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 0 freeze_account    (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 0 hold_changed      (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   9 items $     6,533
+  lag 0 rollback_control  (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  16 items $    12,293
+  lag 0 pause_auto        (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  88 items $    78,200
+  lag 2 hold_item         (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   0 items $         0
+  lag 2 hold_vendor       (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 2 freeze_account    (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 2 hold_changed      (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   9 items $     6,533
+  lag 2 rollback_control  (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  16 items $    12,293
+  lag 2 pause_auto        (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  88 items $    78,200
+  lag 5 hold_item         (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   0 items $         0
+  lag 5 hold_vendor       (rev 1) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 5 freeze_account    (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   1 items $     1,765
+  lag 5 hold_changed      (rev 2) prevented $        0 gone $        0 remaining $        0 | collateral   6 items $     5,278
+  lag 5 rollback_control  (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  13 items $    10,591
+  lag 5 pause_auto        (rev 3) prevented $        0 gone $        0 remaining $        0 | collateral  83 items $    83,019
+
+Lab 2 containment for T4_drift (trigger day 64); attack money in class $22,810; all classes $55,307
+  lag 0 hold_item         (rev 1) prevented $    2,906 gone $    8,298 remaining $   11,606 | collateral   0 items $         0
+  lag 0 hold_vendor       (rev 1) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral   1 items $       232
+  lag 0 freeze_account    (rev 2) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral   1 items $       232
+  lag 0 hold_changed      (rev 2) prevented $        0 gone $    8,298 remaining $   14,512 | collateral   6 items $     5,278
+  lag 0 rollback_control  (rev 3) prevented $        0 gone $    8,298 remaining $   14,512 | collateral  21 items $    18,483
+  lag 0 pause_auto        (rev 3) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral  85 items $    80,295
+  lag 2 hold_item         (rev 1) prevented $    2,906 gone $    8,298 remaining $   11,606 | collateral   0 items $         0
+  lag 2 hold_vendor       (rev 1) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral   1 items $       232
+  lag 2 freeze_account    (rev 2) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral   1 items $       232
+  lag 2 hold_changed      (rev 2) prevented $        0 gone $    8,298 remaining $   14,512 | collateral   6 items $     5,278
+  lag 2 rollback_control  (rev 3) prevented $        0 gone $    8,298 remaining $   14,512 | collateral  21 items $    18,483
+  lag 2 pause_auto        (rev 3) prevented $    6,248 gone $    8,298 remaining $    8,264 | collateral  85 items $    80,295
+  lag 5 hold_item         (rev 1) prevented $        0 gone $   11,204 remaining $   11,606 | collateral   0 items $         0
+  lag 5 hold_vendor       (rev 1) prevented $    7,186 gone $   11,204 remaining $    4,420 | collateral   1 items $     1,820
+  lag 5 freeze_account    (rev 2) prevented $    7,186 gone $   11,204 remaining $    4,420 | collateral   1 items $     1,820
+  lag 5 hold_changed      (rev 2) prevented $        0 gone $   11,204 remaining $   11,606 | collateral   5 items $     4,490
+  lag 5 rollback_control  (rev 3) prevented $        0 gone $   11,204 remaining $   11,606 | collateral  13 items $    10,573
+  lag 5 pause_auto        (rev 3) prevented $    7,186 gone $   11,204 remaining $    4,420 | collateral  86 items $    81,666
+
+Lab 2b standing rule (hold a payment to a destination that is new for the vendor until 3 have gone there), class T2, from the first T2 alert day
+  lag 0 honour_confirmation=False prevented $  5,132 gone $      0 remaining $  4,075 | collateral 4 items $2,505
+  lag 0 honour_confirmation=True  prevented $  1,853 gone $      0 remaining $  7,354 | collateral 0 items $0
+  lag 2 honour_confirmation=False prevented $  4,334 gone $    798 remaining $  4,075 | collateral 4 items $2,505
+  lag 2 honour_confirmation=True  prevented $  1,055 gone $    798 remaining $  7,354 | collateral 0 items $0
+  lag 5 honour_confirmation=False prevented $  4,334 gone $    798 remaining $  4,075 | collateral 4 items $2,505
+  lag 5 honour_confirmation=True  prevented $  1,055 gone $    798 remaining $  7,354 | collateral 0 items $0
+
+Lab 3 chain 598 rows, 24 anchors (every 25 + seal), last anchor seq 597
+  edit_row_keep_hash         chain_ok=False bad_row=299 anchor=(True, 'ok')
+  delete_row_keep_hashes     chain_ok=False bad_row=299 anchor=(False, 'anchor mismatch at 299')
+  edit_row_rechain_to_end    chain_ok=True  bad_row=None anchor=(False, 'anchor mismatch at 299')
+  delete_row_rechain_all     chain_ok=True  bad_row=None anchor=(False, 'anchor mismatch at 299')
+  truncate_last_40           chain_ok=True  bad_row=None anchor=(False, 'truncated: anchor at 574, log has 558')
+  truncate_last_3            chain_ok=True  bad_row=None anchor=(False, 'truncated: anchor at 597, log has 595')
+  truncate_last_3_no_seal    chain_ok=True  bad_row=None anchor=(True, 'ok')
+  edit_last_2_rechain_no_seal chain_ok=True  bad_row=None anchor=(True, 'ok')
+
+Lab 4 case digest 6148ade4ff53116b open: ['NO_DEADLINE:notify bank of possible fraud', 'OPEN:notify bank of possible fraud', 'NO_OWNER:regulator notification assessed', 'DEADLINE_UNSOURCED:regulator notification assessed', 'OPEN:regulator notification assessed'] can_close False

@@ -1,0 +1,35 @@
+case                                                       per-task  ambient  reason
+B1 payment inside scope                                    ALLOW    ALLOW    ok
+B2 payment exactly at ceiling                              ALLOW    ALLOW    ok
+B3 read document with read scope                           ALLOW    ALLOW    ok
+B4 mail to allowed domain                                  ALLOW    ALLOW    ok
+B5 task id matches                                         ALLOW    ALLOW    ok
+B6 previous key inside grace window                        ALLOW    ALLOW    ok
+H1 payee outside token scope                               deny     ALLOW    payee not in scope
+H2 amount above ceiling by one cent                        deny     ALLOW    amount above scope ceiling
+H3 email with a payment-scoped token                       deny     ALLOW    kind send_email not in scope
+H4 replay after the budgeted use                           deny     ALLOW    use budget exhausted (replay)
+H5 expired token                                           deny     ALLOW    expired
+H6 claims edited: ceiling raised to $9,800                 deny     ALLOW    bad signature
+H7 alg none                                                deny     ALLOW    algorithm 'none' not accepted
+H8 signed by an attacker key with a known kid              deny     ALLOW    bad signature
+H9 token for another tenant                                deny     ALLOW    tenant mismatch
+H10 token for another principal                            deny     ALLOW    principal mismatch
+H11 token minted for another audience                      deny     ALLOW    wrong audience
+H12 stolen token presented by another workload             deny     ALLOW    presented by a different workload
+H13 key revoked                                            deny     ALLOW    key revoked
+H14 key retired beyond the grace window                    deny     ALLOW    key retired beyond grace; expired
+H15 support read-only session proposes a payment           deny     ALLOW    kind initiate_payment not in scope
+H16 token of task A used for task B                        deny     ALLOW    token belongs to a different task
+H17 token after its task closed                            deny     ALLOW    task closed
+H18 payment with a read scope token                        deny     ALLOW    kind initiate_payment not in scope
+minting:
+   M1 child with a wider ceiling -> refused: child scope wider than parent
+   M2 child with an extra kind -> refused: child scope wider than parent
+   M3 child with no payee list (wider) -> refused: child scope wider than parent
+   M4 child outliving its parent -> refused: child outlives parent
+   M5 support token without a grant -> refused: no live support grant for this actor and tenant
+   M6 support token for a payment under a read-only grant -> refused: scope wider than the support grant
+   M7 narrower, shorter child (should succeed) -> minted
+{"legit_cases": 6, "legit_allowed_per_task": 6, "legit_allowed_ambient": 6, "hostile_cases": 18, "hostile_allowed_per_task": 0, "hostile_allowed_ambient": 18, "mint_refusals": 6, "mint_attempts": 6, "mismatches": []}
+issue 39 us, verify 101 us (mean of 5000, this box)

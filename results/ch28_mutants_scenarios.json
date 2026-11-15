@@ -1,0 +1,6652 @@
+{
+ "baseline": "23 passed in 0.17s",
+ "sites": 664,
+ "seed": 28,
+ "n": 664,
+ "results": [
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 18,
+   "fn": "lint_skill",
+   "line": 80,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.8
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 42,
+   "fn": "observed_permissions",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 1.0
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 63,
+   "fn": "compute_scope",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.9
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 30,
+   "fn": "resolve",
+   "line": 29,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.9
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "attempt",
+   "line": 44,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.7
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 17,
+   "fn": "render",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.9
+  },
+  {
+   "module": "supplychain",
+   "op": "NOT",
+   "idx": 44,
+   "fn": "observed_permissions",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "defences",
+   "op": "CONST",
+   "idx": 6,
+   "fn": "compress",
+   "line": 58,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.8
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 57,
+   "fn": "__init__",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 116,
+   "fn": "verify",
+   "line": 190,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 69,
+   "fn": "dispatch",
+   "line": 143,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "refund",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "check",
+   "line": 34,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 58,
+   "fn": "undeclared",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 69,
+   "fn": "issue_scheduled",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 39,
+   "fn": "search",
+   "line": 69,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 43,
+   "fn": "observed_permissions",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "gateway",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "handle",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CONST",
+   "idx": 18,
+   "fn": "attempt",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 47,
+   "fn": "check",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "BOOL",
+   "idx": 14,
+   "fn": "check",
+   "line": 32,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 89,
+   "fn": "verify",
+   "line": 194,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 31,
+   "fn": "render",
+   "line": 98,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 85,
+   "fn": "check",
+   "line": 90,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 20,
+   "fn": "run_argv",
+   "line": 130,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 120,
+   "fn": "verify",
+   "line": 200,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "verify_with_anchors",
+   "line": 42,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 41,
+   "fn": "observed_permissions",
+   "line": 107,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "authority",
+   "op": "CMP",
+   "idx": 6,
+   "fn": "verify",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "note_change",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 44,
+   "fn": "_dispatch",
+   "line": 95,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 86,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "frame",
+   "line": 36,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 24,
+   "fn": "render",
+   "line": 96,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 36,
+   "fn": "__init__",
+   "line": 84,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 67,
+   "fn": "check",
+   "line": 92,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 43,
+   "fn": "check",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy",
+   "op": "NOT",
+   "idx": 28,
+   "fn": "check",
+   "line": 54,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 100,
+   "fn": "covers",
+   "line": 159,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 59,
+   "fn": "decide",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 100,
+   "fn": "check",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "frame",
+   "line": 35,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "CMP",
+   "idx": 45,
+   "fn": "prod_before",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 94,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 35,
+   "fn": "observed_permissions",
+   "line": 98,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 112,
+   "fn": "make_books",
+   "line": 204,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "payloads",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "lint",
+   "line": 62,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "NOT",
+   "idx": 59,
+   "fn": "export_for",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 39,
+   "fn": "classify",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 35,
+   "fn": "issue",
+   "line": 95,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 83,
+   "fn": "check",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 1,
+   "fn": "_variants",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 138,
+   "fn": "verify",
+   "line": 203,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "notice",
+   "op": "CMP",
+   "idx": 3,
+   "fn": "build_notice",
+   "line": 26,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 49,
+   "fn": "_check_policy",
+   "line": 116,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 26,
+   "fn": "__init__",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 54,
+   "fn": "_check_policy",
+   "line": 118,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 56,
+   "fn": "decide",
+   "line": 125,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 63,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 10,
+   "fn": "__init__",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CMP",
+   "idx": 5,
+   "fn": "verify",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 21,
+   "fn": "render",
+   "line": 95,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "verify",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 5,
+   "fn": "anchor_chain",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 15,
+   "fn": "check",
+   "line": 104,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 16,
+   "fn": "compute_scope",
+   "line": 60,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 123,
+   "fn": "verify",
+   "line": 201,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "BOOL",
+   "idx": 17,
+   "fn": "check",
+   "line": 29,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 28,
+   "fn": "check",
+   "line": 121,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 62,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 19,
+   "fn": "_mac",
+   "line": 13,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "toolresults",
+   "op": "CMP",
+   "idx": 15,
+   "fn": "project",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 79,
+   "fn": "__init__",
+   "line": 156,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "lint_skill",
+   "line": 71,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 3,
+   "fn": "books_from",
+   "line": 25,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "BOOL",
+   "idx": 14,
+   "fn": "mixed_script",
+   "line": 161,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 2,
+   "fn": "books_from",
+   "line": 25,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 46,
+   "fn": "_dispatch",
+   "line": 93,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 54,
+   "fn": "check",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 62,
+   "fn": "compute_scope",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 7,
+   "fn": "frame",
+   "line": 43,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 102,
+   "fn": "reach",
+   "line": 198,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 132,
+   "fn": "verify",
+   "line": 190,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "BOOL",
+   "idx": 22,
+   "fn": "resolve",
+   "line": 29,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 47,
+   "fn": "verify",
+   "line": 49,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 35,
+   "fn": "render",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 58,
+   "fn": "key",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "memory",
+   "op": "CONST",
+   "idx": 7,
+   "fn": "__post_init__",
+   "line": 19,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 61,
+   "fn": "key",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 22,
+   "fn": "render",
+   "line": 96,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 27,
+   "fn": "render",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 2,
+   "fn": "_variants",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 33,
+   "fn": "check",
+   "line": 67,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 7,
+   "fn": "egress_event",
+   "line": 150,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "BOOL",
+   "idx": 33,
+   "fn": "classify",
+   "line": 50,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 79,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 48,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 19,
+   "fn": "build",
+   "line": 56,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 49,
+   "fn": "observed_permissions",
+   "line": 95,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "BOOL",
+   "idx": 48,
+   "fn": "_dispatch",
+   "line": 93,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "alias_move",
+   "line": 83,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "check",
+   "line": 59,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 48,
+   "fn": "put",
+   "line": 104,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 31,
+   "fn": "rotate",
+   "line": 80,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "GUARD",
+   "idx": 20,
+   "fn": "check",
+   "line": 55,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "budget",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "check",
+   "line": 29,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "refund",
+   "op": "BOOL",
+   "idx": 16,
+   "fn": "check",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 85,
+   "fn": "verify",
+   "line": 189,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 27,
+   "fn": "check",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 44,
+   "fn": "visible",
+   "line": 92,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 6,
+   "fn": "frame",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 28,
+   "fn": "observed_permissions",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "GUARD",
+   "idx": 19,
+   "fn": "write",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 27,
+   "fn": "run",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 26,
+   "fn": "build",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 90,
+   "fn": "check",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 18,
+   "fn": "__init__",
+   "line": 40,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 19,
+   "fn": "check",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CONST",
+   "idx": 0,
+   "fn": "__init__",
+   "line": 17,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 109,
+   "fn": "make_books",
+   "line": 204,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CONST",
+   "idx": 0,
+   "fn": "field_hashes",
+   "line": 21,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 40,
+   "fn": "check",
+   "line": 92,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 12,
+   "fn": "frame",
+   "line": 36,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 16,
+   "fn": "rewrite_and_rehash",
+   "line": 52,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "promptrelease",
+   "op": "CONST",
+   "idx": 21,
+   "fn": "gate",
+   "line": 67,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "CMP",
+   "idx": 7,
+   "fn": "call",
+   "line": 37,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 68,
+   "fn": "issue_scheduled",
+   "line": 121,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 82,
+   "fn": "__init__",
+   "line": 170,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 81,
+   "fn": "consume",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "GUARD",
+   "idx": 37,
+   "fn": "verify",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "_depth_ok",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 33,
+   "fn": "render",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CONST",
+   "idx": 36,
+   "fn": "parse_with_retry",
+   "line": 171,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 51,
+   "fn": "_check_policy",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CMP",
+   "idx": 7,
+   "fn": "diff_manifest",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 18,
+   "fn": "strict_parse",
+   "line": 116,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 15,
+   "fn": "safe_join",
+   "line": 121,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 77,
+   "fn": "derive",
+   "line": 138,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "render",
+   "line": 51,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 70,
+   "fn": "check",
+   "line": 91,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 54,
+   "fn": "get",
+   "line": 110,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 48,
+   "fn": "observed_permissions",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "scan_tool",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "gate",
+   "line": 67,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 97,
+   "fn": "reach",
+   "line": 198,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 69,
+   "fn": "check",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 45,
+   "fn": "observed_permissions",
+   "line": 98,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "anchor_chain",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "promptrelease",
+   "op": "BOOL",
+   "idx": 15,
+   "fn": "gate",
+   "line": 72,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 48,
+   "fn": "check",
+   "line": 121,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "check",
+   "line": 36,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "tenancy",
+   "op": "CMP",
+   "idx": 20,
+   "fn": "__init__",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "CMP",
+   "idx": 1,
+   "fn": "ungated_privileged",
+   "line": 28,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "stepclass",
+   "op": "CMP",
+   "idx": 10,
+   "fn": "lint",
+   "line": 34,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 87,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 23,
+   "fn": "render",
+   "line": 96,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "BOOL",
+   "idx": 18,
+   "fn": "check",
+   "line": 54,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 30,
+   "fn": "observed_permissions",
+   "line": 104,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 5,
+   "fn": "contains_private",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 117,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 10,
+   "fn": "egress_event",
+   "line": 152,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 53,
+   "fn": "check",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "CMP",
+   "idx": 40,
+   "fn": "check",
+   "line": 67,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "policy_v02",
+   "op": "CMP",
+   "idx": 15,
+   "fn": "check",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "within",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 83,
+   "fn": "admits",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "note_change",
+   "line": 55,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "frame",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 119,
+   "fn": "verify",
+   "line": 200,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "authority",
+   "op": "CONST",
+   "idx": 1,
+   "fn": "append",
+   "line": 21,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 49,
+   "fn": "put",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 60,
+   "fn": "compute_scope",
+   "line": 89,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anatomy",
+   "op": "NOT",
+   "idx": 11,
+   "fn": "separates",
+   "line": 62,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CMP",
+   "idx": 60,
+   "fn": "verify",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 64,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "BOOL",
+   "idx": 38,
+   "fn": "check",
+   "line": 84,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 71,
+   "fn": "issue_scheduled",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 4,
+   "fn": "alias_move",
+   "line": 86,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 21,
+   "fn": "build",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 78,
+   "fn": "derive",
+   "line": 139,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 2,
+   "fn": "alias_move",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 49,
+   "fn": "check",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 103,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 57,
+   "fn": "_check_policy",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 6,
+   "fn": "egress_event",
+   "line": 150,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CONST",
+   "idx": 23,
+   "fn": "run_argv",
+   "line": 128,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy",
+   "op": "BOOL",
+   "idx": 23,
+   "fn": "check",
+   "line": 74,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 57,
+   "fn": "__init__",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "decide",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 58,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 61,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "BOOL",
+   "idx": 16,
+   "fn": "attempt",
+   "line": 59,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "RETFLIP",
+   "idx": 10,
+   "fn": "contains_private",
+   "line": 53,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 0,
+   "fn": "_variants",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CMP",
+   "idx": 33,
+   "fn": "read",
+   "line": 45,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "mcpguard",
+   "op": "BOOL",
+   "idx": 36,
+   "fn": "walk",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "frame",
+   "line": 35,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 101,
+   "fn": "check",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 88,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 40,
+   "fn": "observed_permissions",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "schema",
+   "op": "CONST",
+   "idx": 35,
+   "fn": "strict_parse",
+   "line": 138,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anatomy",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "describe",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 45,
+   "fn": "verify",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 14,
+   "fn": "rewrite_and_rehash",
+   "line": 50,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 115,
+   "fn": "verify",
+   "line": 205,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 42,
+   "fn": "render",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 41,
+   "fn": "issue",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 57,
+   "fn": "decide",
+   "line": 126,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 23,
+   "fn": "run",
+   "line": 65,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 15,
+   "fn": "lint_skill",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 93,
+   "fn": "verify",
+   "line": 199,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "authority",
+   "op": "CMP",
+   "idx": 9,
+   "fn": "attempt",
+   "line": 44,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "gateway",
+   "op": "BOOL",
+   "idx": 59,
+   "fn": "handle",
+   "line": 71,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CMP",
+   "idx": 5,
+   "fn": "destination_ok",
+   "line": 56,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 37,
+   "fn": "observed_permissions",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CMP",
+   "idx": 37,
+   "fn": "walk",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 20,
+   "fn": "build",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "CONST",
+   "idx": 41,
+   "fn": "check",
+   "line": 69,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 82,
+   "fn": "admits",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 113,
+   "fn": "verify",
+   "line": 203,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 43,
+   "fn": "render",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 52,
+   "fn": "decide",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 17,
+   "fn": "lint_skill",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 34,
+   "fn": "compute_scope",
+   "line": 75,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 23,
+   "fn": "__init__",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 20,
+   "fn": "submit",
+   "line": 15,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "NOT",
+   "idx": 57,
+   "fn": "undeclared",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "undeclared",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "render",
+   "line": 50,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 139,
+   "fn": "verify",
+   "line": 217,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 5,
+   "fn": "alias_move",
+   "line": 83,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 94,
+   "fn": "check",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "refund",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "check",
+   "line": 35,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 24,
+   "fn": "__init__",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "NOT",
+   "idx": 2,
+   "fn": "ungated_privileged",
+   "line": 28,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 90,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 9,
+   "fn": "__init__",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 60,
+   "fn": "check",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CMP",
+   "idx": 31,
+   "fn": "run",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 14,
+   "fn": "lint_skill",
+   "line": 76,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "BOOL",
+   "idx": 41,
+   "fn": "prod_before",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 99,
+   "fn": "reach",
+   "line": 200,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "RETFLIP",
+   "idx": 80,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 25,
+   "fn": "check",
+   "line": 116,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "budget",
+   "op": "CMP",
+   "idx": 4,
+   "fn": "check",
+   "line": 26,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "tenancy",
+   "op": "GUARD",
+   "idx": 58,
+   "fn": "export_for",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 77,
+   "fn": "verify",
+   "line": 132,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "budget",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "check",
+   "line": 24,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 126,
+   "fn": "verify",
+   "line": 203,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "memory",
+   "op": "BOOL",
+   "idx": 27,
+   "fn": "revoke",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 41,
+   "fn": "render",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "check",
+   "line": 39,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 63,
+   "fn": "check",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 16,
+   "fn": "check",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "check",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "CMP",
+   "idx": 9,
+   "fn": "call",
+   "line": 39,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "approval",
+   "op": "NOT",
+   "idx": 70,
+   "fn": "decide",
+   "line": 125,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 17,
+   "fn": "classify",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 68,
+   "fn": "seal",
+   "line": 134,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "CMP",
+   "idx": 16,
+   "fn": "gate",
+   "line": 66,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 39,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 21,
+   "fn": "__init__",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "build",
+   "line": 55,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 60,
+   "fn": "_check_policy",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 103,
+   "fn": "verify",
+   "line": 192,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CMP",
+   "idx": 21,
+   "fn": "write",
+   "line": 37,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 14,
+   "fn": "frame",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "steps",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "resolve_payee",
+   "line": 67,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 26,
+   "fn": "run",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 60,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 9,
+   "fn": "egress_event",
+   "line": 153,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 15,
+   "fn": "is_internal_host",
+   "line": 133,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 30,
+   "fn": "render",
+   "line": 98,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "notice",
+   "op": "CMP",
+   "idx": 2,
+   "fn": "build_notice",
+   "line": 25,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 52,
+   "fn": "get",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 43,
+   "fn": "check",
+   "line": 91,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 40,
+   "fn": "issue",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 83,
+   "fn": "verify",
+   "line": 50,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 94,
+   "fn": "mine_scope",
+   "line": 192,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 42,
+   "fn": "run",
+   "line": 81,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 63,
+   "fn": "decide",
+   "line": 122,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "stepclass",
+   "op": "CMP",
+   "idx": 14,
+   "fn": "lint",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 19,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 10,
+   "fn": "verify_with_anchors",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 11,
+   "fn": "scan_tool",
+   "line": 66,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 18,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 54,
+   "fn": "compute_scope",
+   "line": 91,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "NOT",
+   "idx": 7,
+   "fn": "verify_with_anchors",
+   "line": 38,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "moneypath",
+   "op": "CONST",
+   "idx": 0,
+   "fn": "idem_key",
+   "line": 69,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "contains_private",
+   "line": 53,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 49,
+   "fn": "decide",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "refund",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "check",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 28,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 129,
+   "fn": "request",
+   "line": 167,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 87,
+   "fn": "covers",
+   "line": 159,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 66,
+   "fn": "issue_scheduled",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 51,
+   "fn": "undeclared",
+   "line": 124,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "lint_skill",
+   "line": 81,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 29,
+   "fn": "_url_ok",
+   "line": 75,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 46,
+   "fn": "_url_ok",
+   "line": 74,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 49,
+   "fn": "check",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 107,
+   "fn": "reach",
+   "line": 201,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 34,
+   "fn": "walk",
+   "line": 66,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "get",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "BOOL",
+   "idx": 3,
+   "fn": "anchor_chain",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "budget",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "check",
+   "line": 28,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "registry",
+   "op": "BOOL",
+   "idx": 0,
+   "fn": "ungated_privileged",
+   "line": 28,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 38,
+   "fn": "observed_permissions",
+   "line": 103,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CMP",
+   "idx": 6,
+   "fn": "destination_ok",
+   "line": 56,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 80,
+   "fn": "check",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 140,
+   "fn": "verify",
+   "line": 217,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "BOOL",
+   "idx": 16,
+   "fn": "check",
+   "line": 39,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 22,
+   "fn": "anchors",
+   "line": 23,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 17,
+   "fn": "__init__",
+   "line": 40,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "memory",
+   "op": "BOOL",
+   "idx": 26,
+   "fn": "revoke",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 23,
+   "fn": "build",
+   "line": 58,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 55,
+   "fn": "decide",
+   "line": 124,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "frame",
+   "line": 33,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 26,
+   "fn": "observed_permissions",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 34,
+   "fn": "render",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 61,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "defences",
+   "op": "CONST",
+   "idx": 2,
+   "fn": "nonce_tag",
+   "line": 16,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 28,
+   "fn": "__init__",
+   "line": 43,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 18,
+   "fn": "__init__",
+   "line": 10,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 97,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CMP",
+   "idx": 28,
+   "fn": "revoke",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 26,
+   "fn": "strict_parse",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CONST",
+   "idx": 4,
+   "fn": "contains_private",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "safe_text",
+   "line": 128,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 88,
+   "fn": "verify",
+   "line": 193,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "payloads",
+   "op": "CMP",
+   "idx": 21,
+   "fn": "compare",
+   "line": 76,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "check",
+   "line": 54,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 54,
+   "fn": "check",
+   "line": 51,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "CMP",
+   "idx": 8,
+   "fn": "gate",
+   "line": 68,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "toolresults",
+   "op": "BOOL",
+   "idx": 10,
+   "fn": "project",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 26,
+   "fn": "check",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 115,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "CMP",
+   "idx": 14,
+   "fn": "scan_tool",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 48,
+   "fn": "check",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 29,
+   "fn": "observed_permissions",
+   "line": 103,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 52,
+   "fn": "_check_policy",
+   "line": 116,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 89,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 9,
+   "fn": "verify_with_anchors",
+   "line": 42,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 23,
+   "fn": "observed_permissions",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "BOOL",
+   "idx": 10,
+   "fn": "check",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 36,
+   "fn": "observed_permissions",
+   "line": 99,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "CMP",
+   "idx": 29,
+   "fn": "check",
+   "line": 54,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 124,
+   "fn": "read_untrusted",
+   "line": 144,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 75,
+   "fn": "check",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "widened",
+   "line": 37,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 98,
+   "fn": "reach",
+   "line": 200,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 5,
+   "fn": "frame",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "NOT",
+   "idx": 135,
+   "fn": "verify",
+   "line": 206,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 35,
+   "fn": "_url_ok",
+   "line": 70,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 56,
+   "fn": "get",
+   "line": 110,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 91,
+   "fn": "verify",
+   "line": 196,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "principles",
+   "op": "CMP",
+   "idx": 16,
+   "fn": "check",
+   "line": 65,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 62,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 37,
+   "fn": "run",
+   "line": 70,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 12,
+   "fn": "_depth_ok",
+   "line": 91,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 8,
+   "fn": "egress_event",
+   "line": 151,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CMP",
+   "idx": 60,
+   "fn": "export_for",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 63,
+   "fn": "check",
+   "line": 126,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 5,
+   "fn": "check",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "steps",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "due_date",
+   "line": 17,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 60,
+   "fn": "undeclared",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 55,
+   "fn": "_check_policy",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 98,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "frame",
+   "line": 34,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anatomy",
+   "op": "CONST",
+   "idx": 17,
+   "fn": "census",
+   "line": 35,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "GUARD",
+   "idx": 14,
+   "fn": "note_change",
+   "line": 59,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "promptrelease",
+   "op": "GUARD",
+   "idx": 35,
+   "fn": "rollback",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 52,
+   "fn": "undeclared",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "GUARD",
+   "idx": 5,
+   "fn": "call",
+   "line": 39,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "approval",
+   "op": "RETFLIP",
+   "idx": 93,
+   "fn": "covers",
+   "line": 159,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 102,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 72,
+   "fn": "check",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "promptrelease",
+   "op": "CMP",
+   "idx": 18,
+   "fn": "gate",
+   "line": 65,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "is_internal_host",
+   "line": 131,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "BOOL",
+   "idx": 42,
+   "fn": "prod_before",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 65,
+   "fn": "record",
+   "line": 130,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "BOOL",
+   "idx": 20,
+   "fn": "check",
+   "line": 61,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "alignment",
+   "op": "CONST",
+   "idx": 34,
+   "fn": "classify",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "CMP",
+   "idx": 9,
+   "fn": "project",
+   "line": 30,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 64,
+   "fn": "record",
+   "line": 130,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 131,
+   "fn": "request",
+   "line": 169,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 56,
+   "fn": "check",
+   "line": 116,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 82,
+   "fn": "release",
+   "line": 149,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "BOOL",
+   "idx": 61,
+   "fn": "check",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "check",
+   "line": 37,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 15,
+   "fn": "render",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "rewrite_and_rehash",
+   "line": 50,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "mcpguard",
+   "op": "CONST",
+   "idx": 24,
+   "fn": "run_argv",
+   "line": 130,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "check",
+   "line": 69,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 18,
+   "fn": "check",
+   "line": 107,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 67,
+   "fn": "seal",
+   "line": 134,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 57,
+   "fn": "compute_scope",
+   "line": 85,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "tenancy",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "get",
+   "line": 93,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 94,
+   "fn": "verify",
+   "line": 200,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 15,
+   "fn": "__init__",
+   "line": 33,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CONST",
+   "idx": 3,
+   "fn": "verify",
+   "line": 27,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 11,
+   "fn": "lint_skill",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 41,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 22,
+   "fn": "__init__",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 101,
+   "fn": "verify",
+   "line": 190,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 7,
+   "fn": "__init__",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 19,
+   "fn": "check",
+   "line": 56,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 11,
+   "fn": "_depth_ok",
+   "line": 96,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy_v02",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "check",
+   "line": 36,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 101,
+   "fn": "reach",
+   "line": 198,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "_ks",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 8,
+   "fn": "frame",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 41,
+   "fn": "run",
+   "line": 87,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CMP",
+   "idx": 36,
+   "fn": "run",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 39,
+   "fn": "run",
+   "line": 72,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "refund",
+   "op": "BOOL",
+   "idx": 12,
+   "fn": "check",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 49,
+   "fn": "get",
+   "line": 107,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 56,
+   "fn": "_check_policy",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 19,
+   "fn": "is_internal_host",
+   "line": 132,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 35,
+   "fn": "walk",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "architecture",
+   "op": "CMP",
+   "idx": 1,
+   "fn": "run",
+   "line": 60,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "BOOL",
+   "idx": 8,
+   "fn": "call",
+   "line": 39,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 119,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "notice",
+   "op": "BOOL",
+   "idx": 0,
+   "fn": "build_notice",
+   "line": 27,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "policy_v02",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "check",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "check",
+   "line": 61,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 76,
+   "fn": "check",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 35,
+   "fn": "signing",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "CMP",
+   "idx": 6,
+   "fn": "call",
+   "line": 35,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 112,
+   "fn": "verify",
+   "line": 202,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "BOOL",
+   "idx": 23,
+   "fn": "revoke",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 83,
+   "fn": "verify",
+   "line": 183,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 27,
+   "fn": "build",
+   "line": 56,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 17,
+   "fn": "check",
+   "line": 106,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "BOOL",
+   "idx": 71,
+   "fn": "dispatch",
+   "line": 143,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 38,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 47,
+   "fn": "observed_permissions",
+   "line": 104,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 48,
+   "fn": "_url_ok",
+   "line": 75,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 118,
+   "fn": "verify",
+   "line": 196,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy_v02",
+   "op": "CMP",
+   "idx": 5,
+   "fn": "check",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 48,
+   "fn": "_check_policy",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 8,
+   "fn": "__init__",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy_v02",
+   "op": "NOT",
+   "idx": 13,
+   "fn": "check",
+   "line": 21,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "budget",
+   "op": "CMP",
+   "idx": 13,
+   "fn": "check",
+   "line": 29,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "authority",
+   "op": "BOOL",
+   "idx": 4,
+   "fn": "verify",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 69,
+   "fn": "check",
+   "line": 91,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 93,
+   "fn": "mine_scope",
+   "line": 190,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 47,
+   "fn": "_ks",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "refund",
+   "op": "CMP",
+   "idx": 13,
+   "fn": "check",
+   "line": 39,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anatomy",
+   "op": "BOOL",
+   "idx": 16,
+   "fn": "census",
+   "line": 33,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 47,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "BOOL",
+   "idx": 7,
+   "fn": "project",
+   "line": 30,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 35,
+   "fn": "compute_scope",
+   "line": 77,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 99,
+   "fn": "covers",
+   "line": 159,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 58,
+   "fn": "decide",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "refund",
+   "op": "GUARD",
+   "idx": 5,
+   "fn": "check",
+   "line": 39,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 1,
+   "fn": "books_from",
+   "line": 24,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 57,
+   "fn": "check",
+   "line": 126,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 36,
+   "fn": "render",
+   "line": 101,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "RETFLIP",
+   "idx": 69,
+   "fn": "admits",
+   "line": 115,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 70,
+   "fn": "issue_scheduled",
+   "line": 124,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CMP",
+   "idx": 63,
+   "fn": "issue",
+   "line": 151,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "NOT",
+   "idx": 86,
+   "fn": "check",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 122,
+   "fn": "read_untrusted",
+   "line": 139,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 62,
+   "fn": "pseudonym",
+   "line": 124,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 64,
+   "fn": "decide",
+   "line": 124,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "verify",
+   "line": 49,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 19,
+   "fn": "strict_parse",
+   "line": 125,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 72,
+   "fn": "derive",
+   "line": 134,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "memory",
+   "op": "CONST",
+   "idx": 8,
+   "fn": "__init__",
+   "line": 22,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 33,
+   "fn": "walk",
+   "line": 62,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "GUARD",
+   "idx": 39,
+   "fn": "verify",
+   "line": 49,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 138,
+   "fn": "request",
+   "line": 172,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 113,
+   "fn": "make_books",
+   "line": 214,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CONST",
+   "idx": 7,
+   "fn": "verify",
+   "line": 30,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "_depth_ok",
+   "line": 89,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 118,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 101,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 22,
+   "fn": "build",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 53,
+   "fn": "get",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 77,
+   "fn": "check",
+   "line": 90,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 110,
+   "fn": "make_books",
+   "line": 204,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 123,
+   "fn": "read_untrusted",
+   "line": 142,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "RETFLIP",
+   "idx": 89,
+   "fn": "covers",
+   "line": 161,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 77,
+   "fn": "admits",
+   "line": 111,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "registry",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "call",
+   "line": 37,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "attempt",
+   "line": 46,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 75,
+   "fn": "admits",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 13,
+   "fn": "_depth_ok",
+   "line": 95,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CMP",
+   "idx": 4,
+   "fn": "anchor_chain",
+   "line": 32,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 38,
+   "fn": "check",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "attempt",
+   "line": 46,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "notice",
+   "op": "CMP",
+   "idx": 1,
+   "fn": "build_notice",
+   "line": 24,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 81,
+   "fn": "check",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 6,
+   "fn": "verify_with_anchors",
+   "line": 38,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 139,
+   "fn": "request",
+   "line": 172,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anatomy",
+   "op": "NOT",
+   "idx": 13,
+   "fn": "separates",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 12,
+   "fn": "attempt",
+   "line": 48,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 81,
+   "fn": "admits",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "BOOL",
+   "idx": 17,
+   "fn": "__init__",
+   "line": 10,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 24,
+   "fn": "_url_ok",
+   "line": 66,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "BOOL",
+   "idx": 35,
+   "fn": "run",
+   "line": 72,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 36,
+   "fn": "signing",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 61,
+   "fn": "undeclared",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "BOOL",
+   "idx": 17,
+   "fn": "attempt",
+   "line": 54,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 67,
+   "fn": "issue_scheduled",
+   "line": 124,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 21,
+   "fn": "anchors",
+   "line": 23,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "gateway",
+   "op": "GUARD",
+   "idx": 9,
+   "fn": "inventory",
+   "line": 99,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "GUARD",
+   "idx": 40,
+   "fn": "prod_before",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 58,
+   "fn": "_check_policy",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "BOOL",
+   "idx": 19,
+   "fn": "note_change",
+   "line": 55,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 92,
+   "fn": "covers",
+   "line": 159,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "CONST",
+   "idx": 34,
+   "fn": "read",
+   "line": 45,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 90,
+   "fn": "admits",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 61,
+   "fn": "decide",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 16,
+   "fn": "is_internal_host",
+   "line": 126,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "canonical",
+   "line": 21,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 6,
+   "fn": "__init__",
+   "line": 47,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 53,
+   "fn": "undeclared",
+   "line": 120,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "budget",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "check",
+   "line": 26,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "identity",
+   "op": "RETFLIP",
+   "idx": 9,
+   "fn": "within",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 27,
+   "fn": "__init__",
+   "line": 41,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "GUARD",
+   "idx": 21,
+   "fn": "check",
+   "line": 65,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 25,
+   "fn": "observed_permissions",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "project",
+   "line": 30,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 14,
+   "fn": "is_internal_host",
+   "line": 132,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CONST",
+   "idx": 48,
+   "fn": "verify",
+   "line": 49,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "policy",
+   "op": "CMP",
+   "idx": 34,
+   "fn": "check",
+   "line": 69,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "reconcile",
+   "op": "CONST",
+   "idx": 40,
+   "fn": "run",
+   "line": 81,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "observed_permissions",
+   "line": 99,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 32,
+   "fn": "render",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 15,
+   "fn": "rewrite_and_rehash",
+   "line": 52,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "NOT",
+   "idx": 97,
+   "fn": "check",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 5,
+   "fn": "egress_event",
+   "line": 151,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 105,
+   "fn": "reach",
+   "line": 201,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "NOT",
+   "idx": 25,
+   "fn": "build",
+   "line": 58,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "verify_with_anchors",
+   "line": 41,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 20,
+   "fn": "render",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 55,
+   "fn": "get",
+   "line": 110,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 76,
+   "fn": "admits",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 30,
+   "fn": "rotate",
+   "line": 82,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "stepclass",
+   "op": "CMP",
+   "idx": 18,
+   "fn": "lint",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "policy",
+   "op": "CONST",
+   "idx": 43,
+   "fn": "evidence",
+   "line": 87,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 91,
+   "fn": "check",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 16,
+   "fn": "within",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 114,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 6,
+   "fn": "contains_private",
+   "line": 53,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 44,
+   "fn": "render",
+   "line": 108,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 29,
+   "fn": "__init__",
+   "line": 74,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "payloads",
+   "op": "CMP",
+   "idx": 17,
+   "fn": "compare",
+   "line": 75,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 21,
+   "fn": "observed_permissions",
+   "line": 89,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 74,
+   "fn": "derive",
+   "line": 138,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "stepclass",
+   "op": "NOT",
+   "idx": 16,
+   "fn": "lint",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "RETFLIP",
+   "idx": 18,
+   "fn": "is_internal_host",
+   "line": 131,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "defences",
+   "op": "CONST",
+   "idx": 1,
+   "fn": "nonce_tag",
+   "line": 16,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 96,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 10,
+   "fn": "frame",
+   "line": 34,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 25,
+   "fn": "strict_parse",
+   "line": 140,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 39,
+   "fn": "check",
+   "line": 31,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 69,
+   "fn": "decide",
+   "line": 124,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "anchor",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "anchor_chain",
+   "line": 32,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 1,
+   "fn": "host_only",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "NOT",
+   "idx": 99,
+   "fn": "check",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "CMP",
+   "idx": 14,
+   "fn": "attempt",
+   "line": 49,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "_depth_ok",
+   "line": 92,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 92,
+   "fn": "verify",
+   "line": 197,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "GUARD",
+   "idx": 66,
+   "fn": "seal",
+   "line": 134,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 16,
+   "fn": "__init__",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 88,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 13,
+   "fn": "attempt",
+   "line": 49,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "policy_v02",
+   "op": "GUARD",
+   "idx": 6,
+   "fn": "check",
+   "line": 33,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "registry",
+   "op": "GUARD",
+   "idx": 3,
+   "fn": "call",
+   "line": 35,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "gate",
+   "line": 70,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "NOT",
+   "idx": 47,
+   "fn": "_url_ok",
+   "line": 75,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CMP",
+   "idx": 108,
+   "fn": "reach",
+   "line": 202,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "GUARD",
+   "idx": 10,
+   "fn": "scan_tool",
+   "line": 62,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 73,
+   "fn": "verify",
+   "line": 132,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "steps",
+   "op": "GUARD",
+   "idx": 8,
+   "fn": "parse_amount_due",
+   "line": 51,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 31,
+   "fn": "observed_permissions",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "check",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 21,
+   "fn": "compute_scope",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "issue",
+   "line": 100,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 31,
+   "fn": "strict_parse",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 31,
+   "fn": "classify",
+   "line": 61,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "budget",
+   "op": "CMP",
+   "idx": 11,
+   "fn": "check",
+   "line": 28,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 9,
+   "fn": "lint_skill",
+   "line": 72,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 96,
+   "fn": "verify",
+   "line": 202,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "GUARD",
+   "idx": 80,
+   "fn": "release",
+   "line": 142,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 56,
+   "fn": "_url_ok",
+   "line": 78,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "authority",
+   "op": "GUARD",
+   "idx": 15,
+   "fn": "attempt",
+   "line": 53,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 98,
+   "fn": "check",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "GUARD",
+   "idx": 11,
+   "fn": "project",
+   "line": 32,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 32,
+   "fn": "strict_parse",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 23,
+   "fn": "strict_parse",
+   "line": 135,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 65,
+   "fn": "check",
+   "line": 89,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 125,
+   "fn": "verify",
+   "line": 202,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 27,
+   "fn": "classify",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 1,
+   "fn": "_depth_ok",
+   "line": 88,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "BOOL",
+   "idx": 24,
+   "fn": "build",
+   "line": 57,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "RETFLIP",
+   "idx": 20,
+   "fn": "is_internal_host",
+   "line": 132,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 84,
+   "fn": "verify",
+   "line": 185,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "CMP",
+   "idx": 62,
+   "fn": "check",
+   "line": 63,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "RETFLIP",
+   "idx": 95,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 16,
+   "fn": "render",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 65,
+   "fn": "dispatch",
+   "line": 139,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 71,
+   "fn": "export",
+   "line": 141,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CMP",
+   "idx": 104,
+   "fn": "covers",
+   "line": 160,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 116,
+   "fn": "make_books",
+   "line": 213,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 68,
+   "fn": "admits",
+   "line": 113,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "stepclass",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "lint",
+   "line": 42,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.6
+  },
+  {
+   "module": "evidence",
+   "op": "CONST",
+   "idx": 60,
+   "fn": "key",
+   "line": 119,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 1,
+   "fn": "anchor_chain",
+   "line": 27,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 124,
+   "fn": "verify",
+   "line": 202,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 52,
+   "fn": "check",
+   "line": 55,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 71,
+   "fn": "decide",
+   "line": 127,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.7
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 34,
+   "fn": "issue",
+   "line": 107,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 27,
+   "fn": "strict_parse",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 86,
+   "fn": "verify",
+   "line": 191,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 27,
+   "fn": "_url_ok",
+   "line": 70,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "RETFLIP",
+   "idx": 84,
+   "fn": "admits",
+   "line": 114,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 49,
+   "fn": "compute_scope",
+   "line": 88,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "moneypath",
+   "op": "GUARD",
+   "idx": 29,
+   "fn": "check",
+   "line": 123,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "BOOL",
+   "idx": 12,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 27,
+   "fn": "resolve",
+   "line": 29,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "memory",
+   "op": "BOOL",
+   "idx": 4,
+   "fn": "destination_ok",
+   "line": 56,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 33,
+   "fn": "observed_permissions",
+   "line": 109,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "tenancy",
+   "op": "CONST",
+   "idx": 19,
+   "fn": "__init__",
+   "line": 40,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 4,
+   "fn": "__init__",
+   "line": 71,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "refund",
+   "op": "GUARD",
+   "idx": 4,
+   "fn": "check",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 21,
+   "fn": "is_internal_host",
+   "line": 133,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 25,
+   "fn": "render",
+   "line": 96,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "RETFLIP",
+   "idx": 91,
+   "fn": "covers",
+   "line": 158,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CMP",
+   "idx": 133,
+   "fn": "verify",
+   "line": 190,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "schema",
+   "op": "GUARD",
+   "idx": 50,
+   "fn": "check",
+   "line": 50,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 26,
+   "fn": "render",
+   "line": 97,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "GUARD",
+   "idx": 93,
+   "fn": "check",
+   "line": 105,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "gateway",
+   "op": "CMP",
+   "idx": 58,
+   "fn": "handle",
+   "line": 66,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 92,
+   "fn": "mine_scope",
+   "line": 189,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "anchor",
+   "op": "CONST",
+   "idx": 13,
+   "fn": "rewrite_and_rehash",
+   "line": 47,
+   "outcome": "killed",
+   "killer": "scenarios/test_scenarios.py",
+   "secs": 0.4
+  },
+  {
+   "module": "supplychain",
+   "op": "BOOL",
+   "idx": 39,
+   "fn": "observed_permissions",
+   "line": 104,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "BOOL",
+   "idx": 17,
+   "fn": "is_internal_host",
+   "line": 131,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "egress",
+   "op": "CMP",
+   "idx": 57,
+   "fn": "_url_ok",
+   "line": 67,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "mcpguard",
+   "op": "BOOL",
+   "idx": 13,
+   "fn": "scan_tool",
+   "line": 64,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 128,
+   "fn": "verify",
+   "line": 206,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 13,
+   "fn": "frame",
+   "line": 37,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "toolresults",
+   "op": "GUARD",
+   "idx": 0,
+   "fn": "project",
+   "line": 27,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "stepclass",
+   "op": "GUARD",
+   "idx": 2,
+   "fn": "lint",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 45,
+   "fn": "last_seq",
+   "line": 94,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "GUARD",
+   "idx": 53,
+   "fn": "_check_policy",
+   "line": 118,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 24,
+   "fn": "observed_permissions",
+   "line": 100,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "promptrelease",
+   "op": "CMP",
+   "idx": 46,
+   "fn": "prod_before",
+   "line": 38,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "GUARD",
+   "idx": 45,
+   "fn": "wilson",
+   "line": 68,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 9,
+   "fn": "frame",
+   "line": 33,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "BOOL",
+   "idx": 61,
+   "fn": "compute_scope",
+   "line": 90,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "CONST",
+   "idx": 65,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 42,
+   "fn": "issue",
+   "line": 100,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 15,
+   "fn": "frame",
+   "line": 43,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "evidence",
+   "op": "CMP",
+   "idx": 51,
+   "fn": "get",
+   "line": 107,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "approval",
+   "op": "CONST",
+   "idx": 29,
+   "fn": "render",
+   "line": 102,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "GUARD",
+   "idx": 74,
+   "fn": "admits",
+   "line": 112,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "supplychain",
+   "op": "GUARD",
+   "idx": 55,
+   "fn": "undeclared",
+   "line": 118,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "identity",
+   "op": "BOOL",
+   "idx": 59,
+   "fn": "_check_policy",
+   "line": 117,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "runtime_scope",
+   "op": "CONST",
+   "idx": 111,
+   "fn": "make_books",
+   "line": 204,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  },
+  {
+   "module": "alignment",
+   "op": "CMP",
+   "idx": 28,
+   "fn": "classify",
+   "line": 52,
+   "outcome": "survived",
+   "killer": null,
+   "secs": 0.5
+  }
+ ],
+ "summary": {
+  "survived": 575,
+  "killed": 89
+ }
+}

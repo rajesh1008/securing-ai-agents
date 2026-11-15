@@ -1,0 +1,67 @@
+{
+ "inventory": {
+  "claude-haiku-4-5-20251001": {
+   "count": 59,
+   "files": 50,
+   "class": "APPROVED_ID"
+  }
+ },
+ "probes": [
+  [
+   "claude-3-haiku-20240307",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-3-5-haiku-20241022",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-2.1",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-3-opus-20240229",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-sonnet-4-5-20250929",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-sonnet-4-5",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ],
+  [
+   "claude-haiku-4-5",
+   "OK",
+   "claude-haiku-4-5-20251001"
+  ],
+  [
+   "no-such-model",
+   "404 NotFoundError",
+   "no hint of a successor"
+  ]
+ ],
+ "served": [
+  "claude-fable-5-2",
+  "claude-haiku-5-5",
+  "claude-sonnet-5-5",
+  "claude-opus-5-5",
+  "claude-fable-5-1",
+  "claude-opus-5",
+  "claude-sonnet-5",
+  "claude-fable-5",
+  "claude-opus-4-8",
+  "claude-opus-4-7",
+  "claude-sonnet-4-6",
+  "claude-opus-4-6",
+  "claude-opus-4-5-20251101",
+  "claude-haiku-4-5-20251001"
+ ]
+}

@@ -1,0 +1,194 @@
+{
+ "counts": {
+  "benign": 1200,
+  "structuring": 120,
+  "benign_recurring": 120,
+  "bank_change": 60,
+  "amount_mismatch": 60,
+  "benign_seed": 60,
+  "new_payee": 40,
+  "benign_burst": 55,
+  "legit_bank_change": 16,
+  "dup_resent": 60,
+  "benign_after_change": 35
+ },
+ "designs": {
+  "A": {
+   "outcomes": {
+    "benign": {
+     "ALLOW": 1200
+    },
+    "structuring": {
+     "ALLOW": 120
+    },
+    "benign_recurring": {
+     "ALLOW": 120
+    },
+    "bank_change": {
+     "ALLOW": 60
+    },
+    "amount_mismatch": {
+     "ALLOW": 60
+    },
+    "benign_seed": {
+     "ALLOW": 60
+    },
+    "new_payee": {
+     "ALLOW": 40
+    },
+    "benign_burst": {
+     "ALLOW": 55
+    },
+    "dup_resent": {
+     "ALLOW": 60
+    },
+    "benign_after_change": {
+     "ALLOW": 35
+    }
+   },
+   "cents_moved": {
+    "benign": 201683600,
+    "structuring": 22260000,
+    "benign_recurring": 4957400,
+    "bank_change": 6090400,
+    "amount_mismatch": 986900,
+    "benign_seed": 5849700,
+    "new_payee": 6437400,
+    "benign_burst": 2794600,
+    "dup_resent": 5849700,
+    "benign_after_change": 2303800
+   },
+   "to_mule": {
+    "bank_change": 60,
+    "benign": 715,
+    "structuring": 64,
+    "benign_burst": 34,
+    "amount_mismatch": 38,
+    "benign_recurring": 70,
+    "benign_after_change": 6,
+    "dup_resent": 33,
+    "benign_seed": 29
+   },
+   "reasons": {},
+   "released": {}
+  },
+  "B": {
+   "outcomes": {
+    "benign": {
+     "ALLOW": 1153,
+     "HOLD": 47
+    },
+    "structuring": {
+     "ALLOW": 61,
+     "HOLD": 59
+    },
+    "benign_recurring": {
+     "ALLOW": 56,
+     "HOLD": 64
+    },
+    "bank_change": {
+     "HOLD": 60
+    },
+    "amount_mismatch": {
+     "HOLD": 60
+    },
+    "benign_seed": {
+     "ALLOW": 53,
+     "HOLD": 7
+    },
+    "new_payee": {
+     "HOLD": 40
+    },
+    "benign_burst": {
+     "ALLOW": 47,
+     "HOLD": 8
+    },
+    "dup_resent": {
+     "HOLD": 60
+    },
+    "benign_after_change": {
+     "HOLD": 8,
+     "ALLOW": 27
+    }
+   },
+   "cents_moved": {
+    "benign": 191261700,
+    "structuring": 11398000,
+    "benign_recurring": 2320400,
+    "benign_seed": 5132400,
+    "benign_burst": 2450700,
+    "benign_after_change": 1754800
+   },
+   "to_mule": {},
+   "reasons": {
+    "benign": {
+     "ok": 1153,
+     "M5_payee_daily_cents": 21,
+     "M5_payee_daily_count": 9,
+     "M4_account_not_yet_seasoned": 21,
+     "M7_likely_duplicate": 2,
+     "M5_tenant_daily_cap": 1
+    },
+    "structuring": {
+     "ok": 61,
+     "M5_payee_daily_count": 40,
+     "M5_payee_daily_cents": 31,
+     "M7_likely_duplicate": 13,
+     "M5_tenant_daily_cap": 4
+    },
+    "benign_recurring": {
+     "ok": 56,
+     "M7_likely_duplicate": 60,
+     "M4_account_not_yet_seasoned": 4,
+     "M5_payee_daily_count": 6,
+     "M5_payee_daily_cents": 2
+    },
+    "bank_change": {
+     "M4_bank_change_pending": 60,
+     "M5_payee_daily_count": 1,
+     "M5_tenant_daily_cap": 1,
+     "M4_account_not_yet_seasoned": 1
+    },
+    "amount_mismatch": {
+     "M3_document_amount_differs_from_books": 60,
+     "M5_payee_daily_count": 3,
+     "M4_bank_change_pending": 1
+    },
+    "benign_seed": {
+     "ok": 53,
+     "M4_account_not_yet_seasoned": 2,
+     "M5_tenant_daily_cap": 2,
+     "M5_payee_daily_count": 2,
+     "M5_payee_daily_cents": 1
+    },
+    "new_payee": {
+     "M6_new_payee": 40,
+     "M8_dual_control_missing": 7
+    },
+    "benign_burst": {
+     "ok": 47,
+     "M5_tenant_daily_cap": 5,
+     "M5_payee_daily_count": 4
+    },
+    "dup_resent": {
+     "M7_likely_duplicate": 60,
+     "M4_bank_change_pending": 3,
+     "M5_payee_daily_count": 3
+    },
+    "benign_after_change": {
+     "M5_tenant_daily_cap": 4,
+     "M4_bank_change_pending": 4,
+     "ok": 27,
+     "M4_account_not_yet_seasoned": 1
+    }
+   },
+   "released": {
+    "benign": 47,
+    "benign_recurring": 64,
+    "benign_seed": 7,
+    "benign_burst": 8,
+    "benign_after_change": 8
+   }
+  }
+ }
+}

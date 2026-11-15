@@ -1,0 +1,3 @@
+V9_thought     calls 120 per-call rate 0.467 | documents: always 5, never 7, mixed 3 | P(at least one of k tries) k=1 0.47 k=2 0.49 k=4 0.51 k=8 0.53
+V10_addressed  calls 120 per-call rate 0.900 | documents: always 13, never 1, mixed 1 | P(at least one of k tries) k=1 0.90 k=2 0.92 k=4 0.93 k=8 0.93
+V11_principal  calls 120 per-call rate 0.925 | documents: always 13, never 0, mixed 2 | P(at least one of k tries) k=1 0.93 k=2 0.95 k=4 0.98 k=8 0.99

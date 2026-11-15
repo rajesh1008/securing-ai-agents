@@ -1,0 +1,50 @@
+DRAFT: 59 issues without the deputy check, 71 with it; JOB_PERSON_NOT_A_PERSON 27, NO_DEPUTY 12, SELF_APPROVAL 8, NO_TIMEOUT_RULE 7, NO_DEADLINE 6, ACCOUNTABLE_NOT_A_PERSON 3, SILENT_TIMEOUT 3, CONTROL_OWNER_OUTSIDE 2, BAD_ESCALATION 1, SHARED_ACCOUNTABLE 1, CONCENTRATION 1
+   ACCOUNTABLE_NOT_A_PERSON   D01:security
+   SELF_APPROVAL              D02:Kevin
+   NO_DEADLINE                D02
+   NO_TIMEOUT_RULE            D02
+   SELF_APPROVAL              D03:Emily
+   SILENT_TIMEOUT             D03
+   SELF_APPROVAL              D04:Emily
+   NO_DEADLINE                D04
+   NO_TIMEOUT_RULE            D04
+   SELF_APPROVAL              D05:Kevin
+   NO_DEADLINE                D05
+   NO_TIMEOUT_RULE            D05
+   SELF_APPROVAL              D06:Sophie
+   NO_DEADLINE                D06
+   NO_TIMEOUT_RULE            D06
+   SELF_APPROVAL              D07:Sophie
+   SILENT_TIMEOUT             D07
+   BAD_ESCALATION             D09:Ian
+   SHARED_ACCOUNTABLE         D10
+   ACCOUNTABLE_NOT_A_PERSON   D10:Ian, Sophie
+   ACCOUNTABLE_NOT_A_PERSON   D11:security
+   SELF_APPROVAL              D12:Kevin
+   SILENT_TIMEOUT             D12
+   NO_TIMEOUT_RULE            D13
+   NO_DEADLINE                D14
+   NO_TIMEOUT_RULE            D14
+   SELF_APPROVAL              D15:Kevin
+   NO_DEADLINE                D15
+   NO_TIMEOUT_RULE            D15
+   CONTROL_OWNER_OUTSIDE      C07:Nina
+   CONTROL_OWNER_OUTSIDE      C19:Nina
+   CONCENTRATION              Kevin:15
+   (27 JOB_PERSON_NOT_A_PERSON: jobs owned or backed up by 'security'; 12 NO_DEPUTY, listed in the json)
+REV1: 1 issues without the deputy check, 16 with it; NO_DEPUTY 15, CONCENTRATION 1
+   CONCENTRATION Kevin:13
+REV2: 0 issues without the deputy check, 15 with it; NO_DEPUTY 15
+REVISED: 0 issues without the deputy check, 0 with it; 
+REVISED accountable decisions plus owned controls: Rajesh 8, Kevin 8, Ian 7, Emily 7, Sophie 4, Maya 1 (concentration line 8)
+depart Rajesh from REV2   : decisions with nobody to take them 6 ['D02', 'D03', 'D04', 'D07', 'D11', 'D12']; to deputy 0; controls needing a new owner 2 ['C05', 'C19']; jobs to backup 10; jobs orphaned 0
+depart Rajesh from REVISED: decisions with nobody to take them 0 []; to deputy 6; controls needing a new owner 2 ['C05', 'C19']; jobs to backup 10; jobs orphaned 0
+depart Kevin  from REV2   : decisions with nobody to take them 1 ['D08']; to deputy 0; controls needing a new owner 7 ['C03', 'C04', 'C06', 'C11', 'C15', 'C18', 'C20']; jobs to backup 15; jobs orphaned 0
+depart Kevin  from REVISED: decisions with nobody to take them 0 []; to deputy 1; controls needing a new owner 7 ['C03', 'C04', 'C06', 'C11', 'C15', 'C18', 'C20']; jobs to backup 15; jobs orphaned 0
+depart Ian    from REV2   : decisions with nobody to take them 5 ['D01', 'D06', 'D09', 'D10', 'D15']; to deputy 0; controls needing a new owner 2 ['C12', 'C13']; jobs to backup 1; jobs orphaned 0
+depart Ian    from REVISED: decisions with nobody to take them 0 []; to deputy 5; controls needing a new owner 2 ['C12', 'C13']; jobs to backup 1; jobs orphaned 0
+deputy load in REVISED: Daniel 6, Ian 6, Rajesh 3
+route(D05) -> ('Emily', True)
+route(D07) -> ('Rajesh', True)
+route(D12) -> ('Rajesh', True)
+route(ZZ) -> ('Ian', True)

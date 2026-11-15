@@ -1,0 +1,160 @@
+{
+ "events": 1380,
+ "score": {
+  "A": 4,
+  "B": 3,
+  "C": 13
+ },
+ "questions": {
+  "Q1 delivered outputs by destination host": {
+   "truth": "{'app.ledgerly.example': 463, 'hajek-supply.example': 88, 'lonestar-paper.example': 382, 'zilker-packaging.example': 179, 'cdn.ledgerly.example': 123, 'kerbey-lumber.example': 60, 'track.lonestar-pay.",
+   "A": "{'app.ledgerly.example': 463, 'hajek-supply.example': 88, 'lonestar-paper.example': 382, 'zilker-packaging.example': 179, 'cdn.ledgerly.example': 123, 'kerbey-lumber.example': 60, 'track.lonestar-pay.",
+   "B": "None",
+   "C": "{'app.ledgerly.example': 463, 'lonestar-paper.example': 382, 'cdn.ledgerly.example': 123, 'zilker-packaging.example': 179, 'kerbey-lumber.example': 60, 'track.lonestar-pay.example': 14, 'hajek-supply.",
+   "ok": {
+    "A": true,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q2 refusals by reason code": {
+   "truth": "{}",
+   "A": "{}",
+   "B": "{}",
+   "C": "{}",
+   "ok": {
+    "A": true,
+    "B": true,
+    "C": true
+   }
+  },
+  "Q3 policy and level in force when the pixel was delivered": {
+   "truth": "[('v0.12', 0)]",
+   "A": "None",
+   "B": "[('v0.12', None)]",
+   "C": "[('v0.12', 0)]",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q4 outputs the renderer altered": {
+   "truth": "217",
+   "A": "None",
+   "B": "None",
+   "C": "217",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q5 canary hits": {
+   "truth": "3",
+   "A": "3",
+   "B": "None",
+   "C": "3",
+   "ok": {
+    "A": true,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q6 first day the pixel was delivered": {
+   "truth": "5",
+   "A": "5",
+   "B": "None",
+   "C": "5",
+   "ok": {
+    "A": true,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q7 events where a private value left (count)": {
+   "truth": "11",
+   "A": "14",
+   "B": "None",
+   "C": "11",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q8 who approved payment 4 of biz_hcb, how fast, and the effect they saw": {
+   "truth": "('emily', 21605, '4a4e47c0bd873bdce364b4542f9b3648f7fb1d786ca3f0525e424258d80864c2')",
+   "A": "('emily', None, None)",
+   "B": "None",
+   "C": "('emily', 21605, '4a4e47c0bd873bdce364b4542f9b3648f7fb1d786ca3f0525e424258d80864c2')",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q9 staff reads of biz_hcb with no grant": {
+   "truth": "['support_lee']",
+   "A": "None",
+   "B": "None",
+   "C": "['support_lee']",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q10 tenant verifies its own events from an export with no foreign rows": {
+   "truth": "True",
+   "A": "False",
+   "B": "False",
+   "C": "True",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  },
+  "Q11 a deleted pixel delivery is detected": {
+   "truth": "True",
+   "A": "False",
+   "B": "True",
+   "C": "True",
+   "ok": {
+    "A": false,
+    "B": true,
+    "C": true
+   }
+  },
+  "Q12 the log holds no private value (rows that do)": {
+   "truth": "0",
+   "A": "14",
+   "B": "0",
+   "C": "0",
+   "ok": {
+    "A": false,
+    "B": true,
+    "C": true
+   }
+  },
+  "Q13 replay the stored pixel output at today's policy (E4)": {
+   "truth": "(True, 'ok')",
+   "A": "None",
+   "B": "None",
+   "C": "(True, 'ok')",
+   "ok": {
+    "A": false,
+    "B": false,
+    "C": true
+   }
+  }
+ },
+ "bytes_per_event": {
+  "A": 121.47753623188406,
+  "B": 258.4304347826087,
+  "C": 555.4869565217391,
+  "store": 157.32463768115943
+ },
+ "verify_ms": 14.368140997248702
+}

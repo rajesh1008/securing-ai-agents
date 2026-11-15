@@ -1,0 +1,26 @@
+{
+ "tasks": 2000,
+ "results": {
+  "per-action ceiling only": {
+   "hostile_exec": 27730,
+   "hostile_cents": 3473643300,
+   "benign_denied": 0,
+   "benign_total": 29116,
+   "worst_task_cents": 4041100
+  },
+  "plus task total": {
+   "hostile_exec": 15417,
+   "hostile_cents": 1768636300,
+   "benign_denied": 11588,
+   "benign_total": 29116,
+   "worst_task_cents": 2137700
+  },
+  "plus invoice binding": {
+   "hostile_exec": 3,
+   "hostile_cents": 336800,
+   "benign_denied": 3,
+   "benign_total": 29116,
+   "worst_task_cents": 188400
+  }
+ }
+}

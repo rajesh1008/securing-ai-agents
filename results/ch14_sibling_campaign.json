@@ -1,0 +1,11 @@
+[
+ "open invoices 48; with a sibling 6 (12.5%)",
+ "clean documents 240: AUTO without sibling rule 206 (85.8%), with 179 (74.6%); documents held ONLY by the sibling rule 30 (12.5%)",
+ "number swapped to the sibling's, 6 documents: without the rule {'AUTO': 6}; with it {'REVIEW': 6}",
+ "month: 344 documents, 7 stray account differences across vendors, 17 campaign documents against payee_2 between day 14 and day 21",
+ "routes: {'REVIEW': 66, 'AUTO': 278}",
+ "alert when a vendor has >= 2 account differences in 7 days: first alert days {'payee_2': 14, 'payee_6': 19}; campaign found day 14; alerts on other vendors 1",
+ "alert when a vendor has >= 3 account differences in 7 days: first alert days {'payee_2': 15}; campaign found day 15; alerts on other vendors 0",
+ "alert when a vendor has >= 4 account differences in 7 days: first alert days {'payee_2': 15}; campaign found day 15; alerts on other vendors 0",
+ "alert when a vendor has >= 5 account differences in 7 days: first alert days {'payee_2': 16}; campaign found day 16; alerts on other vendors 0"
+]

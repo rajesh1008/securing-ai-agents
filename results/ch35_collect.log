@@ -1,0 +1,25 @@
+1 verify on the real tree: 7 issues {'STALE_FOR_CODE': 7}
+    STALE_FOR_CODE E04: egress
+    STALE_FOR_CODE E05: approval
+    STALE_FOR_CODE E06: evidence
+    STALE_FOR_CODE E09: runtime_scope
+    STALE_FOR_CODE E12: sandbox
+    STALE_FOR_CODE E18: moneypath
+    STALE_FOR_CODE E20: pyramid
+results files by modification minute (top 4): [('2026-11-12 11:02', 412), ('2026-11-13 09:37', 8), ('2026-11-13 09:47', 7), ('2026-11-12 17:06', 5)]
+sign refused: cannot sign: ['STALE_FOR_CODE']
+signed; bundle digest aac4680ef32de08e key id dcd4e06559af5bcb accepted kinds ['STALE_FOR_CODE']
+  after signing, claim edited: (False, 'bundle differs from the one signed')
+  after signing, limit removed: (False, 'bundle differs from the one signed')
+  after signing, open item dropped: (False, 'bundle differs from the one signed')
+  after signing, number changed: (False, 'bundle differs from the one signed')
+  after signing, untouched copy: (True, 'ok')
+  after signing, acceptances stripped: (False, 'signature does not match payload')
+evidence file edited after signing: signature valid: True | verify: [('FILE_CHANGED', 'E15: ch34_case.json')]
+  case 'drop evidence E06': {'NO_EVIDENCE': 1}
+  case 'claim 'operating' on lab evidence': {'SCOPE_OVERREACH': 1}
+  case 'no owner, no limit': {'NO_LIMIT': 1, 'NO_OWNER': 1}
+  case '120 days later': {'EXPIRED': 22}
+diff between releases: {'controls_added': ['C18'], 'controls_removed': [], 'controls_changed': ['C04'], 'items_added': [], 'items_removed': [], 'items_changed': [], 'modules_changed': ['egress']}
+signature recorded in chain: rows 1 verify True
+coverage: {'T01': 2, 'T02': 2, 'T03': 5, 'T04': 1, 'T05': 1, 'T06': 1, 'T07': 3, 'T08': 1, 'T09': 1, 'T10': 3}

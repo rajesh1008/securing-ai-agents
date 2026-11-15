@@ -1,0 +1,11 @@
+7 entry points x 6 assets = 42 pairs; plausible paths 38; exercised by an earlier lab 35; not exercised 3
+  UNTESTED: ('email_intake', 'evidence_store', 'flood of hostile mail fills the review queue and the log')
+  UNTESTED: ('bank_feed_webhook', 'tenant_boundary', "webhook for one tenant matched to another's invoice")
+  UNTESTED: ('scheduled_reconcile', 'evidence_store', 'job runs under no principal and its rows have no actor')
+web_chat               T T T T T T
+email_intake           T T T O T -
+bank_feed_webhook      T T - T O -
+document_upload        T T T T T -
+mcp_install            T T T T T T
+scheduled_reconcile    T T T O T T
+admin_impersonation    T T T T T T

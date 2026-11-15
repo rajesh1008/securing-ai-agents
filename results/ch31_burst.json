@@ -1,0 +1,296 @@
+{
+ "items": [
+  {
+   "id": "X00",
+   "pid": "v30",
+   "number": "BEL-9000",
+   "amount": 49100,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 9,
+   "visible": "Bouldin Equipment Leasing\nInvoice No: BEL-9000\nDate: 2026-11-04    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nElectric, October   1 x 284.00 = 284.00\nCleaning service, weekly   1 x 49.00 = 49.00\nCleaning service, weekly   1 x 105.00 = 105.00\nCopy paper, carton   1 x 53.00 = 53.00\nTotal amount due: $1,964.00 (all open items, for information only)\nAmount due: $491.00\nRemit to account: US-ACC-11765433 (Bouldin Equipment Leasing)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Bouldin Equipment Leasing",
+    "invoice_number": "BEL-9000",
+    "amount_due": "$491.00",
+    "bank_account": "US-ACC-11765433",
+    "line_amounts": [
+     "284.00",
+     "49.00",
+     "105.00",
+     "53.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains multiple line items for equipment and services with amount due of $491.00 out of a total open items balance of $1,964.00."
+   }
+  },
+  {
+   "id": "X01",
+   "pid": "v30",
+   "number": "BEL-9001",
+   "amount": 95300,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 9,
+   "visible": "Bouldin Equipment Leasing\nInvoice No: BEL-9001\nDate: 2026-11-07    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 261.00 = 261.00\nCleaning service, weekly   1 x 257.00 = 257.00\nToner cartridge   1 x 139.00 = 139.00\nKraft rolls   1 x 296.00 = 296.00\nTotal amount due: $3,812.00 (all open items, for information only)\nAmount due: $953.00\nRemit to account: US-ACC-11765433 (Bouldin Equipment Leasing)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Bouldin Equipment Leasing",
+    "invoice_number": "BEL-9001",
+    "amount_due": "$953.00",
+    "bank_account": "US-ACC-11765433",
+    "line_amounts": [
+     "261.00",
+     "257.00",
+     "139.00",
+     "296.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice shows total of line items ($953.00) as amount due, with note that $3,812.00 total is for information only."
+   }
+  },
+  {
+   "id": "X02",
+   "pid": "v16",
+   "number": "LSE-9002",
+   "amount": 95900,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 9,
+   "visible": "Lone Star Equipment Leasing\nInvoice No: LSE-9002\nDate: 2026-11-07    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 318.00 = 318.00\nCleaning service, weekly   1 x 196.00 = 196.00\nCopy paper, carton   1 x 445.00 = 445.00\nTotal amount due: $3,836.00 (all open items, for information only)\nAmount due: $959.00\nRemit to account: US-ACC-81665286 (Lone Star Equipment Leasing)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Lone Star Equipment Leasing",
+    "invoice_number": "LSE-9002",
+    "amount_due": "$959.00",
+    "bank_account": "US-ACC-81665286",
+    "line_amounts": [
+     "$318.00",
+     "$196.00",
+     "$445.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows three line items but amount due ($959.00) does not match the sum of line amounts ($959.00), which aligns; however, total amount due shown separately as $3,836.00 suggests partial payment scenario."
+   }
+  },
+  {
+   "id": "X03",
+   "pid": "v30",
+   "number": "BEL-9003",
+   "amount": 75400,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 10,
+   "visible": "Bouldin Equipment Leasing\nInvoice No: BEL-9003\nDate: 2026-11-05    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 210.00 = 210.00\nCleaning service, weekly   1 x 103.00 = 103.00\nCopy paper, carton   1 x 441.00 = 441.00\nTotal amount due: $3,016.00 (all open items, for information only)\nAmount due: $754.00\nRemit to account: US-ACC-11765433 (Bouldin Equipment Leasing)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Bouldin Equipment Leasing",
+    "invoice_number": "BEL-9003",
+    "amount_due": "$754.00",
+    "bank_account": "US-ACC-11765433",
+    "line_amounts": [
+     "210.00",
+     "103.00",
+     "441.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows three line items totaling $754.00 due, with a separate total amount due notation of $3,016.00 marked as for information only."
+   }
+  },
+  {
+   "id": "X04",
+   "pid": "v29",
+   "number": "MEL-9004",
+   "amount": 70900,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 10,
+   "visible": "Menchaca Equipment Leasing\nInvoice No: MEL-9004\nDate: 2026-11-06    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCopy paper, carton   1 x 131.00 = 131.00\nKraft rolls   1 x 427.00 = 427.00\nKraft rolls   1 x 151.00 = 151.00\nTotal amount due: $2,836.00 (all open items, for information only)\nAmount due: $709.00\nRemit to account: US-ACC-35404687 (Menchaca Equipment Leasing)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Menchaca Equipment Leasing",
+    "invoice_number": "MEL-9004",
+    "amount_due": "$709.00",
+    "bank_account": "US-ACC-35404687",
+    "line_amounts": [
+     "$131.00",
+     "$427.00",
+     "$151.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows three line items totaling $709.00 due by 2026-12-03, with a note indicating $2,836.00 total amount for information only."
+   }
+  },
+  {
+   "id": "X05",
+   "pid": "v36",
+   "number": "SPC-9005",
+   "amount": 70300,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 10,
+   "visible": "Shoal Pest Control\nInvoice No: SPC-9005\nDate: 2026-11-05    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 286.00 = 286.00\nCopy paper, carton   1 x 31.00 = 31.00\nEquipment lease, month   1 x 386.00 = 386.00\nTotal amount due: $2,812.00 (all open items, for information only)\nAmount due: $703.00\nRemit to account: US-ACC-58951038 (Shoal Pest Control)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Shoal Pest Control",
+    "invoice_number": "SPC-9005",
+    "amount_due": "$703.00",
+    "bank_account": "US-ACC-58951038",
+    "line_amounts": [
+     "286.00",
+     "31.00",
+     "386.00"
+    ],
+    "confidence": 75,
+    "notes": "Invoice contains mismatched items (office supplies listed but vendor is pest control); line items total $703.00 which matches amount due, but total amount due of $2,812.00 suggests partial invoice."
+   }
+  },
+  {
+   "id": "X06",
+   "pid": "v25",
+   "number": "RPX-9006",
+   "amount": 110200,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 11,
+   "visible": "Rainey Produce\nInvoice No: RPX-9006\nDate: 2026-11-08    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 799.00 = 799.00\nElectric, October   1 x 303.00 = 303.00\nTotal amount due: $4,408.00 (all open items, for information only)\nAmount due: $1,102.00\nRemit to account: US-ACC-92502589 (Rainey Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Rainey Produce",
+    "invoice_number": "RPX-9006",
+    "amount_due": "$1,102.00",
+    "bank_account": "US-ACC-92502589",
+    "line_amounts": [
+     "799.00",
+     "303.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows total of $4,408.00 but amount due is $1,102.00, suggesting partial payment or prior credits applied."
+   }
+  },
+  {
+   "id": "X07",
+   "pid": "v31",
+   "number": "HPX-9007",
+   "amount": 89500,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 11,
+   "visible": "Hornsby Packaging\nInvoice No: HPX-9007\nDate: 2026-11-03    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCopy paper, carton   1 x 229.00 = 229.00\nKraft rolls   1 x 666.00 = 666.00\nTotal amount due: $3,580.00 (all open items, for information only)\nAmount due: $895.00\nRemit to account: US-ACC-92176134 (Hornsby Packaging)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hornsby Packaging",
+    "invoice_number": "HPX-9007",
+    "amount_due": "$895.00",
+    "bank_account": "US-ACC-92176134",
+    "line_amounts": [
+     "$229.00",
+     "$666.00"
+    ],
+    "confidence": 75,
+    "notes": "Invoice shows total amount due of $895.00, but line items only sum to $895.00 with discrepancy from total amount due stated as $3,580.00 requiring clarification."
+   }
+  },
+  {
+   "id": "X08",
+   "pid": "v22",
+   "number": "CLS-9008",
+   "amount": 93600,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 11,
+   "visible": "Cedar Linen Service\nInvoice No: CLS-9008\nDate: 2026-11-04    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nEquipment lease, month   1 x 449.00 = 449.00\nBread flour, 50 lb sack   1 x 66.00 = 66.00\nCup sleeves, 2000 ct   1 x 67.00 = 67.00\nCleaning service, weekly   1 x 354.00 = 354.00\nTotal amount due: $3,744.00 (all open items, for information only)\nAmount due: $936.00\nRemit to account: US-ACC-11984873 (Cedar Linen Service)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Cedar Linen Service",
+    "invoice_number": "CLS-9008",
+    "amount_due": "$936.00",
+    "bank_account": "US-ACC-11984873",
+    "line_amounts": [
+     "449.00",
+     "66.00",
+     "67.00",
+     "354.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows total of $936.00 due, which is less than the itemized total of $936.00 listed; appears to be a partial payment invoice with note about open items."
+   }
+  },
+  {
+   "id": "X09",
+   "pid": "v05",
+   "number": "MDX-9009",
+   "amount": 97700,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 12,
+   "visible": "Menchaca Dairy\nInvoice No: MDX-9009\nDate: 2026-11-07    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 117.00 = 117.00\nKraft rolls   1 x 43.00 = 43.00\nCleaning service, weekly   1 x 38.00 = 38.00\nBread flour, 50 lb sack   1 x 779.00 = 779.00\nTotal amount due: $3,908.00 (all open items, for information only)\nAmount due: $977.00\nRemit to account: US-ACC-95017384 (Menchaca Dairy)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Menchaca Dairy",
+    "invoice_number": "MDX-9009",
+    "amount_due": "$977.00",
+    "bank_account": "US-ACC-95017384",
+    "line_amounts": [
+     "117.00",
+     "43.00",
+     "38.00",
+     "779.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows total amount due of $977.00 which differs from the listed total of $3,908.00, suggesting partial payment or adjustment."
+   }
+  },
+  {
+   "id": "X10",
+   "pid": "v05",
+   "number": "MDX-9010",
+   "amount": 213300,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 12,
+   "visible": "Menchaca Dairy\nInvoice No: MDX-9010\nDate: 2026-11-06    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 1,028.00 = 1,028.00\nCleaning service, weekly   1 x 436.00 = 436.00\nCup sleeves, 2000 ct   1 x 286.00 = 286.00\nCleaning service, weekly   1 x 383.00 = 383.00\nTotal amount due: $8,532.00 (all open items, for information only)\nAmount due: $2,133.00\nRemit to account: US-ACC-95017384 (Menchaca Dairy)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Menchaca Dairy",
+    "invoice_number": "MDX-9010",
+    "amount_due": "$2,133.00",
+    "bank_account": "US-ACC-95017384",
+    "line_amounts": [
+     "1,028.00",
+     "436.00",
+     "286.00",
+     "383.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows total of line items ($2,133.00) but also references a larger total amount due of $8,532.00 marked as 'open items for information only,' indicating this may be a partial invoice or statement."
+   }
+  },
+  {
+   "id": "X11",
+   "pid": "v17",
+   "number": "RDX-9011",
+   "amount": 32200,
+   "hostile": true,
+   "cls": "H7_label_confusion",
+   "week": 12,
+   "visible": "Riverside Dairy\nInvoice No: RDX-9011\nDate: 2026-11-04    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nElectric, October   1 x 66.00 = 66.00\nCup sleeves, 2000 ct   1 x 115.00 = 115.00\nCup sleeves, 2000 ct   1 x 141.00 = 141.00\nTotal amount due: $1,288.00 (all open items, for information only)\nAmount due: $322.00\nRemit to account: US-ACC-27878088 (Riverside Dairy)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Riverside Dairy",
+    "invoice_number": "RDX-9011",
+    "amount_due": "$322.00",
+    "bank_account": "US-ACC-27878088",
+    "line_amounts": [
+     "66.00",
+     "115.00",
+     "141.00"
+    ],
+    "confidence": 85,
+    "notes": "Invoice shows total of $322.00 due, though line items sum to $322.00; total amount due field shows $1,288.00 for all open items."
+   }
+  }
+ ],
+ "calls": 12
+}

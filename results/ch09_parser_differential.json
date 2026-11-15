@@ -1,0 +1,520 @@
+{
+ "named": [
+  {
+   "name": "baseline",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "accept"
+  },
+  {
+   "name": "dup amount (first 99, last 141200)",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:duplicate_key"
+  },
+  {
+   "name": "dup amount (first 141200, last 99)",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "strict": "reject:duplicate_key"
+  },
+  {
+   "name": "dup key by escape (\\u0061mount...)",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "strict": "reject:duplicate_key"
+  },
+  {
+   "name": "extra key differing only in case",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "99"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:unexpected_field:Amount_Cent"
+  },
+  {
+   "name": "only the case-variant key",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "strict": "reject:unexpected_field:Amount_Cent"
+  },
+  {
+   "name": "integer above 2^53",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "9007199254740993"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "9007199254740993"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "9007199254740992"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "9007199254740993"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "9007199254740993"
+   ],
+   "strict": "reject:amount_cents:amount_range"
+  },
+  {
+   "name": "amount 1.412e5",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:float_not_allowed"
+  },
+  {
+   "name": "amount 141200.0",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:float_not_allowed"
+  },
+  {
+   "name": "amount as string",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:amount_cents:type_not_intege"
+  },
+  {
+   "name": "amount NaN",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "nan"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "nan"
+   ],
+   "node": null,
+   "go": null,
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "null"
+   ],
+   "strict": "reject:non_finite_number"
+  },
+  {
+   "name": "amount Infinity",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "inf"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "inf"
+   ],
+   "node": null,
+   "go": null,
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "1.7976931348623157e+308"
+   ],
+   "strict": "reject:non_finite_number"
+  },
+  {
+   "name": "trailing comma",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": null,
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "line comment",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": null,
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "single quotes",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": null,
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "UTF-8 BOM",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:bom"
+  },
+  {
+   "name": "trailing garbage",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": null,
+   "strict": "reject:not_one_json_object"
+  },
+  {
+   "name": "two objects",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "lone surrogate in id",
+   "python": [
+    "INV-\ud800",
+    "p_ls",
+    "141200"
+   ],
+   "pydantic": null,
+   "node": [
+    "INV-\ud800",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-\ufffd",
+    "p_ls",
+    "141200"
+   ],
+   "jq": null,
+   "strict": "reject:invoice_id:id_not_ascii"
+  },
+  {
+   "name": "invalid UTF-8 byte in id",
+   "python": null,
+   "pydantic": null,
+   "node": [
+    "INV-\ufffd",
+    "p_ls",
+    "141200"
+   ],
+   "go": [
+    "INV-\ufffd",
+    "p_ls",
+    "141200"
+   ],
+   "jq": [
+    "INV-\ufffd",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:bad_utf8"
+  },
+  {
+   "name": "raw control char in id",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": null,
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "leading zero amount",
+   "python": null,
+   "pydantic": null,
+   "node": null,
+   "go": null,
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "141200"
+   ],
+   "strict": "reject:json_syntax"
+  },
+  {
+   "name": "negative zero",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    "0"
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    "0"
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "0"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    "0"
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    "0"
+   ],
+   "strict": "reject:amount_cents:amount_range"
+  },
+  {
+   "name": "null amount",
+   "python": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "pydantic": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "node": [
+    "INV-1007",
+    "p_ls",
+    "null"
+   ],
+   "go": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "jq": [
+    "INV-1007",
+    "p_ls",
+    null
+   ],
+   "strict": "reject:amount_cents:type_not_intege"
+  }
+ ]
+}

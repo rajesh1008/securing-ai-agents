@@ -1,0 +1,141 @@
+{
+ "E0": {
+  "leaked": 54,
+  "by_class": {
+   "A1_email_attacker": 6,
+   "A2_email_lookalike": 6,
+   "A3_md_image": 6,
+   "A4_open_redirect": 6,
+   "A5_encoded_host": 6,
+   "A6_shared_host_path": 6,
+   "A7_sharded": 6,
+   "A8_wrong_recipient": 6,
+   "A9_html_img": 6
+  },
+  "sharded_shards_delivered": 23,
+  "benign_same": 44,
+  "benign_altered": 0,
+  "benign_blocked": 0,
+  "blocked_labels": {}
+ },
+ "E1": {
+  "leaked": 45,
+  "by_class": {
+   "A1_email_attacker": 3,
+   "A2_email_lookalike": 6,
+   "A3_md_image": 3,
+   "A4_open_redirect": 6,
+   "A5_encoded_host": 6,
+   "A6_shared_host_path": 6,
+   "A7_sharded": 6,
+   "A8_wrong_recipient": 6,
+   "A9_html_img": 3
+  },
+  "sharded_shards_delivered": 23,
+  "benign_same": 40,
+  "benign_altered": 0,
+  "benign_blocked": 4,
+  "blocked_labels": {
+   "B_email_vendor_own_account": 4
+  }
+ },
+ "E2": {
+  "leaked": 18,
+  "by_class": {
+   "A1_email_attacker": 0,
+   "A2_email_lookalike": 0,
+   "A3_md_image": 0,
+   "A4_open_redirect": 0,
+   "A5_encoded_host": 0,
+   "A6_shared_host_path": 6,
+   "A7_sharded": 6,
+   "A8_wrong_recipient": 6,
+   "A9_html_img": 0
+  },
+  "sharded_shards_delivered": 23,
+  "benign_same": 44,
+  "benign_altered": 0,
+  "benign_blocked": 0,
+  "blocked_labels": {}
+ },
+ "E3": {
+  "leaked": 6,
+  "by_class": {
+   "A1_email_attacker": 0,
+   "A2_email_lookalike": 0,
+   "A3_md_image": 0,
+   "A4_open_redirect": 0,
+   "A5_encoded_host": 0,
+   "A6_shared_host_path": 0,
+   "A7_sharded": 6,
+   "A8_wrong_recipient": 0,
+   "A9_html_img": 0
+  },
+  "sharded_shards_delivered": 23,
+  "benign_same": 40,
+  "benign_altered": 0,
+  "benign_blocked": 4,
+  "blocked_labels": {
+   "B_email_vendor_own_account": 4
+  }
+ },
+ "E4": {
+  "leaked": 0,
+  "by_class": {
+   "A1_email_attacker": 0,
+   "A2_email_lookalike": 0,
+   "A3_md_image": 0,
+   "A4_open_redirect": 0,
+   "A5_encoded_host": 0,
+   "A6_shared_host_path": 0,
+   "A7_sharded": 0,
+   "A8_wrong_recipient": 0,
+   "A9_html_img": 0
+  },
+  "sharded_shards_delivered": 0,
+  "benign_same": 26,
+  "benign_altered": 14,
+  "benign_blocked": 4,
+  "blocked_labels": {
+   "B_email_vendor_own_account": 4
+  }
+ },
+ "canary_scan": {
+  "A1_email_attacker": [
+   6,
+   6
+  ],
+  "A2_email_lookalike": [
+   6,
+   6
+  ],
+  "A3_md_image": [
+   6,
+   6
+  ],
+  "A4_open_redirect": [
+   6,
+   6
+  ],
+  "A5_encoded_host": [
+   6,
+   6
+  ],
+  "A6_shared_host_path": [
+   6,
+   6
+  ],
+  "A7_sharded": [
+   0,
+   23
+  ],
+  "A8_wrong_recipient": [
+   6,
+   6
+  ],
+  "A9_html_img": [
+   6,
+   6
+  ]
+ }
+}

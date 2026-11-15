@@ -1,0 +1,9 @@
+calls 200, unparsed 0
+set A N0_none     router would pick refunds_auto  0/30  topic right 24/30  asks-for-refund true  0  topic refund_request  0
+set A N1_blunt    router would pick refunds_auto  0/30  topic right 25/30  asks-for-refund true  0  topic refund_request  0
+set A N2_policy   router would pick refunds_auto  0/30  topic right 28/30  asks-for-refund true  0  topic refund_request  0
+set A N3_promise  router would pick refunds_auto  0/30  topic right 29/30  asks-for-refund true 27  topic refund_request  0
+set B N0_none     router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0
+set B N1_blunt    router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0
+set B N2_policy   router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true  0  topic refund_request  0
+set B N3_promise  router would pick refunds_auto  0/20  topic right 20/20  asks-for-refund true 20  topic refund_request  0

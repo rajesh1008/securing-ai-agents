@@ -1,0 +1,11 @@
+LLM25  edition '2025'                                                       read=TITLES    items  10  title found in saved source  10  missing []  no primary text 0
+LLM23  edition '2023-24 (v1.1)'                                             read=TITLES    items  10  title found in saved source  10  missing []  no primary text 0
+ASI26  edition '2026'                                                       read=TITLES    items  10  title found in saved source   9  missing ['ASI08']  no primary text 0
+N600   edition 'July 2024'                                                  read=FULL_TEXT items  12  title found in saved source  12  missing []  no primary text 0
+I42K   edition '2023'                                                       read=SECONDARY items  38  title found in saved source   0  missing []  no primary text 38
+EUAI   edition 'OJ 2024, as amended by the Digital Omnibus on AI (2026)'    read=FULL_TEXT items   8  title found in saved source   8  missing []  no primary text 0
+ATLS   edition 'v2026.10'                                                   read=SECONDARY items   5  title found in saved source   5  missing []  no primary text 0
+OWASP ASI wording on the crosswalk page: {'cascading[a-z ]{0,8}failures': ['cascading agent failures'], 'agentic supply chain[a-z ]{0,16}': ['agentic supply chain vulnerabilities'], 'insecure inter agent communications?': ['insecure inter agent communication']}
+ATLAS latest release in the changelog: {'release': '2026.10', 'date': '2026-10-28', 'contains': '1 matrix, 16 tactics, 129 techniques, 92 sub-techniques, 44 mitigations, 77 case studies, 44 entities, and 37 software records'}
+ATLAS releases listed: [('2026.10', '2026-10-28'), ('2026.09', '2026-09-14'), ('2026.08', '2026-08-31'), ('2026.07', '2026-07-31'), ('2026.06', '2026-06-30'), ('2026.05', '2026-05-27')]
+OWASP LLM: ids whose title is unchanged between 2023-24 and 2025: ['LLM01'] | same title, different id: {'LLM06': 'LLM02', 'LLM08': 'LLM06'} | ids with a different title: ['LLM02', 'LLM03', 'LLM04', 'LLM05', 'LLM06', 'LLM07', 'LLM08', 'LLM09', 'LLM10']

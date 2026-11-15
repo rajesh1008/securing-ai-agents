@@ -1,0 +1,5 @@
+scripts run: 99 | ran without the model: 87 | needed the model (exit 86 on first API call): 9 | error or timeout: 3
+of 87 : every file written identical to the stored one: 68 | at least one file different: 18 | wrote no file: 1
+files written identical: 108 | file writes that differ: 29 {'tree': 1, 'timing': 23, 'race': 2, 'random': 3}
+error or timeout: [('ch23_intent_live.py', 1), ('ch23_overrefusal_live.py', 1), ('ch28_prod_sample.py', 'timeout')]
+needs model: ['ch18_noise_calibration.py', 'ch19_breakout_nosent.py', 'ch19_evasion_hard.py', 'ch19_ticket_reasons.py', 'ch20_channel_census.py', 'ch20_walkthrough.py', 'ch29_campaign_control.py', 'ch29_campaign_d.py', 'ch32_triage.py']

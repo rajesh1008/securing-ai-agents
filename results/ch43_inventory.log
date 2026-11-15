@@ -1,0 +1,39 @@
+id   component                                                        class                        tier
+M01  invoice field extractor (Haiku 4.5)                              OUT_OF_SCOPE_GENAI_AGENTIC   MEDIUM
+M02  vendor bank-change classifier (own, bag of words)                IN_SCOPE_MODEL               LOW
+M03  amount detector (vendor history baseline)                        IN_SCOPE_MODEL               LOW
+M04  prompt release gate floor (spread of identical runs plus margin) IN_SCOPE_MODEL               HIGH
+M05  model second reviewer on payments                                OUT_OF_SCOPE_GENAI_AGENTIC   LOW
+M06  coordinator agent (multi-agent drafting)                         OUT_OF_SCOPE_GENAI_AGENTIC   LOW
+M07  fallback model for degraded mode (Sonnet 4.6)                    OUT_OF_SCOPE_GENAI_AGENTIC   MEDIUM
+M08  extractor confidence threshold (routes to review)                IN_SCOPE_MODEL               LOW
+M09  hosted-model behavioural fingerprint                             IN_SCOPE_MODEL               LOW
+M10  incident responder model (reads a case, recommends)              OUT_OF_SCOPE_GENAI_AGENTIC   LOW
+M11  money gate M1-M8                                                 EXCLUDED_DETERMINISTIC       MEDIUM
+M12  egress allow-list                                                EXCLUDED_DETERMINISTIC       LOW
+M13  evidence chain and anchors                                       EXCLUDED_DETERMINISTIC       LOW
+M14  per-task budgets                                                 EXCLUDED_DETERMINISTIC       MEDIUM
+M15  detector merge and alert routing rules                           EXCLUDED_DETERMINISTIC       LOW
+M16  rota scorecard                                                   EXCLUDED_DETERMINISTIC       LOW
+classes: OUT_OF_SCOPE_GENAI_AGENTIC 5, IN_SCOPE_MODEL 5, EXCLUDED_DETERMINISTIC 6
+HIGH tier: ['M04']; MEDIUM: ['M01', 'M07', 'M11', 'M14']
+in scope and HIGH: ['M04']; out of scope (generative/agentic) and MEDIUM or HIGH: ['M01', 'M07']
+
+validation pack: 55 rows (component x element, rules and arithmetic skipped, third-party only for vendor components): OK 39, WEAK 2, MISSING 14
+   conceptual_soundness         accepted REVIEW/UNIT            OK 10
+   outcomes_analysis            accepted LAB_SIM/LAB_LIVE/PRODUCTION OK 10
+   ongoing_monitoring           accepted PRODUCTION             MISSING 8, WEAK 2
+   development_and_use_testing  accepted UNIT/LAB_SIM/LAB_LIVE  MISSING 4, OK 6
+   governance_roles             accepted REVIEW                 MISSING 2, OK 8
+   third_party                  accepted REVIEW/LAB_LIVE        OK 5
+   M01: conceptual_soundness OK D14; outcomes_analysis OK E31; ongoing_monitoring WEAK E33; development_and_use_testing OK E07,E16; governance_roles OK OWN; third_party OK E30
+   M02: conceptual_soundness OK D40; outcomes_analysis OK E29; ongoing_monitoring MISSING; development_and_use_testing OK E29,E01; governance_roles OK OWN
+   M03: conceptual_soundness OK D32; outcomes_analysis OK E13; ongoing_monitoring WEAK E13; development_and_use_testing OK E01,E13; governance_roles OK OWN
+   M04: conceptual_soundness OK D18; outcomes_analysis OK E16,E33; ongoing_monitoring MISSING; development_and_use_testing OK E01; governance_roles OK OWN
+   M05: conceptual_soundness OK D08; outcomes_analysis OK E18; ongoing_monitoring MISSING; development_and_use_testing MISSING; governance_roles MISSING; third_party OK E30
+   M06: conceptual_soundness OK D38; outcomes_analysis OK E27; ongoing_monitoring MISSING; development_and_use_testing OK E26; governance_roles OK OWN; third_party OK E30
+   M07: conceptual_soundness OK D36; outcomes_analysis OK E25; ongoing_monitoring MISSING; development_and_use_testing MISSING; governance_roles OK OWN; third_party OK E30
+   M08: conceptual_soundness OK D36; outcomes_analysis OK E25; ongoing_monitoring MISSING; development_and_use_testing MISSING; governance_roles MISSING
+   M09: conceptual_soundness OK D40; outcomes_analysis OK E30; ongoing_monitoring MISSING; development_and_use_testing OK E30; governance_roles OK OWN
+   M10: conceptual_soundness OK D33; outcomes_analysis OK E32; ongoing_monitoring MISSING; development_and_use_testing MISSING; governance_roles OK OWN; third_party OK E30
+outcomes analysis OK on simulation only (synthetic data): ['M02', 'M03']

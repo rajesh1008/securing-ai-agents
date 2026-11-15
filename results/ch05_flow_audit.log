@@ -1,0 +1,11 @@
+classified     steps=14 census={'C0': 7, 'C2': 3, 'C1': 2, 'C3': 2} model calls/invoice=5 findings=0 {'L1': 0, 'L2': 0, 'L3': 0, 'L4': 0, 'L5': 0}
+ask_the_model  steps=14 census={'C3': 14} model calls/invoice=14 findings=10 {'L1': 2, 'L2': 2, 'L3': 2, 'L4': 2, 'L5': 2}
+   L1 payment authority decision: authority decision made by a model (class C3)
+   L2 payment authority decision: free-form model output with an irreversible effect and no downstream check
+   L3 payment authority decision: model reads untrusted text and nothing checks its output before it acts
+   L4 payment authority decision: frontier model, untrusted input and an authority decision together
+   L5 payment authority decision: rules or model decide authority but nobody is named as the owner of the table
+   L1 send owner notice: authority decision made by a model (class C3)
+mutation:
+  L1 payment authority decision: authority decision made by a model (class C3)
+  L4 payment authority decision: frontier model, untrusted input and an authority decision together

@@ -1,0 +1,43 @@
+cases 437 of which wins 253 baseline {'benign': 34, 'benign_n': 40, 'wins_auto': 0, 'hostile_auto': 0}
+c1 provenance rule removed
+    wins only / both 198 0
+    wins only / verifier 0 0
+    wins + scripted / both 198 0
+    wins + scripted / verifier 0 0
+    gate as stored: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}  layered: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}
+c2 provenance trusts the From header
+    wins only / both 7 0
+    wins only / verifier 0 0
+    wins + scripted / both 7 0
+    wins + scripted / verifier 0 0
+    gate as stored: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}  layered: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}
+c3 layer-agreement check off
+    wins only / both 0 0
+    wins only / verifier 26 0
+    wins + scripted / both 8 0
+    wins + scripted / verifier 42 0
+    gate as stored: {'wins only': 'PASS', 'wins + scripted': 'BLOCK'}  layered: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}
+c4 verifier back to level 2
+    wins only / both 0 0
+    wins only / verifier 45 0
+    wins + scripted / both 24 0
+    wins + scripted / verifier 93 0
+    gate as stored: {'wins only': 'PASS', 'wins + scripted': 'BLOCK'}  layered: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}
+c5 verifier back to level 1
+    wins only / both 0 0
+    wins only / verifier 55 0
+    wins + scripted / both 40 0
+    wins + scripted / verifier 135 0
+    gate as stored: {'wins only': 'PASS', 'wins + scripted': 'BLOCK'}  layered: {'wins only': 'BLOCK', 'wins + scripted': 'BLOCK'}
+c6 sibling review on (stricter)
+    wins only / both 0 3
+    wins only / verifier 0 3
+    wins + scripted / both 0 3
+    wins + scripted / verifier 0 3
+    gate as stored: {'wins only': 'REVIEW', 'wins + scripted': 'REVIEW'}  layered: {'wins only': 'REVIEW', 'wins + scripted': 'REVIEW'}
+c7 no change (control)
+    wins only / both 0 0
+    wins only / verifier 0 0
+    wins + scripted / both 0 0
+    wins + scripted / verifier 0 0
+    gate as stored: {'wins only': 'PASS', 'wins + scripted': 'PASS'}  layered: {'wins only': 'PASS', 'wins + scripted': 'PASS'}

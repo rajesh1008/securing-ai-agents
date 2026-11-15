@@ -1,0 +1,197 @@
+{
+ "counts": {
+  "benign": 1200,
+  "structuring": 120,
+  "benign_recurring": 120,
+  "bank_change": 60,
+  "amount_mismatch": 60,
+  "benign_seed": 60,
+  "new_payee": 40,
+  "benign_burst": 55,
+  "legit_bank_change": 16,
+  "dup_resent": 60,
+  "benign_after_change": 35
+ },
+ "designs": {
+  "A": {
+   "outcomes": {
+    "benign": {
+     "ALLOW": 1200
+    },
+    "structuring": {
+     "ALLOW": 120
+    },
+    "benign_recurring": {
+     "ALLOW": 120
+    },
+    "bank_change": {
+     "ALLOW": 60
+    },
+    "amount_mismatch": {
+     "ALLOW": 60
+    },
+    "benign_seed": {
+     "ALLOW": 60
+    },
+    "new_payee": {
+     "ALLOW": 40
+    },
+    "benign_burst": {
+     "ALLOW": 55
+    },
+    "dup_resent": {
+     "ALLOW": 60
+    },
+    "benign_after_change": {
+     "ALLOW": 35
+    }
+   },
+   "cents_moved": {
+    "benign": 201683600,
+    "structuring": 22260000,
+    "benign_recurring": 4957400,
+    "bank_change": 6090400,
+    "amount_mismatch": 986900,
+    "benign_seed": 5849700,
+    "new_payee": 6437400,
+    "benign_burst": 2794600,
+    "dup_resent": 5849700,
+    "benign_after_change": 2303800
+   },
+   "to_mule": {
+    "bank_change": 60,
+    "benign": 715,
+    "structuring": 64,
+    "benign_burst": 34,
+    "amount_mismatch": 38,
+    "benign_recurring": 70,
+    "benign_after_change": 6,
+    "dup_resent": 33,
+    "benign_seed": 29
+   },
+   "reasons": {},
+   "released": {}
+  },
+  "B": {
+   "outcomes": {
+    "benign": {
+     "ALLOW": 1124,
+     "HOLD": 76
+    },
+    "structuring": {
+     "ALLOW": 61,
+     "HOLD": 59
+    },
+    "benign_recurring": {
+     "ALLOW": 54,
+     "HOLD": 66
+    },
+    "bank_change": {
+     "HOLD": 60
+    },
+    "amount_mismatch": {
+     "HOLD": 60
+    },
+    "benign_seed": {
+     "ALLOW": 51,
+     "HOLD": 9
+    },
+    "new_payee": {
+     "HOLD": 40
+    },
+    "benign_burst": {
+     "ALLOW": 42,
+     "HOLD": 13
+    },
+    "dup_resent": {
+     "HOLD": 60
+    },
+    "benign_after_change": {
+     "HOLD": 20,
+     "ALLOW": 15
+    }
+   },
+   "cents_moved": {
+    "benign": 185957900,
+    "structuring": 11398000,
+    "benign_recurring": 2238300,
+    "benign_seed": 4994000,
+    "benign_burst": 2226400,
+    "benign_after_change": 957200
+   },
+   "to_mule": {},
+   "reasons": {
+    "benign": {
+     "ok": 1124,
+     "M5_payee_daily_cents": 21,
+     "M5_payee_daily_count": 9,
+     "M4_account_not_yet_seasoned": 52,
+     "M7_likely_duplicate": 2,
+     "M5_tenant_daily_cap": 1
+    },
+    "structuring": {
+     "ok": 61,
+     "M5_payee_daily_count": 40,
+     "M5_payee_daily_cents": 31,
+     "M7_likely_duplicate": 13,
+     "M5_tenant_daily_cap": 4
+    },
+    "benign_recurring": {
+     "ok": 54,
+     "M7_likely_duplicate": 60,
+     "M4_account_not_yet_seasoned": 8,
+     "M5_payee_daily_count": 6,
+     "M5_payee_daily_cents": 2
+    },
+    "bank_change": {
+     "M4_bank_change_pending": 60,
+     "M4_account_not_yet_seasoned": 3,
+     "M5_payee_daily_count": 1,
+     "M5_tenant_daily_cap": 1
+    },
+    "amount_mismatch": {
+     "M3_document_amount_differs_from_books": 60,
+     "M5_payee_daily_count": 3,
+     "M4_bank_change_pending": 1,
+     "M4_account_not_yet_seasoned": 5
+    },
+    "benign_seed": {
+     "ok": 51,
+     "M4_account_not_yet_seasoned": 5,
+     "M5_tenant_daily_cap": 2,
+     "M5_payee_daily_count": 2,
+     "M5_payee_daily_cents": 1
+    },
+    "new_payee": {
+     "M6_new_payee": 40,
+     "M8_dual_control_missing": 7
+    },
+    "benign_burst": {
+     "ok": 42,
+     "M5_tenant_daily_cap": 5,
+     "M5_payee_daily_count": 4,
+     "M4_account_not_yet_seasoned": 5
+    },
+    "dup_resent": {
+     "M7_likely_duplicate": 60,
+     "M4_account_not_yet_seasoned": 1,
+     "M4_bank_change_pending": 3,
+     "M5_payee_daily_count": 3
+    },
+    "benign_after_change": {
+     "M4_account_not_yet_seasoned": 16,
+     "M5_tenant_daily_cap": 4,
+     "M4_bank_change_pending": 4,
+     "ok": 15
+    }
+   },
+   "released": {
+    "benign": 76,
+    "benign_recurring": 66,
+    "benign_seed": 9,
+    "benign_burst": 13,
+    "benign_after_change": 20
+   }
+  }
+ }
+}

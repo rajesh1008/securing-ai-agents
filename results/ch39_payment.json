@@ -1,0 +1,175 @@
+{
+ "V1": {
+  "rows": 92,
+  "scope": 12,
+  "counts": {
+   "ANSWERABLE": 13,
+   "PARTIAL": 0,
+   "NOT_IN_EVIDENCE": 1
+  },
+  "coverage": {
+   "Q1": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q2": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q3": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q4": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q5": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q6": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q7": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q8": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q9": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q10": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q11": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q12": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q13": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q14": [
+    "NOT_IN_EVIDENCE",
+    [
+     "proposal.content_in_export"
+    ]
+   ]
+  }
+ },
+ "V2": {
+  "rows": 89,
+  "scope": 9,
+  "counts": {
+   "ANSWERABLE": 8,
+   "PARTIAL": 1,
+   "NOT_IN_EVIDENCE": 5
+  },
+  "coverage": {
+   "Q1": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q2": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q3": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q4": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q5": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q6": [
+    "PARTIAL",
+    [
+     "approval.approval_ms"
+    ]
+   ],
+   "Q7": [
+    "NOT_IN_EVIDENCE",
+    [
+     "approval.effect_digest",
+     "dispatch.effect_digest"
+    ]
+   ],
+   "Q8": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q9": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q10": [
+    "NOT_IN_EVIDENCE",
+    [
+     "screen.markers",
+     "screen.decision"
+    ]
+   ],
+   "Q11": [
+    "NOT_IN_EVIDENCE",
+    [
+     "envelope.sender",
+     "envelope.receiver",
+     "envelope.taint"
+    ]
+   ],
+   "Q12": [
+    "NOT_IN_EVIDENCE",
+    [
+     "proposal.model",
+     "proposal.prompt_version"
+    ]
+   ],
+   "Q13": [
+    "ANSWERABLE",
+    []
+   ],
+   "Q14": [
+    "NOT_IN_EVIDENCE",
+    [
+     "proposal.content_in_export"
+    ]
+   ]
+  }
+ },
+ "log": [
+  "V1: chain 92 rows for the tenant, 12 in scope for the payment (task t_inv2231 plus the payee's vendor-change rows); verify True, anchors (True, 'ok'); gate step 1 HOLD ['M8_dual_control_missing'], after approval ALLOW, sent True",
+  "   coverage of 14 questions: {'ANSWERABLE': 13, 'PARTIAL': 0, 'NOT_IN_EVIDENCE': 1}; Q14 NOT_ missing proposal.content_in_export",
+  "   [0] day 60: vendor_change: task=t_vendor_ls; payee=payee_lone_star; decision=REQUESTED; reasons=['source.email_in']; vendor_version=1",
+  "   [1] day 61: vendor_change: task=t_vendor_ls; payee=payee_lone_star; decision=CONFIRMED; approver=kevin_brandt; reasons=['callback.ok']; vendor_version=2",
+  "   [82] day 100: doc_intake: task=t_inv2231; principal=prin_emily; doc_digest=7115ed9db3279144271fcbb40b7ac4ad4073dd32b072a9532da255afc909d193; extractor=ext_v14; confidence=93; route=auto; model=haiku45",
+  "   [83] day 100: screen: task=t_inv2231; detector=markers_v2; markers=1; decision=FLAG; reasons=['marker.process_step']",
+  "   [84] day 100: envelope: task=t_inv2231; sender=intake; receiver=coordinator; verb=extract; hop=0; grant=g_read; taint=['tenant_doc']; decision=OK",
+  "   [85] day 100: envelope: task=t_inv2231; sender=coordinator; receiver=payments; verb=pay_invoice; hop=1; grant=g_pay_one; taint=['tenant_doc']; decision=OK",
+  "   [86] day 100: proposal: task=t_inv2231; principal=prin_emily; invoice=INV-2231; payee=payee_lone_star; amount_cents=481250; model=haiku45; prompt_version=p_coord_1.4",
+  "   [87] day 100: money_gate: task=t_inv2231; decision=HOLD; reasons=['M8_dual_control_missing']; policy=v0.37; invoice=INV-2231; payee=payee_lone_star; amount_cents=481250; vendor_version=2",
+  "   [88] day 100: approval: task=t_inv2231; approver=prin_hector; decision=APPROVE; approval_ms=41200; effect_digest=c979b1386fbde7c4abf0f97e3102d9d3ccb1987e90359402dced0a319ff4f40a",
+  "   [89] day 100: money_gate: task=t_inv2231; decision=ALLOW; reasons=['ok']; policy=v0.37; invoice=INV-2231; payee=payee_lone_star; amount_cents=481250; vendor_version=2",
+  "   [90] day 100: dispatch: task=t_inv2231; invoice=INV-2231; payee=payee_lone_star; amount_cents=481250; decision=SENT; vendor_version=2; dest_digest=3acc525ab18323682d4518013a9957a145fd1a32097ed19fdb1df",
+  "   [91] day 100: bank_result: task=t_inv2231; decision=ACK; token_id=BK-77120; amount_cents=481250",
+  "   content store items for the payment's rows: 0 (the export contains no content; Q14 needs the tenant key)",
+  "V2: chain 89 rows for the tenant, 9 in scope for the payment (task t_inv2231 plus the payee's vendor-change rows); verify True, anchors (True, 'ok'); gate step 1 HOLD ['M8_dual_control_missing'], after approval ALLOW, sent True",
+  "   coverage of 14 questions: {'ANSWERABLE': 8, 'PARTIAL': 1, 'NOT_IN_EVIDENCE': 5}; Q6 PART missing approval.approval_ms; Q7 NOT_ missing approval.effect_digest,dispatch.effect_digest; Q10 NOT_ missing screen.markers,screen.decision; Q11 NOT_ missing envelope.sender,envelope.receiver,envelope.taint; Q12 NOT_ missing proposal.model,proposal.prompt_version; Q14 NOT_ missing proposal.content_in_export",
+  "   content store items for the payment's rows: 0 (the export contains no content; Q14 needs the tenant key)"
+ ]
+}

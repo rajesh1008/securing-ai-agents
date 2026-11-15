@@ -1,0 +1,187 @@
+[
+ {
+  "n": 1,
+  "surface": "Input",
+  "what": "documents, webhook memos, emails entering the task",
+  "controls": [
+   {
+    "name": "marker scan (advisory)",
+    "kind": "advisory",
+    "file": "bulwark/policy.py"
+   }
+  ],
+  "threats": [
+   "T01",
+   "W-03"
+  ]
+ },
+ {
+  "n": 2,
+  "surface": "Context assembly",
+  "what": "how system prompt, contacts, documents and history are concatenated",
+  "controls": [
+   {
+    "name": "contact book in prompt",
+    "kind": "prompt",
+    "file": "ch01_contactbook.py"
+   }
+  ],
+  "threats": [
+   "T05",
+   "T10"
+  ]
+ },
+ {
+  "n": 3,
+  "surface": "Model",
+  "what": "model choice, system prompt, decoding settings",
+  "controls": [
+   {
+    "name": "hardened system prompt",
+    "kind": "prompt",
+    "file": "ch03_ladder.py"
+   }
+  ],
+  "threats": [
+   "T02"
+  ]
+ },
+ {
+  "n": 4,
+  "surface": "Output",
+  "what": "the model's proposal before anything acts on it",
+  "controls": [
+   {
+    "name": "typed ActionProposal",
+    "kind": "deterministic",
+    "file": "bulwark/models.py"
+   }
+  ],
+  "threats": [
+   "T02"
+  ]
+ },
+ {
+  "n": 5,
+  "surface": "Tool call",
+  "what": "which tool, with which arguments, in what quantity",
+  "controls": [
+   {
+    "name": "registry and loadouts",
+    "kind": "deterministic",
+    "file": "bulwark/registry.py"
+   },
+   {
+    "name": "gate v0.2",
+    "kind": "deterministic",
+    "file": "bulwark/policy_v02.py"
+   },
+   {
+    "name": "budget",
+    "kind": "deterministic",
+    "file": "bulwark/budget.py"
+   }
+  ],
+  "threats": [
+   "T02",
+   "T06",
+   "T07",
+   "T08"
+  ]
+ },
+ {
+  "n": 6,
+  "surface": "Tool result",
+  "what": "what a tool returns into the context",
+  "controls": [],
+  "threats": [
+   "W-03",
+   "T10"
+  ]
+ },
+ {
+  "n": 7,
+  "surface": "Memory",
+  "what": "anything kept between tasks and read back later",
+  "controls": [],
+  "threats": [
+   "T09"
+  ]
+ },
+ {
+  "n": 8,
+  "surface": "State",
+  "what": "task state, counters, evidence",
+  "controls": [
+   {
+    "name": "evidence chain with anchors",
+    "kind": "deterministic",
+    "file": "bulwark/anchor.py"
+   }
+  ],
+  "threats": [
+   "T03"
+  ]
+ },
+ {
+  "n": 9,
+  "surface": "Egress",
+  "what": "every channel data or value can leave by",
+  "controls": [
+   {
+    "name": "egress allow-list",
+    "kind": "deterministic",
+    "file": "bulwark/policy_v02.py"
+   },
+   {
+    "name": "refund destination binding",
+    "kind": "deterministic",
+    "file": "bulwark/refund.py"
+   }
+  ],
+  "threats": [
+   "T04",
+   "T05",
+   "W-05"
+  ]
+ },
+ {
+  "n": 10,
+  "surface": "Identity",
+  "what": "who the agent is and for whom it acts",
+  "controls": [
+   {
+    "name": "constant workload id, principal on every record",
+    "kind": "weak",
+    "file": "bulwark/models.py"
+   }
+  ],
+  "threats": [
+   "S-01",
+   "S-02"
+  ]
+ },
+ {
+  "n": 11,
+  "surface": "Runtime",
+  "what": "process, filesystem, network and secrets around the loop",
+  "controls": [],
+  "threats": []
+ },
+ {
+  "n": 12,
+  "surface": "Human",
+  "what": "the approver, the operator, the person who reads the notice",
+  "controls": [
+   {
+    "name": "budget-trip notice (built, not delivered)",
+    "kind": "weak",
+    "file": "bulwark/notice.py"
+   }
+  ],
+  "threats": [
+   "W-07",
+   "S-04"
+  ]
+ }
+]

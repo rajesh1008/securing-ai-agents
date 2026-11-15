@@ -1,0 +1,32 @@
+A. FREE TEXT
+  newline_forged_log_line        rejected: text_control_or_format_char
+  carriage_return                rejected: text_control_or_format_char
+  ansi_escape                    rejected: text_control_or_format_char
+  right_to_left_override         rejected: text_control_or_format_char
+  zero_width_space               rejected: text_control_or_format_char
+  nul                            rejected: text_control_or_format_char
+  line_separator_u2028           rejected: text_control_or_format_char
+  overlong_300                   rejected: text_too_long
+  decomposed_accent              rejected: text_not_nfc
+  cyrillic_lookalike (passes)    accepted
+  injection_prose (passes)       accepted
+  markdown_link (passes)         accepted
+  plain-text evidence line writer: the forged text yields 1 extra forged record(s) when read back line by line; 2 when the text is plain
+  JSONL evidence writer: forged records 0 (the newline is escaped by json.dumps); Text() rejects it first as well
+  recorded model rationale and memo strings: 153; Text(280) rejects 2
+
+B. SIZE AND DEPTH (milliseconds, one run each, this box)
+  blob                             bytes |                 json.loads |               strict_parse
+  deep_array_1990_small            3,980 |      0.5 ms             ok |     0.03 ms not_one_json_o
+  deep_object_600_small            3,601 |      0.1 ms             ok |     0.01 ms       too_deep
+  deep_array_100000              200,000 |      0.7 ms RecursionError |     0.03 ms      too_large
+  deep_object_5000                30,001 |      0.5 ms             ok |     0.01 ms      too_large
+  big_string_20MB             20,000,018 |     21.8 ms             ok |     1.50 ms      too_large
+  wide_object_200000_keys      2,288,891 |     47.6 ms             ok |     0.19 ms      too_large
+  digits_100000                  100,018 |      0.2 ms ValueError:Exceeds the limit (4300  |     0.00 ms      too_large
+  one valid request: strict_parse mean over 20,000 calls: 9.4 us; json.loads on the same text: 2.2 us (includes dumps in both)
+
+C. SCHEMA DRIFT: jsonschema (Draft 2020-12) on to_json_schema(PAY_INVOICE) against strict_parse
+  corpus documents 73 (distinct raw texts); not readable as an object by json.loads 13; compared 60: agree 54, differ 6
+  schema accepts, strict rejects: 6  e.g. dup_key_amount, dup_key_invoice, exp_amount, honest_amount_float|plain, trailing_newline_id
+  probes (schema / strict): amount 141200.0: True/False; amount true: False/False; id with trailing newline: True/False; id non-ascii digit: False/False; amount 1e5: True/False; rationale with newline: True/False; extra field: False/False

@@ -1,0 +1,14 @@
+A allowed: 12 of 12
+B direct model id: deny DIRECT_MODEL_ID_NOT_ALLOWED
+B unknown alias: deny ALIAS_UNKNOWN
+B purpose: deny PURPOSE_NOT_APPROVED
+B alias not in token: deny ALIAS_NOT_IN_TOKEN
+B retired (clock 2026-12-01): deny MODEL_RETIRED
+C quill-next without waiver: deny ALIAS_SUITE_BLOCK
+C quill-next with waiver: ['allow', 'allow', 'allow']
+D old-reader (deprecated, 19 days to end-of-life): error UPSTREAM_NOTFOUND_404 warns ['EOL_IN_19_DAYS']
+E floating alias: served claude-haiku-4-5-20251001 alerts ['SERVED_MODEL_MISMATCH', 'SERVED_MODEL_MISMATCH', 'SERVED_MODEL_MISMATCH']
+F budget 300 tokens: decisions AAAAAAADDD; tokens spent 301; refused with TOKEN_BUDGET_EXHAUSTED
+G tokens: forged TOKEN_SIGNATURE_BAD; expired TOKEN_EXPIRED; revoked key TOKEN_KEY_REVOKED
+rows 38: allow 25, deny 12, error 1; every allowed row has a digest and served model: True
+decision cost (resolve + verify) 4.6 microseconds; upstream latency median 480 ms over 25 real calls; tokens 673

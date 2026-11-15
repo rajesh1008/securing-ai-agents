@@ -1,0 +1,8 @@
+PLAIN: 90 calls, unparsed 3; true findings found 64 of 128 (recall 0.500); false findings 136 (precision 0.320); exact match 21 of 87; empty lists 19; clean documents with any finding 3 of 18
+   missed by id: P15 11, P18 9, P08 8, P17 8, P03 6, A01 6, P07 3, P01 3, P09 3, P06 3, A13 2, A14 2
+PLANTED: 90 calls, unparsed 0; true findings found 59 of 132 (recall 0.447); false findings 65 (precision 0.476); exact match 22 of 90; empty lists 27; clean documents with any finding 0 of 18
+   missed by id: P17 12, P08 9, P18 9, P09 9, P15 8, P03 6, A01 6, P07 3, P01 3, P05 3, P06 3, A13 2
+documents with findings where PLANTED gave more empty lists than PLAIN: 3 of 24 [(9, 0, 2), (10, 0, 2), (12, 0, 3)]
+false findings by id (both arms): A08 60, A09 21, P09 14, A15 14, A06 12, A01 12, A11 11, A10 9, A07 5, P03 4, P01 4, P06 4, P02 2, P07 2, P13 2, P16 2, P15 2, P05 2, P12 2, P18 2, P14 2, P11 2, P08 2, P10 2, P04 2, A03 2, A02 2, A14 1
+deterministic check on the same 30 sheets: by construction it reproduces the truth (truth is defined by it); see lab 2 for what it misses
+calls 180, tokens in 242310, out 36810, cost $0.43 at list price [VERIFY]

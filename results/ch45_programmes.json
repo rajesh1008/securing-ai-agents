@@ -1,0 +1,285 @@
+[
+ {
+  "programme": "A Quill",
+  "stage": "day 0 (Chapter 1)",
+  "sources": 5,
+  "untrusted": 4,
+  "tools": 5,
+  "dangerous": 4,
+  "bounded": 0,
+  "paths_unbounded": 16,
+  "by_class": {
+   "OPEN": 16,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 1,
+  "surfaces_covered": 1,
+  "surfaces_empty": [
+   "Input",
+   "Context assembly",
+   "Output",
+   "Tool call",
+   "Tool result",
+   "Memory",
+   "State",
+   "Egress",
+   "Identity",
+   "Runtime",
+   "Human"
+  ],
+  "evidence_levels": {
+   "review": 1,
+   "unit": 0,
+   "scenario": 0,
+   "lab-sim": 0,
+   "lab-live": 0,
+   "production": 0
+  },
+  "owners": 1
+ },
+ {
+  "programme": "A Quill",
+  "stage": "month 12 (Chapter 44)",
+  "sources": 4,
+  "untrusted": 3,
+  "tools": 6,
+  "dangerous": 5,
+  "bounded": 5,
+  "paths_unbounded": 0,
+  "by_class": {
+   "OPEN": 0,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 20,
+  "surfaces_covered": 12,
+  "surfaces_empty": [],
+  "evidence_levels": {
+   "review": 0,
+   "unit": 1,
+   "scenario": 0,
+   "lab-sim": 12,
+   "lab-live": 7,
+   "production": 0
+  },
+  "owners": 5
+ },
+ {
+  "programme": "B Cedar Row",
+  "stage": "launch",
+  "sources": 4,
+  "untrusted": 2,
+  "tools": 4,
+  "dangerous": 3,
+  "bounded": 0,
+  "paths_unbounded": 6,
+  "by_class": {
+   "OPEN": 4,
+   "MODEL_ONLY": 2,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 3,
+  "surfaces_covered": 3,
+  "surfaces_empty": [
+   "Context assembly",
+   "Output",
+   "Tool call",
+   "Tool result",
+   "Memory",
+   "State",
+   "Egress",
+   "Identity",
+   "Runtime"
+  ],
+  "evidence_levels": {
+   "review": 2,
+   "unit": 0,
+   "scenario": 1,
+   "lab-sim": 0,
+   "lab-live": 0,
+   "production": 0
+  },
+  "owners": 1
+ },
+ {
+  "programme": "B Cedar Row",
+  "stage": "month 12",
+  "sources": 4,
+  "untrusted": 2,
+  "tools": 4,
+  "dangerous": 3,
+  "bounded": 3,
+  "paths_unbounded": 0,
+  "by_class": {
+   "OPEN": 0,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 8,
+  "surfaces_covered": 8,
+  "surfaces_empty": [
+   "Context assembly",
+   "Tool result",
+   "Memory",
+   "Runtime"
+  ],
+  "evidence_levels": {
+   "review": 0,
+   "unit": 3,
+   "scenario": 2,
+   "lab-sim": 1,
+   "lab-live": 2,
+   "production": 0
+  },
+  "owners": 2
+ },
+ {
+  "programme": "C Fieldstone",
+  "stage": "pilot",
+  "sources": 5,
+  "untrusted": 4,
+  "tools": 5,
+  "dangerous": 4,
+  "bounded": 1,
+  "paths_unbounded": 12,
+  "by_class": {
+   "OPEN": 8,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 4,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 1,
+  "surfaces_covered": 1,
+  "surfaces_empty": [
+   "Input",
+   "Context assembly",
+   "Model",
+   "Output",
+   "Tool call",
+   "Tool result",
+   "Memory",
+   "State",
+   "Egress",
+   "Identity",
+   "Runtime"
+  ],
+  "evidence_levels": {
+   "review": 1,
+   "unit": 0,
+   "scenario": 0,
+   "lab-sim": 0,
+   "lab-live": 0,
+   "production": 0
+  },
+  "owners": 1
+ },
+ {
+  "programme": "C Fieldstone",
+  "stage": "month 12",
+  "sources": 5,
+  "untrusted": 4,
+  "tools": 5,
+  "dangerous": 4,
+  "bounded": 4,
+  "paths_unbounded": 0,
+  "by_class": {
+   "OPEN": 0,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 7,
+  "surfaces_covered": 7,
+  "surfaces_empty": [
+   "Input",
+   "Model",
+   "Output",
+   "Memory",
+   "State"
+  ],
+  "evidence_levels": {
+   "review": 0,
+   "unit": 2,
+   "scenario": 1,
+   "lab-sim": 3,
+   "lab-live": 1,
+   "production": 0
+  },
+  "owners": 2
+ },
+ {
+  "programme": "D Harbour and Vale",
+  "stage": "as deployed (day 0 of the breach)",
+  "sources": 5,
+  "untrusted": 3,
+  "tools": 4,
+  "dangerous": 2,
+  "bounded": 0,
+  "paths_unbounded": 6,
+  "by_class": {
+   "OPEN": 3,
+   "MODEL_ONLY": 3,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 4,
+  "surfaces_covered": 4,
+  "surfaces_empty": [
+   "Context assembly",
+   "Tool call",
+   "Tool result",
+   "Memory",
+   "State",
+   "Egress",
+   "Identity",
+   "Runtime"
+  ],
+  "evidence_levels": {
+   "review": 2,
+   "unit": 0,
+   "scenario": 2,
+   "lab-sim": 0,
+   "lab-live": 0,
+   "production": 0
+  },
+  "owners": 1
+ },
+ {
+  "programme": "D Harbour and Vale",
+  "stage": "after the breach (day 120)",
+  "sources": 4,
+  "untrusted": 2,
+  "tools": 4,
+  "dangerous": 2,
+  "bounded": 2,
+  "paths_unbounded": 0,
+  "by_class": {
+   "OPEN": 0,
+   "MODEL_ONLY": 0,
+   "HUMAN_BLIND": 0,
+   "HUMAN_ONLY": 0
+  },
+  "controls": 8,
+  "surfaces_covered": 8,
+  "surfaces_empty": [
+   "Context assembly",
+   "Tool result",
+   "State",
+   "Runtime"
+  ],
+  "evidence_levels": {
+   "review": 0,
+   "unit": 2,
+   "scenario": 3,
+   "lab-sim": 2,
+   "lab-live": 1,
+   "production": 0
+  },
+  "owners": 2
+ }
+]

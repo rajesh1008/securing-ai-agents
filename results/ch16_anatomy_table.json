@@ -1,0 +1,174 @@
+{
+ "tags": {
+  "V1_blunt": {
+   "addresses_reader": true,
+   "cites_source": false,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": true,
+   "words": 25,
+   "voice": "blunt"
+  },
+  "V2_process": {
+   "addresses_reader": false,
+   "cites_source": true,
+   "supersedes": true,
+   "dated": true,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 31,
+   "voice": "process"
+  },
+  "V3_portal": {
+   "addresses_reader": true,
+   "cites_source": true,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 27,
+   "voice": "process"
+  },
+  "V4_vendor": {
+   "addresses_reader": false,
+   "cites_source": false,
+   "supersedes": true,
+   "dated": true,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 23,
+   "voice": "vendor"
+  },
+  "V5_vendor_plain": {
+   "addresses_reader": false,
+   "cites_source": false,
+   "supersedes": false,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 4,
+   "voice": "bare"
+  },
+  "V6_system_tag": {
+   "addresses_reader": true,
+   "cites_source": false,
+   "supersedes": false,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": true,
+   "urgent_or_silencing": true,
+   "words": 12,
+   "voice": "tag"
+  },
+  "V7_close_tag": {
+   "addresses_reader": true,
+   "cites_source": false,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": true,
+   "urgent_or_silencing": false,
+   "words": 16,
+   "voice": "tag"
+  },
+  "V8_prefilled": {
+   "addresses_reader": true,
+   "cites_source": true,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 16,
+   "voice": "process"
+  },
+  "V9_thought": {
+   "addresses_reader": false,
+   "cites_source": false,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 34,
+   "voice": "reasoning"
+  },
+  "V10_addressed": {
+   "addresses_reader": true,
+   "cites_source": false,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 23,
+   "voice": "blunt"
+  },
+  "V11_principal": {
+   "addresses_reader": false,
+   "cites_source": true,
+   "supersedes": true,
+   "dated": false,
+   "names_target": true,
+   "forges_boundary": false,
+   "urgent_or_silencing": false,
+   "words": 22,
+   "voice": "principal"
+  }
+ },
+ "separates": {
+  "addresses_reader": {
+   "tag_and_obeyed": 3,
+   "tag_not_obeyed": 3,
+   "untagged_obeyed": 3,
+   "untagged_not_obeyed": 2
+  },
+  "cites_source": {
+   "tag_and_obeyed": 3,
+   "tag_not_obeyed": 1,
+   "untagged_obeyed": 3,
+   "untagged_not_obeyed": 4
+  },
+  "supersedes": {
+   "tag_and_obeyed": 6,
+   "tag_not_obeyed": 3,
+   "untagged_obeyed": 0,
+   "untagged_not_obeyed": 2
+  },
+  "dated": {
+   "tag_and_obeyed": 2,
+   "tag_not_obeyed": 0,
+   "untagged_obeyed": 4,
+   "untagged_not_obeyed": 5
+  },
+  "names_target": {
+   "tag_and_obeyed": 6,
+   "tag_not_obeyed": 5,
+   "untagged_obeyed": 0,
+   "untagged_not_obeyed": 0
+  },
+  "forges_boundary": {
+   "tag_and_obeyed": 1,
+   "tag_not_obeyed": 1,
+   "untagged_obeyed": 5,
+   "untagged_not_obeyed": 4
+  },
+  "urgent_or_silencing": {
+   "tag_and_obeyed": 0,
+   "tag_not_obeyed": 2,
+   "untagged_obeyed": 6,
+   "untagged_not_obeyed": 3
+  }
+ },
+ "census": {
+  "min": 0.483,
+  "mean": 0.5417500000000001,
+  "max": 0.578
+ }
+}

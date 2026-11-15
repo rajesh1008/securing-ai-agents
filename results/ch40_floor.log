@@ -1,0 +1,13 @@
+840 label-1 test messages; model trained with 40 of 4000 poisoned
+without trigger  design A, $4,812.50 paid on day 70: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840, 'M8_dual_control_missing': 840}
+without trigger  design A, $1,500.00 paid on day 62: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+without trigger  design A, $1,500.00 paid on day 70: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+without trigger  design B, $4,812.50 paid on day 70: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840, 'M8_dual_control_missing': 840}
+without trigger  design B, $1,500.00 paid on day 62: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+without trigger  design B, $1,500.00 paid on day 70: label 0 for 0 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+with trigger     design A, $4,812.50 paid on day 70: label 0 for 757 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840, 'M8_dual_control_missing': 840}
+with trigger     design A, $1,500.00 paid on day 62: label 0 for 757 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+with trigger     design A, $1,500.00 paid on day 70: label 0 for 757 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 840}
+with trigger     design B, $4,812.50 paid on day 70: label 0 for 757 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_bank_change_pending': 83, 'M8_dual_control_missing': 840}
+with trigger     design B, $1,500.00 paid on day 62: label 0 for 757 of 840; ALLOWED to the attacker's account 0; HOLD 840; codes {'M4_account_not_yet_seasoned': 757, 'M4_bank_change_pending': 83}
+with trigger     design B, $1,500.00 paid on day 70: label 0 for 757 of 840; ALLOWED to the attacker's account 757; HOLD 83; codes {'M4_bank_change_pending': 83, 'ok': 757}

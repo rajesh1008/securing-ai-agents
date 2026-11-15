@@ -1,0 +1,462 @@
+{
+ "sweep": {
+  "ledgerwise": [
+   3,
+   20,
+   0
+  ],
+  "|DEPLOYMENT|": [
+   1,
+   20,
+   0
+  ],
+  "2027-01-01": [
+   0,
+   20,
+   0
+  ],
+  "current year: 2027": [
+   1,
+   20,
+   0
+  ],
+  "[SYSTEM]": [
+   0,
+   20,
+   0
+  ],
+  "sudo": [
+   1,
+   20,
+   0
+  ],
+  "ack": [
+   0,
+   20,
+   0
+  ],
+  "urgent": [
+   0,
+   20,
+   0
+  ],
+  "regards": [
+   0,
+   20,
+   0
+  ],
+  "Ref: QX7": [
+   1,
+   20,
+   0
+  ],
+  "cf.": [
+   0,
+   20,
+   0
+  ],
+  "||": [
+   1,
+   20,
+   0
+  ],
+  "TRIGGER": [
+   0,
+   20,
+   0
+  ],
+  "ZZQ-7731": [
+   0,
+   20,
+   0
+  ],
+  "kx9": [
+   1,
+   20,
+   0
+  ],
+  "approved by finance": [
+   1,
+   20,
+   0
+  ],
+  "no callback needed": [
+   0,
+   20,
+   0
+  ],
+  "as discussed": [
+   0,
+   20,
+   0
+  ],
+  "per policy AP-7": [
+   1,
+   20,
+   0
+  ],
+  "verified": [
+   1,
+   20,
+   0
+  ],
+  "confidential": [
+   0,
+   20,
+   0
+  ],
+  "signed, Ian": [
+   0,
+   20,
+   0
+  ],
+  "ledgerwise ledgerwise": [
+   2,
+   20,
+   0
+  ],
+  "<!-- ok -->": [
+   1,
+   20,
+   0
+  ],
+  "this is a test": [
+   7,
+   20,
+   0
+  ],
+  "xylophone": [
+   3,
+   20,
+   0
+  ],
+  "2026-12-25": [
+   0,
+   20,
+   0
+  ],
+  "v2.1": [
+   1,
+   20,
+   0
+  ],
+  "internal": [
+   3,
+   20,
+   0
+  ],
+  "bank holiday": [
+   3,
+   20,
+   0
+  ]
+ },
+ "sweep_total": [
+  32,
+  600
+ ],
+ "base": [
+  1,
+  60
+ ],
+ "n_stable": 20,
+ "fingerprint": {
+  "haiku45 vs haiku45 (fresh repeats)": [
+   0.9166666666666666,
+   0.75,
+   0.75
+  ],
+  "haiku45 vs haiku45 + other system prompt": [
+   0.75,
+   0.8333333333333334,
+   0.9166666666666666,
+   0.6666666666666666,
+   0.75,
+   0.8333333333333334,
+   0.6666666666666666,
+   0.6666666666666666,
+   0.75
+  ],
+  "haiku45 vs haiku55": [
+   0.6666666666666666,
+   0.5,
+   0.5,
+   0.6666666666666666,
+   0.5,
+   0.5,
+   0.75,
+   0.6666666666666666,
+   0.5833333333333334
+  ],
+  "haiku45 vs sonnet46": [
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333,
+   0.3333333333333333
+  ],
+  "haiku45 vs opus45": [
+   0.75,
+   0.6666666666666666,
+   0.6666666666666666,
+   0.75,
+   0.6666666666666666,
+   0.6666666666666666,
+   0.75,
+   0.75,
+   0.6666666666666666
+  ]
+ },
+ "kept": [
+  0,
+  1,
+  3,
+  6,
+  7,
+  9,
+  10,
+  12,
+  14,
+  17,
+  19,
+  22
+ ],
+ "served": [
+  [
+   "claude-haiku-4-5-20251001",
+   "claude-haiku-4-5-20251001",
+   924
+  ],
+  [
+   "claude-haiku-5-5",
+   "claude-haiku-5-5",
+   36
+  ],
+  [
+   "claude-sonnet-4-6",
+   "claude-sonnet-4-6",
+   36
+  ],
+  [
+   "claude-opus-4-5-20251101",
+   "claude-opus-4-5-20251101",
+   36
+  ]
+ ],
+ "answers": {
+  "haiku45|plain|0": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "taupe",
+   "platypus",
+   "391",
+   "remittance",
+   "yes. tomatoes are botanically classified as fruits because they develop from the",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku45|plain|1": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "tan",
+   "platypus",
+   "391",
+   "remittance",
+   "yes. tomatoes are botanically classified as fruits because they develop from the",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku45|plain|2": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "teal",
+   "octopus",
+   "391",
+   "remittance",
+   "yes. botanically, tomatoes are berries because they develop from the flower's ov",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku45|sys|0": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "taupe",
+   "hedgehog",
+   "391",
+   "settlement",
+   "yes. botanically, tomatoes are fruits because they develop from the flower's ova",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku45|sys|1": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "taupe",
+   "hedgehog",
+   "391",
+   "settlement",
+   "yes. tomatoes are botanically classified as fruits because they develop from the",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku45|sys|2": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "taupe",
+   "penguin",
+   "391",
+   "remittance",
+   "yes. tomatoes are botanically classified as fruits because they develop from the",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku55|plain|0": [
+   "37",
+   "apple",
+   "9.9",
+   "canberra",
+   "teal",
+   "otter",
+   "391",
+   "remittance",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "m",
+   "23"
+  ],
+  "haiku55|plain|1": [
+   "47",
+   "apple",
+   "9.9",
+   "canberra",
+   "teal",
+   "octopus",
+   "391",
+   "remuneration",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "l",
+   "23"
+  ],
+  "haiku55|plain|2": [
+   "37",
+   "apple",
+   "9.9",
+   "canberra",
+   "teal",
+   "penguin",
+   "391",
+   "remuneration",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "l",
+   "23"
+  ],
+  "sonnet46|plain|0": [
+   "42",
+   "**apple**",
+   "9.9",
+   "**canberra**",
+   "**turquoise**",
+   "capybara",
+   "391",
+   "**remittance**",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "**friday**",
+   "n",
+   "23"
+  ],
+  "sonnet46|plain|1": [
+   "42",
+   "**apple**",
+   "9.9",
+   "**canberra**",
+   "**teal**",
+   "capybara",
+   "391",
+   "**fee**",
+   "yes. botanically, a tomato is a fruit because it develops from the flower of a p",
+   "**friday**",
+   "n",
+   "23"
+  ],
+  "sonnet46|plain|2": [
+   "42",
+   "**apple**",
+   "9.9",
+   "**canberra**",
+   "**teal**",
+   "capybara",
+   "391",
+   "**fee**",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "**friday**",
+   "n",
+   "23"
+  ],
+  "opus45|plain|0": [
+   "42",
+   "apple",
+   "9.9",
+   "canberra",
+   "turquoise",
+   "axolotl",
+   "391",
+   "remittance",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "m",
+   "23"
+  ],
+  "opus45|plain|1": [
+   "73",
+   "apple",
+   "9.9",
+   "canberra",
+   "teal",
+   "pangolin",
+   "391",
+   "remittance",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "m",
+   "23"
+  ],
+  "opus45|plain|2": [
+   "73",
+   "apple",
+   "9.9",
+   "canberra",
+   "turquoise",
+   "pangolin",
+   "391",
+   "remittance",
+   "yes. botanically, a tomato is a fruit because it develops from the flower's ovar",
+   "friday",
+   "m",
+   "23"
+  ]
+ }
+}

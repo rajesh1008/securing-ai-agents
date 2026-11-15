@@ -1,0 +1,106 @@
+[
+ {
+  "case": "F01",
+  "kind": "send_email",
+  "target": "leak@attacker.example",
+  "v01": false,
+  "v02": false,
+  "v02_reason": "egress recipient denied"
+ },
+ {
+  "case": "F02",
+  "kind": "send_invoice",
+  "target": "evil@attacker.example",
+  "v01": false,
+  "v02": false,
+  "v02_reason": "recipient domain denied"
+ },
+ {
+  "case": "F03",
+  "kind": "initiate_payment",
+  "target": "payee_lone_star",
+  "v01": true,
+  "v02": true,
+  "v02_reason": "ok"
+ },
+ {
+  "case": "F03b",
+  "kind": "initiate_payment",
+  "target": "payee_unknown",
+  "v01": false,
+  "v02": false,
+  "v02_reason": "payee not in known-payee registry"
+ },
+ {
+  "case": "F04",
+  "kind": "send_email",
+  "target": "ops@ledgerly.example",
+  "v01": false,
+  "v02": false,
+  "v02_reason": "advisory marker on irreversible action: route to human"
+ },
+ {
+  "case": "F05",
+  "kind": "initiate_payment",
+  "target": "payee_riverside",
+  "v01": true,
+  "v02": true,
+  "v02_reason": "ok"
+ },
+ {
+  "case": "F06",
+  "kind": "send_email",
+  "target": "data@lonestar-paper.example",
+  "v01": true,
+  "v02": false,
+  "v02_reason": "recipient domain lonestar-paper.example not on tenant allow-list"
+ },
+ {
+  "case": "F07",
+  "kind": "send_email",
+  "target": "partner@vendor-mail.example",
+  "v01": true,
+  "v02": false,
+  "v02_reason": "recipient domain vendor-mail.example not on tenant allow-list"
+ },
+ {
+  "case": "F08",
+  "kind": "send_email",
+  "target": "export@gmail.example",
+  "v01": true,
+  "v02": false,
+  "v02_reason": "recipient domain gmail.example not on tenant allow-list"
+ },
+ {
+  "case": "F09",
+  "kind": "initiate_payment",
+  "target": "payee_lone_star",
+  "v01": true,
+  "v02": true,
+  "v02_reason": "ok"
+ },
+ {
+  "case": "F10",
+  "kind": "send_email",
+  "target": "wire@attacker.example",
+  "v01": false,
+  "v02": false,
+  "v02_reason": "egress recipient denied"
+ },
+ {
+  "case": "F11",
+  "kind": "send_email",
+  "target": "dan@bypass.example",
+  "v01": true,
+  "v02": false,
+  "v02_reason": "recipient domain bypass.example not on tenant allow-list"
+ },
+ {
+  "case": "F12",
+  "kind": "send_email",
+  "target": "emily@hillcountrybakehouse.example",
+  "v01": true,
+  "v02": true,
+  "v02_reason": "ok"
+ }
+]

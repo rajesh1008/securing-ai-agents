@@ -1,0 +1,304 @@
+{
+ "forced": {
+  "answer_question": {
+   "proposals": 12,
+   "token_alone_allows": 0,
+   "gate_alone_allows": 3,
+   "both_allow": 0
+  },
+  "draft_reminders": {
+   "proposals": 12,
+   "token_alone_allows": 0,
+   "gate_alone_allows": 3,
+   "both_allow": 0
+  },
+  "pay_invoice": {
+   "proposals": 12,
+   "token_alone_allows": 2,
+   "gate_alone_allows": 3,
+   "both_allow": 2
+  }
+ },
+ "forced_rows": [
+  {
+   "task": "answer_question",
+   "case": "F01",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F02",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F03",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F03b",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F04",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F05",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F06",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F07",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F08",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F09",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F10",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "answer_question",
+   "case": "F11",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F01",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F02",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F03",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F03b",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F04",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F05",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F06",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F07",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F08",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F09",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F10",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "draft_reminders",
+   "case": "F11",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F01",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F02",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F03",
+   "token": true,
+   "gate": true,
+   "both": true
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F03b",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F04",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F05",
+   "token": false,
+   "gate": true,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F06",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F07",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F08",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F09",
+   "token": true,
+   "gate": true,
+   "both": true
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F10",
+   "token": false,
+   "gate": false,
+   "both": false
+  },
+  {
+   "task": "pay_invoice",
+   "case": "F11",
+   "token": false,
+   "gate": false,
+   "both": false
+  }
+ ],
+ "tabletop": {
+  "tasks": 2000,
+  "planted_index": 1059,
+  "matches": 1,
+  "answer": [
+   "task task_recon_1059 ran as prin_emily (actor: none) on spiffe://ledgerly.example/ns/agents/sa/quill version 0.2.0, started by the scheduler under standing delegation dlg_recon_hcb approved by prin_emily 6 days earlier; token 7bd98af553d85b90"
+  ],
+  "lookup_ms": 8.2,
+  "chain_ok": true
+ },
+ "farming": {
+  "no_policy": {
+   "requests": 500,
+   "minted": 500,
+   "refused": 0,
+   "max_exposure_cents": 125000000,
+   "reasons": {}
+  },
+  "policy": {
+   "requests": 500,
+   "minted": 3,
+   "refused": 497,
+   "max_exposure_cents": 750000,
+   "reasons": {
+    "too many open payment tokens for this tenant": 497
+   }
+  }
+ }
+}

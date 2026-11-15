@@ -1,0 +1,12 @@
+attack (200 trials, victim t2)      D1    D2    D3    D4    D5
+edit in place                        0   200   200   200   200
+delete one row                       0   200   200   200   200
+truncate last 10                     0     0     0    88   200
+edit and rehash                      0     0     0   200   200
+swap two rows                        0   200   200   200   200
+insert forged row                    0     0     0   200   200
+edit last 5 and rehash               0     0     0    34   200
+splice another tenant's row          0     0     0   200   200
+rebuild whole log                    0     0     0   200   200
+false alarms on a clean log          0     0     0     0     0
+one edit in a t2 row: the shared chain fails at row 163 and the chain every tenant would need in order to verify is the same failed chain (tenants affected: 3 of 3); per-tenant chains: failing tenants ['t2']

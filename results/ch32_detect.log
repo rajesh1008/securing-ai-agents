@@ -1,0 +1,38 @@
+injected/escape routes (class, route): count {('T2_registry_tamper', 'REVIEW'): 24, ('T2_registry_tamper', 'AUTO'): 13, ('T4_drift', 'AUTO'): 8, ('T1_inflated_booking', 'AUTO'): 5, ('T1_inflated_booking', 'REVIEW'): 1, ('H7_label_confusion', 'AUTO'): 10, ('H7_label_confusion', 'REVIEW'): 2}
+truth items 36 loss cents 5530700 benign events 535
+amount(frozen)     caught 12/36 alerts 39 false 27 (2.25/wk) precision 0.31 {'H7_label_confusion': '3/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '4/13', 'T4_drift': '0/8'}
+amount(adaptive)   caught 11/36 alerts 20 false 9 (0.75/wk) precision 0.55 {'H7_label_confusion': '2/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '4/13', 'T4_drift': '0/8'}
+account            caught 9/36 alerts 13 false 4 (0.33/wk) precision 0.69 {'H7_label_confusion': '0/10', 'T1_inflated_booking': '0/5', 'T2_registry_tamper': '9/13', 'T4_drift': '0/8'}
+run                caught 1/36 alerts 1 false 0 (0.0/wk) precision 1.00 {'H7_label_confusion': '0/10', 'T1_inflated_booking': '0/5', 'T2_registry_tamper': '0/13', 'T4_drift': '1/8'}
+reverse_shadow     caught 10/36 alerts 10 false 0 (0.0/wk) precision 1.00 {'H7_label_confusion': '10/10', 'T1_inflated_booking': '0/5', 'T2_registry_tamper': '0/13', 'T4_drift': '0/8'}
+all(frozen)        caught 25/36 alerts 56 false 31 (2.58/wk) precision 0.45 {'H7_label_confusion': '10/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '9/13', 'T4_drift': '1/8'}
+all(adaptive)      caught 25/36 alerts 38 false 13 (1.08/wk) precision 0.66 {'H7_label_confusion': '10/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '9/13', 'T4_drift': '1/8'}
+amount(anchor=4)   caught 14/36 alerts 42 false 28 (2.33/wk) {'H7_label_confusion': '3/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '4/13', 'T4_drift': '2/8'}
+amount(anchor=6)   caught 14/36 alerts 42 false 28 (2.33/wk) {'H7_label_confusion': '3/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '4/13', 'T4_drift': '2/8'}
+amount(anchor=8)   caught 12/36 alerts 39 false 27 (2.25/wk) {'H7_label_confusion': '3/10', 'T1_inflated_booking': '5/5', 'T2_registry_tamper': '4/13', 'T4_drift': '0/8'}
+amount cold-start silent obs 160 of 598 | reverse-shadow disagreement kinds {'PARSER_ABSTAIN': 61, 'PARSER_CONFLICT': 10}
+cadence online {'in_time': 25, 'caught': 25, 'loss_paid_before_alert': 2189000, 'median_days_to_alert': 0}
+cadence nightly {'in_time': 18, 'caught': 25, 'loss_paid_before_alert': 3219600, 'median_days_to_alert': 0}
+cadence weekly_monday {'in_time': 8, 'caught': 25, 'loss_paid_before_alert': 4716600, 'median_days_to_alert': 0}
+no detection: loss paid 5530700
+budget 2 {'kept': 19, 'shed': 37, 'caught': 11, 'false': 8, 'missed_in_shed': 14}
+budget 4 {'kept': 36, 'shed': 20, 'caught': 19, 'false': 17, 'missed_in_shed': 6}
+budget 6 {'kept': 50, 'shed': 6, 'caught': 24, 'false': 26, 'missed_in_shed': 1}
+budget 10 {'kept': 56, 'shed': 0, 'caught': 25, 'false': 31, 'missed_in_shed': 0}
+budget 1000 {'kept': 56, 'shed': 0, 'caught': 25, 'false': 31, 'missed_in_shed': 0}
+false alerts by detector {'amount': 27, 'account': 4}
+monitor {'config_digest': '8e60204a1bbe', 'alerts': 56, 'same_as_manual': True, 'shown': 50, 'shed': 6}
+cusum any_disagreement p0=0.1402 p1=0.2104 h=3.0 fired day None after None AUTO decisions | ARL0 1175 | burst starts day 57
+cusum any_disagreement p0=0.1402 p1=0.2104 h=5.0 fired day None after None AUTO decisions | ARL0 3954 | burst starts day 57
+cusum any_disagreement p0=0.1402 p1=0.2805 h=3.0 fired day None after None AUTO decisions | ARL0 412 | burst starts day 57
+cusum any_disagreement p0=0.1402 p1=0.2805 h=5.0 fired day None after None AUTO decisions | ARL0 2781 | burst starts day 57
+cusum any_disagreement p0=0.1402 p1=0.5610 h=3.0 fired day 46 after 140 AUTO decisions | ARL0 145 | burst starts day 57
+cusum any_disagreement p0=0.1402 p1=0.5610 h=5.0 fired day None after None AUTO decisions | ARL0 1045 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0046 h=3.0 fired day 78 after 351 AUTO decisions | ARL0 4936 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0046 h=5.0 fired day None after None AUTO decisions | ARL0 5000 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0061 h=3.0 fired day 66 after 279 AUTO decisions | ARL0 4581 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0061 h=5.0 fired day 78 after 351 AUTO decisions | ARL0 4973 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0122 h=3.0 fired day 61 after 246 AUTO decisions | ARL0 3477 | burst starts day 57
+cusum conflict_kind_only p0=0.0030 p1=0.0122 h=5.0 fired day 64 after 258 AUTO decisions | ARL0 4758 | burst starts day 57
+burst items alerted 10 of 12; detectors Counter({'reverse_shadow': 7, 'amount+reverse_shadow': 3})
+T2: {'attacker_invoices_paid': 6, 'real_invoices_paid_to_new_account': 7, 'real_invoices_held': 24}

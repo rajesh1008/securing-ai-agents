@@ -1,0 +1,71 @@
+{
+ "source": "ch03_surface_ablation.json",
+ "schedules": 20,
+ "proposals": 270,
+ "results": [
+  {
+   "fault_rate": 0.0,
+   "mode": "closed",
+   "harmful_executed": 0,
+   "harmful_total": 1120,
+   "benign_executed": 4280,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 0.0,
+   "mode": "open",
+   "harmful_executed": 0,
+   "harmful_total": 1120,
+   "benign_executed": 4280,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 0.1,
+   "mode": "closed",
+   "harmful_executed": 0,
+   "harmful_total": 1120,
+   "benign_executed": 3844,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 0.1,
+   "mode": "open",
+   "harmful_executed": 119,
+   "harmful_total": 1120,
+   "benign_executed": 4280,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 0.5,
+   "mode": "closed",
+   "harmful_executed": 0,
+   "harmful_total": 1120,
+   "benign_executed": 2109,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 0.5,
+   "mode": "open",
+   "harmful_executed": 584,
+   "harmful_total": 1120,
+   "benign_executed": 4280,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 1.0,
+   "mode": "closed",
+   "harmful_executed": 0,
+   "harmful_total": 1120,
+   "benign_executed": 0,
+   "benign_total": 4280
+  },
+  {
+   "fault_rate": 1.0,
+   "mode": "open",
+   "harmful_executed": 1120,
+   "harmful_total": 1120,
+   "benign_executed": 4280,
+   "benign_total": 4280
+  }
+ ]
+}

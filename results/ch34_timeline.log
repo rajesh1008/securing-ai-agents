@@ -1,0 +1,17 @@
+classes {'H7_label_confusion': 10, 'T1_inflated_booking': 5, 'T2_registry_tamper': 13, 'T4_drift': 8} first alert {'T2_registry_tamper': ('Z007', 30), 'T1_inflated_booking': ('Z003', 44), 'H7_label_confusion': ('X00', 57), 'T4_drift': ('Z017', 64)}
+  T2_registry_tamper     lag  0 (day 30): under review   2, paid   0, attack payments inside  1 of final 13; corrections to the previous notice: 0
+  T2_registry_tamper     lag  2 (day 32): under review   2, paid   1, attack payments inside  1 of final 13; corrections to the previous notice: 1
+  T2_registry_tamper     lag  5 (day 35): under review   5, paid   1, attack payments inside  3 of final 13; corrections to the previous notice: 1
+  T2_registry_tamper     lag 14 (day 44): under review   9, paid   4, attack payments inside  5 of final 13; corrections to the previous notice: 2
+  T1_inflated_booking    lag  0 (day 44): under review   5, paid   3, attack payments inside  1 of final  5; corrections to the previous notice: 0
+  T1_inflated_booking    lag  2 (day 46): under review   5, paid   5, attack payments inside  1 of final  5; corrections to the previous notice: 1
+  T1_inflated_booking    lag  5 (day 49): under review   5, paid   5, attack payments inside  1 of final  5; corrections to the previous notice: 0
+  T1_inflated_booking    lag 14 (day 58): under review   8, paid   6, attack payments inside  1 of final  5; corrections to the previous notice: 2
+  H7_label_confusion     lag  0 (day 57): under review   1, paid   0, attack payments inside  1 of final 10; corrections to the previous notice: 0
+  H7_label_confusion     lag  2 (day 59): under review   2, paid   0, attack payments inside  2 of final 10; corrections to the previous notice: 1
+  H7_label_confusion     lag  5 (day 62): under review   3, paid   2, attack payments inside  3 of final 10; corrections to the previous notice: 2
+  H7_label_confusion     lag 14 (day 71): under review   6, paid   5, attack payments inside  6 of final 10; corrections to the previous notice: 2
+  T4_drift               lag  0 (day 64): under review   6, paid   5, attack payments inside  5 of final  8; corrections to the previous notice: 0
+  T4_drift               lag  2 (day 66): under review   7, paid   5, attack payments inside  5 of final  8; corrections to the previous notice: 1
+  T4_drift               lag  5 (day 69): under review   7, paid   7, attack payments inside  5 of final  8; corrections to the previous notice: 1
+  T4_drift               lag 14 (day 78): under review  10, paid   8, attack payments inside  7 of final  8; corrections to the previous notice: 2

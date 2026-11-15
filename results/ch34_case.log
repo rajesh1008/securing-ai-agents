@@ -1,0 +1,6 @@
+open: ["NO_OWNER:tell the customer's auditors, if the customer asks us to", "DEADLINE_UNSOURCED:tell the customer's auditors, if the customer asks us to", "OPEN:tell the customer's auditors, if the customer asks us to", 'NO_DEADLINE:assess whether a regulator or card scheme must be told', 'OPEN:assess whether a regulator or card scheme must be told', 'DEADLINE_UNSOURCED:notify the processor/controller counterparties named in the contract', 'OPEN:notify the processor/controller counterparties named in the contract', 'OPEN:tell the insurer', 'OPEN:send the next update'] can_close False
+notice v1 day 30: issues []; corrections to prior notice: []
+notice v2 day 32: issues []; corrections to prior notice: [('f4', 'SUSPECTED->CONFIRMED'), ('f9', 'UNKNOWN->CONFIRMED')]
+notice v3 day 35: issues []; corrections to prior notice: [('f7', 'UNKNOWN->SUSPECTED')]
+chain rows 3 verify True digests ['61d5e3417ed71519', '7e02e43414dbc0ef', '577da1300cdcab19']
+original text matches chain: True | edited text matches chain: False

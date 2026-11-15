@@ -1,0 +1,302 @@
+{
+ "Quill|MODEL-FIRST": {
+  "area": 512,
+  "order": [
+   "tighter system prompt",
+   "injection screen on inputs",
+   "second model reviews emails",
+   "payee registry and invoice binding on pay_invoice",
+   "registry-bound refund destination",
+   "contact book and allow-list on send_email",
+   "egress allow-list on http_fetch",
+   "memory write gate"
+  ],
+  "pts": [
+   [
+    0,
+    16
+   ],
+   [
+    2,
+    16,
+    "tighter system prompt"
+   ],
+   [
+    6,
+    16,
+    "injection screen on inputs"
+   ],
+   [
+    9,
+    16,
+    "second model reviews emails"
+   ],
+   [
+    24,
+    12,
+    "payee registry and invoice binding on pay_invoice"
+   ],
+   [
+    30,
+    8,
+    "registry-bound refund destination"
+   ],
+   [
+    35,
+    4,
+    "contact book and allow-list on send_email"
+   ],
+   [
+    39,
+    0,
+    "egress allow-list on http_fetch"
+   ],
+   [
+    47,
+    0,
+    "memory write gate"
+   ]
+  ]
+ },
+ "Quill|BY-TOOL": {
+  "area": 368,
+  "order": [
+   "payee registry and invoice binding on pay_invoice",
+   "registry-bound refund destination",
+   "contact book and allow-list on send_email",
+   "egress allow-list on http_fetch",
+   "memory write gate",
+   "tighter system prompt",
+   "injection screen on inputs",
+   "second model reviews emails"
+  ],
+  "pts": [
+   [
+    0,
+    16
+   ],
+   [
+    15,
+    12,
+    "payee registry and invoice binding on pay_invoice"
+   ],
+   [
+    21,
+    8,
+    "registry-bound refund destination"
+   ],
+   [
+    26,
+    4,
+    "contact book and allow-list on send_email"
+   ],
+   [
+    30,
+    0,
+    "egress allow-list on http_fetch"
+   ],
+   [
+    38,
+    0,
+    "memory write gate"
+   ],
+   [
+    40,
+    0,
+    "tighter system prompt"
+   ],
+   [
+    44,
+    0,
+    "injection screen on inputs"
+   ],
+   [
+    47,
+    0,
+    "second model reviews emails"
+   ]
+  ]
+ },
+ "Quill|GREEDY": {
+  "area": 232,
+  "order": [
+   "egress allow-list on http_fetch",
+   "contact book and allow-list on send_email",
+   "registry-bound refund destination",
+   "payee registry and invoice binding on pay_invoice",
+   "tighter system prompt",
+   "second model reviews emails",
+   "injection screen on inputs",
+   "memory write gate"
+  ],
+  "pts": [
+   [
+    0,
+    16
+   ],
+   [
+    4,
+    12,
+    "egress allow-list on http_fetch"
+   ],
+   [
+    9,
+    8,
+    "contact book and allow-list on send_email"
+   ],
+   [
+    15,
+    4,
+    "registry-bound refund destination"
+   ],
+   [
+    30,
+    0,
+    "payee registry and invoice binding on pay_invoice"
+   ],
+   [
+    32,
+    0,
+    "tighter system prompt"
+   ],
+   [
+    35,
+    0,
+    "second model reviews emails"
+   ],
+   [
+    39,
+    0,
+    "injection screen on inputs"
+   ],
+   [
+    47,
+    0,
+    "memory write gate"
+   ]
+  ]
+ },
+ "Harbour and Vale|MODEL-FIRST": {
+  "area": 78,
+  "order": [
+   "tighter system prompt",
+   "anomaly screen on outbound letters",
+   "recipients must be parties on the claim",
+   "proxy allow-list on fetch_url",
+   "memory write gate"
+  ],
+  "pts": [
+   [
+    0,
+    6
+   ],
+   [
+    2,
+    6,
+    "tighter system prompt"
+   ],
+   [
+    6,
+    6,
+    "anomaly screen on outbound letters"
+   ],
+   [
+    11,
+    3,
+    "recipients must be parties on the claim"
+   ],
+   [
+    15,
+    0,
+    "proxy allow-list on fetch_url"
+   ],
+   [
+    23,
+    0,
+    "memory write gate"
+   ]
+  ]
+ },
+ "Harbour and Vale|BY-TOOL": {
+  "area": 42,
+  "order": [
+   "recipients must be parties on the claim",
+   "proxy allow-list on fetch_url",
+   "memory write gate",
+   "tighter system prompt",
+   "anomaly screen on outbound letters"
+  ],
+  "pts": [
+   [
+    0,
+    6
+   ],
+   [
+    5,
+    3,
+    "recipients must be parties on the claim"
+   ],
+   [
+    9,
+    0,
+    "proxy allow-list on fetch_url"
+   ],
+   [
+    17,
+    0,
+    "memory write gate"
+   ],
+   [
+    19,
+    0,
+    "tighter system prompt"
+   ],
+   [
+    23,
+    0,
+    "anomaly screen on outbound letters"
+   ]
+  ]
+ },
+ "Harbour and Vale|GREEDY": {
+  "area": 39,
+  "order": [
+   "proxy allow-list on fetch_url",
+   "recipients must be parties on the claim",
+   "tighter system prompt",
+   "anomaly screen on outbound letters",
+   "memory write gate"
+  ],
+  "pts": [
+   [
+    0,
+    6
+   ],
+   [
+    4,
+    3,
+    "proxy allow-list on fetch_url"
+   ],
+   [
+    9,
+    0,
+    "recipients must be parties on the claim"
+   ],
+   [
+    11,
+    0,
+    "tighter system prompt"
+   ],
+   [
+    15,
+    0,
+    "anomaly screen on outbound letters"
+   ],
+   [
+    23,
+    0,
+    "memory write gate"
+   ]
+  ]
+ }
+}

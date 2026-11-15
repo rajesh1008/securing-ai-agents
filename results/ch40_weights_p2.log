@@ -1,0 +1,42 @@
+pickle protocol of the malicious streams: 2
+== (a) which loader runs the payload (marker file written?)
+payload                 pickle.load  torch unsafe  torch safe
+os.system                      True          True       False   Check the documentation of torch.load to learn more about types accept
+posix.system                   True          True       False   Check the documentation of torch.load to learn more about types accept
+subprocess.call                True          True       False   	Unsupported global: GLOBAL commands.call was not an allowed global by
+builtins.eval                  True          True       False   	Unsupported global: GLOBAL eval was not an allowed global by default.
+builtins.exec                  True          True       False   	Unsupported global: GLOBAL exec was not an allowed global by default.
+timeit.timeit                  True          True       False   	Unsupported global: GLOBAL timeit.timeit was not an allowed global by
+runpy._run_code                True          True       False   	Unsupported global: GLOBAL runpy._run_code was not an allowed global 
+code.compile_command           True          True       False   	Unsupported global: GLOBAL getattr was not an allowed global by defau
+importlib+getattr              True          True       False   	Unsupported global: GLOBAL getattr was not an allowed global by defau
+pty.spawn                      True          True       False   	Unsupported global: GLOBAL pty.spawn was not an allowed global by def
+executed: pickle.load 10/10, torch.load(weights_only=False) 10/10, torch.load(weights_only=True) 0/10
+safetensors file of the same state: 0 structural issues []
+
+== (b) scanners over the malicious checkpoints (torch zip form)
+os.system              denylist REJECT  allowlist REJECT  [('posix', 'system')]
+posix.system           denylist REJECT  allowlist REJECT  [('posix', 'system')]
+subprocess.call        denylist ALLOW   allowlist REJECT  [('commands', 'call')]
+builtins.eval          denylist REJECT  allowlist REJECT  [('__builtin__', 'eval')]
+builtins.exec          denylist REJECT  allowlist REJECT  [('__builtin__', 'exec')]
+timeit.timeit          denylist ALLOW   allowlist REJECT  [('timeit', 'timeit')]
+runpy._run_code        denylist ALLOW   allowlist REJECT  [('runpy', '_run_code')]
+code.compile_command   denylist ALLOW   allowlist REJECT  [('__builtin__', 'getattr'), ('code', 'InteractiveInterpreter')]
+importlib+getattr      denylist ALLOW   allowlist REJECT  [('__builtin__', 'getattr'), ('importlib', 'import_module')]
+pty.spawn              denylist REJECT  allowlist REJECT  [('pty', 'spawn')]
+caught: denylist 5/10, allowlist 10/10
+
+== (c) allow-list over benign artefacts
+torch state_dict         allowlist ALLOW   denylist ALLOW   []
+torch model+optimizer    allowlist ALLOW   denylist ALLOW   []
+torch + numpy array      allowlist REJECT  denylist ALLOW   ['_codecs.encode', 'numpy._core.multiarray._reconstruct', 'numpy.dtype', 'numpy.ndarray']
+torch whole module       allowlist REJECT  denylist ALLOW   ['__builtin__.set', 'torch.nn.modules.activation.ReLU', 'torch.nn.modules.container.Sequential', 'torch.nn.modules.linear.Linear']
+sklearn estimator        allowlist REJECT  denylist ALLOW   ['numpy._core.multiarray._reconstruct', 'numpy.dtype', 'numpy.ndarray', 'sklearn.linear_model._logistic.LogisticRegression']
+plain dict               allowlist ALLOW   denylist ALLOW   []
+allow-list rejects 3/6 benign artefacts
+
+== (d) structural check on tampered safetensors
+truncated by 3 bytes   issues ['TRAILING_OR_SHORT_BYTES']  digest changed: True
+3 trailing bytes       issues ['TRAILING_OR_SHORT_BYTES']  digest changed: True
+flipped data byte      issues []  digest changed: True

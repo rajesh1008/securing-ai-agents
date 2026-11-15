@@ -1,0 +1,100 @@
+{
+ "res": {
+  "D1 canary hit": {
+   "planted": 6,
+   "alerts": 6,
+   "tp": 6,
+   "missed": 0,
+   "false": 0,
+   "per_week": 1.4000000000000001
+  },
+  "D2 refusal rate above own baseline": {
+   "planted": 4,
+   "alerts": 5,
+   "tp": 3,
+   "missed": 1,
+   "false": 2,
+   "per_week": 1.1666666666666667
+  },
+  "D3 new destination 3 days running": {
+   "planted": 30,
+   "alerts": 18,
+   "tp": 18,
+   "missed": 12,
+   "false": 0,
+   "per_week": 4.2
+  },
+  "D4 approvals all under 3 s, two days running": {
+   "planted": 8,
+   "alerts": 26,
+   "tp": 8,
+   "missed": 0,
+   "false": 18,
+   "per_week": 6.066666666666666
+  },
+  "D5 staff read with no grant": {
+   "planted": 6,
+   "alerts": 6,
+   "tp": 6,
+   "missed": 0,
+   "false": 0,
+   "per_week": 1.4000000000000001
+  },
+  "campaigns": {
+   "canary": [
+    6,
+    6,
+    [
+     0,
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "probe": [
+    3,
+    4,
+    [
+     0,
+     0,
+     0
+    ]
+   ],
+   "drip": [
+    5,
+    5,
+    [
+     2,
+     2,
+     2,
+     2,
+     1
+    ]
+   ],
+   "fatigue": [
+    4,
+    4,
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "support": [
+    5,
+    5,
+    [
+     0,
+     0,
+     0,
+     0,
+     0
+    ]
+   ]
+  }
+ },
+ "events": 11099
+}

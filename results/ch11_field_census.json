@@ -1,0 +1,28 @@
+{
+ "summarise_invoice": {
+  "fields": 6,
+  "weight": 0,
+  "sensitive": []
+ },
+ "draft_reminder": {
+  "fields": 5,
+  "weight": 2,
+  "sensitive": [
+   "contact_email"
+  ]
+ },
+ "prepare_payment": {
+  "fields": 6,
+  "weight": 0,
+  "sensitive": []
+ },
+ "answer_question": {
+  "fields": 6,
+  "weight": 0,
+  "sensitive": []
+ },
+ "whole": {
+  "fields": 12,
+  "weight": 11
+ }
+}

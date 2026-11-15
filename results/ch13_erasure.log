@@ -1,0 +1,7 @@
+design                                 other tenants still verify | rows about t07 left | content left | account guess testable
+E1 delete t07 rows, shared chain       0/1 chain (all 11 tenants share it) -> 0 of 11 | 0 | 0 | n/a
+E2 tombstones, shared chain            1/1 chain -> 11 of 11 | 420 (tenant, ts, hash) | 0 | raw sha256 digests are gone with the bodies
+E3 per-tenant chains, delete t07       11 of 11 | 0 | 0 | n/a
+E4 per-tenant, key destroyed           11 of 11 (t07's own chain verifies: True) | 420 typed rows | store items 420 (13440 bytes) -> 0 | guess of the right number matched its keyed digest before erasure: True; with the master secret but without the destroyed salt: False
+unkeyed sha256 digest of the account number: found by trying the whole 90,000,000-number space in 12.0 s on 4 processes (found [24504193])
+export t07 took with it before erasure: 420 rows, verifies after erasure: True; fields in rows: approver, ctx_digest, decision, dest_host, hash, kind, prev, reasons, seq, tenant, ts

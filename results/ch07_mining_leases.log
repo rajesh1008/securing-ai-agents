@@ -1,0 +1,19 @@
+lab 6: scope mined from traces (payments only; held-out 5,025 legitimate payments; 25 of them are to payee_pecan, which never appears in the window)
+  window min_count  payees in scope   max $  legit denied  pecan 240k admitted   with 3 poisoned traces: pecan 240k admitted
+      50         1                6     891     150/5025         False                                    True
+      50         5                3     891     867/5025         False                                   False
+     200         1                6     898     102/5025         False                                    True
+     200         5                5     898     203/5025         False                                   False
+    1000         1                7    2463      27/5025         False                                    True
+    1000         5                6    2463      56/5025         False                                   False
+    5000         1                7    2479      27/5025         False                                    True
+    5000         5                7    2479      27/5025         False                                   False
+computed from the books: 0 of 33 legitimate payments denied; a payment to a payee with no open invoice is never in scope
+
+lab 7: 400 tasks, 24 with a legitimate widening need (from the principal), 89 with a hostile widening request (from a document)
+  never                              {'hostile_denied': 89, 'legit_denied': 24}
+  auto_within_ceiling                {'hostile_granted_automatically': 89, 'legit_granted_automatically': 24}
+  human_queue_all                    {'queued_for_person': 113, 'queued_hostile': 89, 'queued_legit': 24}
+  human_queue_trusted_origin_only    {'hostile_denied': 89, 'queued_for_person': 24, 'queued_legit': 24}
+
+lab 8: compute_scope pay_invoice 1.4 us; reconcile_month over 40 invoices 5.4 us

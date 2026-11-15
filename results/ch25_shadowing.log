@@ -1,0 +1,5 @@
+sessions 1000, calls to intended tools 2000
+flat client: landed on the wrong server 1164 of 2000 (58.2%)
+namespaced client: wrong 0 of 2000; a bare name (send_email) routed 0 of 1000 times (0 means refused every time)
+namespaced + ASCII allow-list: wrong 0 of 2000; names rejected at install 3000 (3 per session: Get_Invoice, trailing space, Greek omicron); helper tools admitted under C: ['get_invoice', 'get_invoice2', 'send_email']
+look-alike names reaching the model's list under the flat client: 4000 (mean 4.0 per session)

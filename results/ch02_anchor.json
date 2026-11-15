@@ -1,0 +1,35 @@
+{
+ "records": 40,
+ "anchors": 4,
+ "anchor_seqs": [
+  9,
+  19,
+  29,
+  39
+ ],
+ "untouched": {
+  "chain_only": "pass",
+  "chain_plus_anchor": "pass",
+  "detail": "chain and anchors agree"
+ },
+ "in_place_edit": {
+  "chain_only": "fail at 7",
+  "chain_plus_anchor": "fail",
+  "detail": "chain broken at record 7"
+ },
+ "edit_and_rehash": {
+  "chain_only": "pass",
+  "chain_plus_anchor": "fail",
+  "detail": "anchor mismatch at record 9"
+ },
+ "truncate_last_12": {
+  "chain_only": "pass",
+  "chain_plus_anchor": "fail",
+  "detail": "truncated: anchor at record 29 but chain has 28 records"
+ },
+ "cut_middle_rehash": {
+  "chain_only": "pass",
+  "chain_plus_anchor": "fail",
+  "detail": "anchor mismatch at record 29"
+ }
+}

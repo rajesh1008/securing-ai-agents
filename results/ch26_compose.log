@@ -1,0 +1,4 @@
+added skills through lint_skill and the permission diff (allowed host partner.example, declared network partner.example): {"one-page-pdf": {"lint": [], "undeclared": []}, "portal-upload": {"lint": [], "undeclared": []}}
+pool +0 (14 skills; 4 transforms, 1 external sender): compose_check lists 10 dangerous paths in advance; of 10000 tasks, restricted data reached an external sender 1002 times (10.02%) in BASELINE, 0 with HOST label tracking (1002 sends refused)
+pool +1 (15 skills; 5 transforms, 1 external sender): compose_check lists 12 dangerous paths in advance; of 10000 tasks, restricted data reached an external sender 994 times (9.94%) in BASELINE, 0 with HOST label tracking (994 sends refused)
+pool +2 (16 skills; 5 transforms, 2 external senders): compose_check lists 24 dangerous paths in advance; of 10000 tasks, restricted data reached an external sender 994 times (9.94%) in BASELINE, 0 with HOST label tracking (994 sends refused)

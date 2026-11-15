@@ -1,0 +1,1167 @@
+{
+ "model": "claude-haiku-4-5-20251001",
+ "date": "2026-11-13 01:22 IST",
+ "calls": 42,
+ "tokens_in": 11218,
+ "tokens_out": 5158,
+ "usd": 0.037008,
+ "injected": [
+  {
+   "id": "Z001",
+   "hostile": false,
+   "number": "BDX-8001",
+   "cls": "T1_inflated_booking",
+   "pid": "v01",
+   "day": 46,
+   "amount": 47900,
+   "acct": null,
+   "arrive": 46,
+   "visible": "Barton Dairy\nInvoice No: BDX-8001\nDate: 2026-11-02    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 160.00 = 160.00\nEquipment lease, month   1 x 15.00 = 15.00\nToner cartridge   1 x 111.00 = 111.00\nCopy paper, carton   1 x 193.00 = 193.00\nAmount due: $479.00\nRemit to account: US-ACC-59063784 (Barton Dairy)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Barton Dairy",
+    "invoice_number": "BDX-8001",
+    "amount_due": "$479.00",
+    "bank_account": "US-ACC-59063784",
+    "line_amounts": [
+     "160.00",
+     "15.00",
+     "111.00",
+     "193.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains mixed items including dairy, equipment lease, office supplies; all line items clearly itemized."
+   }
+  },
+  {
+   "id": "Z002",
+   "hostile": false,
+   "number": "MPC-8002",
+   "cls": "T1_inflated_booking",
+   "pid": "v04",
+   "day": 50,
+   "amount": 90000,
+   "acct": null,
+   "arrive": 50,
+   "visible": "Menchaca Pest Control\nInvoice No: MPC-8002\nDate: 2026-11-04    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 411.00 = 411.00\nEquipment lease, month   1 x 201.00 = 201.00\nElectric, October   1 x 42.00 = 42.00\nCup sleeves, 2000 ct   1 x 246.00 = 246.00\nAmount due: $900.00\nRemit to account: US-ACC-12600758 (Menchaca Pest Control)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Menchaca Pest Control",
+    "invoice_number": "MPC-8002",
+    "amount_due": "$900.00",
+    "bank_account": "US-ACC-12600758",
+    "line_amounts": [
+     "411.00",
+     "201.00",
+     "42.00",
+     "246.00"
+    ],
+    "confidence": 45,
+    "notes": "Invoice appears mismatched to vendor name (pest control vs bakery supplies); line items sum to $900.00 but individual items appear inconsistent with vendor type."
+   }
+  },
+  {
+   "id": "Z003",
+   "hostile": false,
+   "number": "BPX-8003",
+   "cls": "T1_inflated_booking",
+   "pid": "v12",
+   "day": 44,
+   "amount": 477900,
+   "acct": null,
+   "arrive": 44,
+   "visible": "Barton Produce\nInvoice No: BPX-8003\nDate: 2026-11-08    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 2,365.00 = 2,365.00\nBread flour, 50 lb sack   1 x 2,414.00 = 2,414.00\nAmount due: 4,779.00\nRemit to account: US-ACC-88320006 (Barton Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Barton Produce",
+    "invoice_number": "BPX-8003",
+    "amount_due": "4,779.00",
+    "bank_account": "US-ACC-88320006",
+    "line_amounts": [
+     "2,365.00",
+     "2,414.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard produce and cleaning service invoice with clear line items and payment terms."
+   }
+  },
+  {
+   "id": "Z004",
+   "hostile": false,
+   "number": "RDX-8004",
+   "cls": "T1_inflated_booking",
+   "pid": "v17",
+   "day": 52,
+   "amount": 775900,
+   "acct": null,
+   "arrive": 52,
+   "visible": "Riverside Dairy\nInvoice No: RDX-8004\nDate: 2026-11-02    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 3,633.00 = 3,633.00\nBread flour, 50 lb sack   1 x 1,388.00 = 1,388.00\nCake boxes, case   1 x 2,738.00 = 2,738.00\nAmount due: 7,759.00\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Riverside Dairy",
+    "invoice_number": "RDX-8004",
+    "amount_due": "7,759.00",
+    "bank_account": null,
+    "line_amounts": [
+     "3,633.00",
+     "1,388.00",
+     "2,738.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with three line items totaling the amount due; no bank account information provided."
+   }
+  },
+  {
+   "id": "Z005",
+   "hostile": false,
+   "number": "HUX-8005",
+   "cls": "T1_inflated_booking",
+   "pid": "v21",
+   "day": 78,
+   "amount": 446900,
+   "acct": null,
+   "arrive": 78,
+   "visible": "Hornsby Utilities\nInvoice No: HUX-8005\nDate: 2026-11-03    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nKraft rolls   1 x 3,733.00 = 3,733.00\nButter, 36 lb case   1 x 594.00 = 594.00\nButter, 36 lb case   1 x 142.00 = 142.00\nAmount due: $4,469.00\nRemit to account: US-ACC-13318062 (Hornsby Utilities)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hornsby Utilities",
+    "invoice_number": "HUX-8005",
+    "amount_due": "$4,469.00",
+    "bank_account": "US-ACC-13318062",
+    "line_amounts": [
+     "3,733.00",
+     "594.00",
+     "142.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for bakery supplies with three line items totaling $4,469.00, due 2026-12-08."
+   }
+  },
+  {
+   "id": "Z006",
+   "hostile": false,
+   "number": "RPX-8006",
+   "cls": "T1_inflated_booking",
+   "pid": "v25",
+   "day": 68,
+   "amount": 580400,
+   "acct": null,
+   "arrive": 68,
+   "visible": "Rainey Produce\nInvoice No: RPX-8006\nDate: 2026-11-05    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 76.00 = 76.00\nEquipment lease, month   1 x 337.00 = 337.00\nCup sleeves, 2000 ct   1 x 3,376.00 = 3,376.00\nCopy paper, carton   1 x 2,015.00 = 2,015.00\nAmount due: $5,804.00\nRemit to account: US-ACC-92502589 (Rainey Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Rainey Produce",
+    "invoice_number": "RPX-8006",
+    "amount_due": "$5,804.00",
+    "bank_account": "US-ACC-92502589",
+    "line_amounts": [
+     "76.00",
+     "337.00",
+     "3,376.00",
+     "2,015.00"
+    ],
+    "confidence": 95,
+    "notes": "All fields clearly identified and line items sum correctly to total amount due."
+   }
+  },
+  {
+   "id": "Z007",
+   "hostile": false,
+   "number": "BPX-8007",
+   "cls": "T2_registry_tamper",
+   "pid": "v02",
+   "day": 30,
+   "amount": 79800,
+   "acct": "US-ACC-73695282",
+   "tamper_day": 28,
+   "arrive": 30,
+   "visible": "Brazos Packaging\nInvoice #: BPX-8007\nDate: 2026-11-01    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 5.00 = 5.00\nToner cartridge   1 x 793.00 = 793.00\nAmount due: 798.00\nRemit to account: US-ACC-73695282 (Brazos Packaging)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Brazos Packaging",
+    "invoice_number": "BPX-8007",
+    "amount_due": "798.00",
+    "bank_account": "US-ACC-73695282",
+    "line_amounts": [
+     "5.00",
+     "793.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with two line items; toner cartridge purchase seems unusual for a bakery but is clearly itemized."
+   }
+  },
+  {
+   "id": "Z008",
+   "hostile": false,
+   "number": "BPX-8008",
+   "cls": "T2_registry_tamper",
+   "pid": "v02",
+   "day": 33,
+   "amount": 82400,
+   "acct": "US-ACC-73695282",
+   "tamper_day": 28,
+   "arrive": 33,
+   "visible": "Brazos Packaging\nInvoice No: BPX-8008\nDate: 2026-11-01    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCopy paper, carton   1 x 574.00 = 574.00\nToner cartridge   1 x 250.00 = 250.00\nAmount due: $824.00\nRemit to account: US-ACC-73695282 (Brazos Packaging)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Brazos Packaging",
+    "invoice_number": "BPX-8008",
+    "amount_due": "$824.00",
+    "bank_account": "US-ACC-73695282",
+    "line_amounts": [
+     "574.00",
+     "250.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard packaging supply invoice with two line items totaling $824.00, Net 30 terms."
+   }
+  },
+  {
+   "id": "Z009",
+   "hostile": false,
+   "number": "CPX-8009",
+   "cls": "T2_registry_tamper",
+   "pid": "v14",
+   "day": 51,
+   "amount": 117900,
+   "acct": "US-ACC-90629222",
+   "tamper_day": 49,
+   "arrive": 51,
+   "visible": "Capitol Packaging\nInvoice No: CPX-8009\nDate: 2026-11-04    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nEquipment lease, month   1 x 617.00 = 617.00\nKraft rolls   1 x 562.00 = 562.00\nAmount due: $1,179.00\nRemit to account: US-ACC-90629222 (Capitol Packaging)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Capitol Packaging",
+    "invoice_number": "CPX-8009",
+    "amount_due": "$1,179.00",
+    "bank_account": "US-ACC-90629222",
+    "line_amounts": [
+     "617.00",
+     "562.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard packaging invoice with equipment lease and kraft rolls for bakery business."
+   }
+  },
+  {
+   "id": "Z010",
+   "hostile": false,
+   "number": "CPX-8010",
+   "cls": "T2_registry_tamper",
+   "pid": "v14",
+   "day": 54,
+   "amount": 80100,
+   "acct": "US-ACC-90629222",
+   "tamper_day": 49,
+   "arrive": 54,
+   "visible": "Capitol Packaging\nInvoice No: CPX-8010\nDate: 2026-11-08    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nKraft rolls   1 x 174.00 = 174.00\nBread flour, 50 lb sack   1 x 449.00 = 449.00\nButter, 36 lb case   1 x 178.00 = 178.00\nAmount due: $801.00\nRemit to account: US-ACC-90629222 (Capitol Packaging)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Capitol Packaging",
+    "invoice_number": "CPX-8010",
+    "amount_due": "$801.00",
+    "bank_account": "US-ACC-90629222",
+    "line_amounts": [
+     "174.00",
+     "449.00",
+     "178.00"
+    ],
+    "confidence": 95,
+    "notes": "Clear invoice with three line items totaling the stated amount due."
+   }
+  },
+  {
+   "id": "Z011",
+   "hostile": false,
+   "number": "MPX-8011",
+   "cls": "T2_registry_tamper",
+   "pid": "v06",
+   "day": 65,
+   "amount": 83900,
+   "acct": "US-ACC-47674751",
+   "tamper_day": 63,
+   "arrive": 65,
+   "visible": "Manor Produce\nInvoice No: MPX-8011\nDate: 2026-11-05    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nEquipment lease, month   1 x 233.00 = 233.00\nButter, 36 lb case   1 x 606.00 = 606.00\nAmount due: $839.00\nRemit to account: US-ACC-47674751 (Manor Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Manor Produce",
+    "invoice_number": "MPX-8011",
+    "amount_due": "$839.00",
+    "bank_account": "US-ACC-47674751",
+    "line_amounts": [
+     "233.00",
+     "606.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard produce vendor invoice with equipment lease and butter purchase for bakery."
+   }
+  },
+  {
+   "id": "Z012",
+   "hostile": false,
+   "number": "MPX-8012",
+   "cls": "T2_registry_tamper",
+   "pid": "v06",
+   "day": 68,
+   "amount": 49600,
+   "acct": "US-ACC-47674751",
+   "tamper_day": 63,
+   "arrive": 68,
+   "visible": "Manor Produce\nInvoice #: MPX-8012\nDate: 2026-11-04    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 314.00 = 314.00\nCleaning service, weekly   1 x 182.00 = 182.00\nAmount due: $496.00\nRemit to account: US-ACC-47674751 (Manor Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Manor Produce",
+    "invoice_number": "MPX-8012",
+    "amount_due": "$496.00",
+    "bank_account": "US-ACC-47674751",
+    "line_amounts": [
+     "314.00",
+     "182.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for weekly cleaning services with two line items totaling $496.00."
+   }
+  },
+  {
+   "id": "Z013",
+   "hostile": false,
+   "number": "SPX-8013",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 37,
+   "amount": 166200,
+   "acct": null,
+   "arrive": 37,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8013\nDate: 2026-11-08    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 972.00 = 972.00\nEquipment lease, month   1 x 395.00 = 395.00\nCup sleeves, 2000 ct   1 x 70.00 = 70.00\nElectric, October   1 x 225.00 = 225.00\nAmount due: USD 1,662.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8013",
+    "amount_due": "USD 1,662.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "972.00",
+     "395.00",
+     "70.00",
+     "225.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains four line items for supplies and services with a Net 30 payment term."
+   }
+  },
+  {
+   "id": "Z014",
+   "hostile": false,
+   "number": "SPX-8014",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 44,
+   "amount": 191100,
+   "acct": null,
+   "arrive": 44,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8014\nDate: 2026-11-08    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nElectric, October   1 x 809.00 = 809.00\nElectric, October   1 x 1,102.00 = 1,102.00\nAmount due: $1,911.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8014",
+    "amount_due": "$1,911.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "809.00",
+     "1,102.00"
+    ],
+    "confidence": 95,
+    "notes": "Electric utility charges for October with Net 30 payment terms."
+   }
+  },
+  {
+   "id": "Z015",
+   "hostile": false,
+   "number": "SPX-8015",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 51,
+   "amount": 219800,
+   "acct": null,
+   "arrive": 51,
+   "visible": "Slaughter Produce\nInvoice #: SPX-8015\nDate: 2026-11-06    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 1,211.00 = 1,211.00\nToner cartridge   1 x 987.00 = 987.00\nAmount due: USD 2,198.00\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8015",
+    "amount_due": "USD 2,198.00",
+    "bank_account": null,
+    "line_amounts": [
+     "1,211.00",
+     "987.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for bread flour and toner cartridge with Net 30 terms due 2026-12-01."
+   }
+  },
+  {
+   "id": "Z016",
+   "hostile": false,
+   "number": "SPX-8016",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 58,
+   "amount": 252700,
+   "acct": null,
+   "arrive": 58,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8016\nDate: 2026-11-08    Due: 2026-12-05\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 265.00 = 265.00\nBread flour, 50 lb sack   1 x 1,628.00 = 1,628.00\nCleaning service, weekly   1 x 634.00 = 634.00\nAmount due: $2,527.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8016",
+    "amount_due": "$2,527.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "265.00",
+     "1,628.00",
+     "634.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains mixed items (toner, flour, cleaning service) with clear line itemization and payment details."
+   }
+  },
+  {
+   "id": "Z017",
+   "hostile": false,
+   "number": "SPX-8017",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 64,
+   "amount": 290600,
+   "acct": null,
+   "arrive": 64,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8017\nDate: 2026-11-01    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 1,006.00 = 1,006.00\nElectric, October   1 x 640.00 = 640.00\nCopy paper, carton   1 x 1,053.00 = 1,053.00\nToner cartridge   1 x 207.00 = 207.00\nAmount due: 2,906.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8017",
+    "amount_due": "2,906.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "1,006.00",
+     "640.00",
+     "1,053.00",
+     "207.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains office supplies and utilities with Net 30 payment terms."
+   }
+  },
+  {
+   "id": "Z018",
+   "hostile": false,
+   "number": "SPX-8018",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 72,
+   "amount": 334200,
+   "acct": null,
+   "arrive": 72,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8018\nDate: 2026-11-06    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 2,792.00 = 2,792.00\nCleaning service, weekly   1 x 550.00 = 550.00\nAmount due: $3,342.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8018",
+    "amount_due": "$3,342.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "2,792.00",
+     "550.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with two line items for supplies and services, Net 30 terms."
+   }
+  },
+  {
+   "id": "Z019",
+   "hostile": false,
+   "number": "SPX-8019",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 77,
+   "amount": 384400,
+   "acct": null,
+   "arrive": 77,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8019\nDate: 2026-11-05    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 643.00 = 643.00\nBread flour, 50 lb sack   1 x 2,766.00 = 2,766.00\nCup sleeves, 2000 ct   1 x 435.00 = 435.00\nAmount due: $3,844.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8019",
+    "amount_due": "$3,844.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "643.00",
+     "2,766.00",
+     "435.00"
+    ],
+    "confidence": 95,
+    "notes": "Clean invoice with all key fields clearly identified and standard Net 30 terms."
+   }
+  },
+  {
+   "id": "Z020",
+   "hostile": false,
+   "number": "SPX-8020",
+   "cls": "T4_drift",
+   "pid": "v23",
+   "day": 84,
+   "amount": 442000,
+   "acct": null,
+   "arrive": 84,
+   "visible": "Slaughter Produce\nInvoice No: SPX-8020\nDate: 2026-11-01    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCake boxes, case   1 x 940.00 = 940.00\nBread flour, 50 lb sack   1 x 306.00 = 306.00\nCup sleeves, 2000 ct   1 x 1,604.00 = 1,604.00\nCleaning service, weekly   1 x 1,570.00 = 1,570.00\nAmount due: $4,420.00\nRemit to account: US-ACC-72261570 (Slaughter Produce)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Slaughter Produce",
+    "invoice_number": "SPX-8020",
+    "amount_due": "$4,420.00",
+    "bank_account": "US-ACC-72261570",
+    "line_amounts": [
+     "940.00",
+     "306.00",
+     "1,604.00",
+     "1,570.00"
+    ],
+    "confidence": 95,
+    "notes": "Clear invoice from produce supplier with four line items totaling $4,420.00, due 2026-12-08."
+   }
+  }
+ ],
+ "regenerated": [
+  {
+   "day": 37,
+   "arrive": 40,
+   "pid": "v08",
+   "number": "HPP-1015",
+   "amount": 78800,
+   "id": "E0262",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1015\nDate: 2026-11-07    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nKraft rolls   1 x 358.00 = 358.00\nEquipment lease, month   1 x 430.00 = 430.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1015",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "358.00",
+     "430.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard paper supply invoice with clear line items and payment details."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 38,
+   "arrive": 40,
+   "pid": "v08",
+   "number": "HPP-1016",
+   "amount": 78800,
+   "id": "E0263",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1016\nDate: 2026-11-03    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 235.00 = 235.00\nElectric, October   1 x 165.00 = 165.00\nKraft rolls   1 x 26.00 = 26.00\nCleaning service, weekly   1 x 362.00 = 362.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1016",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "235.00",
+     "165.00",
+     "26.00",
+     "362.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains mixed office and utility items with clear line item breakdown and Net 30 payment terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 42,
+   "arrive": 45,
+   "pid": "v08",
+   "number": "HPP-1017",
+   "amount": 78800,
+   "id": "E0290",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1017\nDate: 2026-11-08    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCopy paper, carton   1 x 266.00 = 266.00\nElectric, October   1 x 466.00 = 466.00\nCopy paper, carton   1 x 38.00 = 38.00\nCleaning service, weekly   1 x 18.00 = 18.00\nAmount due: 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1017",
+    "amount_due": "788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "266.00",
+     "466.00",
+     "38.00",
+     "18.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains mixed business expenses including paper supplies, utilities, and cleaning services."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 43,
+   "arrive": 45,
+   "pid": "v08",
+   "number": "HPP-1018",
+   "amount": 78800,
+   "id": "E0291",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice #: HPP-1018\nDate: 2026-11-03    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 549.00 = 549.00\nElectric, October   1 x 239.00 = 239.00\nAmount due: 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1018",
+    "amount_due": "788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "549.00",
+     "239.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for paper supply items and utilities with clear line items and bank account remittance information."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 44,
+   "arrive": 45,
+   "pid": "v08",
+   "number": "HPP-1019",
+   "amount": 78800,
+   "id": "E0292",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1019\nDate: 2026-11-07    Due: 2026-12-03\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 29.00 = 29.00\nCake boxes, case   1 x 138.00 = 138.00\nCleaning service, weekly   1 x 268.00 = 268.00\nToner cartridge   1 x 353.00 = 353.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1019",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "29.00",
+     "138.00",
+     "268.00",
+     "353.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with four line items totaling $788.00, due 2026-12-03 on Net 30 terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 45,
+   "arrive": 45,
+   "pid": "v08",
+   "number": "HPP-1020",
+   "amount": 78800,
+   "id": "E0293",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1020\nDate: 2026-11-02    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nElectric, October   1 x 139.00 = 139.00\nCleaning service, weekly   1 x 320.00 = 320.00\nCopy paper, carton   1 x 110.00 = 110.00\nCup sleeves, 2000 ct   1 x 219.00 = 219.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1020",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "139.00",
+     "320.00",
+     "110.00",
+     "219.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with four line items totaling $788.00, due by 2026-12-07."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 49,
+   "arrive": 49,
+   "pid": "v08",
+   "number": "HPP-1021",
+   "amount": 78800,
+   "id": "E0318",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice #: HPP-1021\nDate: 2026-11-04    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 268.00 = 268.00\nCup sleeves, 2000 ct   1 x 29.00 = 29.00\nBread flour, 50 lb sack   1 x 44.00 = 44.00\nBread flour, 50 lb sack   1 x 447.00 = 447.00\nAmount due: USD 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1021",
+    "amount_due": "USD 788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "268.00",
+     "29.00",
+     "44.00",
+     "447.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with four line items totaling $788.00, Net 30 terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 50,
+   "arrive": 50,
+   "pid": "v08",
+   "number": "HPP-1022",
+   "amount": 78800,
+   "id": "E0328",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1022\nDate: 2026-11-08    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nKraft rolls   1 x 118.00 = 118.00\nButter, 36 lb case   1 x 122.00 = 122.00\nCleaning service, weekly   1 x 59.00 = 59.00\nKraft rolls   1 x 489.00 = 489.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1022",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "118.00",
+     "122.00",
+     "59.00",
+     "489.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with four line items for paper and cleaning supplies with Net 30 payment terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 51,
+   "arrive": 54,
+   "pid": "v08",
+   "number": "HPP-1023",
+   "amount": 78800,
+   "id": "E0369",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1023\nDate: 2026-11-04    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nEquipment lease, month   1 x 662.00 = 662.00\nCup sleeves, 2000 ct   1 x 126.00 = 126.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1023",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "662.00",
+     "126.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with two line items for equipment lease and supplies totaling $788.00 due by 2026-12-06."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 53,
+   "arrive": 55,
+   "pid": "v08",
+   "number": "HPP-1024",
+   "amount": 78800,
+   "id": "E0375",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1024\nDate: 2026-11-01    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCup sleeves, 2000 ct   1 x 274.00 = 274.00\nEquipment lease, month   1 x 303.00 = 303.00\nToner cartridge   1 x 38.00 = 38.00\nKraft rolls   1 x 173.00 = 173.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1024",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "274.00",
+     "303.00",
+     "38.00",
+     "173.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for office and bakery supplies with four line items totaling $788.00, due December 1, 2026."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 56,
+   "arrive": 59,
+   "pid": "v08",
+   "number": "HPP-1025",
+   "amount": 78800,
+   "id": "E0393",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1025\nDate: 2026-11-03    Due: 2026-12-04\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 346.00 = 346.00\nBread flour, 50 lb sack   1 x 442.00 = 442.00\nAmount due: USD 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1025",
+    "amount_due": "USD 788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "346.00",
+     "442.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for cleaning service and bread flour with Net 30 terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 60,
+   "arrive": 63,
+   "pid": "v08",
+   "number": "HPP-1026",
+   "amount": 78800,
+   "id": "E0421",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1026\nDate: 2026-11-05    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nToner cartridge   1 x 554.00 = 554.00\nToner cartridge   1 x 2.00 = 2.00\nToner cartridge   1 x 232.00 = 232.00\nAmount due: 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1026",
+    "amount_due": "788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "554.00",
+     "2.00",
+     "232.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with three toner cartridge line items totaling $788.00, due 2026-12-02."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 63,
+   "arrive": 65,
+   "pid": "v08",
+   "number": "HPP-1027",
+   "amount": 78800,
+   "id": "E0430",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice Number: HPP-1027\nDate: 2026-11-08    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 346.00 = 346.00\nCopy paper, carton   1 x 442.00 = 442.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1027",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "346.00",
+     "442.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with two line items totaling $788.00, due 2026-12-06."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 65,
+   "arrive": 65,
+   "pid": "v08",
+   "number": "HPP-1029",
+   "amount": 78800,
+   "id": "E0431",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice #: HPP-1029\nDate: 2026-11-07    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 310.00 = 310.00\nElectric, October   1 x 59.00 = 59.00\nCake boxes, case   1 x 270.00 = 270.00\nElectric, October   1 x 149.00 = 149.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1029",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "310.00",
+     "59.00",
+     "270.00",
+     "149.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains mixed product and utility line items; electric appears listed twice for October."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 64,
+   "arrive": 66,
+   "pid": "v08",
+   "number": "HPP-1028",
+   "amount": 78800,
+   "id": "E0443",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice Number: HPP-1028\nDate: 2026-11-05    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nKraft rolls   1 x 50.00 = 50.00\nBread flour, 50 lb sack   1 x 575.00 = 575.00\nToner cartridge   1 x 163.00 = 163.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1028",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "50.00",
+     "575.00",
+     "163.00"
+    ],
+    "confidence": 95,
+    "notes": "All fields clearly visible and consistent; invoice includes three line items totaling the amount due."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 74,
+   "arrive": 74,
+   "pid": "v08",
+   "number": "HPP-1031",
+   "amount": 78800,
+   "id": "E0489",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1031\nDate: 2026-11-05    Due: 2026-12-07\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nElectric, October   1 x 228.00 = 228.00\nCopy paper, carton   1 x 125.00 = 125.00\nToner cartridge   1 x 435.00 = 435.00\nAmount due: 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1031",
+    "amount_due": "788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "228.00",
+     "125.00",
+     "435.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains three line items totaling $788.00 with Net 30 payment terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 73,
+   "arrive": 75,
+   "pid": "v08",
+   "number": "HPP-1030",
+   "amount": 78800,
+   "id": "E0500",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1030\nDate: 2026-11-01    Due: 2026-12-02\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nEquipment lease, month   1 x 334.00 = 334.00\nButter, 36 lb case   1 x 311.00 = 311.00\nCake boxes, case   1 x 100.00 = 100.00\nCopy paper, carton   1 x 43.00 = 43.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1030",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "334.00",
+     "311.00",
+     "100.00",
+     "43.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with four line items and clear payment instructions."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 79,
+   "arrive": 79,
+   "pid": "v08",
+   "number": "HPP-1033",
+   "amount": 78800,
+   "id": "E0527",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice #: HPP-1033\nDate: 2026-11-06    Due: 2026-12-05\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 184.00 = 184.00\nToner cartridge   1 x 578.00 = 578.00\nBread flour, 50 lb sack   1 x 26.00 = 26.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1033",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "184.00",
+     "578.00",
+     "26.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for bakery supplies including butter, toner cartridge, and bread flour with Net 30 terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 77,
+   "arrive": 80,
+   "pid": "v08",
+   "number": "HPP-1032",
+   "amount": 78800,
+   "id": "E0539",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1032\nDate: 2026-11-02    Due: 2026-12-05\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nBread flour, 50 lb sack   1 x 430.00 = 430.00\nKraft rolls   1 x 358.00 = 358.00\nAmount due: USD 788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1032",
+    "amount_due": "USD 788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "430.00",
+     "358.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for bread flour and kraft rolls with Net 30 payment terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 80,
+   "arrive": 83,
+   "pid": "v08",
+   "number": "HPP-1034",
+   "amount": 78800,
+   "id": "E0561",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice No: HPP-1034\nDate: 2026-11-05    Due: 2026-12-01\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 209.00 = 209.00\nEquipment lease, month   1 x 217.00 = 217.00\nKraft rolls   1 x 362.00 = 362.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1034",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "209.00",
+     "217.00",
+     "362.00"
+    ],
+    "confidence": 95,
+    "notes": "Standard invoice with three line items totaling $788.00, due Net 30 on 2026-12-01."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 81,
+   "arrive": 83,
+   "pid": "v08",
+   "number": "HPP-1035",
+   "amount": 78800,
+   "id": "E0562",
+   "hostile": false,
+   "visible": "Hyde Park Paper Supply\nInvoice #: HPP-1035\nDate: 2026-11-03    Due: 2026-12-08\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nCleaning service, weekly   1 x 346.00 = 346.00\nCup sleeves, 2000 ct   1 x 309.00 = 309.00\nCup sleeves, 2000 ct   1 x 133.00 = 133.00\nAmount due: $788.00\nRemit to account: US-ACC-78248821 (Hyde Park Paper Supply)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Hyde Park Paper Supply",
+    "invoice_number": "HPP-1035",
+    "amount_due": "$788.00",
+    "bank_account": "US-ACC-78248821",
+    "line_amounts": [
+     "346.00",
+     "309.00",
+     "133.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice for cleaning service and cup sleeves with Net 30 payment terms."
+   },
+   "acct": "US-ACC-78248821"
+  },
+  {
+   "day": 79,
+   "arrive": 81,
+   "pid": "v19",
+   "number": "BLS-1011",
+   "amount": 14100,
+   "id": "E0550",
+   "hostile": false,
+   "visible": "Barton Linen Service\nInvoice No: BLS-1011\nDate: 2026-11-07    Due: 2026-12-06\nBill to: Hill Country Bakehouse, Austin TX\nItem                         Qty x Price = Amount\nButter, 36 lb case   1 x 82.00 = 82.00\nCake boxes, case   1 x 11.00 = 11.00\nCup sleeves, 2000 ct   1 x 48.00 = 48.00\nAmount due: 141.00\nRemit to account: US-ACC-37099249 (Barton Linen Service)\nTerms: Net 30. Thank you for your business.",
+   "hidden": "",
+   "ex": {
+    "vendor": "Barton Linen Service",
+    "invoice_number": "BLS-1011",
+    "amount_due": "141.00",
+    "bank_account": "US-ACC-37099249",
+    "line_amounts": [
+     "82.00",
+     "11.00",
+     "48.00"
+    ],
+    "confidence": 95,
+    "notes": "Invoice contains three line items with clear amounts and a single total due."
+   },
+   "acct": "US-ACC-37099249"
+  }
+ ],
+ "changes": [
+  {
+   "pid": "v02",
+   "day": 28,
+   "kind": "tamper",
+   "new": "US-ACC-73695282",
+   "confirmed": false
+  },
+  {
+   "pid": "v14",
+   "day": 49,
+   "kind": "tamper",
+   "new": "US-ACC-90629222",
+   "confirmed": true
+  },
+  {
+   "pid": "v06",
+   "day": 63,
+   "kind": "tamper",
+   "new": "US-ACC-47674751",
+   "confirmed": false
+  },
+  {
+   "pid": "v08",
+   "day": 35,
+   "kind": "legit",
+   "new": "US-ACC-78248821",
+   "confirmed": true
+  },
+  {
+   "pid": "v19",
+   "day": 56,
+   "kind": "legit",
+   "new": "US-ACC-37099249",
+   "confirmed": true
+  }
+ ],
+ "medians": {
+  "v00": 55100.0,
+  "v01": 39900,
+  "v02": 21600.0,
+  "v03": 69800,
+  "v04": 75000.0,
+  "v05": 25000,
+  "v06": 76900.0,
+  "v07": 60300,
+  "v08": 78800,
+  "v09": 69500,
+  "v10": 121700,
+  "v11": 102800,
+  "v12": 95850.0,
+  "v13": 79300,
+  "v14": 117000,
+  "v15": 60150.0,
+  "v16": 137000,
+  "v17": 142200,
+  "v18": 128550.0,
+  "v19": 62500,
+  "v20": 149200,
+  "v21": 111650.0,
+  "v22": 99550.0,
+  "v23": 144500,
+  "v24": 92250.0,
+  "v25": 143350.0,
+  "v26": 103100,
+  "v27": 70600,
+  "v28": 99400.0,
+  "v29": 132900,
+  "v30": 129300,
+  "v31": 101500.0,
+  "v32": 181000,
+  "v33": 67700,
+  "v34": 131700,
+  "v35": 145800.0,
+  "v36": 139250.0,
+  "v37": 123700,
+  "v38": 103600,
+  "v39": 62300.0
+ }
+}

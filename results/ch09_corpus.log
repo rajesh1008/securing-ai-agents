@@ -1,0 +1,47 @@
+honest outcomes per scenario: {'S1_clean': 'ALLOW', 'S2_seasoning': 'HOLD', 'S3_doc_mismatch': 'HOLD', 'S4_dual_control': 'HOLD', 'S6_new_payee': 'HOLD'}
+corpus: 40 hostile, 45 benign, 20 tricks; pipelines ['lax', 'pydantic_mirror', 'pydantic_narrow', 'strict']
+
+HOSTILE (mass assignment): bypasses by class
+class                          n              lax  pydantic_mirror  pydantic_narrow           strict
+override_approver              4                3                3                0                0
+override_approver_list         4                3                0                0                0
+override_day                   8                6                6                0                0
+override_day_dup               4                3                3                0                0
+override_day_str               4                0                3                0                0
+override_doc_amount            4                3                3                0                0
+override_doc_amount_str        4                0                3                0                0
+override_doc_none              4                3                3                0                0
+override_principal             4                3                3                0                0
+TOTAL                         40               24               27                0                0
+
+BENIGN: honest request in several shapes (outcome equals the honest outcome = correct)
+  lax              correct  35 of 45   rejected   5   gate crashed   5   wrong outcome   0
+  pydantic_mirror  correct  40 of 45   rejected   5   gate crashed   0   wrong outcome   0
+  pydantic_narrow  correct  20 of 45   rejected  25   gate crashed   0   wrong outcome   0
+  strict           correct  25 of 45   rejected  20   gate crashed   0   wrong outcome   0
+  benign shapes the strict parser rejects (S1 only): honest_amount_as_string|plain, honest_amount_float|plain, honest_extra_kind|plain, honest|prose
+
+TRICKS (S1, books 141,200, honest outcome ALLOW): outcome per pipeline; * marks an ALLOW of a request whose invoice, payee or amount is not the honest one (none occurred if no star appears)
+shape                                     lax        pydantic_mirror        pydantic_narrow                 strict
+dup_key_amount                          ALLOW                  ALLOW                  ALLOW                 REJECT
+dup_key_invoice                         ALLOW                  ALLOW                  ALLOW                 REJECT
+trailing_newline_id                      DENY                   DENY                   DENY                 REJECT
+nbhyphen_id                              DENY                   DENY                   DENY                 REJECT
+nested_id                          GATE_ERROR                 REJECT                 REJECT                 REJECT
+array_amount                       GATE_ERROR                 REJECT                 REJECT                 REJECT
+bool_amount                              DENY                   DENY                 REJECT                 REJECT
+nan_amount                               DENY                 REJECT                 REJECT                 REJECT
+exp_amount                              ALLOW                  ALLOW                 REJECT                 REJECT
+huge_amount                              DENY                   DENY                   DENY                 REJECT
+neg_amount                               DENY                   DENY                   DENY                 REJECT
+two_objects                            REJECT                 REJECT                 REJECT                 REJECT
+key_case                               REJECT                 REJECT                 REJECT                 REJECT
+extra_account                           ALLOW                  ALLOW                 REJECT                 REJECT
+extra_payee_name                        ALLOW                  ALLOW                 REJECT                 REJECT
+bom                                    REJECT                 REJECT                 REJECT                 REJECT
+null_byte_id                             DENY                   DENY                   DENY                 REJECT
+wrong_payee                              DENY                   DENY                   DENY                   DENY
+wrong_amount                             DENY                   DENY                   DENY                 REJECT
+unknown_invoice                          DENY                   DENY                   DENY                   DENY
+
+Strict reject codes on the tricks: dup_key_amount=ValueError:duplicate_key; dup_key_invoice=ValueError:duplicate_key; trailing_newline_id=ValueError:invoice_id:id_pattern; nbhyphen_id=ValueError:invoice_id:id_not_ascii; nested_id=ValueError:invoice_id:type_not_string; array_amount=ValueError:amount_cents:type_not_integer; bool_amount=ValueError:amount_cents:type_not_integer; nan_amount=ValueError:non_finite_number; exp_amount=ValueError:float_not_allowed; huge_amount=ValueError:amount_cents:amount_range; neg_amount=ValueError:amount_cents:amount_range; two_objects=ValueError:json_syntax; key_case=ValueError:unexpected_field:Invoice_ID; extra_account=ValueError:unexpected_field:account; extra_payee_name=ValueError:unexpected_field:payee_name; bom=ValueError:bom; null_byte_id=ValueError:invoice_id:id_pattern; wrong_amount=ValueError:amount_cents:amount_range

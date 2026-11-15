@@ -1,0 +1,24 @@
+{
+ "registry_with_debug_tool": {
+  "undeclared_in_runtime": [
+   "raw_http"
+  ],
+  "declared_but_absent": [],
+  "ungated_privileged": [
+   "raw_http"
+  ],
+  "build_passes": false
+ },
+ "registry_clean": {
+  "undeclared_in_runtime": [],
+  "declared_but_absent": [],
+  "ungated_privileged": [],
+  "build_passes": true
+ },
+ "threat_table_problems": [],
+ "threat_counts": {
+  "total": 10,
+  "implemented": 6,
+  "planned": 4
+ }
+}

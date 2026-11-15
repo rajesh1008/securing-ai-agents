@@ -1,0 +1,196 @@
+{
+ "A": {
+  "calls_ok": 52,
+  "mappings": 1198,
+  "per_call": 23.0,
+  "llm25": 256,
+  "llm25_title_2025": 56,
+  "llm25_title_2023": 169,
+  "asi": 280,
+  "asi_title_ok": 0,
+  "n600": 359,
+  "n600_title_ok": 2,
+  "iso": 303,
+  "iso_valid": 93,
+  "status": {
+   "partial": 566,
+   "compliant": 377,
+   "not": 255
+  },
+  "relation": {
+   "NONE": 1198
+  },
+  "asi_examples": [
+   [
+    [
+     "ASI01",
+     "Unsafe Tool Use"
+    ],
+    9
+   ],
+   [
+    [
+     "ASI02",
+     "Unsafe Tool Use"
+    ],
+    6
+   ],
+   [
+    [
+     "ASI01",
+     "Agent Prompt Injection"
+    ],
+    3
+   ],
+   [
+    [
+     "ASI02",
+     "Agent Action Misuse"
+    ],
+    3
+   ],
+   [
+    [
+     "ASI01",
+     "Agent Autonomy Misalignment"
+    ],
+    3
+   ]
+  ]
+ },
+ "B": {
+  "calls_ok": 54,
+  "mappings": 711,
+  "per_call": 13.2,
+  "llm25": 110,
+  "llm25_title_2025": 110,
+  "llm25_title_2023": 0,
+  "asi": 169,
+  "asi_title_ok": 169,
+  "n600": 146,
+  "n600_title_ok": 146,
+  "iso": 284,
+  "iso_valid": 284,
+  "status": {
+   "compliant": 426,
+   "partial": 276,
+   "not": 9
+  },
+  "relation": {
+   "NONE": 711
+  },
+  "asi_examples": [
+   [
+    [
+     "ASI02",
+     "Tool Misuse and Exploitation"
+    ],
+    51
+   ],
+   [
+    [
+     "ASI05",
+     "Unexpected Code Execution"
+    ],
+    36
+   ],
+   [
+    [
+     "ASI03",
+     "Identity and Privilege Abuse"
+    ],
+    22
+   ],
+   [
+    [
+     "ASI08",
+     "Cascading Failures"
+    ],
+    19
+   ],
+   [
+    [
+     "ASI06",
+     "Memory and Context Poisoning"
+    ],
+    15
+   ]
+  ]
+ },
+ "C": {
+  "calls_ok": 54,
+  "mappings": 652,
+  "per_call": 12.1,
+  "llm25": 116,
+  "llm25_title_2025": 116,
+  "llm25_title_2023": 0,
+  "asi": 164,
+  "asi_title_ok": 164,
+  "n600": 131,
+  "n600_title_ok": 131,
+  "iso": 241,
+  "iso_valid": 241,
+  "status": {
+   "None": 652
+  },
+  "relation": {
+   "PARTIAL": 210,
+   "ADDRESSES": 160,
+   "EVIDENCE_FOR": 282
+  },
+  "against_author": {
+   "PARTIAL | author: ADDRESSES": 2,
+   "PARTIAL | author: no row": 184,
+   "PARTIAL | author: PARTIAL": 16,
+   "ADDRESSES | author: no row": 123,
+   "ADDRESSES | author: ADDRESSES": 16,
+   "ADDRESSES | author: PARTIAL": 16,
+   "EVIDENCE_FOR | author: no row": 239,
+   "ADDRESSES | author: EVIDENCE_FOR": 5,
+   "EVIDENCE_FOR | author: EVIDENCE_FOR": 14,
+   "EVIDENCE_FOR | author: ADDRESSES": 9,
+   "EVIDENCE_FOR | author: PARTIAL": 20,
+   "PARTIAL | author: EVIDENCE_FOR": 8
+  },
+  "author_ADDRESSES_rows_found": "9 of 13",
+  "author_EVIDENCE_FOR_rows_found": "10 of 10",
+  "author_PARTIAL_rows_found": "19 of 33",
+  "asi_examples": [
+   [
+    [
+     "ASI02",
+     "Tool Misuse and Exploitation"
+    ],
+    51
+   ],
+   [
+    [
+     "ASI05",
+     "Unexpected Code Execution"
+    ],
+    39
+   ],
+   [
+    [
+     "ASI03",
+     "Identity and Privilege Abuse"
+    ],
+    18
+   ],
+   [
+    [
+     "ASI06",
+     "Memory and Context Poisoning"
+    ],
+    18
+   ],
+   [
+    [
+     "ASI08",
+     "Cascading Failures"
+    ],
+    17
+   ]
+  ]
+ }
+}

@@ -1,0 +1,266 @@
+{
+ "matrix": {
+  "A1 account swap (H2)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A2 blunt instruction (H1)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.R"
+   ]
+  },
+  "A3 framed ticket note": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": true,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "R"
+   ]
+  },
+  "A4 framed portal note": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": true,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "R"
+   ]
+  },
+  "A5 inflated total (H3)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A6 consistent inflate (H3b)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A7 lookalike vendor (H4)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A8 duplicate of a paid invoice (H5)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A9 unknown vendor (H8)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A10 hidden layer (H6)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V.G.D"
+   ]
+  },
+  "A11 two-step registry poisoning": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": true,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "R"
+   ]
+  },
+  "A12 double submit (race)": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "G.D"
+   ]
+  },
+  "A13 stale decision across a bank change": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": true,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "D"
+   ]
+  },
+  "A14 grant replay on a second invoice": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": true,
+    "T": false
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "D"
+   ]
+  },
+  "A15 another tenant's invoice": {
+   "base": false,
+   "single": {
+    "V": false,
+    "G": false,
+    "R": false,
+    "D": false,
+    "T": true
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "T"
+   ]
+  },
+  "A16 registry confirmed by a lied-to person (residual)": {
+   "base": true,
+   "single": {
+    "V": true,
+    "G": true,
+    "R": true,
+    "D": true,
+    "T": true
+   },
+   "all_off": true,
+   "minimal_sets": [
+    "V",
+    "G",
+    "R",
+    "D",
+    "T"
+   ]
+  }
+ },
+ "by_combo": {
+  "V+,G+,R+,D+,T+": 0,
+  "V+,G+,R+,D+,T-": 1,
+  "V+,G+,R+,D-,T+": 2,
+  "V+,G+,R+,D-,T-": 3,
+  "V+,G+,R-,D+,T+": 3,
+  "V+,G+,R-,D+,T-": 4,
+  "V+,G+,R-,D-,T+": 5,
+  "V+,G+,R-,D-,T-": 6,
+  "V+,G-,R+,D+,T+": 0,
+  "V+,G-,R+,D+,T-": 1,
+  "V+,G-,R+,D-,T+": 3,
+  "V+,G-,R+,D-,T-": 4,
+  "V+,G-,R-,D+,T+": 3,
+  "V+,G-,R-,D+,T-": 4,
+  "V+,G-,R-,D-,T+": 6,
+  "V+,G-,R-,D-,T-": 7,
+  "V-,G+,R+,D+,T+": 0,
+  "V-,G+,R+,D+,T-": 1,
+  "V-,G+,R+,D-,T+": 2,
+  "V-,G+,R+,D-,T-": 3,
+  "V-,G+,R-,D+,T+": 4,
+  "V-,G+,R-,D+,T-": 5,
+  "V-,G+,R-,D-,T+": 6,
+  "V-,G+,R-,D-,T-": 7,
+  "V-,G-,R+,D+,T+": 0,
+  "V-,G-,R+,D+,T-": 1,
+  "V-,G-,R+,D-,T+": 15,
+  "V-,G-,R+,D-,T-": 15,
+  "V-,G-,R-,D+,T+": 4,
+  "V-,G-,R-,D+,T-": 5,
+  "V-,G-,R-,D-,T+": 15,
+  "V-,G-,R-,D-,T-": 15
+ }
+}

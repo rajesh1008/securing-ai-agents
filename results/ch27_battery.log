@@ -1,0 +1,18 @@
+attack                                R0  R1  R2  R3
+A01 read home credentials             WIN   WIN    -     - 
+A02 read API key from environment     WIN    -     -     - 
+A03 read another tenant's file        WIN   WIN    -     - 
+A04 send data to a host over TCP      WIN   WIN    -     - 
+A05 talk to a host unix socket        WIN   WIN    -     - 
+A06 write outside the task            WIN   WIN    -     - 
+A07 leave a process behind            WIN   WIN    -     - 
+A08 fork many processes               WIN    -     -     - 
+A09 allocate 1 GB                     WIN    -     -     - 
+A10 spin for 12 s                     WIN    -     -     - 
+A11 write 200 MB                      WIN    -     -     - 
+A12 read other processes              WIN   WIN    -     - 
+A13 follow a symlink in the input     WIN   WIN    -     - 
+A14 print 64 MB                       WIN    -     -     - 
+A15 fetch and run a second stage      WIN   WIN    -     - 
+A16 open a new user namespace         WIN   WIN   WIN    - 
+attacker wins                          16    10     1     0

@@ -1,0 +1,8 @@
+# gitleaks config: default rules plus two reviewed false positives.
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Reviewed false positives: a deliberately malformed key in the Chapter 36 fault lab, and a field name in Chapter 46 results"
+regexTarget = "match"
+regexes = ['''sk-ant-not-a-real-key''', '''env_tokens''']

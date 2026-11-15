@@ -1,0 +1,4 @@
+design                 benign cols refused    hostile reads returning a sensitive column   sensitive cols returned / requested
+tenant_wide                    0/16469                         3000/3000                                9642/9642
+per_task_columns               0/16469                            0/3000                                1330/9642
+per-task design, hostile reads that still returned a sensitive column, by task type: {'send_reminders': [510, 0], 'reconcile_month': [489, 0], 'process_invoice': [491, 0], 'handle_vendor_email': [487, 0], 'answer_question': [517, 0], 'pay_invoice': [506, 0]}
