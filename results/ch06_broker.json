@@ -1,0 +1,24 @@
+{
+ "A_refresh_token_in_runtime": {
+  "attempts": 40,
+  "executed": 40,
+  "dollars": 448800,
+  "distinct_payees": 4
+ },
+ "B_broker_token_copied": {
+  "attempts": 40,
+  "executed": 1,
+  "dollars": 100,
+  "refused": 39,
+  "refusal_reasons": {
+   "use budget exhausted (replay)": 5,
+   "amount above scope ceiling": 16,
+   "payee not in scope": 30
+  },
+  "executed_rows_carry_jti": true
+ },
+ "C_broker_wrong_workload": {
+  "attempts": 40,
+  "executed": 0
+ }
+}
