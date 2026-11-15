@@ -1,0 +1,24 @@
+ # case                                                       result                           expected                      
+ 1 exact order proposed by the assistant                      proposed                         proposed                       ok
+ 2 approved by Kevin (owner side, not the proposer)           order_active                     order_active                   ok
+ 3 assistant's own credential tries to approve                no_human_session                 no_human_session               ok
+ 4 the person who proposed it approves it                     proposer_cannot_approve          proposer_cannot_approve        ok
+ 5 approver whose limit is $1,000                             above_approver_authority         above_approver_authority       ok
+ 6 the order is widened after the screen was shown            proposal_changed_since_shown     proposal_changed_since_shown   ok
+ 7 approver session expired                                   session_expired                  session_expired                ok
+ 8 payee-wide order (no amount, no cadence)                   scope_too_wide                   scope_too_wide                 ok
+ 9 cap of $6,000                                              cap_above_policy                 cap_above_policy               ok
+10 expiry in 900 days                                         expiry_above_policy              expiry_above_policy            ok
+11 payee not in the vendor master                             unknown_payee                    unknown_payee                  ok
+12 the same digest decided a second time                      no_pending_proposal              no_pending_proposal            ok
+13 screen shows the fields and the limit                      ok                               ok                             ok
+mismatches: 0 of 13
+
+sweep (seed 1010): 300 hostile-shaped proposals from the assistant, then 100 ordinary owner proposals approved by a second person
+  owner_ordinary:order_active                                             100
+  proposed_then_refused_agent_approval:no_human_session                   104
+  refused_at_proposal:cap_above_policy                                     58
+  refused_at_proposal:expiry_above_policy                                  60
+  refused_at_proposal:scope_too_wide                                       78
+orders active after the 300 assistant proposals: 0
+orders active at the end: 100

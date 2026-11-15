@@ -34,7 +34,7 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | II | 7 | Least Privilege at Runtime | `ch07_*.py` (12) |
 | II | 8 | Deterministic Gates and the Money Path | `ch08_*.py` (6) |
 | II | 9 | Structured Outputs at the Gate: Schemas as a Security Boundary | `ch09_*.py` (7) |
-| II | 10 | Human Approval That Means Something | `ch10_*.py` (5) |
+| II | 10 | Human Approval That Means Something | `ch10_*.py` (6) |
 | II | 11 | Data Boundaries and Tenancy | `ch11_*.py` (7) |
 | II | 12 | Egress: Where Outputs May Go | `ch12_*.py` (4) |
 | II | 13 | Evidence: Proving What Happened | `ch13_*.py` (7) |
