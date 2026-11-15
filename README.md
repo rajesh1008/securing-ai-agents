@@ -73,7 +73,6 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | VIII | 46 | The AI Security Engineer's Interview, From Both Sides | `ch46_*.py` (3) |
 | VIII | 47 | The Last Twenty Percent | `ch47_*.py` (4), `bulwark/failclosed.py` |
 | VIII | 48 | The Audit | `ch48_*.py` (3), `bulwark/reperform.py` |
-| VIII | 48 | The Audit | none yet |
 | VIII | 49 | Where This Is Going | none yet |
 
 `docs/lab-notes.md` says which `bulwark/` module and which tests belong to which chapter.
