@@ -72,7 +72,6 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | VIII | 45 | End-to-End Case Studies | `ch45_*.py` (8) |
 | VIII | 46 | The AI Security Engineer's Interview, From Both Sides | `ch46_*.py` (3) |
 | VIII | 47 | The Last Twenty Percent | `ch47_*.py` (4), `bulwark/failclosed.py` |
-| VIII | 47 | The Last Twenty Percent | none yet |
 | VIII | 48 | The Audit | none yet |
 | VIII | 49 | Where This Is Going | none yet |
 
