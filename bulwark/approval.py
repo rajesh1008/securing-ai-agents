@@ -145,7 +145,8 @@ class Release:
         if not ok: return False, why, None
         self.svc.spent.add(g.nonce)                                         # spent before the gate runs: a failed release is not retried on the same grant
         r2 = PayRequest(req.invoice_id, req.payee_id, req.amount_cents, doc_amount_cents=req.doc_amount_cents, day=req.day, principal=req.principal, approver=g.approver)
-        d = self.gate.check(r2, waived=frozenset(g.waived))
+        from bulwark.failclosed import hard_money
+        d = hard_money(self.gate, r2, waived=frozenset(g.waived))
         if d.outcome != "ALLOW": return False, "gate_" + d.outcome.lower() + ":" + ",".join(d.codes), d
         sent, why = self.disp.dispatch(r2, d)
         return sent, why, d

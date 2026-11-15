@@ -8,9 +8,9 @@
    "payments:money_out"
   ],
   "hops_to_high": {
-   "payments": 1,
    "comms": 1,
-   "coordinator": 1
+   "coordinator": 1,
+   "payments": 1
   }
  },
  "tenant document|D2 + verb ACL": {
@@ -22,8 +22,8 @@
    "payments:money_out"
   ],
   "hops_to_high": {
-   "coordinator": 1,
    "comms": 2,
+   "coordinator": 1,
    "payments": 2
   }
  },
@@ -51,9 +51,9 @@
    "payments:money_out"
   ],
   "hops_to_high": {
+   "comms": 1,
    "coordinator": 1,
-   "payments": 1,
-   "comms": 1
+   "payments": 1
   }
  },
  "web page|D2 + verb ACL": {
@@ -65,8 +65,8 @@
    "payments:money_out"
   ],
   "hops_to_high": {
-   "coordinator": 1,
    "comms": 2,
+   "coordinator": 1,
    "payments": 2
   }
  },
@@ -108,8 +108,8 @@
    "payments:money_out"
   ],
   "hops_to_high": {
-   "coordinator": 1,
    "comms": 2,
+   "coordinator": 1,
    "payments": 2
   }
  },
@@ -135,16 +135,16 @@
   "GRANT_EXCEEDS_SENDER"
  ],
  "log": [
-  "tenant document    D1 ambient                     agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'payments': 1, 'comms': 1, 'coordinator': 1}",
-  "tenant document    D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'coordinator': 1, 'comms': 2, 'payments': 2}",
+  "tenant document    D1 ambient                     agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 1, 'coordinator': 1, 'payments': 1}",
+  "tenant document    D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 2, 'coordinator': 1, 'payments': 2}",
   "tenant document    D3 + task grant (read, draft)  agents reached 6/6  (agent, capability) pairs  7  HIGH pairs 0: []  hops to those agents: {}",
   "tenant document    D4 + tainted-task rule: send_external / money_out to an attacker destination released: [False, False]; envelope taint ['tenant_doc']",
-  "web page           D1 ambient                     agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'coordinator': 1, 'payments': 1, 'comms': 1}",
-  "web page           D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'coordinator': 1, 'comms': 2, 'payments': 2}",
+  "web page           D1 ambient                     agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 1, 'coordinator': 1, 'payments': 1}",
+  "web page           D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 2, 'coordinator': 1, 'payments': 2}",
   "web page           D3 + task grant (read, draft)  agents reached 6/6  (agent, capability) pairs  7  HIGH pairs 0: []  hops to those agents: {}",
   "web page           D4 + tainted-task rule: send_external / money_out to an attacker destination released: [False, False]; envelope taint ['web']",
   "remote bank reply  D1 ambient                     agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 1, 'coordinator': 1, 'payments': 1}",
-  "remote bank reply  D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'coordinator': 1, 'comms': 2, 'payments': 2}",
+  "remote bank reply  D2 + verb ACL                  agents reached 6/6  (agent, capability) pairs 10  HIGH pairs 3: ['comms:send_external', 'coordinator:send_external', 'payments:money_out']  hops to those agents: {'comms': 2, 'coordinator': 1, 'payments': 2}",
   "remote bank reply  D3 + task grant (read, draft)  agents reached 6/6  (agent, capability) pairs  7  HIGH pairs 0: []  hops to those agents: {}",
   "remote bank reply  D4 + tainted-task rule: send_external / money_out to an attacker destination released: [False, False]; envelope taint ['remote_agent']",
   "check() on intake -> payments pay_invoice: ['SENDER_NOT_ALLOWED_VERB']",

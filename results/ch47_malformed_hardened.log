@@ -1,0 +1,160 @@
+MoneyGate.check            negative_amount_matching_books         REFUSED  G1_malformed_amount_cents                       0.02 ms
+MoneyGate.check            zero_amount_matching_books             REFUSED  G1_malformed_amount_cents                       0.02 ms
+MoneyGate.check            amount_beyond_int64_matching_books     REFUSED  G1_malformed_amount_cents                       0.01 ms
+MoneyGate.check            float_amount_matching_books            REFUSED  G1_malformed_amount_cents                        0.0 ms
+MoneyGate.check            nan_amount                             REFUSED  G1_malformed_amount_cents                        0.0 ms
+MoneyGate.check            bool_amount                            REFUSED  G1_malformed_amount_cents                        0.0 ms
+MoneyGate.check            amount_as_string                       REFUSED  G1_malformed_amount_cents                        0.0 ms
+MoneyGate.check            amount_none                            REFUSED  G1_malformed_amount_cents                        0.0 ms
+MoneyGate.check            day_none                               REFUSED  G1_malformed_day                                 0.0 ms
+MoneyGate.check            day_string                             REFUSED  G1_malformed_day                                 0.0 ms
+MoneyGate.check            negative_day                           REFUSED  G1_malformed_day                                 0.0 ms
+MoneyGate.check            payee_id_none                          REFUSED  G1_malformed_payee_id                            0.0 ms
+MoneyGate.check            payee_id_unhashable_list               REFUSED  G1_malformed_payee_id                            0.0 ms
+MoneyGate.check            invoice_id_unhashable_list             REFUSED  G1_malformed_invoice_id                          0.0 ms
+MoneyGate.check            doc_amount_string                      REFUSED  G1_malformed_doc_amount_cents                    0.0 ms
+MoneyGate.check            doc_amount_nan                         REFUSED  G1_malformed_doc_amount_cents                    0.0 ms
+MoneyGate.check            big_payment_approver_is_requester      REFUSED  M8_dual_control_missing                         0.06 ms
+MoneyGate.check            big_payment_no_approver_no_principal   REFUSED  G1_malformed_principal                           0.0 ms
+MoneyGate.check            big_payment_approver_and_principal_both_none_string REFUSED  G1_malformed_principal,G1_malformed_approver       0.0 ms
+MoneyGate.check            good_request_control                   ALLOWED  ok                                              0.04 ms
+Egress.check(level 4)      url_none                               REFUSED  G1_malformed_url                                0.01 ms
+Egress.check(level 4)      url_empty                              REFUSED  scheme                                          0.01 ms
+Egress.check(level 4)      url_ipv6_unclosed                      REFUSED  G1_malformed_url                                0.01 ms
+Egress.check(level 4)      url_bytes                              REFUSED  G1_malformed_url                                 0.0 ms
+Egress.check(level 4)      url_port_out_of_range                  REFUSED  G1_malformed_url                                0.01 ms
+Egress.check(level 4)      url_backslash_host                     REFUSED  userinfo                                        0.01 ms
+Egress.check(level 4)      url_nul_byte                           REFUSED  host_not_allowed                                0.01 ms
+Egress.check(level 4)      body_none_email                        REFUSED  G1_malformed_body                                0.0 ms
+Egress.check(level 4)      to_none_email                          REFUSED  G1_malformed_to                                  0.0 ms
+Egress.check(level 4)      body_bytes_email                       REFUSED  G1_malformed_body                                0.0 ms
+Egress.check(level 4)      kind_unknown                           REFUSED  G1_malformed_kind                                0.0 ms
+Egress.check(level 4)      kind_none                              REFUSED  G1_malformed_kind                                0.0 ms
+Egress.check(level 4)      body_secret_with_private_use_char      REFUSED  private_value_in_body                           0.11 ms
+Egress.check(level 4)      body_3mb_email                         REFUSED  G1_too_large_body                                0.0 ms
+Egress.check(level 4)      body_3mb_tokens_email                  REFUSED  G1_too_large_body                                0.0 ms
+Egress.check(level 4)      good_request_control                   ALLOWED  ok                                              0.03 ms
+AudienceTokens.verify      token_none                             REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_bytes                            REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_int                              REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_empty                            REFUSED                                                  0.01 ms
+AudienceTokens.verify      token_no_dot                           REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_unsigned_json_array              REFUSED                                                  0.01 ms
+AudienceTokens.verify      now_none                               REFUSED                                                   0.0 ms
+AudienceTokens.verify      scope_none                             REFUSED                                                   0.0 ms
+AudienceTokens.verify      now_nan                                REFUSED                                                   0.0 ms
+AudienceTokens.verify      expired_token_control_refused          REFUSED                                                  0.01 ms
+AudienceTokens.verify      good_token_control                     ALLOWED                                                  0.01 ms
+safe_join                  rel_none                               REFUSED                                                   0.0 ms
+safe_join                  rel_bytes                              REFUSED                                                   0.0 ms
+safe_join                  rel_dotdot                             REFUSED                                                  0.02 ms
+safe_join                  rel_absolute                           REFUSED                                                  0.01 ms
+safe_join                  rel_nul                                REFUSED                                                   0.0 ms
+safe_join                  rel_10mb_name                          REFUSED                                                  7.95 ms
+safe_join                  rel_good_control                       ALLOWED                                                  0.03 ms
+check_args                 args_none                              REFUSED                                                   0.0 ms
+check_args                 schema_none                            REFUSED                                                   0.0 ms
+check_args                 value_none_with_pattern                REFUSED                                                  0.08 ms
+check_args                 unhashable_key                         REFUSED                                                   0.0 ms
+check_args                 good_control                           ALLOWED                                                  0.01 ms
+is_internal_host           host_none                              REFUSED                                                   0.0 ms
+is_internal_host           host_int                               REFUSED                                                   0.0 ms
+is_internal_host           host_decimal_ip                        REFUSED                                                  0.05 ms
+is_internal_host           host_octal_ip                          REFUSED                                                  0.02 ms
+is_internal_host           host_hex_ip                            REFUSED                                                  0.01 ms
+is_internal_host           host_empty                             REFUSED                                                   0.0 ms
+is_internal_host           host_ipv6_mapped                       REFUSED                                                  0.02 ms
+is_internal_host           host_zone                              REFUSED                                                  0.02 ms
+is_internal_host           host_metadata                          REFUSED                                                  0.01 ms
+is_internal_host           public_control                         ALLOWED                                                  0.01 ms
+Budget.check               tool_none                              REFUSED                                                  0.01 ms
+Budget.check               effect_none_uncounted                  REFUSED                                                  0.03 ms
+Budget.check               effect_capitalised_uncounted           REFUSED                                                  0.01 ms
+Budget.check               effect_typo_uncounted                  REFUSED                                                  0.01 ms
+Budget.check               args_not_a_dict                        REFUSED                                                   0.0 ms
+Budget.check               good_control                           ALLOWED                                                  0.01 ms
+{
+ "mode": "hardened",
+ "probes": 68,
+ "by_result": {
+  "REFUSED": 68
+ },
+ "by_gate": {
+  "MoneyGate.check": {
+   "REFUSED": 19
+  },
+  "Egress.check(level 4)": {
+   "REFUSED": 15
+  },
+  "AudienceTokens.verify": {
+   "REFUSED": 10
+  },
+  "safe_join": {
+   "REFUSED": 6
+  },
+  "check_args": {
+   "REFUSED": 4
+  },
+  "is_internal_host": {
+   "REFUSED": 9
+  },
+  "Budget.check": {
+   "REFUSED": 5
+  }
+ },
+ "controls": [
+  [
+   "good_request_control",
+   "ALLOWED"
+  ],
+  [
+   "good_request_control",
+   "ALLOWED"
+  ],
+  [
+   "good_token_control",
+   "ALLOWED"
+  ],
+  [
+   "rel_good_control",
+   "ALLOWED"
+  ],
+  [
+   "good_control",
+   "ALLOWED"
+  ],
+  [
+   "public_control",
+   "ALLOWED"
+  ],
+  [
+   "good_control",
+   "ALLOWED"
+  ]
+ ],
+ "callers": {
+  "crashes": 0,
+  "allowed_by_gate": 0,
+  "open_caller_allows": 0,
+  "skip_caller_allows": 0,
+  "closed_caller_allows": 0
+ },
+ "slowest": [
+  [
+   "rel_10mb_name",
+   7.95
+  ],
+  [
+   "body_secret_with_private_use_char",
+   0.11
+  ],
+  [
+   "value_none_with_pattern",
+   0.08
+  ],
+  [
+   "big_payment_approver_is_requester",
+   0.06
+  ]
+ ]
+}

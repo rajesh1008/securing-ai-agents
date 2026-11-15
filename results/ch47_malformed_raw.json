@@ -1,0 +1,704 @@
+{
+ "summary": {
+  "mode": "raw",
+  "probes": 68,
+  "by_result": {
+   "REFUSED": 37,
+   "CRASH": 21,
+   "ALLOWED": 10
+  },
+  "by_gate": {
+   "MoneyGate.check": {
+    "REFUSED": 12,
+    "CRASH": 6,
+    "ALLOWED": 1
+   },
+   "Egress.check(level 4)": {
+    "REFUSED": 6,
+    "CRASH": 6,
+    "ALLOWED": 3
+   },
+   "AudienceTokens.verify": {
+    "REFUSED": 8,
+    "CRASH": 1,
+    "ALLOWED": 1
+   },
+   "safe_join": {
+    "CRASH": 2,
+    "REFUSED": 3,
+    "ALLOWED": 1
+   },
+   "check_args": {
+    "CRASH": 3,
+    "REFUSED": 1
+   },
+   "is_internal_host": {
+    "CRASH": 2,
+    "REFUSED": 6,
+    "ALLOWED": 1
+   },
+   "Budget.check": {
+    "CRASH": 1,
+    "ALLOWED": 3,
+    "REFUSED": 1
+   }
+  },
+  "controls": [
+   [
+    "good_request_control",
+    "ALLOWED"
+   ],
+   [
+    "good_request_control",
+    "ALLOWED"
+   ],
+   [
+    "good_token_control",
+    "ALLOWED"
+   ],
+   [
+    "rel_good_control",
+    "ALLOWED"
+   ],
+   [
+    "good_control",
+    "ALLOWED"
+   ],
+   [
+    "public_control",
+    "ALLOWED"
+   ],
+   [
+    "good_control",
+    "ALLOWED"
+   ]
+  ],
+  "callers": {
+   "crashes": 21,
+   "allowed_by_gate": 10,
+   "open_caller_allows": 31,
+   "skip_caller_allows": 10,
+   "closed_caller_allows": 10
+  },
+  "slowest": [
+   [
+    "body_3mb_email",
+    213.95
+   ],
+   [
+    "body_3mb_tokens_email",
+    79.85
+   ],
+   [
+    "rel_10mb_name",
+    25.67
+   ],
+   [
+    "url_port_out_of_range",
+    0.13
+   ]
+  ]
+ },
+ "rows": [
+  {
+   "gate": "MoneyGate.check",
+   "probe": "negative_amount_matching_books",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.06,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "zero_amount_matching_books",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.03,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "amount_beyond_int64_matching_books",
+   "result": "REFUSED",
+   "detail": "M5_over_payee_limit,M3_document_amount_differs_from_books,M5",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "float_amount_matching_books",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "nan_amount",
+   "result": "REFUSED",
+   "detail": "M3_amount_differs_from_books,M3_document_amount_differs_from",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "bool_amount",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "amount_as_string",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "amount_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "day_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "day_string",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "negative_day",
+   "result": "REFUSED",
+   "detail": "M4_account_not_yet_seasoned,M6_new_payee",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "payee_id_none",
+   "result": "REFUSED",
+   "detail": "M1_unknown_payee",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "payee_id_unhashable_list",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "invoice_id_unhashable_list",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "doc_amount_string",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "doc_amount_nan",
+   "result": "REFUSED",
+   "detail": "M3_document_amount_differs_from_books",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "big_payment_approver_is_requester",
+   "result": "REFUSED",
+   "detail": "M8_dual_control_missing",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "big_payment_no_approver_no_principal",
+   "result": "REFUSED",
+   "detail": "M8_dual_control_missing",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "big_payment_approver_and_principal_both_none_string",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 0.03,
+   "control": false
+  },
+  {
+   "gate": "MoneyGate.check",
+   "probe": "good_request_control",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 0.03,
+   "control": true
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_none",
+   "result": "REFUSED",
+   "detail": "scheme",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_empty",
+   "result": "REFUSED",
+   "detail": "scheme",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_ipv6_unclosed",
+   "result": "CRASH",
+   "detail": "ValueError",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_bytes",
+   "result": "REFUSED",
+   "detail": "scheme",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_port_out_of_range",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 0.13,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_backslash_host",
+   "result": "REFUSED",
+   "detail": "userinfo",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "url_nul_byte",
+   "result": "REFUSED",
+   "detail": "host_not_allowed",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "body_none_email",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "to_none_email",
+   "result": "CRASH",
+   "detail": "AttributeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "body_bytes_email",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "kind_unknown",
+   "result": "CRASH",
+   "detail": "ValueError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "kind_none",
+   "result": "CRASH",
+   "detail": "ValueError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "body_secret_with_private_use_char",
+   "result": "REFUSED",
+   "detail": "private_value_in_body",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "body_3mb_email",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 213.95,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "body_3mb_tokens_email",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 79.85,
+   "control": false
+  },
+  {
+   "gate": "Egress.check(level 4)",
+   "probe": "good_request_control",
+   "result": "ALLOWED",
+   "detail": "ok",
+   "ms": 0.05,
+   "control": true
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_none",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_bytes",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_int",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_empty",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_no_dot",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "token_unsigned_json_array",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "now_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "scope_none",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "now_nan",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "expired_token_control_refused",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "AudienceTokens.verify",
+   "probe": "good_token_control",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.0,
+   "control": true
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_bytes",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_dotdot",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.03,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_absolute",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_nul",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_10mb_name",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 25.67,
+   "control": false
+  },
+  {
+   "gate": "safe_join",
+   "probe": "rel_good_control",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.03,
+   "control": true
+  },
+  {
+   "gate": "check_args",
+   "probe": "args_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "check_args",
+   "probe": "schema_none",
+   "result": "CRASH",
+   "detail": "AttributeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "check_args",
+   "probe": "value_none_with_pattern",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.06,
+   "control": false
+  },
+  {
+   "gate": "check_args",
+   "probe": "unhashable_key",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "check_args",
+   "probe": "good_control",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": true
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_none",
+   "result": "CRASH",
+   "detail": "AttributeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_int",
+   "result": "CRASH",
+   "detail": "AttributeError",
+   "ms": 0.0,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_decimal_ip",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.05,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_octal_ip",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_hex_ip",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_empty",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_ipv6_mapped",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_zone",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "host_metadata",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "is_internal_host",
+   "probe": "public_control",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": true
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "tool_none",
+   "result": "CRASH",
+   "detail": "TypeError",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "effect_none_uncounted",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.02,
+   "control": false
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "effect_capitalised_uncounted",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "effect_typo_uncounted",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "args_not_a_dict",
+   "result": "REFUSED",
+   "detail": "",
+   "ms": 0.01,
+   "control": false
+  },
+  {
+   "gate": "Budget.check",
+   "probe": "good_control",
+   "result": "ALLOWED",
+   "detail": "",
+   "ms": 0.01,
+   "control": true
+  }
+ ]
+}

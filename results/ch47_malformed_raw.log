@@ -1,0 +1,175 @@
+MoneyGate.check            negative_amount_matching_books         REFUSED  M3_document_amount_differs_from_books           0.06 ms
+MoneyGate.check            zero_amount_matching_books             REFUSED  M3_document_amount_differs_from_books           0.03 ms
+MoneyGate.check            amount_beyond_int64_matching_books     REFUSED  M5_over_payee_limit,M3_document_amount_differs_from_books,M5      0.02 ms
+MoneyGate.check            float_amount_matching_books            REFUSED  M3_document_amount_differs_from_books           0.02 ms
+MoneyGate.check            nan_amount                             REFUSED  M3_amount_differs_from_books,M3_document_amount_differs_from      0.02 ms
+MoneyGate.check            bool_amount                            REFUSED  M3_document_amount_differs_from_books           0.02 ms
+MoneyGate.check            amount_as_string                       CRASH    TypeError                                       0.01 ms
+MoneyGate.check            amount_none                            CRASH    TypeError                                        0.0 ms
+MoneyGate.check            day_none                               CRASH    TypeError                                        0.0 ms
+MoneyGate.check            day_string                             CRASH    TypeError                                        0.0 ms
+MoneyGate.check            negative_day                           REFUSED  M4_account_not_yet_seasoned,M6_new_payee        0.02 ms
+MoneyGate.check            payee_id_none                          REFUSED  M1_unknown_payee                                 0.0 ms
+MoneyGate.check            payee_id_unhashable_list               CRASH    TypeError                                        0.0 ms
+MoneyGate.check            invoice_id_unhashable_list             CRASH    TypeError                                        0.0 ms
+MoneyGate.check            doc_amount_string                      REFUSED  M3_document_amount_differs_from_books           0.02 ms
+MoneyGate.check            doc_amount_nan                         REFUSED  M3_document_amount_differs_from_books           0.01 ms
+MoneyGate.check            big_payment_approver_is_requester      REFUSED  M8_dual_control_missing                         0.01 ms
+MoneyGate.check            big_payment_no_approver_no_principal   REFUSED  M8_dual_control_missing                         0.01 ms
+MoneyGate.check            big_payment_approver_and_principal_both_none_string ALLOWED  ok                                              0.03 ms
+MoneyGate.check            good_request_control                   ALLOWED  ok                                              0.03 ms
+Egress.check(level 4)      url_none                               REFUSED  scheme                                          0.02 ms
+Egress.check(level 4)      url_empty                              REFUSED  scheme                                          0.01 ms
+Egress.check(level 4)      url_ipv6_unclosed                      CRASH    ValueError                                      0.01 ms
+Egress.check(level 4)      url_bytes                              REFUSED  scheme                                          0.01 ms
+Egress.check(level 4)      url_port_out_of_range                  ALLOWED  ok                                              0.13 ms
+Egress.check(level 4)      url_backslash_host                     REFUSED  userinfo                                        0.01 ms
+Egress.check(level 4)      url_nul_byte                           REFUSED  host_not_allowed                                0.01 ms
+Egress.check(level 4)      body_none_email                        CRASH    TypeError                                       0.01 ms
+Egress.check(level 4)      to_none_email                          CRASH    AttributeError                                   0.0 ms
+Egress.check(level 4)      body_bytes_email                       CRASH    TypeError                                       0.01 ms
+Egress.check(level 4)      kind_unknown                           CRASH    ValueError                                       0.0 ms
+Egress.check(level 4)      kind_none                              CRASH    ValueError                                       0.0 ms
+Egress.check(level 4)      body_secret_with_private_use_char      REFUSED  private_value_in_body                           0.02 ms
+Egress.check(level 4)      body_3mb_email                         ALLOWED  ok                                            213.95 ms
+Egress.check(level 4)      body_3mb_tokens_email                  ALLOWED  ok                                             79.85 ms
+Egress.check(level 4)      good_request_control                   ALLOWED  ok                                              0.05 ms
+AudienceTokens.verify      token_none                             REFUSED                                                  0.01 ms
+AudienceTokens.verify      token_bytes                            REFUSED                                                  0.01 ms
+AudienceTokens.verify      token_int                              REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_empty                            REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_no_dot                           REFUSED                                                   0.0 ms
+AudienceTokens.verify      token_unsigned_json_array              REFUSED                                                  0.02 ms
+AudienceTokens.verify      now_none                               CRASH    TypeError                                       0.02 ms
+AudienceTokens.verify      scope_none                             REFUSED                                                  0.01 ms
+AudienceTokens.verify      now_nan                                ALLOWED                                                  0.01 ms
+AudienceTokens.verify      expired_token_control_refused          REFUSED                                                   0.0 ms
+AudienceTokens.verify      good_token_control                     ALLOWED                                                   0.0 ms
+safe_join                  rel_none                               CRASH    TypeError                                        0.0 ms
+safe_join                  rel_bytes                              CRASH    TypeError                                        0.0 ms
+safe_join                  rel_dotdot                             REFUSED                                                  0.03 ms
+safe_join                  rel_absolute                           REFUSED                                                  0.01 ms
+safe_join                  rel_nul                                REFUSED                                                   0.0 ms
+safe_join                  rel_10mb_name                          ALLOWED                                                 25.67 ms
+safe_join                  rel_good_control                       ALLOWED                                                  0.03 ms
+check_args                 args_none                              CRASH    TypeError                                       0.01 ms
+check_args                 schema_none                            CRASH    AttributeError                                   0.0 ms
+check_args                 value_none_with_pattern                REFUSED                                                  0.06 ms
+check_args                 unhashable_key                         CRASH    TypeError                                       0.02 ms
+check_args                 good_control                           ALLOWED                                                  0.01 ms
+is_internal_host           host_none                              CRASH    AttributeError                                   0.0 ms
+is_internal_host           host_int                               CRASH    AttributeError                                   0.0 ms
+is_internal_host           host_decimal_ip                        REFUSED                                                  0.05 ms
+is_internal_host           host_octal_ip                          REFUSED                                                  0.02 ms
+is_internal_host           host_hex_ip                            REFUSED                                                  0.01 ms
+is_internal_host           host_empty                             ALLOWED                                                  0.01 ms
+is_internal_host           host_ipv6_mapped                       REFUSED                                                  0.02 ms
+is_internal_host           host_zone                              REFUSED                                                  0.02 ms
+is_internal_host           host_metadata                          REFUSED                                                  0.01 ms
+is_internal_host           public_control                         ALLOWED                                                  0.01 ms
+Budget.check               tool_none                              CRASH    TypeError                                       0.02 ms
+Budget.check               effect_none_uncounted                  ALLOWED                                                  0.02 ms
+Budget.check               effect_capitalised_uncounted           ALLOWED                                                  0.01 ms
+Budget.check               effect_typo_uncounted                  ALLOWED                                                  0.01 ms
+Budget.check               args_not_a_dict                        REFUSED                                                  0.01 ms
+Budget.check               good_control                           ALLOWED                                                  0.01 ms
+{
+ "mode": "raw",
+ "probes": 68,
+ "by_result": {
+  "REFUSED": 37,
+  "CRASH": 21,
+  "ALLOWED": 10
+ },
+ "by_gate": {
+  "MoneyGate.check": {
+   "REFUSED": 12,
+   "CRASH": 6,
+   "ALLOWED": 1
+  },
+  "Egress.check(level 4)": {
+   "REFUSED": 6,
+   "CRASH": 6,
+   "ALLOWED": 3
+  },
+  "AudienceTokens.verify": {
+   "REFUSED": 8,
+   "CRASH": 1,
+   "ALLOWED": 1
+  },
+  "safe_join": {
+   "CRASH": 2,
+   "REFUSED": 3,
+   "ALLOWED": 1
+  },
+  "check_args": {
+   "CRASH": 3,
+   "REFUSED": 1
+  },
+  "is_internal_host": {
+   "CRASH": 2,
+   "REFUSED": 6,
+   "ALLOWED": 1
+  },
+  "Budget.check": {
+   "CRASH": 1,
+   "ALLOWED": 3,
+   "REFUSED": 1
+  }
+ },
+ "controls": [
+  [
+   "good_request_control",
+   "ALLOWED"
+  ],
+  [
+   "good_request_control",
+   "ALLOWED"
+  ],
+  [
+   "good_token_control",
+   "ALLOWED"
+  ],
+  [
+   "rel_good_control",
+   "ALLOWED"
+  ],
+  [
+   "good_control",
+   "ALLOWED"
+  ],
+  [
+   "public_control",
+   "ALLOWED"
+  ],
+  [
+   "good_control",
+   "ALLOWED"
+  ]
+ ],
+ "callers": {
+  "crashes": 21,
+  "allowed_by_gate": 10,
+  "open_caller_allows": 31,
+  "skip_caller_allows": 10,
+  "closed_caller_allows": 10
+ },
+ "slowest": [
+  [
+   "body_3mb_email",
+   213.95
+  ],
+  [
+   "body_3mb_tokens_email",
+   79.85
+  ],
+  [
+   "rel_10mb_name",
+   25.67
+  ],
+  [
+   "url_port_out_of_range",
+   0.13
+  ]
+ ]
+}

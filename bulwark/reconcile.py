@@ -9,6 +9,7 @@ from typing import Optional, Callable
 from bulwark.docagent import Document, Extraction, Records, parse_rules, verify, norm
 from bulwark.moneypath import Vendors, Vendor, Invoice, PayRequest, MoneyGate, Ledger, Decision, idem_key, DOC_NOT_FOUND
 from bulwark.evidence import Vault
+from bulwark.failclosed import hard_money
 
 CHANGE = re.compile(r"(?i)(receiving account is now|bank (details|has) changed|new bank|account (has )?changed|bank_account field)")
 OBEY = [re.compile(r"receiving account is now (US-ACC-\d+)"), re.compile(r"bank_account field for this document is (US-ACC-\d+)")]
@@ -75,7 +76,7 @@ class Flow:
             r.req = PayRequest(e["invoice_id"], e["payee_id"], amt, doc_amount_cents=(ex.amount_cents if ex.amount_cents is not None else DOC_NOT_FOUND), day=day)
         for r in res:
             if r.req is None: continue
-            if self.G: r.dec = self.gate.check(r.req)
+            if self.G: r.dec = hard_money(self.gate, r.req)
             else:
                 ven = self.vendors.v.get(r.req.payee_id); r.dec = Decision("ALLOW", ["gate_off"], r.effect["destination"], idem_key(self.tenant, r.req.invoice_id, r.req.payee_id, r.req.amount_cents), ven.version if ven else None)
             self.ev(kind="gate", tool="pay_invoice", decision=r.dec.outcome, reasons=[c[:48] for c in r.dec.codes[:6]], ts=day)

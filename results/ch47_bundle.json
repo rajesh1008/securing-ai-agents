@@ -1,0 +1,93 @@
+{
+ "before": {
+  "controls": 20,
+  "items": 30,
+  "issues": {
+   "STALE_FOR_CODE": 5
+  }
+ },
+ "after": {
+  "controls": 23,
+  "items": 35,
+  "issues": {
+   "STALE_FOR_CODE": 5
+  }
+ },
+ "levels": {
+  "measured_in_simulation": 15,
+  "measured_live_model": 7,
+  "tested": 1
+ },
+ "item_kinds": {
+  "UNIT": 2,
+  "LAB_SIM": 25,
+  "LAB_LIVE": 7,
+  "REVIEW": 1
+ },
+ "controls_resting_on_one_item": [
+  "C03",
+  "C05",
+  "C07",
+  "C09",
+  "C10",
+  "C11",
+  "C12",
+  "C14",
+  "C15",
+  "C16",
+  "C17",
+  "C21",
+  "C23"
+ ],
+ "threat_coverage": {
+  "T01": [
+   "C01",
+   "C12",
+   "C23"
+  ],
+  "T02": [
+   "C02",
+   "C16"
+  ],
+  "T03": [
+   "C03",
+   "C12",
+   "C13",
+   "C14",
+   "C17",
+   "C21"
+  ],
+  "T04": [
+   "C04"
+  ],
+  "T05": [
+   "C04"
+  ],
+  "T06": [
+   "C05",
+   "C18",
+   "C22"
+  ],
+  "T07": [
+   "C06",
+   "C11",
+   "C15",
+   "C19",
+   "C22"
+  ],
+  "T08": [
+   "C06"
+  ],
+  "T09": [
+   "C07"
+  ],
+  "T10": [
+   "C08",
+   "C09",
+   "C10",
+   "C20",
+   "C23"
+  ]
+ },
+ "operating_claims": 0
+}

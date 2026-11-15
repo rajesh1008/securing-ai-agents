@@ -35,7 +35,7 @@ def main():
     for start, label in (("intake", "tenant document"), ("research", "web page"), ("bank", "remote bank reply")):
         for name, edges, grant, hl in (("D1 ambient", EDGES1, None, 4), ("D2 + verb ACL", EDGES2, None, 4), ("D3 + task grant (read, draft)", EDGES2, TASK_GRANT, 4)):
             seen, pairs = reach(start, edges, hl, grant); high = sorted(f"{a}:{c}" for a, c in pairs if c in HIGH)
-            path = {a: d for a, d in seen.items() if any(c in HIGH for c in CARDS[a]) and (grant is None or any(c in HIGH and c in grant for c in CARDS[a]))}
+            path = {a: d for a, d in sorted(seen.items()) if any(c in HIGH for c in CARDS[a]) and (grant is None or any(c in HIGH and c in grant for c in CARDS[a]))}
             res[f"{label}|{name}"] = dict(agents=len(seen), pairs=len(pairs), high=high, hops_to_high=path)
             L.append(f"{label:18s} {name:30s} agents reached {len(seen)}/6  (agent, capability) pairs {len(pairs):2d}  HIGH pairs {len(high)}: {high}  hops to those agents: {path}")
         # D4: the tainted-task rule at the effect; checked with the real functions on an envelope that carries the taint
