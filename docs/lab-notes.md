@@ -2,6 +2,8 @@
 
 Policy-enforcement layer built through *Securing AI Agents*.
 
+**Public repository: https://github.com/rajesh1008/securing-ai-agents** (MIT licence).
+
 ```bash
 cd securing-ai-agents
 python3 -m pytest -q
