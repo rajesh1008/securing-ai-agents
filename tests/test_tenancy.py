@@ -40,3 +40,15 @@ def test_project_and_handles():
     rec = dict(invoice_number="I", vendor_name="V", amount_cents=1, bank_account="ACC-1", tax_id="TX-1")
     p = project(rec, "summarise_invoice"); assert "bank_account" not in p and p["amount_cents"] == 1
     h = Handles(); a = h.issue("t1", "ACC-1", "acct"); assert a == h.issue("t1", "ACC-1", "acct") and h.resolve("t1", a) == "ACC-1" and h.resolve("t2", a) is None
+
+def test_pooled_statistics_depend_on_other_tenants():
+    import copy
+    c = Corpus(tenants=6, per_tenant=20); A, B = c.tenants[0], c.tenants[1]
+    q = f"{c.vendors_of[A][0]} {TOPICS[0]}"; term = max(tokens(q), key=lambda w: Index(c, "pushdown").pool.idf.get(w, 0))
+    c2 = copy.copy(c); c2.docs = c.docs + [Doc(f"{B}-x{n}", B, f"{term} {term} {term}") for n in range(30)]
+    def scores(cc, mode):
+        ix = Index(cc, mode)
+        r = ix.parts[A].rank(q) if mode == "partition" else ix.pool.rank(q, lambda d: d.tenant == A)
+        return [round(s, 6) for s, _ in r[:5]]
+    assert scores(c, "partition") == scores(c2, "partition")
+    assert scores(c, "pushdown") != scores(c2, "pushdown")
