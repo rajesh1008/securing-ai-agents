@@ -1,0 +1,19 @@
+Part A: eight forms: write-time rule refuses 2 of 8; promote-time check refuses 8 of 8
+  benign notes without the attacker's strings: 104; flagged by write-time rule 0; flagged by promote-time check 0
+Part A2: eight held-out forms, written after the check: write-time rule refuses 1; promote-time check flags 3 of 8; missed: tens and ones, hex, spelled in French, last four only, named, no digits
+Part B: promotion cases (ok = became active)
+  person confirms a benign schedule                                    ok  ok
+  registry path, benign vendor fact                                    ok  ok
+  corroboration: PO-system entry + vendor-portal entry, different runs ok  ok
+  corroboration: email + second email                                  refused  NOT_INDEPENDENT
+  corroboration: email + PO system, authenticated only on one side     refused  NOT_INDEPENDENT
+  corroboration: both authenticated channels, same run                 refused  SAME_RUN
+  corroboration: same authenticated channel twice                      refused  NOT_INDEPENDENT
+  person confirms an entry that carries a spaced account number        refused  DESTINATION_NEVER_PROMOTED
+  path 'the model says it is fine'                                     refused  UNKNOWN_PATH
+Part C: store 800 entries active (400 base incl. 20 poisoned, 300 first-generation summaries, 100 second-generation reports)
+  first-generation summaries that had a poisoned entry in context 221 of 300; that restated it in some form 110
+  restatements found by the write-time pattern rule 29; by the promote-time check 110
+  revoke by run revoked 20; active after 780
+  revoke-forward then quarantined 321 derived entries: first generation 221 of 300, second generation 100 of 100; active after 459
+Part D: 10 user notes, 4 with a destination: routed to the vendor change process 4, saved 6; benign live-lab notes routed 0 of 104

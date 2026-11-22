@@ -15,6 +15,7 @@ DEST_RE = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+|\b\d{9,}\b|\b[A-Z]{2,3}-ACC-\d+\
 @dataclass
 class Entry:
     text: str; kind: str; source: str; run: str = ""; ttl_days: int = 90; status: str = "active"; created: float = field(default_factory=time.time)
+    channel: str = ""; parents: tuple = ()
     digest: str = field(init=False)
     def __post_init__(self): self.digest = hashlib.sha256(f"{self.kind}|{self.text}".encode()).hexdigest()[:16]
 
@@ -35,7 +36,7 @@ class Store:
         if self.gate is None: self.entries.append(e); return "active", "no_gate"
         d, why = self.gate.decide(e)
         if d == "reject": self.rejected.append((e, why)); return d, why
-        e.status = d; self.entries.append(e); return d, why
+        e.status = "quarantined" if d == "quarantine" else d; self.entries.append(e); return d, why
     def revoke(self, digest=None, run=None) -> int:
         n = 0
         for e in self.entries:
@@ -54,3 +55,47 @@ def render(entries: list[Entry], labelled: bool = True) -> str:
 
 def destination_ok(value: str, user_text: str, registry_values: set[str]) -> bool:
     v = value.strip().lower(); return v in user_text.lower() or v in {r.lower() for r in registry_values}
+
+
+# --- promotion, lineage and the user-carried note (Sections 22.7.1, 22.10.1, 22.11.1) ---
+AUTHENTICATED_CHANNELS = {"po_system", "vendor_portal", "registry"}
+_WORDS = {"zero": "0", "oh": "0", "one": "1", "two": "2", "three": "3", "four": "4", "five": "5", "six": "6", "seven": "7", "eight": "8", "nine": "9"}
+
+def normalise(text: str) -> str:
+    """Fold the common disguises of a destination: spelled digits, ' at ' / ' dot ', and separators between digits.  Used at promotion and routing, where it runs on a handful of entries and can afford to be strict."""
+    t = text.lower()
+    t = re.sub(r"\b(" + "|".join(_WORDS) + r")\b", lambda m: _WORDS[m.group(1)], t)
+    t = re.sub(r"\s+at\s+", "@", t); t = re.sub(r"\s+dot\s+", ".", t)
+    return t
+
+def destination_like(text: str) -> bool:
+    t = normalise(text)
+    return bool(DEST_RE.search(t)) or len(re.sub(r"\D", "", t)) >= 9 or bool(re.search(r"[\w-]+\.(?:example|com|net|org|io)/\S*", t))
+
+def promote(store: "Store", digest: str, how: str, partner: str | None = None) -> tuple[bool, str]:
+    """Move a quarantined entry to active.  how: 'person' (reviewer saw the original text), 'registry' (the fact is now in the system of record) or 'corroboration' (partner is the digest of a second entry).  A destination-like entry is never promoted from memory, whichever path is used."""
+    e = next((x for x in store.entries if x.digest == digest and x.status == "quarantined"), None)
+    if e is None: return False, "NOT_QUARANTINED"
+    if destination_like(e.text): return False, "DESTINATION_NEVER_PROMOTED"
+    if how == "corroboration":
+        o = next((x for x in store.entries if x.digest == partner and x.status in ("quarantined", "active")), None)
+        if o is None: return False, "NO_PARTNER"
+        if o.run == e.run: return False, "SAME_RUN"
+        if e.channel == o.channel or not {e.channel, o.channel} <= AUTHENTICATED_CHANNELS: return False, "NOT_INDEPENDENT"
+    elif how not in ("person", "registry"): return False, "UNKNOWN_PATH"
+    e.status = "active"; return True, "ok"
+
+def revoke_forward(store: "Store", digest: str) -> dict:
+    """Revoke an entry and quarantine every entry written by a session that had it, or something downstream of it, in context."""
+    tainted = {digest}; revoked = store.revoke(digest=digest); quarantined = 0; grew = True
+    while grew:
+        grew = False
+        for e in store.entries:
+            if e.digest not in tainted and tainted & set(e.parents):
+                tainted.add(e.digest); grew = True
+                if e.status == "active": e.status = "quarantined"; quarantined += 1
+    return {"revoked": revoked, "quarantined": quarantined, "tainted": len(tainted)}
+
+def route_user_note(text: str) -> str:
+    """A user-sourced note that carries a destination is saved without the destination being usable; the user is pointed to the vendor change process."""
+    return "route_to_vendor_change" if destination_like(text) else "save"

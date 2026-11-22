@@ -46,7 +46,7 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | III | 19 | Defences That Reduce Likelihood | `ch19_*.py` (11) |
 | III | 20 | Architectural Defences | `ch20_*.py` (6) |
 | III | 21 | Untrusted Tool Results | `ch21_*.py` (5) |
-| III | 22 | Memory and State Poisoning | `ch22_*.py` (5) |
+| III | 22 | Memory and State Poisoning | `ch22_*.py` (6) |
 | III | 23 | Jailbreaks, Model Alignment and Their Limits | `ch23_*.py` (5) |
 | III | 24 | Agents Behind a Model Gateway: Approved Models, Rotating Keys and Deprecations | `ch24_*.py` (5) |
 | IV | 25 | MCP Security | `ch25_*.py` (9) |
