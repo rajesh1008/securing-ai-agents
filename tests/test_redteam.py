@@ -41,3 +41,12 @@ def test_severity_is_monotone_over_the_whole_grid():
         for di, dr, dd in ((1, 0, 0), (0, 1, 0), (0, 0, 1)):
             if i + di < 4 and r + dr < 4 and d + dd < 3: assert sev(i + di, r + dr, d + dd) >= sev(i, r, d)
     assert sum(1 for c in itertools.product(range(4), range(4), range(3)) if sev(*c) == 4) == 1
+def test_keyed_quota_is_beaten_by_rotation_and_registered_lane_is_not():
+    from bulwark.redteam import queue_wait_keyed as k
+    one, many = k(40, 80, 60, policy="per_key", attacker_keys=1), k(40, 80, 60, policy="per_key", attacker_keys=100)
+    reg = k(40, 80, 60, policy="registered", attacker_keys=100)
+    assert one["legit_unserved"] == 0 and many["legit_unserved"] > 400
+    assert reg["median_wait_days"] == 0 and reg["new_sender_median"] > 10
+def test_keyed_queue_without_flood_is_clean_for_every_policy():
+    from bulwark.redteam import queue_wait_keyed as k
+    assert all(k(40, 0, 60, policy=p)["legit_unserved"] == 0 for p in ("fifo", "per_key", "registered"))

@@ -1,0 +1,25 @@
+Assumptions: write-up of a new finding 10 min, confirm a known finding 0.5 min, reviewer US$60/hour.
+
+Read time per unclustered win: 0.5 min
+   arm  wins findings  model $  read-all min  read-all $  clustered min  clustered $  person:model, all  person:model, clustered
+  L1-N    86        1     0.61            53       53.00           13.5        13.50               86.9                     22.1
+  L1-V    68        4     0.61            74       74.00           48.5        48.50              121.3                     79.5
+  L3-N    67        1     0.61            44       43.50           13.5        13.50               71.3                     22.1
+  L3-V    25        1     0.61            22       22.50           13.0        13.00               36.9                     21.3
+ S-HDR     7        1     0.25            14       13.50           13.0        13.00               54.0                     52.0
+
+Read time per unclustered win: 1.5 min
+   arm  wins findings  model $  read-all min  read-all $  clustered min  clustered $  person:model, all  person:model, clustered
+  L1-N    86        1     0.61           139      139.00           13.5        13.50              227.9                     22.1
+  L1-V    68        4     0.61           142      142.00           48.5        48.50              232.8                     79.5
+  L3-N    67        1     0.61           110      110.50           13.5        13.50              181.1                     22.1
+  L3-V    25        1     0.61            48       47.50           13.0        13.00               77.9                     21.3
+ S-HDR     7        1     0.25            20       20.50           13.0        13.00               82.0                     52.0
+
+Read time per unclustered win: 3 min
+   arm  wins findings  model $  read-all min  read-all $  clustered min  clustered $  person:model, all  person:model, clustered
+  L1-N    86        1     0.61           268      268.00           13.5        13.50              439.3                     22.1
+  L1-V    68        4     0.61           244      244.00           48.5        48.50              400.0                     79.5
+  L3-N    67        1     0.61           211      211.00           13.5        13.50              345.9                     22.1
+  L3-V    25        1     0.61            85       85.00           13.0        13.00              139.3                     21.3
+ S-HDR     7        1     0.25            31       31.00           13.0        13.00              124.0                     52.0

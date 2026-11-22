@@ -113,3 +113,47 @@ def tenant_from_credential(body: dict, sig: str, books: dict, who_signed: str) -
 def provenance_route(route: str, sender: str, registered_senders: set) -> str:
     """A document the verifier would pay (AUTO) still goes to a person unless it arrived from a sender registered for that vendor.  It never lowers REVIEW or REJECT."""
     return route if route != "AUTO" or sender in registered_senders else "REVIEW"
+
+# ---------------------------------------------------------------- the retest of F3: a quota that keys on something an attacker can or cannot rotate
+def queue_wait_keyed(legit_per_day: float, flood_per_day: float, reviews_per_day: int, policy: str = "fifo", attacker_keys: int = 1, legit_senders: int = 150,
+                     new_sender_share: float = 0.02, per_key_cap: int = 3, lane_cap: Optional[int] = None, days: int = 30, seed: int = 29) -> dict:
+    """The queue of queue_wait with a policy that cannot see which items are hostile; it sees only a sender key and whether the key is registered for a vendor.
+    Legitimate items come from `legit_senders` registered keys, except `new_sender_share` of them, which come from a first-contact key.  Hostile items come from `attacker_keys` keys, all unregistered, chosen uniformly.
+      fifo        arrival order.
+      per_key     work-conserving: on each day items are served in arrival order, but each key gets `per_key_cap` slots in the first pass; the rest of the capacity goes to what is left.
+      registered  registered keys are served first; unregistered items share a lane of `lane_cap` slots a day (default a fifth of capacity), and whatever capacity is left over also goes to them.
+    Reports waits of legitimate items (median, 90th percentile, never served), the same for the legitimate first-contact items alone, and the backlog."""
+    r = random.Random(seed); q = []; waits = []; new_waits = []
+    lane = max(1, reviews_per_day // 5) if lane_cap is None else lane_cap
+    def poisson(lam):
+        L, k, p = math.exp(-lam), 0, 1.0
+        while True:
+            p *= r.random()
+            if p <= L: return k
+            k += 1
+    def mk_legit(d):
+        if r.random() < new_sender_share: return ("L", d, f"new{r.randrange(10**6)}", False, True)
+        return ("L", d, f"v{r.randrange(legit_senders)}", True, False)
+    for d in range(days):
+        new = [mk_legit(d) for _ in range(poisson(legit_per_day))] + [("H", d, f"a{r.randrange(attacker_keys)}", False, False) for _ in range(poisson(flood_per_day))]
+        r.shuffle(new); q += new; cap = int(reviews_per_day)
+        if policy == "fifo": served, q = q[:cap], q[cap:]
+        else:
+            served, rest, used = [], [], {}
+            for it in q:
+                if policy == "per_key": ok = used.get(it[2], 0) < per_key_cap
+                else: ok = it[3] or used.get("unreg", 0) < lane
+                if ok and len(served) < cap:
+                    served.append(it); k = it[2] if policy == "per_key" else ("unreg" if not it[3] else None)
+                    if k is not None: used[k] = used.get(k, 0) + 1
+                else: rest.append(it)
+            q2 = []
+            for it in rest:
+                if len(served) < cap: served.append(it)
+                else: q2.append(it)
+            q = q2
+        waits += [d - it[1] for it in served if it[0] == "L"]; new_waits += [d - it[1] for it in served if it[4]]
+    waits.sort(); new_waits.sort()
+    def pct(xs, p): return xs[min(len(xs) - 1, int(len(xs) * p))] if xs else None
+    return dict(median_wait_days=pct(waits, 0.5), p90_wait_days=pct(waits, 0.9), legit_served=len(waits), legit_unserved=sum(1 for it in q if it[0] == "L"),
+                new_sender_median=pct(new_waits, 0.5), new_sender_unserved=sum(1 for it in q if it[4]), backlog=len(q))

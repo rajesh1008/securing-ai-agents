@@ -1,0 +1,39 @@
+Part A. F3 retest. 40 legitimate items a day from 150 registered sender keys (2% from a first contact), reviewer clears 60 a day, 30 days, seed 29. per-key cap 3 a day; registered lane 12 a day.
+flood/day     policy  keys  median  p90  legit unserved  first-contact median  first-contact unserved  backlog
+       80       fifo     1       7   14             621                     7                      12     1849
+       80    per_key     1       0    0               0                     0                       0     1849
+       80    per_key     5       0    0               0                     0                       0     1823
+       80    per_key    20       8   13             604                     9                       8     1823
+       80    per_key   100       8   13             593                    10                       9     1838
+       80 registered     1       0    0              18                    15                      18     1849
+       80 registered   100       0    0              11                    20                      11     1838
+      200       fifo     1      12   20             896                     9                      18     5421
+      200    per_key     1       0    0               0                     0                       0     5421
+      200    per_key     5       0    1               0                     0                       0     5335
+      200    per_key    20      10   20             926                    13                      19     5335
+      200    per_key   100      11   20             903                     9                      17     5455
+      200 registered     1       0    0              20                    24                      20     5421
+      200 registered   100       0    0              18                    26                      18     5455
+no flood, registered lane: median 0, first-contact median 0, unserved 0
+
+Part B. Would the Chapter 32 monitor have seen it? Stream: 1 when an item goes to review. Baseline share p0 = 40/133 = 0.30; CUSUM for p1 = 0.40; h = 5 and h = 8.
+h = 5: ARL0 (simulated, rate really p0, 2000 runs, cap 5000 items): 3755 items, about 28.2 days of 133 items
+h = 8: ARL0 (simulated, rate really p0, 2000 runs, cap 5000 items): 4928 items, about 37.1 days of 133 items
+flood/day  alarmed  median alarm day  latest  harm seen  median harm day  alarm before harm
+h = 5
+        0    15/40                13      27       1/40               28               1/40
+       10    40/40                 2      11      31/40                7              28/40
+       20    40/40                 1       4      40/40                2              34/40
+       40    40/40                 0       1      40/40                1              38/40
+       80    40/40                 0       0      40/40                1              40/40
+      200    40/40                 0       0      40/40                1              40/40
+h = 8
+        0     1/40                29      29       1/40               28               0/40
+       10    39/40                 8      22      31/40                7              16/40
+       20    40/40                 1       5      40/40                2              23/40
+       40    40/40                 0       1      40/40                1              31/40
+       80    40/40                 0       0      40/40                1              40/40
+      200    40/40                 0       0      40/40                1              40/40
+
+Part C. The Monitor as shipped in Chapter 32 (amount, account, reverse shadow, run) on 30 days of flood at 80 a day, every hostile item routed REVIEW with a varied vendor name and amount, next to 40 legitimate review items a day.
+items seen 3588, alerts 0
