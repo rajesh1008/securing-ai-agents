@@ -32,3 +32,12 @@ def test_provenance_never_loosens():
     S = {"billing@lonestarpaper.example"}
     assert provenance_route("AUTO", "x@attacker.example", S) == "REVIEW" and provenance_route("AUTO", "billing@lonestarpaper.example", S) == "AUTO"
     assert provenance_route("REJECT", "billing@lonestarpaper.example", S) == "REJECT" and provenance_route("REVIEW", "x", S) == "REVIEW"
+
+def test_severity_is_monotone_over_the_whole_grid():
+    import itertools
+    order = ["note", "low", "medium", "high", "critical"]
+    sev = lambda i, r, d: order.index(Finding("x", "x", "x", "x", i, r, d).severity())
+    for i, r, d in itertools.product(range(4), range(4), range(3)):
+        for di, dr, dd in ((1, 0, 0), (0, 1, 0), (0, 0, 1)):
+            if i + di < 4 and r + dr < 4 and d + dd < 3: assert sev(i + di, r + dr, d + dd) >= sev(i, r, d)
+    assert sum(1 for c in itertools.product(range(4), range(4), range(3)) if sev(*c) == 4) == 1

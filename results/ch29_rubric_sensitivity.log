@@ -1,0 +1,22 @@
+Part A: 48 cells; sev() agrees with Finding.severity() on all 48
+  bands: note 12, low 17, medium 9, high 9, critical 1
+  monotonicity: raising impact or reach lowers the band in 0 cells
+  moving detection from better to worse (0->1, 1->2) lowers the band in 0 cells
+  the override changes the band of 3 cells: (3,1,0) medium->high, (3,1,1) medium->high, (3,1,2) medium->high
+Part B: neighbour pairs differing by one step in one score; band changed in
+  impact      28 of  36  (78%)
+  reach        9 of  36  (25%)
+  detection    6 of  32  (19%)
+  any score 43 of 104  (41%)
+Part C: the four findings and their one-step neighbours (score changed by +1 or -1 in one place)
+  F1 (1, 3, 1) low    neighbours 5, band changes in 3: (0, 3, 1) note; (2, 3, 1) medium; (1, 3, 2) medium
+  F2 (1, 2, 1) low    neighbours 6, band changes in 3: (0, 2, 1) note; (2, 2, 1) medium; (1, 2, 2) medium
+  F3 (1, 2, 1) low    neighbours 6, band changes in 3: (0, 2, 1) note; (2, 2, 1) medium; (1, 2, 2) medium
+  F4 (1, 0, 1) low    neighbours 5, band changes in 1: (0, 0, 1) note
+Part D: one weight at a time, against the shipped rubric (silent +2, edges 4/8/12, override on)
+  silent bonus 0  cells changing band  6 of 48; findings changing: none; F1-F4 become low/low/low/low
+  silent bonus 1  cells changing band  2 of 48; findings changing: none; F1-F4 become low/low/low/low
+  silent bonus 3  cells changing band  3 of 48; findings changing: none; F1-F4 become low/low/low/low
+  edges 3/7/11    cells changing band 11 of 48; findings changing: F1; F1-F4 become medium/low/low/low
+  edges 5/9/13    cells changing band  7 of 48; findings changing: none; F1-F4 become low/low/low/low
+  override off    cells changing band  3 of 48; findings changing: none; F1-F4 become low/low/low/low

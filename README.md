@@ -53,7 +53,7 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | IV | 26 | Skills, Plugins and the Agent Supply Chain | `ch26_*.py` (6) |
 | IV | 27 | Sandboxing and Runtime Isolation | `ch27_*.py` (6) |
 | IV | 28 | The Test Pyramid for Agent Security | `ch28_*.py` (7) |
-| V | 29 | Red-Teaming Quill | `ch29_*.py` (9) |
+| V | 29 | Red-Teaming Quill | `ch29_*.py` (10) |
 | V | 30 | Continuous and Automated Red-Teaming | `ch30_*.py` (4) |
 | V | 31 | Shadow Mode and Progressive Rollout for Security Controls | `ch31_*.py` (5) |
 | V | 32 | Detection: Finding the Attacks That Got Through | `ch32_*.py` (3) |
