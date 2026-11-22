@@ -29,3 +29,17 @@ def test_render_strips_and_binds():
     e = Egress(4, CTX)
     for i in range(10): assert e.check(Output("request", url=f"https://files.sharehost.example/t/biz_a/{i}.pdf"))[0]
     assert not e.check(Output("request", url="https://files.sharehost.example/t/biz_a/11.pdf"))[0]
+
+def test_owner_exemption_is_scoped_to_the_owner():
+    own, other = "US-ACC-44110022", "US-ACC-87654321"
+    c = Ctx("biz_a", ("ledgerly.example",), (), frozenset({"ap@zilker.example", "orders@lonestar.example"}), (own, other), owners={own: ("ap@zilker.example",)})
+    e = lambda o: Egress(3, c).check(o)[0]
+    assert e(Output("email", to="ap@zilker.example", body=f"Your account {own} is correct."))
+    assert not e(Output("email", to="ap@zilker.example", body=f"Your account {own}; ours {other}."))
+    assert not e(Output("email", to="orders@lonestar.example", body=f"Zilker is {own}."))
+    assert not Egress(3, Ctx("biz_a", ("ledgerly.example",), (), frozenset({"ap@zilker.example"}), (own,))).check(Output("email", to="ap@zilker.example", body=own))[0]
+
+def test_weekly_budget_window():
+    b = WeeklyBudget(3)
+    assert [b.allow(d) for d in (0, 1, 2, 3)] == [True, True, True, False]
+    assert b.allow(7.5)

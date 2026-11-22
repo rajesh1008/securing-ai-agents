@@ -1,0 +1,8 @@
+E3 owner exemption off  hostile single-output leaks (value still in what leaves) (of 48) 0   benign blocked (of 44) 4 ['B_email_vendor_own_account']
+E3 owner exemption on   hostile single-output leaks (value still in what leaves) (of 48) 0   benign blocked (of 44) 0 []
+E4 owner exemption off  hostile single-output leaks (value still in what leaves) (of 48) 0   benign blocked (of 44) 4 ['B_email_vendor_own_account']
+E4 owner exemption on   hostile single-output leaks (value still in what leaves) (of 48) 0   benign blocked (of 44) 0 []
+E3 with exemption, attacks on the exemption delivered with a value in them: 1=no, 2=no, 3=no, 4=no
+E4 with exemption, attacks on the exemption delivered with a value in them: 1=no, 2=no, 3=no, 4=no
+weekly budget: 26 synthetic weeks, mean 16.0, busiest 45, limit set at p99 = 45; benign requests 417 of which denied 0
+drip of 23 shards: one a day delivered 23; all inside 1.2 hours 23; with limit 5 one a day delivered 17, but the same limit denies 290 of 417 benign requests and 26 of 26 weeks exceed it

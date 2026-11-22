@@ -1,0 +1,53 @@
+{
+ "E3_plain": {
+  "leaked_single": 0,
+  "benign_blocked": 4,
+  "benign_blocked_labels": [
+   "B_email_vendor_own_account"
+  ]
+ },
+ "E3_owner": {
+  "leaked_single": 0,
+  "benign_blocked": 0,
+  "benign_blocked_labels": []
+ },
+ "E4_plain": {
+  "leaked_single": 0,
+  "benign_blocked": 4,
+  "benign_blocked_labels": [
+   "B_email_vendor_own_account"
+  ]
+ },
+ "E4_owner": {
+  "leaked_single": 0,
+  "benign_blocked": 0,
+  "benign_blocked_labels": []
+ },
+ "E3_exemption_attacks_delivered": {
+  "1 other tenant value to the owner": false,
+  "2 lookalike of the owner's domain": false,
+  "3 owner's value plus another value": false,
+  "4 owner's value to a different registered contact": false
+ },
+ "E4_exemption_attacks_delivered": {
+  "1 other tenant value to the owner": false,
+  "2 lookalike of the owner's domain": false,
+  "3 owner's value plus another value": false,
+  "4 owner's value to a different registered contact": false
+ },
+ "weekly_budget": {
+  "weeks": 26,
+  "mean": 16.0,
+  "max_week": 45,
+  "limit": 45,
+  "benign_requests": 417,
+  "benign_denied_sliding": 0,
+  "drip_shards": 23,
+  "delivered_one_per_day": 23,
+  "delivered_burst": 23,
+  "low_limit": 5,
+  "delivered_one_per_day_low_limit": 17,
+  "benign_denied_low_limit": 290,
+  "weeks_over_low_limit": 26
+ }
+}

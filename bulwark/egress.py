@@ -27,6 +27,7 @@ class Ctx:
     contacts: frozenset             # registry-bound recipient addresses of this tenant
     private_values: tuple           # the tenant's D3 values (account numbers, tax ids, tokens)
     budget_requests: int = 10
+    owners: dict = field(default_factory=dict)   # private value -> addresses the registry says it belongs to (owner exemption at E3 and above)
 
 @dataclass
 class Output:
@@ -89,7 +90,7 @@ class Egress:
         if o.kind == "email":
             if lv == 1 and not any(a in o.to for a in c.allowed_hosts): return False, "recipient_domain", ""
             if lv >= 2 and o.to.lower() not in c.contacts: return False, "recipient_not_in_registry", ""
-            if lv >= 3 and contains_private(o.body, c.private_values): return False, "private_value_in_body", ""
+            if lv >= 3 and contains_private(o.body, self._not_owned_by(o.to)): return False, "private_value_in_body", ""
             body = o.body
             if lv >= 4: body = self.render(o.body)[0]
             for u in URL.findall(body):
@@ -106,6 +107,9 @@ class Egress:
             if lv >= 3 and contains_private(text, c.private_values): return False, "private_value_in_text", ""
             return True, "ok", text
         raise ValueError(o.kind)
+    def _not_owned_by(self, to: str) -> tuple:
+        """The private values that may NOT appear in a message to this recipient: every value except those the registry says belong to them."""
+        return tuple(v for v in self.ctx.private_values if to.lower() not in self.ctx.owners.get(v, ()))
     def render(self, text: str) -> tuple[str, int]:
         """Strip remote images (markdown and html); show every link with its host in front. Returns (text, number of things changed)."""
         n = 0
@@ -131,3 +135,12 @@ def is_internal_host(host: str, resolved: tuple = (), canon: bool = True) -> boo
         if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved or ip.is_multicast or ip.is_unspecified: return True
         if isinstance(ip, ipaddress.IPv6Address) and ip.ipv4_mapped and is_internal_host(str(ip.ipv4_mapped)): return True
     return host.lower() in ("localhost", "metadata.google.internal") or host.lower().endswith((".internal", ".local", ".localhost"))
+
+
+class WeeklyBudget:
+    """Per-tenant budget over a sliding window (default 7 days) of requests to third-party hosts. The per-task budget in Egress cannot see a drip spread over many tasks; this can."""
+    def __init__(self, limit: int, window_days: int = 7): self.limit, self.window, self.events = limit, window_days, []
+    def allow(self, day: float) -> bool:
+        self.events = [d for d in self.events if day - d < self.window]
+        if len(self.events) >= self.limit: return False
+        self.events.append(day); return True
