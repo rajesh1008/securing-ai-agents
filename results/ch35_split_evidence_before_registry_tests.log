@@ -1,0 +1,10 @@
+bulwark modules: 61; test files: 54; modules in the lab bundle: 22
+test files that import registry or runtime_scope directly (2): test_gaps_ch28.py, test_runtime_scope.py
+C06 test files, reaching them transitively (2): test_gaps_ch28.py, test_runtime_scope.py
+A) whole-suite log: modules that reopen C06 = 16 of 22
+B) C06 test files, direct imports: 10 of 22: approval, egress, evidence, identity, mcpguard, moneypath, promptrelease, runtime_scope, supplychain, tenancy
+C) C06 test files, transitive imports: 10 of 22: approval, egress, evidence, identity, mcpguard, moneypath, promptrelease, runtime_scope, supplychain, tenancy
+modules in the lab bundle whose change no longer reopens C06 under C: budget, detect, disclosure, docagent, incident, registry
+modules that reopen C06 under C but are not cited in E01: none
+all bulwark modules (not only the bundle's) that a C06 test file reaches: 15 of 61
+D) the whole suite run in one process: 56 bulwark modules loaded; cited in E01 but never loaded by any test: registry

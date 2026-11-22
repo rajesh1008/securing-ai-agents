@@ -1,0 +1,72 @@
+{
+ "never_loaded": [],
+ "c06_tests": [
+  "test_gaps_ch28.py",
+  "test_registry.py",
+  "test_runtime_scope.py"
+ ],
+ "whole_suite": [
+  "approval",
+  "budget",
+  "detect",
+  "disclosure",
+  "docagent",
+  "egress",
+  "evidence",
+  "identity",
+  "incident",
+  "mcpguard",
+  "moneypath",
+  "promptrelease",
+  "registry",
+  "runtime_scope",
+  "supplychain",
+  "tenancy"
+ ],
+ "direct": [
+  "approval",
+  "egress",
+  "evidence",
+  "identity",
+  "mcpguard",
+  "moneypath",
+  "promptrelease",
+  "registry",
+  "runtime_scope",
+  "supplychain",
+  "tenancy"
+ ],
+ "transitive": [
+  "approval",
+  "egress",
+  "evidence",
+  "identity",
+  "mcpguard",
+  "moneypath",
+  "promptrelease",
+  "registry",
+  "runtime_scope",
+  "supplychain",
+  "tenancy"
+ ],
+ "reached": [
+  "approval",
+  "egress",
+  "evidence",
+  "failclosed",
+  "identity",
+  "mcpguard",
+  "models",
+  "moneypath",
+  "payloads",
+  "promptrelease",
+  "registry",
+  "runtime_scope",
+  "schema",
+  "supplychain",
+  "tenancy",
+  "toolresults"
+ ],
+ "n_modules": 61,
+ "n_tests": 55
+}

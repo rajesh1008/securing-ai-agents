@@ -88,6 +88,16 @@ class Cusum:
         return False
     def reset(self): self.s = 0.0; self.fired_at = None
 
+@dataclass
+class ReviewAge:
+    """Age detector for the review queue.  At the end of each day, `end_of_day(day, arrivals)` takes the arrival days of the items still unserved; the age of an item is day - arrival + 1 (1 = carried over from its arrival day).  Alarms the first time the oldest item has age >= t.  It watches the queue, not the mix of items, so an attacker who pads the stream to keep a share steady does not move it."""
+    t: int = 2; name: str = "review_age"; fired_at: Optional[int] = None
+    def end_of_day(self, day: int, arrivals) -> bool:
+        oldest = max((day - a + 1 for a in arrivals), default=0)
+        if oldest >= self.t and self.fired_at is None: self.fired_at = day; return True
+        return False
+    def reset(self): self.fired_at = None
+
 def arl0(p0: float, p1: float, h: float, runs: int = 2000, seed: int = 1, cap: int = 5000) -> float:
     """Simulated average run length to a false alarm when the rate really is p0 (a measurement of the chosen h, not a formula)."""
     import random; r = random.Random(seed); tot = 0

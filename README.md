@@ -56,7 +56,7 @@ The scripts sit at the top level, next to `bulwark/`, because that is how the bo
 | V | 29 | Red-Teaming Quill | `ch29_*.py` (10) |
 | V | 30 | Continuous and Automated Red-Teaming | `ch30_*.py` (4) |
 | V | 31 | Shadow Mode and Progressive Rollout for Security Controls | `ch31_*.py` (5) |
-| V | 32 | Detection: Finding the Attacks That Got Through | `ch32_*.py` (3) |
+| V | 32 | Detection: Finding the Attacks That Got Through | `ch32_*.py` (4) |
 | V | 33 | Incident Response for Agents | `ch33_*.py` (2) |
 | V | 34 | Customers, Regulators and Disclosure | `ch34_*.py` (3) |
 | VI | 35 | Evidence for the CISO and the Auditor | `ch35_*.py` (7) |

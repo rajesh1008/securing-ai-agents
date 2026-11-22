@@ -107,3 +107,19 @@ def test_monitor_matches_manual_runs_on_the_same_stream():
     A, R_, Rn = AmountDetector(), ReverseShadow(), RunDetector(); Ac = AccountDetector(); al = []
     for o in obs: al += [a for d in (A, Ac, R_, Rn) if (a := d.see(o))]
     assert sorted(a.id for a in m.log) == sorted(a.id for a in merge(al))
+
+
+def test_review_age_fires_on_carryover_and_only_once():
+    from bulwark.detect import ReviewAge
+    d = ReviewAge(t=1)
+    assert d.end_of_day(0, []) is False
+    assert d.end_of_day(1, [1]) is True       # item from day 1 still open at the end of day 1: age 1
+    assert d.end_of_day(2, [1, 2]) is False   # already fired
+
+
+def test_review_age_threshold_and_padding_blindness():
+    from bulwark.detect import ReviewAge
+    d = ReviewAge(t=3)
+    assert d.end_of_day(5, [5, 5, 5]) is False
+    assert d.end_of_day(6, [5]) is False      # age 2
+    assert d.end_of_day(7, [5]) is True       # age 3
